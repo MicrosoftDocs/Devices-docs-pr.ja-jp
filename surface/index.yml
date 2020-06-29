@@ -1,0 +1,54 @@
+### YamlMime:Hub
+title: Microsoft Surface
+summary: Microsoft Surface および Surface Hub デバイスの計画、展開、管理を行う方法について説明します。
+brand: windows
+metadata:
+  title: Microsoft Surface
+  description: Microsoft Surface および Surface Hub デバイスの計画、展開、管理を行う方法について説明します。
+  ms.prod: surface
+  ms.topic: hub-page
+  audience: ITPro
+  author: samanro
+  ms.author: samanro
+  ms.date: 07/03/2019
+  localization_priority: Priority
+  ms.openlocfilehash: 7c723733836ee00e43571714c7df2ca11d3a8a49
+  ms.sourcegitcommit: 109d1d7608ac4667564fa5369e8722e569b8ea36
+  ms.translationtype: HT
+  ms.contentlocale: ja-JP
+  ms.lasthandoff: 06/27/2020
+  ms.locfileid: "10837148"
+additionalContent:
+  sections:
+  - title: IT 担当者向け
+    items:
+    - title: Surface デバイスのドキュメント
+      summary: クラウド経由で接続された Surface、Windows、および Office のパワーを活用しましょう。 ここでは、組織内で Surface を計画、展開、管理するために役立つツールやステップバイステップ ガイドなどのリソースをご紹介します。
+      url: https://docs.microsoft.com/en-us/surface/get-started
+    - title: Surface Hub ドキュメント
+      summary: オールインワンのデジタル対話型ホワイトボード、会議プラットフォーム、および コラボレーション コンピューティング デバイスである Surface Hub 2S を展開して管理する方法を説明します。
+      url: https://docs.microsoft.com/surface-hub/index
+  - title: その他のリソース
+    items:
+    - title: コミュニティ
+      links:
+      - text: IT 担当者向けの Surface のブログ
+        url: https://techcommunity.microsoft.com/t5/Surface-IT-Pro-Blog/bg-p/SurfaceITPro
+      - text: Surface デバイス テクニカル コミュニティ
+        url: https://techcommunity.microsoft.com/t5/Surface-Devices/ct-p/SurfaceDevices
+    - title: 学習
+      links:
+      - text: Microsoft Learn の Surface のトレーニング
+        url: https://docs.microsoft.com/learn/browse/?term=Surface
+      - text: Surface Hub 2S の導入ガイダンス
+        url: https://docs.microsoft.com/surface-hub/surface-hub-2s-adoption-kit
+      - text: Microsoft Mechanics の Surface のビデオ
+        url: https://www.youtube.com/watch?v=Uk2kJ5FUZxY&list=PLXtHYVsvn_b__1Baibdu4elN4SoF3JTBZ
+    - title: 支援が必要な場合
+      links:
+      - text: Surface デバイス
+        url: https://support.microsoft.com/products/surface-devices
+      - text: Surface Hub
+        url: https://support.microsoft.com/hub/4343507/surface-hub-help
+      - text: Surface Hub のサポートへのお問い合わせ
+        url: https://support.microsoft.com/supportforbusiness/productselection?sapId=bb7066fb-e329-c1c0-9c13-8e9949c6a64e

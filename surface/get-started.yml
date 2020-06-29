@@ -1,0 +1,100 @@
+### YamlMime:Landing
+title: Surface デバイスのドキュメント
+summary: クラウド経由で接続された Surface、Windows、および Office のパワーを活用しましょう。
+metadata:
+  title: Surface デバイスのドキュメント
+  description: Microsoft Surface デバイスの使用を開始する
+  ms.service: product-insights
+  ms.topic: landing-page
+  manager: laurawi
+  author: greg-lindsay
+  ms.author: greglin
+  audience: itpro
+  ms.localizationpriority: High
+  ms.openlocfilehash: 90908a9ff95875cf0c3337bf0b8e93f7bfc42e53
+  ms.sourcegitcommit: 109d1d7608ac4667564fa5369e8722e569b8ea36
+  ms.translationtype: MT
+  ms.contentlocale: ja-JP
+  ms.lasthandoff: 06/27/2020
+  ms.locfileid: "10836848"
+landingContent:
+- title: Surface デバイス
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: 一般法人向け Surface Go 2
+      url: https://www.microsoft.com/surface/business/surface-go-2
+    - text: ビジネス向け Surface Book 3
+      url: https://www.microsoft.com/surface/business/surface-book-3
+    - text: すべての Surface family 製品を調べる
+      url: https://www.microsoft.com/surface/business
+- title: 使ってみる
+  linkLists:
+  - linkListType: get-started
+    links:
+    - text: Surface Book 3 GPU の技術概要
+      url: surface-book-gpu-overview.md
+    - text: Surface Book 3 Quadro RTX 3000 技術概要
+      url: surface-book-quadro.md
+    - text: Surface Dock 2 の新機能
+      url: surface-dock-whats-new.md
+- title: Surface デバイスの展開
+  linkLists:
+  - linkListType: deploy
+    links:
+    - text: Surface Deployment Accelerator ツール
+      url: microsoft-surface-deployment-accelerator.md
+    - text: Autopilot と Surface デバイス
+      url: windows-autopilot-and-surface-devices.md
+    - text: Surface 上の Windows 仮想デスクトップ
+      url: windows-virtual-desktop-surface.md
+- title: Surface デバイスを管理する
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: Surface のドライバーおよびファームウェアの更新プログラムを管理および展開する
+      url: manage-surface-driver-and-firmware-updates.md
+    - text: Surface デバイスの最適な電源設定
+      url: maintain-optimal-power-settings-on-Surface-devices.md
+    - text: Surface デバイスでの Wi-Fi 接続の最適化
+      url: surface-wireless-connect.md
+- title: セキュリティガイダンスを調べる
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: Surface Enterprise 管理モード (SEMM) での Secure Surface Dock 2 ポート
+      url: secure-surface-dock-ports-semm.md
+    - text: Surface UEFI の設定の Intune 管理
+      url: surface-manage-dfci-guide.md
+    - text: Surface Data Eraser ツール
+      url: microsoft-surface-data-eraser.md
+- title: Surface ツールの探索
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: ビジネス向け Surface 診断ツールキット
+      url: surface-diagnostic-toolkit-for-business-intro.md
+    - text: SEMM と UEFI
+      url: surface-enterprise-management-mode.md
+    - text: バッテリーの制限の設定
+      url: battery-limit.md
+- title: サポートソリューションを参照する
+  linkLists:
+  - linkListType: learn
+    links:
+    - text: 上位のサポート ソリューション
+      url: support-solutions-surface.md
+    - text: Surface 修理またはサービス中のデータの保護
+      url: https://support.microsoft.com/help/4023508/surface-faq-protecting-your-data-service
+    - text: Surface Dock とドッキング ステーションのトラブルシューティング
+      url: https://support.microsoft.com/help/4023468/surface-troubleshoot-surface-dock-and-docking-stations
+- title: Surface コミュニティに参加する
+  linkLists:
+  - linkListType: learn
+    links:
+    - text: IT 担当者向けの Surface のブログ
+      url: https://techcommunity.microsoft.com/t5/Surface-IT-Pro-Blog/bg-p/SurfaceITPro
+    - text: Surface デバイス テクニカル コミュニティ
+      url: https://techcommunity.microsoft.com/t5/Surface-Devices/ct-p/SurfaceDevices
+    - text: Microsoft Mechanics の Surface のビデオ
+      url: https://www.youtube.com/watch?v=Uk2kJ5FUZxY&list=PLXtHYVsvn_b__1Baibdu4elN4SoF3JTBZ
