@@ -12,12 +12,12 @@ ms.date: 6/25/2020
 ms.reviewer: brrecord
 manager: laurawi
 audience: itpro
-ms.openlocfilehash: 92838599a9d05dbe75f1caad948b97c9cb75bcac
-ms.sourcegitcommit: 109d1d7608ac4667564fa5369e8722e569b8ea36
+ms.openlocfilehash: 1f6f4a7efb8dc345487e5e5054374f81a91a20d5
+ms.sourcegitcommit: 36bac9da2f7b0815fbceb008f869b497380c55db
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2020
-ms.locfileid: "10834286"
+ms.lasthandoff: 07/08/2020
+ms.locfileid: "10860637"
 ---
 # Surface Dock 2 の新機能
 
@@ -35,19 +35,16 @@ Surface Dock 2 は、IT 管理の簡素化を目的として設計されてい�
 - Windows 10 バージョン1809。 Windows 7、Windows 8、または Surface 以外のホストデバイスはサポートされません。 Surface Dock 2 は、次の Surface デバイスで動作します。
 
   - Surface Pro (第5世代)
-  - LTE アドバンスト付き Surface Pro (第5世代)
   - Surface ラップトップ (第1世代)
   - Surface Pro 6
   - Surface Book 2
   - Surface Laptop 2
   - Surface Go
-  - Surface Go LTE Advanced 
   - Surface Pro 7
+  - Surface Pro X 
   - Surface Laptop 3
   - Surface Book 3
   - Surface Go 2
-  - Surface Go 2、LTE Advanced
-
 
 ## Surface Dock 2 コンポーネント
 
@@ -65,7 +62,6 @@ Surface Dock 2 は、IT 管理の簡素化を目的として設計されてい�
 
   - Surface Book 3
   - Surface Go 2
-  - Surface Go 2、LTE Advanced
   - Surface Pro 7
   - Surface Pro X
   - Surface Laptop 3
@@ -74,7 +70,6 @@ Surface Dock 2 は、IT 管理の簡素化を目的として設計されてい�
 
   - Surface Pro 6
   - Surface Pro (第5世代)
-  - LTE アドバンスト付き Surface Pro (第5世代)
   - Surface Laptop 2
   - Surface ラップトップ (第1世代)
   - Surface Go

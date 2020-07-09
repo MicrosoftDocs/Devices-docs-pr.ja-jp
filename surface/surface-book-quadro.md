@@ -8,15 +8,16 @@ ms.sitesec: library
 author: coveminer
 ms.author: greglin
 ms.topic: article
-ms.date: 7/02/2020
+ms.date: 7/07/2020
 ms.reviewer: brrecord
 manager: laurawi
 audience: itpro
-ms.openlocfilehash: 52de90847d85698cba25cc511a4c6eda327c810d
-ms.sourcegitcommit: 1b673d9d3240d6217b36fcc5fea53c23ab8cf367
+ms.openlocfilehash: 35794e36f37041754ee722c286554437c6dd7be2
+ms.sourcegitcommit: 36bac9da2f7b0815fbceb008f869b497380c55db
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/07/2020
-ms.locfileid: "10857584"
+ms.lasthandoff: 07/08/2020
+ms.locfileid: "10860647"
 ---
 # Surface Book 3 Quadro RTX 3000 の技術概要
 
@@ -106,7 +107,7 @@ Surface Book 3 と Quadro RTX 3000 を使用すると、あらゆる Surface の
 | **Adobe 物質設計者**                        | -RTX アクセラレーション bakers を備えた手続き教材を作成します。<br><br>-テクスチャ、物質、ビットマップテクスチャエクスポートなど、MDL と互換性のあるすべての Iray でレンダリングするための NVIDIA Iray レンダリングを使います。<br><br>-DXR-アクセラレータ光とアンビエントオクルージョンのパン。                                                                                                                                                                                                              |
 | **ANSYS**<br>**ライブ探索**                     | -ANSYS リアルタイムエンジニアリングシミュレーションツール (ANSYS Discovery Live) が CUDA で構築されています。                                                                                                                                                                                                                                                                                                                                                                                                      |
 | **Autodesk**<br>**Revit**                           | **Quadro RTX 3000 を使用して Surface Book 3 の自動デスクテストと承認済み**<br><br>-GPU 対応のビューポートがスムーズになり、対話型のデザインエクスペリエンスが向上しました。<br><br>-サードパーティの GPU アクセラレータ3D レンダラー (V-レイ、Enscape など) をサポートしています。                                                                                                                                                                                                                                        |
-| **Autodesk**<br>**3ds の最大値**                         | **Quadro RTX 3000 を使用して Surface Book 3 の自動デスクテストと承認済み**<br><br>-高速対話型の3D モデリングと設計用の GPU アクセラレータのビューポートグラフィックス。<br><br>-RTX-加速レイトレースと AI denoising (既定の Arnold レンダラー)<br><br>-Surface Book 2 15 と比べて、70% を超える速度。                                                                                                                                                        |
+| **Autodesk**<br>**AutoCad**                         | **Quadro RTX 3000 を使用して Surface Book 3 の自動デスクテストと承認済み**<br><br>-高速対話型の3D モデリングと設計用の GPU アクセラレータのビューポートグラフィックス。<br><br>-RTX-加速レイトレースと AI denoising (既定の Arnold レンダラー)<br><br>-Surface Book 2 15 と比べて、70% を超える速度。                                                                                                                                                        |
 | **Autodesk**<br>**マヤ**                            | **Quadro RTX 3000 を使用して Surface Book 3 の自動デスクテストと承認済み**<br><br>-RTX-加速レイトレースと AI denoising (既定の Arnold レンダラー)<br><br>-OpenGL ビューポートアクセラレータ。                                                                                                                                                                                                                                                                                  |
 | **Bentley MicroStation**                            | **Bentley-Quadro RTX 3000 で Surface Book 3 のテストと承認が済んでいる**                                                                                                                                                                                                                                                                                                                                                                                                                  |
 | **Dassault システム**<br>**3D エクスペリエンスプラットフォーム** | -CATIA 対話型レイトレーサー (ライブレンダリング) が RT コアによって高速化されます。<br><br>-Catia は Surface Book 2 15 と比較して、100% を超える速度を実行します。                                                                                                                                                                                                                                                                                                                                     |
