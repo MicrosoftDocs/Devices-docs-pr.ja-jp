@@ -1,0 +1,66 @@
+---
+title: 接触面のサポート
+ms.author: v-todmc
+author: todmccoy
+manager: laurawi
+ms.date: 5/27/2020
+audience: Admin
+ms.topic: article
+ms.prod: surface
+localization_priority: Normal
+search.appverid:
+- SPO160
+- MET150
+appliesto:
+- Surface
+- Surface Hub
+ms.custom:
+- CI 118876
+- CSSTroubleshoot
+ms.reviewer: mablaik
+description: Microsoft Surface および Surface Hub 製品のサポート情報。
+ms.openlocfilehash: 770c0c90762b2b6de7de66a06e04f1dcf4b231a2
+ms.sourcegitcommit: a292b4843d5808745b8320b721829a91d2b1a5d0
+ms.translationtype: MT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "10861197"
+---
+# <span data-ttu-id="3a948-103">Surface Support</span><span class="sxs-lookup"><span data-stu-id="3a948-103">Surface Support</span></span>
+
+### <span data-ttu-id="3a948-104">お問い合わせの前に:</span><span class="sxs-lookup"><span data-stu-id="3a948-104">Before you contact us:</span></span>  
+
+<span data-ttu-id="3a948-105">[Surface Diagnostic Toolkit For Business](https://docs.microsoft.com/surface/surface-diagnostic-toolkit-business) (SDT) を実行します。</span><span class="sxs-lookup"><span data-stu-id="3a948-105">Run the [Surface Diagnostic Toolkit for Business](https://docs.microsoft.com/surface/surface-diagnostic-toolkit-business) (SDT).</span></span> <span data-ttu-id="3a948-106">SDT は、IT 管理者が Surface デバイスでのハードウェア、ソフトウェア、およびファームウェアの問題をすばやく調査、トラブルシューティング、解決することを可能にします。</span><span class="sxs-lookup"><span data-stu-id="3a948-106">The SDT enables IT administrators to quickly investigate, troubleshoot, and resolve hardware, software, and firmware issues with Surface devices.</span></span> <span data-ttu-id="3a948-107">デバイス正常性の分析や問題解決のガイダンスなど、さまざまな診断テストとソフトウェア修復を実行できます。</span><span class="sxs-lookup"><span data-stu-id="3a948-107">You can run a range of diagnostic tests and software repairs in addition to obtaining device health insights and guidance for resolving issues.</span></span> 
+
+<span data-ttu-id="3a948-108">ツールキットを実行しても問題が解決しない場合は、次のタブを使用してサポートオプションを選びます。</span><span class="sxs-lookup"><span data-stu-id="3a948-108">If you are still having a problem after running the toolkit, use the tabs below to select a support option.</span></span>
+
+## [<span data-ttu-id="3a948-109">オンラインサポート</span><span class="sxs-lookup"><span data-stu-id="3a948-109">Online support</span></span>](#tab/online)
+
+> [!NOTE]
+> <span data-ttu-id="3a948-110">Microsoft アカウントまたは Azure Active Directory アカウントを使用して、オンライン申請ポータルにログインする必要があります。</span><span class="sxs-lookup"><span data-stu-id="3a948-110">You will be required to log into the online submission portal using your Microsoft Account or Azure Active Directory Account.</span></span>  
+
+<span data-ttu-id="3a948-111">お客様は、オンラインインシデント要求と共に、重要な情報を提供することで、要求を迅速に行うことができます。</span><span class="sxs-lookup"><span data-stu-id="3a948-111">You can expedite your request by providing key pieces of information along with your online incident request.</span></span> <span data-ttu-id="3a948-112">このファイルのコピーをダウンロードし、必要な情報を追加して、ケースの作成後にアップロードします。</span><span class="sxs-lookup"><span data-stu-id="3a948-112">Download a copy of this file, add the required information and upload after you create your case.</span></span> 
+
+<span data-ttu-id="3a948-113">ビジネス顧客の場合:[サービスリクエストを送信](https://support.microsoft.com/supportforbusiness/productselection?sapid=d383b26c-f150-6220-8f1b-e8aa325d9727)します。</span><span class="sxs-lookup"><span data-stu-id="3a948-113">For business customers: [Submit your service request](https://support.microsoft.com/supportforbusiness/productselection?sapid=d383b26c-f150-6220-8f1b-e8aa325d9727).</span></span> 
+
+<span data-ttu-id="3a948-114">Microsoft プレミアのお客様の場合: サービス[ハブでサービスリクエストを送信](https://serviceshub.microsoft.com/support/contactsupport)します。</span><span class="sxs-lookup"><span data-stu-id="3a948-114">For Microsoft Premier customers: [Submit your service request on Services Hub](https://serviceshub.microsoft.com/support/contactsupport).</span></span> 
+
+ 
+## [<span data-ttu-id="3a948-115">電話のサポート</span><span class="sxs-lookup"><span data-stu-id="3a948-115">Phone support</span></span>](#tab/phone)
+
+<span data-ttu-id="3a948-116">[サービスリクエストを開始するには、こちらにお電話](https://support.microsoft.com/help/4051701/global-customer-service-phone-numbers)ください。</span><span class="sxs-lookup"><span data-stu-id="3a948-116">[Call us to start your service request](https://support.microsoft.com/help/4051701/global-customer-service-phone-numbers).</span></span> <span data-ttu-id="3a948-117">電話をかけるときに、デバイスのシリアル番号を用意しておきます。</span><span class="sxs-lookup"><span data-stu-id="3a948-117">Have your device’s serial number ready when you call.</span></span> 
+
+## [<span data-ttu-id="3a948-118">ストア内サポート</span><span class="sxs-lookup"><span data-stu-id="3a948-118">In-store support</span></span>](#tab/instore)
+
+## <span data-ttu-id="3a948-119">中国 (インド)</span><span class="sxs-lookup"><span data-stu-id="3a948-119">China, India</span></span>
+
+<span data-ttu-id="3a948-120">問題を解決するために、Surface In Center で予定を作成します。</span><span class="sxs-lookup"><span data-stu-id="3a948-120">Make an appointment at a Surface Walk-In Center to help resolve your issue:</span></span>
+
+1. <span data-ttu-id="3a948-121">[Surface Walk In Center の連絡先情報](https://support.microsoft.com/help/4498593/find-surface-walk-in-center-contact-information)ページに移動します。</span><span class="sxs-lookup"><span data-stu-id="3a948-121">Go to the [Surface Walk-In Center Contact Information](https://support.microsoft.com/help/4498593/find-surface-walk-in-center-contact-information) page.</span></span> 
+2. <span data-ttu-id="3a948-122">お住まいの地域を選択して、最も近い順番を探してください。</span><span class="sxs-lookup"><span data-stu-id="3a948-122">Select your location to find the Walk-In Center nearest you.</span></span>  
+3. <span data-ttu-id="3a948-123">Walk Center を選択して、予定のスケジュールを設定します。</span><span class="sxs-lookup"><span data-stu-id="3a948-123">Choose your Walk-In Center and contact them to schedule an appointment.</span></span>
+
+
+---
+
+<span data-ttu-id="3a948-124">問題が解決しない場合は、</span><span class="sxs-lookup"><span data-stu-id="3a948-124">Still need help?</span></span> <span data-ttu-id="3a948-125">[Microsoft コミュニティ](https://answers.microsoft.com/)に移動します。</span><span class="sxs-lookup"><span data-stu-id="3a948-125">Go to [Microsoft Community](https://answers.microsoft.com/).</span></span>
