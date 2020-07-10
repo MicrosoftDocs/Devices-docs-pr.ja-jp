@@ -1,5 +1,5 @@
 ---
-title: 接触面のサポート
+title: Surface サポートへのお問い合わせ
 ms.author: v-todmc
 author: todmccoy
 manager: laurawi
@@ -19,12 +19,12 @@ ms.custom:
 - CSSTroubleshoot
 ms.reviewer: mablaik
 description: Microsoft Surface および Surface Hub 製品のサポート情報。
-ms.openlocfilehash: 770c0c90762b2b6de7de66a06e04f1dcf4b231a2
-ms.sourcegitcommit: a292b4843d5808745b8320b721829a91d2b1a5d0
+ms.openlocfilehash: e36139b48e77907e0a2bc044e82cbc67c8bb6503
+ms.sourcegitcommit: ef49c3356fdce856b51239eb9c070df7b869e110
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 07/09/2020
-ms.locfileid: "10861197"
+ms.locfileid: "10861249"
 ---
 # Surface Support
 
@@ -38,8 +38,6 @@ ms.locfileid: "10861197"
 
 > [!NOTE]
 > Microsoft アカウントまたは Azure Active Directory アカウントを使用して、オンライン申請ポータルにログインする必要があります。  
-
-お客様は、オンラインインシデント要求と共に、重要な情報を提供することで、要求を迅速に行うことができます。 このファイルのコピーをダウンロードし、必要な情報を追加して、ケースの作成後にアップロードします。 
 
 ビジネス顧客の場合:[サービスリクエストを送信](https://support.microsoft.com/supportforbusiness/productselection?sapid=d383b26c-f150-6220-8f1b-e8aa325d9727)します。 
 

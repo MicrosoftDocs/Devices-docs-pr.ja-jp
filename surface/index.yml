@@ -12,12 +12,12 @@ metadata:
   ms.author: samanro
   ms.date: 07/03/2019
   localization_priority: Priority
-  ms.openlocfilehash: d751e7a08f492ed3b5799da08b5d0014123a758f
-  ms.sourcegitcommit: a292b4843d5808745b8320b721829a91d2b1a5d0
+  ms.openlocfilehash: bbbfaa832e3e071625d1189e054c03faede5c50e
+  ms.sourcegitcommit: 63607aa9b65687bf597916f548f5a3416ef87fe8
   ms.translationtype: HT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 07/09/2020
-  ms.locfileid: "10861184"
+  ms.lasthandoff: 07/10/2020
+  ms.locfileid: "10861711"
 highlightedContent:
   items:
   - title: Surface デバイスのドキュメント
@@ -55,11 +55,11 @@ additionalContent:
     - title: Surface Hub の概要
       links:
       - text: Surface Hub 2S の新機能
-        url: /surface-hub/surface-hub-2s-whats-new.md
+        url: https://docs.microsoft.com/surface-hub/surface-hub-2s-whats-new
       - text: Surface Hub 2S の技術仕様
-        url: /surface-hub/surface-hub-2s-techspecs.md
+        url: https://docs.microsoft.com/surface-hub/surface-hub-2s-techspecs
       - text: オペレーティングシステムの基礎
-        url: /surface-hub/differences-between-surface-hub-and-windows-10-enterprise.md
+        url: https://docs.microsoft.com/surface-hub/differences-between-surface-hub-and-windows-10-enterprise
     - title: Surface Hub コミュニティ
       links:
       - text: Surface Hub Tech コミュニティ
