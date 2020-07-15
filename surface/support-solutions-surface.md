@@ -15,19 +15,19 @@ ms.topic: article
 ms.date: 09/26/2019
 ms.localizationpriority: medium
 ms.audience: itpro
-ms.openlocfilehash: 98de32213861aa53ac00a565d4f81f0199995077
-ms.sourcegitcommit: 109d1d7608ac4667564fa5369e8722e569b8ea36
+ms.openlocfilehash: 88c7029c99d69818e9f0b8fddef5fc193581963a
+ms.sourcegitcommit: 608226b64ef92743b1a3361877d4c49228e3ea5d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2020
-ms.locfileid: "10834277"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "10868751"
 ---
 # Surface デバイス向けの上位のサポート ソリューション
 
 > [!Note]
-> **ホームユーザー**: この記事は、IT プロフェッショナルとテクニカルサポート担当者が使用することを目的としています。 Surface デバイスにのみ適用されます。 自宅のデバイスに問題がある場合は、「 [Surface Devices のヘルプ](https://support.microsoft.com/products/surface-devices)」を参照してください。
+> **ホームユーザー**: この記事は、IT プロフェッショナルとテクニカルサポート担当者が使用することを目的としています。 Surface デバイスにのみ適用されます。 自宅のデバイスに問題がある場合は、「 [Surface Support](contact-surface-support.md?tabs=online)」を参照してください。
 
-以下は、企業で Surface デバイスを使用する際に発生する可能性がある一般的な問題に対する Microsoft サポートソリューションです。 問題がここに記載されていない場合は、 [Microsoft サポートにお問い合わせ](https://support.microsoft.com/supportforbusiness/productselection)ください。
+以下は、企業で Surface デバイスを使用する際に発生する可能性がある一般的な問題に対する Microsoft サポートソリューションです。 問題がここに記載されていない場合は、 [Surface サポートに連絡](contact-surface-support.md?tabs=online)してください。
 
 ## Surface ドライバーとファームウェア
 
@@ -54,7 +54,7 @@ Microsoft では Surface デバイス用の更新プログラムとソリュー�
 
 ## 画面に傷またはひびがある問題
 
-- [Microsoft サポートに問い合わせる](https://support.microsoft.com/supportforbusiness/productselection)
+- [Surface サポートへのお問い合わせ](contact-surface-support.md?tabs=online)
 
 ## 表面の電力またはバッテリーの問題
 
