@@ -8,16 +8,16 @@ ms.sitesec: library
 author: coveminer
 ms.author: greglin
 ms.topic: article
-ms.date: 7/07/2020
+ms.date: 7/20/2020
 ms.reviewer: brrecord
 manager: laurawi
 audience: itpro
-ms.openlocfilehash: 35794e36f37041754ee722c286554437c6dd7be2
-ms.sourcegitcommit: 36bac9da2f7b0815fbceb008f869b497380c55db
+ms.openlocfilehash: 3bfdcf1d95b058270b741b7959d9161c66652b4c
+ms.sourcegitcommit: 8738f44f2f4c86e3a45e9fbcbe6469388fc15924
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/08/2020
-ms.locfileid: "10860647"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "10893089"
 ---
 # Surface Book 3 Quadro RTX 3000 の技術概要
 
@@ -83,10 +83,10 @@ Surface Book 3 と Quadro RTX 3000 を使用すると、あらゆる Surface の
 | 単精度浮動小数点数のパフォーマンス (TFLOPS、ピーク) | 5.4             |
 | 実績 (最大)                            | 42.9            |
 | NVIDIA FXAA/TX AA アンチエイリアシング                             | あり             |
-| ビデオの GPU ダイレクト                                       | あり             |
-| Vulkan サポート                                             | あり             |
-| NVIDIA 3D ビジョン Pro                                       | あり             |
-| NVIDIA のお客様                                             | あり             |
+| ビデオの GPU ダイレクト                                       | ○             |
+| Vulkan サポート                                             | ○             |
+| NVIDIA 3D ビジョン Pro                                       | ○             |
+| NVIDIA のお客様                                             | ○             |
 
  
 ## ISV テスト & アプリのアクセラレータ
@@ -116,7 +116,8 @@ Surface Book 3 と Quadro RTX 3000 を使用すると、あらゆる Surface の
 | **Esri ArcGIS**                                     | -DL inferencing が、「」や「コア」を活用して、数日と数週間の時間をかけて、リアルタイムの結果を得ることができます。                                                                                                                                                                                                                                                                                                                                                                                        |
 | **Luxion KeyShot**                                  | -Solidworks、Creo、および Rhino によって使用されるサードパーティの対話型レイトレーサー。 RT コアによって加速され、OptiX™ AI アクセラレータ denoising。                                                                                                                                                                                                                                                                                                                                                        |
 | **McNeel & の関連付け**<br>**Rhino 3D**             | **Rhino-Quadro RTX 3000 で Surface Book 3 のテストと承認が済んでいる**<br><br>-スムーズでインタラクティブなモデリングとデザインエクスペリエンスのための GPU アクセラレータのビューポート。<br><br>-GPU アクセラレーション3D レンダリングのサイクルをサポートしています。                                                                                                                                                                                                                                                         |
-| **PTC Creo**                                        | -Creo のリアルタイムエンジニアリングシミュレーションツール (Creo シミュレーションライブ) は、CUDA で構築されています。<br><br>-Surface Book 2 15 と比較して、15% を超える速度が実行されています。                                                                                                                                                                                                                                                                                                                                |
+| **PTC Creo**                                        | -Creo のリアルタイムエンジニアリングシミュレーションツール (Creo シミュレーションライブ) は、CUDA で構築されています。<br><br>-Surface Book 2 15 と比較して、15% を超える速度が実行されています。                                                                                                                                                                                        |
+| **Siemens SolidEdge 2020**                                        |  **Siemens-Quadro RTX 3000 で Surface Book 3 のテストと承認が済んでいる**                                                                                                                                                                                 |
 | **Siemens NX**                                      | -Siemens NX 対話型レイトレーサー (レイトレース Studio) は、RT コアによって高速化されます。<br><br>-Surface Book 2 15 と比較して、10倍以上の速度で動作します。                                                                                                                                                                                                                                                                                                                                    |
 
 
@@ -128,7 +129,7 @@ Surface Book 3 と Quadro RTX 3000 を使用すると、あらゆる Surface の
 
 **表 4. Surface Book 3 と Quadro RTX 3000 Sku**
 
-| **ディスプレイ** | **処理者**                     | **GPU**                                                                                          | **RAM**    | **記憶域** |
+| **Display** | **処理者**                     | **GPU**                                                                                          | **RAM**    | **Storage** |
 | ----------- | --------------------------------- | ------------------------------------------------------------------------------------------------ | ---------- | ----------- |
 | 15インチ | クアッドコア 10 Gen Core i7-1065G7 | Intel 虹彩™プラスグラフィックス<br>NVIDIA Quadro RTX 3000。 6GB GDDR6 graphics memory を使用した Max Q&a の設計 | 32 LPDDR4x | 512 GB      |
 | 15インチ | クアッドコア 10 Gen Core i7-1065G7 | Intel 虹彩™プラスグラフィックス<br>NVIDIA Quadro RTX 3000。 6GB GDDR6 graphics memory を使用した Max Q&a の設計 | 32 LPDDR4x | 1 TB        |

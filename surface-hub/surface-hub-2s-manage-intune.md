@@ -9,14 +9,14 @@ ms.author: greglin
 manager: laurawi
 audience: Admin
 ms.topic: article
-ms.date: 02/28/2020
+ms.date: 07/23/2020
 ms.localizationpriority: Medium
-ms.openlocfilehash: 1d1b836c18a41982497bb28c57f379408c04f8a5
-ms.sourcegitcommit: 109d1d7608ac4667564fa5369e8722e569b8ea36
+ms.openlocfilehash: 05279a54b51113ca96c4c939e8d64e51c4eca543
+ms.sourcegitcommit: 8738f44f2f4c86e3a45e9fbcbe6469388fc15924
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2020
-ms.locfileid: "10836637"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "10893112"
 ---
 # Intune で Surface Hub 2S を管理する
 
@@ -35,17 +35,27 @@ IT 管理者は Surface Hub 2S で、モバイル デバイス管理 (MDM) プ�
 
 初期セットアップ プロセスで、Intune の自動登録が有効になっている Azure AD テナントに Surface Hub を連携すると、デバイスは自動的に Intune に登録されます。 詳しくは、「[Windows デバイスの Intune 登録方法](https://docs.microsoft.com/intune/enrollment/windows-enrollment-methods)」をご覧ください。 Surface Hub を Intune の "対応デバイス" にするには、Azure AD 連携と Intune の自動登録が必要です。 
 
-## Windows 10 Team Edition 設定
+## Intune で Windows 10 Team Edition の設定を管理する
 
-Windows 10 Team を選択すると、Surface Hub および Surface Hub 2S 用に事前設定されたデバイス制限設定を指定できます。
+1. **Microsoft Endpoint Manager**にサインインして、[**デバイス**  >  **構成プロファイル**  >  の**作成プロファイル**] を選択します。 
+2. [**プラットフォーム**] で、[ **windows 10**以降の  >  **デバイスの制限] (windows 10 チーム)** を選択し、[**作成**] を選択します。 
+3. Surface Hub と Surface Hub 2S のデバイス制限の設定を参照して選択できるようになりました。
 
  ![Surface Hub 2S のデバイス制限を設定します。](images/sh2-set-intune3.png) <br>
 
-これらの設定には、ユーザー エクスペリエンスとアプリの動作、Azure Log Analytics の登録、メンテナンス ウィンドウ構成、セッション設定、Miracast 設定が含まれます。 使用可能な Windows 10 Team 設定の完全な一覧については、「[SurfaceHub CSP](https://docs.microsoft.com/windows/client-management/mdm/surfacehub-csp)」をご覧ください。
+これらの設定は、アプリとエクスペリエンス、Azure operational insights、メンテナンス、セッション、ワイヤレスプロジェクションの各カテゴリに該当します。  
 
-## サポートされているその他の構成サービス プロバイダー (CSP)
+## サポートされている構成サービスプロバイダー (Csp)
 
-サポートされているその他の CSP については、「[Windows 10 でサポートされている Surface Hub CSP](https://docs.microsoft.com/windows/client-management/mdm/configuration-service-provider-reference#surfacehubcspsupport)」をご覧ください。
+Intune コンソールから直接利用可能なポリシーに加えて、レジストリキーまたはファイルにマッピングされる構成サービスプロバイダー (Csp) が数多くあります。 
+
+Microsoft では、通常、新しいバージョンの Windows 10 オペレーティングシステムごとに新しい Csp を提供しています。 Windows Insider プログラムを使用してプレビューで利用できる[windows 10 Team 2020 更新プログラム](surface-hub-install-2020preview.md)には、surface Hub と Surface hub 2s に対して、20以上の新しいデバイス管理ポリシーが用意されています。 これらの MDM ポリシーは、IT 管理者が Microsoft ストアからのアプリの更新の制御を強化し、インフラストラクチャ経由の Miracast、サービス品質や 802.1 x ワイヤード認証などのネットワーク設定、新しいプライバシー/GDPR 関連設定などのワイヤレスプロジェクション設定を行うことができるようにします。
+
+詳しくは、次のリソースをご覧ください。 
+
+- [構成サービス プロバイダーのリファレンス](https://docs.microsoft.com/windows/client-management/mdm/configuration-service-provider-reference) 
+- [SurfaceHub CSP](https://docs.microsoft.com/windows/client-management/mdm/surfacehub-csp)
+- [Microsoft Surface Hub でサポートされている Policy CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csps-supported-by-surface-hub)
 
 ## サービスの品質 (QoS) の設定
 

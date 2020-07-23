@@ -15,17 +15,17 @@ ms.topic: article
 ms.date: 09/26/2019
 ms.localizationpriority: medium
 ms.audience: itpro
-ms.openlocfilehash: 88c7029c99d69818e9f0b8fddef5fc193581963a
-ms.sourcegitcommit: 608226b64ef92743b1a3361877d4c49228e3ea5d
+ms.openlocfilehash: 661d84adbff40ff6cd89fb0c71c60fa795f4236c
+ms.sourcegitcommit: 8738f44f2f4c86e3a45e9fbcbe6469388fc15924
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "10868751"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "10893079"
 ---
 # Surface デバイス向けの上位のサポート ソリューション
 
 > [!Note]
-> **ホームユーザー**: この記事は、IT プロフェッショナルとテクニカルサポート担当者が使用することを目的としています。 Surface デバイスにのみ適用されます。 自宅のデバイスに問題がある場合は、「 [Surface Support](contact-surface-support.md?tabs=online)」を参照してください。
+> **ホームユーザー**: この記事は、IT プロフェッショナルとテクニカルサポート担当者が使用することを目的としています。 Surface デバイスにのみ適用されます。 自宅のデバイスに問題がある場合は、「 [Surface Devices のヘルプ](https://support.microsoft.com/products/surface-devices)」を参照してください。
 
 以下は、企業で Surface デバイスを使用する際に発生する可能性がある一般的な問題に対する Microsoft サポートソリューションです。 問題がここに記載されていない場合は、 [Surface サポートに連絡](contact-surface-support.md?tabs=online)してください。
 
@@ -43,9 +43,7 @@ Microsoft では Surface デバイス用の更新プログラムとソリュー�
 ## Surface Dock の問題
 
 - [Surface Dock とドッキング ステーションのトラブルシューティング](https://support.microsoft.com/help/4023468/surface-troubleshoot-surface-dock-and-docking-stations)
-
 - [2台目の画面へのサーフェス接続のトラブルシューティング](https://support.microsoft.com/help/4023496)
-
 - [Microsoft Surface Dock ファームウェアの更新](https://docs.microsoft.com/surface/surface-dock-updater)
 
 ## デバイスのカバーまたはキーボードの問題
@@ -59,25 +57,19 @@ Microsoft では Surface デバイス用の更新プログラムとソリュー�
 ## 表面の電力またはバッテリーの問題
 
 - [サーフェスの充電方法 (Surface の電源の情報)](https://support.microsoft.com/help/4023496)
-
 - [Surface バッテリーが充電されない、または Surface がバッテリで動作しない](https://support.microsoft.com/help/4023536)
-
 - [Surface の電源が入らない、またはスリープから復帰しない](https://support.microsoft.com/help/4023537)
-
 - [Surface のバッテリー残量を最大限に節約する](https://support.microsoft.com/help/4483194)
 
 ## デバイスをリセットする
 
 - [Surface 用の USB 回復ドライブの作成と使用](https://support.microsoft.com/help/4023512)
-
 - [よく寄せられる質問: サービスで Surface を送信する場合のデータの保護](https://support.microsoft.com/help/4023508)
-
 - [Microsoft Surface Data Eraser](https://docs.microsoft.com/surface/microsoft-surface-data-eraser)
 
 ## 展開に関する問題
 
 - [Surface Pro モデル1796または Surface Pc に Windows を展開したときに DISK0 が見つからない](https://support.microsoft.com/help/4046108)
-
 - [Surface Pro モデル1796および Surface business ラップトップ 1 TB が2台のドライブを表示](https://support.microsoft.com/help/4046105)
-
 - [システム SKU リファレンス](https://docs.microsoft.com/surface/surface-system-sku-reference)
+

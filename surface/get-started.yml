@@ -11,22 +11,22 @@ metadata:
   ms.author: greglin
   audience: itpro
   ms.localizationpriority: High
-  ms.openlocfilehash: 90908a9ff95875cf0c3337bf0b8e93f7bfc42e53
-  ms.sourcegitcommit: 109d1d7608ac4667564fa5369e8722e569b8ea36
+  ms.openlocfilehash: 79bd1f8bb8368efe391def8dafef22c687d08b4c
+  ms.sourcegitcommit: 8738f44f2f4c86e3a45e9fbcbe6469388fc15924
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 06/27/2020
-  ms.locfileid: "10836848"
+  ms.lasthandoff: 07/22/2020
+  ms.locfileid: "10893069"
 landingContent:
 - title: Surface デバイス
   linkLists:
   - linkListType: overview
     links:
-    - text: 一般法人向け Surface Go 2
+    - text: ビジネス向け Surface Go 2
       url: https://www.microsoft.com/surface/business/surface-go-2
     - text: ビジネス向け Surface Book 3
       url: https://www.microsoft.com/surface/business/surface-book-3
-    - text: すべての Surface family 製品を調べる
+    - text: すべての Surface ファミリー製品を見る
       url: https://www.microsoft.com/surface/business
 - title: 使ってみる
   linkLists:
@@ -34,7 +34,7 @@ landingContent:
     links:
     - text: Surface Book 3 GPU の技術概要
       url: surface-book-gpu-overview.md
-    - text: Surface Book 3 Quadro RTX 3000 技術概要
+    - text: Surface Book 3 Quadro RTX 3000 の技術概要
       url: surface-book-quadro.md
     - text: Surface Dock 2 の新機能
       url: surface-dock-whats-new.md
@@ -46,9 +46,9 @@ landingContent:
       url: microsoft-surface-deployment-accelerator.md
     - text: Autopilot と Surface デバイス
       url: windows-autopilot-and-surface-devices.md
-    - text: Surface 上の Windows 仮想デスクトップ
+    - text: Surface の Windows Virtual Desktop
       url: windows-virtual-desktop-surface.md
-- title: Surface デバイスを管理する
+- title: Surface デバイスの管理
   linkLists:
   - linkListType: how-to-guide
     links:
@@ -58,7 +58,7 @@ landingContent:
       url: maintain-optimal-power-settings-on-Surface-devices.md
     - text: Surface デバイスでの Wi-Fi 接続の最適化
       url: surface-wireless-connect.md
-- title: セキュリティガイダンスを調べる
+- title: セキュリティ ガイダンスの検索
   linkLists:
   - linkListType: how-to-guide
     links:
@@ -78,7 +78,7 @@ landingContent:
       url: surface-enterprise-management-mode.md
     - text: バッテリーの制限の設定
       url: battery-limit.md
-- title: サポートソリューションを参照する
+- title: トラブルシューティング
   linkLists:
   - linkListType: learn
     links:
@@ -98,3 +98,9 @@ landingContent:
       url: https://techcommunity.microsoft.com/t5/Surface-Devices/ct-p/SurfaceDevices
     - text: Microsoft Mechanics の Surface のビデオ
       url: https://www.youtube.com/watch?v=Uk2kJ5FUZxY&list=PLXtHYVsvn_b__1Baibdu4elN4SoF3JTBZ
+- title: 支援が必要な場合
+  linkLists:
+  - linkListType: learn
+    links:
+    - text: Surface サポートへのお問い合わせ
+      url: contact-surface-support.md
