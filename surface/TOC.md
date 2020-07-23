@@ -67,6 +67,7 @@
 ### [Surface DMA 保護](dma-protect.md)
 
 ## トラブルシューティング
+### [Surface サポートへのお問い合わせ](contact-surface-support.md)
 ### [Surface デバイス向けの上位のサポート ソリューション](support-solutions-surface.md)
 ### [ビジネス向け Surface 診断ツールキットを使用して、Surface に関する一般的な問題を解決する](surface-diagnostic-toolkit-for-business-intro.md)
 #### [ビジネス向け Surface 診断ツールキットを展開する](surface-diagnostic-toolkit-business.md)
