@@ -19,7 +19,7 @@
 #### [Surface Hub 2S のポート/キーパッド概要](surface-hub-2s-port-keypad-overview.md)
 #### [デバイスを Surface Hub 2S に接続する](surface-hub-2s-connect.md)
 ### [Microsoft Surface Hub 2S 用の環境の準備](surface-hub-2s-prepare-environment.md)
-### [Surface Hub 2S の簡単な認証を構成する](surface-hub-2s-phone-authenticate.md)
+
 
 ## 展開
 ### [Surface Hub 2S の導入とトレーニング](surface-hub-2s-adoption-kit.md)
@@ -35,6 +35,8 @@
 ### [Surface Hub Teams アプリ](hub-teams-app.md)
 
 ## 管理
+### [Windows 10 Team 2020 更新プログラムプレビュービルドをインストールする](surface-hub-install-2020preview.md)  
+### [Surface Hub に新しい Microsoft Edge をインストールして構成する](surface-hub-install-chromium-edge.md)        
 ### [Microsoft Intune で Surface Hub 2S を管理する](surface-hub-2s-manage-intune.md)
 ### [Surface Hub 2S の設定のローカル管理](local-management-surface-hub-settings.md)
 ### [デバイス アカウントでのパスワード循環の管理](surface-hub-2s-manage-passwords.md)
@@ -45,9 +47,12 @@
 ### [デバイス アカウントへの ActiveSync ポリシーの適用](apply-activesync-policies-for-surface-hub-device-accounts.md)
 ### [Surface Hub 2S のペン ファームウェアを更新する](surface-hub-2s-pen-firmware.md)
 
+
 ## セキュリテイ保護
 ### [Surface Hub のセキュリティ概要](surface-hub-security.md)
 ### [SEMM と UEFI による Surface Hub 2S のセキュリティ保護と管理](surface-hub-2s-secure-with-uefi-semm.md)
+### [Surface Hub の先進認証](surface-hub-modern-auth.md) 
+### [Surface Hub でのパスワードレスサインインの構成](surface-hub-2s-phone-authenticate.md) 
 ### [Surface Hub による Wi-Fi Direct のセキュリティ問題への対応](surface-hub-wifi-direct.md)
 
 ## トラブルシューティング
@@ -88,6 +93,8 @@
 
 ## 管理
 ### [Microsoft Surface Hub の管理](manage-surface-hub.md)
+### [Windows 10 Team 2020 更新プログラムプレビュービルドをインストールする](surface-hub-install-2020preview.md)  
+### [Surface Hub に新しい Microsoft Edge をインストールして構成する](surface-hub-install-chromium-edge.md)    
 ### [Surface Hub 用 PowerShell](appendix-a-powershell-scripts-for-surface-hub.md)
 ### [Surface Hub のリモート管理](remote-surface-hub-management.md)
 #### [MDM プロバイダーによる設定の管理](manage-settings-with-mdm-for-surface-hub.md)
@@ -113,6 +120,8 @@
 ## セキュリテイ保護
 ### [Microsoft Authenticator を使った Surface Hub へのサインイン](surface-hub-authenticator-app.md)
 ### [BitLocker キーの保存](save-bitlocker-key-surface-hub.md)
+### [Surface Hub の先進認証](surface-hub-modern-auth.md) 
+### [Surface Hub でのパスワードレスサインインの構成](surface-hub-2s-phone-authenticate.md) 
 ### [Surface Hub による Wi-Fi Direct のセキュリティ問題への対応](surface-hub-wifi-direct.md)
 
 ## トラブルシューティング
