@@ -14,23 +14,23 @@ metadata:
   author: greg-lindsay
   ms.author: greglin
   manager: laurawi
-  ms.openlocfilehash: 975115cc4f7baea18bcd9ad119ce448d59772515
-  ms.sourcegitcommit: 63607aa9b65687bf597916f548f5a3416ef87fe8
+  ms.openlocfilehash: 9bbf8ae97aedde4c14670fd2a72f1286371a8a41
+  ms.sourcegitcommit: 819498edd5c7cf0eae038a561b2efd6c2903dee5
   ms.translationtype: HT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 07/10/2020
-  ms.locfileid: "10861719"
+  ms.lasthandoff: 07/23/2020
+  ms.locfileid: "10895148"
 landingContent:
 - title: Surface Hub 2S に向けた準備
   linkLists:
   - linkListType: whats-new
     links:
-    - text: Surface Hub 2S の新機能
-      url: surface-hub-2s-whats-new.md
-    - text: Surface Hub 2S の発注
-      url: https://www.microsoft.com/p/surface-hub-2S/8P62MW6BN9G4?activetab=pivot:overviewtab
-    - text: Surface Hub 2S の環境の準備
-      url: surface-hub-2s-prepare-environment.md
+    - text: パブリックプレビュー用にリリースされた新しい Surface Hub OS の更新プログラム
+      url: https://techcommunity.microsoft.com/t5/surface-it-pro-blog/new-surface-hub-os-update-released-for-public-preview/ba-p/1534823
+    - text: Windows 10 Team 2020 更新プログラムプレビュービルドをインストールする
+      url: surface-hub-install-2020preview.md
+    - text: Surface Hub に新しい Microsoft Edge をインストールして構成する
+      url: surface-hub-install-chromium-edge.md
     - text: Surface Hub の更新の履歴
       url: surface-hub-update-history.md
   - linkListType: video
@@ -45,14 +45,14 @@ landingContent:
   linkLists:
   - linkListType: get-started
     links:
+    - text: Surface Hub 2S の発注
+      url: https://www.microsoft.com/p/surface-hub-2S/8P62MW6BN9G4?activetab=pivot:overviewtab
     - text: オペレーティングシステムの基礎
       url: differences-between-surface-hub-and-windows-10-enterprise.md
     - text: Surface Hub 2S 設置場所の準備に関するガイド
       url: surface-hub-2s-site-readiness-guide.md
-    - text: Surface Hub 2S インストールのカスタマイズ
-      url: surface-hub-2s-custom-install.md
-    - url: https://support.office.com/article/Enable-Microsoft-Whiteboard-on-Surface-Hub-b5df4539-f735-42ff-b22a-0f5e21be7627
-      text: Surface Hub で Microsoft Whiteboard を有効化
+    - text: Surface Hub で Microsoft Whiteboard を有効化
+      url: https://support.office.com/article/Enable-Microsoft-Whiteboard-on-Surface-Hub-b5df4539-f735-42ff-b22a-0f5e21be7627
   - linkListType: deploy
     links:
     - url: surface-hub-2s-adoption-kit.md
