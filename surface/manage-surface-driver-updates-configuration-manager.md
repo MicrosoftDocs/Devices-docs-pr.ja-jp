@@ -1,5 +1,5 @@
 ---
-title: Configuration Manager で Surface driver の更新を管理する
+title: 構成マネージャーのドライバーの更新
 description: この記事では、Surface デバイスのファームウェアとドライバーの更新プログラムを管理および展開するために使用できるオプションについて説明します。
 ms.assetid: b64879c4-37eb-4fcf-a000-e05cbb3d26ea
 ms.reviewer: ''
@@ -14,14 +14,14 @@ ms.sitesec: library
 ms.author: daclark
 ms.topic: article
 audience: itpro
-ms.openlocfilehash: 1a9c8c64bd524de58696c73a28795b69cc70a7b2
-ms.sourcegitcommit: 109d1d7608ac4667564fa5369e8722e569b8ea36
+ms.openlocfilehash: be32309b26ff6a873c36927cc39595022c4dbb90
+ms.sourcegitcommit: ed4478dd3c6116a25b1e01a3a0f5ff6c1f940013
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2020
-ms.locfileid: "10835869"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "10897075"
 ---
-# Configuration Manager で Surface driver の更新を管理する
+# 構成マネージャーのドライバーの更新
 
 ## まとめ
 
@@ -162,24 +162,23 @@ SUP が正しく構成されていることを確認するには、次の手順�
 
 Microsoft Update ではなく、上流の Windows Server Update Services (WSUS) サーバーから同期する場合は、Surface driver の更新プログラムをサポートし、同期するように上流の WSUS サーバーが構成されていることを確認してください。 すべてのダウンストリームサーバーは、上流の WSUS サーバーデータベースに存在する更新プログラムに制限されます。
 
-WSUS でドライバーとして分類される、68000を超える更新プログラムがあります。 Surface 関連以外のドライバーが構成マネージャーに同期されないようにするために、ドライバーの同期を許可リストに対してフィルター処理します。 新しい許可リストが公開されて Configuration Manager に組み込まれると、次の同期の後に新しいドライバーがコンソールに追加されます。 Microsoft の目標は、Configuration Manager との同期に使用できるようにするために、各月の [許可] リストに追加された Surface ドライバーを更新プログラムの火曜日と共に取得することです。
+WSUS でドライバーとして分類される、68000を超える更新プログラムがあります。 Surface 関連以外のドライバーが構成マネージャーに同期されないようにするために、ドライバーの同期を許可リストに対してフィルター処理します。 新しい許可リストが公開されて Configuration Manager に組み込まれると、次の同期の後に新しいドライバーがコンソールに追加されます。 Microsoft は、毎月の更新プログラムのリリースと共に、許可リストに追加された Surface ドライバーを、構成マネージャーとの同期に使用できるようにすることを目的としています。
 
-構成マネージャー環境がオフラインの場合、[サービス更新プログラム](https://docs.microsoft.com/mem/configmgr/core/servers/manage/use-the-service-connection-tool)を configuration manager にインポートするたびに、新しい許可リストがインポートされます。 また、更新プログラムが Configuration Manager コンソールに表示される前に、ドライバーを含む[新しい WSUS カタログ](https://docs.microsoft.com/mem/configmgr/sum/get-started/synchronize-software-updates-disconnected)をインポートする必要があります。 スタンドアロンの WSUS 環境には構成マネージャー SUP よりも多くのドライバーが含まれているため、オンライン機能を備えた構成マネージャー環境を確立して、Surface ドライバーを同期するように構成することをお勧めします。 これにより、オフライン環境とよく似た小さな WSUS のエクスポートが提供されます。
+構成マネージャー環境がオフラインの場合、[サービスの更新プログラム](https://docs.microsoft.com/mem/configmgr/core/servers/manage/use-the-service-connection-tool)を configuration manager にインポートするたびに、新しい許可リストがインポートされます。 また、更新プログラムが Configuration Manager コンソールに表示される前に、ドライバーを含む[新しい WSUS カタログ](https://docs.microsoft.com/mem/configmgr/sum/get-started/synchronize-software-updates-disconnected)をインポートする必要があります。 スタンドアロンの WSUS 環境には、Configuration Manager SUP よりも多くのドライバーが含まれているため、オンライン機能を備えた構成マネージャー環境を確立して、Surface ドライバーを同期するように構成することをお勧めします。 これにより、オフライン環境とよく似た小さな WSUS のエクスポートが提供されます。
 
-構成マネージャー環境がオンラインで、新しい更新プログラムを検出できる場合は、一覧の更新プログラムが自動的に受信されます。 予期されるドライバーが表示されない場合は、WsyncMgr とを確認して、同期エラーを確認してください。
+構成マネージャー環境がオンラインで、新しい更新プログラムを検出できる場合は、一覧の更新プログラムが自動的に受信されます。 予期されるドライバーが表示されない場合は、すべての同期エラーについて、WCM ファイルと WsyncMgr ファイルを確認してください。
 
-**Configuration Manager 環境がオフラインになっている場合、Surface ドライバーを手動で WSUS にインポートすることはできますか?**
+**Configuration Manager 環境がオフラインになっています。 Surface ドライバーを手動で WSUS にインポートすることはできますか?**
 
 いいえ、そうではありません。 更新プログラムが WSUS にインポートされても、[許可] 一覧に表示されていない場合は、展開用の Configuration Manager コンソールに更新プログラムがインポートされません。 [サービス接続ツール](https://docs.microsoft.com/mem/configmgr/core/servers/manage/use-the-service-connection-tool)を使用して、サービス更新プログラムを Configuration Manager にインポートし、許可リストを更新する必要があります。
 
 **Surface ドライバーとファームウェアの更新プログラムを展開するために必要な代替メソッドは何ですか?**
 
-代替チャネルを使用して Surface ドライバーとファームウェア更新プログラムを展開する方法について詳しくは、「 [surface ドライバーとファームウェア更新プログラムを管理](https://docs.microsoft.com/surface/manage-surface-driver-and-firmware-updates)する」をご覧ください。 .Msi または .exe ファイルをダウンロードして、従来のソフトウェア展開チャネルを使用して展開する場合は、「 [Surface ファームウェアを Configuration Manager で更新](https://docs.microsoft.com/archive/blogs/thejoncallahan/keeping-surface-firmware-updated-with-configuration-manager)する」を参照してください。
+代替チャネルを使用して Surface ドライバーとファームウェア更新プログラムを展開する方法について詳しくは、「 [surface ドライバーとファームウェア更新プログラムを管理](manage-surface-driver-and-firmware-updates.md)する」をご覧ください。 .Msi または .exe ファイルをダウンロードして、従来のソフトウェア展開チャネルを使用して展開する場合は、「 [Surface ファームウェアを Configuration Manager で更新](https://docs.microsoft.com/archive/blogs/thejoncallahan/keeping-surface-firmware-updated-with-configuration-manager)する」を参照してください。
 
 ## 追加情報
 
 Surface ドライバーとファームウェアの更新の詳細については、次の記事を参照してください。
 
-- [Surface デバイス用の最新のファームウェアとドライバーをダウンロードする](https://docs.microsoft.com/surface/deploy-the-latest-firmware-and-drivers-for-surface-devices)
-- [Surface のドライバーおよびファームウェアの更新プログラムを管理する](https://docs.microsoft.com/surface/manage-surface-pro-3-firmware-updates)
-- [Surface および System Center Configuration Manager に関する考慮事項](https://docs.microsoft.com/surface/considerations-for-surface-and-system-center-configuration-manager)
+- [Surface のドライバーおよびファームウェアの更新プログラムを管理する](manage-surface-driver-and-firmware-updates.md)
+- [Surface および System Center Configuration Manager に関する考慮事項](considerations-for-surface-and-system-center-configuration-manager.md)
