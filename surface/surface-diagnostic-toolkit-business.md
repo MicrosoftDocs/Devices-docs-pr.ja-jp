@@ -8,16 +8,16 @@ ms.sitesec: library
 author: coveminer
 ms.author: greglin
 ms.topic: article
-ms.date: 05/11/2020
+ms.date: 07/31/2020
 ms.reviewer: hachidan
 manager: laurawi
 audience: itpro
-ms.openlocfilehash: 9233ca1f7e32e2017424e9fb6ceb0556de9d37bd
-ms.sourcegitcommit: 109d1d7608ac4667564fa5369e8722e569b8ea36
+ms.openlocfilehash: 9c250cef63b760f3faab9172aa950c305e4e47e5
+ms.sourcegitcommit: f875a45961ff5f3c04006afc8690b5e5965e4d80
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2020
-ms.locfileid: "10834301"
+ms.lasthandoff: 07/31/2020
+ms.locfileid: "10902985"
 ---
 # ビジネス向け Surface 診断ツールキットを展開する
 
@@ -179,6 +179,14 @@ SDT と SDT アプリ本体は両方ともインストールされてい `C:\Pro
 - [コマンドを使用して一般法人向け Surface 診断ツールキットを使用する](surface-diagnostic-toolkit-command-line.md)
 
 ## 変更と更新
+
+
+### バージョン2.121.139
+*リリース日:31 2020 年7月*<br>
+このバージョンの Surface 診断ツールキットでは、次のサポートが追加されています。
+
+- シームレスなサポートエクスペリエンス
+- バグ修正
 
 ### バージョン2.94.139.0
 *リリース日: 2020 年5月11日*<br>

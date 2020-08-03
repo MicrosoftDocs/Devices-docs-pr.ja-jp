@@ -1,6 +1,6 @@
 ---
 title: ビジネス向け Surface 診断ツールキットをデスクトップ モードで使用する
-description: SDT を使用して、組織のユーザーが Surface デバイスの問題を特定し、診断するためのツールを実行できるようにする方法について説明します。
+description: SDT を使用して、組織内のユーザーが Surface デバイスに関する問題を特定して診断し、ツールから直接サポート要求を送信できるようにする方法について説明します。
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -11,16 +11,19 @@ ms.reviewer: hachidan
 manager: laurawi
 ms.localizationpriority: medium
 ms.audience: itpro
-ms.openlocfilehash: 9e6b34a8d34081fc12cab4851104f0b67c3dfea4
-ms.sourcegitcommit: 109d1d7608ac4667564fa5369e8722e569b8ea36
+ms.date: 7/31/2020
+ms.openlocfilehash: ec4a90d0d72956eaa4f98e928d128dca70d49c59
+ms.sourcegitcommit: f875a45961ff5f3c04006afc8690b5e5965e4d80
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2020
-ms.locfileid: "10834269"
+ms.lasthandoff: 07/31/2020
+ms.locfileid: "10902975"
 ---
 # ビジネス向け Surface 診断ツールキットをデスクトップ モードで使用する
 
-このトピックでは、Surface Diagnostic ツールキット (SDT) を使用して、組織内のユーザーが Surface デバイスの問題を特定し、診断するためのツールを実行する方法について説明します。 SDT を正常に実行すると、報告された問題の原因がハードウェアまたはユーザーのエラーであるかどうかがすぐにわかります。 SDT でサポートされている Surface デバイスの一覧については、「[展開 Surface 診断ツールキット](surface-diagnostic-toolkit-business.md)」を参照してください。
+このトピックでは、Surface Diagnostic ツールキット (SDT) を使用して、組織内のユーザーが Surface デバイスの問題を識別して診断し、ツールから直接サポート要求を送信できるようにする方法について説明します。 
+
+SDT を正常に実行すると、報告された問題の原因がハードウェアまたはユーザーのエラーであるかどうかがすぐにわかります。 SDT でサポートされている Surface デバイスの一覧については、「[展開 Surface 診断ツールキット](surface-diagnostic-toolkit-business.md)」を参照してください。
 
 
 1. ソフトウェアの配布ポイントまたはネットワーク共有から[SDT パッケージ](surface-diagnostic-toolkit-business.md#create-custom-sdt)をインストールするようにユーザーに指示します。 インストールされた後、一連のテストを通じてユーザーを導くことができます。 
@@ -32,12 +35,12 @@ ms.locfileid: "10834269"
 
 3. デバイスに最新の更新プログラムがあることが確認された場合は、[**続行**] をクリックして、使用可能なテストのカタログに進みます (図2を参照)。
 
-    ![[SDT options] オプションから選択し ](images/sdt-desk-2.png)
+    ![[SDT options] オプションから選択し ](images/sdt1.png)
  *ます。図2[SDT] オプションを選択*する
 
 4. すべての診断テストを実行するかどうかを選ぶことができます。 または、不適切なディスプレイや電源の問題など、特定の問題が発生している可能性がある場合は、[**選択**] をクリックして使用可能なテストから選び、[**選択した実行**] をクリックします (図3を参照)。 各テストの詳細については、次の表を参照してください。 
 
-    ![[ハードウェアテスト] 図3を選択し ](images/sdt-desk-3.png)
+    ![[ハードウェアテスト] 図3を選択し ](images/sdt2.png)
  *ます。ハードウェアテストを選ぶ*
 
     ハードウェアテスト | 説明
@@ -52,9 +55,15 @@ ms.locfileid: "10834269"
     センサー | デバイスでのさまざまなセンサーの機能を確認します
     ハードウェア |  グラフィックスカードやカメラなど、さまざまなハードウェアコンポーネントに関する問題をチェックします。
 
+5. すべてのテストが完了したら、問題が修正されたかどうかを確認するようにツールによって求められます。 
 
+ ![問題は解決されましたか? ](images/sdt3.png)
+*図3a問題は解決されましたか?*
 
-
+6. 問題が解決しない、またはわからない場合は、[**お問い合わせ**] を選択してサポートチケットを送信でき**ます。**
+ 
+ ![サポートチケットを送信する ](images/sdt4.png)
+ *図3bサポートチケットを送信する*
 
 <span id="multiple" />
 
