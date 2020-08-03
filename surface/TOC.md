@@ -52,6 +52,7 @@
 ### [バッテリーの制限の設定](battery-limit.md)
 ### [Surface の明るさの制御](microsoft-surface-brightness-control.md)
 ### [Surface Asset Tag](assettag.md)
+### [Surface デバイス での Wake On Power の使用](wake-on-power-for-surface.md)
 
 ## セキュリテイ保護
 
