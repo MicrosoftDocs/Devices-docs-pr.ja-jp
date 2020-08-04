@@ -25,18 +25,18 @@ ms.localizationpriority: medium
 ms.topic: article
 manager: laurawi
 ms.audience: itpro
-ms.openlocfilehash: 271831651280299a40c4e7a7480fa86e29bd1cf5
-ms.sourcegitcommit: f875a45961ff5f3c04006afc8690b5e5965e4d80
+ms.openlocfilehash: 272c19baedb295abac08e90012246e453b88f42f
+ms.sourcegitcommit: 6fd7008992503db9ae1f56654aa80110348924d3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2020
-ms.locfileid: "10903020"
+ms.lasthandoff: 08/03/2020
+ms.locfileid: "10903396"
 ---
-# Surface デバイスの電源をオンにする
+# Surface デバイス での Wake On Power の使用
 
-Surface デバイスは、机から離れているときにオフにすることも、休止モードに設定してバッテリーを節約することもできます。 これらのデバイスの管理性を向上させるために、電源をスリープ状態にすると、電源に再接続すると、互換性のある Surface デバイスが自動的に起動します。 Power on Wake を構成するには、surface Enterprise Management Mode (SEMM) を使って Surface UEFI コンフィギュレーターまたは UEFI Manager を使用する必要があります。
+Surface デバイスは、机の外にいるときにオフにすることができます。または、休止モードに設定してバッテリーを節約できます。 これらのデバイスの管理性を向上させるために、電源をオンにすると、互換性のある Surface デバイスは、電源に再接続したときに自動的に起動します。 Wake on Power を構成するには、surface Enterprise 管理モード (SEMM) で Surface UEFI コンフィギュレーターまたは UEFI Manager のいずれかを使用できます。
 
-電源をオンにすると、次のデバイスで利用できます。
+電源投入時の機能は、以下のデバイスで利用できます。
 
 - Surface Book 3
 - Surface Pro 7
@@ -45,7 +45,7 @@ Surface デバイスは、机から離れているときにオフにすること
 
 ## 概要と前提条件
 
-Surface UEFI コンフィギュレーターを使用して、ターゲットデバイスに配布するために Windows Installer パッケージに保存されている個々の UEFI 設定を構成することができます。 
+Surface UEFI コンフィギュレーターでは、ターゲットデバイスに配布するために、個々の UEFI 設定を Windows Installer の .msi パッケージに保存することができます。 
 
 > [!NOTE]
 > この記事では、SEMM の使い方を理解していることを前提としています。 詳細については、「 [Surface Enterprise 管理モード (SEMM)](surface-enterprise-management-mode.md)ドキュメント」を参照してください。
@@ -53,41 +53,45 @@ Surface UEFI コンフィギュレーターを使用して、ターゲットデ�
 ## Power on Wake を有効にするには
 
 1.  [SURFACE UEFI コンフィギュレーター](https://www.microsoft.com/download/confirmation.aspx?id=46703)の最新バージョンをダウンロードします。
-2.  管理者として Surface デバイスにサインインし、 **SURFACE UEFI コンフィギュレーター**を開いて、[ **surface Devices**]、[**次へ**] の順に選択します。
+2.  管理者として Surface デバイスにサインインして、 **SURFACE UEFI コンフィギュレーター**を開き、[ **surface Devices**]、[**次へ**] の順に選択します。
 
     :::image type="content" source="images/wake-on-power-for-surface/wake-on-power-for-surface-1.png" alt-text="[Surface デバイス] を選択し、[次へ] を選択します。":::
-3.  [**スタート**] を選択し、[**構成パッケージ**] で [**作成**] を選択します。
+3.  [**スタート**] を選択し、[**構成パッケージ**] の [**作成**] を選択します。
 
     :::image type="content" source="images/wake-on-power-for-surface/wake-on-power-for-surface-2.png" alt-text="[構成パッケージの作成] を選びます。":::
-4.  [**証明書の保護**] を選択し、証明書の .pfx ファイルを追加します。 パスワードを入力した後、[**次へ**] を選択します。 必要に応じて**パスワード保護**を追加し、[**次へ**] を選択します。
-5.  [**ターゲットにするサーフェスの種類を選択**してください] ページで、必要に応じてターゲットデバイスを選択します。 たとえば、 **Surface Pro 7**とします。
-6.  [**高度な機能**] ページで、[**電源を**オンにする] を選択し、 **[オン**] に設定します。 **[次へ]** を選択します。
+4.  [**証明書の保護**] を選択し、証明書の .pfx ファイルを追加します。 
+5. パスワードを入力し、[**次へ**] を選択し、必要に応じて**パスワード保護**を追加して、[**次へ**] を選択します。
+6.  [**ターゲットにするサーフェスの種類を選択**してください] ページで、必要に応じてターゲットデバイスを選択します。 たとえば、[ **Surface Pro 7**] を選びます。
+7.  [**高度な機能**] ページで、[**電源によるスリープ解除**] を選択し、機能を **[オン**] に設定して、[**次へ**] を選びます。
 
     :::image type="content" source="images/wake-on-power-for-surface/wake-on-power-for-surface-3.png" alt-text="[電源をオンにする] を選択し、[オン] に設定します。"::: 
-7.  [**成功**] ページで [**終了**] を選びます。 デバイスに初めて設定を提供する場合は、証明書の拇印の最後の2文字を入力するように求められます。 
-8.  .Msi パッケージを保存します。 
+8.  [**成功**] ページで [**終了**] を選びます。
+
+    > [!NOTE]
+    > 初めてデバイスに設定を提供する場合は、証明書の拇印の最後の2文字も入力するように求められます。 
+9.  .Msi パッケージを保存します。 
 
 ## MSI パッケージを適用する 
 
 Microsoft Endpoint Configuration Manager などのソフトウェア配布ツールを使用して、ネットワーク上のデバイスに MSI パッケージを適用することができます。 この手順では、ローカルコンピューターにパッケージをインストールする手順について説明します。 
 
-1.  管理者特権でコマンドプロンプトを開き、.msi ファイルの完全なパスを入力して .msi パッケージを実行します。 
+1.  管理者特権のコマンドプロンプトで、.msi ファイルの完全なパスを入力して .msi パッケージを実行します。 
 
     ```
     C:\SEMM\wake-on-power.msi 
     ```
 
-2.  [**警告**] ダイアログボックスで、[ **OK]** を選択するか、必要に応じて Bitlocker を無効にします。
+2.  [**警告**] ダイアログボックスで、[ **OK]** を選択するか、必要に応じて BitLocker を無効にします。
 
-    :::image type="content" source="images/wake-on-power-for-surface/wake-on-power-for-surface-4.png" alt-text="[OK] を選択するか、必要に応じて Bitlocker を無効にします。":::
+    :::image type="content" source="images/wake-on-power-for-surface/wake-on-power-for-surface-4.png" alt-text="[OK] を選択するか、必要に応じて BitLocker を無効にします。":::
 3.  [ようこそ] ページで、[**次**へ] を選んでパッケージを実行し、新しく構成された UEFI 設定を適用します。
 
     :::image type="content" source="images/wake-on-power-for-surface/wake-on-power-for-surface-5.png" alt-text="[ようこそ] ページにある [次へ] を選びます。":::
 4.  デバイスを再起動します。 
 
-電源がオンになっています。 設定をテストするには、デバイスの電源を切り、電源を切り、電源を接続し直します。 デバイスが自動的に起動します。 
+電源がオンになっています。 設定をテストするには、デバイスの電源を切って、電源を切り、電源を再接続します。 デバイスが自動的に起動します。 
 
-## 詳細情報
+## 参考資料
 
 詳細については、次の記事を参照してください。 
 
