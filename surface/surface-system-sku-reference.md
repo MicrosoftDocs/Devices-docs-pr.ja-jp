@@ -9,23 +9,23 @@ ms.sitesec: library
 author: coveminer
 ms.author: greglin
 ms.topic: article
-ms.date: 03/09/2020
+ms.date: 08/04/2020
 ms.reviewer: ''
 manager: laurawi
 ms.localizationpriority: medium
 ms.audience: itpro
-ms.openlocfilehash: 1fa192902b17ca811d4ecc8eac65abe1655ce370
-ms.sourcegitcommit: 109d1d7608ac4667564fa5369e8722e569b8ea36
+ms.openlocfilehash: 3eb177e976bd99ec245996db8cb22eab639f63cc
+ms.sourcegitcommit: c0676329f894135388b6d52f85ee8ac9507a836e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2020
-ms.locfileid: "10835565"
+ms.lasthandoff: 08/04/2020
+ms.locfileid: "10905674"
 ---
 # システム SKU リファレンス
 
 このドキュメントでは、PowerShell または WMI を使用して、特定のデバイスのコンピューターの状態をすばやく判断するために使用できるシステムモデルとシステムの SKU 名のリファレンスを提供します。
 
-システムモデルとシステム SKU は、Surface デバイスの UEFI レイヤーのシステム管理 BIOS (SMBIOS) テーブルに格納されている変数です。 システム SKU 名は、Surface Pro と、LTE Advanced を含む Surface Pro など、同じシステムモデル名を持つデバイスを区別するために必要です。 
+システムモデルとシステム SKU は、Surface デバイスの UEFI レイヤーのシステム管理 BIOS (SMBIOS) テーブルに格納されている変数です。 "Surface Pro" と "Surface Advanced" という同じシステムモデル名のデバイスを区別する必要がある場合は、必ずシステムの SKU 名を使用します。
 
 | デバイス   | システムモデル | システム SKU       |
 | ---------- | ----------- | -------------- |
@@ -38,10 +38,12 @@ ms.locfileid: "10835565"
 | Surface Pro LTE Advanced                                | Surface Pro      | Surface_Pro_1807                 |
 | Surface Book 2 13 "                                        | Surface Book 2   | Surface_Book_1832                |
 | Surface Book 2 15 "                                        | Surface Book 2   | Surface_Book_1793                |
-| Surface Go LTE コンシューマー  | Surface Go | Surface_Go_1825_Consumer |
+| Surface Book 3 13 "                                        | Surface Book 3   | Surface_Book_3_1900                |
+| Surface Book 3 15 "                                        | Surface Book 3   | Surface_Book_3_1899
 | Surface Go LTE 商用 | System Go | Surface_Go_1825_Commercial |
 | Surface Go コンシューマー                                          | Surface Go       | Surface_Go_1824_Consumer         |
 | Surface Go コマーシャル                                        | Surface Go       | Surface_Go_1824_Commercial       |
+| Surface Go 2                                                 | Surface Go 2     | Surface_Go_2_1927                |
 | Surface Pro 6 コンシューマー                                       | Surface Pro 6    | Surface_Pro_6_1796_Consumer      |
 | Surface Pro 6 商用                                     | Surface Pro 6    | Surface_Pro_6_1796_Commercial    |
 | Surface Laptop                                               | Surface Laptop   | Surface_Laptop                   |
@@ -63,7 +65,7 @@ gwmi -namespace root\wmi -class MS_SystemInformation | select SystemSKU
 ```
 
 **システム情報を使用して SKU を取得する**  
-システム**情報**で、デバイスのシステム SKU とシステムモデルを見つけることもできます。 これを行うには、次の手順に従います。
+システム**情報**で、デバイスのシステム SKU とシステムモデルを見つけることもできます。 これを行うためには、次の手順を実行します。
 
 1. [**スタート**] を選択し、検索ボックスに「 **MSInfo32** 」と入力します。  
 1. [**システム情報**] を選びます。
