@@ -9,12 +9,12 @@ author: greg-lindsay
 ms.author: greglin
 ms.topic: article
 ms.localizationpriority: medium
-ms.openlocfilehash: f523fcfb29a2a7141dcc13183d7b0bc2801fc796
-ms.sourcegitcommit: 109d1d7608ac4667564fa5369e8722e569b8ea36
+ms.openlocfilehash: 74b48d6fb7501d8c17d17604b5b2dbc9eff308c9
+ms.sourcegitcommit: 603bcb41dc1b7dd92d3bab1601fa6336480e1218
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2020
-ms.locfileid: "10835166"
+ms.lasthandoff: 08/05/2020
+ms.locfileid: "10916018"
 ---
 # Surface Hub 設置場所の準備に関するガイド 
 
@@ -115,6 +115,7 @@ Surface Hub をマウントするには、次の3つの方法があります。
 ワイヤレス接続は Miracast に基づくため、ケーブルまたは追加セットアップの計画を使用する必要はありません。 ユーザーは、Miracast 対応 Windows 8.1 および Windows 10 デバイスのほとんどで Miracast を読み込むことができます。 次に、自分のコンピューターまたはスマートフォンから Surface Hub 画面に表示することができます。
 
 <span id="wired" />
+
 #### 有線接続
 
 有線接続を使用すると、コンピューター、タブレット、またはスマートフォンから Surface Hub に情報が送信されます。 ビデオケーブルには3つのオプションがあり、それらはすべて同じ USB 2.0 ケーブルを使用しています。 ケーブルバンドルには、接続オプションの1つまたはすべてを含めることができます。

@@ -13,13 +13,13 @@ ms.reviewer: hachidan
 manager: laurawi
 ms.localizationpriority: medium
 audience: itpro
-ms.date: 05/26/2020
-ms.openlocfilehash: 116aeb6d1d92f387efa34319f7852febda729207
-ms.sourcegitcommit: 109d1d7608ac4667564fa5369e8722e569b8ea36
+ms.date: 08/05/2020
+ms.openlocfilehash: 4af917ca583dac504bc61bdfb36c8b8485473db9
+ms.sourcegitcommit: 97e19fdcd074647bedec9efdfd3ce28e900ae2ea
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2020
-ms.locfileid: "10835606"
+ms.lasthandoff: 08/05/2020
+ms.locfileid: "10916519"
 ---
 # Microsoft Surface Enterprise 管理モード
 
@@ -226,6 +226,16 @@ SEMM のリセットまたは回復機能が必要な場合は、証明書が有
 
 ## バージョン履歴
 
+
+### バージョン2.73.136.0
+
+SEMM のこのバージョンには、次のものが含まれます。
+
+- SEMM を使用して、Surface Hub2S でオーディオを無効にできるようになりました
+- Dock 2 用 Surface Pro X のサポート
+- Dock 2 関連操作のための UEFI Manager のサポート
+- Surface Go リセットパッケージのバグ修正
+
 ### バージョン2.71.139.0
 
 このバージョンの SEMM は、surface Dock 3、surface Pc 3、Surface Pro 7 の surface Dock 2 の管理機能のサポートを追加します。
@@ -282,4 +292,4 @@ SEMM のこのバージョンには、次のものが含まれます。
 
 - [SEMM による Surface デバイスの登録と構成](enroll-and-configure-surface-devices-with-semm.md)
 - [SEMM からの Surface デバイスの登録解除](unenroll-surface-devices-from-semm.md)
-- [SEMM での Secure Surface Dock 2 ポート](secure-surface-dock-ports-semm.md)
+- [SEMM を使用して Surface Dock 2 ポートを保護する](secure-surface-dock-ports-semm.md)

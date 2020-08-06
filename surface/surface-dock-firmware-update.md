@@ -11,12 +11,13 @@ ms.topic: article
 ms.reviewer: scottmca
 manager: laurawi
 ms.audience: itpro
-ms.openlocfilehash: aab4c67a6a262b11cd5982ebe145afbddfeaa1c9
-ms.sourcegitcommit: 109d1d7608ac4667564fa5369e8722e569b8ea36
+ms.date: 8/05/2020
+ms.openlocfilehash: 331d5122c6c64a99dad48ff6e5a90f38ce3d4ed4
+ms.sourcegitcommit: 603bcb41dc1b7dd92d3bab1601fa6336480e1218
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2020
-ms.locfileid: "10834630"
+ms.lasthandoff: 08/05/2020
+ms.locfileid: "10916028"
 ---
 # Microsoft Surface Dock ファームウェアの更新: IT 管理者向けの技術情報
 
@@ -56,7 +57,7 @@ ms.locfileid: "10834630"
 3. この記事の[次のセクション](#install-the-surface-dock-firmware-update)で説明するように、更新プログラムをインストールします。
 4. 次のテキストが表示されたイベント2007は、ファームウェアの更新が完了したことを示し**ます。 DriverTelementry EventCode = 2007**。 
     - 更新に失敗した場合、イベント ID 2007 は**情報**ではなく**エラー**イベントとして表示されます。 さらに、Windows レジストリで報告されたバージョンは最新のものではありません。
-5. 更新が完了すると、更新された DWORD 値が、ツールの現在のバージョンに対応する Windows レジストリに表示されます。 詳細については、この記事の「[バージョンのリファレンス](#versions-reference)」セクションを参照してください。 以下に例を示します。
+5. 更新が完了すると、更新された DWORD 値が、ツールの現在のバージョンに対応する Windows レジストリに表示されます。 詳細については、この記事の「[バージョンのリファレンス](#versions-reference)」セクションを参照してください。 次に、例を示します。
     - Component10CurrentFwVersion 0x04ac3970 (78395760)
     - Component20CurrentFwVersion 0x04915a70 (76634736)
 
@@ -75,7 +76,7 @@ Windows Installer コマンド (Msiexec.exe) を使って、ネットワーク�
 
 - **Msiexec.exe/i \<path to msi file\> /quiet/norestart** 
 
-  以下に例を示します。
+  次に、例を示します。
   ```
   msiexec /i "\\share\folder\Surface_Dock_FwUpdate_1.42.139_Win10_17134_19.084.31680_0.msi" /quiet /norestart
   ```
@@ -122,7 +123,7 @@ Surface Dock のファームウェア更新が正常に完了すると、これ�
 
 **表 1. Surface Dock ファームウェア更新プログラムのログファイル**
 
-| Log                              | 位置情報                               | 備考                                                                                                                                                                                                         |
+| Log                              | Location                               | 備考                                                                                                                                                                                                         |
 | -------------------------------- | --------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Surface Dock ファームウェア更新ログ | Path を指定する必要があります (注を参照)。 | このツールの以前のバージョンでは、Logs\Microsoft Surface Dock アップデーターにイベントが書き込まれました。                                                                                                  |
 | Windows デバイスのインストールログ       | %windir%\inf\setupapi.dev.log           | デバイスインストールログの使用について詳しくは、「[ [Setupapi.log Logging](https://docs.microsoft.com/windows-hardware/drivers/install/setupapi-logging--windows-vista-and-later-) ] のドキュメント」をご覧ください。 |
@@ -155,6 +156,16 @@ Surface Dock のファームウェア更新が正常に完了すると、これ�
 
 >[!NOTE]
 >インストールファイルは、次の名前付け形式でリリースされます。 **Surface_Dock_FwUpdate_X.XX.XXX_Win10_XXXXX_XX.XXX.XXXXX_X.MSI** (ex: Surface_Dock_FwUpdate_1.42.139_Win10_17134_19.084.31680_0.msi) と既定では C:\Program Files\SurfaceUpdate. にインストールします。
+
+### バージョン1.53.139.0
+*リリース日: 2020 年8月4日*
+
+このバージョンの Surface Dock ファームウェア更新プログラムには、次のようなバグ修正とサポートが含まれています。
+- Surface Pro X を使用した Surface Dock 1 の更新。 
+   > [!NOTE]
+   > Surface Pro X を実行している場合は、をダウンロードします。ARM64 ビルド。 その他のすべてのデバイスについては、AMD64 ビルドを使用します。 
+ 
+
 
 ### バージョン1.42.139 
 *リリース日:18 2019 年9月*
