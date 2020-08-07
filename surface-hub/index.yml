@@ -14,12 +14,12 @@ metadata:
   author: greg-lindsay
   ms.author: greglin
   manager: laurawi
-  ms.openlocfilehash: 9bbf8ae97aedde4c14670fd2a72f1286371a8a41
-  ms.sourcegitcommit: 819498edd5c7cf0eae038a561b2efd6c2903dee5
+  ms.openlocfilehash: a90db8580a7dba5adab63636ce2a0a238aae65b2
+  ms.sourcegitcommit: 3b18d846bb68149c45b13d9ff122e993440b1f9e
   ms.translationtype: HT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 07/23/2020
-  ms.locfileid: "10895148"
+  ms.lasthandoff: 08/06/2020
+  ms.locfileid: "10917505"
 landingContent:
 - title: Surface Hub 2S に向けた準備
   linkLists:
@@ -101,3 +101,5 @@ landingContent:
     links:
     - url: https://support.microsoft.com/supportforbusiness/productselection?sapId=bb7066fb-e329-c1c0-9c13-8e9949c6a64e
       text: サポートを受ける
+    - url: https://www.microsoft.com/surface/business/warranty-service-offerings-and-support
+      text: Surface Hub の保証と延長サービス プラン

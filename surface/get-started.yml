@@ -11,12 +11,12 @@ metadata:
   ms.author: greglin
   audience: itpro
   ms.localizationpriority: High
-  ms.openlocfilehash: 1d9b57fb6d5d2b9b38103eca3a887a8d45676ab3
-  ms.sourcegitcommit: c0676329f894135388b6d52f85ee8ac9507a836e
+  ms.openlocfilehash: f6d326f1745a0fe2ac22d819bfaf0a96fb495c93
+  ms.sourcegitcommit: 3b18d846bb68149c45b13d9ff122e993440b1f9e
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 08/04/2020
-  ms.locfileid: "10905684"
+  ms.lasthandoff: 08/06/2020
+  ms.locfileid: "10917515"
 landingContent:
 - title: Surface デバイス
   linkLists:
@@ -104,5 +104,5 @@ landingContent:
     links:
     - text: Surface サポートへのお問い合わせ
       url: contact-surface-support.md
-    - text: ビジネス保証のための Surface と延長されたサービスプラン
-      url: https://www.microsoft.com/en-us/surface/business/warranty-service-offerings-and-support
+    - text: ビジネス向け Surface の保証と延長サービス プラン
+      url: https://www.microsoft.com/surface/business/warranty-service-offerings-and-support
