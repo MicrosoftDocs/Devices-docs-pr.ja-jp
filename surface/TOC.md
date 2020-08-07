@@ -74,5 +74,11 @@
 #### [ビジネス向け Surface 診断ツールキットを展開する](surface-diagnostic-toolkit-business.md)
 #### [ビジネス向け Surface 診断ツールキットをデスクトップ モードで使用する](surface-diagnostic-toolkit-desktop-mode.md)
 #### [コマンドを使用してビジネス向け Surface 診断ツールキットを実行する](surface-diagnostic-toolkit-command-line.md)
-
 ### [Surface ドキュメントの変更履歴](change-history-for-surface.md)
+### [エンド ユーザー向けのヘルプ](https://support.microsoft.com/products/surface-devices)
+
+## 保証と延長サービス プラン
+### [ビジネス向け Surface の保証と延長サービス プラン](https://www.microsoft.com/surface/business/warranty-service-offerings-and-support)
+### [利用規約](https://support.microsoft.com/help/4493926/warranties-extended-service-plans-and-terms-conditions-for-your-device)
+### [デバイスの保証状況を確認する](https://mybusinessservice.surface.com/)
+### [サービスのために Surface を送るときのデータの保護](https://support.microsoft.com/help/4023508/surface-faq-protecting-your-data-service)
