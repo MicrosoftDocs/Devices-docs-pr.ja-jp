@@ -9,14 +9,14 @@ ms.author: greglin
 manager: laurawi
 audience: Admin
 ms.topic: article
-ms.date: 07/22/2020
+ms.date: 08/07/2020
 ms.localizationpriority: Medium
-ms.openlocfilehash: 9177b184d7a1d6dca63e94740b6208987d97229f
-ms.sourcegitcommit: df1e178b724966e4cf8ff219c5e937e6c31cd9b4
+ms.openlocfilehash: 79e6c35deba5c4635945c3b376a1069e3df324d9
+ms.sourcegitcommit: 83530906c7e34c92bbee90b723321acd61e77669
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "10894113"
+ms.lasthandoff: 08/08/2020
+ms.locfileid: "10918917"
 ---
 # Windows 10 Team 2020 更新プログラムプレビュービルドをインストールする 
 
@@ -53,10 +53,11 @@ Windows 10 Team 2020 更新プログラムでは、Windows 10 の最新機能と
 ## Windows 10 Team 2020 更新プログラムプレビュービルドをインストールする
 
 1. Surface Hub で、[**設定**] を開き、メッセージが表示されたら、管理者の資格情報を入力します。
-2. [ **Update & Security**  >  **Windows Insider program** ] に移動して、[**はじめ**に] を選びます。
-3. 指示に従って、職場アカウント (推奨) または個人の Microsoft アカウントを使って Windows Insider として登録します。 職場のアカウントで登録する利点の詳細については、「一般[法人向け Windows Insider プログラムに登録](https://docs.microsoft.com/windows-insider/at-work-pro/wip-4-biz-register)する」を参照してください。
-4. [ **Insider の設定を選択して**ください] で、[**高速**] を選びます。
-5. Surface Hub で、次の 3 ~ 4 日の間にプレビュービルドと必要なファームウェアの更新プログラムが自動的にインストールされるようにします。 このデバイスでは、毎日の[メンテナンス](https://docs.microsoft.com/surface-hub/manage-windows-updates-for-surface-hub#maintenance-window)期間中に更新プログラムを自動的にダウンロードしてインストールします。 次に、例を示します。
+2. [**プライバシー] > 診断 & フィードバック**に移動して、診断**データの詳細を参照します**。 
+3. [ **Update & Security**  >  **Windows Insider program** ] に移動して、[**はじめ**に] を選びます。
+4. 指示に従って、職場アカウント (推奨) または個人の Microsoft アカウントを使って Windows Insider として登録します。 職場のアカウントで登録する利点の詳細については、「一般[法人向け Windows Insider プログラムに登録](https://docs.microsoft.com/windows-insider/at-work-pro/wip-4-biz-register)する」を参照してください。
+5. [ **Insider の設定を選択して**ください] で、[**高速**] を選びます。
+6. Surface Hub で、次の 3 ~ 4 日の間にプレビュービルドと必要なファームウェアの更新プログラムが自動的にインストールされるようにします。 このデバイスでは、毎日の[メンテナンス](https://docs.microsoft.com/surface-hub/manage-windows-updates-for-surface-hub#maintenance-window)期間中に更新プログラムを自動的にダウンロードしてインストールします。 次に、例を示します。
 
 - 最初のメンテナンスウィンドウで、Surface Hub は、Windows Update からプレビュービルドのダウンロードを開始します。
 - 第2のメンテナンスウィンドウで、デバイスが再起動して更新プログラムを完了します。
@@ -78,79 +79,9 @@ Windows 10 Team 2020 更新プログラムでは、Windows 10 の最新機能と
 > [!NOTE]
 > Windows Insider プログラムを終了して Surface Hub を旧バージョンのオペレーティングシステムに戻す場合は、まず[デバイスをリセット](https://docs.microsoft.com/surface-hub/device-reset-surface-hub)する必要があります。 後でデバイスを再構成するには、[最初の run プログラムを実行](https://docs.microsoft.com/surface-hub/first-run-program-surface-hub)する必要があります。
  
-## 既知の問題: Windows 10 Team 2020 更新プログラムプレビュービルド
-
-### グラフィックス、オーディオ、ユーザーインターフェイスの問題 
-
-プレビュービルドをインストールしても、必要なファームウェアの更新プログラムをすぐにインストールしないと、さまざまなグラフィックスとユーザーインターフェイスの問題が発生する可能性があります。 Microsoft は、Windows 10 Team 2020 更新プログラムのリリースビルドでこれらの問題を解決する予定です。
-
-### Surface Hub 84 インチ: グラフィックスとユーザーインターフェイスの問題
-
-第1世代の Surface Hub 84 インチデバイスにプレビュービルドをインストールすると、さまざまなグラフィックスとユーザーインターフェイスの問題が発生する可能性があります。 Surface Hub 84 インチは、Windows 10 Team 2020 Update の最終リリースでサポートされます。
-
-### 条件付きアクセスポリシーが適用されると、サインインが影響を受ける
-
-- Microsoft ホワイトボードなどのアプリにサインインしようとすると、サインインが失敗します。 ユーザーは、[スタート] メニューから[[自分の会議] と [ファイル](https://support.microsoft.com/help/4506480/sign-in-to-see-your-meetings-and-files-on-surface-hub)] から初めてサインインする必要があります。
-
-- ユーザーアカウントが、Surface Hub で Azure AD join によって使用されているものとは異なる Azure AD テナントに登録されている場合、サインインが失敗します。
-
-Microsoft は、Windows 10 Team 2020 更新プログラムのリリースビルドでこれらの問題を解決する予定です。
-
-### Windows Update によって、利用できない場合に新しいドライバーをインストールするように求められる
-
-**Settings**  >  **Update & Security**  >  Windows 10 Team 2020 更新プログラムと必要なファームウェア更新プログラムをインストールした後、[設定の更新] & セキュリティの**Windows Update**に移動すると、次のエラーが表示されることがあります。 
-
-- "お使いの PC の最新のドライバーは、インストールしようとしているドライバーよりも優れている可能性があります。 引き続きインストールしようとしています。 " 
-
-このエラーは安全に無視することができます。 Microsoft は、この問題を積極的に調査しています。
-
-### プロビジョニングパッケージを使用して Surface Hub ポリシーをインストールできない
-
-Surface Hub 構成サービスプロバイダー (CSP) のポリシーを使用するプロビジョニングパッケージは、インストールに失敗します。 ここでは、Microsoft Intune または別のモバイルデバイス管理 (MDM) プロバイダーを使用して Surface Hub ポリシーを適用します。 Microsoft は、Windows 10 Team 2020 更新プログラムのリリースビルドでこの問題を解決する予定です。
-
-### 初めて実行するときに、USB ドライブを削除するかどうかを確認する
-
-初めて実行するときに、プロビジョニングパッケージを使って Surface Hub をセットアップすると、デバイスが Surface Hub 構成ファイルを読み取ることができるようになる前に、USB ドライブを削除するように求められます。 構成ファイルを使ってデバイスアカウントを設定している場合は、このメッセージを無視します。 Microsoft は、この問題を積極的に調査しています。
- 
-### 初回実行時にプロキシ設定を設定できない
-
-プロキシを使ってインターネットに接続している場合は、初回実行プログラムでインターネット接続が制限されている可能性があります。 Microsoft は、Windows 10 Team 2020 更新プログラムのリリースビルドでこの問題を解決する予定です。
- 
-### Microsoft Store からアプリをダウンロードするとエラーが表示される
-
-Microsoft Store からアプリをダウンロードするには、サインインを求めるメッセージが表示されます。 既知の問題により、サインイン中にエラーが発生しますが、アプリのダウンロード機能には影響しません。 Microsoft は、この問題を積極的に調査しています。
-
-### Surface Hub 2S が断続的に Wi-fi 接続を切断する
-
-デバイスを取り外してもう一度接続するか、またはイーサネットケーブルを使ってインターネットに接続してみてください。 Microsoft は、この問題を積極的に調査しています。
-
-### Surface Hub の2S がスリープ状態から再開できない
-
-Surface Hub 2S が断続的にスリープ状態から再開せず、Microsoft ロゴが表示された画面で応答しなくなることがあります。 デバイスを取り外して、もう一度接続してみてください。 
-
-この問題を回避するには:
-
-1. Surface Hub で、[**設定**] を開き、メッセージが表示されたら、管理者の資格情報を入力します。
-2. Power & **Surface Hub**  >  **セッション**に移動します。 
-3. [**デバイスがスリープ状態になったとき] で、この電源設定を使用**し、[**接続さ**れたスタンバイ] を選択します。
-4. [**存在しない場合は、デバイスをスリープ状態にする**] で [なし] を選択し**ます。**
-
-Microsoft は、Windows 10 Team 2020 更新プログラムの最終リリース前のファームウェア更新プログラムでこの問題を解決する予定です。
-
-### Connect アプリが表示されていない場合のプロジェクションの問題
-
-- ケーブルを使用して Surface Hub に接続すると、Connect アプリから移動したときに touchback が機能しなくなります。
-- Miracast を使用して Surface Hub にプロジェクトを作成すると、接続アプリから移動した後すぐにワイヤレス接続が切断されます。
-
-Microsoft は、これらの問題について積極的に調査しています。
-
-### Skype for Business がメディアトラフィックにプロキシを使用していない
-
-プロキシを使用する一部のデバイスでは、Skype for Business でサインインすることはできますが、メディアトラフィックにプロキシサーバーを使いません。 Microsoft は、この問題を積極的に調査しています。
-
-Microsoft のサポートを利用して、お客様の洞察と提案を共有します。
 
 ## 詳細情報
 
+- [既知の問題: Windows 10 Team 2020 更新プログラム](surface-hub-2020-team-update-known-issues.md)
 - [パブリックプレビュー用の新しい Surface Hub OS 更新プログラムがリリースされました。](https://techcommunity.microsoft.com/t5/surface-it-pro-blog/new-surface-hub-os-update-released-for-public-preview/ba-p/1534823)
 - [Windows Insider Program for Business をお使いになる前に](https://docs.microsoft.com/windows-insider/at-work-pro/wip-4-biz-manage)

@@ -11,13 +11,13 @@ ms.topic: article
 ms.reviewer: scottmca
 manager: laurawi
 ms.audience: itpro
-ms.date: 8/05/2020
-ms.openlocfilehash: 331d5122c6c64a99dad48ff6e5a90f38ce3d4ed4
-ms.sourcegitcommit: 603bcb41dc1b7dd92d3bab1601fa6336480e1218
+ms.date: 8/07/2020
+ms.openlocfilehash: 159eb4ca27bb867623020936276470ba9897f3b8
+ms.sourcegitcommit: 83530906c7e34c92bbee90b723321acd61e77669
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2020
-ms.locfileid: "10916028"
+ms.lasthandoff: 08/08/2020
+ms.locfileid: "10918937"
 ---
 # Microsoft Surface Dock ファームウェアの更新: IT 管理者向けの技術情報
 
@@ -39,7 +39,7 @@ ms.locfileid: "10916028"
     - 更新プログラムでは、Windows 10 バージョン1803以降を搭載した Surface デバイスが必要です。
     - MSI ファイルをインストールすると、Surface を再起動するように求められる場合があります。 ただし、更新を実行するために再起動は必要ありません。
 
-2. Surface Dock から Surface デバイスを切り離し (電源アダプターを使用)、最大5秒間待ってから再接続します。 Surface Dock ファームウェアの更新により、Dock がバックグラウンドで自動的に更新されます。 処理が完了するまで数分かかることがあり、中断された場合でも続行されます。 
+2. Surface Dock から Surface デバイスを切り離し、最大5秒間待ってから再接続します。 Surface Dock ファームウェアの更新により、Dock がバックグラウンドで自動的に更新されます。 処理が完了するまで数分かかることがあり、中断された場合でも続行されます。 
 
 ## Surface Dock ファームウェアの更新を監視する
 

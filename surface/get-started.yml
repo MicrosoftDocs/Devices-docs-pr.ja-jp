@@ -11,12 +11,12 @@ metadata:
   ms.author: greglin
   audience: itpro
   ms.localizationpriority: High
-  ms.openlocfilehash: f6d326f1745a0fe2ac22d819bfaf0a96fb495c93
-  ms.sourcegitcommit: 3b18d846bb68149c45b13d9ff122e993440b1f9e
+  ms.openlocfilehash: 312da1d432abce125161febfd7bca3eb82e22074
+  ms.sourcegitcommit: 83530906c7e34c92bbee90b723321acd61e77669
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 08/06/2020
-  ms.locfileid: "10917515"
+  ms.lasthandoff: 08/08/2020
+  ms.locfileid: "10918907"
 landingContent:
 - title: Surface デバイス
   linkLists:
@@ -84,6 +84,10 @@ landingContent:
     links:
     - text: 上位のサポート ソリューション
       url: support-solutions-surface.md
+    - text: 互換性のある Surface デバイスでの SSD の削除に関するベストプラクティス
+      url: surface-ssd-removal-guide.md
+    - text: IT 担当者向けの Surface のブログ
+      url: https://techcommunity.microsoft.com/t5/surface-it-pro-blog/bg-p/SurfaceITPro
     - text: Surface 修理またはサービス中のデータの保護
       url: https://support.microsoft.com/help/4023508/surface-faq-protecting-your-data-service
     - text: Surface Dock とドッキング ステーションのトラブルシューティング
