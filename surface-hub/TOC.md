@@ -36,6 +36,7 @@
 
 ## 管理
 ### [Windows 10 Team 2020 更新プログラムプレビュービルドをインストールする](surface-hub-install-2020preview.md)  
+### [既知の問題 - Windows 10 Team 2020 更新プログラム](surface-hub-2020-team-update-known-issues.md)
 ### [Surface Hub に新しい Microsoft Edge をインストールして構成する](surface-hub-install-chromium-edge.md)        
 ### [Microsoft Intune で Surface Hub 2S を管理する](surface-hub-2s-manage-intune.md)
 ### [Surface Hub 2S の設定のローカル管理](local-management-surface-hub-settings.md)

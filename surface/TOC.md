@@ -70,6 +70,8 @@
 ## トラブルシューティング
 ### [Surface サポートへのお問い合わせ](contact-surface-support.md)
 ### [Surface デバイス向けの上位のサポート ソリューション](support-solutions-surface.md)
+### [互換性のある Surface デバイスでの SSD 削除のベスト プラクティス](surface-ssd-removal-guide.md)
+### [IT 担当者向けの Surface のブログ](https://techcommunity.microsoft.com/t5/surface-it-pro-blog/bg-p/SurfaceITPro)
 ### [ビジネス向け Surface 診断ツールキットを使用して、Surface に関する一般的な問題を解決する](surface-diagnostic-toolkit-for-business-intro.md)
 #### [ビジネス向け Surface 診断ツールキットを展開する](surface-diagnostic-toolkit-business.md)
 #### [ビジネス向け Surface 診断ツールキットをデスクトップ モードで使用する](surface-diagnostic-toolkit-desktop-mode.md)
