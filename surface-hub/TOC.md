@@ -112,7 +112,7 @@
 ### [Surface Hub へのアプリのインストール](install-apps-on-surface-hub.md)
 ### [Surface Hub のスタート メニューの構成](surface-hub-start-menu.md)
 ### [Microsoft Whiteboard のセットアップと使用](whiteboard-collaboration.md) 
-### [セッションの終了で Surface Hub の会議を終了する](i-am-done-finishing-your-surface-hub-meeting.md)
+### [セッションの終了で Surface Hub の会議を終了する](finishing-your-surface-hub-meeting.md)
 ### [Surface Hub への他のデバイスの接続と表示](connect-and-display-with-surface-hub.md)
 ### [既存のワイヤレス ネットワークまたは LAN での Miracast](miracast-over-infrastructure.md)
 ### [802.1x ワイヤード (有線) 認証を有効にする](enable-8021x-wired-authentication.md)

@@ -10,12 +10,12 @@ ms.date: 01/18/2018
 ms.reviewer: ''
 manager: laurawi
 ms.localizationpriority: medium
-ms.openlocfilehash: bdc6e384839606fe6138c75e190d68a84679f5b4
-ms.sourcegitcommit: 109d1d7608ac4667564fa5369e8722e569b8ea36
+ms.openlocfilehash: 722309a6b018c32bde329cb7b2cdd68b859fc1ca
+ms.sourcegitcommit: 8e809e8481023fe4421abcdaa1e055a6f2f74f5f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2020
-ms.locfileid: "10834894"
+ms.lasthandoff: 08/11/2020
+ms.locfileid: "10924943"
 ---
 # Windows 10 バージョン 1703 での Microsoft Surface Hub の新機能
 
@@ -65,7 +65,7 @@ Surface Hub デバイスをリセットするときに、クラウドから工�
     
 ## セッションの終了
 
-**[終了]** は **[セッションの終了]** になりました。 [[セッションの終了] の使い方については、こちらをご覧ください。](i-am-done-finishing-your-surface-hub-meeting.md) 
+**[終了]** は **[セッションの終了]** になりました。 [[セッションの終了] の使い方については、こちらをご覧ください。](finishing-your-surface-hub-meeting.md) 
 
 ![セッションの終了](images/end-session.png)
 

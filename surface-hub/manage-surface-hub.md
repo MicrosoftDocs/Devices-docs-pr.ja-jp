@@ -12,12 +12,12 @@ ms.author: dansimp
 ms.topic: article
 ms.date: 01/17/2018
 ms.localizationpriority: medium
-ms.openlocfilehash: 04eb2b08ebc8fc7034ab5d27a038c5d517a2eda3
-ms.sourcegitcommit: 109d1d7608ac4667564fa5369e8722e569b8ea36
+ms.openlocfilehash: 935f67e88af8b784230becb1cd89f7360b8a0857
+ms.sourcegitcommit: 8e809e8481023fe4421abcdaa1e055a6f2f74f5f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2020
-ms.locfileid: "10837008"
+ms.lasthandoff: 08/11/2020
+ms.locfileid: "10924963"
 ---
 # Microsoft Surface Hub の管理
 
@@ -40,7 +40,7 @@ Surface Hub の管理と更新について説明します。
 | [Surface Hub へのアプリのインストール]( https://technet.microsoft.com/itpro/surface-hub/install-apps-on-surface-hub) | 管理者は、Microsoft Store またはビジネス向け Microsoft Store からアプリをインストールできます。|
 [Surface Hub のスタート メニューの構成](surface-hub-start-menu.md) | MDM を使用して、Surface Hub のスタート メニューをカスタマイズできます。
 | [Microsoft Whiteboard のセットアップと使用](whiteboard-collaboration.md)  | Microsoft Whiteboard の最新の更新プログラムには、2 つの Surface Hub で同じボードを使用してリアルタイムに共同作業を行うための機能が含まれています。   |
-| [[セッションの終了] をタップして会議を終了する](https://technet.microsoft.com/itpro/surface-hub/i-am-done-finishing-your-surface-hub-meeting) | 会議の終了時、ユーザーは **[セッションの終了]** をタップすることによって、機密データをクリーンアップし、次の会議用にデバイスを準備できます。|
+| [[セッションの終了] をタップして会議を終了する](https://technet.microsoft.com/itpro/surface-hub/finishing-your-surface-hub-meeting) | 会議の終了時、ユーザーは **[セッションの終了]** をタップすることによって、機密データをクリーンアップし、次の会議用にデバイスを準備できます。|
 | [Microsoft Authenticator を使った Surface Hub へのサインイン](surface-hub-authenticator-app.md) | Android と iOS で使用できる Microsoft Authenticator アプリを使用して、パスワードを使用せずに Surface Hub にサインインできます。   |
 | [BitLocker キーの保存](https://technet.microsoft.com/itpro/surface-hub/save-bitlocker-key-surface-hub) | すべての Surface Hub は、自動的に BitLocker ドライブ暗号化ソフトウェアによってセットアップされます。 BitLocker 回復キーはバックアップしておくことを強くお勧めします。|
 | [Surface Hub への他のデバイスの接続と表示](https://technet.microsoft.com/itpro/surface-hub/connect-and-display-with-surface-hub) | Surface Hub に他のデバイスを接続して、コンテンツを表示できます。|
