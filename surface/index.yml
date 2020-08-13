@@ -12,12 +12,12 @@ metadata:
   ms.author: samanro
   ms.date: 07/03/2019
   localization_priority: Priority
-  ms.openlocfilehash: bbbfaa832e3e071625d1189e054c03faede5c50e
-  ms.sourcegitcommit: 63607aa9b65687bf597916f548f5a3416ef87fe8
+  ms.openlocfilehash: cbc2644d37f77b583d73ef7aeab5a96b1db4b11c
+  ms.sourcegitcommit: 16845b3289a035b4e6ab5e7536307ef66651db28
   ms.translationtype: HT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 07/10/2020
-  ms.locfileid: "10861711"
+  ms.lasthandoff: 08/12/2020
+  ms.locfileid: "10926289"
 highlightedContent:
   items:
   - title: Surface デバイスのドキュメント
@@ -26,6 +26,9 @@ highlightedContent:
   - title: Surface Hub ドキュメント
     itemType: learn
     url: https://docs.microsoft.com/surface-hub/index
+  - title: Surface Duo ドキュメント
+    itemType: learn
+    url: https://docs.microsoft.com/surface-duo/index
 additionalContent:
   sections:
   - title: Surface リソース
