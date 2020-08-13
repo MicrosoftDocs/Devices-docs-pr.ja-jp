@@ -1,7 +1,7 @@
 ---
 title: Surface サポートへのお問い合わせ
 ms.author: v-todmc
-author: todmccoy
+author: greg-lindsay
 manager: laurawi
 ms.date: 5/27/2020
 audience: Admin
@@ -19,12 +19,12 @@ ms.custom:
 - CSSTroubleshoot
 ms.reviewer: mablaik
 description: Microsoft Surface および Surface Hub 製品のサポート情報。
-ms.openlocfilehash: e36139b48e77907e0a2bc044e82cbc67c8bb6503
-ms.sourcegitcommit: ef49c3356fdce856b51239eb9c070df7b869e110
+ms.openlocfilehash: 52be75fdec27e1ccf4d68be36afab19c77db540a
+ms.sourcegitcommit: 16845b3289a035b4e6ab5e7536307ef66651db28
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "10861249"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "10926299"
 ---
 # Surface Support
 

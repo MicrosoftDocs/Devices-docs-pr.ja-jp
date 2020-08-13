@@ -1,5 +1,5 @@
 ---
-title: Surface 上の Windows 仮想デスクトップ
+title: Surface の Windows Virtual Desktop
 description: この記事では、Surface デバイスが Windows 仮想デスクトップソリューション用の理想的なエンドノードを提供する方法について説明します。柔軟性の高いフォームファクター、Windows 10 の最新のデバイスセキュリティと管理性、および永続的なオンデマンド & の、ジャストインタイムの作業シナリオのサポートを提供します。
 ms.prod: w10
 ms.mktglfcycl: manage
@@ -8,20 +8,20 @@ ms.sitesec: library
 author: coveminer
 ms.author: greglin
 ms.topic: article
-ms.date: 5/20/2020
+ms.date: 8/12/2020
 ms.reviewer: rohenr
 manager: laurawi
 audience: itpro
-ms.openlocfilehash: 7db54b7bf8d08a10707753738e40c358a8723cf4
-ms.sourcegitcommit: 109d1d7608ac4667564fa5369e8722e569b8ea36
+ms.openlocfilehash: a3dfb5e4b2e5dc87dd4ae1dbced943e6be0772df
+ms.sourcegitcommit: 16845b3289a035b4e6ab5e7536307ef66651db28
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2020
-ms.locfileid: "10835078"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "10926309"
 ---
-# Surface 上の Windows 仮想デスクトップ
+# Surface の Windows Virtual Desktop
 
-## はじめに
+## 概要
 
 Surface デバイス上の Windows 仮想デスクトップでは、ローカルデスクトップエクスペリエンスと、タッチ、ペン、インク、および生体認証が物理と仮想の両方の環境の間にある仮想デスクトップの間の境界線で、仮想デスクトップインフラストラクチャ (VDI) を実行できます。 コンピューティングの進化における別のマイルストーンの表現: Surface 1 上の Windows 仮想デスクトップで <a href="#1"><sup> </sup></a> は、高度なセキュリティ保護、エンタープライズレベルの管理性、および Windows 10 Surface on surface の強化された生産性ツールを使用して、Microsoft 365-仮想化された Azure cloud が統合されています。  Azure の premium フォームファクターと仮想デスクトップインフラストラクチャのフュージョンは、ユーザーエクスペリエンス、移植性、セキュリティ、ビジネス継続性、および先進の管理において、例外的な顧客価値を提供します。
 
@@ -37,7 +37,7 @@ Windows 仮想デスクトップ用の認定パートナープロバイダーと
 
 Surface engineering では、キーボードとマウスを超えて、タッチ、音声、インク、またはサーフェスのいずれかによってデバイスを操作するためのより自然な方法を想像して、革新の新しい標準を設定しています。 また、Microsoft 365 とのチップ間の統合、および Windows 10 Pro のセキュリティと管理性によって、Surface は意図したとおりに接続されたハードウェア、ソフトウェア、アプリ、サービスを提供します。 WVD を windows デバイスから Windows 7 に戻すこともできますが、Microsoft Surface デバイスには、次のようなサポートが用意されています。
 
-- **柔軟なフォームファクター** -surface Go 2、surface pro 7、Surface pro X (ペン、タッチ、着脱可能なキーボード) などの2つのデバイス。
+- **柔軟なフォームファクター** -surface Go 2、surface pro 7、Surface pro X (ペン、タッチ、着脱可能なキーボード) などの2つのデバイス。 新しい Surface Duo を使用して、WVD に接続することもできます。
 - **永続的なオンデマンドおよびジャストインタイムの作業シナリオ**: 生産性の高いエクスペリエンスを実現するためのオフラインおよびデバイス上のアクセス。
 - **Windows 10 先進のデバイスセキュリティと管理性**-どこでも生産性を向上させることができます。
 
