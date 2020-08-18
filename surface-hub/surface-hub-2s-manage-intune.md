@@ -11,12 +11,12 @@ audience: Admin
 ms.topic: article
 ms.date: 07/23/2020
 ms.localizationpriority: Medium
-ms.openlocfilehash: 05279a54b51113ca96c4c939e8d64e51c4eca543
-ms.sourcegitcommit: 8738f44f2f4c86e3a45e9fbcbe6469388fc15924
+ms.openlocfilehash: 389db218d06f9f8d3f510e711b03487daf4e06f9
+ms.sourcegitcommit: ac34f0ec1a9df74ea688bf0da2a51fadf5139a41
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "10893112"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "10934867"
 ---
 # Intune で Surface Hub 2S を管理する
 
@@ -35,7 +35,7 @@ IT 管理者は Surface Hub 2S で、モバイル デバイス管理 (MDM) プ�
 
 初期セットアップ プロセスで、Intune の自動登録が有効になっている Azure AD テナントに Surface Hub を連携すると、デバイスは自動的に Intune に登録されます。 詳しくは、「[Windows デバイスの Intune 登録方法](https://docs.microsoft.com/intune/enrollment/windows-enrollment-methods)」をご覧ください。 Surface Hub を Intune の "対応デバイス" にするには、Azure AD 連携と Intune の自動登録が必要です。 
 
-## Intune で Windows 10 Team Edition の設定を管理する
+## Intune で Windows 10 チームの設定を管理する
 
 1. **Microsoft Endpoint Manager**にサインインして、[**デバイス**  >  **構成プロファイル**  >  の**作成プロファイル**] を選択します。 
 2. [**プラットフォーム**] で、[ **windows 10**以降の  >  **デバイスの制限] (windows 10 チーム)** を選択し、[**作成**] を選択します。 
@@ -49,7 +49,7 @@ IT 管理者は Surface Hub 2S で、モバイル デバイス管理 (MDM) プ�
 
 Intune コンソールから直接利用可能なポリシーに加えて、レジストリキーまたはファイルにマッピングされる構成サービスプロバイダー (Csp) が数多くあります。 
 
-Microsoft では、通常、新しいバージョンの Windows 10 オペレーティングシステムごとに新しい Csp を提供しています。 Windows Insider プログラムを使用してプレビューで利用できる[windows 10 Team 2020 更新プログラム](surface-hub-install-2020preview.md)には、surface Hub と Surface hub 2s に対して、20以上の新しいデバイス管理ポリシーが用意されています。 これらの MDM ポリシーは、IT 管理者が Microsoft ストアからのアプリの更新の制御を強化し、インフラストラクチャ経由の Miracast、サービス品質や 802.1 x ワイヤード認証などのネットワーク設定、新しいプライバシー/GDPR 関連設定などのワイヤレスプロジェクション設定を行うことができるようにします。
+Microsoft では、通常、新しいバージョンの Windows 10 オペレーティングシステムごとに新しい Csp を提供しています。 Windows Insider プログラムを使用してプレビューで利用できる [windows 10 Team 2020 更新プログラム](surface-hub-install-2020preview.md)には、surface Hub と Surface hub 2s に対して、20以上の新しいデバイス管理ポリシーが用意されています。 これらの MDM ポリシーは、IT 管理者が Microsoft ストアからのアプリの更新の制御を強化し、インフラストラクチャ経由の Miracast、サービス品質や 802.1 x ワイヤード認証などのネットワーク設定、新しいプライバシー/GDPR 関連設定などのワイヤレスプロジェクション設定を行うことができるようにします。
 
 詳しくは、次のリソースをご覧ください。 
 
@@ -63,7 +63,7 @@ Surface Hub 2S で最適なビデオおよびオーディオ品質を確保す�
 
 ### Microsoft Teams の QoS 設定 
 
-|**名前**|**説明**|**OMA-URI**|**型**|**値**|
+| 名前 | 説明 | OMA-URI | 型 | 値 |
 |:------ |:------------- |:--------- |:------ |:------- |
 |**オーディオ ポート**| オーディオ ポートの範囲 | ./Device/Vendor/MSFT/NetworkQoSPolicy/TeamsAudio/DestinationPortMatchCondition | String  | 3478-3479 |
 |**オーディオ DSCP**| オーディオ ポートのマーキング | ./Device/Vendor/MSFT/NetworkQoSPolicy/TeamsAudio/DSCPAction | Integer | 46 |
@@ -101,7 +101,7 @@ Intune を使用して Microsoft Teams アプリ モードを設定できます�
 
 モードを設定するには、カスタムのデバイス構成プロファイルに次の設定を追加します。
 
-|**名前**|**説明**|**OMA-URI**|**型**|**値**|
+| 名前 | 説明 | OMA-URI | 型 | 値 |
 |:--- |:--- |:--- |:--- |:--- |
 |**Teams アプリ ID**|アプリ名|./Vendor/MSFT/SurfaceHub/Properties/VtcAppPackageId|String| Microsoft.MicrosoftTeamsforSurfaceHub_8wekyb3d8bbwe!Teams|
 |**Teams アプリ モード**|Teams モード|./Vendor/MSFT/SurfaceHub/Properties/SurfaceHubMeetingMode|Integer| 0、1、2 のいずれか|

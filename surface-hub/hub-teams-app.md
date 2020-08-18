@@ -7,14 +7,14 @@ ms.sitesec: library
 author: greglin
 ms.author: greglin
 ms.topic: article
-ms.date: 07/15/2020
+ms.date: 08/17/2020
 ms.localizationpriority: medium
-ms.openlocfilehash: fbdacbc2a5b0ca7e6b38dc5588ed7b0279ce0c68
-ms.sourcegitcommit: 8738f44f2f4c86e3a45e9fbcbe6469388fc15924
+ms.openlocfilehash: 9220fa1a43f5ee40862ef2ce18f372a7a1126f17
+ms.sourcegitcommit: ac34f0ec1a9df74ea688bf0da2a51fadf5139a41
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "10893039"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "10934827"
 ---
 # Surface Hub 用の Microsoft Teams アプリ 
 
@@ -24,6 +24,7 @@ Surface Hub 用の Microsoft Teams アプリは、 [Microsoft Store](https://www
 ## バージョン履歴
 | ストアアプリのバージョン | 更新プログラム                                                                                         | Microsoft ストアに公開 |
 | --------------------- | --------------------------------------------------------------------------------------------------- | -------------------------------- |
-| 0.2020.521.2344.0         | -Surface Hub の 3 x 3 のギャラリービュー<br>-外部ユーザーを検索する機能                         | 2020年6月10日<br>            |
+| 0.2020.84.19701       | Microsoft Teams ルームでのチーム会議の調整 <br> -近接通信ベースの会議参加                            | 2020年8月12日<br>            |
+| 0.2020.521.2344.0     | -Surface Hub の 3 x 3 のギャラリービュー<br>-外部ユーザーを検索する機能                         | 2020年6月10日<br>            |
 | 0.2020.13201          | -品質向上とバグ修正                                                                | 2020年6月1日<br>          |
 | 0.2020.4301.0         | -Surface Hub で着信 PSTN 通話を受け付ける<br>-出席者/発表者の役割の変更を使用する            | 2020 年 5 月 21 日                     |

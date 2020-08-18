@@ -11,18 +11,18 @@ audience: Admin
 ms.topic: article
 ms.date: 11/21/2019
 ms.localizationpriority: Medium
-ms.openlocfilehash: 38f02b885a0ac2789ffc82f1ab38dc57fea5e841
-ms.sourcegitcommit: 109d1d7608ac4667564fa5369e8722e569b8ea36
+ms.openlocfilehash: dddab2adce1bec9ff722a3324b9c4b1be609ae89
+ms.sourcegitcommit: ac34f0ec1a9df74ea688bf0da2a51fadf5139a41
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2020
-ms.locfileid: "10835342"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "10934847"
 ---
 # Surface Hub 2S の環境の準備
 
 ## Office 365 の準備
 
-Exchange Online、Skype for Business Online、Microsoft Teams、または Microsoft ホワイトボードを使用しており、Intune で Surface Hub 2 を管理する必要がある場合は、まず[エンドポイントの Office 365 の要件](https://docs.microsoft.com/office365/enterprise/office-365-endpoints)を確認してください。
+Exchange Online、Skype for Business Online、Microsoft Teams、または Microsoft ホワイトボードを使用しており、Intune で Surface Hub 2 を管理する必要がある場合は、まず [エンドポイントの Office 365 の要件](https://docs.microsoft.com/office365/enterprise/office-365-endpoints)を確認してください。
 
 Office 365 エンドポイントは、すべての信頼された Office 365 ネットワーク要求をファイアウォール経由で直接送信することで、ネットワークの最適化を支援します。追加のパケットレベルの検査や処理はすべてバイパスします。 この機能により、待機時間と境界容量の要件を減らすことができます。
 
@@ -31,7 +31,7 @@ Microsoft は、Office 365 サービスを定期的に更新します。新機�
 ## デバイスの所属
 
 デバイスの所属を使って、Surface Hub 2S の設定アプリへのユーザーアクセスを管理します。
-Windows 10 Team Edition オペレーティングシステム (Surface Hub 2S で実行される) では、許可されたユーザーのみが設定アプリを使って設定を調整できます。 所属の選択によって機能の可用性に影響を与える可能性があるため、ユーザーが意図した機能に確実にアクセスできるように、適切な計画を立ててください。
+Windows 10 Team オペレーティングシステム (Surface Hub 2S で実行される) では、許可されたユーザーのみが設定アプリを使って設定を調整できます。 所属の選択によって機能の可用性に影響を与える可能性があるため、ユーザーが意図した機能に確実にアクセスできるように、適切な計画を立ててください。
 
 > [!NOTE]
 > デバイスの所属を設定できるのは、初期の既定のエクスペリエンス (OOBE) セットアップ時のみです。 デバイスの所属をリセットする必要がある場合は、OOBE のセットアップを繰り返す必要があります。
@@ -44,7 +44,7 @@ Windows 10 Team Edition オペレーティングシステム (Surface Hub 2S で
 
 オンプレミスの Active Directory ドメインサービスと Surface Hub 2S を利用している場合は、ドメインのセキュリティグループを使用して、設定アプリへのアクセスを管理する必要があります。 これにより、すべてのセキュリティグループメンバーに、Surface Hub 2S の設定を変更するアクセス許可を与えることができます。 次の点にも注意してください。
 
-- Surface Hub の系列がオンプレミスの Active Directory ドメインサービスと関連付けられている場合、BitLocker キーを Active Directory スキーマに保存することができます。 詳細については、「[組織の BitLocker 用の準備: 計画とポリシー](https://docs.microsoft.com/windows/security/information-protection/bitlocker/prepare-your-organization-for-bitlocker-planning-and-policies)」を参照してください。 
+- Surface Hub の系列がオンプレミスの Active Directory ドメインサービスと関連付けられている場合、BitLocker キーを Active Directory スキーマに保存することができます。 詳細については、「 [組織の BitLocker 用の準備: 計画とポリシー](https://docs.microsoft.com/windows/security/information-protection/bitlocker/prepare-your-organization-for-bitlocker-planning-and-policies)」を参照してください。 
 - 組織の信頼されたルート Ca は Surface Hub 2S の同じコンテナーにプッシュされるため、プロビジョニングパッケージを使ってインポートする必要はありません。
 - 引き続き、Intune でデバイスを登録して、Surface Hub 2S の設定を一元管理することができます。
 

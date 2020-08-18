@@ -12,12 +12,12 @@ ms.author: dansimp
 ms.topic: article
 ms.date: 03/16/2019
 ms.localizationpriority: medium
-ms.openlocfilehash: 0ce77122aecfc9a30ac9dc52dfea7e0b0ccf7e1f
-ms.sourcegitcommit: 109d1d7608ac4667564fa5369e8722e569b8ea36
+ms.openlocfilehash: 9158bec3d2285e5e8d4f9f56e582ff2320a34024
+ms.sourcegitcommit: ac34f0ec1a9df74ea688bf0da2a51fadf5139a41
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2020
-ms.locfileid: "10836509"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "10934877"
 ---
 # プロビジョニング パッケージの作成 (Surface Hub)
 
@@ -81,7 +81,7 @@ Windows 10 を実行している PC でプロビジョニング パッケージ�
     
      または
     
-   - Windows 構成デザイナーを ADK からインストールした場合は、`C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Imaging and Configuration Designer\x86` (x64 コンピューター) または `C:\Program Files\Windows Kits\10\Assessment and Deployment Kit\Imaging and Configuration Designer\x86\ICD.exe` (x86 コンピューター) に移動し、**ICD.exe** をダブルクリックします。
+   - Windows 構成デザイナーを ADK からインストールした場合は、`C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Imaging and Configuration Designer\x86` (x64 コンピューターを使用している場合) または `C:\Program Files\Windows Kits\10\Assessment and Deployment Kit\Imaging and Configuration Designer\x86\ICD.exe` (x86 コンピューターを使用している場合) に移動し、**ICD.exe** をダブルクリックします。
 
 2. **[プロビジョニング Surface Hub デバイス]** をクリックします。
 
@@ -107,7 +107,7 @@ Surface Hub の構成ファイルには、デバイスが Exchange および Sky
 
 Microsoft Excel などの CSV エディターを使って、`SurfaceHubConfiguration.csv` という名前の CSV ファイルを作成します。 作成したファイルに、デバイス アカウントとフレンドリ名の一覧を次の形式で入力します。
 
-```
+```console
 <DeviceAccountName>,<DeviceAccountPassword>,<FriendlyName>
 ```
 >[!IMPORTANT]
@@ -116,7 +116,7 @@ Microsoft Excel などの CSV エディターを使って、`SurfaceHubConfigura
 
 次に `SurfaceHubConfiguration.csv` の例を示します。 
 
-```
+```console
 Rainier@contoso.com,password,Rainier Surface Hub
 Adams@contoso.com,password,Adams Surface Hub
 Baker@contoso.com,password,Baker Surface Hub
@@ -156,11 +156,11 @@ Rushmore@contoso.com,password,Rushmore Surface Hub
    
 3. プロジェクトに名前を付け、**[次へ]** をクリックします。
 
-4. **[Common to Windows 10 Team edition]** (Windows 10 Team Edition に共通) を選択し、**[次へ]** をクリックして、**[完了]** をクリックします。
+4. [ **Windows 10 チーム**との共通] を選択し、[ **次へ**] をクリックして、[ **完了**] をクリックします。
 
     ![ICD の新しいプロジェクト](images/icd-new-project.png)
 
-5. プロジェクトで、**[使用可能なカスタマイズ]** の **[一般的なチーム エディションの設定]** を選択します。
+5. プロジェクトの [ **利用可能なカスタマイズ**] で、[ **一般的なチームの設定**] を選択します。
 
     ![ICD の一般的な設定](images/icd-common-settings.png)
 
@@ -201,7 +201,7 @@ UWP アプリをプロビジョニング パッケージに追加する前に、
 
 2. ICD の **[利用可能なカスタマイズ]** ウィンドウで、**[実行時の設定]** > **[UniversalAppInstall]** > **[DeviceContextAppLicense]** の順に移動します。
 
-3. **[LicenseProductId]** を入力し、**[追加]** をクリックします。 一貫性を保つのために、アプリのライセンスにあるアプリのライセンス ID を使います。 テキスト エディタでライセンス ファイルを開きます。 次に、タグで、 \<License\> **licenseid**属性の値を使用します。
+3. **[LicenseProductId]** を入力し、**[追加]** をクリックします。 一貫性を保つのために、アプリのライセンスにあるアプリのライセンス ID を使います。 テキスト エディタでライセンス ファイルを開きます。 次に、タグで、 \<License\> **licenseid** 属性の値を使用します。
 
 4. 新しい **[LicenseProductId]** ノードを選択します。 **[LicenseInstall]** では、**[参照]** をクリックして、手順 1 で名前を変更したライセンス ファイルを見つけて選択します。
 
