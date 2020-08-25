@@ -8,24 +8,24 @@ ms.sitesec: library
 author: coveminer
 ms.author: greglin
 ms.topic: article
-ms.date: 7/20/2020
+ms.date: 8/21/2020
 ms.reviewer: brrecord
 manager: laurawi
 audience: itpro
-ms.openlocfilehash: 3bfdcf1d95b058270b741b7959d9161c66652b4c
-ms.sourcegitcommit: 8738f44f2f4c86e3a45e9fbcbe6469388fc15924
+ms.openlocfilehash: d0783879c3e0cab2f44ea01cdc15b96a1b4e9c21
+ms.sourcegitcommit: 537fa38bdd21fcd679af0764e734f4b8efb6a03f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "10893089"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "10959959"
 ---
 # Surface Book 3 Quadro RTX 3000 の技術概要
 
 NVIDIA® Quadro RTX™ 3000 GPU を搭載したビジネス向け Surface Book は、リアルタイムのレンダリング、AI 加速度、高度なグラフィックス、およびポータブルなフォームファクターでのパフォーマンスの計算を必要とする技術向けに構築されています。 Quadro RTX 3000 は、新しい Surface Book 3 を使用してできることを根本的に変更します。
 
-- **レイトレース**-ハードウェアアクセラレーションを使って、より魅力的なレンダリング、デザイン、およびアニメーションを従来よりも速く作成します。
-- **人工知能**-冗長で面倒なタスクを削除して、240の場合、または GPU でアクセラレーション用のコアを使用して負荷の高い処理を行います。
-- **高度なグラフィックスと計算技術**-最も複雑なグラフィックスで優れた速度と対話性を実現し、GDDR6 メモリの 1920 Cuda コアと6GB を使って作業負荷を計算します。
+- **レイトレース** -ハードウェアアクセラレーションを使って、より魅力的なレンダリング、デザイン、およびアニメーションを従来よりも速く作成します。
+- **人工知能** -冗長で面倒なタスクを削除して、240の場合、または GPU でアクセラレーション用のコアを使用して負荷の高い処理を行います。
+- **高度なグラフィックスと計算技術** -最も複雑なグラフィックスで優れた速度と対話性を実現し、GDDR6 メモリの 1920 Cuda コアと6GB を使って作業負荷を計算します。
 
 ## エンタープライズグレードソリューション
 
@@ -83,10 +83,10 @@ Surface Book 3 と Quadro RTX 3000 を使用すると、あらゆる Surface の
 | 単精度浮動小数点数のパフォーマンス (TFLOPS、ピーク) | 5.4             |
 | 実績 (最大)                            | 42.9            |
 | NVIDIA FXAA/TX AA アンチエイリアシング                             | あり             |
-| ビデオの GPU ダイレクト                                       | ○             |
-| Vulkan サポート                                             | ○             |
-| NVIDIA 3D ビジョン Pro                                       | ○             |
-| NVIDIA のお客様                                             | ○             |
+| ビデオの GPU ダイレクト                                       | あり             |
+| Vulkan サポート                                             | あり             |
+| NVIDIA 3D ビジョン Pro                                       | あり             |
+| NVIDIA のお客様                                             | あり             |
 
  
 ## ISV テスト & アプリのアクセラレータ
@@ -105,7 +105,7 @@ Surface Book 3 と Quadro RTX 3000 を使用すると、あらゆる Surface の
 | **アドビ物質 Alchemist**                       | -RTX-加速化された AI を使って、簡単に素材を作成して、合成します。                                                                                                                                                                                                                                                                                                                                                                                                                    |
 | **Adobe 物質の塗装塗装**                         | **アドビシステムズ社では、Quadro RTX 3000 を使用して Surface Book 3 用にテストおよび承認されています。**<br><br>-RTX アクセラレーション bakers を搭載した3d モデルや、対話型およびバッチレンダリングワークフロー用の写実的な画像を生成する Iray RTX のレンダリングを使用した素材。                                                                                                                                                                                                                            |
 | **Adobe 物質設計者**                        | -RTX アクセラレーション bakers を備えた手続き教材を作成します。<br><br>-テクスチャ、物質、ビットマップテクスチャエクスポートなど、MDL と互換性のあるすべての Iray でレンダリングするための NVIDIA Iray レンダリングを使います。<br><br>-DXR-アクセラレータ光とアンビエントオクルージョンのパン。                                                                                                                                                                                                              |
-| **ANSYS**<br>**ライブ探索**                     | -ANSYS リアルタイムエンジニアリングシミュレーションツール (ANSYS Discovery Live) が CUDA で構築されています。                                                                                                                                                                                                                                                                                                                                                                                                      |
+| **ANSYS**                     | **ANSYS-Quadro RTX 3000 で Surface Book 3 のテストと承認が済んでいる**<br><br>-ANSYS のリアルタイムエンジニアリングシミュレーションツールを CUDA で構築します。                                                                                                                                                                                                                                                                                                                                                                                           |
 | **Autodesk**<br>**Revit**                           | **Quadro RTX 3000 を使用して Surface Book 3 の自動デスクテストと承認済み**<br><br>-GPU 対応のビューポートがスムーズになり、対話型のデザインエクスペリエンスが向上しました。<br><br>-サードパーティの GPU アクセラレータ3D レンダラー (V-レイ、Enscape など) をサポートしています。                                                                                                                                                                                                                                        |
 | **Autodesk**<br>**AutoCad**                         | **Quadro RTX 3000 を使用して Surface Book 3 の自動デスクテストと承認済み**<br><br>-高速対話型の3D モデリングと設計用の GPU アクセラレータのビューポートグラフィックス。<br><br>-RTX-加速レイトレースと AI denoising (既定の Arnold レンダラー)<br><br>-Surface Book 2 15 と比べて、70% を超える速度。                                                                                                                                                        |
 | **Autodesk**<br>**マヤ**                            | **Quadro RTX 3000 を使用して Surface Book 3 の自動デスクテストと承認済み**<br><br>-RTX-加速レイトレースと AI denoising (既定の Arnold レンダラー)<br><br>-OpenGL ビューポートアクセラレータ。                                                                                                                                                                                                                                                                                  |
@@ -116,7 +116,7 @@ Surface Book 3 と Quadro RTX 3000 を使用すると、あらゆる Surface の
 | **Esri ArcGIS**                                     | -DL inferencing が、「」や「コア」を活用して、数日と数週間の時間をかけて、リアルタイムの結果を得ることができます。                                                                                                                                                                                                                                                                                                                                                                                        |
 | **Luxion KeyShot**                                  | -Solidworks、Creo、および Rhino によって使用されるサードパーティの対話型レイトレーサー。 RT コアによって加速され、OptiX™ AI アクセラレータ denoising。                                                                                                                                                                                                                                                                                                                                                        |
 | **McNeel & の関連付け**<br>**Rhino 3D**             | **Rhino-Quadro RTX 3000 で Surface Book 3 のテストと承認が済んでいる**<br><br>-スムーズでインタラクティブなモデリングとデザインエクスペリエンスのための GPU アクセラレータのビューポート。<br><br>-GPU アクセラレーション3D レンダリングのサイクルをサポートしています。                                                                                                                                                                                                                                                         |
-| **PTC Creo**                                        | -Creo のリアルタイムエンジニアリングシミュレーションツール (Creo シミュレーションライブ) は、CUDA で構築されています。<br><br>-Surface Book 2 15 と比較して、15% を超える速度が実行されています。                                                                                                                                                                                        |
+| **PTC Creo**                                        |**Quadro RTX 3000 で Surface Book 3 に対して、PTC でテストされ承認されているもの**<br><br> -Creo のリアルタイムエンジニアリングシミュレーションツール (Creo シミュレーションライブ) は、CUDA で構築されています。<br><br>-Surface Book 2 15 と比較して、15% を超える速度が実行されています。                                                                                                                                                                                        |
 | **Siemens SolidEdge 2020**                                        |  **Siemens-Quadro RTX 3000 で Surface Book 3 のテストと承認が済んでいる**                                                                                                                                                                                 |
 | **Siemens NX**                                      | -Siemens NX 対話型レイトレーサー (レイトレース Studio) は、RT コアによって高速化されます。<br><br>-Surface Book 2 15 と比較して、10倍以上の速度で動作します。                                                                                                                                                                                                                                                                                                                                    |
 
