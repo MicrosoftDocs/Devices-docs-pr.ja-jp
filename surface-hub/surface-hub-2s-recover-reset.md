@@ -11,12 +11,12 @@ audience: Admin
 ms.topic: article
 ms.date: 12/05/2019
 ms.localizationpriority: Medium
-ms.openlocfilehash: 7d79fab22b62e6ef29832be6241c484e9caf72e0
-ms.sourcegitcommit: 537fa38bdd21fcd679af0764e734f4b8efb6a03f
+ms.openlocfilehash: e3b1e380f9776fc56e99b8d4e35f708aa952759c
+ms.sourcegitcommit: e075b46f14b730464d66246b0280ef2cfa16b3fe
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "10959949"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "10963585"
 ---
 # Surface Hub 2S のリセットと回復
 
@@ -60,9 +60,9 @@ Surface Hub 2S を使って、回復イメージを使用してデバイスを�
 
 1. デバイスをオフにします。
 
-   1. 音量を上げるボタンを押しながら、電源ボタンを押します。
+   1. [音量を下げる] ボタンを押しながら、電源ボタンを押します。
    1. Windows ロゴが表示されるまで、両方のボタンを押し続けます。
-   1. 電源ボタンを放しますが、インストール UI が開始されるまでは [音量を上げる] ボタンを押し続けます。
+   1. 電源ボタンを放しますが、インストール UI が開始されるまでは [音量を下げる] ボタンを押したままにします。
 
    ![* ボリュームダウンと電源ボタンを使用して回復 * を開始 *](images/sh2-keypad.png) <br>
    **図 2.  ボリュームと電源ボタン**
