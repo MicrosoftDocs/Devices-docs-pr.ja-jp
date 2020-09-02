@@ -14,19 +14,19 @@ metadata:
   author: greg-lindsay
   ms.author: greglin
   manager: laurawi
-  ms.openlocfilehash: a90db8580a7dba5adab63636ce2a0a238aae65b2
-  ms.sourcegitcommit: 3b18d846bb68149c45b13d9ff122e993440b1f9e
+  ms.openlocfilehash: 16e4f74623e3dfdcd2aafd43a80950612f0029c7
+  ms.sourcegitcommit: 6618e8fe05628aa8b17654584657eff0f784dbfd
   ms.translationtype: HT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 08/06/2020
-  ms.locfileid: "10917505"
+  ms.lasthandoff: 09/01/2020
+  ms.locfileid: "10986319"
 landingContent:
 - title: Surface Hub 2S に向けた準備
   linkLists:
   - linkListType: whats-new
     links:
-    - text: パブリックプレビュー用にリリースされた新しい Surface Hub OS の更新プログラム
-      url: https://techcommunity.microsoft.com/t5/surface-it-pro-blog/new-surface-hub-os-update-released-for-public-preview/ba-p/1534823
+    - text: Surface Hub 2 の Windows 10 Pro または Enterprise に移行する
+      url: surface-hub-2s-migrate-os.md
     - text: Windows 10 Team 2020 更新プログラムプレビュービルドをインストールする
       url: surface-hub-install-2020preview.md
     - text: Surface Hub に新しい Microsoft Edge をインストールして構成する

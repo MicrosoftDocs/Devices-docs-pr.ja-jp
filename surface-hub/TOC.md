@@ -35,6 +35,8 @@
 ### [Surface Hub Teams アプリ](hub-teams-app.md)
 
 ## 管理
+### [Surface Hub 2 の Windows 10 Pro または Enterprise に移行する](surface-hub-2s-migrate-os.md)
+### [Windows 10 for Surface Hub 2 のインストール後の構成](surface-hub-2-post-install.md)
 ### [Windows 10 Team 2020 更新プログラムプレビュービルドをインストールする](surface-hub-install-2020preview.md)  
 ### [既知の問題 - Windows 10 Team 2020 更新プログラム](surface-hub-2020-team-update-known-issues.md)
 ### [Surface Hub に新しい Microsoft Edge をインストールして構成する](surface-hub-install-chromium-edge.md)        
