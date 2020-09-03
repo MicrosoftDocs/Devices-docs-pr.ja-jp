@@ -14,12 +14,12 @@ manager: laurawi
 ms.localizationpriority: medium
 audience: itpro
 ms.date: 09/01/2020
-ms.openlocfilehash: a6ea1742ab767a99e7b4868e56d081bf0016785b
-ms.sourcegitcommit: 6618e8fe05628aa8b17654584657eff0f784dbfd
+ms.openlocfilehash: 239b5e4659ff48e6c0fd9d2fca03341eadb9a27d
+ms.sourcegitcommit: 78694f3958117a339a28d3a5854908181f1b65d7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/01/2020
-ms.locfileid: "10986329"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "10993667"
 ---
 # Microsoft Surface Enterprise 管理モード
 
@@ -209,10 +209,10 @@ $TestUefiV2 | Export-PfxCertificate -Password $pw -FilePath "Demo Certificate\Te
 1.  スクリプトを保存する C: ドライブにフォルダーを作成します。たとえば、C:\SEMM.
 2.  このサンプルスクリプトをメモ帳または同等のテキストエディターにコピーして、ファイルを PowerShell スクリプト (ps1) として保存します。
 3.  管理者の資格情報を使って PC にサインインし、管理者特権の PowerShell セッションを開きます。
-4.  スクリプトの実行を許可するようにアクセス許可が設定されていることを確認します。 既定では、実行ポリシーを変更しない限り、スクリプトは実行されません。 詳細については、「実行ポリシーについて」を参照してください。
+4.  スクリプトの実行を許可するようにアクセス許可が設定されていることを確認します。 既定では、実行ポリシーを変更しない限り、スクリプトは実行されません。 詳細については、「 [実行ポリシーについ](https://docs.microsoft.com/powershell/module/microsoft.powershell.core/about/about_execution_policies)て」を参照してください。
 5.  コマンドプロンプトで、スクリプトの完全なパスを入力し、Enter キーを押します。 このスクリプトでは、TempOwner というデモ証明書を作成します。
 
-または、PowerShell を使用して、独自の自己署名証明書を作成することもできます。 詳細については、次の PowerShell ドキュメントを参照してください。 [新-SelfSignedCertificate] (https://docs.microsoft.com/powershell/module/pkiclient/new-selfsignedcertificate)
+または、PowerShell を使用して、独自の自己署名証明書を作成することもできます。 詳細については、次の PowerShell ドキュメントを参照してください。 [新しい-SelfSignedCertificate](https://docs.microsoft.com/powershell/module/pkiclient/new-selfsignedcertificate)。
 
 
 
