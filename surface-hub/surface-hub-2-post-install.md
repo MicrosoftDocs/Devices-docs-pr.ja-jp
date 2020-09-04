@@ -1,6 +1,6 @@
 ---
-title: Windows 10 Surface Hub 2 インストール後構成
-description: Windows 10 Surface Hub 2 インストール後構成
+title: Windows 10 Pro または Enterprise on Surface Hub 2 を構成する
+description: この記事では、カスタマイズされた大型スクリーンタッチとペンコンピューターを使用する際の最適なエクスペリエンスを実現するための推奨事項について説明します。
 keywords: Surface Hub、Windows 10、デスクトップ、インストール、構成
 ms.prod: surface-hub
 ms.mktglfcycl: deploy
@@ -13,14 +13,14 @@ ms.audience: itpro
 author: greg-lindsay
 ms.collection: M365-modern-desktop
 ms.topic: article
-ms.openlocfilehash: d6a1cdb2cac01b48c80e0fa4b7ccb6d3bcdb76ac
-ms.sourcegitcommit: 6618e8fe05628aa8b17654584657eff0f784dbfd
+ms.openlocfilehash: 47852284c35d213b81dd7b87ca875b400d8c713f
+ms.sourcegitcommit: c74835239cf4e304af59465fb6fc785de4a0c5cc
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/01/2020
-ms.locfileid: "10986590"
+ms.lasthandoff: 09/03/2020
+ms.locfileid: "10994593"
 ---
-# Windows 10 Surface Hub 2 インストール後構成
+# Windows 10 Pro または Enterprise on Surface Hub 2 を構成する
 
 **適用対象: Surface Hub 2S** 
 
@@ -135,14 +135,20 @@ Windows 10 Enterprise を実行する Surface Hub 2S では、すべての Win32
 Windows-L キーボードショートカットと同様のタッチスクリーンロックを有効にするアイコンをタスクバーに追加するには、次の操作を行います。 
 
 1.  デスクトップ上でタップして長押しするか、右クリックし、[**新しい**  >  **ショートカット**を  >  **開く**] の横にある [  >  **Desktop**  >  **OK]** を選択し  >  **Next**ます。
-2.  [ **マイコンピューターのロック**] などのショートカットの名前を入力し、[ **完了**] を選択します。
-3.  デスクトップで新しく作成したショートカットを右クリックするかタップしたままにして、[ **プロパティ**] を選択します。 [ **ショートカット** ] タブの [ **ターゲット** ] フィールドに、次のように入力します: **Rundll32.exe User32.dll、lockworkstation**
-4.  [ **アイコンの変更** ] ボタンを選択し、[ **C:\Windows\System32\imageres.dll** を参照して、使用するアイコンを選択します。 
-5. 次に例を示します。
+
+1.  [ **マイコンピューターのロック**] などのショートカットの名前を入力し、[ **完了**] を選択します。
+
+1.  デスクトップで新しく作成したショートカットを右クリックするかタップしたままにして、[ **プロパティ**] を選択します。 [ **ショートカット** ] タブの [ **ターゲット** ] フィールドに、次のように入力します: **Rundll32.exe User32.dll、lockworkstation**
+
+1.  [ **アイコンの変更** ] ボタンを選択し、[ **C:\Windows\System32\imageres.dll** を参照して、使用するアイコンを選択します。 
+
+    次に例を示します。
 
     ![アイコンを選ぶ](images/lock.png)
-6.  [ **OK]** を選択してショートカットを保存します。
-7.  ショートカットを右クリックするか、またはタップして押し続け、[ **タスクバーにピン留め**] を選択します。
+    
+1.  [ **OK]** を選択してショートカットを保存します。
+
+1.  ショートカットを右クリックするか、またはタップして押し続け、[ **タスクバーにピン留め**] を選択します。
 
 ## アプリケーション
 
@@ -158,7 +164,9 @@ Windows-L キーボードショートカットと同様のタッチスクリー�
 
 Microsoft ホワイトボードをインストールするには:
 
-1. タスクバーの右下にある **Windows Ink ワークスペース** アイコンの ![ インクワークスペースを選択して、 ](images/ink.png) **ホワイトボード**をダウンロードします。
+ - タスクバーの右下にある **Windows Ink ワークスペース** のアイコンを選択して、 **ホワイトボード**をダウンロードします。
+ 
+   ![インクワークスペース](images/ink.png) 
 
 または、Microsoft Store からホワイトボードをインストールすることもできます。
 
@@ -275,9 +283,9 @@ Surface Hub 2 にはローカルストレージ用に 128GB SSD が搭載され�
 
 1. **ソフトウェアセンター**を検索して開きます。
 2. ナビゲーションウィンドウで [ **オプション** ] を選択します。
-3. [ **Power management** ] セクションを展開し、[ **このコンピューターに IT 部門の電源設定を適用しない**] チェックボックスをオンにします。
+3. [ **Power management** ] セクションを展開し、[ **このコンピューターに IT 部門の power settings を適用しない**] を選択します。
 
-  ![ソフトウェアの設定](images/soft-cntr.png)
+   ![ソフトウェアの設定](images/soft-cntr.png)
 
 ### サウンド設定
 
@@ -327,4 +335,4 @@ Surface Hub 2 にはローカルストレージ用に 128GB SSD が搭載され�
 
 ## 関連トピック
 
-[Surface Hub 2 で Windows 10 Pro または Enterprise に移行する](surface-hub-2s-migrate-os.md)
+[Surface Hub 2 の Windows 10 Pro または Enterprise に移行する](surface-hub-2s-migrate-os.md)
