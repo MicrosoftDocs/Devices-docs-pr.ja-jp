@@ -1,5 +1,5 @@
 ---
-title: Surface Hub での新しい Microsoft Edge のインストールと構成
+title: Surface Hub に新しい Microsoft Edge をインストールして構成する
 description: Surface Hub の新しい Microsoft Edge をインストールして構成します。
 keywords: コンマで値を区切る
 ms.prod: surface-hub
@@ -9,48 +9,45 @@ ms.author: greglin
 manager: laurawi
 audience: Admin
 ms.topic: article
-ms.date: 07/22/2020
+ms.date: 09/10/2020
 ms.localizationpriority: Medium
-ms.openlocfilehash: cf4d909a8c06bddf2bb0b3e42259f0b69cd97109
-ms.sourcegitcommit: df1e178b724966e4cf8ff219c5e937e6c31cd9b4
+ms.openlocfilehash: fe5f76034b5b8ae4801a8fb403d6db0ed423c144
+ms.sourcegitcommit: 75940bb1ab4e08c96736923859c7dd673dcf8d79
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "10894103"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "11009615"
 ---
-# Surface Hub での新しい Microsoft Edge のインストールと構成
+# Surface Hub に新しい Microsoft Edge をインストールして構成する
 
 Windows 10 Team 2020 Update では、Surface Hub の推奨ブラウザーとして、Chromium (バージョン85以降) に基づく新しい Microsoft Edge がサポートされています。 プロビジョニングパッケージを使用して Microsoft Edge を手動でインストールするか、Microsoft Intune またはお好みのモバイルデバイス管理 (MDM) プロバイダーを使用してリモートでインストールすることができます。
 
- 既定では、Surface Hub デバイスは Microsoft Edge Legacy (バージョン 44) にプレインストールされています。
-
-> [!IMPORTANT]
-> Surface[Hub には](https://docs.microsoft.com/deployedge/microsoft-edge-channels)、最新の Microsoft edge のバージョン85以降が必要です。これは、IT 管理者が今後のエッジ機能をいち早く確認し、次のベータリリースの準備を行うことができるように設計されています。  Dev channel のサポートは、Windows Insider に対して一時的に有効になり、Microsoft Edge がプレビューされます。 (通常、Surface Hub は、"安定したチャネル" にリリースされたバージョンのみをサポートしています)。詳細については、「 [Microsoft Edge チャネルの概要](https://docs.microsoft.com/deployedge/microsoft-edge-channels)」を参照してください。
+既定では、Surface Hub デバイスは Microsoft Edge Legacy (バージョン 44) にプレインストールされています。
  
-### Microsoft Edge Dev Channel ビルドをインストールする 
+既に Edge Dev をインストールしている場合は、次の手順を実行します。
 
-- 設計上、Microsoft edge Dev channel は Microsoft Edge Legacy と並行してインストールされます。ユーザーには、Surface Hub の [スタート] メニューに "Microsoft Edge Dev" (バージョン 85) と "Microsoft Edge" (バージョン 44) の両方が表示されます。 これに対して、Microsoft Edge の厩舎チャネルでは、Microsoft Edge Legacy は既定のブラウザーとして置き換えられます。
-- インストールされると、Microsoft Edge Dev channel は、固定されたアプリとして自動的には表示されません。 開くには、[すべてのアプリを**開始**] を選び  >  **All Apps**ます。 これに対して、Microsoft Edge の厩舎チャネルは、Microsoft Edge Legacy を [すべてのアプリ] の一覧に固定されたアプリとして自動的に置き換えます。
-- バージョン85が安定したチャネルに昇格されると、Microsoft Edge Dev チャンネルは [スタート] メニューから自動的に非表示になり、Microsoft Edge の安定したチャネルを Surface Hub にインストールする必要があります。
+1. 使用しているバージョンがわからない場合、または確認したい場合は、Edge ブラウザーを開いて edge://version にアクセスしてください。
+2. 「 **デバイス管理 > Surface Hub**に移動します。 [**プロビジョニングパッケージ**] で、[**プロビジョニングパッケージの追加または削除**] を選択します。
+3. 以前のインストーラーを使って Microsoft Edge Dev を [スタート] メニューにピン留めしている場合は、一覧から [ **カスタムのスタートメニュー]** をクリックし、[削除] をクリックし **ます。**
+4. カスタムの開始レイアウトポリシーを使っている場合は、「 [Surface Hub のスタートメニューで Microsoft edge を表示](#display-microsoft-edge-in-the-surface-hub-start-menu)する」のセクションで説明されているように、最新の Edge パスを使用してアプリを変更する必要があります。
+5. これで、MicrosoftEdgeDevUninstaller をプロビジョニングすることができます。
+6. **すべてのアプリ**から Edge Dev が削除されたら、最初に "MicrosoftEdgeDevInstaller" を削除し、"MicrosoftEdgeDevUninstaller" を削除します。
+7. これにより、Microsoft Edge Dev が正常にアンインストールされます。 これで標準バージョンをインストールできるようになりました。
 
-> [!NOTE]
->  新しい Microsoft Edge を削除するには、デバイスのリセットが必要です。 詳細について[は、「Surface Hub をリセットまたは復元](https://docs.microsoft.com/surface-hub/device-reset-surface-hub)する」を参照してください。
-
+ 
+ 
 ## Microsoft Edge をインストールする
 
 ### プロビジョニングパッケージを使用して Microsoft Edge をインストールする
 
-1. PC から、 [Microsoft Edge provisioning パッケージ](https://aka.ms/HubEdge)(MicrosoftEdgeDevInstaller kg) を USB ドライブのルートフォルダーにダウンロードします。
+1. PC から、 [Microsoft Edge provisioning パッケージ](https://aka.ms/HubEdge) (MicrosoftEdgeDevInstaller kg) を USB ドライブのルートフォルダーにダウンロードします。
 2. Surface Hub に USB ドライブを挿入します。
-3. Surface Hub から [**設定**] を開き、メッセージが表示されたら、管理者の資格情報を入力します。
+3. Surface Hub から [ **設定** ] を開き、メッセージが表示されたら、管理者の資格情報を入力します。
 4. **[Surface Hub]** > **[デバイス管理]** に移動します。 **[プロビジョニング パッケージ]** で、**[プロビジョニング パッケージを追加または削除する]** を選択します。
 5. **[パッケージの追加]** を選択します。
-6. Microsoft Edge プロビジョニングパッケージを選択し、[**追加**] を選択します。
+6. Microsoft Edge プロビジョニングパッケージを選択し、[ **追加**] を選択します。
 7. プロビジョニングパッケージで適用される変更の概要が表示されます。 **[はい、追加する]** を選びます。
 8. Microsoft Edge のインストールが完了するまで待ちます。 インストールが完了したら、Surface Hub の [スタート] メニューに移動して、新しい Microsoft Edge にアクセスします。              
-わかりました
-> [!IMPORTANT]
->  Surface Hub の [スタート] メニューには、インストール後、Microsoft Edge Dev channel がピンされたアプリとして自動的に表示されません。 代わりに、ユーザーは [すべてのアプリを**起動**する] で確認  >  **All Apps**できます。 既定の [スタート] メニューレイアウトを使用している場合は、microsoft [edge プロビジョニングパッケージ](https://aka.ms/HubEdge)の [スタート] メニューをインストールして、microsoft edge を固定されたアプリとして追加することができます。 詳細については、以下の「microsoft edge の[スタートメニューで Microsoft edge を表示](#display-start)する」を参照してください。
 
 > [!NOTE]
 > 使用可能な新しいバージョンの Microsoft Edge がある場合は、それが自動的に更新されます。
@@ -62,19 +59,19 @@ Windows 10 Team 2020 Update では、Surface Hub の推奨ブラウザーとし�
  
 
 1. Microsoft[から Microsoft Edge インストーラーをダウンロード](https://www.microsoft.com/edge/business/download)します。
-    - [Dev channel](https://docs.microsoft.com/deployedge/microsoft-edge-channels)から現在のバージョン **(バージョン 85)** を使用する
+    - 安定した [チャネル](https://docs.microsoft.com/deployedge/microsoft-edge-channels)から現在のバージョンを使用する **(バージョン 85)**
     - **Windows 64 ビット版**を選ぶ
 2. Microsoft [Edge インストーラーを、基幹業務アプリとして Microsoft Intune に追加](https://docs.microsoft.com/mem/intune/apps/lob-apps-windows)します。
-    - Microsoft edge 更新プログラムを使用して Microsoft Edge の自動更新を処理する場合は、必ず [アプリの**バージョンを無視**する] 設定を [**アプリ情報**] ウィンドウで構成してください。 この設定を **[はい]** に切り替えると、Surface Hub デバイスにインストールされているアプリのバージョンは、Microsoft Intune では強制されません。
+    - Microsoft edge 更新プログラムを使用して Microsoft Edge の自動更新を処理する場合は、必ず [アプリの **バージョンを無視** する] 設定を [ **アプリ情報** ] ウィンドウで構成してください。 この設定を **[はい]** に切り替えると、Surface Hub デバイスにインストールされているアプリのバージョンは、Microsoft Intune では強制されません。
 
  
 ### モバイルデバイス管理を使用して Microsoft Edge をインストールする
 
 1. Microsoft[から Microsoft Edge インストーラーをダウンロード](https://www.microsoft.com/edge/business/download)します。
-    - [Dev channel](https://docs.microsoft.com/deployedge/microsoft-edge-channels)から現在のバージョン **(バージョン 85)** を使用する
+    - 安定した [チャネル](https://docs.microsoft.com/deployedge/microsoft-edge-channels)から現在のバージョンを使用する **(バージョン 85)**
     - **Windows 64 ビット版**を選ぶ
 2. ローカルファイル共有 (\\server\share\MicrosoftEdgeEnterpriseX64.msi) など、ホストされている場所に Microsoft Edge installer をステージします。 Surface Hub デバイスは、ホストされている場所にアクセスするためのアクセス許可を持っている必要があります。
-3. MDM プロバイダーで[EnterpriseDesktopAppManagement 構成サービスプロバイダー (CSP)](https://docs.microsoft.com/windows/client-management/mdm/enterprisedesktopappmanagement-csp)を使用して Microsoft Edge をインストールします。
+3. MDM プロバイダーで [EnterpriseDesktopAppManagement 構成サービスプロバイダー (CSP)](https://docs.microsoft.com/windows/client-management/mdm/enterprisedesktopappmanagement-csp) を使用して Microsoft Edge をインストールします。
 
  
 
@@ -103,10 +100,12 @@ Microsoft Edge は、Surface Hub の最適化されたエクスペリエンス�
 | [ProActiveAuthEnabled](https://docs.microsoft.com/deployedge/microsoft-edge-policies#proactiveauthenabled)             | Microsoft Edge で、Microsoft サービスを使ってサインインしたユーザーを事前に認証できるようにします。 これにより、シングルサインオン (SSO) エクスペリエンスが簡素化されます。                                                                                                                         | 件                 |
 | [PromptForDownloadLocation](https://docs.microsoft.com/deployedge/microsoft-edge-policies#promptfordownloadlocation)   | ファイルを保存する場所をユーザーに確認するのではなく、[ダウンロード] フォルダーに自動的にファイルを保存します。 これにより、ブラウジング操作が簡単になります。                                                                                                                             | 0                 |
 
- 
-### Microsoft Edge ポリシーを構成する
+> [!IMPORTANT]
+> Windows 10 Team オペレーティングシステムでは、展開可能なプログレッシブ web アプリ (PWAs) は現在サポートされていません。  Microsoft Edge ポリシーの設定 [WebAppInstallForceList](https://docs.microsoft.com/deployedge/microsoft-edge-policies#webappinstallforcelist) は Surface Hub ではサポートされていないことにも注意してください。 
 
-Microsoft edge[ブラウザーのポリシー](https://docs.microsoft.com/deployedge/microsoft-edge-policies)を使って、microsoft edge でブラウザーの設定を構成します。 これらのポリシーは、次の方法で適用できます。
+### Microsoft Edge のポリシー設定を構成する
+
+Microsoft edge [ブラウザーのポリシー](https://docs.microsoft.com/deployedge/microsoft-edge-policies) を使って、microsoft edge でブラウザーの設定を構成します。 これらのポリシーは、次の方法で適用できます。
 
 - [Microsoft Intune](https://docs.microsoft.com/deployedge/configure-edge-with-intune)
 - [ADMX の取り込みをサポートしている、お好みのモバイルデバイス管理 (MDM) プロバイダー](https://docs.microsoft.com/deployedge/configure-edge-with-mdm)
@@ -115,18 +114,17 @@ Microsoft edge[ブラウザーのポリシー](https://docs.microsoft.com/deploy
  
 ### Microsoft Edge の更新プログラムを構成する
 
-既定では、Microsoft Edge は自動的に更新されます。 Microsoft edge[更新ポリシー](https://docs.microsoft.com/deployedge/microsoft-edge-update-policies)を使って Microsoft Edge 更新プログラムの設定を構成します。
+既定では、Microsoft Edge は自動的に更新されます。 Microsoft edge [更新ポリシー](https://docs.microsoft.com/deployedge/microsoft-edge-update-policies) を使って Microsoft Edge 更新プログラムの設定を構成します。
 Surface Hub では、次の Microsoft Edge 更新ポリシーはサポートされていないことに注意してください。
 
 - **Allowsxs** – Surface Hub では、microsoft Edge の厩舎チャネルは常に Microsoft edge Legacy に置き換わるものです。
 - **Createdesktopshortcut** – Surface Hub では、デスクトップショートカットは使用されません。
 
 > [!NOTE]
->  Microsoft Edge の機能を利用するには、インターネットに接続する必要があります。 ファイアウォールとその他のセキュリティメカニズムを通じて通信するために[必要なドメイン url](https://docs.microsoft.com/deployedge/microsoft-edge-security-endpoints)が許可リストに追加されていることを確認します。
+>  Microsoft Edge の機能を利用するには、インターネットに接続する必要があります。 ファイアウォールとその他のセキュリティメカニズムを通じて通信するために [必要なドメイン url](https://docs.microsoft.com/deployedge/microsoft-edge-security-endpoints) が許可リストに追加されていることを確認します。
  
-### <a name="display-start"></a> Surface Hub のスタートメニューに Microsoft Edge を表示する
+### Surface Hub のスタートメニューに Microsoft Edge を表示する
 
-Surface Hub の [スタート] メニューには、インストール後、Microsoft Edge Dev channel がピンされたアプリとして自動的に表示されません。 代わりに、ユーザーは [すべてのアプリを**起動**する] で確認  >  **All Apps**できます。
 既定の [スタート] メニューレイアウトを使用している場合は、microsoft Edge プロビジョニングパッケージで [スタート] メニューをインストールして、Microsoft Edge を固定アプリとして追加することができます。
 カスタマイズされた [スタート] メニューレイアウトを適用する場合は、次の XML を使用して、Microsoft Edge 用にピン留めされたタイルを追加します。
 
@@ -134,7 +132,7 @@ Surface Hub の [スタート] メニューには、インストール後、Micr
 
 <start:DesktopApplicationTile
 
-DesktopApplicationLinkPath="C:\Program Files (x86)\Microsoft\Edge Dev\Application\msedge.exe"
+DesktopApplicationLinkPath="C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe"
 
 Size="2x2"
 

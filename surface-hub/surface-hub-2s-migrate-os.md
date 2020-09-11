@@ -1,7 +1,7 @@
 ---
 title: Surface Hub 2 の Windows 10 Pro または Enterprise に移行する
 description: この記事では、Surface Hub 2 上の Windows 10 Team から Windows 10 Pro または Windows 10 Enterprise に移行するプロセスについて説明します。
-keywords: コンマで値を区切る
+keywords: Surface Hub デスクトップ、Surface Hub
 ms.prod: surface-hub
 ms.sitesec: library
 author: greg-lindsay
@@ -9,14 +9,14 @@ ms.author: greglin
 manager: laurawi
 audience: Admin
 ms.topic: article
-ms.date: 09/08/2020
+ms.date: 09/09/2020
 ms.localizationpriority: Medium
-ms.openlocfilehash: e47ee735c0ba1cc0782c892b64d50f7e9d09f355
-ms.sourcegitcommit: d24759da42dfe0b913fd9ebf716407a673c2b818
+ms.openlocfilehash: 5431cb9c11fbcfadf0ef517164521c237fb6b3bb
+ms.sourcegitcommit: 75940bb1ab4e08c96736923859c7dd673dcf8d79
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "11004489"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "11009625"
 ---
 # Surface Hub 2 の Windows 10 Pro または Enterprise に移行する
 
@@ -232,7 +232,7 @@ UEFI 設定を適用する前に、構成ファイルの署名を確認するた
 
    ![[管理 & [USB からインストール] を選ぶ](images/shm-fig21.png)
    
-5. 次に示すように、[ **今すぐ再起動**] を選択します。 デバイスがシャットダウンされます。
+5. 次に示すように、[ **今すぐ再起動**] を選択します。 デバイスが再起動し、画面の中央に白い4乗のロゴが表示され、それが終了します。
 
    ![[今すぐ再起動] を選択する](images/shm-fig25.png)
    
@@ -245,7 +245,7 @@ UEFI 設定を適用する前に、構成ファイルの署名を確認するた
    > [!NOTE]
    > デバイスで SEMM のライセンス認証を行うと、新しい UEFI 設定 **EnableOSMigration** が適用されます。 Windows 10 チームにはアクセスできなくなり、次の手順に進み、Windows 10 Pro または Windows 10 Enterprise をインストールする必要があります。 
 
-8. デバイスが再起動し、画面中央に白い4乗が表示されたら、もう一度オフにします。
+8. デバイスが再起動され、画面中央に白い4乗のロゴが表示され、もう一度終了します。
 
 ### Windows 10 Pro または Enterprise をインストールする
 
@@ -253,7 +253,7 @@ UEFI 設定を適用する前に、構成ファイルの署名を確認するた
 
 2. デバイスが起動し、画面の中央に白い4乗が表示され、白い4乗のロゴの下にスピンした円が表示されます。
 
-3. デバイスが USB ドライブで自動的に起動しない場合は、デバイスの電源を切って (電源コードを外してもう一度接続します)、電源ボタンを押してから離し、白の4乗のロゴの下にスピンしている円が表示されるまで、[音量を下げる] ボタンを押したままにします。
+3. デバイスが USB ドライブで自動的に起動しない場合は、デバイスの電源を切ってください (電源コードを外して、もう一度接続します)。 電源コードをもう一度接続すると、デバイスは画面中央の白い4乗ロゴに数秒経ってから起動します。または、電源ボタンを押して離すと、デバイスの電源を入れ直すことができます。 画面の中央に4乗のロゴが表示されたらすぐに、[音量を下げる] ボタンを長押しして、白い4乗ロゴの下にスピンした円が表示されるまで待ちます。
  
    ![USB から Windows 10 への起動](images/shm-fig26.png)
    
