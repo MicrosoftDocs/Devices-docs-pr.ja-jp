@@ -9,14 +9,14 @@ ms.author: greglin
 manager: laurawi
 audience: Admin
 ms.topic: article
-ms.date: 06/20/2019
+ms.date: 09/11/2020
 ms.localizationpriority: Medium
-ms.openlocfilehash: 2da6daf2bb32e9209f33d5eb19d76221db28c0ed
-ms.sourcegitcommit: 109d1d7608ac4667564fa5369e8722e569b8ea36
+ms.openlocfilehash: a552434846c14a5f612b3743ea42819999aa8553
+ms.sourcegitcommit: ae0dae16e0b7bb9c906de78095634c3070a58c61
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2020
-ms.locfileid: "10836046"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "11013417"
 ---
 # Surface Hub 2S の新機能 (IT 管理者)
 
@@ -24,6 +24,7 @@ Surface Hub 2S は、デジタルホワイトボード、会議プラットフ�
 
 |**Capability**|**まとめ**|**詳細情報**|
 |:-------|:------|:----|
+|**Windows 10 Pro または Enterprise に移行する**| Surface Hub 2S は、Windows 10 チームでプレインストールされています。カスタマイズされた Windows 10 は、会議室環境での共同作業が容易になるように設計されています。 これで、Windows 10 Pro または Enterprise を実行して、他の PC と同様に Surface Hub の2S を使用できるようになりました。| [Surface Hub 2 での Windows 10 Pro と Enterprise の可用性のアナウンス](https://techcommunity.microsoft.com/t5/surface-it-pro-blog/announcing-the-availability-of-windows-10-pro-and-enterprise-on/ba-p/1624107) <br> <br> [Surface Hub 2 の Windows 10 Pro または Enterprise に移行する](surface-hub-2s-migrate-os.md) |
 |**モバイルデバイスの管理と UEFI の管理**| モバイルデバイス管理 (MDM) プロバイダーを使用して、設定とポリシーを管理します。 <br> <br> Surface Enterprise 管理モード (SEMM) との完全な統合により、ハードウェアコンポーネントとファームウェアを管理することができます。 | [Microsoft Intune で Surface Hub の2S を管理する](surface-hub-2s-manage-intune.md) <br> <br> [Surface エンタープライズ管理モード](https://docs.microsoft.com/surface/surface-enterprise-management-mode) |
 |**クラウドとオンプレミスの共存**| オンプレミス、ハイブリッド、またはオンラインでサポートされます。 | [Microsoft Surface Hub 2S 用の環境の準備](surface-hub-2s-prepare-environment.md) |
 |**リセットと回復**| クラウドまたは USB ドライブから復元します。 | [Surface Hub 2S の回復とリセット](surface-hub-2s-recover-reset.md) |
@@ -58,7 +59,7 @@ Surface Hub 2S の新機能の詳細については、以下を参照してく�
 |**ネットワーク**| Wi-fi (802.11 a/b/g/n/ac) <br> イーサネット 1 Gbps <br> Bluetooth 4.0 低エネルギー <br> Miracast を有効にする | Wi-fi (802.11 a/b/g/n/ac) <br> イーサネット 1 Gbps <br> Bluetooth 4.0 低エネルギー <br> Miracast を有効にする | Wi-fi 5 (IEEE 802.11 a/b/g/n/ac) <br> イーサネット 1 Gbps <br> Bluetooth ワイヤレス4.1 テクノロジ <br> Miracast ディスプレイ |
 |**ポート**| (1) USB 3.0 (下) + (1) USB 3.0 (サイドアクセス)  <br> (2) USB 2.0 <br> DisplayPort ビデオ出力 <br> 3.5 mm ステレオアウト <br> システムレベルのコントロール用の RJ11 コネクタ <br> <br> DisplayPort ビデオ入力 <br> HDMI ビデオ入力 <br> VGA ビデオ入力 <br> 3.5 mm ステレオ入力 <br> (1) USB 2.0 type B Touchback の出力 | (1) USB 3.0 (下) + (1) USB 3.0 (サイドアクセス) <br> (4) USB 2.0 <br> DisplayPort ビデオ出力 <br> 3.5 mm ステレオアウト <br> システムレベルのコントロール用の RJ11 コネクタ <br> <br> DisplayPort ビデオ入力 <br> HDMI ビデオ入力 <br> VGA ビデオ入力 <br> 3.5 mm ステレオ入力 <br> (1) USB 2.0 type B Touchback の出力 | (1) USB-A <br> ミニ DisplayPort ビデオ出力 <br> HDMI ビデオ入力 <br> DisplayPort 入力を含む USB-C <br> (4) USB-C (ディスプレイの場合) <br> RJ45 ギガビットイーサネット |
 |**センサー**| (2) パッシブ赤外線プレゼンスセンサー、環境光センサー | (2) パッシブ赤外線プレゼンスセンサー、環境光センサー | ドップラー占有センサー <br> 加速度計 <br> ジャイロスコープ  |
-|**NFC**| NFC リーダー | NFC リーダー | なし |
+|**NFC**| NFC リーダー | NFC リーダー | 該当せず |
 |**スピーカー**| (2) 正面向けステレオスピーカー | (2) 正面向けステレオスピーカー | フルレンジのフロントフェーシング3方向ステレオスピーカー |
 |**マイク**| 高パフォーマンスの4要素の配列 | 高パフォーマンスの4要素の配列 | フルバンド8要素 MEMS マイク配列 |
 |**カメラ**| (2) 幅広のアングル HD カメラ 1080p @ 30 fps | (2) 幅広のアングル HD カメラ 1080p @ 30 fps | (1) Microsoft Surface Hub 2 カメラ、4K、USB-C 接続、90度の水平方向のビュー                                                           |

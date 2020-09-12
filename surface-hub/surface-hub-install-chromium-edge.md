@@ -9,14 +9,14 @@ ms.author: greglin
 manager: laurawi
 audience: Admin
 ms.topic: article
-ms.date: 09/10/2020
+ms.date: 09/11/2020
 ms.localizationpriority: Medium
-ms.openlocfilehash: fe5f76034b5b8ae4801a8fb403d6db0ed423c144
-ms.sourcegitcommit: 75940bb1ab4e08c96736923859c7dd673dcf8d79
+ms.openlocfilehash: 6de949c7341f9d9bee60f808dab77770377acefc
+ms.sourcegitcommit: a64f5f375ebc0611e5735c63afd9540db0f807c4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "11009615"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "11013698"
 ---
 # Surface Hub に新しい Microsoft Edge をインストールして構成する
 
@@ -24,15 +24,16 @@ Windows 10 Team 2020 Update では、Surface Hub の推奨ブラウザーとし�
 
 既定では、Surface Hub デバイスは Microsoft Edge Legacy (バージョン 44) にプレインストールされています。
  
-既に Edge Dev をインストールしている場合は、次の手順を実行します。
-
-1. 使用しているバージョンがわからない場合、または確認したい場合は、Edge ブラウザーを開いて edge://version にアクセスしてください。
-2. 「 **デバイス管理 > Surface Hub**に移動します。 [**プロビジョニングパッケージ**] で、[**プロビジョニングパッケージの追加または削除**] を選択します。
-3. 以前のインストーラーを使って Microsoft Edge Dev を [スタート] メニューにピン留めしている場合は、一覧から [ **カスタムのスタートメニュー]** をクリックし、[削除] をクリックし **ます。**
-4. カスタムの開始レイアウトポリシーを使っている場合は、「 [Surface Hub のスタートメニューで Microsoft edge を表示](#display-microsoft-edge-in-the-surface-hub-start-menu)する」のセクションで説明されているように、最新の Edge パスを使用してアプリを変更する必要があります。
-5. これで、MicrosoftEdgeDevUninstaller をプロビジョニングすることができます。
-6. **すべてのアプリ**から Edge Dev が削除されたら、最初に "MicrosoftEdgeDevInstaller" を削除し、"MicrosoftEdgeDevUninstaller" を削除します。
-7. これにより、Microsoft Edge Dev が正常にアンインストールされます。 これで標準バージョンをインストールできるようになりました。
+> [!NOTE]
+> 既に Edge Dev をインストールしている場合は、次の手順を実行します。
+>
+>1. 使用しているバージョンがわからない場合、または確認したい場合は、Edge ブラウザーを開いて edge://version にアクセスしてください。
+>2. 「 **デバイス管理 > Surface Hub**に移動します。 [**プロビジョニングパッケージ**] で、[**プロビジョニングパッケージの追加または削除**] を選択します。
+>3. 以前のインストーラーを使って Microsoft Edge Dev を [スタート] メニューにピン留めしている場合は、一覧から [ **カスタムのスタートメニュー]** をクリックし、[削除] をクリックし **ます。**
+>4. カスタムの開始レイアウトポリシーを使っている場合は、「 [Surface Hub のスタートメニューで Microsoft edge を表示](#display-microsoft-edge-in-the-surface-hub-start-menu)する」のセクションで説明されているように、最新の Edge パスを使用してアプリを変更する必要があります。
+>5. これで、MicrosoftEdgeDevUninstaller をプロビジョニングすることができます。
+>6. **すべてのアプリ**から Edge Dev が削除されたら、最初に "MicrosoftEdgeDevInstaller" を削除し、"MicrosoftEdgeDevUninstaller" を削除します。
+>7. これにより、Microsoft Edge Dev が正常にアンインストールされます。 これで標準バージョンをインストールできるようになりました。
 
  
  
@@ -40,7 +41,7 @@ Windows 10 Team 2020 Update では、Surface Hub の推奨ブラウザーとし�
 
 ### プロビジョニングパッケージを使用して Microsoft Edge をインストールする
 
-1. PC から、 [Microsoft Edge provisioning パッケージ](https://aka.ms/HubEdge) (MicrosoftEdgeDevInstaller kg) を USB ドライブのルートフォルダーにダウンロードします。
+1. PC から、 [Microsoft Edge provisioning パッケージ](https://aka.ms/HubEdge) (MicrosoftEdgeInstaller kg) を USB ドライブのルートフォルダーにダウンロードします。
 2. Surface Hub に USB ドライブを挿入します。
 3. Surface Hub から [ **設定** ] を開き、メッセージが表示されたら、管理者の資格情報を入力します。
 4. **[Surface Hub]** > **[デバイス管理]** に移動します。 **[プロビジョニング パッケージ]** で、**[プロビジョニング パッケージを追加または削除する]** を選択します。

@@ -7,20 +7,26 @@ ms.sitesec: library
 author: dansimp
 ms.author: dansimp
 ms.topic: article
-ms.date: 06/20/2019
+ms.date: 09/11/2020
 ms.reviewer: ''
 manager: laurawi
 ms.localizationpriority: medium
-ms.openlocfilehash: 92a634e897d3e0c9163fe092aaf7992f625de991
-ms.sourcegitcommit: 109d1d7608ac4667564fa5369e8722e569b8ea36
+ms.openlocfilehash: cae09fa3a21fe497d021f38621085b639b15c4da
+ms.sourcegitcommit: ae0dae16e0b7bb9c906de78095634c3070a58c61
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2020
-ms.locfileid: "10835502"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "11013407"
 ---
 # オペレーティングシステムの基礎 (Surface Hub)
 
 Surface Hub のオペレーティング システムである Windows 10 Team は Windows 10 Enterprise をベースとしていて、エンタープライズ管理、セキュリティ、およびその他の機能の豊富なサポートを提供します。 しかし、これらの間には重要な違いがあります。 Enterprise エディションは、PC 向けに設計されていますが、Windows 10 Team は大画面および会議室での使用向けに新たに設計されています。 Surface Hub のセキュリティおよび管理の要件を評価する場合、新しいオペレーティング システムと見なすことをお勧めします。 この記事は、Surface Hub の Windows 10 Team と Windows 10 Enterprise の主な相違点と、その相違点が組織にどう影響を与えるかを示すことを目的としています。
+
+2020年9月以降、ユーザーは Surface Hub 2S で Windows 10 Pro または Enterprise に移行するオプションを利用できます。 詳しくは、次のトピックをご覧ください。
+
+- [Surface Hub 2 での Windows 10 Pro と Enterprise の可用性を発表](https://techcommunity.microsoft.com/t5/surface-it-pro-blog/announcing-the-availability-of-windows-10-pro-and-enterprise-on/ba-p/1624107)します。
+
+- [Surface Hub 2 の Windows 10 Pro または Enterprise に移行する](surface-hub-2s-migrate-os.md)
 
 ## ユーザー インターフェイス
 
@@ -132,7 +138,7 @@ Microsoft 管理コンソール、ファイル名を指定して実行、コマ�
 
 ### リモート管理および監視
 
-Surface Hub は、 [Microsoft Intune](https://docs.microsoft.com/intune/)などのモバイルデバイス管理 (MDM) ソリューションでのリモート管理をサポートしています。また、 [Azure モニター](https://azure.microsoft.com/services/monitor/)での監視もサポートされています。 
+Surface Hub は、 [Microsoft Intune](https://docs.microsoft.com/intune/) などのモバイルデバイス管理 (MDM) ソリューションでのリモート管理をサポートしています。また、 [Azure モニター](https://azure.microsoft.com/services/monitor/)での監視もサポートされています。 
 
 *これにより影響を受ける可能性のある組織ポリシー:* <br> Surface Hub では、System Center Operations Manager といった従来の多くの PC 管理および監視ツールで必要とされる Win32 エージェントのインストールがサポートされていません。
 
