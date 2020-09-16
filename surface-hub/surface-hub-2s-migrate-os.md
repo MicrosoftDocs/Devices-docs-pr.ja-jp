@@ -9,14 +9,14 @@ ms.author: greglin
 manager: laurawi
 audience: Admin
 ms.topic: article
-ms.date: 09/11/2020
+ms.date: 09/15/2020
 ms.localizationpriority: Medium
-ms.openlocfilehash: 44e7ca08ca4b8c077d430cba2a8cb4b674b68631
-ms.sourcegitcommit: ae0dae16e0b7bb9c906de78095634c3070a58c61
+ms.openlocfilehash: d36f42485107dd84be08c20291b36540662503da
+ms.sourcegitcommit: c2df79cab0e59e9d7ea6640e5899531b57cd383f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "11013437"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "11016456"
 ---
 # Surface Hub 2 の Windows 10 Pro または Enterprise に移行する
 
@@ -26,6 +26,11 @@ Surface Hub 2S は、Windows 10 チームでプレインストールされてい
 
 > [!IMPORTANT]
 >通常のアップグレードや移行とは異なり、このプロセスでは、このページの説明に従って、規範となる手順を実行する必要があります。 続行する前に、 [ソリューションのコンポーネント](#solution-components) と [移行とインストールのワークフロー](#migration-and-installation-workflow-summary) を確認します。
+
+
+> [!NOTE]
+> Windows 10 Pro または Enterprise をインストールする場合は、既存の Windows 10 チームライセンスとは別の新しいライセンスが必要です。 
+
 
 別個の PC とダウンロード可能なツールを使用して、Windows 10 チームから移行を開始します。 surface **UEFI コンフィギュレーター** --Surface Hub 2s に適用する新しい UEFI 設定を含むパッケージを作成します。  Surface Enterprise Management Mode (SEMM) へのインターフェイスとしての surface の構成機能。これは、企業環境の Surface デバイスでのファームウェア設定の一元管理を容易にするために設計されています。 SEMM の詳細については、「 [Microsoft Surface Enterprise 管理モードのドキュメント](https://docs.microsoft.com/surface/surface-enterprise-management-mode)」を参照してください。
  
@@ -93,7 +98,7 @@ Surface UEFI コンフィギュレーターを初めて使用する場合は、�
 
 - 中規模企業やその他のユーザーが、サードパーティプロバイダーから証明書を取得することを選択できます。 これは、十分な IT 専門知識または専任の IT セキュリティチームを持たない組織向けの推奨オプションです。
 
-- または、次のドキュメントに記載されている PowerShell スクリプトを使用して自己署名証明書を生成することもできます。 [Surface Enterprise 管理モードの証明書の要件](https://docs.microsoft.com/surface/surface-enterprise-management-mode#surface-enterprise-management-mode-certificate-requirements)。 または、PowerShell を使用して、次のドキュメントに従って独自の証明書を作成します。[新正書法 certificate](https://docs.microsoft.com/powershell/module/pkiclient/new-selfsignedcertificate?view=win10-ps)
+- または、次のドキュメントに記載されている PowerShell スクリプトを使用して自己署名証明書を生成することもできます。 [Surface Enterprise 管理モードの証明書の要件](https://docs.microsoft.com/surface/surface-enterprise-management-mode#surface-enterprise-management-mode-certificate-requirements)。 または、PowerShell を使用して、次のドキュメントに従って独自の証明書を作成します。[新正書法 certificate](https://docs.microsoft.com/powershell/module/pkiclient/new-selfsignedcertificate)
 
 UEFI 設定を適用する前に、構成ファイルの署名を確認するために、SEMM パッケージを証明書を使用して保護する必要があります。 詳細については、「 [Surface Enterprise 管理モード](https://docs.microsoft.com/surface/surface-enterprise-management-mode) のドキュメント」を参照してください。
  
@@ -274,3 +279,9 @@ Surface Hub をパーソナルの生産性デバイスとして完全に構成�
 
 デバイスを Windows 10 チームに復元する場合は、「 [Surface Hub 2s のリセットと回復](surface-hub-2s-recover-reset.md)」を参照してください。
 
+## バージョン履歴
+
+| バージョン | 日付               | 説明                                                                                           |
+| ------- | ------------------ | ----------------------------------------------------------------------------------------------------- |
+| 部. 1.1  | 2020年9月15日 | 「概要」で追加のメモを追加して、新しい OS をインストールするためのライセンス要件を明確にします。 |
+| 部. 1.0  | 2020年9月1日  | 新しい記事                                                                                           |
