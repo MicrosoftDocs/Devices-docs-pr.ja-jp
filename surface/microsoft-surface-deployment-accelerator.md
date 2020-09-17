@@ -15,12 +15,12 @@ ms.author: greglin
 ms.topic: article
 ms.audience: itpro
 ms.date: 5/08/2020
-ms.openlocfilehash: 0e136bd0a69db7a4c4e5cea7d2c065727dcc8fcc
-ms.sourcegitcommit: c2df79cab0e59e9d7ea6640e5899531b57cd383f
+ms.openlocfilehash: 3ede7311289dc4bc720735c0142ff3a46fbb69e7
+ms.sourcegitcommit: 582c5a79881c58c4f1aa66cfcab46db966ca9f24
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/16/2020
-ms.locfileid: "11016442"
+ms.locfileid: "11016558"
 ---
 # Microsoft Surface Deployment Accelerator
 
@@ -36,8 +36,11 @@ Microsoft Surface Deployment Accelerator (SDA) は、無料の Microsoft 展開�
 
 1. USB サムドライブのサイズが 16 GB 以上。 USB ドライブは、書式設定されます。
 2. Windows 10 Pro または Windows 10 Enterprise を含む .iso ファイル。 メディア作成ツールを使って、Windows 10 をダウンロードし、.iso ファイルを作成することができます。 詳細については、「 [Windows 10 をダウンロード](https://www.microsoft.com/software-download/windows10)する」を参照してください。
+3. インターネットアクセスが可能な Windows 10 バージョン2004以降を実行しているデバイス。
 
-## SDA を実行する方法
+要件の詳細については、README ドキュメントの「 [前提条件](https://github.com/microsoft/SurfaceDeploymentAccelerator/blob/master/README.md#prerequisites) 」を参照してください。
+
+## SDA の実行方法
 
 **SDA を実行するには:**
 
@@ -52,17 +55,20 @@ Microsoft Surface Deployment Accelerator (SDA) は、無料の Microsoft 展開�
     ```powershell
     Set-ExecutionPolicy -Scope Process -ExecutionPolicy Unrestricted -Force
     ```
-8. 環境のパラメーターを指定して SDA スクリプトを実行します。 たとえば、次のコマンドは、Windows 10 を Surface Hub 2 にインストールするために使用できる起動可能な USB ドライブを作成します。
+8. 環境のパラメーターを指定して SDA スクリプトを実行します。 このスクリプトを使って、さまざまな Surface デバイスに Windows 10 をインストールするためのイメージを作成することができます。 サポートされているデバイスの完全な一覧については、SDA の README 記事の [デバイスパラメーターの説明](https://github.com/microsoft/SurfaceDeploymentAccelerator/blob/master/README.md#full-parameter-documentation) を参照してください。 
+
+    たとえば、次のコマンドを実行すると、 [Surface Hub 2 に Windows 10 をインストール](https://docs.microsoft.com/surface-hub/surface-hub-2s-migrate-os)するために使用できる起動可能な USB ドライブが作成されます。
 
     ```powershell
     .\CreateSurfaceWindowsImage.ps1 -ISO C:\SDA\enterprise_client.iso -OSSKU Enterprise -DestinationFolder C:\Output -Device SurfaceHub2 -CreateUSB $True
     ```
+    サンプルスクリプトの出力を次に示します。
 
    ![Surface 展開アクセラレータツールの実行](images/sda1.png)
 
     スクリプトでは、実行に約45分の時間が必要ですが、使用可能な CPU とディスクリソースによっては、より長い時間がかかることがあります。 
 
-    Windows イメージを作成した後、スクリプトによって USB ドライブのドライブ文字を確認するように求められます。 USB ドライブの書式が設定され、起動可能として構成され、ファイルがコピーされて、Surface デバイス用のカスタム Windows 10 イメージのインストールが可能になります。
+    Windows イメージを作成した後、スクリプトによって USB ドライブのドライブ文字を挿入して確認するように求められます。 USB ドライブの書式が設定され、起動可能として構成され、ファイルがコピーされて、Surface デバイス用のカスタム Windows 10 イメージのインストールが可能になります。
 
 9. Windows 10 をインストールするデバイスに USB ドライブを挿入し、再起動して Windows 10 のインストールを開始します。 USB ブートは BIOS で有効にする必要があります。これには、セキュアブートを一時的に無効にする必要があります。
 
@@ -72,5 +78,4 @@ Microsoft Surface Deployment Accelerator (SDA) は、無料の Microsoft 展開�
 ## 関連リンク
 
  - [GitHub でリリースされたソースイメージ展開ツールを開く](https://techcommunity.microsoft.com/t5/surface-it-pro-blog/open-source-image-deployment-tool-released-on-github/ba-p/1314115)
-
  - [Windows ADK をダウンロードしてインストールする](https://docs.microsoft.com/windows-hardware/get-started/adk-install)
