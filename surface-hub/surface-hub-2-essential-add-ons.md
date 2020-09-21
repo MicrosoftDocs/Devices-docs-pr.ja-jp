@@ -12,15 +12,15 @@ manager: laurawi
 ms.audience: itpro
 author: greg-lindsay
 ms.author: greglin
-ms.date: 09/16/2020
+ms.date: 09/18/2020
 ms.collection: M365-modern-desktop
 ms.topic: article
-ms.openlocfilehash: d908c937c331e36f6b82f4c3c5ee213abf8a0176
-ms.sourcegitcommit: 2ac88d30b7d104d86b3bec657941457c916a116c
+ms.openlocfilehash: 24998848f16803585bc414d50e2099745943dcc7
+ms.sourcegitcommit: 13015036a3e5cb5909924d7e4289473a1572cf9d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "11027006"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "11030424"
 ---
 # Surface Hub 2 での Windows 10 Pro と Enterprise の重要なアドオン
 
@@ -54,6 +54,7 @@ Windows Hello を使ってサインインするための指紋リーダーの構
 | **システム要件**          | Windows 10 Pro、Windows 10 Enterprise。                                                                                               |
 | **Windows 認定**       | Windows 10                                                                                                                           |
 | **誤承諾率 (FAR)** | 1/1.5 百万。 これまでに、バイオメトリクスのセキュリティシステムが不正ユーザーによるアクセス試行を正しく受け入れない確率を示しています。 |
+| **偽の拒否率 (FRR)** | 4.9% FRR には、承認されたユーザーによるアクセス試行を不適切に拒否するための生体認証セキュリティシステムの確率が表示されます。 |
 
 
 > [!NOTE]
