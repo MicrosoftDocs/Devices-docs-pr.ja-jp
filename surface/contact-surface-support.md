@@ -19,12 +19,12 @@ ms.custom:
 - CSSTroubleshoot
 ms.reviewer: mablaik
 description: Microsoft Surface および Surface Hub 製品のサポート情報。
-ms.openlocfilehash: 52be75fdec27e1ccf4d68be36afab19c77db540a
-ms.sourcegitcommit: 16845b3289a035b4e6ab5e7536307ef66651db28
+ms.openlocfilehash: f423bdcc5bc4890861614e6213e9281b22925b42
+ms.sourcegitcommit: 13015036a3e5cb5909924d7e4289473a1572cf9d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/12/2020
-ms.locfileid: "10926299"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "11030414"
 ---
 # Surface Support
 
@@ -39,9 +39,9 @@ ms.locfileid: "10926299"
 > [!NOTE]
 > Microsoft アカウントまたは Azure Active Directory アカウントを使用して、オンライン申請ポータルにログインする必要があります。  
 
-ビジネス顧客の場合:[サービスリクエストを送信](https://support.microsoft.com/supportforbusiness/productselection?sapid=d383b26c-f150-6220-8f1b-e8aa325d9727)します。 
+ビジネス顧客の場合: [サービスリクエストを送信](https://support.microsoft.com/supportforbusiness/productselection)します。 
 
-Microsoft プレミアのお客様の場合: サービス[ハブでサービスリクエストを送信](https://serviceshub.microsoft.com/support/contactsupport)します。 
+Microsoft プレミアのお客様の場合: サービス [ハブでサービスリクエストを送信](https://serviceshub.microsoft.com/support/contactsupport)します。 
 
  
 ## [電話のサポート](#tab/phone)

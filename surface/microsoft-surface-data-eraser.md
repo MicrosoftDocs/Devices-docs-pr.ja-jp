@@ -14,13 +14,13 @@ author: coveminer
 ms.author: greglin
 ms.topic: article
 audience: itpro
-ms.date: 05/11/2020
-ms.openlocfilehash: da3624d5eb271e999334b4859cfb6123eeabfa46
-ms.sourcegitcommit: 109d1d7608ac4667564fa5369e8722e569b8ea36
+ms.date: 09/18/2020
+ms.openlocfilehash: dc1a9b4480f37af6d74699a2e693ef8d5318da76
+ms.sourcegitcommit: 8bd03770279d5e53446436781226ffd51eeec916
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2020
-ms.locfileid: "10834445"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "11029231"
 ---
 # Microsoft Surface Data Eraser
 
@@ -34,26 +34,13 @@ Surface デバイスからデータを安全に消去するうえで Microsoft S
 
 互換性のある Surface デバイスは次のとおりです。
 
-* Surface Book 3
-* Surface Go 2
-* Surface Pro 7
-* Surface Pro X
-* Surface Laptop 3
-* Surface Pro 6
-* Surface Laptop 2
-* Surface Go
-* Surface Book 2
-* Surface Pro LTE Advanced (モデル 1807)
-* Surface Pro (モデル 1796)
-* Surface Laptop
-* Surface Studio
-* Surface Studio 2
-* Surface Book
-* Surface Pro 4
-* Surface 3 LTE
-* Surface 3
-* Surface Pro 3
-* Surface Pro 2
+- Surface Book (すべてのエディション)
+- Surface Go (すべてのエディション)
+- Surface Pro X (すべてのエディション)
+- Surface のノート Pc (すべてのエディション)
+- Surface Studio (すべてのエディション)
+- Surface Pro 2 以降
+- Surface Hub 2 の Windows 10 Pro と Enterprise
 
 Microsoft Surface Data Eraser が役立つシナリオには次のようなものがあります。
 
@@ -171,6 +158,17 @@ Microsoft Surface Data Eraser USB スティックを作成したら、次の手�
 ## 変更と更新
 
 Microsoft Surface Data Eraser は、Microsoft によって定期的に更新されます。 新しい各バージョンで提供される変更について詳しくは、以下をご覧ください。
+
+### 3.33.139
+*リリース日: 2020 年9月9日*
+
+このバージョンの Surface データの消しゴムには、バグ修正が含まれており、次のサポートが追加されています。 
+
+- アーキテクチャの再設計により、新製品のリリースによる更新の必要性を軽減
+- 新しいツールの更新に使用できる通知
+- テレメトリの追加
+- Surface Hub 2 の Windows 10 Pro と Enterprise
+
 
 ### 3.30.139
 *リリース日: 2020 年 5 月 11 日*

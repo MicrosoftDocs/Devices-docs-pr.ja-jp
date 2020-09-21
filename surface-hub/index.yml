@@ -14,12 +14,12 @@ metadata:
   author: greg-lindsay
   ms.author: greglin
   manager: laurawi
-  ms.openlocfilehash: 97f710f427c6183cb34dadb07f6aa9f6637464ed
-  ms.sourcegitcommit: ae0dae16e0b7bb9c906de78095634c3070a58c61
+  ms.openlocfilehash: 610ce6cc1adaba8a3c583790bb72d6c675b40c18
+  ms.sourcegitcommit: 2ac88d30b7d104d86b3bec657941457c916a116c
   ms.translationtype: HT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 09/11/2020
-  ms.locfileid: "11013427"
+  ms.lasthandoff: 09/17/2020
+  ms.locfileid: "11026990"
 landingContent:
 - title: Surface Hub 2S に向けた準備
   linkLists:
@@ -35,6 +35,8 @@ landingContent:
       url: surface-hub-install-chromium-edge.md
     - text: Surface Hub の更新の履歴
       url: surface-hub-update-history.md
+    - text: Surface Hub 2 の Windows 10 Pro および Enterprise 用の必須アドオン
+      url: surface-hub-2-essential-add-ons.md
   - linkListType: video
     links:
     - text: 導入とトレーニング ビデオ
