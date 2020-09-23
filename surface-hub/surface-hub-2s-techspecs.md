@@ -9,16 +9,16 @@ manager: laurawi
 ms.author: greglin
 audience: Admin
 ms.topic: article
-ms.date: 11/19/2019
+ms.date: 09/22/2020
 ms.localizationpriority: Medium
-ms.openlocfilehash: 4cb01b3baa65292d611a45439d57820bd21f5fb7
-ms.sourcegitcommit: 109d1d7608ac4667564fa5369e8722e569b8ea36
+ms.openlocfilehash: c563a518cf1e30ce6e1aa95a4e71e748acdbf906
+ms.sourcegitcommit: 4f89d9af7bd0865828d097ed4a7863d8d396d41f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2020
-ms.locfileid: "10836085"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "11076385"
 ---
-# Surface Hub 2S の技術仕様
+# Surface Hub 2S 50 インチの技術仕様
 
 |**項目**|**詳細**|
 |:------ |:--------- |
