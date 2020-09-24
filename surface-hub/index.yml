@@ -14,17 +14,19 @@ metadata:
   author: greg-lindsay
   ms.author: greglin
   manager: laurawi
-  ms.openlocfilehash: 610ce6cc1adaba8a3c583790bb72d6c675b40c18
-  ms.sourcegitcommit: 2ac88d30b7d104d86b3bec657941457c916a116c
+  ms.openlocfilehash: 06dbfb75ad1acd544fd146da783ba3b6e6c846e1
+  ms.sourcegitcommit: 3d0f349d020c9f14f016fc29b6e645a7be0d60ee
   ms.translationtype: HT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 09/17/2020
-  ms.locfileid: "11026990"
+  ms.lasthandoff: 09/22/2020
+  ms.locfileid: "11068352"
 landingContent:
 - title: Surface Hub 2S に向けた準備
   linkLists:
   - linkListType: whats-new
     links:
+    - text: Surface Hub 2S 85 インチ
+      url: surface-hub-2s-85.md
     - text: Surface Hub 2 で Windows 10 Pro と Windows 10 Enterprise が提供されるようになりました。
       url: https://techcommunity.microsoft.com/t5/surface-it-pro-blog/announcing-the-availability-of-windows-10-pro-and-enterprise-on/ba-p/1624107
     - text: Surface Hub 2 の Windows 10 Pro または Enterprise に移行する
@@ -33,8 +35,6 @@ landingContent:
       url: surface-hub-install-2020preview.md
     - text: Surface Hub に新しい Microsoft Edge をインストールして構成する
       url: surface-hub-install-chromium-edge.md
-    - text: Surface Hub の更新の履歴
-      url: surface-hub-update-history.md
     - text: Surface Hub 2 の Windows 10 Pro および Enterprise 用の必須アドオン
       url: surface-hub-2-essential-add-ons.md
   - linkListType: video
@@ -43,8 +43,8 @@ landingContent:
       url: surface-hub-2s-adoption-videos.md
     - text: Teams での Surface Hub 2S
       url: https://www.youtube.com/watch?v=CH2seLS5Wb0
-    - text: Microsoft 365 での Surface Hub 2S
-      url: https://www.youtube.com/watch?v=I4N2lQX4WyI&list=PLXtHYVsvn_b__1Baibdu4elN4SoF3JTBZ&index=7
+    - text: Microsoft Surface Hub 2S IT プロ詳細情報
+      url: https://youtu.be/fFiL60JztGk
 - title: 使ってみる
   linkLists:
   - linkListType: get-started
@@ -93,6 +93,8 @@ landingContent:
       text: Surface Hub のサポート ソリューション
     - url: miracast-troubleshooting.md
       text: Surface Hub での Miracast のトラブルシューティング
+    - text: Surface Hub の更新の履歴
+      url: surface-hub-update-history.md
 - title: コミュニティ
   linkLists:
   - linkListType: learn

@@ -11,12 +11,12 @@ metadata:
   ms.author: greglin
   audience: itpro
   ms.localizationpriority: High
-  ms.openlocfilehash: 5cbfeee6dee7dcb921b5cbecaaeca7b4461073dc
-  ms.sourcegitcommit: c2df79cab0e59e9d7ea6640e5899531b57cd383f
+  ms.openlocfilehash: 6d3d6f4c3e9ed468f91cccf68ac3532afa3d2266
+  ms.sourcegitcommit: 3b1bc3682d0dee24149ec26cdc78d3148b8d7808
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 09/16/2020
-  ms.locfileid: "11016406"
+  ms.lasthandoff: 09/24/2020
+  ms.locfileid: "11077742"
 landingContent:
 - title: Surface デバイス
   linkLists:
@@ -38,6 +38,16 @@ landingContent:
       url: surface-book-quadro.md
     - text: Surface Dock 2 の新機能
       url: surface-dock-whats-new.md
+- title: Microsoft Ignite
+  linkLists:
+  - linkListType: video
+    links:
+    - text: Surface & 自動操縦によるゼロタッチ展開
+      url: https://youtu.be/WQ-wg8fRzN0
+    - text: リモートワールドでの ARM 上の Surface Pro X と Windows
+      url: https://youtu.be/bDw77ZQNPPw
+    - text: Surface Security – Microsoft からクラウドの先進エンドポイント保護へのチップ
+      url: https://youtu.be/uadAecDbqf4
 - title: Surface デバイスの展開
   linkLists:
   - linkListType: deploy
