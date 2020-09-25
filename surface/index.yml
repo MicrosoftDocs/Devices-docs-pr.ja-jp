@@ -12,12 +12,12 @@ metadata:
   ms.author: samanro
   ms.date: 07/03/2019
   localization_priority: Priority
-  ms.openlocfilehash: 52dbcea31c861adb664937bbda299004ed32ff29
-  ms.sourcegitcommit: 52b5fff937f730272d97a7ef79265f0dc99eb0f1
+  ms.openlocfilehash: bbfa7f64178dd46dbbaf370a9f014ec00b1cfd2e
+  ms.sourcegitcommit: 3766d1dd398d72e8478e5f08b6b208c6a8c25458
   ms.translationtype: HT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 09/18/2020
-  ms.locfileid: "11027509"
+  ms.lasthandoff: 09/24/2020
+  ms.locfileid: "11077880"
 highlightedContent:
   items:
   - title: Surface デバイスのドキュメント
@@ -91,7 +91,7 @@ conceptualContent:
       text: Surface サポートへのお問い合わせ
   - title: Surface Hub ヘルプ
     links:
-    - url: https://support.microsoft.com/supportforbusiness/productselection?sapId=bb7066fb-e329-c1c0-9c13-8e9949c6a64e
+    - url: https://support.serviceshub.microsoft.com/supportforbusiness/create?sapId=bb7066fb-e329-c1c0-9c13-8e9949c6a64e
       itemType: learn
       text: Surface Hub のサポートへのお問い合わせ
   - title: Surface Duo ヘルプ
