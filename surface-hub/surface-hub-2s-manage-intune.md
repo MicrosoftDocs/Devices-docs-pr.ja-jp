@@ -11,12 +11,12 @@ audience: Admin
 ms.topic: article
 ms.date: 07/23/2020
 ms.localizationpriority: Medium
-ms.openlocfilehash: 389db218d06f9f8d3f510e711b03487daf4e06f9
-ms.sourcegitcommit: ac34f0ec1a9df74ea688bf0da2a51fadf5139a41
+ms.openlocfilehash: a031fd7fd861e5d45194ec1a8c391621a2bcb71a
+ms.sourcegitcommit: 5fa5efefd510ce6f435d7142fb2f2cc08b520da9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "10934867"
+ms.lasthandoff: 09/25/2020
+ms.locfileid: "11078747"
 ---
 # Intune で Surface Hub 2S を管理する
 
@@ -26,10 +26,13 @@ IT 管理者は Surface Hub 2S で、モバイル デバイス管理 (MDM) プ�
 
 ### 手動登録
 
-1. Surface Hub 2S にローカル管理者としてサインインし、**設定**アプリを開きます。 **[Surface Hub]** > **[デバイス管理]** を選択し、**+** を選択して追加します。
-2. 認証後、デバイスは Intune に自動的に登録されます。
+1. Surface Hub 2S で **設定** アプリを開き、ローカル管理者としてサインインします。 **[Surface Hub]** > **[デバイス管理]** を選択し、**+** を選択して追加します。
+2. Intune に使用するアカウントでログインするように求められます。 認証後、デバイスは Intune に自動的に登録されます。
 
    ![Intune で Surface Hub 2S を登録する](images/sh2-set-intune1.png)<br>
+   
+> [!NOTE]
+> 認証に使用されるアカウントは Intune 登録アカウントであり、Intune のライセンスが必要です。
 
 ### 自動登録 — Azure Active Directory 連携
 

@@ -9,12 +9,12 @@ author: v-miegge
 ms.author: v-miegge
 ms.topic: article
 ms.localizationpriority: medium
-ms.openlocfilehash: 031a826a8868d9452e13bb1ffc6b43eeb287f181
-ms.sourcegitcommit: ac34f0ec1a9df74ea688bf0da2a51fadf5139a41
+ms.openlocfilehash: f608e18d04a0d6c48ad2990715b400c95b6d8c12
+ms.sourcegitcommit: 5fa5efefd510ce6f435d7142fb2f2cc08b520da9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "10934837"
+ms.lasthandoff: 09/25/2020
+ms.locfileid: "11078727"
 ---
 # Surface Hub の更新履歴
 
@@ -30,7 +30,20 @@ Windows 10 の更新内容の詳細については、このページで詳細を
 ## Windows 10 Team の作成者更新プログラム1703
 
 <details>
-<summary>2020年5月4時: Surface Hub 2S の更新プログラム</summary>
+<summary>2020年9月 1: Surface Hub 2S の更新</summary>
+
+この更新プログラムは Surface Hub 2S に固有のものであり、以下に示すドライバーとファームウェアの更新プログラムを提供しています。
+
+* Surface SMC ファームウェア更新-1.177.139.0
+  * フィールド修復シナリオを改善しました。
+* Surface SSD ファームウェア更新プログラム-5.14.139.0
+  * システムの安定性が向上します。
+* Surface Serial Hub ドライバー-9.40.139.0
+  * システムの安定性が向上します。
+</details>
+
+<details>
+<summary>2020年5月 4-Surface Hub 2S の更新プログラム</summary>
 
 この更新プログラムは Surface Hub 2S に固有のものであり、以下に示すドライバーとファームウェアの更新プログラムを提供しています。
 
@@ -47,7 +60,7 @@ Windows 10 の更新内容の詳細については、このページで詳細を
 </details>
 
 <details>
-<summary>2020年2月28日: Surface Hub 2S の更新プログラム</summary>
+<summary>2020年2月28日: Surface Hub 2S の更新</summary>
 
 この更新プログラムは Surface Hub 2S に固有のものであり、以下に示すドライバーとファームウェアの更新プログラムを提供しています。
 
@@ -62,7 +75,7 @@ Windows 10 の更新内容の詳細については、このページで詳細を
 </details>
 
 <details>
-<summary>2020年2月11日— KB4537765 * ベースのチーム用更新プログラム * (OS ビルド 15063.2284)</summary>
+<summary>2020年2月11日: KB4537765 * ベースのチーム向け更新プログラム * (OS ビルド 15063.2284)</summary>
 
 Surface Hub のこの更新プログラムには、品質の改善とセキュリティの修正が含まれています。 Surface Hub の主要な更新プログラムには、 [Windows 10 の更新履歴](https://support.microsoft.com/help/4018124/windows-10-update-history)でまだ記載されていません。次のようなものがあります。
 
@@ -74,7 +87,7 @@ Surface Hub のこの更新プログラムには、品質の改善とセキュ�
 </details>
 
 <details>
-<summary>2020年1月14日: KB4534296 に基づいてチームを更新する * (OS ビルド 15063.2254)</summary>
+<summary>2020年1月14日-KB4534296 * ベースのチーム向け更新プログラム * (OS ビルド 15063.2254)</summary>
 
 Surface Hub のこの更新プログラムには、品質の改善とセキュリティの修正が含まれています。 Surface Hub の主要な更新プログラムには、 [Windows 10 の更新履歴](https://support.microsoft.com/help/4018124/windows-10-update-history)でまだ記載されていません。次のようなものがあります。
 
@@ -85,7 +98,7 @@ Surface Hub のこの更新プログラムには、品質の改善とセキュ�
 </details>
 
 <details>
-<summary>2019年9月24日: KB4516059 * ベースのチーム用更新プログラム * (OS ビルド 15063.2078)</summary>
+<summary>2019年9月24日: KB4516059 * ベースのチーム向け更新プログラム * (OS ビルド 15063.2078)</summary>
 
 Surface Hub のこの更新プログラムには、品質の改善とセキュリティの修正が含まれています。 Surface Hub の主要な更新プログラムには、 [Windows 10 の更新履歴](https://support.microsoft.com/help/4018124/windows-10-update-history)でまだ記載されていません。次のようなものがあります。
 
@@ -101,7 +114,7 @@ Surface Hub のこの更新プログラムには、品質の改善とセキュ�
 </details>
 
 <details>
-<summary>2019年8月17日: KB4512474 * ベースのチーム用更新プログラム * (OS ビルド 15063.2021)</summary>
+<summary>2019年8月17日: KB4512474 * ベースのチーム向け更新プログラム * (OS ビルド 15063.2021)</summary>
 
 Surface Hub のこの更新プログラムには、品質の改善とセキュリティの修正が含まれています。 Surface Hub の主要な更新プログラムには、 [Windows 10 の更新履歴](https://support.microsoft.com/help/4018124/windows-10-update-history)でまだ記載されていません。次のようなものがあります。
 
@@ -113,7 +126,7 @@ Surface Hub のこの更新プログラムには、品質の改善とセキュ�
  </details>
 
 <details>
-<summary>2019年6月18日: KB4503289 * ベースのチーム用更新プログラム * (OS ビルド 15063.1897)</summary>
+<summary>2019年6月18日: KB4503289 に基づくチーム向け更新プログラム * (OS ビルド 15063.1897)</summary>
 
 Surface Hub のこの更新プログラムには、品質の改善とセキュリティの修正が含まれています。 Surface Hub の主要な更新プログラムには、 [Windows 10 の更新履歴](https://support.microsoft.com/help/4018124/windows-10-update-history)でまだ記載されていません。次のようなものがあります。
 
@@ -447,7 +460,7 @@ Surface Hub のこの更新プログラムには、品質の改善とセキュ�
 </details>
 
 <details>
-<summary>2016年11月4日: は KB3200970 * ベースの Windows 10 Team 記念日の更新プログラム * (OS ビルド 14393.447)</summary>
+<summary>2016年11月4日: は KB3200970 * ベースのチーム向け更新プログラム * (OS ビルド 14393.447)</summary>
 
 Surface Hub 用の Windows 10 チーム向け更新プログラム (バージョン 1607) の今回の更新プログラムには、品質の改善とセキュリティの修正が含まれています。 Surface Hub の主要な更新プログラムには、 [Windows 10 の更新履歴](https://support.microsoft.com/help/4018124/windows-10-update-history)でまだ記載されていません。次のようなものがあります。
 
@@ -516,7 +529,7 @@ Surface Hub のこの更新プログラムには、品質の改善とセキュ�
 ## Windows 10 バージョン1511の更新プログラム
 
 <details>
-<summary>2016年11月4日: KB3198586 * での Windows 10 チーム (バージョン 1511) の更新 (OS ビルド 10586.679)</summary>
+<summary>2016年11月4日: KB3198586 * ベースのチーム向け更新プログラム * (OS ビルド 10586.679)</summary>
 
 Windows 10 チーム (バージョン 1511) へのこの更新プログラムには、 [windows 10 の更新履歴](https://support.microsoft.com/help/4018124/windows-10-update-history)に記載されている品質向上とセキュリティ修正が含まれています。 この更新プログラムには Surface Hub 固有の項目はありません。
 
@@ -524,7 +537,7 @@ Windows 10 チーム (バージョン 1511) へのこの更新プログラムに
 </details>
 
 <details>
-<summary>2016年7月12日: KB3172985 * (OS ビルド 10586.494)</summary>
+<summary>2016年7月12日: KB3172985 に基づくチームの更新 * (OS ビルド 10586.494)</summary>
 
 この更新プログラムには、品質の改善とセキュリティの修正が含まれています。 この更新プログラムには、新しいオペレーティングシステム機能は導入されていません。 Surface Hub に固有の主な変更点 ( [Windows 10 更新履歴](https://support.microsoft.com/help/4018124/windows-10-update-history)にはまだ含まれていません) には、次のようなものがあります。
 
@@ -546,7 +559,7 @@ Windows 10 チーム (バージョン 1511) へのこの更新プログラムに
 </details>
 
 <details>
-<summary>2016年6月14日: KB3163018 * (OS ビルド 10586.420)</summary>
+<summary>2016年6月14日: KB3163018 に基づくチームの更新 * (OS ビルド 10586.420)</summary>
 
 Surface Hub のこの更新プログラムには、品質の改善とセキュリティの修正が含まれています。 この更新プログラムには、新しいオペレーティングシステム機能は導入されていません。 Surface Hub の主要な更新プログラムには、 [Windows 10 の更新履歴](https://support.microsoft.com/help/4018124/windows-10-update-history)でまだ記載されていません。次のようなものがあります。
 
@@ -556,7 +569,7 @@ Surface Hub のこの更新プログラムには、品質の改善とセキュ�
 </details>
 
 <details>
-<summary>2016年5月 10: KB3156421 * (OS ビルド 10586.318)</summary>
+<summary>2016年5月 10: KB3156421 に基づくチームの更新 * (OS ビルド 10586.318)</summary>
 
 Surface Hub のこの更新プログラムには、品質の改善とセキュリティの修正が含まれています。 この更新プログラムには、新しいオペレーティングシステム機能は導入されていません。 Surface Hub の主要な更新プログラムには、 [Windows 10 の更新履歴](https://support.microsoft.com/help/4018124/windows-10-update-history)でまだ記載されていません。次のようなものがあります。
 
@@ -567,7 +580,7 @@ Surface Hub のこの更新プログラムには、品質の改善とセキュ�
 </details>
 
 <details>
-<summary>2016年4月12日: KB3147458 * (OS ビルド 10586.218)</summary>
+<summary>2016年4月12日: KB3147458 * ベースのチーム向け更新プログラム * (OS ビルド 10586.218)</summary>
 
 Surface Hub のこの更新プログラムには、品質の改善とセキュリティの修正が含まれています。 この更新プログラムには、新しいオペレーティングシステム機能は導入されていません。 Surface Hub の主要な更新プログラムには、 [Windows 10 の更新履歴](https://support.microsoft.com/help/4018124/windows-10-update-history)でまだ記載されていません。次のようなものがあります。
 
