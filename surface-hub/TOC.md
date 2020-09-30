@@ -5,7 +5,7 @@
 ## 概要
 ### [Surface Hub 2S の新機能 (IT 管理者)](surface-hub-2s-whats-new.md)
 ### [Surface Hub 2S 50 インチの技術仕様](surface-hub-2s-techspecs.md) 
-### [Surface Hub 2S 85 インチ](surface-hub-2s-85.md)
+### [Surface Hub 2S 85 インチの技術仕様](surface-hub-2s-85.md)
 ### [オペレーティングシステムの基礎 (Surface Hub)](differences-between-surface-hub-and-windows-10-enterprise.md)
 ### [Surface Hub 2S の明るさ、音量、入力を調整する](surface-hub-2s-onscreen-display.md)
 ### [Surface Hub で Microsoft Whiteboard を使用する](https://support.office.com/article/use-microsoft-whiteboard-on-a-surface-hub-5c594985-129d-43f9-ace5-7dee96f7621d)
