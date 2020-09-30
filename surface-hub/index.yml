@@ -14,12 +14,12 @@ metadata:
   author: greg-lindsay
   ms.author: greglin
   manager: laurawi
-  ms.openlocfilehash: cf585626be4638539cc55ef78090dff706fbf755
-  ms.sourcegitcommit: 3766d1dd398d72e8478e5f08b6b208c6a8c25458
+  ms.openlocfilehash: 8fec6b0fdd34c196ba2e5cfcb229c16b8e340fe6
+  ms.sourcegitcommit: a71724a00e0e9626fa2e26c26fe3b30d8a99238a
   ms.translationtype: HT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 09/24/2020
-  ms.locfileid: "11077890"
+  ms.lasthandoff: 09/28/2020
+  ms.locfileid: "11080646"
 landingContent:
 - title: Surface Hub 2S に向けた準備
   linkLists:
@@ -27,7 +27,7 @@ landingContent:
     links:
     - text: Surface Hub 2S は、今日のハイブリッド ワークスペースにおけるデジタルと物理的な隔たりを埋めることができます。
       url: https://blogs.windows.com/devices/2020/09/22/surface-hub-2s-bridges-digital-and-physical-divide-in-todays-hybrid-workspaces/
-    - text: Surface Hub 2S 85 インチ
+    - text: Surface Hub 2S 85 インチの概要および技術仕様
       url: surface-hub-2s-85.md
     - text: Surface Hub 2 で Windows 10 Pro と Windows 10 Enterprise が提供されるようになりました。
       url: https://techcommunity.microsoft.com/t5/surface-it-pro-blog/announcing-the-availability-of-windows-10-pro-and-enterprise-on/ba-p/1624107

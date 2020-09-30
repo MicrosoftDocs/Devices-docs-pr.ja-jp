@@ -9,14 +9,14 @@ ms.author: greglin
 manager: laurawi
 audience: Admin
 ms.topic: article
-ms.date: 09/15/2020
+ms.date: 09/29/2020
 ms.localizationpriority: Medium
-ms.openlocfilehash: d36f42485107dd84be08c20291b36540662503da
-ms.sourcegitcommit: c2df79cab0e59e9d7ea6640e5899531b57cd383f
+ms.openlocfilehash: 0c6a52d1023377f51ae6a63879e54b86db16cb9a
+ms.sourcegitcommit: 35f64110ce8e0c0b019b02023d746f648f554c1c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/16/2020
-ms.locfileid: "11016456"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "11088631"
 ---
 # Surface Hub 2 の Windows 10 Pro または Enterprise に移行する
 
@@ -39,7 +39,7 @@ Surface Hub 2S は、Windows 10 チームでプレインストールされてい
 
 - Windows 10 Team オペレーティングシステムを実行している Surface Hub 2S デバイス
 - Windows 10 を実行している別のデバイス
-- Surface UEFI コンフィギュレーターツール
+- SEMM パッケージを作成するための Surface UEFI コンフィギュレーターツール
 - Windows 10 Pro または Enterprise OS イメージ、バージョン1903以上
 - 2 GB の記憶域を持つ2つの USB ドライブ、FAT32 形式
 - Windows 10 Pro および Enterprise のドライバーとファームウェアは Surface Hub 2、Windows Installer で使用できます。MSI ファイル
@@ -52,7 +52,7 @@ Surface Hub 2S は、Windows 10 チームでプレインストールされてい
 | ステップ  | 操作                                                                                                 | まとめ                                                                                                                                                                                                                                                                                                                                                                                                  |
 | - | ------------------------------------------------------------------------------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | 件 | [Surface Hub 2S の UEFI バージョンが最小要件を満たしていることを確認する](#verify-uefi-version-on-surface-hub-2s-meets-minimum-requirements)                                  | UEFI バージョンが694.2938.768.0 以降であることを確認します。                                                                                                                                                                                                                                                                                                                                                      |
-| 両面 | [ダウンロード Surface UEFI コンフィギュレーターおよび Surface Hub 2 ドライバーとファームウェア](#download-surface-uefi-configurator-and-surface-hub-2-drivers-and-firmware)                             | Surface Tools から [surface](https://www.microsoft.com/download/details.aspx?id=46703) をダウンロードして、別の PC にインストールします。 [Surface Hub 2 で Windows 10 Pro と Enterprise のドライバーとファームウェアをダウンロードします。MSI ファイル](https://www.microsoft.com/download/details.aspx?id=101974)を保存して、手順5で使用するために保存します。 |
+| 両面 | [ダウンロード Surface UEFI コンフィギュレーターおよび Surface Hub 2 ドライバーとファームウェア](#download-surface-uefi-configurator-and-surface-hub-2-drivers-and-firmware)                             | [ [Surface Tools FOR IT](https://www.microsoft.com/download/details.aspx?id=46703) ] ページで [ダウンロード] ボタンを選択し、Surface UEFI コンフィギュレーターを選択してダウンロードし **ます。MSI ファイル** を別の PC にインストールします。 [Surface Hub 2 で Windows 10 Pro と Enterprise のドライバーとファームウェアをダウンロードします。MSI ファイル](https://www.microsoft.com/download/details.aspx?id=101974)を保存して、手順5で使用するために保存します。 |
 | - | [SEMM 証明書の準備](#prepare-semm-certificate)                                                                          | Surface UEFI コンフィギュレーターの実行に必要な証明書を準備するか、現在の証明書を使用します。                                                                                                                                                                                                                                                                                                      |
 | 4d | [SEMM パッケージを作成する](#create-semm-package)                                                                               | Surface UEFI コンフィギュレーターを起動して USB ドライブ上に SEMM パッケージを作成します。これには、Surface Hub 2S に適用する必要な構成ファイルが含まれます。 これらの SEMM パッケージファイルを PC 上のフォルダーにコピーします。                                                                                                                                                                                          |
 | 個 | [Windows 10 イメージ、SEMM パッケージ、および Windows 10 Pro とドライバーとファームウェアを含む USB フラッシュドライブを Surface Hub 2 で準備する](#prepare-usb-flash-drive-containing-windows-10-image-semm-package-and-surface-hub-2-drivers-and-firmware) | Windows 10 イメージを含む USB ドライブ (この例では **Bootme** という名前) を作成します。 Windows 10 Pro と Enterprise 用のドライバーとファームウェアを Surface Hub 2 (手順 2) と SEMM パッケージファイル (手順 4) に追加して、 **Bootme** ドライブに追加します。                                                                                                                                                                                                  |
@@ -76,6 +76,7 @@ Surface Hub を Windows 10 Team から Windows 10 デスクトップに移行す
 3. UEFI バージョンがバージョン **694.2938.768.0**よりも古い場合は、Windows Update を使用して現在のバージョンを取得する必要があります。
 
 **Windows Update から UEFI を更新するには:**
+
 1. Surface Hub 2s の場合は、**管理者**としてサインインし、[**すべてのアプリ**の設定]、[  >  **Settings** >  **セキュリティ**  >  **Windows Update** ] の順に移動して、すべての更新プログラムをインストールしてから、デバイスを再起動します。 Surface アプリを使用して、UEFI バージョンを確認します。 注: ユーザー名または管理者のパスワードがわからない場合は、デバイスをリセットする必要があります。 詳細については、「 [Surface Hub 2s のリセットと回復](https://docs.microsoft.com/surface-hub/surface-hub-2s-recover-reset)」を参照してください。
 
 2. UEFI バージョンが **694.2938.768.0** 以降になるまで、この手順を繰り返します。
@@ -86,7 +87,7 @@ Surface Hub を Windows 10 Team から Windows 10 デスクトップに移行す
 
 別の PC では、次の操作を行います。
 
-- Surface Tools から Microsoft [SURFACE UEFI コンフィギュレーター](https://www.microsoft.com/download/details.aspx?id=46703) をダウンロードしてインストールします。 Surface UEFI コンフィギュレーターは Surface Hub 2S では実行できませんが、Windows 10 Team はインストールされています。
+- Surface Tools から Microsoft [SURFACE UEFI コンフィギュレーター](https://www.microsoft.com/download/details.aspx?id=46703) をダウンロードします。 Surface UEFI コンフィギュレーターは Surface Hub 2S では実行できませんが、Windows 10 Team はインストールされています。
 
 - [Surface Hub 2 ドライバーとファームウェア Windows インストーラーをダウンロードします。](https://www.microsoft.com/download/details.aspx?id=101974)新しいオペレーティングシステムをインストールするときに適用される MSI ファイル。
 
@@ -100,59 +101,60 @@ Surface UEFI コンフィギュレーターを初めて使用する場合は、�
 
 - または、次のドキュメントに記載されている PowerShell スクリプトを使用して自己署名証明書を生成することもできます。 [Surface Enterprise 管理モードの証明書の要件](https://docs.microsoft.com/surface/surface-enterprise-management-mode#surface-enterprise-management-mode-certificate-requirements)。 または、PowerShell を使用して、次のドキュメントに従って独自の証明書を作成します。[新正書法 certificate](https://docs.microsoft.com/powershell/module/pkiclient/new-selfsignedcertificate)
 
-UEFI 設定を適用する前に、構成ファイルの署名を確認するために、SEMM パッケージを証明書を使用して保護する必要があります。 詳細については、「 [Surface Enterprise 管理モード](https://docs.microsoft.com/surface/surface-enterprise-management-mode) のドキュメント」を参照してください。
+Surface UEFI コンフィギュレーターツールを使用して作成された SEMM パッケージは、UEFI 設定を適用する前に、構成ファイルの署名を確認するために証明書を使用して保護する必要があります。 詳細については、「 [Surface Enterprise 管理モード](https://docs.microsoft.com/surface/surface-enterprise-management-mode) のドキュメント」を参照してください。
  
  
 ### SEMM パッケージを作成する
 
-1. **SURFACE UEFI コンフィギュレーター**を開き、[**開始**] を選択します。
+1. 前にダウンロードした **SURFACE UEFI コンフィギュレーター** ツールを別の PC にインストールします。 
+2. **SURFACE UEFI コンフィギュレーター**を開き、[**開始**] を選択します。
 
    ![Open Surface UEFI コンフィギュレーター](images/shm-fig2.png)
    
-2. [ **Surface デバイス** ] を選択し、[ **次へ**] を選択します。
+3. [ **Surface デバイス** ] を選択し、[ **次へ**] を選択します。
 
    ![Surface デバイスの選択](images/shm-fig3.png)
   
-3. [ **構成パッケージ**] を選びます。
+4. [ **構成パッケージ**] を選びます。
 
    ![構成パッケージを選ぶ](images/shm-fig4.png)
   
-4. [ **証明書の保護**] を選びます。
+5. [ **証明書の保護**] を選びます。
 
    ![証明書の保護を選ぶ](images/shm-fig5.png)
 
-5. 証明書 .pfx ファイルを追加するように求められます。
+6. 証明書 .pfx ファイルを追加するように求められます。
 
    ![証明書を追加するように求められます。](images/shm-fig6.png)
    
-6. **証明書のパスワード**を入力して、[ **OK]** を選択します。
+7. **証明書のパスワード**を入力して、[ **OK]** を選択します。
 
    ![証明書のパスワードを入力して、[OK] を選択します。](images/shm-fig7.png)
 
-7. Surface UEFI にパスワードを追加するには、[ **パスワードによる保護** ] を選択します。 このパスワードは、UEFI を起動するたびに必要になります。 Surface Hub 2S で使用する UEFI パスワードを設定する **ことを強くお勧め** します。
+8. Surface UEFI にパスワードを追加するには、[ **パスワードによる保護** ] を選択します。 このパスワードは、UEFI を起動するたびに必要になります。 Surface Hub 2S で使用する UEFI パスワードを設定する **ことを強くお勧め** します。
 
    ![[パスワードによる保護] をクリック](images/shm-fig8.png)
    
-8. **UEFI パスワード**を設定して、[ **OK]** を選択します。
+9. **UEFI パスワード**を設定して、[ **OK]** を選択します。
+
+ > [!IMPORTANT]
+   > Surface Hub の管理を担当する組織の IT 管理者がアクセスできる安全な場所にパスワードを保存します。 パスワードが失われた場合は、回復処理は行われません。 
 
    ![UEFI パスワードを入力する](images/shm-fig9.png)
 
-   > [!IMPORTANT]
-   > パスワードをメモしておきます。 パスワードを忘れた場合、または紛失した場合は、回復処理は行われません。 
-
-9. [ **Surface Hub 2s** ] を選択し、[ **次へ**] を選択します。
+10. [ **Surface Hub 2s** ] を選択し、[ **次へ**] を選択します。
 
    ![Surface Hub 2S の選択](images/shm-fig10.png)
    
-10. **[次へ]** を選択します。
+11. **[次へ]** を選択します。
 
     ![[次へ] を選ぶ](images/shm-fig10a.png)
 
-11. Windows 10 Pro または Enterprise のインストールを許可するには、[EnableOsMigration] を選択し **ます。**
+12. Windows 10 Pro または Enterprise のインストールを許可するには、[EnableOsMigration] を選択し **ます。**
 
     ![[OS の移行を有効にする] を選ぶ](images/shm-fig11.png)
     
-12. **EnableOSMigration**を **[オン**] に設定して、[**次へ**] を選びます。
+13. **EnableOSMigration**を **[オン**] に設定して、[**次へ**] を選びます。
 
     ![[OS 移行の有効化] を [オン] に設定する](images/shm-fig12.png)
 
@@ -185,7 +187,6 @@ UEFI 設定を適用する前に、構成ファイルの署名を確認するた
 
 - Windows 10 Pro または Enterprise のイメージが搭載された USB フラッシュドライブ。その後、  [Surface Hub 2 で windows 10 pro と enterprise 用のドライバーとファームウェアを](https://www.microsoft.com/download/details.aspx?id=101974)インストールします。
  
-
 この手順では、インストールメディアから USB フラッシュドライブを作成して、Windows 10 Pro とドライバーとファームウェアを Surface Hub 2 で追加します。MSI ファイル。 他の展開方法を使用している場合は、次のセクション「 [Surface Hub 2s で UEFI を更新して OS の移行を有効](#update-uefi-on-surface-hub-2s-to-enable-os-migration)にする」に進みます。
 
 > [!NOTE]
@@ -209,17 +210,17 @@ UEFI 設定を適用する前に、構成ファイルの署名を確認するた
 
    ![[完了] を選ぶ](images/shm-fig19.png)
    
-6. Surface Hub 2 の Windows 10 Pro および Enterprise 用の SEMM パッケージファイルとドライバーおよびファームウェアをコピーします。Windows 10 イメージを含む USB フラッシュドライブ (**Bootme**) への MSI。
+6. Windows 10 Pro および Enterprise for Surface Hub 2 () の SEMM パッケージファイルとドライバーおよびファームウェアをコピーします。MSI ファイル) を、Windows 10 イメージを含む USB フラッシュドライブ (**Bootme**) のルートに保存します。 BOOTME USB ドライブの内容:
 
-    - DfciUpdate
-    - SEMM 拇印のテキストファイル。 (この例では、SurfaceUEFI_2020Aug25_1058.txt)
+    - Windows 10 の起動可能なイメージ
+    - SEMM パッケージファイル (USB ドライブのルートにコピーされます)
+        - DfciUpdate
+        - SEMM 拇印のテキストファイル。 (この例では、SurfaceUEFI_2020Aug25_1058.txt。 自動生成された日付のタイムスタンプは、Surface UEFI コンフィギュレーターを使ってファイルを作成した日付に対応します。)
     - Surface Hub 2 (SurfaceHub2S_Win10_18362_20.082.25682.0.msi) での Windows 10 Pro と Enterprise のドライバーとファームウェア
 
 ### Surface Hub 2S で UEFI を更新して OS の移行を有効にする
 
-**Bootme**ドライブを使って、semm パッケージファイルをインストールし、UEFI を更新して、Windows 10 Pro または Enterprise を実行できるように Surface Hub を有効にします。 次に、 **Bootme** ドライブから起動して、Windows 10 をインストールします。
-
-1. SEMM パッケージファイル、Windows 10 Pro 用のドライバーとファームウェアを含む **Bootme** ドライブを Surface Hub 2 に挿入します。MSI、Windows 10 では、ファイルが USB にインストールされます。 Surface Hub 2S のポート。  
+1. Surface Hub 2S の USB A ポートに **Bootme** ドライブを挿入します。
 
 2. UEFI を起動するには、次の操作を行います。
 
@@ -283,5 +284,6 @@ Surface Hub をパーソナルの生産性デバイスとして完全に構成�
 
 | バージョン | 日付               | 説明                                                                                           |
 | ------- | ------------------ | ----------------------------------------------------------------------------------------------------- |
+| 部. 1.2  | 2020年9月29日 | ユーザビリティのフィードバックごとのその他の更新。                                                        |
 | 部. 1.1  | 2020年9月15日 | 「概要」で追加のメモを追加して、新しい OS をインストールするためのライセンス要件を明確にします。 |
-| 部. 1.0  | 2020年9月1日  | 新しい記事                                                                                           |
+| 部. 1.0  | 2020年9月1日  | 新しい記事。                                                                                           |
