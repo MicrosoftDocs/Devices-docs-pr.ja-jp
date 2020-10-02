@@ -1,9 +1,9 @@
 ### YamlMime:Landing
-title: Surface デバイスのドキュメント
-summary: クラウド経由で接続された Surface、Windows、および Office のパワーを活用しましょう。
+title: Surface devices documentation
+summary: Harness the power of Surface, Windows, and Office connected together through the cloud.
 metadata:
-  title: Surface デバイスのドキュメント
-  description: Microsoft Surface デバイスの使用を開始する
+  title: Surface devices documentation
+  description: Get started with Microsoft Surface devices
   ms.service: product-insights
   ms.topic: landing-page
   manager: laurawi
@@ -11,112 +11,112 @@ metadata:
   ms.author: greglin
   audience: itpro
   ms.localizationpriority: High
-  ms.openlocfilehash: 6d3d6f4c3e9ed468f91cccf68ac3532afa3d2266
-  ms.sourcegitcommit: 3b1bc3682d0dee24149ec26cdc78d3148b8d7808
+  ms.openlocfilehash: 1a54d40faf9c3738bd07595b57a1c2d5a86373b4
+  ms.sourcegitcommit: f996a95af741e54536b1f3eb94d0f13f681f5d5d
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 09/24/2020
-  ms.locfileid: "11077742"
+  ms.lasthandoff: 10/01/2020
+  ms.locfileid: "11093100"
 landingContent:
-- title: Surface デバイス
+- title: Surface devices
   linkLists:
-  - linkListType: overview
+  - linkListType: whats-new
     links:
-    - text: ビジネス向け Surface Go 2
-      url: https://www.microsoft.com/surface/business/surface-go-2
-    - text: ビジネス向け Surface Book 3
-      url: https://www.microsoft.com/surface/business/surface-book-3
-    - text: すべての Surface ファミリー製品を見る
+    - text: Surface Laptop Go  for Business
+      url: https://www.microsoft.com/surface/business/surface-laptop-go
+    - text: Surface Pro X for Business
+      url: https://www.microsoft.com/surface/business/surface-pro-x
+    - text: Explore all Surface family products
       url: https://www.microsoft.com/surface/business
-- title: 使ってみる
+- title: Get started
   linkLists:
   - linkListType: get-started
     links:
-    - text: Surface Book 3 GPU の技術概要
+    - text: Surface Book 3 GPU technical overview
       url: surface-book-gpu-overview.md
-    - text: Surface Book 3 Quadro RTX 3000 の技術概要
+    - text: Surface Book 3 Quadro RTX 3000 technical overview
       url: surface-book-quadro.md
-    - text: Surface Dock 2 の新機能
+    - text: What’s new in Surface Dock 2
       url: surface-dock-whats-new.md
 - title: Microsoft Ignite
   linkLists:
   - linkListType: video
     links:
-    - text: Surface & 自動操縦によるゼロタッチ展開
+    - text: Zero Touch Deployment with Surface & AutoPilot
       url: https://youtu.be/WQ-wg8fRzN0
-    - text: リモートワールドでの ARM 上の Surface Pro X と Windows
+    - text: Surface Pro X and Windows on ARM in a remote world
       url: https://youtu.be/bDw77ZQNPPw
-    - text: Surface Security – Microsoft からクラウドの先進エンドポイント保護へのチップ
+    - text: Surface Security – Chip to Cloud Modern Endpoint Protection from Microsoft
       url: https://youtu.be/uadAecDbqf4
-- title: Surface デバイスの展開
+- title: Deploy Surface devices
   linkLists:
   - linkListType: deploy
     links:
-    - text: Autopilot と Surface デバイス
+    - text: Autopilot and Surface devices
       url: windows-autopilot-and-surface-devices.md
-    - text: Windows 自動操縦の表面登録サポート
+    - text: Surface Registration Support for Windows Autopilot
       url: surface-autopilot-registration-support.md
-    - text: Surface の Windows Virtual Desktop
+    - text: Windows Virtual Desktop on Surface
       url: windows-virtual-desktop-surface.md
-- title: Surface デバイスの管理
+- title: Manage Surface devices
   linkLists:
   - linkListType: how-to-guide
     links:
-    - text: Surface のドライバーおよびファームウェアの更新プログラムを管理および展開する
+    - text: Manage and deploy Surface driver and firmware updates
       url: manage-surface-driver-and-firmware-updates.md
-    - text: Surface デバイスの最適な電源設定
+    - text: Best practice power settings for Surface devices
       url: maintain-optimal-power-settings-on-Surface-devices.md
-    - text: Surface デバイスでの Wi-Fi 接続の最適化
+    - text: Optimize Wi-Fi connectivity for Surface devices
       url: surface-wireless-connect.md
-- title: セキュリティ ガイダンスの検索
+- title: Explore security guidance
   linkLists:
   - linkListType: how-to-guide
     links:
-    - text: Surface Enterprise 管理モード (SEMM) での Secure Surface Dock 2 ポート
+    - text: Secure Surface Dock 2 ports with Surface Enterprise Management Mode (SEMM)
       url: secure-surface-dock-ports-semm.md
-    - text: Surface UEFI の設定の Intune 管理
+    - text: Intune management of Surface UEFI settings
       url: surface-manage-dfci-guide.md
-    - text: Surface Data Eraser ツール
+    - text: Surface Data Eraser tool
       url: microsoft-surface-data-eraser.md
-- title: Surface ツールの探索
+- title: Discover Surface tools
   linkLists:
   - linkListType: how-to-guide
     links:
-    - text: ビジネス向け Surface 診断ツールキット
+    - text: Surface Diagnostic Toolkit for Business
       url: surface-diagnostic-toolkit-for-business-intro.md
-    - text: SEMM と UEFI
+    - text: SEMM and UEFI
       url: surface-enterprise-management-mode.md
-    - text: Surface Deployment Accelerator ツール
+    - text: Surface Deployment Accelerator tool
       url: microsoft-surface-deployment-accelerator.md
-- title: トラブルシューティング
+- title: Troubleshoot
   linkLists:
   - linkListType: learn
     links:
-    - text: 上位のサポート ソリューション
+    - text: Top support solutions
       url: support-solutions-surface.md
-    - text: 互換性のある Surface デバイスでの SSD 削除のベスト プラクティス
+    - text: Best practices for SSD removal in compatible Surface devices
       url: surface-ssd-removal-guide.md
-    - text: IT 担当者向けの Surface のブログ
+    - text: Surface IT Pro Blog
       url: https://techcommunity.microsoft.com/t5/surface-it-pro-blog/bg-p/SurfaceITPro
-    - text: Surface 修理またはサービス中のデータの保護
+    - text: Protecting your data during Surface repair or service
       url: https://support.microsoft.com/help/4023508/surface-faq-protecting-your-data-service
-    - text: Surface Dock とドッキング ステーションのトラブルシューティング
+    - text: Troubleshoot Surface Dock and docking stations
       url: https://support.microsoft.com/help/4023468/surface-troubleshoot-surface-dock-and-docking-stations
-- title: Surface コミュニティに参加する
+- title: Participate in Surface Community
   linkLists:
   - linkListType: learn
     links:
-    - text: IT 担当者向けの Surface のブログ
+    - text: Surface IT Pro blog
       url: https://techcommunity.microsoft.com/t5/Surface-IT-Pro-Blog/bg-p/SurfaceITPro
     - text: Surface デバイス テクニカル コミュニティ
       url: https://techcommunity.microsoft.com/t5/Surface-Devices/ct-p/SurfaceDevices
     - text: Microsoft Mechanics の Surface のビデオ
       url: https://www.youtube.com/watch?v=Uk2kJ5FUZxY&list=PLXtHYVsvn_b__1Baibdu4elN4SoF3JTBZ
-- title: 支援が必要な場合
+- title: Need help?
   linkLists:
   - linkListType: learn
     links:
-    - text: Surface サポートへのお問い合わせ
+    - text: Contact Surface Support
       url: contact-surface-support.md
-    - text: ビジネス向け Surface の保証と延長サービス プラン
+    - text: Surface for Business warranty and extended service plans
       url: https://www.microsoft.com/surface/business/warranty-service-offerings-and-support
