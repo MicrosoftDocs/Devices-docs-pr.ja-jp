@@ -4,7 +4,8 @@
 
 ## 概要
 
-### [Surface Dock 2 の新機能](surface-dock-whats-new.md)
+### [Microsoft Surface で ROI を最大化する](forrester-tei-study.md)
+### [Surface Dock の新機能](surface-dock-whats-new.md)
 ### [Surface Book 3 GPU の技術概要](surface-book-GPU-overview.md)
 ### [Surface Book 3 Quadro RTX 3000 の技術概要](surface-book-quadro.md)
 ### [ビジネス向け Surface Book 3](https://www.microsoft.com/surface/business/surface-book-3)
@@ -30,6 +31,7 @@
 
 ### [Surface デバイスの展開](deploy.md)
 ### [Windows Autopilot と Surface デバイス](windows-autopilot-and-surface-devices.md)
+### [Windows Autopilot の Surface 登録サポート](surface-autopilot-registration-support.md)
 ### [Surface の Windows Virtual Desktop](windows-virtual-desktop-surface.md)
 ### [Surface Pro X の展開、管理、メンテナンス](surface-pro-arm-app-management.md)
 ### [Surface Pro X アプリの互換性](surface-pro-arm-app-performance.md)
