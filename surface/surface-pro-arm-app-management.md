@@ -8,16 +8,16 @@ ms.sitesec: library
 author: coveminer
 ms.author: greglin
 ms.topic: article
-ms.date: 4/15/2020
+ms.date: 10/01/2020
 ms.reviewer: jessko
 manager: laurawi
 ms.audience: itpro
-ms.openlocfilehash: d1e7aa41f8219f0ae6ccd81a36fa0fc142dd1c3c
-ms.sourcegitcommit: 109d1d7608ac4667564fa5369e8722e569b8ea36
+ms.openlocfilehash: 758cde12ea79e42630dad55b06eb50d0ab9dda12
+ms.sourcegitcommit: f996a95af741e54536b1f3eb94d0f13f681f5d5d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2020
-ms.locfileid: "10835581"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "11093130"
 ---
 # Surface Pro X の展開、管理、メンテナンス
 
@@ -92,9 +92,8 @@ Surface Pro X は、ホーム ユーザーと小規模ビジネス ユーザー�
 - ネイティブの ARM64 アプリと Microsoft Store UWP アプリは、バッテリの寿命を最適化しながら、ARM ベースのプロセッサのネイティブ速度をフル活用して、優れたユーザー エクスペリエンスを提供します。
 - ARM ベースのプロセッサで動作する Windows 10 PC 用に設計されたドライバーを使用するアプリ。
 
-### サポートされていないアプリ
-
-- ARM ベースのプロセッサで動作する Windows 10 PC では、x64 アプリを実行できません。
+> [!NOTE]
+> 64 ビット エミュレーションが Windows Insider プログラムを介してプレビューで間もなく登場するため、Surface Pro X で 64 ビット (x64) アプリを実行できるようになります。
 
 Surface Pro X でのアプリの実行について詳しくは、以下をご覧ください。
 

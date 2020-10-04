@@ -12,12 +12,12 @@ metadata:
   ms.author: samanro
   ms.date: 07/03/2019
   localization_priority: Priority
-  ms.openlocfilehash: bbfa7f64178dd46dbbaf370a9f014ec00b1cfd2e
-  ms.sourcegitcommit: 3766d1dd398d72e8478e5f08b6b208c6a8c25458
+  ms.openlocfilehash: eeb74e97d39c5ee02eed8c7d2544b709293092ea
+  ms.sourcegitcommit: e0047f07c42b1e3cbd074b66a4704ea72e9d7bae
   ms.translationtype: HT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 09/24/2020
-  ms.locfileid: "11077880"
+  ms.lasthandoff: 10/02/2020
+  ms.locfileid: "11093907"
 highlightedContent:
   items:
   - title: Surface デバイスのドキュメント
@@ -35,12 +35,12 @@ conceptualContent:
   items:
   - title: Surface の概要
     links:
-    - url: https://www.microsoft.com/surface/business/surface-go-2
+    - url: https://www.microsoft.com/surface/business/surface-laptop-go
       itemType: concept
-      text: ビジネス向け Surface Go 2
-    - url: https://www.microsoft.com/surface/business/surface-book-3
+      text: ビジネス向け Surface Laptop Go
+    - url: https://www.microsoft.com/surface/business/surface-pro-x
       itemType: concept
-      text: ビジネス向け Surface Book 3
+      text: ビジネス向け Surface Pro X
     - url: https://www.microsoft.com/surface/business
       itemType: concept
       text: すべての Surface ファミリー製品を見る
