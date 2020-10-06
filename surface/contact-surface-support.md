@@ -1,5 +1,5 @@
 ---
-title: Surface サポートへのお問い合わせ
+title: Contact Surface Support
 ms.author: v-todmc
 author: greg-lindsay
 manager: laurawi
@@ -18,47 +18,47 @@ ms.custom:
 - CI 118876
 - CSSTroubleshoot
 ms.reviewer: mablaik
-description: Microsoft Surface および Surface Hub 製品のサポート情報。
-ms.openlocfilehash: f423bdcc5bc4890861614e6213e9281b22925b42
-ms.sourcegitcommit: 13015036a3e5cb5909924d7e4289473a1572cf9d
+description: Support information for Microsoft Surface and Surface Hub products.
+ms.openlocfilehash: 37554183b4839b5e6825a8ac680336b12e213219
+ms.sourcegitcommit: edc92b4be50e6a86f4b942bf71339d97aaf3c5ab
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "11030414"
+ms.lasthandoff: 10/05/2020
+ms.locfileid: "11094914"
 ---
 # Surface Support
 
-### お問い合わせの前に:  
+### Before you contact us:  
 
-[Surface Diagnostic Toolkit For Business](https://docs.microsoft.com/surface/surface-diagnostic-toolkit-business) (SDT) を実行します。 SDT は、IT 管理者が Surface デバイスでのハードウェア、ソフトウェア、およびファームウェアの問題をすばやく調査、トラブルシューティング、解決することを可能にします。 デバイス正常性の分析や問題解決のガイダンスなど、さまざまな診断テストとソフトウェア修復を実行できます。 
+Run the [Surface Diagnostic Toolkit for Business](https://docs.microsoft.com/surface/surface-diagnostic-toolkit-business) (SDT). The SDT enables IT administrators to quickly investigate, troubleshoot, and resolve hardware, software, and firmware issues with Surface devices. You can run a range of diagnostic tests and software repairs in addition to obtaining device health insights and guidance for resolving issues. 
 
-ツールキットを実行しても問題が解決しない場合は、次のタブを使用してサポートオプションを選びます。
+If you are still having a problem after running the toolkit, use the tabs below to select a support option.
 
-## [オンラインサポート](#tab/online)
+## [Online support](#tab/online)
 
 > [!NOTE]
-> Microsoft アカウントまたは Azure Active Directory アカウントを使用して、オンライン申請ポータルにログインする必要があります。  
+> You will be required to log into the online submission portal using your Microsoft Account or Azure Active Directory Account.  
 
-ビジネス顧客の場合: [サービスリクエストを送信](https://support.microsoft.com/supportforbusiness/productselection)します。 
+For business customers: [Submit your service request](https://support.serviceshub.microsoft.com/supportforbusiness/create?sapId=d383b26c-f150-6220-8f1b-e8aa325d9727). 
 
-Microsoft プレミアのお客様の場合: サービス [ハブでサービスリクエストを送信](https://serviceshub.microsoft.com/support/contactsupport)します。 
+For Microsoft Premier customers: [Submit your service request on Services Hub](https://serviceshub.microsoft.com/support/contactsupport). 
 
  
-## [電話のサポート](#tab/phone)
+## [Phone support](#tab/phone)
 
-[サービスリクエストを開始するには、こちらにお電話](https://support.microsoft.com/help/4051701/global-customer-service-phone-numbers)ください。 電話をかけるときに、デバイスのシリアル番号を用意しておきます。 
+[Call us to start your service request](https://support.microsoft.com/help/4051701/global-customer-service-phone-numbers). Have your device’s serial number ready when you call. 
 
-## [ストア内サポート](#tab/instore)
+## [In-store support](#tab/instore)
 
-## 中国 (インド)
+## China, India
 
-問題を解決するために、Surface In Center で予定を作成します。
+Make an appointment at a Surface Walk-In Center to help resolve your issue:
 
-1. [Surface Walk In Center の連絡先情報](https://support.microsoft.com/help/4498593/find-surface-walk-in-center-contact-information)ページに移動します。 
-2. お住まいの地域を選択して、最も近い順番を探してください。  
-3. Walk Center を選択して、予定のスケジュールを設定します。
+1. Go to the [Surface Walk-In Center Contact Information](https://support.microsoft.com/help/4498593/find-surface-walk-in-center-contact-information) page. 
+2. Select your location to find the Walk-In Center nearest you.  
+3. Choose your Walk-In Center and contact them to schedule an appointment.
 
 
 ---
 
-問題が解決しない場合は、 [Microsoft コミュニティ](https://answers.microsoft.com/)に移動します。
+Still need help? Go to [Microsoft Community](https://answers.microsoft.com/).
