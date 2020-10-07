@@ -5,6 +5,7 @@
 ## 概要
 
 ### [Microsoft Surface で ROI を最大化する](forrester-tei-study.md)
+### [Microsoft Surface for Education の総合的な経済効果](forrester-tei-edu-study.md)
 ### [Surface Dock の新機能](surface-dock-whats-new.md)
 ### [Surface Book 3 GPU の技術概要](surface-book-GPU-overview.md)
 ### [Surface Book 3 Quadro RTX 3000 の技術概要](surface-book-quadro.md)
