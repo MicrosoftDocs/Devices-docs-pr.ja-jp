@@ -7,7 +7,7 @@ ms.date: 5/27/2020
 audience: Admin
 ms.topic: article
 ms.prod: surface
-localization_priority: Normal
+localization_priority: medium
 search.appverid:
 - SPO160
 - MET150
@@ -19,12 +19,12 @@ ms.custom:
 - CSSTroubleshoot
 ms.reviewer: mablaik
 description: Microsoft Surface および Surface Hub 製品のサポート情報。
-ms.openlocfilehash: 37554183b4839b5e6825a8ac680336b12e213219
-ms.sourcegitcommit: edc92b4be50e6a86f4b942bf71339d97aaf3c5ab
+ms.openlocfilehash: fa86756c122814e7f90351782fc8f6f34227ae42
+ms.sourcegitcommit: 56526c92d84dbc2cebcb8071d995efe399f306df
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/05/2020
-ms.locfileid: "11094914"
+ms.lasthandoff: 10/08/2020
+ms.locfileid: "11105258"
 ---
 # Surface Support
 
@@ -39,6 +39,8 @@ ms.locfileid: "11094914"
 > [!NOTE]
 > Microsoft アカウントまたは Azure Active Directory アカウントを使用して、オンライン申請ポータルにログインする必要があります。  
 
+[保証とサービスの請求フォーム](https://download.microsoft.com/download/2/e/0/2e00e1c2-3f49-4b6a-b605-74a0244cb88b/Warranty_and_Service_Claim_Submission_Form.xlsx)を使用して、保証とサービスリクエストを迅速化します。 フォームの使用方法については、「 [保証とサービスの請求書フォームの手順](warranty-and-service-claim-form.md) 」および「ケースの申請に添付する」を参照してください。
+
 ビジネス顧客の場合: [サービスリクエストを送信](https://support.serviceshub.microsoft.com/supportforbusiness/create?sapId=d383b26c-f150-6220-8f1b-e8aa325d9727)します。 
 
 Microsoft プレミアのお客様の場合: サービス [ハブでサービスリクエストを送信](https://serviceshub.microsoft.com/support/contactsupport)します。 
@@ -52,11 +54,11 @@ Microsoft プレミアのお客様の場合: サービス [ハブでサービス
 
 ## 中国 (インド)
 
-問題を解決するために、Surface In Center で予定を作成します。
+問題の解決に役立つように、Surface Walk-In Center で予定を作成します。
 
-1. [Surface Walk In Center の連絡先情報](https://support.microsoft.com/help/4498593/find-surface-walk-in-center-contact-information)ページに移動します。 
-2. お住まいの地域を選択して、最も近い順番を探してください。  
-3. Walk Center を選択して、予定のスケジュールを設定します。
+1. [Surface Walk-In Center の [連絡先情報](https://support.microsoft.com/help/4498593/find-surface-walk-in-center-contact-information)] ページに移動します。 
+2. 目的の場所を選択して、最も近い Walk-In センターを検索します。  
+3. Walk-In センターを選択して、予定のスケジュールを設定します。
 
 
 ---

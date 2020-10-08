@@ -8,7 +8,7 @@ ms.sitesec: library
 author: mccoybot
 ms.author: v-todmc
 ms.topic: article
-ms.date: 8/7/2020
+ms.date: 10/7/2020
 ms.reviewer: johnk
 manager: laurawi
 ms.audience: itpro
@@ -19,17 +19,17 @@ appliesto:
 ms.custom:
 - CI 121887
 - CSSTroubleshoot
-ms.openlocfilehash: 66860af06f4fad8f19ca26702350f19cc85ffef1
-ms.sourcegitcommit: bad416f04c6877f2200f134a69146bb633155f22
+ms.openlocfilehash: 00109e4e1bb3873fc2914b2044f58e6fa3b6c211
+ms.sourcegitcommit: d0a5c8fb2b37eb11858c7be4549e55c4b36d7471
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/10/2020
-ms.locfileid: "10919226"
+ms.lasthandoff: 10/08/2020
+ms.locfileid: "11104809"
 ---
 # 互換性のある Surface デバイスからの SSD の削除に関するベストプラクティス
 
 > [!IMPORTANT]
-> この記事は、組織内で限定された IT 技術者による使用を目的としています。 お客様が、固定された Ssd を備えた Surface デバイスで SSDs を削除して置き換える場合に、認定された IT 技術者が使用するための推奨されるベストプラクティスについて説明します。 
+> この記事は、組織内で限定された IT 技術者による使用を目的としています。 Surface ノート Pc 3 または Surface Pro X でのみ、お勧めの IT 技術者が Ssd を削除して交換する際に推奨されるベストプラクティスについて説明します。 
 
 > [!WARNING]
 > デバイスを開いたり、デバイスコンポーネントを交換したりすると、感電、デバイスの損傷、火災、および個人の傷害のリスク、およびその他の危険を生じる可能性があります。  このようなアクティビティを行うときは、常に注意してください。 [エンタープライズ向けの Rssd の削除ガイド](https://www.microsoft.com/download/100440)に記載されている安全性に関する注意事項と手順に従います。 「Enterprise 向けの rSSD の削除ガイド」で指定されている安全性の予防策と手順に従うことができない場合は、プロフェッショナルサポートを受けることをお勧めします。
@@ -58,7 +58,7 @@ ms.locfileid: "10919226"
 
 SSD を削除して交換する前に、デバイスが暗号化されていない場合は、次の手順に従って BitLocker をオフにします。
 
-1.  [**設定**] で、「 **bitlocker**」と入力し、[ **bitlocker の管理**] を選択します。 
+1.  [ **設定**] で、「 **bitlocker**」と入力し、[ **bitlocker の管理**] を選択します。 
 2.  [ **Bitlocker をオフにする**] を選びます。 
 3.  デバイスの電源を切ります。 
 
@@ -66,7 +66,7 @@ SSD を削除して交換する前に、デバイスが暗号化されていな�
 
 SSD の削除と交換前にデバイスが暗号化されている場合は、次の手順に従って BitLocker 回復キーを生成し、USB ストレージに保存します。
 
-1.  [**設定**] で、「 **Bitlocker**」と入力します。
+1.  [ **設定**] で、「 **Bitlocker**」と入力します。
 2. [ **Bitlocker の管理**] を選び  > **Generate Bitlocker Recovery Key**ます。
 2.  USB ドライブを挿入します。 
 3.  回復キーを USB ストレージに保存します。  
@@ -91,7 +91,7 @@ SSD の削除と交換前にデバイスが暗号化されている場合は、�
 4.  パスワードを使用してもう一度サインインし、メッセージが表示されたら、Windows Hello と PIN をセットアップします。 
     - デバイスが、SSD の削除と交換を容易にするために bitlocker を無効にしていて、置換後に bitlocker を有効にする場合は、「 **bitlocker**  >  **管理**bitlocker  >  **Resume bitlocker**」を参照してください。  
 6.  Microsoft Surface Diagnostics ツールキット for Business (SDT) を実行して、デバイスのすべての機能を確認します。  
-7.  「**設定**のアクティブ化」に移動して、Windows のライセンス認証を確認  >  **Activation**します。  エラーメッセージが表示された場合は、[**トラブルシューティング**] を選びます。 
+7.  「**設定**のアクティブ化」に移動して、Windows のライセンス認証を確認  >  **Activation**します。  エラーメッセージが表示された場合は、[ **トラブルシューティング**] を選びます。 
 8.  Office**アプリ**を開いて office アカウントを確認し、[**ファイル**アカウント] に移動して、  >  **Account**エラーメッセージがあるかどうかを確認します。  
 
 ### 暗号化された SSDs の管理 
@@ -109,8 +109,8 @@ SSD の削除と交換前にデバイスが暗号化されている場合は、�
 6.  完全にサインインしたら、[アカウントの**開始**] に移動  >  **Account**  >  **Sign out**します。  
 7.  パスワードを使用してもう一度サインインし、Windows Hello をセットアップして PIN を追加します。 
 8.  デバイスが、SSD の削除と交換を容易にするために bitlocker を無効にしている場合、置換後に bitlocker を有効にするには、[**設定**] の [bitlocker の管理] bitlocker  >  **Bitlocker**  >  **Manage Bitlocker**  >  **Resume bitlocker を選び**ます。  
-9.  すべてのデバイスの機能を確認するには、 **SDT**を実行します。  
-10. 「**設定**のアクティブ化」に移動して、Windows のライセンス認証を確認  >  **Activation**します。  エラーメッセージが表示された場合は、[**トラブルシューティング**] を選びます。
+9.  すべてのデバイスの機能を確認するには、 **SDT** を実行します。  
+10. 「**設定**のアクティブ化」に移動して、Windows のライセンス認証を確認  >  **Activation**します。  エラーメッセージが表示された場合は、[ **トラブルシューティング**] を選びます。
 11. Office アカウントの状態を確認するには、 **office アプリ**を開き、[**ファイル**アカウント] に移動して  >  **Account**エラーメッセージを確認します。
 
 ## 詳細情報 
