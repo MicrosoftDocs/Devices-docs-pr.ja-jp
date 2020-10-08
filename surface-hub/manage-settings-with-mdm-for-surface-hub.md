@@ -21,48 +21,48 @@ ms.locfileid: "11103903"
 ---
 # MDM プロバイダーによる設定の管理 (Surface Hub)
 
-Surface Hub やその他の Windows 10 デバイスでは、IT 管理者はモバイル デバイス管理 (MDM) プロバイダーを使用して設定やポリシーを管理できます。 組み込みの管理コンポーネントで管理サーバーと通信するため、デバイスに追加のクライアントをインストールする必要はありません。 For more information, see [Windows 10 mobile device management](https://msdn.microsoft.com/library/windows/hardware/dn914769.aspx).
+Surface Hub やその他の Windows 10 デバイスでは、IT 管理者はモバイル デバイス管理 (MDM) プロバイダーを使用して設定やポリシーを管理できます。 組み込みの管理コンポーネントで管理サーバーと通信するため、デバイスに追加のクライアントをインストールする必要はありません。 詳しくは、[Windows 10 でのモバイル デバイス管理に関するページ](https://msdn.microsoft.com/library/windows/hardware/dn914769.aspx)をご覧ください。
 
-Surface Hub has been validated with Microsoft's first-party MDM providers:
-- Microsoft Intune standalone
-- On-premises MDM with Microsoft Endpoint Configuration Manager
+Surface Hub は、Microsoft のファーストパーティ MDM プロバイダーによって検証されています。
+- Microsoft Intune スタンドアロン
+- Microsoft Endpoint Configuration Manager を使用したオンプレミスの MDM
 
-You can also manage Surface Hubs using any third-party MDM provider that can communicate with Windows 10 using the MDM protocol.
+MDM プロトコルで Windows 10と通信可能な任意のサード パーティ製 MDM プロバイダーを使用して、Surface Hub を管理することもできます。
 
-## <a href="" id="enroll-into-mdm"></a>Enroll a Surface Hub into MDM
-You can enroll your Surface Hubs using bulk, manual, or automatic enrollment.
+## <a href="" id="enroll-into-mdm"></a>MDM への Surface Hub の登録
+Surface Hub は、一括、手動、自動登録を使って登録できます。
 
-### Bulk enrollment
+### 一括登録
 **一括登録を構成するには**
 - Surface Hub は、[Provisioning CSP](https://msdn.microsoft.com/library/windows/hardware/mt203665.aspx) による MDM への一括登録をサポートしています。 詳しくは、[Windows 10 での一括登録に関するページ](https://msdn.microsoft.com/library/windows/hardware/mt613115.aspx)をご覧ください。<br>
---OR--
-- If you have an on-premises Microsoft Endpoint Configuration Manager infrastructure, see [How to bulk enroll devices with On-premises Mobile Device Management in Microsoft Endpoint Configuration Manager](https://docs.microsoft.com/configmgr/mdm/deploy-use/bulk-enroll-devices-on-premises-mdm).
+または
+- オンプレミスの Microsoft Endpoint Configuration Manager インフラストラクチャがある場合は、「 [Microsoft Endpoint Configuration manager でオンプレミスのモバイルデバイス管理を使用してデバイスを一括登録する方法](https://docs.microsoft.com/configmgr/mdm/deploy-use/bulk-enroll-devices-on-premises-mdm)」を参照してください。
 
-### Manual enrollment
+### 手動登録
 **手動登録を構成するには**
 1. Surface Hub で **[設定]** を開きます。
 2. メッセージが表示されたら、デバイスの管理者資格情報を入力します。
 3. **[このデバイス]** を選択し、**[デバイス管理]** に移動します。
 4. **[デバイス管理]** で、**[+ デバイス管理]** を選択します。
-5. Follow the instructions in the dialog to connect to your MDM provider.
+5. ダイアログに表示されう指示に従って、MDM プロバイダーに接続します。
 
-### Automatic enrollment via Azure Active Directory join
+### Azure Active Directory の参加による自動登録
 
-Surface Hub now supports the ability to automatically enroll in Intune by joining the device to Azure Active Directory. 
+Surface Hub は、デバイスを Azure Active Directory に参加させることによって、Intune に自動的に登録する機能をサポートするようになりました。 
 
-First step is to set up Automatic MDM enrollment. See [Enable Windows 10 automatic enrollment](https://docs.microsoft.com/intune/windows-enroll#enable-windows-10-automatic-enrollment).
+最初の手順は、自動 MDM 登録を設定することです。 「 [Windows 10 の自動登録を有効にする」を](https://docs.microsoft.com/intune/windows-enroll#enable-windows-10-automatic-enrollment)参照してください。
 
-Then, when devices are setup during First-run, pick the option to join to Azure Active Directory, see [Set up admins for this device page](https://docs.microsoft.com/surface-hub/first-run-program-surface-hub#set-up-admins-for-this-device-page)
+次に、初回実行時にデバイスをセットアップするときに、[Azure Active Directory に参加する] オプションを選びます。「[このデバイスに管理者を設定](https://docs.microsoft.com/surface-hub/first-run-program-surface-hub#set-up-admins-for-this-device-page)する」ページを参照してください。
 
-## Manage Surface Hub settings with MDM
+## MDM による Surface Hub の設定の管理
 
-MDM を使用して、一部の [Surface Hub CSP の設定](#supported-surface-hub-csp-settings)や一部の [Windows 10 の設定](#supported-windows-10-settings)を管理できます。 Depending on the MDM provider that you use, you may set these settings using a built-in user interface, or by deploying custom SyncML. Microsoft Intune and Microsoft Endpoint Configuration Manager provide built-in experiences to help create policy templates for Surface Hub. Refer to documentation from your MDM provider to learn how to create and deploy SyncML.
+MDM を使用して、一部の [Surface Hub CSP の設定](#supported-surface-hub-csp-settings)や一部の [Windows 10 の設定](#supported-windows-10-settings)を管理できます。 使用する MDM プロバイダーによって、組み込みのユーザー インターフェイスを使用するか、またはカスタム SyncML を展開して、これらの設定項目を設定できます。 Microsoft Intune と Microsoft Endpoint 構成マネージャーは、Surface Hub のポリシーテンプレートの作成に役立つ組み込みのエクスペリエンスを提供します。 SyncML を作成して展開する方法については、MDM プロバイダーのドキュメントをご覧ください。
 
 ### サポートされている Surface Hub CSP の設定
 
-You can configure the Surface Hub settings in the following table using MDM. The table identifies if the setting is supported with Microsoft Intune, Microsoft Endpoint Configuration Manager, or SyncML.
+MDM を使用して、次の表に示されている Surface Hub の設定を構成できます。 この表は、Microsoft Intune、Microsoft Endpoint Configuration Manager、または SyncML で設定がサポートされているかどうかを示します。
 
-For more information, see [SurfaceHub configuration service provider](https://msdn.microsoft.com/library/windows/hardware/mt608323). 
+詳しくは、[Surface Hub 構成サービス プロバイダーに関するページ](https://msdn.microsoft.com/library/windows/hardware/mt608323)をご覧ください。 
 
 
 |                                     設定                                      |                                                    SurfaceHub CSP のノード                                                    |            Intune での<br>サポート             |    Configuration Manager での<br>サポート     | SyncML での<br>サポート\* |
@@ -74,9 +74,9 @@ For more information, see [SurfaceHub configuration service provider](https://ms
 |                 ワイヤレス プロジェクションに Miracast チャネルを使用する                  |                                               InBoxApps/WirelessProjection/Channel                                               |                       対応                        | 対応<br> [カスタム設定を使用。](#example-manage-surface-hub-settings-with-microsoft-endpoint-configuration-manager) |             対応             |
 |              Operations Management Suite ワークスペースに接続する               |                                         MOMAgent/WorkspaceID <br> MOMAgent/WorkspaceKey                                          |                       対応                        | 対応<br> [カスタム設定を使用。](#example-manage-surface-hub-settings-with-microsoft-endpoint-configuration-manager) |             対応             |
 |                         ようこそ画面の背景画像                          |                                             InBoxApps/Welcome/CurrentBackgroundPath                                              |                       対応                        | 対応<br> [カスタム設定を使用。](#example-manage-surface-hub-settings-with-microsoft-endpoint-configuration-manager) |             対応             |
-|               ようこそ画面に表示される会議情報                |                                               InBoxApps/Welcome/MeetingInfoOption                                                |                       対応                        | Yes.<br> [Use a custom setting.](#example-manage-surface-hub-settings-with-microsoft-endpoint-configuration-manager |             Yes             |
-|                      ワイヤレス プロジェクションのフレンドリ名                       |                                                     Properties/FriendlyName                                                      | 対応 <br> [カスタム ポリシーを使用。](#example-manage-surface-hub-settings-with-microsoft-intune) | 対応<br> [カスタム設定を使用。](#example-manage-surface-hub-settings-with-microsoft-endpoint-configuration-manager) |             Yes             |
-|                   Device account                                                 | DeviceAccount/*`<name_of_policy>`* <br> [SurfaceHub CSP に関するページ](https://msdn.microsoft.com/library/windows/hardware/mt608323.aspx)を参照。 |                        未対応                        |                       なし                        |             対応             |
+|               ようこそ画面に表示される会議情報                |                                               InBoxApps/Welcome/MeetingInfoOption                                                |                       対応                        | 対応<br> [カスタム設定を使用する](#example-管理------------------------------------ |             対応             |
+|                      ワイヤレス プロジェクションのフレンドリ名                       |                                                     Properties/FriendlyName                                                      | 対応 <br> [カスタム ポリシーを使用。](#example-manage-surface-hub-settings-with-microsoft-intune) | 対応<br> [カスタム設定を使用。](#example-manage-surface-hub-settings-with-microsoft-endpoint-configuration-manager) |             対応             |
+|                   デバイス アカウント                                                 | DeviceAccount/*`<name_of_policy>`* <br> [SurfaceHub CSP に関するページ](https://msdn.microsoft.com/library/windows/hardware/mt608323.aspx)を参照。 |                        未対応                        |                       なし                        |             対応             |
 |                               Skype ドメインを指定する                               |                                              InBoxApps/SkypeForBusiness/DomainName                                               |                    対応 </br>                     | 対応<br> [カスタム設定を使用。](#example-manage-surface-hub-settings-with-microsoft-endpoint-configuration-manager) |             対応             |
 |               プロジェクションが初期化されたときに接続アプリを自動起動する               |                                                   InBoxApps/Connect/AutoLaunch                                                   |                    対応 </br>                     | 対応<br> [カスタム設定を使用。](#example-manage-surface-hub-settings-with-microsoft-endpoint-configuration-manager) |             対応             |
 |                                既定のボリュームを設定する                                |                                                     Properties/DefaultVolume                                                     |                    対応 </br>                     | 対応<br> [カスタム設定を使用。](#example-manage-surface-hub-settings-with-microsoft-endpoint-configuration-manager) |             対応             |
@@ -96,9 +96,9 @@ For more information, see [SurfaceHub configuration service provider](https://ms
 
 Surface Hub に固有の設定に加え、多くの設定がすべての Windows 10 デバイスに共通です。 これらの設定については、[構成サービス プロバイダー リファレンスに関するページ](https://docs.microsoft.com/windows/client-management/mdm/configuration-service-provider-reference)をご覧ください。 
 
-以下の表に、Surface Hub で検証済みの Windows 10 の設定に関する情報を示します。 There is a table with settings for these areas: security, browser, Windows Updates, Windows Defender, remote reboot, certificates, and logs. Each table identifies if the setting is supported with Microsoft Intune, Microsoft Endpoint Configuration Manager, or SyncML.
+以下の表に、Surface Hub で検証済みの Windows 10 の設定に関する情報を示します。 セキュリティ、ブラウザー、Windows Update、Windows Defender、リモート再起動、証明書、ログの各領域の設定に関する表があります。 各表は、Microsoft Intune、Microsoft Endpoint Configuration Manager、または SyncML で設定がサポートされているかどうかを示します。
 
-#### Security settings
+#### セキュリティの設定
 
 |      設定       |                                            詳細                                             |                                                                          CSP リファレンス                                                                           |            Intune での<br>サポート             |    Configuration Manager での<br>サポート     | SyncML での<br>サポート\* |
 |--------------------|------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------|-------------------------------------------------|-----------------------------|
@@ -120,18 +120,18 @@ Surface Hub に固有の設定に加え、多くの設定がすべての Windows
 |                   開発者ツールを許可する                   |                                                   ユーザーが F12 開発者ツールを使用することを禁止する場合に使用します。                                                   |                      [Browser/AllowDeveloperTools](https://msdn.microsoft.com/library/windows/hardware/dn904962.aspx#Browser_AllowDeveloperTools)                      | 対応 <br> [カスタム ポリシーを使用。](#example-manage-surface-hub-settings-with-microsoft-intune) | 対応<br> [カスタム設定を使用。](#example-manage-surface-hub-settings-with-microsoft-endpoint-configuration-manager) |             対応             |
 |                    トラッキング拒否を許可する                     |                                                          Do Not Track ヘッダーを有効にするために使用します。                                                          |                          [Browser/AllowDoNotTrack](https://msdn.microsoft.com/library/windows/hardware/dn904962.aspx#Browser_AllowDoNotTrack)                          | 対応 <br> [カスタム ポリシーを使用。](#example-manage-surface-hub-settings-with-microsoft-intune) | 対応<br> [カスタム設定を使用。](#example-manage-surface-hub-settings-with-microsoft-endpoint-configuration-manager) |             対応             |
 |                       ポップアップを許可する                       |                                                         ポップアップ ブラウザー ウィンドウをブロックするために使用します。                                                          |                              [Browser/AllowPopups](https://msdn.microsoft.com/library/windows/hardware/dn904962.aspx#Browser_AllowPopups)                              | 対応 <br> [カスタム ポリシーを使用。](#example-manage-surface-hub-settings-with-microsoft-intune) | 対応<br> [カスタム設定を使用。](#example-manage-surface-hub-settings-with-microsoft-endpoint-configuration-manager) |             対応             |
-|                 検索候補を許可する                  |                                                  アドレス バーの検索候補をブロックするために使用します。                                                  |       [Browser/AllowSearchSuggestionsinAddressBar](https://msdn.microsoft.com/library/windows/hardware/dn904962.aspx#Browser_AllowSearchSuggestionsinAddressBar)       | 対応 <br> [カスタム ポリシーを使用。](#example-manage-surface-hub-settings-with-microsoft-intune) | 対応<br> [カスタム設定を使用。](#example-manage-surface-hub-settings-with-microsoft-endpoint-configuration-manager) |             Yes             |
-|                     Allow Windows Defender SmartScreen                     |                                                       Keep this enabled to turn on Windows Defender SmartScreen.                                                       |                         [Browser/AllowSmartScreen](https://msdn.microsoft.com/library/windows/hardware/dn904962.aspx#Browser_AllowSmartScreen)                         | 対応 <br> [カスタム ポリシーを使用。](#example-manage-surface-hub-settings-with-microsoft-intune) | 対応<br> [カスタム設定を使用。](#example-manage-surface-hub-settings-with-microsoft-endpoint-configuration-manager) |             Yes             |
-| Prevent ignoring Windows Defender SmartScreen warnings for websites |     For extra security, use to stop users from ignoring Windows Defender SmartScreen warnings and block them from accessing potentially malicious websites.     |         [Browser/PreventSmartScreenPromptOverride](https://msdn.microsoft.com/library/windows/hardware/dn904962.aspx#Browser_PreventSmartScreenPromptOverride)         | 対応 <br> [カスタム ポリシーを使用。](#example-manage-surface-hub-settings-with-microsoft-intune) | 対応<br> [カスタム設定を使用。](#example-manage-surface-hub-settings-with-microsoft-endpoint-configuration-manager) |             Yes             |
-|  Prevent ignoring Windows Defender SmartScreen warnings for files   | For extra security, use to stop users from ignoring Windows Defender SmartScreen warnings and block them from downloading unverified files from Microsoft Edge. | [Browser/PreventSmartScreenPromptOverrideForFiles](https://msdn.microsoft.com/library/windows/hardware/dn904962.aspx#Browser_PreventSmartScreenPromptOverrideForFiles) | 対応 <br> [カスタム ポリシーを使用。](#example-manage-surface-hub-settings-with-microsoft-intune) | 対応<br> [カスタム設定を使用。](#example-manage-surface-hub-settings-with-microsoft-endpoint-configuration-manager) |             対応             |
+|                 検索候補を許可する                  |                                                  アドレス バーの検索候補をブロックするために使用します。                                                  |       [Browser/AllowSearchSuggestionsinAddressBar](https://msdn.microsoft.com/library/windows/hardware/dn904962.aspx#Browser_AllowSearchSuggestionsinAddressBar)       | 対応 <br> [カスタム ポリシーを使用。](#example-manage-surface-hub-settings-with-microsoft-intune) | 対応<br> [カスタム設定を使用。](#example-manage-surface-hub-settings-with-microsoft-endpoint-configuration-manager) |             対応             |
+|                     Windows Defender SmartScreen を許可する                     |                                                       Windows Defender SmartScreen を有効にするには、このオプションをオンのままにします。                                                       |                         [Browser/AllowSmartScreen](https://msdn.microsoft.com/library/windows/hardware/dn904962.aspx#Browser_AllowSmartScreen)                         | 対応 <br> [カスタム ポリシーを使用。](#example-manage-surface-hub-settings-with-microsoft-intune) | 対応<br> [カスタム設定を使用。](#example-manage-surface-hub-settings-with-microsoft-endpoint-configuration-manager) |             対応             |
+| Web サイトに対して Windows Defender SmartScreen の警告が無視されないようにする |     追加のセキュリティを確保するために、Windows Defender SmartScreen 警告の無視を停止して、悪意のある web サイトへのアクセスをブロックするには、を使います。     |         [Browser/PreventSmartScreenPromptOverride](https://msdn.microsoft.com/library/windows/hardware/dn904962.aspx#Browser_PreventSmartScreenPromptOverride)         | 対応 <br> [カスタム ポリシーを使用。](#example-manage-surface-hub-settings-with-microsoft-intune) | 対応<br> [カスタム設定を使用。](#example-manage-surface-hub-settings-with-microsoft-endpoint-configuration-manager) |             対応             |
+|  ファイルに対して Windows Defender SmartScreen の警告が無視されないようにする   | 追加のセキュリティを確保するために、ユーザーが Windows Defender SmartScreen の警告を無視しないようにし、Microsoft Edge から未確認のファイルをダウンロードしないようにブロックします。 | [Browser/PreventSmartScreenPromptOverrideForFiles](https://msdn.microsoft.com/library/windows/hardware/dn904962.aspx#Browser_PreventSmartScreenPromptOverrideForFiles) | 対応 <br> [カスタム ポリシーを使用。](#example-manage-surface-hub-settings-with-microsoft-intune) | 対応<br> [カスタム設定を使用。](#example-manage-surface-hub-settings-with-microsoft-endpoint-configuration-manager) |             対応             |
 
 \*SyncML でサポートされている設定は、Windows 構成デザイナー プロビジョニング パッケージでも構成できます。
 
 #### Windows Update の設定
 
-|                      設定                      |                                                                                                           詳細                                                                                                            |                                                                    CSP リファレンス                                                                    |            Intune での<br>サポート             |    Configuration Manager での<br>サポート     | SyncML での<br>SyncML\*? |
+|                      設定                      |                                                                                                           詳細                                                                                                            |                                                                    CSP リファレンス                                                                    |            Intune での<br>サポート             |    Configuration Manager での<br>サポート     | SyncML での<br>サポート\* |
 |---------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------|-------------------------------------------------|-----------------------------|
-| Use Current Branch or Current Branch for Business |                                                       Windows Update for Business を構成するために使用します。[Windows Update](manage-windows-updates-for-surface-hub.md) に関するページをご覧ください。                                                       |            [Update/BranchReadinessLevel](https://msdn.microsoft.com/library/windows/hardware/dn904962.aspx#Update_BranchReadinessLevel)             | 対応 <br> [カスタム ポリシーを使用。](#example-manage-surface-hub-settings-with-microsoft-intune) | 対応<br> [カスタム設定を使用。](#example-manage-surface-hub-settings-with-microsoft-endpoint-configuration-manager) |             対応             |
+| Current Branch または Current Branch for Business を使用する |                                                       Windows Update for Business を構成するために使用します。[Windows Update](manage-windows-updates-for-surface-hub.md) に関するページをご覧ください。                                                       |            [Update/BranchReadinessLevel](https://msdn.microsoft.com/library/windows/hardware/dn904962.aspx#Update_BranchReadinessLevel)             | 対応 <br> [カスタム ポリシーを使用。](#example-manage-surface-hub-settings-with-microsoft-intune) | 対応<br> [カスタム設定を使用。](#example-manage-surface-hub-settings-with-microsoft-endpoint-configuration-manager) |             対応             |
 |               機能更新プログラムを延期する               |                                                                                                          上記を参照してください。                                                                                                          | [Update/ DeferFeatureUpdatesPeriodInDays](https://msdn.microsoft.com/library/windows/hardware/dn904962.aspx#Update_DeferFeatureUpdatesPeriodInDays) | 対応 <br> [カスタム ポリシーを使用。](#example-manage-surface-hub-settings-with-microsoft-intune) | 対応<br> [カスタム設定を使用。](#example-manage-surface-hub-settings-with-microsoft-endpoint-configuration-manager) |             対応             |
 |               品質更新プログラムを延期する               |                                                                                                          上記を参照してください。                                                                                                          | [Update/DeferQualityUpdatesPeriodInDays](https://msdn.microsoft.com/library/windows/hardware/dn904962.aspx#Update_DeferQualityUpdatesPeriodInDays)  | 対応 <br> [カスタム ポリシーを使用。](#example-manage-surface-hub-settings-with-microsoft-intune) | 対応<br> [カスタム設定を使用。](#example-manage-surface-hub-settings-with-microsoft-endpoint-configuration-manager) |             対応             |
 |               機能更新プログラムの一時停止               |                                                                                                          上記を参照してください。                                                                                                          |             [Update/PauseFeatureUpdates](https://msdn.microsoft.com/library/windows/hardware/dn904962.aspx#Update_PauseFeatureUpdates)              | 対応 <br> [カスタム ポリシーを使用。](#example-manage-surface-hub-settings-with-microsoft-intune) | 対応<br> [カスタム設定を使用。](#example-manage-surface-hub-settings-with-microsoft-endpoint-configuration-manager) |             対応             |
@@ -146,7 +146,7 @@ Surface Hub に固有の設定に加え、多くの設定がすべての Windows
 |      設定      |                                              詳細                                               |                                                     CSP リファレンス                                                      |            Intune での<br>サポート             |    Configuration Manager での<br>サポート     | SyncML での<br>サポート\* |
 |-------------------|----------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------|-------------------------------------------------|-----------------------------|
 | Defender ポリシー |            スケジュールされたスキャン時刻を含め、Defender のさまざまな設定を構成するために使用します。            | Defender/*`<name of policy>`* <br> [Policy CSP に関するページ](https://msdn.microsoft.com/library/windows/hardware/dn904962.aspx)を参照 | 対応 <br> [カスタム ポリシーを使用。](#example-manage-surface-hub-settings-with-microsoft-intune) | 対応<br> [カスタム設定を使用。](#example-manage-surface-hub-settings-with-microsoft-endpoint-configuration-manager) |             対応             |
-|  Defender status  | Use to initiate a Defender scan, force a Security intelligence update, query any threats detected. |                   [Defender CSP](https://msdn.microsoft.com/library/windows/hardware/mt187856.aspx)                    |                       Yes                        |                       あり                       |             対応             |
+|  Defender の状態  | Defender スキャンを開始するために使用し、セキュリティインテリジェンス更新を強制し、検出されたすべての脅威を照会します。 |                   [Defender CSP](https://msdn.microsoft.com/library/windows/hardware/mt187856.aspx)                    |                       あり                        |                       あり                       |             対応             |
 
 \*SyncML でサポートされている設定は、Windows 構成デザイナー プロビジョニング パッケージでも構成できます。
 
@@ -164,7 +164,7 @@ Surface Hub に固有の設定に加え、多くの設定がすべての Windows
 
 |             設定             |                           詳細                            |                                           CSP リファレンス                                            |                                                         Intune での<br>サポート                                                          |                                                                  Configuration Manager での<br>サポート                                                                  | SyncML での<br>サポート\* |
 |---------------------------------|--------------------------------------------------------------|----------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------|
-| 信頼された CA 証明書のインストール | 信頼されたルート証明書と中間 CA 証明書を展開するために使用します。 | [RootCATrustedCertificates CSP](https://msdn.microsoft.com/library/windows/hardware/dn904970.aspx) | 対応。 <br> 「[Intune 証明書プロファイルを構成する](https://docs.microsoft.com/intune/deploy-use/configure-intune-certificate-profiles)」をご覧ください。 | Yes. <br> See [How to create certificate profiles in Microsoft Endpoint Configuration Manager](https://docs.microsoft.com/configmgr/protect/deploy-use/create-certificate-profiles). |             Yes             |
+| 信頼された CA 証明書のインストール | 信頼されたルート証明書と中間 CA 証明書を展開するために使用します。 | [RootCATrustedCertificates CSP](https://msdn.microsoft.com/library/windows/hardware/dn904970.aspx) | 対応。 <br> 「[Intune 証明書プロファイルを構成する](https://docs.microsoft.com/intune/deploy-use/configure-intune-certificate-profiles)」をご覧ください。 | 対応。 <br> [Microsoft Endpoint Configuration Manager で証明書プロファイルを作成する方法](https://docs.microsoft.com/configmgr/protect/deploy-use/create-certificate-profiles)について説明します。 |             対応             |
 
 <!--
 | Install client certificates  | Use to deploy Personal Information Exchange (.pfx, .p12) certificates. | [ClientCertificateInstall CSP](https://msdn.microsoft.com/library/windows/hardware/dn920023.aspx) | Yes. <br> See [How to Create and Deploy PFX Certificate Profiles in Intune Standalone](https://blogs.technet.microsoft.com/karanrustagi/2016/03/16/want-to-push-a-certificate-to-device-but-cant-use-ndes-continue-reading/). | Yes. <br> See [How to create PFX certificate profiles in Microsoft Endpoint Configuration Manager](https://docs.microsoft.com/configmgr/protect/deploy-use/create-pfx-certificate-profiles). | Yes |
@@ -173,9 +173,9 @@ Surface Hub に固有の設定に加え、多くの設定がすべての Windows
 
 #### ログを収集する
 
-|     設定      |                      詳細                       |                                     CSP リファレンス                                      | Intune での<br>サポート | Configuration Manager での<br>サポート | SyncML での<br>SyncML\*? |
+|     設定      |                      詳細                       |                                     CSP リファレンス                                      | Intune での<br>サポート | Configuration Manager での<br>サポート | SyncML での<br>サポート\* |
 |------------------|----------------------------------------------------|----------------------------------------------------------------------------------------|---------------------------|------------------------------------------|-----------------------------|
-| Collect ETW logs | リモートで Surface Hub から ETW ログを収集するために使用します。 | [DiagnosticLog CSP](https://msdn.microsoft.com/library/windows/hardware/mt219118.aspx) |            未対応             |                    なし                    |             対応             |
+| ETW ログの収集 | リモートで Surface Hub から ETW ログを収集するために使用します。 | [DiagnosticLog CSP](https://msdn.microsoft.com/library/windows/hardware/mt219118.aspx) |            未対応             |                    なし                    |             対応             |
 
 <!--
 | Collect security auditing logs | Use to remotely collect security auditing logs from Surface Hub. | SecurityAuditing node in [Reporting CSP](https://msdn.microsoft.com/library/windows/hardware/mt608321.aspx) | No | No | Yes |-->
@@ -183,32 +183,32 @@ Surface Hub に固有の設定に加え、多くの設定がすべての Windows
 
 #### ネットワーク サービス品質 (QoS) ポリシーの設定
 
-|        設定         |                                                            詳細                                                             |                                                    CSP リファレンス                                                     |            Intune での<br>サポート             |    Configuration Manager での<br>サポート     | SyncML での<br>SyncML\*? |
+|        設定         |                                                            詳細                                                             |                                                    CSP リファレンス                                                     |            Intune での<br>サポート             |    Configuration Manager での<br>サポート     | SyncML での<br>サポート\* |
 |------------------------|--------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------|--------------------------------------------------|-------------------------------------------------|-----------------------------|
-| Set Network QoS Policy | ネットワーク トラフィックに対して、一連のアクションを実行する QoS ポリシーを設定するために使用します。 これは、Skype ネットワーク パケットの優先順位付けに便利です。 | [NetworkQoSPolicy CSP](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/networkqospolicy-csp) | 対応 <br> [カスタム ポリシーを使用。](#example-manage-surface-hub-settings-with-microsoft-intune) | 対応<br> [カスタム設定を使用。](#example-manage-surface-hub-settings-with-microsoft-endpoint-configuration-manager) |             対応             |
+| ネットワーク QoS ポリシーの設定 | ネットワーク トラフィックに対して、一連のアクションを実行する QoS ポリシーを設定するために使用します。 これは、Skype ネットワーク パケットの優先順位付けに便利です。 | [NetworkQoSPolicy CSP](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/networkqospolicy-csp) | 対応 <br> [カスタム ポリシーを使用。](#example-manage-surface-hub-settings-with-microsoft-intune) | 対応<br> [カスタム設定を使用。](#example-manage-surface-hub-settings-with-microsoft-endpoint-configuration-manager) |             対応             |
 
 \*SyncML でサポートされている設定は、Windows 構成デザイナー プロビジョニング パッケージでも構成できます。
 
 #### ネットワーク プロキシの設定
 
-|      設定      |                               詳細                               |                                                CSP リファレンス                                                 |            Intune での<br>サポート             |    Configuration Manager での<br>サポート     | SyncML での<br>SyncML\*? |
+|      設定      |                               詳細                               |                                                CSP リファレンス                                                 |            Intune での<br>サポート             |    Configuration Manager での<br>サポート     | SyncML での<br>サポート\* |
 |-------------------|---------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------|--------------------------------------------------|-------------------------------------------------|-----------------------------|
-| Set Network proxy | イーサネットと Wi-Fi 接続に対してプロキシ サーバーを構成するために使用します。 | [NetworkProxy CSP](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/networkproxy-csp) | 対応 <br> [カスタム ポリシーを使用。](#example-manage-surface-hub-settings-with-microsoft-intune) | 対応<br> [カスタム設定を使用。](#example-manage-surface-hub-settings-with-microsoft-endpoint-configuration-manager) |             対応             |
+| ネットワーク プロキシの設定 | イーサネットと Wi-Fi 接続に対してプロキシ サーバーを構成するために使用します。 | [NetworkProxy CSP](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/networkproxy-csp) | 対応 <br> [カスタム ポリシーを使用。](#example-manage-surface-hub-settings-with-microsoft-intune) | 対応<br> [カスタム設定を使用。](#example-manage-surface-hub-settings-with-microsoft-endpoint-configuration-manager) |             対応             |
 
 \*SyncML でサポートされている設定は、Windows 構成デザイナー プロビジョニング パッケージでも構成できます。
 
 #### スタート メニューの構成
 
-|       設定        |                                                                       詳細                                                                        |                                                        CSP リファレンス                                                         |            Intune での<br>サポート             |    Configuration Manager での<br>サポート     | SyncML での<br>SyncML\*? |
+|       設定        |                                                                       詳細                                                                        |                                                        CSP リファレンス                                                         |            Intune での<br>サポート             |    Configuration Manager での<br>サポート     | SyncML での<br>サポート\* |
 |----------------------|------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------|-------------------------------------------------|-----------------------------|
-| Configure Start menu | スタート メニューに表示するアプリを構成するために使用します。 詳しくは、「[Surface Hub のスタート メニューの構成](surface-hub-start-menu.md)」をご覧ください。 | [ポリシー CSP: Start/StartLayout](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-start#start-startlayout) | 対応 <br> [カスタム ポリシーを使用。](#example-manage-surface-hub-settings-with-microsoft-intune) | 対応<br> [カスタム設定を使用。](#example-manage-surface-hub-settings-with-microsoft-endpoint-configuration-manager) |             対応             |
+| スタート メニューの構成 | スタート メニューに表示するアプリを構成するために使用します。 詳しくは、「[Surface Hub のスタート メニューの構成](surface-hub-start-menu.md)」をご覧ください。 | [ポリシー CSP: Start/StartLayout](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-start#start-startlayout) | 対応 <br> [カスタム ポリシーを使用。](#example-manage-surface-hub-settings-with-microsoft-intune) | 対応<br> [カスタム設定を使用。](#example-manage-surface-hub-settings-with-microsoft-endpoint-configuration-manager) |             対応             |
 
 \*SyncML でサポートされている設定は、Windows 構成デザイナー プロビジョニング パッケージでも構成できます。
 
-### Generate OMA URIs for settings 
-You need to use a setting's OMA URI to create a custom policy in Intune, or a custom setting in Microsoft Endpoint Configuration Manager.
+### 設定の OMA URI を生成する 
+Intune でカスタムポリシーを作成するには、設定の OMA URI を使用する必要があります。または、Microsoft Endpoint Configuration Manager のカスタム設定を使用する必要があります。
 
-**To generate the OMA URI for any setting in the CSP documentation**
+**CSP ドキュメントの任意の設定について OMA URI を生成するには**
 1. CSP ドキュメントで、CSP のルート ノードを識別します。 一般的には、次のようになっています。 `./Vendor/MSFT/<name of CSP>` <br>
 *たとえば、[SurfaceHub CSP](https://msdn.microsoft.com/library/windows/hardware/mt608323.aspx) のルート ノードは `./Vendor/MSFT/SurfaceHub` です。*
 2. 使用する設定のノード パスを識別します。 <br>
@@ -224,17 +224,17 @@ You need to use a setting's OMA URI to create a custom policy in Intune, or a cu
 
 ## 例: Microsoft Intune で Surface Hub の設定を管理する
 
-Microsoft Intune を使用して、Surface Hub の設定を管理できます。 カスタム設定の場合は、[Microsoft Intune でカスタム デバイス設定を構成する方法](https://docs.microsoft.com/intune/custom-settings-configure)に関するページの手順に従ってください。 For **Platform**, select **Windows 10 and later**, and in **Profile type**, select **Device restrictions (Windows 10 Team)**.
+Microsoft Intune を使用して、Surface Hub の設定を管理できます。 カスタム設定の場合は、[Microsoft Intune でカスタム デバイス設定を構成する方法](https://docs.microsoft.com/intune/custom-settings-configure)に関するページの手順に従ってください。 **[プラットフォーム]** で **[Windows 10 以降]** を選択し、**[プロファイルの種類]** で **[デバイスの制限 (Windows 10 Team)]** を選択します。
 
 
 
-## Example: Manage Surface Hub settings with Microsoft Endpoint Configuration Manager
-Configuration Manager supports managing modern devices that do not require the Configuration Manager client to manage them, including Surface Hub. If you already use Configuration Manager to manage other devices in your organization, you can continue to use the Configuration Manager console as your single location for managing Surface Hubs.
+## 例: Microsoft Endpoint Configuration Manager を使用して Surface Hub の設定を管理する
+Configuration Manager は、Surface Hub を含む、Configuration Manager クライアントで管理する必要がない先進デバイスの管理をサポートしています。 既に Configuration Manager を使用して組織内の他のデバイスを管理している場合は、Surface Hub を管理するための1つの場所として Configuration Manager コンソールを引き続き使うことができます。
 
 > [!NOTE]
-> These instructions are based on the current branch of Configuration Manager.
+> この手順は、構成マネージャーの現在の分岐に基づいています。
 
-**To create a configuration item for Surface Hub settings**
+**Surface Hub の設定の構成項目を作成するには**
 
 1. Configuration Manager コンソールの **[資産とコンプライアンス]** ワークスペースで、**[概要]** > **[コンプライアンス設定]** > **[構成項目]** の順にクリックします。
 2. **[ホーム]** タブの **[作成]** グループで、**[構成項目の作成]** をクリックします。
@@ -265,11 +265,11 @@ Configuration Manager supports managing modern devices that do not require the C
 16. **[規則の作成]** ダイアログで、フォームに入力して設定の規則を指定し、**[OK]** をクリックします。
 17. 構成項目に追加する各カスタム設定について、手順 9 ～ 15 を繰り返します。
 18. 作業が完了したら、**[設定の参照]** ダイアログで、**[閉じる]** をクリックします。
-19. ウィザードを完了します。 <br> You can view the new configuration item in the **Configuration Items** node of the **Assets and Compliance** workspace.
+19. ウィザードを完了します。 <br> 新しい構成項目は、**[資産とコンプライアンス]** ワークスペースの **[構成項目]** ノードで表示できます。
 
-For more information, see [Create configuration items for Windows 8.1 and Windows 10 devices managed without the Microsoft Endpoint Configuration Manager client](https://docs.microsoft.com/configmgr/compliance/deploy-use/create-configuration-items-for-windows-8.1-and-windows-10-devices-managed-without-the-client).
+詳細については、「 [Microsoft Endpoint Configuration Manager クライアントを使わずに管理された windows 8.1 および windows 10 デバイスの構成項目の作成](https://docs.microsoft.com/configmgr/compliance/deploy-use/create-configuration-items-for-windows-8.1-and-windows-10-devices-managed-without-the-client)」を参照してください。
 
-## Related topics
+## 関連トピック
 
 [Microsoft Surface Hub の管理](manage-surface-hub.md)
 

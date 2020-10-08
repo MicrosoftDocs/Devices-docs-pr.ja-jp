@@ -87,19 +87,19 @@ Windows 10 を実行している PC でプロビジョニング パッケージ�
 
 3. プロジェクトに名前を付け、**[次へ]** をクリックします。
 
-### Configure settings
+### 設定の構成
 
 <table>
-<tr><td style="width:45%" valign="top"><img src="images/one.png" alt="step one"/> <img src="images/add-certificates.png" alt="add certificates"/></br></br>To provision the device with a certificate, click <strong>Add a certificate</strong>. Enter a name for the certificate, and then browse to and select the certificate to be used.</td><td><img src="images/add-certificates-details.png" alt="add a certificate"/></td></tr> 
-<tr><td style="width:45%" valign="top"><img src="images/two.png" alt="step two"/>  <img src="images/proxy.png" alt="configure proxy settings"/></br></br>Toggle <strong>Yes</strong> or <strong>No</strong> for proxy settings. Surface Hub の既定の構成では、プロキシ設定が自動的に検出されます。設定を変更する必要がない場合は、<strong>[いいえ]</strong> を選択します。 ただし、それまでのプロキシ サーバーの使用を必要とするインフラストラクチャから、プロキシ サーバーを必要としないインフラストラクチャに変更した場合は、<strong>[はい]</strong> と <strong>[設定を自動的に検出]</strong> を選択することで、プロビジョニング パッケージを使って Surface Hub デバイスを既定の設定に戻すことができます。 </br></br><strong>[はい]</strong> に切り替えると、プロキシ設定を自動的に検出するか、設定を手動で構成するかを選択でき、手動で構成する場合は、スクリプトを設定するための URL を入力するか、静的なプロキシ サーバー アドレスを入力できます。 さらにローカルのアドレスにプロキシ サーバーを使うかどうか、また例外 (Surface Hub がプロキシ サーバーを使用せずに直接接続する必要があるアドレス) を入力するかどうかを指定することもできます。  </td><td><img src="images/proxy-details.png" alt="configure proxy settings"/></td></tr>
-<tr><td style="width:45%" valign="top"><img src="images/three.png" alt="step three"/>  <img src="images/set-up-device-admins.png" alt="device admins"/></br></br>デバイスを Active Directory に登録し、設定アプリを使用するセキュリティ グループを指定するか、Azure Active Directory に登録してグローバル管理者が設定アプリを使用できる環境にするか、デバイス上にローカル管理者アカウントを作成することができます。</br></br>デバイスを Active Directory に登録するには、最小限の特権を持つユーザー アカウントの資格情報を入力して、デバイスをドメインに参加させ、Surface Hub で管理者資格情報を持つセキュリティ グループを指定します。 デバイスを Active Directory に登録するプロビジョニング パッケージを、リセットされた Surface Hub に適用する場合、同じドメイン アカウントを使用できるのは、表示されているアカウントがドメイン管理者である場合か、Surface Hub を最初に設定したのと同じアカウントである場合のみです。 Otherwise, a different domain account must be used in the provisioning package.</br></br>Before you use a Windows Configuration Designer wizard to configure bulk Azure AD enrollment, <a href="https://docs.microsoft.com/azure/active-directory/active-directory-azureadjoin-setup" data-raw-source="[set up Azure AD join in your organization](https://docs.microsoft.com/azure/active-directory/active-directory-azureadjoin-setup)">set up Azure AD join in your organization</a>. Azure AD テナントの <strong>[ユーザーあたりのデバイスの最大数]</strong> の設定は、ウィザードで利用できる一括トークンを使用できる回数を決定します。 Azure AD にデバイスを登録するには、そのオプションを選択して、ウィザードを使って取得する一括トークンのフレンドリ名を入力します。 Set an expiration date for the token (maximum is 30 days from the date you get the token). Click <strong>Get bulk token</strong>. In the <strong>Let&#39;s get you signed in</strong> window, enter an account that has permissions to join a device to Azure AD, and then the password. Click <strong>Accept</strong> to give Windows Configuration Designer the necessary permissions.</br></br>To create a local administrator account, select that option and enter a user name and password. </br></br><strong>Important:</strong> If you create a local account in the provisioning package, you must change the password using the <strong>Settings</strong> app every 42 days. If the password is not changed during that period, the account might be locked out and unable to sign in.  </td><td><img src="images/set-up-device-admins-details.png" alt="join Active Directory, Azure AD, or create a local admin account"/></td></tr>
-<tr><td style="width:45%" valign="top"><img src="images/four.png" alt="step four"/> <img src="images/enroll-mdm.png" alt="enroll in device management"/></br></br>Toggle <strong>Yes</strong> or <strong>No</strong> for enrollment in MDM. </br></br><strong>[はい]</strong> を選択した場合、デバイスの登録を許可されたサービス アカウントとパスワードまたは証明書サムプリントを指定し、併せて認証の種類を指定する必要があります。 If required by your MDM provider, also enter the URLs for the discovery service, enrollment service, and policy service. <a href="manage-settings-with-mdm-for-surface-hub.md" data-raw-source="[Learn more about managing Surface Hub with MDM.](manage-settings-with-mdm-for-surface-hub.md)">Learn more about managing Surface Hub with MDM.</a></td><td><img src="images/enroll-mdm-details.png" alt="enroll in mobile device management"/></td></tr>
-<tr><td style="width:45%" valign="top"><img src="images/five.png" alt="step five"/> <img src="images/add-applications.png" alt="add applications"/></br></br>You can install multiple Universal Windows Platform (UWP) apps in a provisioning package. For help with the settings, see <a href="https://technet.microsoft.com/itpro/windows/configure/provision-pcs-with-apps" data-raw-source="[Provision PCs with apps](https://technet.microsoft.com/itpro/windows/configure/provision-pcs-with-apps)">Provision PCs with apps</a>. </br></br><strong>Important:</strong> Although the wizard interface allows you to select a Classic Win32 app, only include UWP apps in a provisioning package that will be applied to Surface Hub. If you include a Classic Win32 app, provisioning will fail. </td><td><img src="images/add-applications-details.png" alt="add an application"/></td></tr>
-<tr><td style="width:45%" valign="top"><img src="images/six.png" alt="step six"/>  <img src="images/add-config-file.png" alt="Add configuration file"/></br></br>You don&#39;t configure any settings in this step. It provides instructions for including a configuration file that contains a list of device accounts. 構成ファイルには、列ヘッダーを含めないでください。 プロビジョニング パッケージを Surface Hub に適用するときに、Surface Hub の構成ファイルが USB ドライブに含まれている場合は、アカウントとデバイスのフレンドリ名をファイルから選択できます。 See <a href="#sample-configuration-file" data-raw-source="[Sample configuration file](#sample-configuration-file)">Sample configuration file</a> for an example.</br></br><strong>Important:</strong> The configuration file can only be applied during the out-of-box setup experience (OOBE) and can only be used with provisioning packages created using the Windows Configuration Designer released with Windows 10, version 1703.  </td><td><img src="images/add-config-file-details.png" alt="Add a Surface Hub configuration file"/></td></tr>
-<tr><td style="width:45%" valign="top">  <img src="images/finish.png" alt="finish"/></br></br>You can set a password to protect your provisioning package. You must enter this password when you apply the provisioning package to a device.</td><td><img src="images/finish-details.png" alt="Protect your package"/></td></tr>
+<tr><td style="width:45%" valign="top"><img src="images/one.png" alt="step one"/> <img src="images/add-certificates.png" alt="add certificates"/></br></br>証明書を使ってデバイスをプロビジョニングするには、<strong>[証明書の追加]</strong> をクリックします。 証明書の名前を入力し、使用する証明書を表示して選択します。</td><td><img src="images/add-certificates-details.png" alt="add a certificate"/></td></tr> 
+<tr><td style="width:45%" valign="top"><img src="images/two.png" alt="step two"/>  <img src="images/proxy.png" alt="configure proxy settings"/></br></br>プロキシ設定を <strong>[はい]</strong> または <strong>[いいえ]</strong> に切り替えます。 Surface Hub の既定の構成では、プロキシ設定が自動的に検出されます。設定を変更する必要がない場合は、<strong>[いいえ]</strong> を選択します。 ただし、それまでのプロキシ サーバーの使用を必要とするインフラストラクチャから、プロキシ サーバーを必要としないインフラストラクチャに変更した場合は、<strong>[はい]</strong> と <strong>[設定を自動的に検出]</strong> を選択することで、プロビジョニング パッケージを使って Surface Hub デバイスを既定の設定に戻すことができます。 </br></br><strong>[はい]</strong> に切り替えると、プロキシ設定を自動的に検出するか、設定を手動で構成するかを選択でき、手動で構成する場合は、スクリプトを設定するための URL を入力するか、静的なプロキシ サーバー アドレスを入力できます。 さらにローカルのアドレスにプロキシ サーバーを使うかどうか、また例外 (Surface Hub がプロキシ サーバーを使用せずに直接接続する必要があるアドレス) を入力するかどうかを指定することもできます。  </td><td><img src="images/proxy-details.png" alt="configure proxy settings"/></td></tr>
+<tr><td style="width:45%" valign="top"><img src="images/three.png" alt="step three"/>  <img src="images/set-up-device-admins.png" alt="device admins"/></br></br>デバイスを Active Directory に登録し、設定アプリを使用するセキュリティ グループを指定するか、Azure Active Directory に登録してグローバル管理者が設定アプリを使用できる環境にするか、デバイス上にローカル管理者アカウントを作成することができます。</br></br>デバイスを Active Directory に登録するには、最小限の特権を持つユーザー アカウントの資格情報を入力して、デバイスをドメインに参加させ、Surface Hub で管理者資格情報を持つセキュリティ グループを指定します。 デバイスを Active Directory に登録するプロビジョニング パッケージを、リセットされた Surface Hub に適用する場合、同じドメイン アカウントを使用できるのは、表示されているアカウントがドメイン管理者である場合か、Surface Hub を最初に設定したのと同じアカウントである場合のみです。 そうでない場合は、別のドメイン アカウントをプロビジョニング パッケージで使う必要があります。</br></br>Windows 構成デザイナー ウィザードを使って Azure AD の登録を一括で構成する前に、<a href="https://docs.microsoft.com/azure/active-directory/active-directory-azureadjoin-setup" data-raw-source="[set up Azure AD join in your organization](https://docs.microsoft.com/azure/active-directory/active-directory-azureadjoin-setup)">組織での Azure AD 参加の設定</a>を行います。 Azure AD テナントの <strong>[ユーザーあたりのデバイスの最大数]</strong> の設定は、ウィザードで利用できる一括トークンを使用できる回数を決定します。 Azure AD にデバイスを登録するには、そのオプションを選択して、ウィザードを使って取得する一括トークンのフレンドリ名を入力します。 トークンの有効期限を設定します (最大、トークンの取得日から 30 日間)。 <strong>[一括トークンを取得する]</strong> をクリックします。 <strong>[&#39;s にサインインします </strong> ] ウィンドウで、Azure AD にデバイスを参加するためのアクセス許可を持つアカウントを入力し、その後、パスワードを入力します。 <strong>[承諾]</strong> をクリックして、Windows 構成デザイナーに必要なアクセス許可を付与します。</br></br>ローカル管理者アカウントを作成するには、そのオプションを選択して、ユーザー名とパスワードを入力します。 </br></br><strong>重要:</strong> プロビジョニング パッケージにローカル アカウントを作成する場合、42 日ごとに<strong>設定</strong>アプリを使ってパスワードを変更する必要があります。 その期間内にパスワードを変更しない場合、アカウントがロックされてサインインできなくなる可能性があります。  </td><td><img src="images/set-up-device-admins-details.png" alt="join Active Directory, Azure AD, or create a local admin account"/></td></tr>
+<tr><td style="width:45%" valign="top"><img src="images/four.png" alt="step four"/> <img src="images/enroll-mdm.png" alt="enroll in device management"/></br></br>MDM への登録について、<strong>[はい]</strong> または <strong>[いいえ]</strong> を切り替えます。 </br></br><strong>[はい]</strong> を選択した場合、デバイスの登録を許可されたサービス アカウントとパスワードまたは証明書サムプリントを指定し、併せて認証の種類を指定する必要があります。 MDM プロバイダーで必要な場合は、探索サービス、登録サービス、ポリシー サービスの URL も入力します。 <a href="manage-settings-with-mdm-for-surface-hub.md" data-raw-source="[Learn more about managing Surface Hub with MDM.](manage-settings-with-mdm-for-surface-hub.md)">MDM による Surface Hub の管理について詳しく知る。</a></td><td><img src="images/enroll-mdm-details.png" alt="enroll in mobile device management"/></td></tr>
+<tr><td style="width:45%" valign="top"><img src="images/five.png" alt="step five"/> <img src="images/add-applications.png" alt="add applications"/></br></br>プロビジョニング パッケージには、複数のユニバーサル Windows プラットフォーム (UWP) アプリをインストールできます。 設定について詳しくは「<a href="https://technet.microsoft.com/itpro/windows/configure/provision-pcs-with-apps" data-raw-source="[Provision PCs with apps](https://technet.microsoft.com/itpro/windows/configure/provision-pcs-with-apps)">アプリを使用して PC をプロビジョニングする</a>」をご覧ください。 </br></br><strong>重要: </strong> ウィザードインターフェイスで従来の Win32 アプリを選ぶことはできますが、Surface Hub に適用されるプロビジョニングパッケージには UWP アプリのみを含める必要があります。 従来の Win32 アプリを含めると、プロビジョニングが失敗します。 </td><td><img src="images/add-applications-details.png" alt="add an application"/></td></tr>
+<tr><td style="width:45%" valign="top"><img src="images/six.png" alt="step six"/>  <img src="images/add-config-file.png" alt="Add configuration file"/></br></br>この手順では、どの設定も構成し&#39;ません。 ここではデバイス アカウントの一覧が含まれた構成ファイルを含める手順を説明します。 構成ファイルには、列ヘッダーを含めないでください。 プロビジョニング パッケージを Surface Hub に適用するときに、Surface Hub の構成ファイルが USB ドライブに含まれている場合は、アカウントとデバイスのフレンドリ名をファイルから選択できます。 例については、「<a href="#sample-configuration-file" data-raw-source="[Sample configuration file](#sample-configuration-file)">構成ファイルの例</a>」をご覧ください。</br></br><strong>重要: </strong> 構成ファイルは、既定のセットアップエクスペリエンス (OOBE) 中にのみ適用できます。また、windows 10 バージョン1703でリリースされた Windows 構成デザイナーを使って作成されたプロビジョニングパッケージでのみ使うことができます。  </td><td><img src="images/add-config-file-details.png" alt="Add a Surface Hub configuration file"/></td></tr>
+<tr><td style="width:45%" valign="top">  <img src="images/finish.png" alt="finish"/></br></br>プロビジョニング パッケージを保護するためのパスワードを設定することができます。 プロビジョニング パッケージをデバイスに適用する場合は、このパスワードを入力する必要があります。</td><td><img src="images/finish-details.png" alt="Protect your package"/></td></tr>
 </table>
 
-After you're done, click **Create**. これは数秒で終わります。 パッケージがビルドされると、ページの下部に、パッケージの格納場所がハイパーリンクで表示されます。
+完了したら、[**作成**] をクリックします。 これは数秒で終わります。 パッケージがビルドされると、ページの下部に、パッケージの格納場所がハイパーリンクで表示されます。
 
 ## 構成ファイルの例
 
@@ -154,15 +154,15 @@ Rushmore@contoso.com,password,Rushmore Surface Hub
 
 2. **[プロビジョニングの詳細設定]** をクリックします。
    
-3. Name your project and click **Next**.
+3. プロジェクトに名前を付け、**[次へ]** をクリックします。
 
-4. Select **Common to Windows 10 Team**, click **Next**, and then click **Finish**.
+4. [ **Windows 10 チーム**との共通] を選択し、[ **次へ**] をクリックして、[ **完了**] をクリックします。
 
-    ![ICD new project](images/icd-new-project.png)
+    ![ICD の新しいプロジェクト](images/icd-new-project.png)
 
-5. In the project, under **Available customizations**, select **Common Team settings**.
+5. プロジェクトの [ **利用可能なカスタマイズ**] で、[ **一般的なチームの設定**] を選択します。
 
-    ![ICD common settings](images/icd-common-settings.png)
+    ![ICD の一般的な設定](images/icd-common-settings.png)
 
 
 ### 証明書をパッケージに追加する
@@ -189,9 +189,9 @@ UWP アプリをプロビジョニング パッケージに追加する前に、
 
 1. **[利用可能なカスタマイズ]** ウィンドウで、**[実行時の設定]** > **[UniversalAppInstall]** > **[DeviceContextApp]** の順に移動します。
 
-2. アプリの **PackageFamilyName** を入力し、**[追加]** をクリックします。 一貫性を保つために、アプリのパッケージ ファミリ名を使います。 If you acquired the app from the Microsoft Store for Business, you can find the package family name in the app license. Open the license file using a text editor, and use the value between the \<PFM\>...\</PFM\> tags.
+2. アプリの **PackageFamilyName** を入力し、**[追加]** をクリックします。 一貫性を保つために、アプリのパッケージ ファミリ名を使います。 ビジネス向け Microsoft Store からアプリを入手した場合は、アプリのライセンスからパッケージ ファミリ名がわかります。 テキストエディターを使用してライセンスファイルを開き、... タグの間の値を使います。 \<PFM\> \</PFM\>
 
-3. For **ApplicationFile**, click **Browse** to find and select the target app (either an \*.appx or \*.appxbundle).
+3. **[ApplicationFile]** で、**[参照]** をクリックし、ターゲット アプリ (\*.appx または \*.appxbundle のどちらか) を探して選びます。
 
 4. **[DependencyAppxFiles]** で、**[参照]** をクリックし、アプリの依存関係を探して追加します。 Surface Hub の場合、必要なのはこれらの依存関係の x64 バージョンだけです。
 
@@ -201,9 +201,9 @@ UWP アプリをプロビジョニング パッケージに追加する前に、
 
 2. ICD の **[利用可能なカスタマイズ]** ウィンドウで、**[実行時の設定]** > **[UniversalAppInstall]** > **[DeviceContextAppLicense]** の順に移動します。
 
-3. **[LicenseProductId]** を入力し、**[追加]** をクリックします。 一貫性を保つのために、アプリのライセンスにあるアプリのライセンス ID を使います。 Open the license file using a text editor. Then, in the \<License\> tag, use the value in the **LicenseID** attribute.
+3. **[LicenseProductId]** を入力し、**[追加]** をクリックします。 一貫性を保つのために、アプリのライセンスにあるアプリのライセンス ID を使います。 テキスト エディタでライセンス ファイルを開きます。 次に、タグで、 \<License\> **licenseid** 属性の値を使用します。
 
-4. Select the new **LicenseProductId** node. **[LicenseInstall]** では、**[参照]** をクリックして、手順 1 で名前を変更したライセンス ファイルを見つけて選択します。
+4. 新しい **[LicenseProductId]** ノードを選択します。 **[LicenseInstall]** では、**[参照]** をクリックして、手順 1 で名前を変更したライセンス ファイルを見つけて選択します。
 
 
 ### ポリシーをパッケージに追加する
@@ -218,11 +218,11 @@ Surface Hub は、[ポリシー構成サービス プロバイダー](https://ms
 
 ### Surface Hub の設定をパッケージに追加する 
 
-You can add settings from the [SurfaceHub configuration service provider](https://msdn.microsoft.com/library/windows/hardware/mt608323.aspx) to your provisioning package. 
+[SurfaceHub 構成サービス プロバイダー](https://msdn.microsoft.com/library/windows/hardware/mt608323.aspx)から、設定をプロビジョニング パッケージに追加できます。 
 
-1. In the **Available customizations** pane, go to **Runtime settings** > **SurfaceHub**.
+1. [**利用可能なカスタマイズ**] ウィンドウで、[**ランタイム設定**  >  **SurfaceHub**に移動します。
 
-2. Select one of the available setting areas.
+2. 利用可能な設定領域のいずれかを選択します。
 
 3. プロビジョニング パッケージに追加する設定を選択して設定します。 
 
@@ -274,13 +274,13 @@ You can add settings from the [SurfaceHub configuration service provider](https:
 
 ## プロビジョニング パッケージを Surface Hub に適用する
 
-There are two options for deploying provisioning packages to a Surface Hub. [During the first run wizard](#apply-a-provisioning-package-during-first-run), you can apply a provisioning package that installs certificates, or after the first-run program is complete, you can apply a provisioning package that configures settings, apps, and certificates by using [Settings](#apply-a-package-using-settings). 
+プロビジョニング パッケージを Surface Hub に展開するためのオプションは 2 つあります。 [初めて実行するウィザード](#apply-a-provisioning-package-during-first-run)では、証明書をインストールするプロビジョニングパッケージを適用できます。または、初回実行プログラムが完了した後、設定を使用して、設定、アプリ、証明書を構成するプロビジョニングパッケージを適用[できます。](#apply-a-package-using-settings) 
 
 
-### Apply a provisioning package during first run
+### 最初の実行時にプロビジョニング パッケージを適用する
 
 > [!IMPORTANT]
-> During the first-run program, you can only use provisioning packages to install certificates. Use the **Settings** app to install apps and apply other settings.
+> 初めて実行するプログラムでは、プロビジョニングパッケージを使って証明書をインストールする必要があります。 **設定**アプリを使って、アプリをインストールし、その他の設定を適用します。
 
 1. Surface Hub を初めて起動すると、[**[こんにちは]**](first-run-program-surface-hub.md#first-page) というページが表示されます。 操作を続行する前に、設定が適切に構成されていることを確認してください。
 
