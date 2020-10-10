@@ -11,12 +11,12 @@ audience: Admin
 ms.topic: article
 ms.date: 07/23/2020
 ms.localizationpriority: Medium
-ms.openlocfilehash: a031fd7fd861e5d45194ec1a8c391621a2bcb71a
-ms.sourcegitcommit: 5fa5efefd510ce6f435d7142fb2f2cc08b520da9
+ms.openlocfilehash: 2fafca4a8f19da72d1584c02cbebe1ce3c03adde
+ms.sourcegitcommit: a16c75f4e81c48e2d0e3ec45430af0939e4feaa2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/25/2020
-ms.locfileid: "11078747"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "11105943"
 ---
 # Intune で Surface Hub 2S を管理する
 
@@ -92,19 +92,25 @@ Surface Hub 2S で最適なビデオおよびオーディオ品質を確保す�
 > [!NOTE]
 > 両方の表に、既定のポート範囲が表示されます。 管理者は、Skype for Business と Teams のコントロール パネルでポート範囲を変更できます。
 
-## Microsoft Teams のモード設定
+## Microsoft Teams の設定
 
-Intune を使用して Microsoft Teams アプリ モードを設定できます。 Surface Hub 2S は Microsoft Teams と共にモード 0 でインストールされます。このモードでは、Microsoft Teams と Skype for Business の両方がサポートされます。 モードは次のように調整できます。
+Intune を使用して、Microsoft Teams のさまざまな設定を構成することができます。
 
-### モード:
+### モード
+
+Surface Hub 2S は Microsoft Teams と共にモード 0 でインストールされます。このモードでは、Microsoft Teams と Skype for Business の両方がサポートされます。 Modes 関数は、次のように機能します。
 
 - モード 0 — スケジュール設定済みの会議に対応する Microsoft Teams 機能を備えた Skype for Business です。
 - モード 1 — スケジュール設定済みの会議に対応する Skype for Business 機能を備えた Microsoft Teams です。
 - モード 2 — Microsoft Teams のみ。
 
-モードを設定するには、カスタムのデバイス構成プロファイルに次の設定を追加します。
+モードを調整するには、 [カスタムデバイス構成プロファイル](https://docs.microsoft.com/mem/intune/configuration/custom-settings-configure)に次の設定を追加します。
 
 | 名前 | 説明 | OMA-URI | 型 | 値 |
 |:--- |:--- |:--- |:--- |:--- |
 |**Teams アプリ ID**|アプリ名|./Vendor/MSFT/SurfaceHub/Properties/VtcAppPackageId|String| Microsoft.MicrosoftTeamsforSurfaceHub_8wekyb3d8bbwe!Teams|
 |**Teams アプリ モード**|Teams モード|./Vendor/MSFT/SurfaceHub/Properties/SurfaceHubMeetingMode|Integer| 0、1、2 のいずれか|
+
+### コーディネートされた会議と近接参加
+
+チームで調整された会議と近接の参加機能は、Intune プロファイルによって展開された [XML ファイルを使って構成](https://docs.microsoft.com/mem/intune/configuration/custom-settings-configure) できます。
