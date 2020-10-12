@@ -8,26 +8,26 @@ ms.sitesec: library
 author: coveminer
 ms.author: greglin
 ms.topic: article
-ms.date: 10/01/2020
+ms.date: 10/09/2020
 ms.reviewer: jessko
 manager: laurawi
 ms.audience: itpro
-ms.openlocfilehash: 758cde12ea79e42630dad55b06eb50d0ab9dda12
-ms.sourcegitcommit: f996a95af741e54536b1f3eb94d0f13f681f5d5d
+ms.openlocfilehash: 202818488f19c82ba9d08cfcbfcd091e3e8b7bf6
+ms.sourcegitcommit: 7d5b0a7948eb540d6849a0e2c70a1058584cc5f8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "11093130"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "11105842"
 ---
 # Surface Pro X の展開、管理、メンテナンス
 
 ## はじめに
 
-Surface Pro X は、ARM デバイスでこれまでにリリースされた最も強力なプロセッサである Microsoft SQ1 ARM チップセットを組み込み、商用環境での高パフォーマンス要件を処理できるように構築されています。
+Surface Pro X は、クラスで最も強力なプロセッサである Microsoft SQ1 および Microsoft SQ1 ARM チップセットを組み込むことにより新境地を開拓し、商用環境での高パフォーマンス要件を処理できるように構築されています。
 
-Surface Pro X では 3GHz CPU と 2.1 テラフロップ GPU を搭載し、完全な Windows エクスペリエンスを提供しています。 13 時間のバッテリ寿命と組み込みの 4G LTE が装備されているため、金融、法務、医療の分野のモバイル ファーストライン ワーカーおよびプロフェッショナルをはじめ、長いバッテリ寿命と継続的な接続性を必要とするあらゆる業務のユーザーに最適です。
+Surface Pro X では 3GHz CPU と 2.1 テラフロップ GPU を搭載し、完全な Windows エクスペリエンスを提供しています。 15 時間のバッテリー寿命を内蔵した Gigabit LTE と、タッチ、ペン、タブレット、ラップトップの多様性により、金融、法務、医療の分野のモバイル ファーストライン ワーカーおよびプロフェッショナルをはじめ、長いバッテリ寿命と継続的な接続性を必要とするあらゆる業務のユーザーに最適に機能します。
 
-Surface Pro X は、Microsoft 365、Intune、および Windows Autopilot を中心とした最新のクラウドベース環境専用に設計されています。 この記事では、Surface Pro X の概要を示し、展開、管理、およびメンテナンスに関する主な考慮事項について説明します。
+Surface Pro X は、最新のクラウドベース環境専用に設計されており、Microsoft 365、Intune、および Windows Autopilot と組み合わせると最適に機能します。 この記事では、Surface Pro X の概要を示し、展開、管理、およびメンテナンスに関する主な考慮事項について説明します。
 
 ## Surface Pro X の展開
 
@@ -42,7 +42,7 @@ Autopilot による展開には、いくつかの利点があります。ゼロ�
 
 ## イメージ ベースの展開に関する考慮事項
 
-現在、Microsoft Deployment Toolkit (MDT) および Microsoft Endpoint Configuration Manager (旧称 System Center Configuration Manager) では、Surface Pro X でのオペレーティング システムの展開がサポートされていません。 イメージ ベースの展開をご利用のお客様は、クラウドへの移行に適したタイミングを引き続き評価しつつ、Surface Pro 7 の使用をご検討ください。
+現在、Microsoft Deployment Toolkit (MDT) および Microsoft Endpoint Configuration Manager (旧称 System Center Configuration Manager) では、Surface Pro X でのオペレーティング システムの展開がサポートされていません。 イメージ ベースの展開をご利用のお客様は、最新の展開ソリューションに移行する適切な時期を引き続き評価しつつ、Surface Pro 7 の使用をご検討ください。 
 
 ## Surface Pro X デバイスの管理
 
@@ -68,7 +68,7 @@ Windows Defender は、Windows 10 デバイスの有効なサポート期間中�
 
 ## Surface Pro X のメンテナンス
 
-Surface Pro X では、 Windows 10 Version 1903 以降がサポートされています。 ARM ベースのデバイスとして、最新のドライバーとファームウェアを維持するための特定の要件があります。 
+Surface Pro X は Windows 10 バージョン 2004 に付属しており、Windows 10 バージョン 1903 以降をサポートしています。 ARM ベースのデバイスとして、最新のドライバーとファームウェアを維持するための特定の要件があります。 
 
 Surface Pro X は、ホーム ユーザーと小規模ビジネス ユーザーの両方を対象とし、ドライバーとファームウェアを最新の状態に保つプロセスを Windows Update で簡略化できるように設計されています。 自動で更新プログラムを受け取るには、既定の設定を使用します。  設定を確認するには、次の操作を実行します。
 
@@ -78,7 +78,6 @@ Surface Pro X は、ホーム ユーザーと小規模ビジネス ユーザー�
 ### 商用利用のお客様向けの推奨事項
 
 - 最新のドライバとファームウェアを維持するには、Windows Update または Windows Update for Business を使用します。 詳しくは、「[Windows Update for Business を使った更新プログラムの展開](https://docs.microsoft.com/windows/deployment/update/waas-manage-updates-wufb)」をご覧ください。
-- 手順で Windows インストーラーの .msi ファイルを使用する必要がある場合は、[Surface のビジネス向けサポート](https://support.microsoft.com/help/4037645)にお問い合わせください。 
 - Surface デバイスでの更新プログラムの展開と管理の詳細については、「[Surface のドライバーおよびファームウェアの更新プログラムを管理および展開する](manage-surface-driver-and-firmware-updates.md)」をご覧ください。
 - Windows Server Update Services (WSUS) では、ドライバーとファームウェアを Surface Pro X に提供する機能がサポートされていません。
 
@@ -95,6 +94,11 @@ Surface Pro X は、ホーム ユーザーと小規模ビジネス ユーザー�
 > [!NOTE]
 > 64 ビット エミュレーションが Windows Insider プログラムを介してプレビューで間もなく登場するため、Surface Pro X で 64 ビット (x64) アプリを実行できるようになります。
 
+### FastTrack App Assure 
+
+App Assure プログラムは、ARM 版 Windows 10 を対象とする LOB、ISV、および Microsoft のファーストパーティ アプリの商用のお客様が利用できます。 ARM 版 Windows 10 を使用してアプリの互換性の問題が発生した場合、Microsoft は、追加費用なしで、アプリの修正をトラブルシューティングおよび支援するための開発者向けリソースを提供します。 詳細については、aka.ms/AppAssure にアクセスしてください。
+
+
 Surface Pro X でのアプリの実行について詳しくは、以下をご覧ください。
 
 - [Windows 10 ARM ベースの PC に関する FAQ](https://support.microsoft.com/help/4521606)
@@ -109,7 +113,7 @@ Windows Virtual Desktop を使用すると、任意の場所から任意のコ�
 Surface Pro X では、一般的な各種のブラウザーを実行できます。
 
 - また、Surface Pro X では、付属の Edge、Firefox、Chrome、Internet Explorer をすべて使用できます。
-- 付属の Edge と Firefox はネイティブで動作するため、ARM ベースのプロセッサで動作する Windows 10 PC で、高いパフォーマンスを発揮します。
+- Chromium に基づく Firefox と Microsoft Edge はネイティブで動作するため、ARM ベースのプロセッサで動作する Windows 10 PC で、高いパフォーマンスを発揮します。
 
 ## Microsoft Office のインストールと使用
 
@@ -122,44 +126,57 @@ Surface Pro X では、一般的な各種のブラウザーを実行できます
 
 ARM ベースのプロセッサで動作する Windows 10 PC が特定のサード パーティ VPN でサポートされているかどうかを確認するには、VPN プロバイダーにお問い合わせください。
 
-## 主な機能の比較
+## 機能の概要
 
-次の表は、ARM で動作する Windows 10 の Surface Pro X と Intel ベースの Surface Pro 7 と比較して、主な機能に関するサポートの有無を示しています。
-
-| 展開                              | Surface Pro 7 | Surface Pro X | 備考                                                                                                                           |
-| --------------------------------------- | ------------- | ------------- | ------------------------------------------------------------------------------------------------------------------------------- |
-| Windows Autopilot                       | あり           | あり           |                                                                                                                                 |
-| ネットワーク ブート (PXE) のサポート          | あり           | なし           |                                                                                                                                 |
-| Windows 構成デザイナー          | あり           | なし            | Surface Pro X では推奨されていません。                                                                                              |
-| WinPE                                   | あり           | あり           | Surface Pro X では推奨されていません。Microsoft では、Surface Pro X で WinPE をサポートするために必要な .ISO とドライバーが提供されていません。 |
-| Endpoint Configuration Manager: オペレーティング システムの展開 (OSD) | あり           | なし            | Surface Pro X ではサポートされていません。                                                                                              |
-| MDT                                     | あり           | なし            | Surface Pro X ではサポートされていません。                                                                                              |
+次の表は、ARM 版 Windows 10 を搭載した Surface Pro X で選択された主要機能の可用性を示しています。
 
 
-| 管理                                    | Surface Pro 7       | Surface Pro X | 備考                                                                                 |
-| --------------------------------------------- | ------------------- | ------------- | ------------------------------------------------------------------------------------- |
-| Intune                                        | あり                 | あり           | LTE は eSIM プロファイルで管理します。                                                        |
-| Windows Autopilot                             | あり                 | あり           |                                                                                       |
-| Azure AD (共同管理)                      | あり                 | あり           | Azure AD または Active Directory (Hybrid Azure AD Join) に Surface Pro X を参加させます。 |
-| Endpoint Configuration Manager                                          | あり               | あり           |                                                                                       |
-| AC 復元時の電源オン                      | あり                 | あり           |                                                                                   |
-| ビジネス向け Surface 診断ツールキット (SDT) | あり                 | あり           |                                                                                   |
-| Surface Dock Firmware Update                  | あり                 | なし           |                                                                                   |
-| Asset Tag Utility                             | あり                 | あり           |                                                                                   |
-| Surface Enterprise Management Mode (SEMM)     | あり | 一部       | Surface Pro X のハードウェアをファームウェア レベルで無効にするオプションはありません。                 |
-| Surface UEFI コンフィギュレータ                     | あり |   なし            | Surface Pro X のハードウェアを ファームウェア レベルで無効にするオプションはありません。                |
-| Surface UEFI マネージャー                          | あり | 一部       | Surface Pro X のハードウェアをファームウェア レベルで無効にするオプションはありません。                 |
+**展開**
+
+| 機能                                                           | Y/N | 備考                                                                                                                             |
+| ----------------------------------------------------------------- | --- | --------------------------------------------------------------------------------------------------------------------------------- |
+| Windows Autopilot                                                 | あり |                                                                                                                                   |
+| ネットワーク ブート (PXE) のサポート                                    | なし  |                                                                                                                                   |
+| Windows 構成デザイナー                                    | なし  | Surface Pro X では推奨されていません。                                                                                                |
+| WinPE                                                             | あり | Surface Pro X では推奨されていません。Microsoft では、Surface Pro X で WinPE をサポートするために必要な .ISO とドライバーが提供されていません。 |
+| Endpoint Configuration Manager: オペレーティング システムの展開 (OSD) | なし  | Surface Pro X ではサポートされていません。                                                                                                   |
+| MDT                                                               | なし  | Surface Pro X ではサポートされていません。                                                                                                   |
+
+ 
+ 
+ **管理**
+ 
+
+| 機能                                       | Y/N     | 備考                                                                                 |
+| --------------------------------------------- | ------- | ------------------------------------------------------------------------------------- |
+| Intune                                        | あり     | LTE は eSIM プロファイルで管理します。                                                        |
+| Windows Autopilot                             | あり     |                                                                                       |
+| Azure AD (共同管理)                      | あり     | Azure AD または Active Directory (Hybrid Azure AD Join) に Surface Pro X を参加させます。 |
+| Endpoint Configuration Manager                | あり     |                                                                                       |
+| AC 復元時の電源オン                      | あり     |                                                                                       |
+| ビジネス向け Surface 診断ツールキット (SDT) | あり     |                                                                                       |
+| Surface Asset Tag ツール                        | あり     |                                                                                       |
+| Surface Enterprise Management Mode (SEMM)     | 一部 | Surface Pro X のハードウェアをファームウェア レベルで無効にするオプションはありません。                 |
+| Surface UEFI コンフィギュレータ                     | なし      | Surface Pro X のハードウェアを ファームウェア レベルで無効にするオプションはありません。                |
+| Surface UEFI マネージャー                          | 一部 | Surface Pro X のハードウェアをファームウェア レベルで無効にするオプションはありません。                 |
+
+ 
+
+**セキュリティ**
+ 
+
+ 機能                                       | Y/N     | 備考                                                                                 |
+| --------------------------------------------- | ------- | ------------------------------------------------------------------------------------- |
+| BitLocker                                     | あり     |                                                       |
+| Windows Defender                              | あり     |                                                                                       |
+| サード パーティ製ウィルス対策のサポート             | 「備考」を参照| サード パーティ製ウイルス対策ソフトウェアには、ARM ベースのプロセッサで動作する Windows 10 PC にインストールできないものもあります。 サードパーティ製のウイルス対策ソフトウェア プロバイダーとのコラボレーションは、ARM ベースの PC での AV アプリの準備用に継続されています。 アプリが利用可能になる時期については、各ウイルス対策ソフトウェア プロバイダーにお問い合わせください。 |
+| セキュア ブート               | あり     |                                                                                       |
+| Windows 情報保護                      | あり     |                                                                                       |
+| Surface Data Eraser (SDE)     | あり     |                                                                                       |
 
 
-| セキュリティ                          | Surface Pro 7 | Surface Pro X | 備考                                                                                                                                                                                                                                                                                                                                                |
-| --------------------------------- | ------------- | ------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| BitLocker                         | あり           | あり           |                                                                                                                                                                                                                                                                                                                                                      |
-| Windows Defender                  | あり           | あり           |                                                                                                                                                                                                                                                                                                                                                      |
-| サード パーティ製ウィルス対策のサポート | あり           | 「備考」を参照      |サード パーティ製ウイルス対策ソフトウェアには、ARM ベースのプロセッサで動作する Windows 10 PC にインストールできないものもあります。 サードパーティ製のウイルス対策ソフトウェア プロバイダーとのコラボレーションは、ARM ベースの PC での AV アプリの準備用に継続されています。 アプリが利用可能になる時期については、各ウイルス対策ソフトウェア プロバイダーにお問い合わせください。 |
-| 条件付きアクセス                | あり           | あり           |                                                                                                                                                                                                                                                                                                                                                      |
-| セキュア ブート                       | あり           | あり           |                                                                                                                                                                                                                                                                                                                                                      |
-| Windows 情報保護    | あり           | あり           |                                                                                                                                                                                                                                                                                                                                                      |
-| Surface Data Eraser (SDE)         | あり           | あり           |                                                                                                                                                                                                                                                                                                                                                     
+
+
 ## FAQ
 
 ### MDT または Endpoint Configuration Manager を使用して Surface Pro X を展開できますか?
@@ -172,7 +189,7 @@ Surface Pro X は Windows Autopilot を使用して展開できます。
 
 ### BMR は利用できますか?
 
-はい、できます。
+はい、「[Surface の回復イメージのダウンロード](https://support.microsoft.com/surfacerecoveryimage)」を参照してください。
 
 ### Surface Pro X を管理するためには Intune が必要ですか?
 
