@@ -13,13 +13,13 @@ ms.localizationpriority: medium
 ms.audience: itpro
 ms.reviewer: ''
 manager: laurawi
-ms.date: 04/24/2020
-ms.openlocfilehash: b13b0a7fa486d2360c5e69ad1578c85a5e46a91d
-ms.sourcegitcommit: 109d1d7608ac4667564fa5369e8722e569b8ea36
+ms.date: 10/12/2020
+ms.openlocfilehash: 858b6726f1127e3c439864f8946274ed0ea1edd3
+ms.sourcegitcommit: c1efb75e8524193bdc0a5f7496dc23a92ac665c8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2020
-ms.locfileid: "10835662"
+ms.lasthandoff: 10/12/2020
+ms.locfileid: "11114565"
 ---
 # Microsoft 展開ツールキットを使用して Windows 10 を Surface デバイスに展開する
 
@@ -29,12 +29,13 @@ ms.locfileid: "10835662"
 - Surface Pro 4 以降
 - Surface Book 以降
 - Surface Pc 以降
+- Surface のノート Pc の移動
 - Surface Go
 - Surface 3
 - Windows 10
 
 > [!NOTE]
-> MDT は Surface Pro X ではサポートされていません。詳細については、「[展開、管理、およびサービス Surface Pro X](surface-pro-arm-app-management.md)」を参照してください。
+> MDT は Surface Pro X ではサポートされていません。詳細については、「 [展開、管理、およびサービス Surface Pro X](surface-pro-arm-app-management.md)」を参照してください。
 
 MDT の使用に関する最新情報については、「 [mdt を使用した Windows 10 イメージの展開](https://docs.microsoft.com/windows/deployment/deploy-windows-mdt/deploy-a-windows-10-image-using-mdt)」を参照してください。
 

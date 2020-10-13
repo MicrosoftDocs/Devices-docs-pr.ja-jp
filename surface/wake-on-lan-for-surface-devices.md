@@ -13,12 +13,12 @@ ms.topic: article
 ms.reviewer: scottmca
 manager: laurawi
 ms.audience: itpro
-ms.openlocfilehash: 760ba75ea7b36238d6de722d38e44a3854073112
-ms.sourcegitcommit: 109d1d7608ac4667564fa5369e8722e569b8ea36
+ms.openlocfilehash: a56f6e01a4d7bf1cc40d73f34c3abf8e04443989
+ms.sourcegitcommit: c1efb75e8524193bdc0a5f7496dc23a92ac665c8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2020
-ms.locfileid: "10835510"
+ms.lasthandoff: 10/12/2020
+ms.locfileid: "11114615"
 ---
 # Surface デバイス での Wake On LAN の使用
 
@@ -50,6 +50,7 @@ WOL では、次のデバイスがサポートされています。
 * Surface Studio 2 (以下の「Surface Studio 2 の手順」を参照)
 * Surface Pro 7
 * Surface Laptop 3
+* Surface のノート Pc の移動
 
 ## WOL ドライバー
 
@@ -88,12 +89,12 @@ Surface Studio 2 で WOL を有効にするには、次の手順を使用する�
 
 ## Surface WOL の使用
 
-Surface WOL ドライバーは、WOL 標準に準拠しているため、デバイスはマジックパケットと呼ばれる特殊なネットワーク通信によって呼び出されます。 Magic packet は、6バイトの 255 (または16進数の FF) で構成され、その後にターゲットコンピューターの MAC アドレスが16回繰り返されます。 この magic packet と[ウィキペディア](https://wikipedia.org/wiki/Wake-on-LAN#Magic_packet)の WOL 標準の詳細については、こちらをご覧ください。
+Surface WOL ドライバーは、WOL 標準に準拠しているため、デバイスはマジックパケットと呼ばれる特殊なネットワーク通信によって呼び出されます。 Magic packet は、6バイトの 255 (または16進数の FF) で構成され、その後にターゲットコンピューターの MAC アドレスが16回繰り返されます。 この magic packet と [ウィキペディア](https://wikipedia.org/wiki/Wake-on-LAN#Magic_packet)の WOL 標準の詳細については、こちらをご覧ください。
 
 >[!NOTE]
 >WOL を使って magic packet を送信し、デバイスをウェイクアップするには、ターゲットデバイスとイーサネットアダプターの MAC アドレスがわかっている必要があります。 Magic packet では IP ネットワークプロトコルを使用していないため、デバイスの IP アドレスまたは DNS 名を使うことはできません。
 
-Configuration Manager などの多くの管理ソリューションは、WOL の組み込みサポートを提供しています。 Microsoft ストアアプリ、PowerShell モジュール、サードパーティ製のアプリケーション、サードパーティ製の管理ソリューションなど、デバイスをスリープ状態にするための magic packet を送信できるソリューションも数多くあります。 たとえば、TechNet スクリプトセンターで[Wake ON LAN PowerShell モジュール](https://gallery.technet.microsoft.com/scriptcenter/Wake-On-Lan-815424c4)を使用することができます。 
+Configuration Manager などの多くの管理ソリューションは、WOL の組み込みサポートを提供しています。 Microsoft ストアアプリ、PowerShell モジュール、サードパーティ製のアプリケーション、サードパーティ製の管理ソリューションなど、デバイスをスリープ状態にするための magic packet を送信できるソリューションも数多くあります。 たとえば、TechNet スクリプトセンターで [Wake ON LAN PowerShell モジュール](https://gallery.technet.microsoft.com/scriptcenter/Wake-On-Lan-815424c4) を使用することができます。 
 
 >[!NOTE]
 >デバイスが magic packet で起動された後、アプリケーションがシステムのスリープを積極的に妨害していない場合、または AllowSystemRequiredPowerRequests レジストリキーが1に設定されていない場合は、デバイスはスリープ状態に戻ります。これにより、アプリケーションはスリープを防ぐことができます。 このレジストリキーの詳細については、この記事の「 [WOL ドライバー](#wol-driver) 」セクションを参照してください。

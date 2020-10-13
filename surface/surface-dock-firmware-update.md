@@ -12,19 +12,19 @@ ms.reviewer: scottmca
 manager: laurawi
 ms.audience: itpro
 ms.date: 8/07/2020
-ms.openlocfilehash: 159eb4ca27bb867623020936276470ba9897f3b8
-ms.sourcegitcommit: 83530906c7e34c92bbee90b723321acd61e77669
+ms.openlocfilehash: 9069903421d6e621dfbc31cd1cfaffb045fa9f19
+ms.sourcegitcommit: c1efb75e8524193bdc0a5f7496dc23a92ac665c8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/08/2020
-ms.locfileid: "10918937"
+ms.lasthandoff: 10/12/2020
+ms.locfileid: "11114555"
 ---
 # Microsoft Surface Dock ファームウェアの更新: IT 管理者向けの技術情報
 
 > [!IMPORTANT]
 > この記事には、IT 管理者向けの技術的な手順が記載されています。 ホームユーザーの場合は、Microsoft サポートサイトで[Surface Dock のファームウェアを更新する方法を](https://support.microsoft.com/help/4023478/surface-update-your-surface-dock)参照してください   。 サポートサイトの手順は、以下の一般的なインストール手順と同じですが、この記事には、ネットワーク上の複数のデバイスの更新を監視、確認、展開するための追加情報が記載されています。
 
-この記事では、Microsoft Surface Dock ファームウェア更新プログラムを使用して Surface Dock ファームウェアを更新する方法について説明します。 Surface デバイスにインストールすると、surface デバイスに接続されている Surface Dock が更新されます。 
+この記事では、Microsoft Surface Dock ファームウェア更新プログラムを使用して、元の Surface Dock 1 のファームウェアを更新する方法について説明します。 Surface Dock 2 には適用されません。 Surface デバイスにインストールすると、surface デバイスに接続されている Surface Dock が更新されます。 
 
 このツールは、以前は、Surface tool の一部としてダウンロードできる以前の Microsoft Surface Dock アップデーターツールの代わりに使用されます。 以前のツールには Surface_Dock_Updater_vx.xx.xxx.x.msi (x はバージョン番号を示す) という名前が付けられたため、ダウンロードできなくなり、使用できません。
 
@@ -54,10 +54,10 @@ ms.locfileid: "10918937"
     ```cmd
     Reg query "HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\WUDF\Services\SurfaceDockFwUpdate\Parameters"
     ```
-3. この記事の[次のセクション](#install-the-surface-dock-firmware-update)で説明するように、更新プログラムをインストールします。
-4. 次のテキストが表示されたイベント2007は、ファームウェアの更新が完了したことを示し**ます。 DriverTelementry EventCode = 2007**。 
+3. この記事の [次のセクション](#install-the-surface-dock-firmware-update) で説明するように、更新プログラムをインストールします。
+4. 次のテキストが表示されたイベント2007は、ファームウェアの更新が完了したことを示し **ます。 DriverTelementry EventCode = 2007**。 
     - 更新に失敗した場合、イベント ID 2007 は**情報**ではなく**エラー**イベントとして表示されます。 さらに、Windows レジストリで報告されたバージョンは最新のものではありません。
-5. 更新が完了すると、更新された DWORD 値が、ツールの現在のバージョンに対応する Windows レジストリに表示されます。 詳細については、この記事の「[バージョンのリファレンス](#versions-reference)」セクションを参照してください。 次に、例を示します。
+5. 更新が完了すると、更新された DWORD 値が、ツールの現在のバージョンに対応する Windows レジストリに表示されます。 詳細については、この記事の「 [バージョンのリファレンス](#versions-reference) 」セクションを参照してください。 次に、例を示します。
     - Component10CurrentFwVersion 0x04ac3970 (78395760)
     - Component20CurrentFwVersion 0x04915a70 (76634736)
 
@@ -84,10 +84,10 @@ Windows Installer コマンド (Msiexec.exe) を使って、ネットワーク�
   > [!NOTE]
   > 既定では、ログファイルは作成されません。 ログファイルを作成するには、"/l*v [path]" を追加する必要があります。例: Msiexec.exe/i \<path to msi file\> /l*v%windir%\logs\ SurfaceDockFWI "
 
-  詳細については、「[コマンドラインオプション](https://docs.microsoft.com/windows/win32/msi/command-line-options)のドキュメント」を参照してください。
+  詳細については、「 [コマンドラインオプション](https://docs.microsoft.com/windows/win32/msi/command-line-options) のドキュメント」を参照してください。
 
 > [!IMPORTANT]
-> 他の方法を使用して Surface Dock を更新したままにする場合は、「 [Surface dock の更新](https://support.microsoft.com/help/4023478/surface-update-your-surface-dock)」を参照してください。
+> 他の方法を使用して Surface Dock を更新したままにする場合は、「 [Surface dock の更新](https://support.microsoft.com/help/4023478/surface-update-your-surface-dock) 」を参照してください。
 
 ## Intune の展開
 
@@ -109,7 +109,7 @@ Surface Dock のファームウェア更新が正常に完了すると、これ�
 
 1. Regedit を開き、次のレジストリパスに移動します。
 
-    - **HKEY_LOCAL_MACHINE \SOFTWARE\Microsoft\Windows NT\CurrentVersion\WUDF\Services\SurfaceDockFwUpdate\Parameters**
+    - **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\WUDF\Services\SurfaceDockFwUpdate\Parameters**
 
 2. **Component10CurrentFwVersion と Component20CurrentFwVersion**のレジストリキーを探します。これは、現在デバイス上にあるファームウェアを指します。
 
@@ -173,7 +173,7 @@ Surface Dock のファームウェア更新が正常に完了すると、これ�
 このバージョンは Surface_Dock_FwUpdate_1.42.139_Win10_17134_19.084.31680_0.MSI に含まれていますが、バックグラウンドでファームウェアを更新しています。 
 **更新されたレジストリキー値:**<br>
 
-- Component10CurrentFwVersion は**4ac3970**に更新されました。
+- Component10CurrentFwVersion は **4ac3970**に更新されました。
 - Component20CurrentFwVersion は、 **4a1d570**に更新されました。
 
 Surface Pro 7 と Surface ノート Pc 3 のサポートが追加されます。

@@ -13,35 +13,25 @@ ms.localizationpriority: medium
 ms.audience: itpro
 ms.reviewer: ''
 manager: laurawi
-ms.date: 04/24/2020
-ms.openlocfilehash: e1a1d34c4d32c5e6f95c985e335e405c0d9e59e4
-ms.sourcegitcommit: 109d1d7608ac4667564fa5369e8722e569b8ea36
+ms.date: 10/12/2020
+ms.openlocfilehash: d9bc720c846b2bb158241a55e1759c841f1d7b3a
+ms.sourcegitcommit: c1efb75e8524193bdc0a5f7496dc23a92ac665c8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2020
-ms.locfileid: "10835534"
+ms.lasthandoff: 10/12/2020
+ms.locfileid: "11114525"
 ---
 # Microsoft Deployment Toolkit による Surface デバイスの Windows 10 へのアップグレード
 
 #### 適用対象
-- Surface Pro 6
-- Surface Laptop 2
-- Surface Go
-- Surface Go LTE
-- Surface Book 2
-- Surface Pro LTE Advanced (モデル 1807)
-- Surface Pro (モデル 1796)
-- Surface Laptop
-- Surface Studio
-- Surface Studio 2
-- Surface Book
-- Surface Pro 4
-- Surface 3 LTE
-- Surface 3
-- Surface Pro 3
-- Surface Pro 2
-- Surface Pro
-- Windows 10
+
+- Surface Book (すべてのエディション)
+- Surface Go (すべてのエディション)
+- Surface Pro X (すべてのエディション)
+- Surface のノート Pc (すべてのエディション)
+- Surface のノート Pc の移動
+- Surface Studio (すべてのエディション)
+- Surface Pro 2 以降
 
 デバイスを再イメージ化する従来の展開方法に加えて、Windows 8.1 または Windows 10 を実行している Surface デバイスをアップグレードする管理者は、アップグレード展開のオプションを選択できます。 アップグレードの展開を実行することにより、ユーザー、アプリ、または構成を削除することなく Windows 10 をデバイスに適用できます。 展開されたデバイスのユーザーは、アップグレード前に使用していたものと同じアプリと設定が適用されたデバイスを引き続き使うことができます。 
 

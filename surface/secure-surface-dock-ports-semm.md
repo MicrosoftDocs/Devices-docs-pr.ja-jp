@@ -15,12 +15,12 @@ ms.topic: article
 ms.date: 06/08/2020
 ms.localizationpriority: medium
 ms.audience: itpro
-ms.openlocfilehash: de16d76581926a90585b2c6beb2a7bf3b7a695bc
-ms.sourcegitcommit: 109d1d7608ac4667564fa5369e8722e569b8ea36
+ms.openlocfilehash: 641d023b59426582130dcfb7e0d86c6f3af456e8
+ms.sourcegitcommit: c1efb75e8524193bdc0a5f7496dc23a92ac665c8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2020
-ms.locfileid: "10834342"
+ms.lasthandoff: 10/12/2020
+ms.locfileid: "11114695"
 ---
 # Surface Enterprise 管理モード (SEMM) での Secure Surface Dock 2 ポート
 
@@ -30,7 +30,7 @@ Surface Enterprise 管理モード (SEMM) を使用すると、IT 管理者は�
 
 ### サポートされるデバイス
 
-SEMM での surface Dock 2 の管理は、surface Book 3、Surface ラップトップ3、Surface Pro 7 に接続されているドックで利用できます。 これらの互換性のある Surface デバイスは、一般的に**ホストデバイス**と呼ばれます。 ホストデバイスが**認証**されているか、**認証**されていないかに基づいて、パッケージがデバイスに適用されます。 構成済みの設定は、IT 管理者である、カメラなどの他の組み込みのペリフェラルと同じように、Surface Dock 2 を管理するために、ホストデバイス上の UEFI レイヤーに存在します。
+SEMM での surface Dock 2 の管理は、surface Book 3、surface ノートブック3、surface ノートブック移動、surface Pro 7、Surface Pro X に接続されているドックで利用できます。これらの互換性のある Surface デバイスは、一般的に **ホストデバイス**と呼ばれます。 ホストデバイスが **認証** されているか、 **認証**されていないかに基づいて、パッケージがデバイスに適用されます。 構成済みの設定は、IT 管理者である、カメラなどの他の組み込みのペリフェラルと同じように、Surface Dock 2 を管理するために、ホストデバイス上の UEFI レイヤーに存在します。
 
 >[!NOTE]
 >Surface Dock 2 のポートを管理できるのは、Dock が次の互換性のあるデバイスのいずれかに接続されている場合のみです。 Surface Book 3、Surface Pc 3、Surface Pro 7。 UEFI 認証されたポリシー設定を受け取らないデバイスは、本質的に認証されていないデバイスです。
@@ -66,13 +66,13 @@ Surface Dock 2 を会社のホストデバイスにサインインした許可�
 
 ### 前提条件
 
-この記事では、サードパーティプロバイダーから証明書を取得するか、PKI 証明書サービスの専門知識を既に持っており、独自の技術情報を作成することを前提としています。  「 [Surface Enterprise 管理モード (SEMM)](https://docs.microsoft.com/surface/surface-enterprise-management-mode)ドキュメント」で説明されているように、証明書を作成する際の一般的な推奨事項について理解している必要があります。 このページに記載されている証明書には、 **Dock 証明機関**の場合は30年、**ホスト認証証明書**には20年の有効期限が必要です。
+この記事では、サードパーティプロバイダーから証明書を取得するか、PKI 証明書サービスの専門知識を既に持っており、独自の技術情報を作成することを前提としています。  「 [Surface Enterprise 管理モード (SEMM)](https://docs.microsoft.com/surface/surface-enterprise-management-mode) ドキュメント」で説明されているように、証明書を作成する際の一般的な推奨事項について理解している必要があります。 このページに記載されている証明書には、 **Dock 証明機関**の場合は30年、 **ホスト認証証明書**には20年の有効期限が必要です。
 
-詳細については、「[証明書サービスのアーキテクチャ](https://docs.microsoft.com/windows/win32/seccrypto/certificate-services-architecture)に関するドキュメント」を参照してください。 [windows server 2019](https://www.microsoftpressstore.com/store/windows-server-2019-inside-out-9780135492277)内の適切な章、または Microsoft Press から提供されている[Windows Server 2008 PKI および証明書のセキュリティ](https://www.microsoftpressstore.com/store/windows-server-2008-pki-and-certificate-security-9780735640788)を確認してください。
+詳細については、「 [証明書サービスのアーキテクチャ](https://docs.microsoft.com/windows/win32/seccrypto/certificate-services-architecture) に関するドキュメント」を参照してください。 [windows server 2019](https://www.microsoftpressstore.com/store/windows-server-2019-inside-out-9780135492277)内の適切な章、または Microsoft Press から提供されている [Windows Server 2008 PKI および証明書のセキュリティ](https://www.microsoftpressstore.com/store/windows-server-2008-pki-and-certificate-security-9780735640788) を確認してください。
 
 ### ルートとホストの証明書の要件
 
-構成パッケージを作成する前に、Surface Dock 2 の所有権を認証する公開キー証明書を用意して、デバイスのライフサイクル中に所有権のその後の変更を容易にする必要があります。 ホストとプロビジョニングの証明書では、**クライアント認証の拡張キー使用法 (EKU) オブジェクト識別子 (oid)** と呼ばれているものとして、eku id を入力する必要があります。
+構成パッケージを作成する前に、Surface Dock 2 の所有権を認証する公開キー証明書を用意して、デバイスのライフサイクル中に所有権のその後の変更を容易にする必要があります。 ホストとプロビジョニングの証明書では、 **クライアント認証の拡張キー使用法 (EKU) オブジェクト識別子 (oid)** と呼ばれているものとして、eku id を入力する必要があります。
 
 必要な EKU 値が、表1と表2に一覧表示されています。
 
@@ -80,7 +80,7 @@ Surface Dock 2 を会社のホストデバイスにサインインした許可�
 
 |証明書|アルゴリズム|説明|有効期限|EKU OID|
 |---|---|---|---|---|
-|ルート証明機関|ECDSA_P384|-384 ビット素数楕円曲線デジタル署名アルゴリズム (ECDSA) を含むルート証明書<br>-SHA 256 キー使用法:<br>CERT_DIGITAL_SIGNATURE_KEY_USAGE<br>-CERT_KEY_CERT_SIGN_KEY_USAGE<br>CERT_CRL_SIGN_KEY_USAGE|30年|なし
+|ルート証明機関|ECDSA_P384|-384 ビット素数楕円曲線デジタル署名アルゴリズム (ECDSA) を含むルート証明書<br>-SHA 256 キー使用法:<br>CERT_DIGITAL_SIGNATURE_KEY_USAGE<br>-CERT_KEY_CERT_SIGN_KEY_USAGE<br>CERT_CRL_SIGN_KEY_USAGE|30年|該当せず
 |ドック証明機関|ECC P256 curve|-256 ビットの楕円曲線暗号 (ECC) でのホスト証明書<br>-SHA 256 キー使用法:<br>CERT_KEY_CERT_SIGN_KEY_USAGE<br>-Path Length 制約 = 0|20年|1.3.6.1.4.1.311.76.9.21.2<br>1.3.6.1.4.1.311.76.9.21.3|
 
    >[!NOTE]
@@ -112,7 +112,7 @@ Surface Dock 2 を会社のホストデバイスにサインインした許可�
 
    ![Surface Dock を選ぶ](images/secure-surface-dock-ports-semm-2.png)
 
-1. [証明書] ページで、適切な**証明書**を入力します。
+1. [証明書] ページで、適切な **証明書**を入力します。
 
    ![適切な証明書を入力する](images/secure-surface-dock-ports-semm-3.png)
 
@@ -127,9 +127,9 @@ Surface Dock 2 を会社のホストデバイスにサインインした許可�
 
    - Authenticated user は、で構成されている適切な証明書がインストールされている Surface デバイスを指します。ターゲットデバイスに適用した MSI 構成パッケージ。 これは、デバイスにサインインしたユーザー認証済みのユーザーに適用されます。 
    - 認証されていないユーザーは、他のデバイスを参照しています。
-   - [**リセット**] を選択して、dock によって承認された以前の構成パッケージを削除する特別な "リセット" パッケージを作成します。
+   - [ **リセット** ] を選択して、dock によって承認された以前の構成パッケージを削除する特別な "リセット" パッケージを作成します。
 
-1. [**ビルド**] を選択して、指定どおりにパッケージを作成します。
+1. [ **ビルド** ] を選択して、指定どおりにパッケージを作成します。
 
 ### 構成パッケージを Surface Dock 2 に適用する
 
@@ -150,7 +150,7 @@ Surface Dock 2 を会社のホストデバイスにサインインした許可�
 
 1. 構成パッケージをターゲットデバイスに適用し、Surface Dock 2 を接続します。
 
-1. Surface**アプリ**を開き、[ **surface dock** ] を選択して、surface dock の結果ポリシーの状態を表示します。 ポリシー設定が適用されると、Surface アプリは、ポートが利用可能であることを示します。
+1. Surface **アプリ** を開き、[ **surface dock** ] を選択して、surface dock の結果ポリシーの状態を表示します。 ポリシー設定が適用されると、Surface アプリは、ポートが利用可能であることを示します。
 
    ![Surface アプリは、認証されたユーザーがすべてのポートを利用できることを示します。](images/secure-surface-dock-ports-semm-5.png)
 
@@ -161,7 +161,7 @@ Surface Dock 2 を会社のホストデバイスにサインインした許可�
    ![認証されていないユーザーに対して無効になっているポートを示す Surface アプリ ](images/secure-surface-dock-ports-semm-6.png)
 
 >[!NOTE]
->デバイスの所有権を保持したいが、すべてのユーザーにフルアクセスを許可する場合は、新しいパッケージを作成してすべての機能を有効にすることができます。 デバイスの制限と所有権を完全に削除する (これを非管理する) には、[Surface UEFI 構成の**リセット**] を選択して、ターゲットデバイスに適用するパッケージを作成します。
+>デバイスの所有権を保持したいが、すべてのユーザーにフルアクセスを許可する場合は、新しいパッケージを作成してすべての機能を有効にすることができます。 デバイスの制限と所有権を完全に削除する (これを非管理する) には、[Surface UEFI 構成の **リセット** ] を選択して、ターゲットデバイスに適用するパッケージを作成します。
 
 お疲れさまでした。 ターゲットとなるホストデバイスで、Surface Dock の2つのポートが正常に管理されました。
 

@@ -8,16 +8,16 @@ ms.sitesec: library
 author: coveminer
 ms.author: greglin
 ms.topic: article
-ms.date: 10/01/2020
+ms.date: 10/12/2020
 ms.reviewer: brrecord
 manager: laurawi
 audience: itpro
-ms.openlocfilehash: 19aba3e88afd7b17de5b391d1bfe6eaf77db38e9
-ms.sourcegitcommit: f996a95af741e54536b1f3eb94d0f13f681f5d5d
+ms.openlocfilehash: e96242ab9cef127238bda3ee3ea797c943479798
+ms.sourcegitcommit: c1efb75e8524193bdc0a5f7496dc23a92ac665c8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "11093140"
+ms.lasthandoff: 10/12/2020
+ms.locfileid: "11114685"
 ---
 # Surface Dock の新機能 
 
@@ -45,6 +45,7 @@ Surface Dock 2 は、IT 管理の簡素化を目的として設計されてい�
   - Surface Laptop 3
   - Surface Book 3
   - Surface Go 2
+  - Surface のノート Pc の移動
 
 ## Surface Dock 2 コンポーネント
 
@@ -115,7 +116,7 @@ Surface Dock 2 は、IT 管理の簡素化を目的として設計されてい�
 
 
 
-1. *休止状態または電源オフ状態から復帰するには、Surface Enterprise 管理モード (SEMM) またはデバイスファームウェアコントロールインターフェイス (DFCI) を介して、スリープオン LAN 用にデバイスを構成する必要があります。 休止状態または電源オフモードは Surface Pro 7、Surface Pc 3、Surface Pro X、surface Book 3、Surface Go 2 でサポートされています。  一部の機能に必要なソフトウェアライセンス。 別途販売されています。*
+1. *休止状態または Power-Off 状態から復帰するには、Surface Enterprise 管理モード (SEMM) またはデバイスファームウェアコントロールインターフェイス (DFCI) を使用した Wake on LAN 用のデバイスを構成する必要があります。 ハイバネーションまたは Power-Off のスリープ解除は Surface Pro 7、Surface ノートブック3、Surface Pro X、surface Book 3、Surface Go 2 でサポートされています。  一部の機能に必要なソフトウェアライセンス。 別途販売されています。*
 
 2. *一部の機能に必要なソフトウェアライセンス。 別途販売されています。*
 

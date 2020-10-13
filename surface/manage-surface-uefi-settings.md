@@ -10,18 +10,29 @@ ms.pagetype: devices, surface
 author: coveminer
 ms.author: greglin
 ms.topic: article
-ms.reviewer: ''
+ms.reviewer: hachidan
 manager: laurawi
-ms.openlocfilehash: ce857260c3f4b42ae560a7dba51d47d0e20233bd
-ms.sourcegitcommit: 109d1d7608ac4667564fa5369e8722e569b8ea36
+ms.date: 10/12/2020
+ms.openlocfilehash: 218f98b23adcb7bae2af92655d85144c6e5665e6
+ms.sourcegitcommit: c1efb75e8524193bdc0a5f7496dc23a92ac665c8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2020
-ms.locfileid: "10835854"
+ms.lasthandoff: 10/12/2020
+ms.locfileid: "11114725"
 ---
 # Surface UEFI の設定を管理する
 
 Surface デバイスの現在および将来のすべての世代では、これらのデバイス専用の統合された固有の拡張ファームウェアインターフェイス (UEFI) が Microsoft によって設計されています。 Surface UEFI の設定では、組み込みのデバイスとコンポーネントを有効または無効にしたり、UEFI 設定を変更できないように保護したり、Surface device のブート設定を調整したりすることができます。 
+
+## サポートされる製品
+
+UEFI 管理は、次のようにサポートされています。 
+
+- Surface Pro 4、Surface Pro (5 番目のジェネレーション)、surface Pro 6、Surface pro 7、surface Pro X
+- Surface ラップトップ (1 つ目のジェネレーション)、Surface ノート Pc 2、surface ノート pc 3、surface ラップトップの移動
+- Surface Studio (第1世代)、Surface Studio 2
+- Surface book、Surface Book 2、Surface Book 3
+- Surface Go、Surface Go 2
 
 ## クラウドベースの管理のサポート
 
@@ -33,13 +44,13 @@ Microsoft Intune に組み込まれたデバイスファームウェア構成イ
 
 1. Surface をシャットダウンして、約10秒待ってから、停止していることを確認します。
 2. **音量を上げる**ボタンを押したままにして、電源ボタンを押しながら離し**ます。**
-3. Microsoft または Surface のロゴが画面に表示されたら、[UEFI] 画面が表示されるまで**音量を上げ**たままにしておきます。
+3. Microsoft または Surface のロゴが画面に表示されたら、[UEFI] 画面が表示されるまで **音量を上げ** たままにしておきます。
 
 ## UEFI PC 情報ページ
 
 [PC 情報] ページには、Surface デバイスに関する詳細情報が表示されます。 
 
-- **モデル**– surface device のモデルがここに表示されます (surface Book 2 または surface Pro 7 など)。 デバイスの正確な構成 (プロセッサ、ディスク サイズ、メモリ サイズなど) は表示されません。 
+- **モデル** – surface device のモデルがここに表示されます (surface Book 2 または surface Pro 7 など)。 デバイスの正確な構成 (プロセッサ、ディスク サイズ、メモリ サイズなど) は表示されません。 
 - **UUID** – このユニバーサル固有識別子の番号はデバイスに固有であり、展開または管理の際にデバイスを識別するために使用されます。 
 
 - **Serial Number** (シリアル番号) – この番号は、アセットのタグ付けやサポートでこの特定の Surface デバイスを識別するために使用されます。
@@ -91,7 +102,7 @@ Surface デバイスの最新のファームウェア バージョンに関す�
 
 *図 4:  セキュア ブートを設定する*
 
-お使いのデバイスによっては、TPM が有効か無効かを確認することもできます。 [ **Tpm を有効にする**] 設定が表示されない場合は、「Windows で tpm を開く」を参照して、状態を確認してください (図 5)。 TPM は、BitLocker によるデバイスのデータの暗号化を認証するために使用されます。 詳細については、「 [BitLocker の概要](https://docs.microsoft.com/windows/security/information-protection/bitlocker/bitlocker-overview)」を参照してください。 
+お使いのデバイスによっては、TPM が有効か無効かを確認することもできます。 [ **Tpm を有効にする**  ] 設定が表示されない場合は、「Windows で tpm を開く」を参照して、状態を確認してください (図 5)。 TPM は、BitLocker によるデバイスのデータの暗号化を認証するために使用されます。 詳細については、「 [BitLocker の概要](https://docs.microsoft.com/windows/security/information-protection/bitlocker/bitlocker-overview)」を参照してください。 
 
 ![TPM コンソール](images/manage-surface-uefi-fig5-a.png "TPM console")
 
@@ -116,7 +127,7 @@ Surface デバイスの最新のファームウェア バージョンに関す�
 
 - オンボード オーディオ (スピーカー、マイク) 
 
-各デバイスは、図6に示すように、 **[オン**] (有効) または [**オフ**] (無効) の位置に移動できるスライダボタンと共に表示されます。 
+各デバイスは、図6に示すように、 **[オン** ] (有効) または [ **オフ** ] (無効) の位置に移動できるスライダボタンと共に表示されます。 
 
 ![特定のデバイスを有効および無効にする](images/manage-surface-uefi-fig5a.png "Enable and disable specific devices")
 
@@ -136,7 +147,7 @@ Surface デバイスの最新のファームウェア バージョンに関す�
 
 特定のデバイスからすぐに起動するか、またはタッチスクリーンを使って一覧でそのデバイスのエントリを左へスワイプすることができます。 また、Surface デバイスが **[音量を下げる]** ボタンと **[電源]** ボタンを同時に押すことによって電源をオフにされている場合は、USB デバイスまたは USB イーサネット アダプターですぐに起動することもできます。 
 
-指定したブート順序を有効にするには、図7に示すように、[**代替のブートシーケンスを有効**にする] オプションを **[オン**] に設定する必要があります。 
+指定したブート順序を有効にするには、図7に示すように、[ **代替のブートシーケンスを有効** にする] オプションを **[オン**] に設定する必要があります。 
 
 ![Surface デバイスのブート順序を設定する](images/manage-surface-uefi-fig6.png "Configure the boot order for your Surface device")
 
@@ -151,7 +162,7 @@ Surface デバイスの最新のファームウェア バージョンに関す�
  *図 8)。ゼロタッチの UEFI 管理およびその他の機能へのアクセスを管理する* 
 
 
-ゼロタッチ UEFI 管理では、「デバイスファームウェア構成インターフェイス (DFCI)」と呼ばれるデバイスプロファイルを使用して、UEFI 設定をリモートで管理できます。 この設定を構成しない場合は、DFCI を使って適格なデバイスを管理する機能が [**準備完了**] に設定されます。 DFCI を無効にするには、[**オプトアウト**] を選びます。 
+ゼロタッチ UEFI 管理では、「デバイスファームウェア構成インターフェイス (DFCI)」と呼ばれるデバイスプロファイルを使用して、UEFI 設定をリモートで管理できます。 この設定を構成しない場合は、DFCI を使って適格なデバイスを管理する機能が [ **準備完了**] に設定されます。 DFCI を無効にするには、[ **オプトアウト**] を選びます。 
 
 > [!NOTE]
 > [UEFI 管理の設定] ページと DFCI の使用は、Surface Pro 7、Surface Pro X、Surface ノートブック3でのみ利用できます。  

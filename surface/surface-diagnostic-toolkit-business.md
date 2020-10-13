@@ -8,16 +8,16 @@ ms.sitesec: library
 author: coveminer
 ms.author: greglin
 ms.topic: article
-ms.date: 07/31/2020
+ms.date: 10/12/2020
 ms.reviewer: hachidan
 manager: laurawi
 audience: itpro
-ms.openlocfilehash: 9c250cef63b760f3faab9172aa950c305e4e47e5
-ms.sourcegitcommit: f875a45961ff5f3c04006afc8690b5e5965e4d80
+ms.openlocfilehash: 1f2661811516507abd432dba602cf8ce81e6dbb3
+ms.sourcegitcommit: c1efb75e8524193bdc0a5f7496dc23a92ac665c8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2020
-ms.locfileid: "10902985"
+ms.lasthandoff: 10/12/2020
+ms.locfileid: "11114665"
 ---
 # ビジネス向け Surface 診断ツールキットを展開する
 
@@ -46,6 +46,7 @@ Microsoft Surface Diagnostic ツールキット for Business (SDT) を使うと�
 
 一般法人向けの SDT は、次のような、Surface 3 以降のデバイスでサポートされています。
 
+- Surface のノート Pc の移動
 - Surface Book 3
 - Surface Go 2
 - Surface Pro X
@@ -72,7 +73,7 @@ Microsoft Surface Diagnostic ツールキット for Business (SDT) を使うと�
 組織内のユーザーに配布できる SDT パッケージを作成するには、次の操作を行います。
 
 1. 管理者アカウントを使用して Surface デバイスにサインインします。
-2. [ [Surface Tools FOR IT] のダウンロードページ](https://www.microsoft.com/download/details.aspx?id=46703)から SDT Windows Installer パッケージ (.msi) をダウンロードして、デスクトップなどの surface デバイス上の希望する場所にコピーします。
+2. [ [Surface Tools FOR IT] のダウンロードページ](https://www.microsoft.com/download/details.aspx?id=46703) から SDT Windows Installer パッケージ (.msi) をダウンロードして、デスクトップなどの surface デバイス上の希望する場所にコピーします。
 3. 図1に示すように、SDT セットアップウィザードが表示されます。 **[次へ]** をクリックします。 
 
     >[!NOTE]
@@ -82,17 +83,17 @@ Microsoft Surface Diagnostic ツールキット for Business (SDT) を使うと�
 
     *図 1.  Surface 診断ツールキットのセットアップウィザード*
 
-4. SDT セットアップウィザードが表示されたら、[**次へ**] をクリックし、エンドユーザーライセンス契約に同意します (EULA)
+4. SDT セットアップウィザードが表示されたら、[ **次へ**] をクリックし、エンドユーザーライセンス契約に同意します (EULA)
 
 5. [インストールオプション] 画面で、必要に応じて既定のインストール場所を変更します。 
-6. [セットアップの種類] で、[**詳細設定**] を選択します。 
+6. [セットアップの種類] で、[ **詳細設定**] を選択します。 
 
     >[!NOTE]
     >[標準] オプションを使うと、ユーザーは管理者アカウントを使用してデバイスにサインインしていることを提供して、Surface デバイスで診断ツールを直接実行できます。 
     
      ![インストールオプション: Advanced](images/sdt-install.png)
 
-7. [**次へ**] をクリックし、[**インストール**] をクリックします。 
+7. [ **次へ** ] をクリックし、[ **インストール**] をクリックします。 
 
 ## コマンドラインを使用してインストールする
 必要に応じて、コマンドプロンプトで SDT をインストールし、ユーザー設定のフラグを設定して、ツールを管理モードでインストールすることができます。 SDT には、次のインストールオプションフラグが含まれます。
@@ -129,8 +130,8 @@ SDT と SDT アプリ本体は両方ともインストールされてい `C:\Pro
 
 カスタムパッケージを作成することで、特定の既知の問題にツールをターゲットにすることができます。
 
-1. [ **Start > Run**] をクリックし、 **surface**と入力して、[ **surface Diagnostic Toolkit for Business**] をクリックします。 
-2. ツールが開いたら、図3に示すように、[**カスタムパッケージの作成**] をクリックします。
+1. [ **Start > Run**] をクリックし、 **surface** と入力して、[ **surface Diagnostic Toolkit for Business**] をクリックします。 
+2. ツールが開いたら、図3に示すように、[ **カスタムパッケージの作成**] をクリックします。
 
     ![[カスタムパッケージの作成] オプション](images/sdt-3.png)
 
@@ -138,7 +139,7 @@ SDT と SDT アプリ本体は両方ともインストールされてい `C:\Pro
 
 ### 言語とテレメトリの設定
 
-  パッケージを作成するときに、言語設定を選択したり、テレメトリ情報を Microsoft に送信しないようにしたりすることができます。 既定では、SDT は microsoft のプライバシーに関する[声明](https://privacy.microsoft.com/privacystatement)に基づいてアプリケーションを改善するために使用されるテレメトリを microsoft に送信します。 拒否する場合は、以下に示すように、カスタムパッケージを作成するときにチェックボックスをオフにします。 または、SDT のセットアップ中に、[**インストールオプション**] ページの [**テレメトリを Microsoft に送信する**] チェックボックスをオフにします。 
+  パッケージを作成するときに、言語設定を選択したり、テレメトリ情報を Microsoft に送信しないようにしたりすることができます。 既定では、SDT は microsoft のプライバシーに関する [声明](https://privacy.microsoft.com/privacystatement)に基づいてアプリケーションを改善するために使用されるテレメトリを microsoft に送信します。 拒否する場合は、以下に示すように、カスタムパッケージを作成するときにチェックボックスをオフにします。 または、SDT のセットアップ中に、[**インストールオプション**] ページの [**テレメトリを Microsoft に送信する**] チェックボックスをオフにします。 
 
 >[!NOTE]
 >この設定は、Windows Update とソフトウェアの修復などのインターネット接続を必要とするテストや修復を実行しているとき、またはアプリツールバーで [スマイル] または [Frown] ボタンを使用してフィードバックを提供するときに、Microsoft サーバーに自動的に保存される最小のテレメトリには影響しません。 
@@ -180,6 +181,17 @@ SDT と SDT アプリ本体は両方ともインストールされてい `C:\Pro
 
 ## 変更と更新
 
+### バージョン2.124.139.0
+
+このバージョンの Surface 診断ツールキットでは、次のサポートが追加されています。
+
+- シームレスに統合されたサポート
+- すべてのテスト結果を保存する
+- 画像がカスタム作成されているかどうかを確認する
+- デバイスマネージャーからの警告を含める
+- Dock ファームウェアバージョン
+- 記憶域テストでの潜在的な障害としてのドライブへのフラグ設定
+- ストアリンクの削除 
 
 ### バージョン2.121.139
 *リリース日:31 2020 年7月*<br>

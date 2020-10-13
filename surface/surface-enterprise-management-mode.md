@@ -13,20 +13,20 @@ ms.reviewer: hachidan
 manager: laurawi
 ms.localizationpriority: medium
 audience: itpro
-ms.date: 09/01/2020
-ms.openlocfilehash: 239b5e4659ff48e6c0fd9d2fca03341eadb9a27d
-ms.sourcegitcommit: 78694f3958117a339a28d3a5854908181f1b65d7
+ms.date: 10/12/2020
+ms.openlocfilehash: 463759d2dd01b9333d10a66c1781055f4a5217ac
+ms.sourcegitcommit: c1efb75e8524193bdc0a5f7496dc23a92ac665c8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "10993667"
+ms.lasthandoff: 10/12/2020
+ms.locfileid: "11114645"
 ---
 # Microsoft Surface Enterprise 管理モード
 
 Microsoft Surface Enterprise Management Mode (SEMM) は、組織内のファームウェア設定をセキュリティで保護し、管理できる surface UEFI を備えた Surface デバイスの機能です。 SEMM では、IT プロフェッショナルが UEFI 設定の構成を準備し、それを Surface デバイスにインストールすることができます。 UEFI 設定を構成する機能に加えて、SEMM は証明書を使用して、許可されていない改ざんまたは削除から構成を保護します。 SEMM は、Surface Hub の2S を Windows 10 Pro と Enterprise に移行できるようにするための要件です。
 
 >[!NOTE]
->SEMM は、Surface UEFI ファームウェアを搭載したデバイスでのみ利用できます。 これは、Surface Pro 7、Surface Pro X、Surface Hub 2S、Surface Pc 3 の市販 Sku など、Intel プロセッサを搭載した、他の多くの Surface デバイスで構成されています。 SEMM は、(小売 SKU としてのみ利用可能) AMD プロセッサを搭載した15インチ Surface ノートパソコン 3 SKU ではサポートされていません。 
+>SEMM は、Surface UEFI ファームウェアを搭載したデバイスでのみ利用できます。 これは、Surface Pro 7、Surface Pro X、Surface Hub 2S、surface Pc 3 の市販 Sku (Intel プロセッサを搭載した surface Pc 3)、Surface ノートパソコンが搭載された、その他の多くの Surface デバイスで構成されています。 SEMM は、(小売 SKU としてのみ利用可能) AMD プロセッサを搭載した15インチ Surface ノートパソコン 3 SKU ではサポートされていません。 
 
 Surface デバイスが SEMM によって構成され、SEMM 証明書によって保護されている場合は、SEMM に *登録* されていると見なされます。 SEMM 証明書が削除され、UEFI 設定の制御がデバイスのユーザーに返されると、Surface デバイスは SEMM に *登録* されていないと見なされます。
 
@@ -174,7 +174,7 @@ SEMM 証明書には、次の設定が推奨されます。
 * **有効期限** : 証明書の作成から15ヶ月
 * **キーエクスポートポリシー** –エクスポート可能
 
-また、SEMM 証明書は、中間証明機関 (CA) が SEMM 専用であり、証明書の失効を有効にする2階層の公開キー基盤 (PKI) アーキテクチャで認証することをお勧めします。 2階層の PKI 構成の詳細については、「 [テストラボガイド: AD CS 2 階層の Pki 階層の展開](https://technet.microsoft.com/library/hh831348)」を参照してください。
+また、SEMM 証明書は、中間証明機関 (CA) が SEMM 専用であり、証明書の失効を有効にする2階層の公開キー基盤 (PKI) アーキテクチャで認証することをお勧めします。 2階層の PKI 構成の詳細については、「 [テストラボガイド: AD CS Two-Tier PKI 階層の展開](https://technet.microsoft.com/library/hh831348)」を参照してください。
 
 ### 自己署名証明書 
 次の PowerShell スクリプト例では、コンセプトのあるシナリオで使用する自己署名証明書を作成する方法についてご紹介します。
@@ -241,6 +241,18 @@ SEMM のリセットまたは回復機能が必要な場合は、証明書が有
 特定のデバイスの種類に対して構成パッケージを作成する PowerShell サンプルを使用して、シリアル番号に依存しないリセットパッケージを作成することもできます。 証明書が有効な場合は、PowerShell を使用して、SEMM をリセットすることでリセットパッケージを作成できます。
 
 ## バージョン履歴
+
+
+### バージョン2.78.139.0
+
+SEMM のこのバージョンには、次のものが含まれます。
+
+- Surface Pc の移動と Surface Pro X のサポート
+- 新しいバージョンリリースの通知
+- ユーザー設定のパッケージを作成して所有権を変更する機能
+- バグ修正
+
+
 
 
 ### バージョン2.73.136.0

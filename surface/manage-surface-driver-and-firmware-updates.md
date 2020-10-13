@@ -14,12 +14,13 @@ author: coveminer
 ms.author: greglin
 ms.topic: article
 ms.audience: itpro
-ms.openlocfilehash: f41974193d62e4c0cbc1e286976105c20534d906
-ms.sourcegitcommit: ed4478dd3c6116a25b1e01a3a0f5ff6c1f940013
+ms.date: 10/12/2020
+ms.openlocfilehash: 39022ca631e35f4328d3c353b7b0d1e2ebaee6a7
+ms.sourcegitcommit: c1efb75e8524193bdc0a5f7496dc23a92ac665c8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "10897065"
+ms.lasthandoff: 10/12/2020
+ms.locfileid: "11114635"
 ---
 # Surface のドライバーおよびファームウェアの更新プログラムを管理および展開する
 
@@ -32,7 +33,7 @@ Surface ドライバーとファームウェア更新プログラムの管理方
 
 ## 商用環境での一元的な更新管理
 
-Microsoft には、ドライバーやファームウェアの更新プログラムなど、デバイスを管理するための合理化されたツールがあります。これは、 [Microsoft Endpoint Manager 管理センター](https://devicemanagement.microsoft.com/)という名前の単一の統合されたエクスペリエンスで、 [devicemanagement.microsoft.com](https://devicemanagement.microsoft.com/#home)からアクセスされます。
+Microsoft には、ドライバーやファームウェアの更新プログラムなど、デバイスを管理するための合理化されたツールがあります。これは、 [Microsoft Endpoint Manager 管理センター](https://devicemanagement.microsoft.com/) という名前の単一の統合されたエクスペリエンスで、 [devicemanagement.microsoft.com](https://devicemanagement.microsoft.com/#home)からアクセスされます。
 
 ### Configuration Manager と Intune を使用して更新プログラムを管理する
 
@@ -64,15 +65,15 @@ Surface ドライバーとファームウェアの更新プログラムは、Win
 
 ### Endpoint Configuration Manager
 
-エンドポイント構成マネージャーから開始すると、Configuration Manager クライアントを使用して、Microsoft Surface ファームウェアとドライバーの更新プログラムを同期して展開することができます。 詳細については、「KB 4098906、[構成マネージャーで Surface driver の更新プログラムを管理する方法](https://support.microsoft.com/help/4098906/manage-surface-driver-updates-in-configuration-manager)」を参照してください。
+エンドポイント構成マネージャーから開始すると、Configuration Manager クライアントを使用して、Microsoft Surface ファームウェアとドライバーの更新プログラムを同期して展開することができます。 詳細については、「KB 4098906、 [構成マネージャーで Surface driver の更新プログラムを管理する方法](https://support.microsoft.com/help/4098906/manage-surface-driver-updates-in-configuration-manager)」を参照してください。
 
 ## サポートされるデバイス
 
-Surface Pro 2 以降のデバイスでは、ダウンロード可能な .msi ファイルを使用できます。 Surface Pro 7 や Surface ノートブック3など、最新の Surface デバイスの .msi ファイルに関する情報は、リリース時にこのページから入手できます。
+ダウンロード可能な .msi ファイルは Surface Pro 2 以降のデバイス (ARM で Windows 10 を実行する Surface Pro X を除く) で利用できます。
 
 ## DFCI でのファームウェアの管理
 
-Intune にデバイスファームウェア構成インターフェイス (DFCI) プロファイルを構築することによって ([パブリックプレビュー](https://docs.microsoft.com/intune/configuration/device-firmware-configuration-interface-windows)で利用できるようになりました)、Surface UEFI 管理では、最新の管理スタックが UEFI ハードウェアレベルまで拡張されます。 DFCI では、ゼロタッチプロビジョニング、BIOS パスワードの排除、セキュリティ設定の制御 (起動オプションや内蔵の周辺機器を含む)、今後の高度なセキュリティシナリオの基盤を構築しています。 詳細については、次の記事を参照してください。
+Intune にデバイスファームウェア構成インターフェイス (DFCI) プロファイルを構築することによって ( [パブリックプレビュー](https://docs.microsoft.com/intune/configuration/device-firmware-configuration-interface-windows)で利用できるようになりました)、Surface UEFI 管理では、最新の管理スタックが UEFI ハードウェアレベルまで拡張されます。 DFCI では、ゼロタッチプロビジョニング、BIOS パスワードの排除、セキュリティ設定の制御 (起動オプションや内蔵の周辺機器を含む)、今後の高度なセキュリティシナリオの基盤を構築しています。 詳細については、次の記事を参照してください。
 
 - [Surface UEFI の設定の Intune 管理](https://docs.microsoft.com/surface/surface-manage-dfci-guide)
 - [Ignite 2019: Intune からの SURFACE UEFI 設定のリモート管理をアナウンス](https://techcommunity.microsoft.com/t5/Surface-IT-Pro-Blog/Ignite-2019-Announcing-remote-management-of-Surface-UEFI/ba-p/978333)します。
@@ -85,7 +86,7 @@ Intune にデバイスファームウェア構成インターフェイス (DFCI)
 
 Windows 10 の特定のバージョンには個別の .msi ファイルがあり、各ファイルには、Surface デバイスのために必要な累積ドライバーとファームウェア更新プログラムがすべて含まれています。 更新プログラムパッケージには、次のコンポーネントの一部またはすべてが含まれる場合があります。
 
-- Wi-fi および LTE
+- Wi-Fi および LTE
 - ビデオ
 - ソリッドステートドライブ
 - システムアグリゲーターモジュール (SAM)
@@ -97,8 +98,8 @@ Windows 10 の特定のバージョンには個別の .msi ファイルがあり
 
 ### .Msi ファイルのダウンロード
 
-1. Microsoft ダウンロードセンターで、 [Surface のドライバーとファームウェアのダウンロード](https://support.microsoft.com/help/4023482/surface-download-drivers-and-firmware)を参照してください。
-2. Windows のサーフェスモデルとバージョンと一致する .msi ファイル名を選びます。 .Msi ファイル名には、ドライバーとファームウェアをインストールするために必要な最小サポートされる Windows ビルド番号が含まれています。 たとえば、次の図を参照してください。 Windows 10 のビルド18362を持つ Surface Book 2 を更新するには、[SurfaceBook2_Win10_18362_19.101.13994.msi] を選び**ます。** Windows 10 のビルド16299を持つ Surface Book 2 の場合は、[ **SurfaceBook2_Win10_16299_1803509_3.msi**] を選びます。
+1. Microsoft ダウンロードセンターで、 [Surface のドライバーとファームウェアのダウンロード](https://support.microsoft.com/help/4023482/surface-download-drivers-and-firmware) を参照してください。
+2. Windows のサーフェスモデルとバージョンと一致する .msi ファイル名を選びます。 .Msi ファイル名には、ドライバーとファームウェアをインストールするために必要な最小サポートされる Windows ビルド番号が含まれています。 たとえば、次の図を参照してください。 Windows 10 のビルド18362を持つ Surface Book 2 を更新するには、[SurfaceBook2_Win10_18362_19.101.13994.msi] を選び ** ます。** Windows 10 のビルド16299を持つ Surface Book 2 の場合は、[ **SurfaceBook2_Win10_16299_1803509_3.msi**] を選びます。
 
     ![図 1.  サーフェスの更新プログラムのダウンロード](images/fig1-downloads-msi.png)
 
