@@ -8,16 +8,16 @@ ms.sitesec: library
 author: coveminer
 ms.author: greglin
 ms.topic: article
-ms.date: 10/09/2020
+ms.date: 10/12/2020
 ms.reviewer: jessko
 manager: laurawi
 ms.audience: itpro
-ms.openlocfilehash: 202818488f19c82ba9d08cfcbfcd091e3e8b7bf6
-ms.sourcegitcommit: 7d5b0a7948eb540d6849a0e2c70a1058584cc5f8
+ms.openlocfilehash: 7d82a24126798c20f11c51074f6099e1363c257f
+ms.sourcegitcommit: c1efb75e8524193bdc0a5f7496dc23a92ac665c8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "11105842"
+ms.lasthandoff: 10/12/2020
+ms.locfileid: "11114625"
 ---
 # Surface Pro X の展開、管理、メンテナンス
 
@@ -96,8 +96,7 @@ Surface Pro X は、ホーム ユーザーと小規模ビジネス ユーザー�
 
 ### FastTrack App Assure 
 
-App Assure プログラムは、ARM 版 Windows 10 を対象とする LOB、ISV、および Microsoft のファーストパーティ アプリの商用のお客様が利用できます。 ARM 版 Windows 10 を使用してアプリの互換性の問題が発生した場合、Microsoft は、追加費用なしで、アプリの修正をトラブルシューティングおよび支援するための開発者向けリソースを提供します。 詳細については、aka.ms/AppAssure にアクセスしてください。
-
+App Assure プログラムは、ARM 版 Windows 10 を対象とする LOB、ISV、および Microsoft のファーストパーティ アプリの商用のお客様が利用できます。 ARM 版 Windows 10 を使用してアプリの互換性の問題が発生した場合、Microsoft は、追加費用なしで、アプリの修正をトラブルシューティングおよび支援するための開発者向けリソースを提供します。 詳細については、[aka.ms/AppAssure](https://docs.microsoft.com/fasttrack/products-and-capabilities#app-assure) にアクセスしてください。
 
 Surface Pro X でのアプリの実行について詳しくは、以下をご覧ください。
 
