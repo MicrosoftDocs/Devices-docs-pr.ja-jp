@@ -14,15 +14,15 @@ author: greg-lindsay
 ms.author: greglin
 ms.collection: M365-modern-desktop
 ms.topic: article
-ms.date: 10/08/2020
+ms.date: 10/21/2020
 appliesto:
 - Surface Hub 2S
-ms.openlocfilehash: 66245f84f4413df2d9ae7b683947afbd84484325
-ms.sourcegitcommit: 56526c92d84dbc2cebcb8071d995efe399f306df
+ms.openlocfilehash: 25705f889f70e3d12dfef690c34e03d98254725e
+ms.sourcegitcommit: 959d2d856b1e5b5c72cd636f576b5feb1b633048
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/08/2020
-ms.locfileid: "11105351"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "11133182"
 ---
 # Surface Hub 2 で Windows 10 Pro または Enterprise を構成する
 
@@ -422,11 +422,11 @@ Surface Hub 2 にはローカルストレージ用に 128GB SSD が搭載され�
 
    - プレゼンス検出は、システムトレイに緑のアイコンで表示されます。
     
-6. [この PC へのプロジェクション] が接続アプリで有効になっていることを確認します (アプリケーションは接続する前に実行する必要はありません)。
+6. この PC へのプロジェクションが接続アプリで有効になっていることを確認します。 **Project をこの PC 設定に**構成した後、少なくとも1回は Connect アプリを実行します。 (その後、Surface Hub に対してプロジェクトを実行するために接続アプリが実行されている必要はありません)。
 
 7. 電源とスリープの設定を確認します。
 
-    - スクリーンセーバー:15 分、[なし]、[Mystify]、または [空白] に設定します。[パスワードを要求する] チェックボックスがオンになっている
+    - スクリーンセーバー:15 分、[なし]、[Mystify]、または [空白] に設定します。[パスワードを要求する] チェックボックスがオンになっていることを確認します。
     - 画面: **2 時間後にオフに**します。
     - PC:  **4 時間後にオフに**します。
     
