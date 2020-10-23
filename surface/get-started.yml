@@ -11,12 +11,12 @@ metadata:
   ms.author: greglin
   audience: itpro
   ms.localizationpriority: High
-  ms.openlocfilehash: 1a54d40faf9c3738bd07595b57a1c2d5a86373b4
-  ms.sourcegitcommit: f996a95af741e54536b1f3eb94d0f13f681f5d5d
+  ms.openlocfilehash: 01c1cc2ea75e79825c80cc6f02970a755ae35b75
+  ms.sourcegitcommit: cbf237e59c97311bd8add3aae2a17738fe271ddc
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 10/01/2020
-  ms.locfileid: "11093100"
+  ms.lasthandoff: 10/23/2020
+  ms.locfileid: "11134385"
 landingContent:
 - title: Surface デバイス
   linkLists:
@@ -32,10 +32,10 @@ landingContent:
   linkLists:
   - linkListType: get-started
     links:
-    - text: Surface Book 3 GPU の技術概要
-      url: surface-book-gpu-overview.md
-    - text: Surface Book 3 Quadro RTX 3000 の技術概要
-      url: surface-book-quadro.md
+    - text: Microsoft Surface で ROI を最大化する
+      url: forrester-tei-study.md
+    - text: Surface の Windows Virtual Desktop
+      url: windows-virtual-desktop-surface.md
     - text: Surface Dock 2 の新機能
       url: surface-dock-whats-new.md
 - title: Microsoft Ignite
@@ -54,54 +54,54 @@ landingContent:
     links:
     - text: Autopilot と Surface デバイス
       url: windows-autopilot-and-surface-devices.md
-    - text: Windows 自動操縦の表面登録サポート
+    - text: Windows Autopilot の Surface 登録サポート
       url: surface-autopilot-registration-support.md
-    - text: Surface の Windows Virtual Desktop
-      url: windows-virtual-desktop-surface.md
+    - text: Surface Deployment Accelerator ツール
+      url: microsoft-surface-deployment-accelerator.md
 - title: Surface デバイスの管理
   linkLists:
   - linkListType: how-to-guide
     links:
     - text: Surface のドライバーおよびファームウェアの更新プログラムを管理および展開する
       url: manage-surface-driver-and-firmware-updates.md
-    - text: Surface デバイスの最適な電源設定
-      url: maintain-optimal-power-settings-on-Surface-devices.md
-    - text: Surface デバイスでの Wi-Fi 接続の最適化
-      url: surface-wireless-connect.md
+    - text: Surface UEFI の設定の Intune 管理
+      url: surface-manage-dfci-guide.md
+    - text: Surface Pro X の展開、管理、メンテナンス
+      url: surface-pro-arm-app-management.md
+- title: トラブルシューティング
+  linkLists:
+  - linkListType: learn
+    links:
+    - text: ビジネス向け Surface 診断ツールキットを展開する
+      url: surface-diagnostic-toolkit-business.md
+    - text: 上位のサポート ソリューション
+      url: support-solutions-surface.md
+    - text: 互換性のある Surface デバイスでの SSD 削除のベスト プラクティス
+      url: surface-ssd-removal-guide.md
+    - text: Surface 修理またはサービス中のデータの保護
+      url: https://support.microsoft.com/help/4023508/surface-faq-protecting-your-data-service
+    - text: Surface Dock とドッキング ステーションのトラブルシューティング
+      url: https://support.microsoft.com/help/4023468/surface-troubleshoot-surface-dock-and-docking-stations
 - title: セキュリティ ガイダンスの検索
   linkLists:
   - linkListType: how-to-guide
     links:
+    - text: Surface デバイスでの DMA の保護
+      url: dma-protect.md
     - text: Surface Enterprise 管理モード (SEMM) での Secure Surface Dock 2 ポート
       url: secure-surface-dock-ports-semm.md
-    - text: Surface UEFI の設定の Intune 管理
-      url: surface-manage-dfci-guide.md
     - text: Surface Data Eraser ツール
       url: microsoft-surface-data-eraser.md
 - title: Surface ツールの探索
   linkLists:
   - linkListType: how-to-guide
     links:
-    - text: ビジネス向け Surface 診断ツールキット
-      url: surface-diagnostic-toolkit-for-business-intro.md
+    - text: ビジネス向け Surface 診断ツールキットを展開する
+      url: surface-diagnostic-toolkit-business.md
     - text: SEMM と UEFI
       url: surface-enterprise-management-mode.md
-    - text: Surface Deployment Accelerator ツール
-      url: microsoft-surface-deployment-accelerator.md
-- title: トラブルシューティング
-  linkLists:
-  - linkListType: learn
-    links:
-    - text: 上位のサポート ソリューション
-      url: support-solutions-surface.md
-    - text: 互換性のある Surface デバイスでの SSD 削除のベスト プラクティス
-      url: surface-ssd-removal-guide.md
-    - text: IT 担当者向けの Surface のブログ
-      url: https://techcommunity.microsoft.com/t5/surface-it-pro-blog/bg-p/SurfaceITPro
-    - text: Surface 修理またはサービス中のデータの保護
-      url: https://support.microsoft.com/help/4023508/surface-faq-protecting-your-data-service
-    - text: Surface Dock とドッキング ステーションのトラブルシューティング
-      url: https://support.microsoft.com/help/4023468/surface-troubleshoot-surface-dock-and-docking-stations
+    - text: バッテリーの制限の設定
+      url: battery-limit.md
 - title: Surface コミュニティに参加する
   linkLists:
   - linkListType: learn
