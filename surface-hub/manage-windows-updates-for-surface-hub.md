@@ -1,37 +1,36 @@
 ---
 title: Surface Hub で Windows 更新プログラムを管理する
-description: Microsoft Surface Hub または Surface Hub 2S で、メンテナンスウィンドウを設定するか、更新を延期するか、または Windows Server Update Services (WSUS) を使用して、Windows 更新プログラムを管理できます。
+description: Microsoft Surface Hub または Surface Hub 2S で更新プログラムを管理するためのベストプラクティスについて説明します。
 ms.assetid: A737BD50-2D36-4DE5-A604-55053D549045
 ms.reviewer: ''
 manager: laurawi
-keywords: Windows 更新プログラムの管理, Surface Hub, Windows Server Update Services, WSUS
+keywords: Windows の更新プログラム、Surface Hub、Windows Server Update Services を管理する
 ms.prod: surface-hub
 ms.sitesec: library
 author: dansimp
 ms.author: dansimp
 ms.topic: article
+ms.date: 10/27/2020
 ms.localizationpriority: medium
-ms.openlocfilehash: 72214ec9436e6ea106d9e42c957664631ee88a0a
-ms.sourcegitcommit: f74253629aaf073b35b1af69439f76e63392c5aa
+ms.openlocfilehash: d6b95ac565132c4e4f1632c2abaffa13ddb2c54c
+ms.sourcegitcommit: 19d2a78242777590bd09af3ac6552c07b032e0a1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "11103791"
+ms.lasthandoff: 10/27/2020
+ms.locfileid: "11142896"
 ---
 # Surface Hub で Windows 更新プログラムを管理する
 
-Surface Hub のオペレーティング システムの新しいリリースは、Windows 10 のリリースと同様に、Windows Update を通じて公開されます。 Surface Hub にインストールする更新プログラムと、更新プログラムを適用するタイミングを管理するには、いくつかの方法があります。
-- **Windows Update for Business** - Windows 10 の新機能である Windows Update for Business は、企業がデバイス管理コストを削減しながら、Windows Update でリリースがインストールされる方法やタイミングをさらに細かく管理できるように設計された一連の機能です。 この方法を使用する場合、Surface Hub は Microsoft の Windows Update サービスに直接接続されます。
-- **Windows Server Update Services (WSUS)** - IT 管理者は、このサービスを使用することで、Windows Update で企業内のデバイスに適用されると判断された更新プログラムを取得し、更新プログラムに追加のテストと評価を実行してから、インストールする更新プログラムを選択できます。 この方法を使用する場合、Surface Hub は、Windows Update からではなく WSUS から更新プログラムを受け取ります。
+Surface Hub のオペレーティング システムの新しいリリースは、Windows 10 のリリースと同様に、Windows Update を通じて公開されます。 このページでは、Surface Hub デバイスの更新プログラムを管理するためのベストプラクティスについて説明します。 
 
-Windows Update for Business と WSUS の両方から更新プログラムを受け取るように Surface Hub を構成することもできます。 詳しくは、「[Windows Update for Business と Windows Server Update Services の統合](https://technet.microsoft.com/itpro/windows/manage/waas-integrate-wufb#integrate-windows-update-for-business-with-windows-server-update-services)」をご覧ください。
+## Windows Update for Business
 
-| 機能 | Windows Update for Business | Windows Server Update Services (WSUS) |
-| ------------ | --------------------------- | ------------------------------------- |
-| Microsoft の Windows Update サービスから直接更新プログラムを受け取る。追加のインフラストラクチャは不要。  | あり  | ×  |
-| テストと評価のための追加の時間を提供するために更新プログラムを延期する。 | あり  | あり  |
-| 限定されたデバイスのグループに更新プログラムを展開する。 | あり | あり |
-| 更新プログラムをインストールするためのメンテナンス期間を定義する。 | あり  | あり  |
+ビジネス向け windows Update は、Windows Update がリリースをインストールする方法とタイミングを管理し、デバイス管理のコストを削減するために設計された一連の機能です。 この方法を使用する場合、Surface Hub は Microsoft の Windows Update サービスに直接接続されます。
+
+- Microsoft の Windows Update サービスから直接更新プログラムを受け取る。追加のインフラストラクチャは不要。 
+- テストと評価のための追加の時間を提供するために更新プログラムを延期する。 
+- 限定されたデバイスのグループに更新プログラムを展開する。 
+- 更新プログラムをインストールするためのメンテナンス期間を定義する。 
 
 > [!TIP]
 > ピア ツー ピアのコンテンツ共有を使用して、更新時の帯域幅の問題を緩和します。 詳しくは、「[Windows 10 更新プログラムの配信の最適化](https://technet.microsoft.com/itpro/windows/manage/waas-optimize-windows-10-updates)」をご覧ください。
@@ -56,6 +55,7 @@ Surface Hub オペレーティング システムでは、[半期チャネル](h
 
 
 ## Windows Update for Business の使用
+
 Surface Hub には、すべての Windows 10 デバイスと同様に、**Windows Update for Business (WUfB)** が含まれており、デバイスの更新方法を制御することができます。 Windows Update for Business は、デバイス管理コストの削減、更新プログラムの展開方法の制御、セキュリティ更新プログラムへのすばやいアクセスを実現し、さらに Microsoft から継続的に最新の革新的機能を入手するのに役立ちます。 詳しくは、「[Windows Update for Business を使った更新プログラムの管理](https://technet.microsoft.com/itpro/windows/manage/waas-manage-updates-wufb)」をご覧ください。
 
 **Windows Update for Business を設定するには:**
@@ -67,9 +67,10 @@ Surface Hub には、すべての Windows 10 デバイスと同様に、**Window
 
 
 ### Surface Hub を展開リングにグループ化する
+
 展開リングを使用することによって、Surface Hub に更新プログラムをロールアウトする時期を制御し、更新プログラムを検証する時間を提供できます。 たとえば、最初に少数のデバイスを更新して品質を確認した後、組織に広範なロールアウトを実行できます。 組織内の Surface Hub の管理者がだれであるかにもよりますが、他の Windows 10デバイス用に作成した展開リングに Surface Hub を組み込むことを検討します。 展開リングについて詳しくは、「[Windows 10 更新プログラムの展開リングの構築](https://technet.microsoft.com/itpro/windows/manage/waas-deployment-rings-windows-10-updates)」をご覧ください。
 
-次の表に、展開リングの例を示します。
+展開リングの例については、次の表を参照してください。
 
 | 展開リング | リング サイズ | サービス ブランチ | 機能更新プログラムの延期 | 品質更新プログラム (セキュリティ修正プログラム、ドライバー、その他の更新プログラム) の延期 | 検証手順 |
 | --------- | --------- | --------- | --------- | --------- | --------- |
@@ -79,10 +80,8 @@ Surface Hub には、すべての Windows 10 デバイスと同様に、**Window
 | ミッション クリティカル (例: 役員室のデバイス) | 小 | 半期チャネル |  リリースの 180 日後 (機能更新プログラムの最大保留期間)。 | リリースの 30 日後 (品質更新プログラムの最大保留期間)。 | デバイスの使用状況とユーザーのフィードバックを監視します。 |
 
 
-
-
-
 ### Surface Hub で更新プログラムを受信する時期を構成する
+
 Surface Hub の展開リングを決定した後、各リングでの更新の延期ポリシーを構成します。
 - 機能更新プログラムを延期するには、各リングについて適切な [Update/DeferFeatureUpdatesPeriodInDays](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-deferfeatureupdatesperiodindays) ポリシーを設定します。
 - 品質更新プログラムを延期するには、各リングについて適切な [Update/DeferQualityUpdatesPeriodInDays](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-deferqualityupdatesperiodindays) ポリシーを設定します。
@@ -90,22 +89,9 @@ Surface Hub の展開リングを決定した後、各リングでの更新の�
 > [!NOTE]
 > 更新プログラムのロールアウト時に問題が発生した場合は、[Update/PauseFeatureUpdates](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-pausefeatureupdates) と [Update/PauseQualityUpdates](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-pausequalityupdates) を使用して更新プログラムを一時停止することができます
 
-
-## Windows Server Update Services の使用
-
-Surface Hub を Windows Server Update Services (WSUS) サーバーに接続することで、更新プログラムを管理できます。 更新プログラムは、承認または WSUS サーバーで構成された自動展開ルールによって管理されるため、更新プログラムの展開を選択するまで、新しい更新プログラムが適用されることはありません。
-
-**Surface Hub を WSUS サーバーに手動で接続するには:**
-1. Surface Hub で**設定**を開きます。
-2. メッセージが表示されたら、デバイスの管理者資格情報を入力します。
-3. **[更新とセキュリティ]** > **[Windows Update]** > **[詳細オプション]** > **[Windows Server Update Services (WSUS) サーバーを構成する]** に移動します。
-4. **[WSUS サーバーを使用して更新プログラムをダウンロードします]** をクリックし、WSUS サーバーの URL を入力します。
-
-MDM を使用して Surface Hub を WSUS サーバーに接続するには、適切な [Update/UpdateServiceUrl](https://msdn.microsoft.com/library/windows/hardware/dn904962.aspx#Update_UpdateServiceUrl) ポリシーを設定します。
-
 **プロキシ サーバーなどの方法を使って URL をブロックしている場合**
 
-WSUS 以外の方法で特定の URL をブロックしているために更新できない場合は、次の Windows update の信頼済みサイトの URL を "許可リスト" に追加する必要があります。
+次の Windows update の信頼済みサイトの Url を "許可リスト" に追加します。
 - `http(s)://*.update.microsoft.com`
 - `http://download.windowsupdate.com` 
 - `http://windowsupdate.microsoft.com`
@@ -114,7 +100,7 @@ Windows 10 Team Anniversary Update がインストールされた後、これら
 
 ## メンテナンス期間
 
-業務時間中は常にデバイスを使用できるように、Surface Hub では、指定したメンテナンス期間中に管理機能を実行します。 メンテナンスウィンドウの場合、Surface Hub は、Windows Update または WSUS によって更新プログラムを自動的にインストールし、ウィンドウの終了の20分前にデバイスを再起動します。
+業務時間中は常にデバイスを使用できるように、Surface Hub では、指定したメンテナンス期間中に管理機能を実行します。 メンテナンスウィンドウの場合、Surface Hub は、Windows Update によって更新プログラムを自動的にインストールし、ウィンドウの終了の20分前にデバイスを再起動します。
 
 Surface Hub では、次のガイドラインに従って更新プログラムを適用します。
 - 次のメンテナンス期間中に、更新プログラムをインストールします。 メンテナンス期間中に開始するように会議がスケジュールされている場合や、Surface Hub センサーによってデバイスが使用中であることが検出された場合は、保留中の更新プログラムは次のメンテナンス期間まで延期されます。

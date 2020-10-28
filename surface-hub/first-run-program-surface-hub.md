@@ -10,14 +10,14 @@ ms.sitesec: library
 author: dansimp
 ms.author: dansimp
 ms.topic: article
-ms.date: 07/27/2017
+ms.date: 10/27/2020
 ms.localizationpriority: medium
-ms.openlocfilehash: 0ad65170b3cc2534fec1b22730c718025026d7bc
-ms.sourcegitcommit: 109d1d7608ac4667564fa5369e8722e569b8ea36
+ms.openlocfilehash: e070c28d13cd8466bff47022f4508fdb8aa06331
+ms.sourcegitcommit: 19d2a78242777590bd09af3ac6552c07b032e0a1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2020
-ms.locfileid: "10836229"
+ms.lasthandoff: 10/27/2020
+ms.locfileid: "11142916"
 ---
 # 最初の実行プログラム (Surface Hub)
 
@@ -71,7 +71,7 @@ ms.locfileid: "10836229"
 ### 動作
 
 >[!NOTE]
-> このページの設定を入力すると、デバイスをリセットしない限りこの画面に戻ることはできません (「[デバイスのリセット](device-reset-surface-hub.md)」をご覧ください)。 操作を続行する前に、設定が適切に構成されていることを確認してください。
+> このページの設定を入力すると、デバイスをリセットしない限りこの画面に戻ることはできません (「[デバイスのリセット](device-reset-surface-hub.md)」をご覧ください)。 操作を続行する前に、設定が適切に構成されていることを確認してください。
 
  
 
@@ -93,7 +93,7 @@ ms.locfileid: "10836229"
 -   表示されているワイヤレス ネットワークのいずれかを選択します。 ネットワークがセキュリティで保護されている場合は、ログイン ページが表示されます。 詳しくは、「[ワイヤレス ネットワークのセットアップ](#wireless)」をご覧ください。
 -   **[この手順をスキップする]** をクリックして、ネットワークへの接続を省略します。 [おすすめの設定ページ](#set-up-for-you)が表示されます。
     >[!NOTE]
-    >接続を省略すると、デバイスではネットワークに接続できず、Surface Hub ではネットワーク接続が必要な機能 (システム更新プログラム、電子メールとカレンダーの同期など) が動作しません。 設定を使用すると、後でワイヤレスネットワークに接続できます (「[ワイヤレスネットワーク管理](wireless-network-management-for-surface-hub.md)」を参照してください)。
+    >接続を省略すると、デバイスではネットワークに接続できず、Surface Hub ではネットワーク接続が必要な機能 (システム更新プログラム、電子メールとカレンダーの同期など) が動作しません。 設定を使用すると、後でワイヤレスネットワークに接続できます (「 [ワイヤレスネットワーク管理](wireless-network-management-for-surface-hub.md)」を参照してください)。
 
      
 
@@ -128,17 +128,17 @@ ms.locfileid: "10836229"
 
 -   制限付きのワイヤード (有線) 接続の代わりに、ワイヤレス ネットワークの使用を選択できます。
 -   **[この手順をスキップする]** を選択すると、ネットワークへの接続を省略できます。 [おすすめの設定ページ](#set-up-for-you)が表示されます。
-    **注** この手順をスキップすると、デバイスはネットワーク接続されません。また、ネットワーク接続を必要とするものは、メールや予定表の同期など、Surface Hub でも動作します。 設定を使用すると、後でワイヤレスネットワークに接続できます (「[ワイヤレスネットワーク管理](wireless-network-management-for-surface-hub.md)」を参照してください)。
+    **注**  接続を省略すると、デバイスではネットワークに接続できず、Surface Hub ではネットワーク接続が必要な機能 (電子メールとカレンダーの同期など) が動作しません。 設定を使用すると、後でワイヤレスネットワークに接続できます (「 [ワイヤレスネットワーク管理](wireless-network-management-for-surface-hub.md)」を参照してください)。
 
      
 
 -   **[プロキシの設定を入力する]** を選択して、ネットワーク プロキシの使用方法を指定できます。 次の画面が表示されます。
 
-![ネットワーク プロキシのページを示す画像。](images/setupnetworksetup-2.png)
+    ![ネットワーク プロキシのページを示す画像。](images/setupnetworksetup-2.png)
 
-前の画面で **[プロキシの設定を入力する]** をクリックした場合は、この画面が表示されます。
+    前の画面で **[プロキシの設定を入力する]** をクリックした場合は、この画面が表示されます。
 
-![プロキシ サーバーの設定の詳細を示す画像。](images/setupnetworksetup-4.png)
+    ![プロキシ サーバーの設定の詳細を示す画像。](images/setupnetworksetup-4.png)
 
 ### 詳細
 
@@ -154,7 +154,7 @@ ms.locfileid: "10836229"
 **[この手順をスキップする]** を選択すると、ネットワークへの接続を省略できます。 [おすすめの設定ページ](#set-up-for-you)が表示されます。
 
 >[!NOTE]
->接続を省略すると、デバイスではネットワークに接続できず、Surface Hub ではネットワーク接続が必要な機能 (電子メールとカレンダーの同期など) が動作しません。 設定を使用すると、後でワイヤレスネットワークに接続できます (「[ワイヤレスネットワーク管理](wireless-network-management-for-surface-hub.md)」を参照してください)。
+>接続を省略すると、デバイスではネットワークに接続できず、Surface Hub ではネットワーク接続が必要な機能 (電子メールとカレンダーの同期など) が動作しません。 設定を使用すると、後でワイヤレスネットワークに接続できます (「 [ワイヤレスネットワーク管理](wireless-network-management-for-surface-hub.md)」を参照してください)。
 
  
 
@@ -371,9 +371,10 @@ Surface Hub を Azure Active Directory (Azure AD) に参加させる場合は、
 Azure AD に参加する利点は、主に 2 つあります。
 
 1.  組織の一部の従業員が、管理者としてデバイスにアクセスし、設定アプリを開いてデバイスを構成できます。 管理者アクセス許可を持つユーザーは、Azure AD サブスクリプションで定義できます。
+
 2.  Azure AD がモバイル デバイス管理 (MDM) ソリューションに接続されている場合は、その MDM ソリューションにデバイスが登録されるので、ポリシーと構成を適用できます。
 
-![Surface Hub を Azure Active Directory に参加させるときに表示されるメッセージを示す画像。](images/setupjoiningazuread-1.png)
+    ![Surface Hub を Azure Active Directory に参加させるときに表示されるメッセージを示す画像。](images/setupjoiningazuread-1.png)
 
 ### 詳細
 
@@ -451,7 +452,7 @@ Surface Hub の管理に Azure Active Directory (Azure AD) や Active Directory 
 
 最新の機能や修正プログラムを取得するため、上記の最初の実行手順がすべて完了したらすぐに Surface Hub を更新してください。
 
-1.  デバイスで Windows Update サーバーまたは Windows Server Update Services (WSUS) にアクセスできることを確認してください。 WSUS を構成するには、「[WSUS の使用](manage-windows-updates-for-surface-hub.md#use-windows-server-update-services)」をご覧ください。
+1.  デバイスが Windows Update サーバーにアクセスできることを確認します。 
 2.  [設定] を開き、**[更新とセキュリティ]**、**[Windows Update]**、**[更新プログラムの確認]** を順にクリックします。
 3.  更新プログラムが提供されている場合は、ダウンロードされます。 ダウンロードが完了したら、**[今すぐ更新]** ボタンをクリックして更新プログラムをインストールします。
 4.  更新プログラムがインストールされたら、画面の指示に従います。 デバイスの再起動が必要な場合があります。

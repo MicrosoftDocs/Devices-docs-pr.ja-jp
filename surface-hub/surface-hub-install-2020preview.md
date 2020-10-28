@@ -9,20 +9,23 @@ ms.author: greglin
 manager: laurawi
 audience: Admin
 ms.topic: article
-ms.date: 08/13/2020
+ms.date: 10/27/2020
 ms.localizationpriority: Medium
-ms.openlocfilehash: 51d6b9169b0074eb474ddc89b6fe9b43a921bb07
-ms.sourcegitcommit: feb81137d009d9b7c743aabd7d02615e89842200
+ms.openlocfilehash: 6d370db0232ae1f93d1ba6b8ff15b5ff2cfa9f10
+ms.sourcegitcommit: 19d2a78242777590bd09af3ac6552c07b032e0a1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "10929769"
+ms.lasthandoff: 10/27/2020
+ms.locfileid: "11142906"
 ---
 # Windows 10 Team 2020 更新プログラムプレビュービルドをインストールする 
 
-Surface hub オペレーティングシステムの最新の更新プログラム ( **windows 10 Team 2020 更新**プログラム) は、 [windows Insider プログラム](https://insider.windows.com)からの surface Hub 50 インチおよび surface hub 2s 55 インチデバイスでは追加料金なしで利用できるようになりました。 Surface Hub 84 インチモデルは、Windows 10 Team 2020 Update の最終リリースでサポートされます。
+Surface Hub オペレーティングシステムのプレビュービルド ( **windows 10 Team 2020 の更新プログラムプレビュー**) は、 [windows Insider プログラム](https://insider.windows.com)による追加料金なしで利用できます。 
 
-Windows 10 Team 2020 更新プログラムでは、Windows 10 の最新機能と共に、デバイスの展開と管理性が大幅に向上しています。 新機能の詳細については、次のブログ投稿を参照してください。[パブリックプレビュー用の新しい Surface HUB OS 更新プログラムがリリース](https://techcommunity.microsoft.com/t5/surface-it-pro-blog/new-surface-hub-os-update-released-for-public-preview/ba-p/1534823)されました。 既知の問題については、下記の「既知の問題」を参照してください。
+> [!NOTE] 
+> Windows 10 Team 2020 更新プログラムの最終的な公開リリースが利用できるようになりました。 詳細については、「 [Windows 10 Team 2020 の更新](surface-hub-2020-update.md)」を参照してください。
+
+Windows 10 Team 2020 更新プログラムでは、Windows 10 の最新機能と共に、デバイスの展開と管理性が大幅に向上しています。 新機能の詳細については、次のブログ投稿を参照してください。[パブリックプレビュー用の新しい Surface HUB OS 更新プログラムがリリース](https://techcommunity.microsoft.com/t5/surface-it-pro-blog/new-surface-hub-os-update-released-for-public-preview/ba-p/1534823)されました。 既知の問題については、「[既知の問題: Windows 10 Team 2020 更新プログラム](surface-hub-2020-team-update-known-issues.md)」を参照してください。
  
 ## 前提条件
 
