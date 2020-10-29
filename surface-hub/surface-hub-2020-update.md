@@ -11,12 +11,12 @@ audience: Admin
 ms.topic: article
 ms.date: 10/27/2020
 ms.localizationpriority: Medium
-ms.openlocfilehash: 3e376a740aa16333cbbabc812b0c0193ab90d585
-ms.sourcegitcommit: 19d2a78242777590bd09af3ac6552c07b032e0a1
+ms.openlocfilehash: 68eee89ac1b93501c73eccd3e5f9eecf514a8132
+ms.sourcegitcommit: b4cfb718274fd632661f9112e9fd086a2ad45640
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "11142944"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "11143642"
 ---
 # Windows 10 Team 2020 更新プログラムをインストールする 
 
@@ -48,7 +48,7 @@ Windows 10 Team 2020 更新プログラムでは、Windows 10 の最新機能と
  
 ## 始める前に
 
-Windows 10 team 2020 更新プログラムをインストールする前に、デバイスに関連付けられている BitLocker キーを必ず保存してください。
+Windows 10 team 2020 更新プログラムをインストールする前に、デバイスに関連付けられている BitLocker キーを必ず保存してください。 詳細については、「[新機能使って Windows 10 Team 2020 更新プログラム](surface-hub-2020-update-whats-new.md)」を参照してください。
 
 **BitLocker キーを手動で保存するには**
 
