@@ -3,6 +3,7 @@
 # Surface Hub 2S
 
 ## 概要
+### [Windows 10 Team 2020 更新プログラムの新機能](surface-hub-2020-update-whats-new.md)
 ### [Surface Hub 2S の新機能 (IT 管理者)](surface-hub-2s-whats-new.md)
 ### [Surface Hub 2S 50 インチの技術仕様](surface-hub-2s-techspecs.md) 
 ### [Surface Hub 2S 85 インチの技術仕様](surface-hub-2s-85.md)
