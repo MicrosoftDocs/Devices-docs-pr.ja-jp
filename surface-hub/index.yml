@@ -14,17 +14,21 @@ metadata:
   author: greg-lindsay
   ms.author: greglin
   manager: laurawi
-  ms.openlocfilehash: 8fec6b0fdd34c196ba2e5cfcb229c16b8e340fe6
-  ms.sourcegitcommit: a71724a00e0e9626fa2e26c26fe3b30d8a99238a
+  ms.openlocfilehash: 84397e6f5fa01e924e90961572845015e6331322
+  ms.sourcegitcommit: 19d2a78242777590bd09af3ac6552c07b032e0a1
   ms.translationtype: HT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 09/28/2020
-  ms.locfileid: "11080646"
+  ms.lasthandoff: 10/27/2020
+  ms.locfileid: "11142886"
 landingContent:
 - title: Surface Hub 2S に向けた準備
   linkLists:
   - linkListType: whats-new
     links:
+    - text: Windows 10 Team 2020 の更新プログラムをインストールする
+      url: surface-hub-2020-update.md
+    - text: Windows 10 Team 2020 更新プログラムの新機能
+      url: surface-hub-2020-update-whats-new.md
     - text: Surface Hub 2S は、今日のハイブリッド ワークスペースにおけるデジタルと物理的な隔たりを埋めることができます。
       url: https://blogs.windows.com/devices/2020/09/22/surface-hub-2s-bridges-digital-and-physical-divide-in-todays-hybrid-workspaces/
     - text: Surface Hub 2S 85 インチの概要および技術仕様
@@ -33,8 +37,6 @@ landingContent:
       url: https://techcommunity.microsoft.com/t5/surface-it-pro-blog/announcing-the-availability-of-windows-10-pro-and-enterprise-on/ba-p/1624107
     - text: Surface Hub 2 の Windows 10 Pro または Enterprise に移行する
       url: surface-hub-2s-migrate-os.md
-    - text: Windows 10 Team 2020 更新プログラムプレビュービルドをインストールする
-      url: surface-hub-install-2020preview.md
 - title: 使ってみる
   linkLists:
   - linkListType: get-started
