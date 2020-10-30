@@ -13,13 +13,13 @@ ms.reviewer: hachidan
 manager: laurawi
 ms.localizationpriority: medium
 ms.audience: itpro
-ms.date: 10/13/2020
-ms.openlocfilehash: bfd10df3bb7a7dd031c1719d4191ffc46418c4e3
-ms.sourcegitcommit: 30c1eb469610dfd2ad9169c154ca07e565240fdb
+ms.date: 10/28/2020
+ms.openlocfilehash: 2d31f520d8c4da54f47b2b89b58b43e2cb983f1a
+ms.sourcegitcommit: 7f5b97275fe301ef700f9c77954a1054e2e8d046
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "11117853"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "11145618"
 ---
 # Microsoft Endpoint Configuration Manager を使用して SEMM によりデバイスを管理する
 
@@ -388,11 +388,6 @@ Surface uefi の設定または Surface UEFI 設定の権限を構成するに�
 
 ShowSettingsOptions.ps1 を実行するコンピューターには Microsoft Surface UEFI Manager がインストールされている必要がありますが、スクリプトは Surface デバイスを必要としません。
 
-デバイスの最新の設定名と Id を表示するには、ConfigureSEMM.ps1 スクリプトまたは ConfigureSEMM を [ <device name> [Surface ツール](https://www.microsoft.com/download/details.aspx?id=46703)] の SEMM_Powershell.zip からダウンロードするのに最適な方法です。
-
-ConfigureSEMM.ps1 スクリプトでは、すべてのデバイスの名前と Id の設定を表示できます。
-
-特定のデバイスの名前と Id の設定は、ConfigureSEMM スクリプトで表示できます <device name> 。 
 
 ## SEMM Configuration Manager スクリプトの展開
 
