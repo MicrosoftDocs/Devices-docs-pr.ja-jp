@@ -12,12 +12,12 @@ ms.date: 10/12/2020
 ms.reviewer: hachidan
 manager: laurawi
 audience: itpro
-ms.openlocfilehash: 1f2661811516507abd432dba602cf8ce81e6dbb3
-ms.sourcegitcommit: c1efb75e8524193bdc0a5f7496dc23a92ac665c8
+ms.openlocfilehash: 97d0a3d76cf9286ca946e08be9f605084084b2ba
+ms.sourcegitcommit: 5448f775d3fe177806fce6cbaf0b2b091ed8b7d1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/12/2020
-ms.locfileid: "11114665"
+ms.lasthandoff: 10/31/2020
+ms.locfileid: "11145962"
 ---
 # <span data-ttu-id="d433f-103">ビジネス向け Surface 診断ツールキットを展開する</span><span class="sxs-lookup"><span data-stu-id="d433f-103">Deploy Surface Diagnostic Toolkit for Business</span></span>
 
@@ -25,7 +25,7 @@ ms.locfileid: "11114665"
 
 <span data-ttu-id="d433f-106">具体的には、SDT for Business で次のことが可能になります。</span><span class="sxs-lookup"><span data-stu-id="d433f-106">Specifically, SDT for Business enables you to:</span></span>
 
-- [<span data-ttu-id="d433f-107">パッケージをカスタマイズします。</span><span class="sxs-lookup"><span data-stu-id="d433f-107">Customize the package.</span></span>](#create-custom-sdt)
+- [<span data-ttu-id="d433f-107">パッケージをカスタマイズします。</span><span class="sxs-lookup"><span data-stu-id="d433f-107">Customize the package.</span></span>](#preparing-the-sdt-package-for-distribution)
 - [<span data-ttu-id="d433f-108">コマンドを使用してアプリを実行します。</span><span class="sxs-lookup"><span data-stu-id="d433f-108">Run the app using commands.</span></span>](surface-diagnostic-toolkit-command-line.md)
 - [<span data-ttu-id="d433f-109">問題のトラブルシューティングを行うために複数のハードウェアテストを実行します。</span><span class="sxs-lookup"><span data-stu-id="d433f-109">Run multiple hardware tests to troubleshoot issues.</span></span>](surface-diagnostic-toolkit-desktop-mode.md#multiple)
 - [<span data-ttu-id="d433f-110">問題を分析するためのログを生成します。</span><span class="sxs-lookup"><span data-stu-id="d433f-110">Generate logs for analyzing issues.</span></span>](surface-diagnostic-toolkit-desktop-mode.md#logs)
@@ -123,8 +123,6 @@ ms.locfileid: "11114665"
 ![ファイルエクスプローラーでインストールされた SDT ファイルのリスト](images/sdt-2.png)
 
 *<span data-ttu-id="d433f-191">図 2. </span><span class="sxs-lookup"><span data-stu-id="d433f-191">Figure 2.</span></span> <span data-ttu-id="d433f-192">SDT によってインストールされたファイル</span><span class="sxs-lookup"><span data-stu-id="d433f-192">Files installed by SDT</span></span>*
-
-<span id="create-custom-sdt" />
 
 ## <span data-ttu-id="d433f-193">配布用の SDT パッケージを準備する</span><span class="sxs-lookup"><span data-stu-id="d433f-193">Preparing the SDT package for distribution</span></span>
 
