@@ -11,12 +11,12 @@ audience: Admin
 ms.topic: article
 ms.date: 10/08/2020
 ms.localizationpriority: Medium
-ms.openlocfilehash: 96aec50335ab08e9d524c5ae1a595695c1de46d4
-ms.sourcegitcommit: cbf237e59c97311bd8add3aae2a17738fe271ddc
+ms.openlocfilehash: 12742cc887ba495f8f7cbded8bd84dc4fd63b6f6
+ms.sourcegitcommit: 5448f775d3fe177806fce6cbaf0b2b091ed8b7d1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/23/2020
-ms.locfileid: "11134395"
+ms.lasthandoff: 10/31/2020
+ms.locfileid: "11145972"
 ---
 # Surface Hub 2 の Windows 10 Pro または Enterprise に移行する
 
@@ -167,6 +167,9 @@ Surface UEFI コンフィギュレーターツールを使用して作成され�
 1. USB ドライブを PC に接続します。 [ **Hub 2s** ] を選び、[ **次へ**] を選びます。
 
    ![USB を選ぶ](images/shm-fig13.png)
+
+> [!WARNING]
+> SEMM パッケージをビルドすると、USB ドライブ上の既存のデータはすべて消去されます。 SEMM パッケージを作成する前に、保存したい USB ドライブからファイルを削除します。
    
 2. [ **ビルド**] を選びます。
 

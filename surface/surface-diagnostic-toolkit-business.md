@@ -12,12 +12,12 @@ ms.date: 10/12/2020
 ms.reviewer: hachidan
 manager: laurawi
 audience: itpro
-ms.openlocfilehash: 1f2661811516507abd432dba602cf8ce81e6dbb3
-ms.sourcegitcommit: c1efb75e8524193bdc0a5f7496dc23a92ac665c8
+ms.openlocfilehash: 97d0a3d76cf9286ca946e08be9f605084084b2ba
+ms.sourcegitcommit: 5448f775d3fe177806fce6cbaf0b2b091ed8b7d1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/12/2020
-ms.locfileid: "11114665"
+ms.lasthandoff: 10/31/2020
+ms.locfileid: "11145962"
 ---
 # ビジネス向け Surface 診断ツールキットを展開する
 
@@ -25,7 +25,7 @@ Microsoft Surface Diagnostic ツールキット for Business (SDT) を使うと�
 
 具体的には、SDT for Business で次のことが可能になります。
 
-- [パッケージをカスタマイズします。](#create-custom-sdt)
+- [パッケージをカスタマイズします。](#preparing-the-sdt-package-for-distribution)
 - [コマンドを使用してアプリを実行します。](surface-diagnostic-toolkit-command-line.md)
 - [問題のトラブルシューティングを行うために複数のハードウェアテストを実行します。](surface-diagnostic-toolkit-desktop-mode.md#multiple)
 - [問題を分析するためのログを生成します。](surface-diagnostic-toolkit-desktop-mode.md#logs)
@@ -123,8 +123,6 @@ SDT と SDT アプリ本体は両方ともインストールされてい `C:\Pro
 ![ファイルエクスプローラーでインストールされた SDT ファイルのリスト](images/sdt-2.png)
 
 *図 2.  SDT によってインストールされたファイル*
-
-<span id="create-custom-sdt" />
 
 ## 配布用の SDT パッケージを準備する
 

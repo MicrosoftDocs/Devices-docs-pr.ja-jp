@@ -1,5 +1,5 @@
 ---
-title: Windows 10 Team 2020 更新プログラムをインストールする
+title: Windows 10 Team 2020 の更新プログラムをインストールする
 description: Surface Hub オペレーティングシステム、Windows 10 Team 2020 更新プログラムの最新の更新プログラムを入手します。
 keywords: コンマで値を区切る
 ms.prod: surface-hub
@@ -11,14 +11,14 @@ audience: Admin
 ms.topic: article
 ms.date: 10/27/2020
 ms.localizationpriority: Medium
-ms.openlocfilehash: 68eee89ac1b93501c73eccd3e5f9eecf514a8132
-ms.sourcegitcommit: b4cfb718274fd632661f9112e9fd086a2ad45640
+ms.openlocfilehash: 90bd5714b7427880f6e73c7031c26894d55ac500
+ms.sourcegitcommit: 5448f775d3fe177806fce6cbaf0b2b091ed8b7d1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "11143642"
+ms.lasthandoff: 10/31/2020
+ms.locfileid: "11145952"
 ---
-# Windows 10 Team 2020 更新プログラムをインストールする 
+# Windows 10 Team 2020 の更新プログラムをインストールする 
 
 Windows 10 バージョン20H2 に基づいた新しい Surface Hub オペレーティングシステム、 **windows 10 Team 2020 更新プログラム**は、すべての Surface hub 2s デバイスで利用できるようになりました。  
 
@@ -48,7 +48,7 @@ Windows 10 Team 2020 更新プログラムでは、Windows 10 の最新機能と
  
 ## 始める前に
 
-Windows 10 team 2020 更新プログラムをインストールする前に、デバイスに関連付けられている BitLocker キーを必ず保存してください。 詳細については、「[新機能使って Windows 10 Team 2020 更新プログラム](surface-hub-2020-update-whats-new.md)」を参照してください。
+Windows 10 team 2020 更新プログラムをインストールする前に、デバイスに関連付けられている BitLocker キーを必ず保存してください。 詳細については、「 [Windows 10 Team 2020 更新プログラムの新機能](surface-hub-2020-update-whats-new.md)」を参照してください。
 
 **BitLocker キーを手動で保存するには**
 
