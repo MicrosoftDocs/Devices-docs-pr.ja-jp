@@ -14,15 +14,15 @@ author: greg-lindsay
 ms.author: greglin
 ms.collection: M365-modern-desktop
 ms.topic: article
-ms.date: 10/21/2020
+ms.date: 11/03/2020
 appliesto:
 - Surface Hub 2S
-ms.openlocfilehash: a17d4b05e6ee5f7415fed62d96b9e0a62a6dc123
-ms.sourcegitcommit: cbf237e59c97311bd8add3aae2a17738fe271ddc
+ms.openlocfilehash: b86776b56e892c34ea8b5abbc55d5c48723a5f9e
+ms.sourcegitcommit: 3ca1d1bc77452acca914d0af03e252ee260ebf1a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/23/2020
-ms.locfileid: "11134405"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "11154129"
 ---
 # Surface Hub 2 で Windows 10 Pro または Enterprise を構成する
 
@@ -34,7 +34,7 @@ Windows 10 Pro または Enterprise に移行するためのインストール�
 
 1. デバイスのローカル管理者権限を持つアカウントでサインインします。  
 
-    - Azure AD に参加しているデバイスでは、Azure AD join を実行するユーザーが自動的にローカル管理者グループに追加されます。 Azure AD グローバル管理者と Azure AD デバイス管理者は、 [ローカル管理者でも](https://docs.microsoft.com/azure/active-directory/devices/assign-local-admin)あります。 
+    - Azure AD に参加しているデバイスでは、Azure AD join を実行するユーザーが自動的にローカル管理者グループに追加されます。 Azure AD グローバル管理者と Azure AD デバイス管理者は、 <a href="https://docs.microsoft.com/azure/active-directory/devices/assign-local-admin" target="_blank"> ローカル管理者でも </a> あります。 
     
     - コマンドプロンプトで **net localgroup の管理者** と入力すると、ローカル管理者の権限を持つアカウントを一覧表示できます。
     
@@ -83,17 +83,17 @@ Windows 10 Pro または Enterprise に移行するためのインストール�
 
 デバイスをプライマリ Windows デバイスとして使用している場合はキーボードとマウスを接続する、または入力や精度の作業に頻繁に使用する場合は、キーボードとマウスを接続します。
 
-Surface Hub デバイスが PC に近い場合は、 [境界線のないマウス](https://aka.ms/mm) を使用して、surface HUB と pc の間でシームレスに移動することができます。 詳細については、「 [ガレージを使わないで Microsoft ダウンロード](https://blogs.microsoft.com/ai/microsoft-download-from-the-garage-mouse-without-borders/)」を参照してください。
+Surface Hub デバイスが PC に近い場合は、 <a href="https://aka.ms/mm" target="_blank"> 境界線のないマウスを使用して、 </a> surface HUB と pc の間でシームレスに移動することができます。 詳細については、「 <a href="https://blogs.microsoft.com/ai/microsoft-download-from-the-garage-mouse-without-borders/" target="_blank"> ガレージを使わないで Microsoft ダウンロード」を参照してください。 </a>
 
 ## OneDrive for Business
 
-[OneDrive For business](https://docs.microsoft.com/onedrive/onedrive)を使用すると、すべての作業デバイス間でツール、ログ、その他のファイルを簡単に共有できます。
+<a href="https://docs.microsoft.com/onedrive/onedrive" target="_blank">OneDrive For business </a> を使用すると、すべての作業デバイス間でツール、ログ、その他のファイルを簡単に共有できます。
 
 - OneDrive を使用すると、ノート pc、Surface Hub のデスクトップ、および Intune で管理されているモバイルデバイス間で作業ファイルを共有できます。 任意のデバイスでファイルを編集できます。また、ネットワーク接続されているすべてのデバイスが変更されます。
 
 - Surface hub SSD (128GB) のサイズを考慮してください。 Surface Hub のデスクトップデバイスで OneDrive を構成する場合は、既定の構成でファイルをオンラインのままにして、ファイルを使用するときにダウンロードするようにします。
 
-必要な場合にのみファイルをダウンロードするように OneDrive を構成するには、ファイルを使用するときに、**スペースを節約し、ファイルをダウンロード**するように**ファイルのオンデマンド**設定を設定します。 詳細については、「 [Windows でのファイルのオンデマンド状態の照会と設定](https://docs.microsoft.com/onedrive/files-on-demand-windows)」を参照してください。
+必要な場合にのみファイルをダウンロードするように OneDrive を構成するには、ファイルを使用するときに、**スペースを節約し、ファイルをダウンロード**するように**ファイルのオンデマンド**設定を設定します。 詳細については、「 <a href="https://docs.microsoft.com/onedrive/files-on-demand-windows" target="_blank"> Windows でのファイルのオンデマンド状態の照会と設定」を参照してください </a> 。
 
 ![OneDrive の設定](images/onedrive.png)
 
@@ -122,7 +122,7 @@ OneDrive 同期アプリを使用して社内のファイルをローカルド�
     
     3. [ **空き容量を増やす**] を選びます。
     
-    4. [状態] 列には、ファイルとフォルダーの状態が表示されます。 詳細については、「 [OneDrive 同期クライアントを使用して SharePoint ファイルを同期する](https://support.microsoft.com/office/sync-sharepoint-files-with-the-onedrive-sync-client-groove-exe-59b1de2b-519e-4d3a-8f45-51647cf291cd)」を参照してください。
+    4. [状態] 列には、ファイルとフォルダーの状態が表示されます。 詳細については、「 <a href="https://support.microsoft.com/office/sync-sharepoint-files-with-the-onedrive-sync-client-groove-exe-59b1de2b-519e-4d3a-8f45-51647cf291cd" target="_blank"> OneDrive 同期クライアントを使用して SharePoint ファイルを同期する」を参照してください </a> 。
     
 6. Teams のチャネルファイルは SharePoint サイトに保存され、バージョン履歴やローカルデスクトップデバイスとの同期など、同じ SharePoint ドキュメントのすべての機能を使用できます。 Teams のチャネルファイルを同期するには:
 
@@ -164,13 +164,13 @@ OneDrive 同期アプリを使用して社内のファイルをローカルド�
 
 カメラは、デバイスの一番上または横側にマウントできます。 カメラを1つの位置に配置して、カートの代わりにデスクトップスタンドでハブを使っている場合、またはハブに近接している場合は、カメラのアングルを最適化します。 カメラは自動的に回転しないため、カメラを手動で回転させるには、2mm の16進数のキーが必要です。 
 
-カメラのサイドマウントとカメラの回転を手動で行う方法について詳しくは、「 [Surface Hub 2s camera lens の向き](https://support.microsoft.com/help/4509729/surface-hub-2s-camera-lens-orientation)」をご覧ください。
+カメラのサイドマウントとカメラの回転を手動で行う方法について詳しくは、「 <a href="https://support.microsoft.com/help/4509729/surface-hub-2s-camera-lens-orientation" target="_blank"> Surface Hub 2s camera lens の向き」をご覧ください </a> 。
 
 ## Windows Hello の構成
 
 Windows 10 Enterprise を実行する Surface Hub 2S では、すべての Win32 デスクトップアプリケーションと生体認証の Windows Hello オプションを利用できます。 Surface Hub 2 指紋リーダーアクセサリは、デバイスの任意の USB C ポートに接続できます。 
 
-Surface Hub 2 の指紋リーダーまたは技術仕様の表示を注文するには、「 [Surface hub 2 での Windows 10 Pro と Enterprise の基本的な](surface-hub-2-essential-add-ons.md)アドオン」を参照してください。 
+Surface Hub 2 の指紋リーダーを注文したり、技術仕様を表示したりするには、「(surface-hub-2-essential-add-ons.md "target =" _blank >"」を参照してください。 Windows 10 Pro および Enterprise の重要なアドオンは Surface Hub 2 にあり </a> ます。 
 
 指紋リーダーを挿入した後で、[設定の**開始**] を選び、  >  **Settings**  >  **Accounts**  >  **Sign-in options**  >  **Windows Hello 指紋**を登録します。
 
@@ -246,7 +246,7 @@ Microsoft ホワイトボードをインストールするには:
 
 ### Microsoft Office
 
-1. [Office ポータル](https://portal.office.com/account#installs)を開き、目的のアプリケーションをインストールします。
+1. <a href="https://portal.office.com/account#installs" target="_blank">Office ポータルを開き、 </a> 目的のアプリケーションをインストールします。
 
 2. 目的の Office アプリケーションをタスクバーにピン留めします。
 
@@ -258,7 +258,7 @@ Microsoft ホワイトボードをインストールするには:
 
 ### Microsoft Teams
 
-1. [Microsoft Teams](https://teams.microsoft.com/downloads)をダウンロードしてインストールします。
+1. Microsoft Teams をダウンロードしてインストール <a href="https://teams.microsoft.com/downloads" target="_blank"> </a> します。
 
 2. アプリケーションを自動起動するように設定を構成します (省略可能)。
 
@@ -305,20 +305,20 @@ Microsoft ホワイトボードをインストールするには:
 
 Windows 10 の既定では、 **電話** アプリはインストールされています。 存在しない場合は、Windows ストアからインストールすることもできます。
 
-アプリのセットアップについては、「 [Windows 10 で電話を設定する方法」および「PC とスマートフォンの間でデータを同期する方法](https://www.windowscentral.com/how-set-your-phone-windows-10)」を参照してください。 また [、Windows 10 の電話アプリに関する一般的な問題を解決する方法に](https://www.windowscentral.com/how-fix-common-problems-your-phone-app-windows-10)ついても説明します。
+アプリのセットアップについては、「 <a href="https://www.windowscentral.com/how-set-your-phone-windows-10" target="_blank"> Windows 10 で電話を設定する方法」および「PC とスマートフォンの間でデータを同期する方法」を参照してください </a> 。 また <a href="https://www.windowscentral.com/how-fix-common-problems-your-phone-app-windows-10" target="_blank"> 、Windows 10 の電話アプリに関する一般的な問題を解決する方法についても説明し </a> ます。
 
 ### スーパーデザインのゾーン
 
-**スーパーの装飾** 的なゾーンにより、ユーザーはウィンドウを配置して画面領域を最大化できます。 これは、GitHub の [powertoy](https://github.com/microsoft/PowerToys/releases) に含まれています。
+**スーパーの装飾** 的なゾーンにより、ユーザーはウィンドウを配置して画面領域を最大化できます。 これは、GitHub の powertoy に含まれてい <a href="https://github.com/microsoft/PowerToys/releases" target="_blank"> </a> ます。
 
 ### Edge Chromium browser
 
-新しい [Edge Chromium browser](https://www.microsoft.com/en-us/edge?form=MY01BL&OCID=MY01BL)をダウンロードしてインストールします。
+新しい Edge Chromium browser をダウンロードしてインストールし <a href="https://www.microsoft.com/en-us/edge?form=MY01BL&OCID=MY01BL" target="_blank"> </a> ます。
 
 
 ### Surface Hub ハードウェア診断ツール
 
-[Surface Hub ハードウェア診断ツール](https://www.microsoft.com/p/surface-hub-hardware-diagnostic/9nblggh51f2g)は、Microsoft Store から無料で利用できます。 このツールは、Surface Hub が最適な状態で実行されていることを確認するために設計されています。 このアプリには、ファームウェアが最新であり、正しく構成されているかどうかを判断するテストが含まれています。 対話型テストを利用すると、重要な機能が予期したとおりに動作していることを確認できます。 問題が発生した場合は、結果を保存して Surface Hub のサポート チームと共有できます。 リンクをクリックして Microsoft Store からインストールし、タスクバーにアプリケーションを固定します。
+<a href="https://www.microsoft.com/p/surface-hub-hardware-diagnostic/9nblggh51f2g" target="_blank">Surface Hub ハードウェア診断ツールは、 </a> Microsoft Store から無料で利用できます。 このツールは、Surface Hub が最適な状態で実行されていることを確認するために設計されています。 このアプリには、ファームウェアが最新であり、正しく構成されているかどうかを判断するテストが含まれています。 対話型テストを利用すると、重要な機能が予期したとおりに動作していることを確認できます。 問題が発生した場合は、結果を保存して Surface Hub のサポート チームと共有できます。 リンクをクリックして Microsoft Store からインストールし、タスクバーにアプリケーションを固定します。
 
 ## 追加設定
 
@@ -454,4 +454,4 @@ Surface Hub 2 にはローカルストレージ用に 128GB SSD が搭載され�
 
 ## 関連トピック
 
-[Surface Hub 2 の Windows 10 Pro または Enterprise に移行する](surface-hub-2s-migrate-os.md)
+<a href="surface-hub-2s-migrate-os.md" target="_blank"> Surface Hub 2 の Windows 10 Pro または Enterprise に移行する</a>
