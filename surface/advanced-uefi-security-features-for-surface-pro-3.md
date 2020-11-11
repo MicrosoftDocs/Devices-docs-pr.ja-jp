@@ -13,12 +13,12 @@ ms.sitesec: library
 author: coveminer
 ms.author: greglin
 ms.topic: article
-ms.openlocfilehash: 9460b4a5e8b44cbf4b6af57d01aab3b09afb49de
-ms.sourcegitcommit: 109d1d7608ac4667564fa5369e8722e569b8ea36
+ms.openlocfilehash: 6a5c53c3e161bd4c49069a0665896762ce587618
+ms.sourcegitcommit: e9190a6fe68b8a7cd9b024aea4be9f885f0de388
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2020
-ms.locfileid: "10834750"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "11163181"
 ---
 # Surface Pro 3 向けの UEFI の高度なセキュリティ機能
 
@@ -54,7 +54,7 @@ Surface デバイスに UEFI の更新プログラム v3.11.760.0 をインス�
 | WiFi           | Surface デバイスに組み込みの Wi-Fi トランシーバーを有効または無効にします。 これを無効にすると、Bluetooth も無効になります。                                                                              | **有効**、無効                       |
 | Bluetooth      | Surface デバイスに組み込みの Bluetooth トランシーバーを有効または無効にします。                                                                                                        | **有効**、無効                       |
 
- 
+ 
 
 ## 追加のセキュリティ設定を自動化する
 
@@ -69,12 +69,13 @@ Surface デバイスに UEFI の更新プログラム v3.11.760.0 をインス�
 
 **サンプル スクリプト**
 
->**注**:&nbsp;&nbsp;以下のサンプル スクリプトで使用される UEFI パスワードはクリア テキストで表示されます。 スクリプトを保護された場所に保存し、管理された環境で実行することを強くお勧めします。
+> [!NOTE]
+> 以下のサンプル スクリプトで使用される UEFI パスワードはクリア テキストで表示されます。 スクリプトを保護された場所に保存し、管理された環境で実行することを強くお勧めします。
 
 
 構成可能なオプションをすべて示します。
 
-```
+```powershell
 # Load the extension 
 [System.Reflection.Assembly]::Load("SurfaceUefiManager, Version=1.0.5483.22783, Culture=neutral, PublicKeyToken=20606f4b5276c705")  
  
@@ -99,7 +100,7 @@ foreach ($uefiOption in $uefiOptions)
 
 UEFI パスワードを設定または変更します。
 
-```
+```powershell
 # Load the extension 
 [System.Reflection.Assembly]::Load("SurfaceUefiManager, Version=1.0.5483.22783, Culture=neutral, PublicKeyToken=20606f4b5276c705")  
  
@@ -115,7 +116,7 @@ $Password.ProposedValue = "12345"
 
 提示された変更の状態を確認します。
 
-```
+```powershell
 # Load the extension 
 [System.Reflection.Assembly]::Load("SurfaceUefiManager, Version=1.0.5483.22783, Culture=neutral, PublicKeyToken=20606f4b5276c705")  
  
@@ -141,7 +142,7 @@ if ($details.Count -gt 0)
 
 UEFI を既定値に戻します。
 
-```
+```powershell
 # Load the extension 
 [System.Reflection.Assembly]::Load("SurfaceUefiManager, Version=1.0.5483.22783, Culture=neutral, PublicKeyToken=20606f4b5276c705")  
  
@@ -166,11 +167,4 @@ foreach ($uefiOption in $uefiOptions)
 -   03 - 提示された値セットの 1 つが認識されませんでした。
 -   0F - ロック解除パスワードが現在設定されているパスワードと一致しませんでした。
 
- 
-
- 
-
-
-
-
-
+ 
