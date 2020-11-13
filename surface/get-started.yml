@@ -11,12 +11,12 @@ metadata:
   ms.author: greglin
   audience: itpro
   ms.localizationpriority: High
-  ms.openlocfilehash: 01c1cc2ea75e79825c80cc6f02970a755ae35b75
-  ms.sourcegitcommit: cbf237e59c97311bd8add3aae2a17738fe271ddc
+  ms.openlocfilehash: c356595e058c45cc95631d2ebd12ee2e5cc75c1d
+  ms.sourcegitcommit: b1c630dcf12530cf7034478bfe66ad3bb11b59c9
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 10/23/2020
-  ms.locfileid: "11134385"
+  ms.lasthandoff: 11/12/2020
+  ms.locfileid: "11166649"
 landingContent:
 - title: Surface デバイス
   linkLists:
@@ -76,12 +76,8 @@ landingContent:
       url: surface-diagnostic-toolkit-business.md
     - text: 上位のサポート ソリューション
       url: support-solutions-surface.md
-    - text: 互換性のある Surface デバイスでの SSD 削除のベスト プラクティス
-      url: surface-ssd-removal-guide.md
-    - text: Surface 修理またはサービス中のデータの保護
-      url: https://support.microsoft.com/help/4023508/surface-faq-protecting-your-data-service
-    - text: Surface Dock とドッキング ステーションのトラブルシューティング
-      url: https://support.microsoft.com/help/4023468/surface-troubleshoot-surface-dock-and-docking-stations
+    - text: Windows ベースのデバイスの Surface ドライバーとファームウェアのライフサイクル
+      url: surface-driver-firmware-lifecycle-support.md
 - title: セキュリティ ガイダンスの検索
   linkLists:
   - linkListType: how-to-guide
