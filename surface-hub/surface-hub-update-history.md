@@ -9,12 +9,12 @@ author: v-miegge
 ms.author: v-miegge
 ms.topic: article
 ms.localizationpriority: medium
-ms.openlocfilehash: f608e18d04a0d6c48ad2990715b400c95b6d8c12
-ms.sourcegitcommit: 5fa5efefd510ce6f435d7142fb2f2cc08b520da9
+ms.openlocfilehash: ab43155ee5e2973c5c45fc9ce8dd1395e3ca8bc5
+ms.sourcegitcommit: d60f82d9d22fe118f9c8dc24458d2c144b138eb8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/25/2020
-ms.locfileid: "11078727"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "11174747"
 ---
 # Surface Hub の更新履歴
 
@@ -27,7 +27,17 @@ Windows 10 の更新内容の詳細については、このページで詳細を
 
 注意が必要な可能性のある、現在および過去のリリースに関する関連トピックについては、「[Surface Hub の重要な情報](https://support.microsoft.com/products/surface-devices/surface-hub)」ページを参照してください。
 
-## Windows 10 Team の作成者更新プログラム1703
+## Windows 10 Team 2020 更新プログラム (20H2)
+
+<details>
+<summary>Surface Hub 向け Windows 10 Team 2020 更新プログラム-一般的なリリースノート (OS ビルド 19042.572)</summary>
+
+Surface Hub のこの更新プログラムには、品質の改善とセキュリティの修正が含まれています。 Surface Hub に対する主要な更新プログラムについては、「windows 10 の [更新履歴](https://support.microsoft.com/help/4581839/windows-10-update-history)」でまだ説明されていません。「[windows 10 Team 2020 の更新プログラムの新機能](https://docs.microsoft.com/surface-hub/surface-hub-2020-update-whats-new)」を確認してください。
+
+地域、配布方法、デバイスの種類別の更新プログラムの利用状況について詳しくは、「[Windows 10 Team 2020 更新プログラムのインストール](https://docs.microsoft.com/surface-hub/surface-hub-2020-update)」ページを参照してください。
+</details>
+
+## Windows 10 Team の作成者更新プログラム (1703)
 
 <details>
 <summary>2020年9月 1: Surface Hub 2S の更新</summary>
@@ -169,7 +179,7 @@ Surface Hub のこの更新プログラムには、品質の改善とセキュ�
 
 Surface Hub のこの更新プログラムには、品質の改善とセキュリティの修正が含まれています。 Surface Hub の主要な更新プログラムには、 [Windows 10 の更新履歴](https://support.microsoft.com/help/4018124/windows-10-update-history)でまだ記載されていません。次のようなものがあります。
 
-* 一部のユーザーが "自分の会議とファイル" にサインインできない問題を解決します。
+* 一部のユーザーが "自分の会議とファイル" に Signing-In できない問題に対処します。
 
 デバイスの機能とサービスを有効または無効にするには、 [Surface Hub 管理者ガイド](https://docs.microsoft.com/surface-hub/) を参照してください。
 *[KBKB4467699](https://support.microsoft.com/help/KB4467699)
@@ -322,7 +332,7 @@ Surface Hub のこの更新プログラムには、品質の改善とセキュ�
 <summary>2017年8月1日: KB4032188 * ベースのチーム向け更新プログラム * (OS ビルド 15063.498)</summary>
 
 * Skype for Business 
-  * Skype for Business サインインの問題を解決します。これには、再試行またはシステム再起動が必要です。
+  * Skype for Business Sign-In の問題を解決します。これには、再試行またはシステム再起動が必要です。
   * Skype for Business 会議の時刻が正しく表示されなくなります。
   * Surface Hub の Skype for Business の信頼性を向上させるための修正。
 
@@ -416,7 +426,7 @@ Surface Hub のこの更新プログラムには、品質の改善とセキュ�
 * 信頼性とパフォーマンスの修正
   * いくつかのリセットと回復の問題を解決しました
   * クライアント証明書を利用するときの Surface Hub の Exchange 認証の問題を解決しました
-  * Wi-fi ネットワーク接続と資格情報の安定性の向上
+  * Wi-Fi ネットワーク接続と資格情報の安定性の向上
   * ビデオの再生中に Miracast オーディオのポップアップと同期の問題が修正されました
   * 自動接続動作を無効にする設定が含まれています
 
@@ -424,7 +434,7 @@ Surface Hub のこの更新プログラムには、品質の改善とセキュ�
 
 </details>
 
-## Windows 10 Team 記念日更新プログラム1607
+## Windows 10 チーム記念日更新プログラム (1607)
 
 <details>
 <summary>2017年3月14日-KB4013429 * ベースのチーム向け更新プログラム * (OS ビルド 14393.953)</summary>
@@ -546,7 +556,7 @@ Windows 10 チーム (バージョン 1511) へのこの更新プログラムに
 * プレシャットダウンサービスがクラッシュする原因となっている問題を修正しました
 * セッション後に一部のアプリデータが適切に削除されなかった問題を修正しました
 * NFC のパフォーマンス向上のために Broadcom NFC ドライバーが更新されました
-* Miracast の Wi-fi ドライバーを更新して Miracast のパフォーマンスを向上させる
+* Miracast のパフォーマンスを向上させるために、Marvell Wi-Fi ドライバーが更新されました
 * Nvidia ドライバーを更新して、84 "Surface Hub デバイスが dim またはファジーコンテンツを表示している表示のバグを修正しました
 * 次のような多数の Skype for Business の問題が修正されました。 
   * 会議中に Skype for Business が切断される問題
