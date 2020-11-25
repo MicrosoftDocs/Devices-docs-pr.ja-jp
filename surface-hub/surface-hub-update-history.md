@@ -9,12 +9,12 @@ author: v-miegge
 ms.author: v-miegge
 ms.topic: article
 ms.localizationpriority: medium
-ms.openlocfilehash: ab43155ee5e2973c5c45fc9ce8dd1395e3ca8bc5
-ms.sourcegitcommit: d60f82d9d22fe118f9c8dc24458d2c144b138eb8
+ms.openlocfilehash: 2aba835da79d40d4ae5f2786f77071ab9e210844
+ms.sourcegitcommit: e2ade2f198e4123c922c6a4fb5ab61e040e38ccb
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "11174747"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "11190070"
 ---
 # Surface Hub の更新履歴
 
@@ -28,6 +28,28 @@ Windows 10 の更新内容の詳細については、このページで詳細を
 注意が必要な可能性のある、現在および過去のリリースに関する関連トピックについては、「[Surface Hub の重要な情報](https://support.microsoft.com/products/surface-devices/surface-hub)」ページを参照してください。
 
 ## Windows 10 Team 2020 更新プログラム (20H2)
+
+<details>
+<summary>2020年11月24日-Surface Hub 2S の更新プログラム</summary>
+
+この更新プログラムは Surface Hub 2S に固有のものであり、以下に示すドライバーとファームウェアの更新プログラムを提供しています。
+
+* Surface SMC ファームウェア更新-3.91.139.0
+  * コネクトスタンバイの信頼性を向上させます。
+* Surface Touch ファームウェアの更新-3.91.139.0
+  * 接続されたスタンバイタッチ応答を改善します。
+* Surface USB オーディオファームウェアの更新-3.91.139.0
+* Surface Pen ファームウェアの更新-3.91.139.0
+</details>
+
+<details>
+<summary>2020年10月27日-Surface Hub 2S の更新プログラム</summary>
+
+この更新プログラムは Surface Hub 2S に固有のものであり、以下に示すドライバーとファームウェアの更新プログラムを提供しています。
+
+* Surface System アグリゲーターファームウェアの更新-4.14.139.0
+* Surface UEFI 更新-694.3386.768.0
+</details>
 
 <details>
 <summary>Surface Hub 向け Windows 10 Team 2020 更新プログラム-一般的なリリースノート (OS ビルド 19042.572)</summary>
