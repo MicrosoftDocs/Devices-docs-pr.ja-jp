@@ -9,12 +9,12 @@ author: v-miegge
 ms.author: v-miegge
 ms.topic: article
 ms.localizationpriority: medium
-ms.openlocfilehash: 2aba835da79d40d4ae5f2786f77071ab9e210844
-ms.sourcegitcommit: e2ade2f198e4123c922c6a4fb5ab61e040e38ccb
+ms.openlocfilehash: f45a2f202cdf350c6e51bb78a2bf87019a89453a
+ms.sourcegitcommit: 7c00ca47fe81a4f5b3a3317afabb4d028ff21289
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "11190070"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "11192848"
 ---
 # Surface Hub の更新履歴
 
@@ -28,6 +28,24 @@ Windows 10 の更新内容の詳細については、このページで詳細を
 注意が必要な可能性のある、現在および過去のリリースに関する関連トピックについては、「[Surface Hub の重要な情報](https://support.microsoft.com/products/surface-devices/surface-hub)」ページを参照してください。
 
 ## Windows 10 Team 2020 更新プログラム (20H2)
+
+<details>
+<summary>2020年11月30日-KB4586853 * ベースのチーム向け更新プログラム * (OS ビルド 19042.662)</summary>
+
+Surface Hub のこの更新プログラムには、品質の改善とセキュリティの修正が含まれています。 Surface Hub の主要な更新プログラムには、 [Windows 10 の更新履歴](https://support.microsoft.com/help/4581839/windows-10-update-history)でまだ記載されていません。次のようなものがあります。
+
+* 追加オプションを指定するには、プライバシー設定ページに更新してください。
+* エンドセッションのクリーンアップで、Edge Chromium に関連するすべてのデータが完全に削除されることを確認します。
+* 既に開始していた会議が、[ようこそ] または [スタート] 画面に表示されない問題を解決します。
+* 英語以外のロケールでのクラウドの回復に関する問題を解決します。
+* Skype for Business
+  * 双方向オーディオのパフォーマンスを向上させます。
+  * Skype for Business 通話中にペンを使用すると、"ペンでタップ" の音が軽減されます。
+* Windows Insider Program に登録するときの信頼性が向上しました。
+* Windows チームシェルの信頼性が向上します。
+
+デバイスの機能とサービスを有効または無効にするには、 [Surface Hub 管理者ガイド](https://docs.microsoft.com/surface-hub/) を参照してください。 *[KB4586853](https://support.microsoft.com/help/4586853)
+</details>
 
 <details>
 <summary>2020年11月24日-Surface Hub 2S の更新プログラム</summary>
