@@ -9,14 +9,14 @@ ms.author: greglin
 manager: laurawi
 audience: Admin
 ms.topic: article
-ms.date: 10/13/2020
+ms.date: 12/03/2020
 ms.localizationpriority: Medium
-ms.openlocfilehash: d1099da397e47ad1ea44645623dce48498259eaa
-ms.sourcegitcommit: 5c396f37ed90f81373b9fdf8464cb9163f2797d4
+ms.openlocfilehash: 01c5c8a5c6b9f7ed657829fe792fc9eecd1facb5
+ms.sourcegitcommit: 5d02cca9ca8c0a252798c2fc0a89dbda81911c44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/13/2020
-ms.locfileid: "11168576"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "11195402"
 ---
 # Surface Hub 2 の Windows 10 Pro または Enterprise に移行する
 
@@ -65,7 +65,7 @@ Surface UEFI コンフィギュレーターは、Surface Enterprise 管理モー
 
 Surface Hub を Windows 10 Team から Windows 10 デスクトップに移行する前に、少なくとも *694.2938.768.0*の UEFI バージョンが必要です。
  
-システムの UEFI バージョンを確認するには、次の操作を行います。
+**システムの UEFI バージョンを確認するには、次の操作を行います。**
 
 1. Surface Hub 2s のホームページで、[**開始**] を選び、surface アプリ ([**すべてのアプリ**]  >  **サーフェス**) を開きます。
 
@@ -74,9 +74,9 @@ Surface Hub を Windows 10 Team から Windows 10 デスクトップに移行す
 
        ![Surface アプリの Surface ページを示すスクリーンショット。](images/shm-fig1.png)
  
-   - UEFI バージョンが *694.2938.768.0*より前のバージョンである場合は、Windows Update を使用して現在のバージョンを取得します。
-
-Windows Update を使用して UEFI を更新するには、次の操作を行います。
+   - UEFI バージョンがバージョン694.2938.768.0 よりも古い場合は、Windows 10 Team 2020 更新プログラムベアメタル回復 (BMR) イメージをインストールするか、Windows Update を使用して、現在のバージョンを取得する必要があります。
+   
+**Windows Update を使用して UEFI を更新するには:**
 
 1. Surface Hub 2S で、 **管理者**としてサインインします。 
     >[!Note]
@@ -85,8 +85,14 @@ Windows Update を使用して UEFI を更新するには、次の操作を行�
 1. [**すべてのアプリ**  >  **設定**  >  の**更新とセキュリティ**  >  **Windows Update**] に移動して、すべての更新プログラムをインストールします。 
 1. デバイスを再起動します。 
 1. Surface アプリを使用して、UEFI バージョンを確認します。 
-2. UEFI バージョンが *694.2938.768.0* 以降になるまで、この手順を繰り返します。
-3. 複数回試行しても更新された UEFI が表示されない場合は、 **更新履歴** を確認して、失敗したファームウェアインストールのインスタンスを探してください。 デバイスをリセットする必要がある場合があります (**設定**  >  **更新 & セキュリティ**  >  **リセットデバイス**)。
+1. この時点で、UEFI バージョンがまだバージョン694.2938.768.0 以降ではない場合は、上記の手順を繰り返すか、Windows 10 Team 2020 更新プログラムのベアメタル回復 (BMR) イメージをインストールして、最新の UEFI を取得できます。
+
+**UEFI (ベアメタル回復) イメージを使用して UEFI を更新するには:**
+
+1.  [Surface recovery サイト](https://support.microsoft.com/surfacerecoveryimage)に移動し、[ **surface Hub 2s** ] を選択します。
+3.  ハブのシリアル番号を入力します (電源接続の隣にあるハブの背面にあります)。
+4.  指示に従って、Windows 10 Team 2020 更新プログラムをインストールして、書式設定された USB ドライブにイメージをダウンロードします。
+5.  更新が完了して、デバイスが OOBE の初回セットアップを開始した後、OOBE を完了する必要はありません。 UEFI バージョンは更新されます。 代わりに、画面がオフになるまで電源ボタンを押して、デバイスの電源を切ります。 
 
 ### ダウンロード Surface UEFI コンフィギュレーターおよび Surface Hub 2 ドライバーとファームウェア
 
@@ -165,10 +171,20 @@ Surface UEFI コンフィギュレーターで作成される SEMM パッケー�
     
     ![[OS 移行の有効化] を [オン] に設定します。](images/shm-fig12.png)
 
-> [!NOTE]
-> SEMM パッケージを適用した後、デバイスの UEFI メニューでは、すべての UEFI 設定を使用できなくなります (ロックされています)。 その他の設定については、 **IPv6 の場合、IPv6 の場合** の既定値も使用できません。 
->
->移行が完了した後で UEFI の設定を変更するには、別の SEMM パッケージを適用するか、SEMM からデバイスの登録を解除します。 別の SEMM パッケージを適用して UEFI の設定を変更する場合は、新しい SEMM パッケージをビルドするときに、元の証明書を使用する必要があります。 UEFI コンフィギュレーターツールを使用して、 **EnableOSMigration** をオフのままにしておきます (元の移行手順で示されています)。
+### SEMM 登録の管理
+
+SEMM へのデバイスの登録は、デバイスの管理方法に影響します。 たとえば、SEMM パッケージを適用した後、デバイスの UEFI メニューでは、すべての UEFI 設定を使用できなくなります (ロックされています)。 その他の設定については、 **IPv6 の場合、IPv6 の場合** の既定値も使用できません。 
+
+移行が完了した後で UEFI の設定を変更するには、別の SEMM パッケージを適用するか、SEMM からデバイスの登録を解除します。 別の SEMM パッケージを適用して UEFI の設定を変更する場合は、新しい SEMM パッケージをビルドするときに、元の証明書を使用する必要があります。 UEFI コンフィギュレーターツールを使用して、 **EnableOSMigration** をオフのままにしておきます (元の移行手順で示されています)。
+
+#### パートナーとの連携
+
+会社が Surface Hub 2 上の Windows 10 Pro または Enterprise への移行をアウトソーシングしている場合、パートナーが SEMM 証明書、SEMM パッケージ、および UEFI パスワードを自分に転送する必要がある場合があります。  または、ハブを移行した後は、SEMM からすぐに登録を解除することができます。これにより、UEFI のローカル管理が可能になり、デバイスを別のパーティに転送できるようになります。 ただし、移行後に構成できる UEFI パスワードを使用することを強くお勧めします。 詳細については、「 [SURFACE UEFI の設定を管理](https://docs.microsoft.com/surface/manage-surface-uefi-settings)する」を参照してください。 
+
+#### Windows 10 チームへのロールバック
+
+移行後に、デバイスを Windows 10 チームに復元する場合は、以下に示す [よう](#roll-back-to-windows-10-team)に、最初に semm からハブの登録を解除することをお勧めします。 詳細については、「 [SEMM からの登録解除サーフェスデバイス](https://docs.microsoft.com/surface/unenroll-surface-devices-from-semm)」を参照してください。
+
 
 #### SEMM パッケージを USB ドライブに保存する
 
@@ -299,12 +315,16 @@ Surface Hub をパーソナルの生産性デバイスとして完全に構成�
 
 デバイスを Windows 10 チームに復元する場合は、「 <a href="surface-hub-2s-recover-reset.md" target="_blank"> Surface Hub 2s のリセットと回復」を参照してください </a> 。
 
+> [!NOTE]
+> Windows 10 チームにロールバックする前に、まず SEMM からハブの登録を解除することをお勧めします。 詳細については、「 [SEMM からの登録解除サーフェスデバイス](https://docs.microsoft.com/surface/unenroll-surface-devices-from-semm)」を参照してください。
+
 ## バージョン履歴
 
 次の表は、この記事に加えられた変更をまとめたものです。
 
 | バージョン | 日付               | 説明                                                                                           |
 | ------- | ------------------ | ----------------------------------------------------------------------------------------------------- |
+| 部. 1.3  | 2020年12月3日 | SEMM 登録の管理に関するガイダンスを反映して更新されました                                                        |
 | 部. 1.2  | 2020年9月29日 | ユーザビリティのフィードバックに対応するその他の更新プログラム。                                                        |
 | 部. 1.1  | 2020年9月15日 | 新しい OS をインストールするためのライセンス要件を明確に示す追加メモを導入しています。 |
 | 部. 1.0  | 2020年9月1日  | 新しい記事。                                                                                           |
