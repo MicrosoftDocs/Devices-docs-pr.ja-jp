@@ -14,15 +14,15 @@ author: greg-lindsay
 ms.author: greglin
 ms.collection: M365-modern-desktop
 ms.topic: article
-ms.date: 11/03/2020
+ms.date: 12/08/2020
 appliesto:
 - Surface Hub 2S
-ms.openlocfilehash: b86776b56e892c34ea8b5abbc55d5c48723a5f9e
-ms.sourcegitcommit: 3ca1d1bc77452acca914d0af03e252ee260ebf1a
+ms.openlocfilehash: 7accbe3d905af3b295f92c002eecd5d77356672d
+ms.sourcegitcommit: e126b8ac66a781ebe42cdd677af3fe6a2eb5e72c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "11154129"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "11203562"
 ---
 # Surface Hub 2 で Windows 10 Pro または Enterprise を構成する
 
@@ -85,6 +85,29 @@ Windows 10 Pro または Enterprise に移行するためのインストール�
 
 Surface Hub デバイスが PC に近い場合は、 <a href="https://aka.ms/mm" target="_blank"> 境界線のないマウスを使用して、 </a> surface HUB と pc の間でシームレスに移動することができます。 詳細については、「 <a href="https://blogs.microsoft.com/ai/microsoft-download-from-the-garage-mouse-without-borders/" target="_blank"> ガレージを使わないで Microsoft ダウンロード」を参照してください。 </a>
 
+## タスクバーのレイアウトの例
+
+次の手順を実行して Windows 10 Professional または Enterprise 用 Surface Hub 2 をセットアップ/構成した後、各アプリケーションのワンタッチ起動を簡単にするために、使用しているアプリケーションをタスクバーにピン留めすることをお勧めします。 タスクバーの表示内容の例を次に示します。
+
+ ![タスクバーのレイアウト](images/taskblyt.png)
+### インストールされているアプリを更新する
+
+インストールされているすべてのストアアプリを更新するには:
+
+1. Microsoft Store アプリを開き、右上隅にある [ **その他** ] の省略記号を選択します。
+2. [**ダウンロードと更新**] を選びます。
+3. [**更新内容の取得**] を選ぶ
+
+### すべての Windows 更新プログラムをスキャンしてインストールする
+Windows 10 Professional または Windows 10 Enterprise に移行した後は、インストールできるサービスと機能の更新プログラムが提供されることがあります。 
+
+- [**設定**  >  の**更新 & セキュリティ**> に移動し、[**更新プログラムの確認**] を選びます。
+- 更新プログラムがある場合は、インストールして再起動し、次の通知が表示されるまで、このプロセスを繰り返します。
+
+> [!div class="mx-imgBorder"]
+> ![Windows Update ' は最新の状態です](images/wustatus.png)
+
+
 ## OneDrive for Business
 
 <a href="https://docs.microsoft.com/onedrive/onedrive" target="_blank">OneDrive For business </a> を使用すると、すべての作業デバイス間でツール、ログ、その他のファイルを簡単に共有できます。
@@ -134,7 +157,7 @@ OneDrive 同期アプリを使用して社内のファイルをローカルド�
 
 **Bluetooth Surface Hub ペンをペアリングする**
 
-ペンをペアリングして、ペンファームウェアを最新の状態に保ち、Bluetooth デバイス設定ページまたは Surface アプリでバッテリの充電情報を取得します。
+ペンをペアリングして、ペンのファームウェアを最新の状態に保ち、ペンのショートカットを設定し、[Bluetooth デバイスの設定] ページまたは Surface アプリでバッテリの充電情報を取得します。
 
 1. [ **Start**  >  **設定**  >  **デバイス**の開始] を選びます。
 
@@ -200,15 +223,6 @@ Windows-L キーボードショートカットと同様のタッチスクリー�
 
 ## アプリケーション
 
-### インストールされているアプリを更新する
-
-インストールされているすべてのストアアプリを更新するには:
-
-1. Microsoft Store アプリを開き、右上隅にある [ **その他** ] の省略記号を選択します。
-
-2. [**ダウンロードと更新プログラム**] を選択します。
-
-2. [**更新プログラムを取得する**] を選択します。
 
 ### Microsoft Whiteboard
 
@@ -307,9 +321,21 @@ Windows 10 の既定では、 **電話** アプリはインストールされて
 
 アプリのセットアップについては、「 <a href="https://www.windowscentral.com/how-set-your-phone-windows-10" target="_blank"> Windows 10 で電話を設定する方法」および「PC とスマートフォンの間でデータを同期する方法」を参照してください </a> 。 また <a href="https://www.windowscentral.com/how-fix-common-problems-your-phone-app-windows-10" target="_blank"> 、Windows 10 の電話アプリに関する一般的な問題を解決する方法についても説明し </a> ます。
 
-### スーパーデザインのゾーン
+###  装飾的なゾーン
 
-**スーパーの装飾** 的なゾーンにより、ユーザーはウィンドウを配置して画面領域を最大化できます。 これは、GitHub の powertoy に含まれてい <a href="https://github.com/microsoft/PowerToys/releases" target="_blank"> </a> ます。
+
+**装飾** 的なゾーンは、GitHub の powertoy と呼ばれるツールのコレクションに含まれ <a href="https://github.com/microsoft/PowerToys/releases" target="_blank"> てい </a> ます。 これは、ディスプレイに固定レイアウトを定義する機能 ("zones") を提供することによって Surface Hub 2 で画面を実際に活用する優れた方法です。次に、各ゾーンで実行するアプリを選択します。 
+
+
+[Powertoy wiki](https://github.com/microsoft/PowerToys/wiki)には、 [Fブランコ yzones](https://github.com/microsoft/PowerToys/wiki/FancyZones-Overview)を含む各ツールの使用方法とカスタマイズ方法についての手順が記載されています。 高レベルでは、Powertoy をインストールした後に、カスタムレイアウトを選択または作成して、shift キーを押しながらキーボードのキーを押して、実行中のアプリを特定のゾーンに移動することができます。 Bluetooth または USB キーボードとマウスを使うと、この操作を行うことができます。または、スクリーンタッチキーボードとタッチパッドを使用することもできます。
+
+**Power toys のヒント**
+- GitHub で、Powertoy のリリース更新プログラムのメール通知を受信するには、 [ページ](https://github.com/microsoft/PowerToys/releases)の上部にある [サインアップ] ボタンをクリックします。
+- Powertoy がインストールされると、Windows 通知を受信したり、最新の更新プログラムをダウンロードしてインストールしたりすることができます。これにより、Powertoy の設定で [ **更新プログラムを自動的にダウンロード** する] を構成します。
+- Powertoy の設定を取得するには、タスクバーで carat を実行して **いる up アプリ** を右クリックするか、[powertoy] アイコンを右クリックするか長押しして、メニューが表示されるまで待ちます。 [設定] を選びます。
+- [Powertoy の設定] ページの下部で、[ **更新プログラムを自動的にダウンロード** する] を [オン] にします。
+- 更新プログラムがリリースされると、Windows の通知が表示され、更新プログラムをインストールするタイミングを選択できます。
+
 
 ### Edge Chromium browser
 
@@ -415,7 +441,7 @@ Surface Hub 2 にはローカルストレージ用に 128GB SSD が搭載され�
 
 1. すべての Windows 更新プログラムをスキャンしてインストールします。
 
-2. グループポリシーの更新
+2. グループポリシーを更新します。
 
    1. 昇格されたコマンドプロンプトで、「 **gpupdate/force/boot/wait: 0**」と入力します。
    

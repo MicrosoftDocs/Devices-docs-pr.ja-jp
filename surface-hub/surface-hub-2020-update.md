@@ -9,14 +9,14 @@ ms.author: greglin
 manager: laurawi
 audience: Admin
 ms.topic: article
-ms.date: 10/27/2020
+ms.date: 12/08/2020
 ms.localizationpriority: Medium
-ms.openlocfilehash: 90bd5714b7427880f6e73c7031c26894d55ac500
-ms.sourcegitcommit: 5448f775d3fe177806fce6cbaf0b2b091ed8b7d1
+ms.openlocfilehash: 7035d4c89e2ef5937d0480cf2d77db2e7e829488
+ms.sourcegitcommit: e126b8ac66a781ebe42cdd677af3fe6a2eb5e72c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/31/2020
-ms.locfileid: "11145952"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "11203539"
 ---
 # Windows 10 Team 2020 の更新プログラムをインストールする 
 
@@ -34,8 +34,12 @@ Windows 2020 更新プログラムは、次のいずれかの方法で入手で�
 | ----- | -------------------------------------- | ----------------- |
 | 件     | NZ、オーストラリア、カナダ、ベルギー、メキシコ | 2020年10月27日  |
 | 両面     | 英国、日本、スイス、イタリア          | 2020年11月10日 |
-| -     | 米国、ドイツ                            | 2020年11月30日 |
-| 4d     | グローバル                                 | 2020年12月7日  |
+| -     | 米国、ドイツ                            | TBD |
+| 4d     | グローバル                                 | TBD  |
+
+## Windows 10 Team Edition v1703 でのサービス Surface Hub 2S 
+
+すべての地域のお客様は、引き続き Windows Update を使用して Surface Hub 2S デバイスを更新したり、ベアメタル回復 (BMR) イメージを使用したりできます。詳細については、「 [Surface Hub 2s のリセットと回復](surface-hub-2s-recover-reset.md)」で説明します。 Windows 10 Team Edition バージョン1703の完全なサービスサポートは、2021年3月16日まで継続するようにスケジュールされています。
 
 
 ## V1 デバイスのサポート 
@@ -44,11 +48,11 @@ Surface Hub のバージョンとしては最初にリリースされました�
  
 ## 新機能
 
-Windows 10 Team 2020 更新プログラムでは、Windows 10 の最新機能と共に、デバイスの展開と管理性が大幅に向上しています。 
+Windows 10 Team 2020 更新プログラムでは、Windows 10 の最新機能と共に、デバイスの展開と管理性が大幅に向上しています。 詳細については、「 [Windows 10 Team 2020 更新プログラムの新機能](surface-hub-2020-update-whats-new.md)」を参照してください。
  
 ## 始める前に
 
-Windows 10 team 2020 更新プログラムをインストールする前に、デバイスに関連付けられている BitLocker キーを必ず保存してください。 詳細については、「 [Windows 10 Team 2020 更新プログラムの新機能](surface-hub-2020-update-whats-new.md)」を参照してください。
+Windows 10 team 2020 更新プログラムをインストールする前に、デバイスに関連付けられている BitLocker キーを必ず保存してください。 
 
 **BitLocker キーを手動で保存するには**
 
@@ -59,9 +63,6 @@ Windows 10 team 2020 更新プログラムをインストールする前に、�
 
 詳細については、「 [BitLocker キーの保存](save-bitlocker-key-surface-hub.md)」を参照してください。
 
-
 ## 詳細情報
 
-
-- [パブリックプレビュー用の新しい Surface Hub OS 更新プログラムがリリースされました。](https://techcommunity.microsoft.com/t5/surface-it-pro-blog/new-surface-hub-os-update-released-for-public-preview/ba-p/1534823)
-
+- [Surface Hub の重要な更新プログラム Windows 10 Team 2020 Update](https://techcommunity.microsoft.com/t5/surface-it-pro-blog/important-updates-on-the-surface-hub-windows-10-team-2020-update/ba-p/1960897)
