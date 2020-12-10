@@ -42,6 +42,7 @@
 ### [Surface Hub 2 の Windows 10 Pro および Enterprise 用の必須アドオン](surface-hub-2-essential-add-ons.md)
 ### [Windows 10 Team 2020 更新プログラムプレビュービルドをインストールする](surface-hub-install-2020preview.md)  
 ### [既知の問題 - Windows 10 Team 2020 更新プログラム](surface-hub-2020-team-update-known-issues.md)
+### [Surface Hub 2S でグローバル管理者以外のアカウントを構成する](surface-hub-2s-nonglobal-admin.md)
 ### [Surface Hub に新しい Microsoft Edge をインストールして構成する](surface-hub-install-chromium-edge.md)        
 ### [Microsoft Intune で Surface Hub 2S を管理する](surface-hub-2s-manage-intune.md)
 ### [Surface Hub 2S の設定のローカル管理](local-management-surface-hub-settings.md)
