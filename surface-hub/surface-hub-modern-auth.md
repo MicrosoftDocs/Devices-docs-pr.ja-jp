@@ -1,6 +1,6 @@
 ---
 title: Surface Hub の先進認証
-description: このページでは、従来の基本認証とは対照的に、Surface Hub での先進認証の使用について説明します。
+description: このページでは、従来の基本認証とは対照的に、Surface Hub でのモダン認証の使用について説明します。
 keywords: コンマで値を区切る
 ms.prod: surface-hub
 ms.sitesec: library
@@ -9,21 +9,23 @@ ms.author: greglin
 manager: laurawi
 audience: Admin
 ms.topic: article
-ms.date: 09/08/2020
+ms.date: 12/10/2020
 ms.localizationpriority: Medium
-ms.openlocfilehash: 14be433923ca564123952c2d1d7b1c158e725af3
-ms.sourcegitcommit: d24759da42dfe0b913fd9ebf716407a673c2b818
+appliesto:
+- Surface Hub 2S 2020 Update
+ms.openlocfilehash: dd0b0ad257abbc52c443b075e62db00dcf5713ea
+ms.sourcegitcommit: 4b1cfcac090910a3ea634929942063eb51fc54f9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "11004469"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "11206281"
 ---
 # Surface Hub の先進認証
 
-クラウドベースのアカウントの先進認証のサポートは、 [Windows Insider プログラム](https://insider.windows.com/)から利用可能なプレビュービルドを含む、Windows 10 Team 2020 の今後の更新プログラムに完全に統合されています。 [プレビュービルドをインストール](surface-hub-install-2020preview.md)すると、従来の基本認証から移行したり、Microsoft Azure および Exchange Online の最新のセキュリティ向上を利用したりできます。 2020更新プログラムでは、Surface Hub は Exchange Web サービス (EWS) プロトコルと Active Directory Authentication Library (ADAL) ベースの認証をサポートしており、デバイスアカウントの同期に Exchange Online を有効にします。
+クラウドベースのアカウントの最新認証のサポートは [、Windows 10 Team 2020 Update に完全に統合されています](surface-hub-2020-update.md)。 2020 更新プログラムをインストールすると、従来の基本認証から移行し、Microsoft Azure と Exchange Online の最新のセキュリティ強化機能を使用できます。 2020 Update では、Surface Hub は Exchange Web サービス (EWS) プロトコルと Active Directory 認証ライブラリ (ADAL) ベースの認証をサポートし、デバイス アカウントの同期用に Exchange Online を有効にします。
 
-新しいクラウドベースのアカウントの場合、Surface Hub は、format [alias@contoso.com](mailto:alias@contoso.com)を使ってデバイスアカウントを作成するだけでなく、追加の構成を必要とせずに、自動的に先進認証を使用して Exchange Online に接続します。 モダン認証でサポートされていない従来の形式 (Contoso\alias) は使用しないでください。 詳細については、「 [Surface Hub のデバイスアカウントを作成する](https://docs.microsoft.com/surface-hub/surface-hub-2s-account)」を参照してください。
+新しいクラウドベースのアカウントの場合、Surface Hub はモダン認証を自動的に使用して Exchange Online に接続します。単に alias@contoso.com という形式を使用してデバイス アカウントを作成する以外に、追加の構成 [は必要ありません](mailto:alias@contoso.com)。 従来の形式である Contoso\alias は使用しない。これは、最新の認証ではサポートされていません。 詳しくは [、「Surface Hub 2S デバイス アカウントの作成」をご覧ください](https://docs.microsoft.com/surface-hub/surface-hub-2s-account)。
 
 > [!NOTE]
-> Surface Hub は、オンプレミスアカウントの先進認証をサポートしていません。 アカウントがクラウドで作成されている必要があります。
+> Surface Hub では、オンプレミス アカウントの最新の認証はサポートされていません。 アカウントはクラウドで作成する必要があります。
 
