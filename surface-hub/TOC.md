@@ -26,7 +26,6 @@
 ## 展開
 ### [Surface Hub 2S の導入とトレーニング](surface-hub-2s-adoption-kit.md)
 ### [Surface Hub 2S 導入ビデオ](surface-hub-2s-adoption-videos.md)
-
 ### [Surface Hub 2S の初回セットアップ](surface-hub-2s-setup.md)
 ### [デバイスを Surface Hub 2S に接続する](surface-hub-2s-connect.md)
 ### [Surface Hub 2S 展開チェックリスト](surface-hub-2s-deploy-checklist.md)
@@ -40,7 +39,7 @@
 ### [Surface Hub 2 の Windows 10 Pro または Enterprise に移行する](surface-hub-2s-migrate-os.md)
 ### [Surface Hub 2 で Windows 10 Pro または Enterprise を構成する](surface-hub-2-post-install.md)
 ### [Surface Hub 2 の Windows 10 Pro および Enterprise 用の必須アドオン](surface-hub-2-essential-add-ons.md)
-### [Windows 10 Team 2020 更新プログラムプレビュービルドをインストールする](surface-hub-install-2020preview.md)  
+### [Windows 10 Team 2020 の更新プログラムをインストールする](surface-hub-2020-update.md)  
 ### [既知の問題 - Windows 10 Team 2020 更新プログラム](surface-hub-2020-team-update-known-issues.md)
 ### [Surface Hub 2S でグローバル管理者以外のアカウントを構成する](surface-hub-2s-nonglobal-admin.md)
 ### [Surface Hub に新しい Microsoft Edge をインストールして構成する](surface-hub-install-chromium-edge.md)        
@@ -99,8 +98,7 @@
 #### [最初の実行プログラム](first-run-program-surface-hub.md)
 
 ## 管理
-### [Microsoft Surface Hub の管理](manage-surface-hub.md)
-### [Windows 10 Team 2020 更新プログラムプレビュービルドをインストールする](surface-hub-install-2020preview.md)  
+### [Microsoft Surface Hub の管理](manage-surface-hub.md) 
 ### [Surface Hub に新しい Microsoft Edge をインストールして構成する](surface-hub-install-chromium-edge.md)    
 ### [Surface Hub 用 PowerShell](appendix-a-powershell-scripts-for-surface-hub.md)
 ### [Surface Hub のリモート管理](remote-surface-hub-management.md)
