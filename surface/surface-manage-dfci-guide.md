@@ -1,6 +1,6 @@
 ---
 title: Surface UEFI の設定の Intune 管理
-description: この記事では、Microsoft Intune で DFCI 環境を構成する方法と、ターゲットサーフェスデバイスのファームウェア設定を管理する方法について説明します。
+description: この記事では、Microsoft Intune で DFCI 環境を構成し、対象となる Surface デバイスのファームウェア設定を管理する方法について説明します。
 ms.localizationpriority: medium
 ms.prod: w10
 ms.mktglfcycl: manage
@@ -18,34 +18,34 @@ appliesto:
 - Surface Laptop 3
 - Surface Book 3
 - Surface Laptop Go
-ms.openlocfilehash: 20d1b187a565f210eedc632be1addeac5dd714ba
-ms.sourcegitcommit: 7d5b0a7948eb540d6849a0e2c70a1058584cc5f8
+ms.openlocfilehash: e984741a8367935eab18351815c5f00d9f8a72b7
+ms.sourcegitcommit: efc38524f81238e0c36371f462eb57123e46d09b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "11105862"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "11228548"
 ---
 # Surface UEFI の設定の Intune 管理
 
 ## はじめに
 
-クラウドからデバイスを管理する機能によって、ライフサイクル全体の IT 展開とプロビジョニングが大幅に簡略化されました。 Microsoft Intune に組み込まれたデバイスファームウェア構成インターフェイス (DFCI) プロファイルを使用すると ( [パブリックプレビュー](https://docs.microsoft.com/intune/configuration/device-firmware-configuration-interface-windows)で利用できるようになりました)、Surface uefi 管理では、最新の管理スタックが UEFI ハードウェアレベルまで拡張されます。 DFCI は、ゼロタッチプロビジョニングをサポートします。 BIOS パスワードを除去し、ブートオプションや内蔵周辺機器を含むセキュリティ設定の制御を提供して、今後高度なセキュリティシナリオの土台を固めることができます。 よく寄せられる質問に対する回答については、「 [Ignite 2019: Intune からの SURFACE UEFI 設定のリモート管理のアナウンス](https://techcommunity.microsoft.com/t5/Surface-IT-Pro-Blog/Ignite-2019-Announcing-remote-management-of-Surface-UEFI/ba-p/978333)」を参照してください。
+クラウドからデバイスを管理する機能により、ライフサイクル全体にわたって IT の展開とプロビジョニングが大幅に簡素化されました。 [Microsoft Intune](https://docs.microsoft.com/intune/configuration/device-firmware-configuration-interface-windows)に組み込みのデバイス ファームウェア構成インターフェイス (DFCI) プロファイルにより、Surface UEFI 管理は最新の管理スタックを UEFI ハードウェア レベルまで拡張します。 DFCI はゼロタッチ プロビジョニングをサポートし、BIOS パスワードを排除し、ブート オプションや組み込みの周辺機器などのセキュリティ設定を制御し、将来の高度なセキュリティ シナリオの基礎を構築します。 よく寄せられる質問への回答については [、「Ignite 2019: Announcing remote management of Surface UEFI settings from Intune](https://techcommunity.microsoft.com/t5/Surface-IT-Pro-Blog/Ignite-2019-Announcing-remote-management-of-Surface-UEFI/ba-p/978333)」を参照してください。
 
 ### Background
 
-Windows 10 を実行しているコンピューターと同様に、Surface デバイスは、ハードドライブ、ディスプレイデバイス、USB ポート、その他のデバイスとのインターフェイスを可能にする SoC に保存されているコードに依存します。 この読み取り専用メモリ (ROM) に保存されているプログラムは、ファームウェアと呼ばれます (動的メディアに保存されているプログラムはソフトウェアと呼ばれます)。
+Windows 10 を実行しているコンピューターと同様に、Surface デバイスは SoC に格納されているコードを利用して、CPU がハード ドライブ、ディスプレイ デバイス、USB ポート、その他のデバイスとインターフェイスできます。 この読み取り専用メモリ (ROM) に格納されているプログラムはファームウェアと呼ばれています (動的メディアに保存されているプログラムはソフトウェアと呼ばれています)。
 
-現在市場で利用できる他の Windows 10 デバイスとは対照的に、Surface は、豊富な UEFI 構成設定を使用してファームウェアを構成および管理する機能を IT 管理者に提供します。 これにより、モバイルデバイス管理 (MDM) ポリシー、構成マネージャー、またはグループポリシーによって実装された、ソフトウェアベースのポリシー管理の上にある、ハードウェアコントロールのレイヤーが提供されます。 たとえば、機密情報が含まれるセキュリティの高い領域にデバイスを展開する組織では、ハードウェアレベルで機能を削除することにより、カメラの使用を防ぐことができます。 デバイスの観点から見ると、ファームウェア設定を使用してカメラをオフにすることは、カメラを物理的に取り外すことと同じです。 ファームウェアレベルでの管理の追加セキュリティと比較して、オペレーティングシステムソフトウェアの設定のみに依存するようにします。 たとえば、ドメイン環境のポリシー設定を使用して Windows audio サービスを無効にした場合、ローカル管理者は引き続きサービスを再び有効にすることができます。
+現在、市場で利用可能な他の Windows 10 デバイスとは対照的に、Surface は、豊富な UEFI 構成設定を通じてファームウェアを構成および管理する機能を IT 管理者に提供します。 これにより、モバイル デバイス管理 (MDM) ポリシー、Configuration Manager、またはグループ ポリシーによって実装されるソフトウェア ベースのポリシー管理の上にハードウェア制御のレイヤーが提供されます。 たとえば、機密性の高い情報を含むセキュリティが高い領域にデバイスを展開している組織では、ハードウェア レベルで機能を削除することでカメラの使用を防止できます。 デバイスの観点から、ファームウェア設定でカメラをオフにした場合は、カメラを物理的に取り外すのと同じです。 ファームウェア レベルでの管理に関する追加のセキュリティと、オペレーティング システムのソフトウェア設定にのみ依存するセキュリティを比較します。 たとえば、ドメイン環境のポリシー設定を使用して Windows オーディオ サービスを無効にした場合でも、ローカル管理者はサービスを再び有効にできます。
 
 ### DFCI と SEMM
 
-この時点では、ファームウェアの管理には、手動での IT 集約的なタスクのオーバーヘッドにより、デバイスを Surface Enterprise 管理モード (SEMM) に登録する必要があります。 例として、SEMM は、IT スタッフが各 PC に物理的にアクセスして、証明書管理プロセスの一部として2桁の pin を入力する必要があります。 SEMM は、厳格なオンプレミス環境における組織向けの優れたソリューションですが、複雑さと IT 集約的な要件によって使用コストが高くなります。
+以前は、ファームウェアを管理するには、進行中の手動 IT 集中型タスクのオーバーヘッドで、デバイスを Surface Enterprise Management Mode (SEMM) に登録する必要があります。 たとえば、SEMM では、証明書管理プロセスの一環として、IT スタッフが各 PC に物理的にアクセスして 2 桁のピンを入力する必要があります。 SEMM は厳密にオンプレミス環境の組織に対して優れたソリューションであり続けますが、複雑性と IT 負荷の高い要件により、使用にコストがかかります。
 
-Microsoft Intune で新しく統合された UEFI ファームウェア管理機能を使用すると、ハードウェアのロックダウン機能が簡素化され、1つのコンソールでのプロビジョニング、セキュリティ、効率化された更新のための新しい機能で簡単に使用できるようになりました。 [Microsoft Endpoint Manager](https://www.microsoft.com/microsoft-365/microsoft-endpoint-manager)として統合されました。 次の図は、デバイスに直接表示されている UEFI の設定を示しています (左側)。また、エンドポイントマネージャー本体 (右) に表示されています。
+ Microsoft Intune に統合された UEFI ファームウェア管理機能により、ハードウェアをロックダウンする機能が簡素化され、プロビジョニング、セキュリティ、および合理化された更新のための新機能を 1 つのコンソールで使用して簡単に使用できます。Microsoft [Endpoint Manager](https://www.microsoft.com/microsoft-365/microsoft-endpoint-manager)として統合されました。 次の図は、デバイスで直接表示され (左)、エンドポイント マネージャー コンソール (右) で表示される UEFI 設定を示しています。
 
-![デバイス (左側) とエンドポイントマネージャーコンソール (右) に表示される UEFI の設定](images/uefidfci.png)
+![デバイス (左側) とエンドポイント マネージャー コンソール (右) に表示される UEFI 設定](images/uefidfci.png)
 
-Crucially を使用すると、IT 管理者による手動の操作が不要になって、ゼロのタッチ管理が可能になります。 DFCI は、Intune のデバイスプロファイル機能を使用して、Windows 自動操縦を介して展開されます。 デバイスプロファイルを使用すると、設定の追加と構成を行うことができます。これは、組織内の管理に登録されたデバイスに展開することができます。 デバイスがデバイスプロファイルを受信すると、その機能と設定が自動的に適用されます。 一般的なデバイスプロファイルの例には、メール、デバイスの制限、VPN、Wi-fi、管理用テンプレートがあります。 DFCI は、オンプレミスのインフラストラクチャを維持することなく、クラウドから UEFI 構成設定を管理できる追加のデバイスプロファイルです。  
+非常に重要な点として、DFCI ではタッチ管理が不要で、IT 管理者による手動操作は不要です。 DFCI は、Intune のデバイス プロファイル機能を使用して Windows Autopilot 経由で展開されます。 デバイス プロファイルを使用すると、組織内の管理に登録されているデバイスに展開できる設定を追加および構成できます。 デバイスがデバイス プロファイルを受信すると、機能と設定が自動的に適用されます。 一般的なデバイス プロファイルの例としては、メール、デバイスの制限、VPN、Wi-Fi、管理用テンプレートがあります。 DFCI は、単に追加のデバイス プロファイルで、オンプレミスのインフラストラクチャを維持することなく、クラウドから UEFI 構成設定を管理できます。  
 
 ## サポートされるデバイス
 
@@ -55,148 +55,148 @@ DFCI は、次のデバイスでサポートされています。
 - Surface Pro X
 - Surface Laptop 3
 - Surface Book 3
-- Surface のノート Pc の移動
+- Surface Laptop Go
 
 > [!NOTE]
-> Surface Pro X では、組み込みのカメラ、オーディオ、Wi-fi/Bluetooth 用の DFCI 設定管理はサポートされていません。
+> Surface Pro X は、組み込みのカメラ、オーディオ、Wi-Fi/Bluetooth の DFCI 設定管理をサポートBluetooth。
 
 ## 前提条件
 
-- デバイスは、 [Microsoft クラウドソリューションプロバイダー (CSP) パートナー](https://partner.microsoft.com/membership/cloud-solution-provider) または OEM ディストリビューターによって Windows 自動操縦に登録されている必要があります。
+- デバイスは、Microsoft クラウド ソリューション プロバイダー [(CSP)](https://partner.microsoft.com/membership/cloud-solution-provider) パートナーまたは OEM ディストリビューターが Windows Autopilot に登録する必要があります。
 
-- Surface 用の DFCI を構成する前に、  [Microsoft Intune](https://docs.microsoft.com/intune/) と [azure Active DIRECTORY](https://docs.microsoft.com/azure/active-directory/) (azure AD) での自動操縦の構成要件について理解している必要があります。
+- Surface の DFCI を構成する前に  [、Microsoft Intune](https://docs.microsoft.com/intune/) および Azure Active [Directory](https://docs.microsoft.com/azure/active-directory/) (Azure AD) の Autopilot 構成要件を理解している必要があります。
 
 ## 始める前に
 
-ターゲット Surface デバイスを Azure AD セキュリティグループに追加します。 セキュリティグループの作成と管理の詳細については、「 [Intune ドキュメント](https://docs.microsoft.com/intune/configuration/device-firmware-configuration-interface-windows#create-your-azure-ad-security-groups)」を参照してください。
+ターゲット Surface デバイスを Azure AD セキュリティ グループに追加します。 セキュリティ グループの作成と管理の詳細については、Intune のドキュメントを [参照してください](https://docs.microsoft.com/intune/configuration/device-firmware-configuration-interface-windows#create-your-azure-ad-security-groups)。
 
-## Surface デバイス用の DFCI 管理を構成する
+## Surface デバイスの DFCI 管理を構成する
 
-DFCI 環境では、登録済みデバイスに設定を適用するために、設定と自動操縦プロファイルを含む DFCI プロファイルを設定する必要があります。 また、ユーザーがデバイスを初めて起動したときに、OOBE のセットアップ中に設定をプッシュダウンすることを確認するために、登録ステータスプロファイルをお勧めします。 このガイドでは、DFCI 環境を構成し、ターゲット Surface デバイスの UEFI 構成設定を管理する方法について説明します。
+DFCI 環境では、設定を含む DFCI プロファイルを設定し、登録されたデバイスに設定を適用する Autopilot プロファイルを設定する必要があります。 登録状態プロファイルは、ユーザーが初めてデバイスを起動するときに、OOBE のセットアップ中に設定がプッシュダウンされるのを確認するためにも推奨されます。 このガイドでは、DFCI 環境を構成し、対象となる Surface デバイスの UEFI 構成設定を管理する方法について説明します。
 
-## DFCI プロフィールの作成
+## DFCI プロファイルを作成する
 
-DFCI ポリシー設定を構成する前に、まず DFCI プロファイルを作成し、ターゲットデバイスを含む Azure AD セキュリティグループに割り当てる必要があります。
+DFCI ポリシー設定を構成する前に、まず DFCI プロファイルを作成し、ターゲット デバイスを含む Azure AD セキュリティ グループに割り当てる必要があります。
 
-1. Devicemanagement.microsoft.com でテナントにサインインします。
-2. Microsoft Endpoint Manager 管理センターで、[ **デバイス] > 構成プロファイル** ] の [プロファイルの作成] > 名前を入力します。たとえば、 **Dfci 構成ポリシーなどです。**
-3. プラットフォームの種類については **、[Windows 10** 以降] を選択します。
-4. [Profile type] ドロップダウンリストで、[ **Device ファームウェア構成インターフェイス** ] を選択して、利用可能なすべてのポリシー設定が含まれている dfci ブレードを開きます。 DFCI の設定の詳細については、このページまたは [Intune のドキュメント](https://docs.microsoft.com/intune/configuration/device-firmware-configuration-interface-windows)の表1を参照してください。 Dfci プロファイルを編集することにより、初期セットアッププロセスまたは後で DFCI 設定を構成できます。
+1. サインイン時にテナントにdevicemanagement.microsoft.com。
+2. Microsoft Endpoint Manager 管理センターで、[デバイスと構成 **>]** >プロファイルの作成] を選択し、名前を入力します。たとえば **、DFCI 構成ポリシーです。**
+3. プラットフォーム **の種類として Windows 10 以降** を選択します。
+4. [プロファイルの種類] ドロップダウン リストで、[ **デバイス** ファームウェア構成インターフェイス] を選択し、利用可能なすべてのポリシー設定を含む DFCI ブレードを開きます。 DFCI 設定の詳細については、このページの表 1 または Intune のドキュメントを [参照してください](https://docs.microsoft.com/intune/configuration/device-firmware-configuration-interface-windows)。 初期セットアップ プロセス中または後で DFCI プロファイルを編集することで、DFCI 設定を構成できます。
 
-    ![DFCI プロフィールの作成](images/df1.png)
+    ![DFCI プロファイルを作成する](images/df1.png)
 
-5. [ **OK]** をクリックし、[ **作成**] を選択します。
-6. [ **割り当て** ] を選択し、次の図に示すよう **に** 、ターゲットデバイスを含む Azure AD セキュリティグループを選択します。 **[Save]** (保存) をクリックします。
+5. **[OK] を**クリックし、[作成] を**選択します**。
+6. 次**の図に**示**** すように、[割り当て] を選択し、[グループの選択] でターゲット デバイスを含む Azure AD セキュリティ グループを選択します。 **[保存]** をクリックします。
 
-    ![セキュリティグループの割り当て](images/df2a.png)
+    ![セキュリティ グループを割り当てる](images/df2a.png)
 
-## 自動操縦プロファイルを作成する
+## Autopilot プロファイルを作成する
 
-1. Devicemanagement.microsoft.com のエンドポイントマネージャーで、[ **Windows 登録 > デバイス** ] を選択し、[ **展開プロファイル**] まで下にスクロールします。
-2. [ **プロファイルの作成** ] を選択し、名前を入力します。たとえば、 **[自動操縦プロファイル**] を選び、[ **次へ**] を選びます。
+1. エンドポイント マネージャーで、Windows devicemanagement.microsoft.comデバイスを選択 **>** 展開プロファイルまで **下にスクロールします**。
+2. [プロファイル **の作成] を** 選択し、名前を入力します。For example, **My Autopilot profile,** and select **Next**.
 3. 次の設定を選択します。
 
-    - 展開モード: **ユーザー主導型**。
-    - 参加の種類: Azure **AD が結合**されました。
+    - 展開モード: **ユーザー駆動型**。
+    - 参加の種類: Azure **AD参加しています**。
 
-4. その他の既定の設定はそのままにして、次の図に示すように [ **次へ**] を選びます。
+4. 次の図に示すように、残りの**** 既定の設定は変更されず、[次へ] を選択します。
 
-    ![自動操縦プロファイルを作成する](images/df3b.png)
+    ![Autopilot プロファイルを作成する](images/df3b.png)
 
-5. [割り当て] ページで、[ **グループの選択** ] を選んで、Azure AD セキュリティグループを追加してクリックします。 **[次へ]** を選択します。
-6. 概要を承諾し、[ **作成**] を選択します。 自動操縦プロファイルが作成され、グループに割り当てられました。
+5. [割り当て]**** ページで、[含めるグループの選択] を選択し、Azure AD セキュリティ グループをクリックします。 **[次へ]** を選択します。
+6. 概要を受け入れ、[作成] を **選択します**。 これで、Autopilot プロファイルが作成され、グループに割り当てられます。
 
-## 登録状態のページを構成する
+## [登録状態の構成] ページ
 
-ユーザーがサインインする前に、デバイスで OOBE 中に DFCI 構成が適用されるようにするには、登録の状態を構成する必要があります。
+ユーザーがサインインする前に OOBE 中にデバイスが DFCI 構成を適用するには、登録状態を構成する必要があります。
 
-詳細については、「 [登録の状態を設定](https://docs.microsoft.com/intune/enrollment/windows-enrollment-status)する」ページを参照してください。
+詳細については、「登録状態の [設定」ページを参照してください](https://docs.microsoft.com/intune/enrollment/windows-enrollment-status)。
 
 
 ## Surface デバイスで DFCI 設定を構成する
 
-DFCI には、ハードウェアレベルでデバイスをロックダウンすることによって、より高度なセキュリティを提供する、合理的な一連の UEFI 構成ポリシーが含まれています。 DFCI は、ソフトウェアレベルでモバイルデバイス管理設定と連携して使用するように設計されています。 DFCI 設定は、Surface デバイスに組み込まれているハードウェアコンポーネントにのみ影響します。 USB web カメラなどの添付された周辺機器に拡張されることはありません。 (ただし、Intune のデバイス制限ポリシーを使用して、添付されている周辺機器へのアクセスをソフトウェアレベルでオフにすることができます)。
+DFCI には、ハードウェア レベルでデバイスをロックダウンすることで、より高いレベルのセキュリティを提供する UEFI 構成ポリシーの合理化されたセットが含まれています。 DFCI は、ソフトウェア レベルでのモバイル デバイス管理設定と組み合わせて使用するように設計されています。 DFCI 設定は Surface デバイスに組み込みのハードウェア コンポーネントにのみ影響し、USB Web カメラなどの接続された周辺機器には適用されません。 (ただし、Intune のデバイス制限ポリシーを使用して、ソフトウェア レベルで接続された周辺機器へのアクセスをオフにできます)。
 
-次の図に示すように、[エンドポイントマネージャー] から DFCI プロファイルを編集して、DFCI ポリシー設定を構成します。 
+以下の図に示すように、エンドポイント マネージャーから DFCI プロファイルを編集して、DFCI ポリシー設定を構成します。 
 
-- Devicemanagement.microsoft.com のエンドポイントマネージャーで、[ **デバイス > Windows > 構成プロファイル] > "DFCI profile name" > Properties > Settings**] を選びます。
+- エンドポイント マネージャーの devicemanagement.microsoft.comで、Windows > > Configuration Profiles > **"DFCI profile name"**> Properties > 選択します。
 
     ![DFCI 設定を構成する](images/dfciconfig.png)
 
-### ユーザーによる UEFI 設定へのアクセスをブロックする
+### UEFI 設定へのユーザー アクセスをブロックする
 
-多くのお客様は、ユーザーが UEFI 設定を変更できないようにする機能は非常に重要であり、DFCI を使用する主な理由です。 表1で示したように、これは [ **ローカルユーザーによる UEFI 設定の変更を許可**する] 設定によって管理されます。 この設定を編集または構成しない場合、ローカルユーザーは Intune で管理されていない UEFI 設定を変更できます。 そのため、**ローカルユーザーによる UEFI 設定の変更を許可**しないことを強くお勧めします。
-DFCI 設定の残りの部分では、ユーザーが使用できる機能を無効にすることができます。 たとえば、安全性の高い領域の機密情報を保護する必要がある場合は、カメラを無効にすることができます。また、ユーザーが USB ドライブから起動したくない場合は、無効にすることもできます。
+多くのお客様にとって、ユーザーが UEFI 設定を変更することをブロックする機能は非常に重要であり、DFCI を使用する主な理由です。 表 1 に示す通り、これはローカル ユーザーによる UEFI 設定の変更を許可する設定 **によって管理されます**。 この設定を編集または構成しない場合、ローカル ユーザーは Intune で管理されていない UEFI 設定を変更できます。 そのため、ローカル ユーザーによる UEFI 設定の変更を許可することを無効に **することを強くお勧めします。**
+残りの DFCI 設定を使用すると、ユーザーが使用できない機能を無効にできます。 たとえば、セキュリティが高い領域で機密情報を保護する必要がある場合は、カメラを無効にし、ユーザーが USB ドライブから起動したくない場合は、無効にすることもできます。
 
-### 表 1. DFCI のシナリオ
+### 表 1. DFCI シナリオ
 
-| デバイス管理の目標                        | 構成の手順                                                                           |
+| デバイス管理の目標                        | 構成手順                                                                           |
 | --------------------------------------------- | --------------------------------------------------------------------------------------------- |
-| ローカルユーザーが UEFI 設定を変更できないようにブロックする | [ **セキュリティ機能 > ローカルユーザーによる UEFI の設定の変更を許可する**] で、[ **なし**] を選択します。              |
-| カメラを無効にする                               | [ **内蔵ハードウェア > カメラ**] で [ **無効**] を選びます。                                       |
-| マイクとスピーカーを無効にする              | [ **内蔵ハードウェア > マイクとスピーカー**] で、[ **無効**] を選択します。                      |
-| 無線を無効にする (Bluetooth、Wi-fi)             | [ **内蔵ハードウェア > 無線 (Bluetooth、wi-fi など)**] で [ **無効**] を選びます。                   |
-| 外部メディアからの起動を無効にする (USB、SD)    | [ **内蔵ハードウェア > ブートオプション > 外部メディア (USB、SD) から起動**する] で [ **無効**] を選びます。 |
+| ローカル ユーザーが UEFI 設定を変更することをブロックする | [ **セキュリティ機能] >ローカル ユーザーによる UEFI**設定の変更を許可する] で、[なし] を **選択します**。              |
+| カメラを無効にする                               | [ **組み込みのハードウェア と>] で**、[無効] を **選択します**。                                       |
+| マイクとスピーカーを無効にする              | [Built **in Hardware > Microphones and speakers]** で、[Disabled] (無効) を **選択します**。                      |
+| 無線を無効にする (Bluetooth、Wi-Fi)             | [Built **in Hardware > Radios (Bluetooth, Wi-Fi など)]** で、[無効] を選択 **します**。                   |
+| 外部メディア (USB、SD) からのブートを無効にする    | [Built **in Hardware > Boot Options > Boot from external media (USB, SD)**] で、[無効] を選択 **します**。 |
 
 > [!CAUTION]
-> [ **無線を無効にする (Bluetooth、wi-fi)** ] 設定は、有線イーサネット接続を備えたデバイスでのみ使用してください。
+> [Disable **radios (Bluetooth, Wi-Fi)** の設定は、ワイヤード (有線) イーサネット接続があるデバイスでのみ使用してください。
  
 > [!NOTE]
->  Intune の DFCI には、現在 Surface デバイスに適用されていない2つの設定が含まれています: (1) CPU および IO の仮想化と (2) ネットワークアダプターからの起動を無効にします。
+>  Intune の DFCI には、現在 Surface デバイスには適用されない 2 つの設定が含まれています。(1) CPU と IO の仮想化と (2) ネットワーク アダプターからのブートを無効にします。
  
-Intune には、管理者権限と適用ルールを委任してデバイスの種類を管理するためのスコープタグが用意されています。 ポリシー管理のサポートとすべての DFCI 設定の詳細については、 [Microsoft Intune のドキュメント](https://docs.microsoft.com/intune/configuration/device-firmware-configuration-interface-windows)を参照してください。
+Intune には、管理権限を委任するためのスコープ タグと、デバイスの種類を管理するための適用性ルールが提供されています。 ポリシー管理のサポートとすべての DFCI 設定の詳細については、Microsoft Intune のドキュメント [を参照してください](https://docs.microsoft.com/intune/configuration/device-firmware-configuration-interface-windows)。
 
-## 自動操縦でデバイスを登録する
+## Autopilot でデバイスを登録する
 
-上で説明したように、DFCI を適用できるのは、再販業者またはディストリビューターによって Windows 自動操縦に登録されているデバイスに限られます。この時点では、Surface Pro 7、Surface Pro X、Surface ノート Pc 3 でのみサポートされています。 セキュリティ上の理由から、デバイスを自動操縦に "セルフプロビジョニング" することはできません。
+上記のように、DFCI は、リセラーまたはディストリビューターによって Windows Autopilot に登録されているデバイスにのみ適用できます。現時点では、Surface Pro 7、Surface Pro X、Surface Laptop 3 でのみサポートされます。 セキュリティ上の理由から、デバイスを Autopilot に "セルフ プロビジョニング" できません。
 
-## 自動操縦機器を手動で同期する
+## Autopilot デバイスを手動で同期する
 
-Intune ポリシー設定は通常、ほぼ即座に適用されますが、ターゲットデバイスで設定が有効になるまで10分ほど時間がかかる場合があります。 まれな状況では、最大8時間の遅延が発生する可能性があります。 設定ができるだけ早く適用されるようにする (テストシナリオなど) には、ターゲットデバイスを手動で同期することができます。
+Intune ポリシー設定は通常、ほぼ即座に適用されます。ただし、設定が対象のデバイスに適用されるには、10 分の遅延が発生する可能性があります。 まれな状況では、最大 8 時間の遅延が発生する可能性があります。 (テスト シナリオなど) 設定をできるだけ早く適用するには、ターゲット デバイスを手動で同期できます。
 
-- Devicemanagement.microsoft.com のエンドポイントマネージャーで、[デバイス **> デバイスの登録 > windows enrollment > Windows 自動操縦デバイス** ] に移動し、[ **同期**] を選択します。
+- In Endpoint Manager at devicemanagement.microsoft.com, go **to Devices > Device enrollment > Windows enrollment > Windows Autopilot Devices** and select **Sync**.
 
- 詳細については、「 [Windows デバイスを手動で同期](https://docs.microsoft.com/intune-user-help/sync-your-device-manually-windows)する」を参照してください。
+ 詳しくは、「Windows デバイスを手動で [同期する」をご覧ください](https://docs.microsoft.com/intune-user-help/sync-your-device-manually-windows)。
 
 > [!NOTE]
-> UEFI で直接設定を調整する場合は、デバイスが標準の Windows ログインに完全に再起動する必要があります。
+> UEFI で直接設定を調整する場合は、デバイスが標準の Windows ログインに完全に再起動することを確認する必要があります。
 
-## DFCI で管理されているデバイスで UEFI 設定を確認する
+## DFCI で管理されるデバイスでの UEFI 設定の確認
 
-テスト環境では、Surface UEFI インターフェイスで設定を確認できます。
+テスト環境では、Surface UEFI インターフェイスの設定を確認できます。
 
-1. [Surface UEFI] を開きます。これには、 **ボリューム** と **電源** ボタンを同時に押す必要があります。
-2. [ **デバイス**] を選びます。 次の図に示すように、[UEFI] メニューには、構成済みの設定が反映されます。
+1. Surface UEFI を開きます。ボリューム**ボタンと**電源**** ボタンを同時に押す必要があります。
+2. [デバイス **] を選択します**。 次の図に示すように、UEFI メニューには構成済みの設定が反映されます。
 
     ![Surface UEFI](images/df3.png)
 
     次の点に注意してください。
 
-      - [ **ローカルユーザーによる UEFI の変更を許可** する] 設定が [なし] に設定されているため、設定が灰色表示されています。
-      - **マイクとスピーカー**が**無効**に設定されているため、オーディオはオフに設定されます。
+      - ローカル ユーザーによる **UEFI** 設定の変更を許可する設定が [なし] に設定されている場合、設定は灰色表示されます。
+      - マイクとスピーカーが無効に設定されているので、 **オーディオがオフ** に設定 **されています**。
 
 ## DFCI ポリシー設定の削除
 
-DFCI プロファイルを作成すると、構成されているすべての設定は、プロファイルの管理範囲内のすべてのデバイスで引き続き有効になります。 Dfci のポリシー設定は、DFCI プロファイルを直接編集することによってのみ削除できます。
+DFCI プロファイルを作成する場合、構成済みのすべての設定は、プロファイルの管理範囲内のすべてのデバイスで有効なままです。 DFCI ポリシー設定は、DFCI プロファイルを直接編集することでのみ削除できます。
 
 元の DFCI プロファイルが削除されている場合は、新しいプロファイルを作成し、必要に応じて設定を編集することで、ポリシー設定を削除できます。
 
 ## DFCI 管理の削除
 
-**DFCI 管理を削除し、デバイスを出荷時の新しい状態に戻すには、次の操作を行います。**
+**DFCI 管理を削除し、デバイスを出荷時の新しい状態に戻す方法:**
 
-1. Intune からデバイスを削除する:
-    1. Devicemanagement.microsoft.com のエンドポイントマネージャーで、[ **グループ > すべてのデバイス**] を選びます。 削除するデバイスを選択し、[インベントリから削除] を選択し **ます。** 詳細について [は、「ワイプを使用してデバイスを削除する」または「手動でデバイスを登録解除](https://docs.microsoft.com/intune/remote-actions/devices-wipe)する」を参照してください。 
-2. 自動操縦登録を Intune から削除します。
-    1.  [ **デバイス登録 > Windows 登録 > デバイス**] を選びます。
-    2. [Windows 自動操縦デバイス] で、削除するデバイスを選択し、[ **削除**] を選択します。
-3. Surface 製のイーサネットアダプターを使って、デバイスを有線インターネットに接続します。 デバイスを再起動して、[UEFI] メニューを開きます (音量を上げるボタンを押したままにして、電源ボタンを押しながら離します)。
-4. [ **管理 > ネットワークからの更新 > 構成** ] を選択し、[停止] を選択し **ます。**
+1. Intune からデバイスをリタイアします。
+    1. In Endpoint Manager at devicemanagement.microsoft.com, choose **Groups > All Devices**. リタイアするデバイスを選択し **、[Retire/Wipe] を選択します。** 詳細については、「ワイプ、リタイア、または手動でのデバイスの登録解除を使用してデバイスを削除する」を [参照してください](https://docs.microsoft.com/intune/remote-actions/devices-wipe)。 
+2. Intune から Autopilot 登録を削除します。
+    1.  Choose **Device enrollment > Windows enrollment > Devices**.
+    2. [Windows Autopilot デバイス] で、削除するデバイスを選択し、[削除] を選択 **します**。
+3. Surface ブランドのイーサネット アダプターを使って、デバイスを有線インターネットに接続します。 デバイスを再起動し、UEFI メニューを開きます (音量を上げながら電源ボタンを長押しします)。
+4. [ **管理] > [ネットワーク>更新の** 構成] を選択し、[オプトアウト] **を選択します。**
 
-Intune でデバイスを引き続き管理しますが、DFCI 管理がない場合は、デバイスを自動操縦に登録して、Intune に登録します。 DFCI は、自己登録デバイスには適用されません。
+Intune を使用してデバイスを管理し続けるが、DFCI 管理を使用しない場合は、デバイスを Autopilot に自己登録し、Intune に登録します。 DFCI は自己登録デバイスには適用されません。
 
 ## 詳細情報
-- [Ignite 2019: Intune からの SURFACE UEFI 設定のリモート管理のアナウンス](https://techcommunity.microsoft.com/t5/Surface-IT-Pro-Blog/Ignite-2019-Announcing-remote-management-of-Surface-UEFI/ba-p/978333) 
-[Windows 自動操縦](https://www.microsoft.com/microsoft-365/windows/windows-autopilot)
+- [Ignite 2019: Intune](https://techcommunity.microsoft.com/t5/Surface-IT-Pro-Blog/Ignite-2019-Announcing-remote-management-of-Surface-UEFI/ba-p/978333)からの Surface UEFI 設定のリモート管理の発表 
+[Windows Autopilot](https://www.microsoft.com/microsoft-365/windows/windows-autopilot)
 - [Windows Autopilot と Surface デバイス](windows-autopilot-and-surface-devices.md) 
 - [Microsoft Intune の Windows デバイスで DFCI プロファイルを使用する](https://docs.microsoft.com/intune/configuration/device-firmware-configuration-interface-windows)
