@@ -11,12 +11,12 @@ audience: Admin
 ms.topic: article
 ms.date: 12/17/2020
 ms.localizationpriority: Medium
-ms.openlocfilehash: 043c7ed49dafab7e0f3d042f5b98d527ffe0610f
-ms.sourcegitcommit: 6252903b28f0c410065eb2515c746f5e9920c652
+ms.openlocfilehash: b3f1f0884273728abc8b4f6e8662190dacdaf2b2
+ms.sourcegitcommit: 8c75e57dc32eaf7c11cb9badea74809fd3877ffc
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2020
-ms.locfileid: "11237217"
+ms.lasthandoff: 01/06/2021
+ms.locfileid: "11253966"
 ---
 # Windows 10 Team 2020 の更新プログラムをインストールする 
 
@@ -29,7 +29,7 @@ Windows **10 バージョン 20H2**に基づく新しい Surface Hub オペレ�
 Windows 2020 Update は、次のいずれかの方法で入手できます。
 
 - **Windows Update for Business**.
-- **ベア メタル回復 (BMR) イメージ**。 デバイスを Azure Active Directory に参加しているお客様、またはデバイスがインターネットから更新プログラムを受信できないお客様に推奨されるオプションです。 開始するには、「Surface の回復 [イメージをダウンロードする」を参照してください](https://support.microsoft.com/surfacerecoveryimage)。
+- **ベア メタル回復 (BMR) イメージ**。 デバイスを Azure Active Directory に参加しているお客様、またはデバイスがインターネットから更新プログラムを受信できないお客様に推奨されるオプションです。 始めるには、「Surface の回復 [イメージをダウンロードする」をご覧ください](https://support.microsoft.com/surfacerecoveryimage)。
 - **Windows Update。** 可用性は、次の表に示す地域/国によって異なります。
 
 | フェーズ | 国/地域                         | 開始          |
@@ -39,14 +39,17 @@ Windows 2020 Update は、次のいずれかの方法で入手できます。
 | 3     | 米国、ドイツ                            | TBD |
 | 4     | グローバル                                 | TBD  |
 
-## Windows 10 Team Edition v1703 による Surface Hub 2S のサービス 
+## Windows 10 Team Edition バージョン 1703 での Surface Hub のサービス提供 
 
-すべての地域のお客様は、「Surface Hub 2S のリセットと回復」で説明したように、引き続き Windows Update for Business を使用するか、ベア メタル回復 (BMR) イメージを使用して Surface [Hub 2S](surface-hub-2s-recover-reset.md)デバイスを更新できます。 Windows 10 Team Edition バージョン 1703 の完全なサービス サポートは、2021 年 3 月 16 日まで継続する予定です。
+Windows 10 Team Edition バージョン 1703 の完全なサービス サポートは、2021 年 3 月 16 日まで継続する予定です。
 
+### 2S デバイス 
 
-## V1 デバイスのサポート 
+すべての地域のお客様は、「Surface Hub 2S のリセットと回復」で説明したように、Windows Update for Business またはベア メタル回復 (BMR) イメージを使用して、引き続き Surface Hub 2S デバイスを [2020](surface-hub-2s-recover-reset.md)Update に更新できます。
 
-Surface Hub 2S デバイス用に最初にリリースされた Windows Windows 10 Team 2020 Update は、間もなく Surface Hub v1 デバイスで利用可能になります。 詳細については [、Surface IT Pro ブログを参照してください](https://techcommunity.microsoft.com/t5/surface-it-pro-blog/surface-hub-windows-10-team-2020-update-available-october-27/ba-p/1810739)。
+### V1 デバイス 
+
+すべての地域のお客様は、Surface Hub 回復ツールを使って Surface Hub v1 デバイスを 2020 Update に [更新できます](surface-hub-recovery-tool.md)。 これらのデバイスを Windows 10 Team 2020 Update に更新する他の方法は、間もなく利用可能になります。 詳細については [、Surface IT Pro ブログを参照してください](https://techcommunity.microsoft.com/t5/surface-it-pro-blog/surface-hub-windows-10-team-2020-update/ba-p/2000144)。
  
 ## 新機能
 
@@ -54,13 +57,13 @@ Windows 10 Team 2020 Update では、最新の Windows 10 機能と共に、デ�
  
 ## 始める前に
 
-Windows 10 Team 2020 更新プログラムをインストールする前に、デバイスに関連付けられている BitLocker キーを保存してください。 
+Windows 10 Team 2020 Update をインストールする前に、デバイスに関連付けられている BitLocker キーを保存してください。 
 
 **BitLocker キーを手動で保存するには**
 
 1. Surface Hub に USB ドライブを挿入します。
 2. Surface Hub で[設定] を **開** き、メッセージが表示されたら管理者の資格情報を入力します。
-3. [更新とセキュリティ**の回復&に**  >  **移動します**。
+3. [更新とセキュリティの**回復&に**  >  **移動します**。
 4. **[BitLocker] で、[** 保存] を**選択します**。 BitLocker キーは、USB ドライブ上のテキスト ファイルに保存されます。
 
 詳細については [、「BitLocker キーを保存する」を参照してください](save-bitlocker-key-surface-hub.md)。
