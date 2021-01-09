@@ -11,12 +11,12 @@ audience: Admin
 ms.topic: article
 ms.date: 12/14/2020
 ms.localizationpriority: Medium
-ms.openlocfilehash: c2851505b3595ea768217de443676b45cc01a9ae
-ms.sourcegitcommit: efc38524f81238e0c36371f462eb57123e46d09b
+ms.openlocfilehash: 9878e64e414f4fe9ec3abfbd49adf233edc1da1d
+ms.sourcegitcommit: 53d1eac8840fafbcd155798fce0d8c843f48dca3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "11228558"
+ms.lasthandoff: 01/09/2021
+ms.locfileid: "11255489"
 ---
 # Surface Hub 2 の Windows 10 Pro または Enterprise に移行する
 
@@ -34,7 +34,7 @@ Surface Hub 2S には、Windows 10 Team がプレインストールされてい�
 
 別の PC とダウンロード可能なツール Surface UEFI コンフィケーターを使って、Windows 10 Team からの移行 *を開始します*。 このツールを使って、Surface Hub 2S に適用する新しい UEFI 設定を含むパッケージを作成します。  
 
-Surface UEFI コンフィエーターは、Surface Enterprise 管理モード (SEMM) へのインターフェイスとして機能します。 企業環境の Surface デバイスでファームウェア設定の一元管理を容易にするように設計されています。 詳細については <a href="https://docs.microsoft.com/surface/surface-enterprise-management-mode" target="_blank"> 、Microsoft SEMM ドキュメントを参照してください。</a>
+Surface UEFI コンフィエーターは、Surface Enterprise 管理モード (SEMM) へのインターフェイスとして機能します。 企業環境の Surface デバイスでファームウェア設定の一元管理を容易にするように設計されています。 詳細については <a href="https://docs.microsoft.com/surface/surface-enterprise-management-mode" target="_blank"> 、Microsoft SEMM のドキュメントを参照してください </a> 。
  
 
 ## ソリューション コンポーネント
@@ -51,7 +51,7 @@ Surface UEFI コンフィエーターは、Surface Enterprise 管理モード (S
  
 ## 移行とインストールのワークフローの概要
 
-| ステップ  | 操作                                                                                                 | まとめ                                                                                                                                                                                                                                                                                                                                                                                                  |
+| ステップ  | 操作                                                                                                 | 要約                                                                                                                                                                                                                                                                                                                                                                                                  |
 | - | ------------------------------------------------------------------------------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | 1 | [Surface Hub 2S の UEFI バージョンが最小要件を満たしていることを確認します。](#verify-uefi-version-on-surface-hub-2s-meets-minimum-requirements)                                  | UEFI バージョンが 694.2938.768.0 以降である必要があります。                                                                                                                                                                                                                                                                                                                                                      |
 | 2 | [Surface UEFI コンフィエーターと Surface Hub 2 のドライバーとファームウェアをダウンロードします。](#download-surface-uefi-configurator-and-surface-hub-2-drivers-and-firmware)                             | [Surface <a href="https://www.microsoft.com/download/details.aspx?id=46703" target="_blank"> **Tools for IT] ページで、[** </a> ダウンロード] を**選択します**。 次に **、Surface UEFI コンフィエーターを選択してダウンロードします。MSI ファイルを** 作成し、別の PC にインストールします。 Surface Hub 2 MSI ファイルに <a href="https://www.microsoft.com/download/details.aspx?id=101974" target="_blank"> Windows 10 Pro および Enterprise OS のドライバーとファームウェアをダウンロードします。</a> 手順 5 で使用するために保存します。 |
@@ -81,26 +81,34 @@ Surface Hub を Windows 10 Team から Windows 10 Desktop に移行する前に 
 **Windows Update を使って UEFI を更新するには:**
 
 1. Surface Hub 2S で、管理者としてサインイン **します**。 
+
     >[!Note]
     > ユーザー名または管理者パスワードが分からない場合は、デバイスをリセットする必要があります。 詳しくは <a href="https://docs.microsoft.com/surface-hub/surface-hub-2s-recover-reset" target="_blank"> 、「Surface Hub 2S のリセットと回復」をご覧ください。</a>
 
 1. [すべてのアプリ**の設定の**  >  **更新と**  >  **セキュリティ**  >  **] Windows Update に移動し**、すべての更新プログラムをインストールします。 
+
 1. デバイスを再起動します。 
-1. Surface アプリを使って UEFI バージョンを確認します。 
+
+1. Surface アプリを使って UEFI バージョンを確認します。
+
 1. この時点で、UEFI バージョンがまだバージョン 694.2938.768.0 以降ではない場合は、上記の手順を繰り返し実行するか、Windows 10 Team 2020 Update Bare Metal Recovery (BMR) イメージをインストールして最新の UEFI を取得できます。
 
 **ベア メタル回復 (BMR) イメージを使用して UEFI を更新するには:**
 
-1.  Surface の回復サイト [に移動し、[Surface](https://support.microsoft.com/surfacerecoveryimage) **Hub 2S] を選択します。**
+1.  Surface の回復サイト [に移動し、Surface](https://support.microsoft.com/surfacerecoveryimage) **Hub 2S を選択します**。
+
 3.  ハブのシリアル番号を入力します (電源接続の横のハブの背面にあります)。
+
 4.  指示に従って、Windows 10 Team 2020 Update をインストールして、フォーマットされた USB ドライブにイメージをダウンロードします。
+
 5.  更新が完了し、デバイスが初めて OOBE に入った後は、OOBE を完了する必要はなんか、UEFI バージョンが更新されます。 代わりに、画面がオフになるまで電源ボタンを押し続け、デバイスの電源を切ります。 
 
 ### Surface UEFI コンフィエーターと Surface Hub 2 のドライバーとファームウェアをダウンロードする
 
 別の PC の場合:
 
-1. [Surface <a href="https://www.microsoft.com/download/details.aspx?id=46703" target="_blank"> Tools for IT] ページで、[ </a> ダウンロード] を **選択します**。  
+1. [Surface <a href="https://www.microsoft.com/download/details.aspx?id=46703" target="_blank"> Tools for IT] ページで、[ </a> ダウンロード] を **選択します**。
+
 1. Surface UEFI Configurator MSI ファイルを選択してダウンロードし、別の PC にインストールします。 Windows 10 Team エディションがインストールされている間、Surface Hub 2S で Surface UEFI コンフィエーター ツールを実行できない。
 
 1. Surface <a href="https://www.microsoft.com/download/details.aspx?id=101974" target="_blank"> Hub 2 Drivers and Firmware Windows Installer MSI ファイルをダウンロードします </a> 。 このファイルは、新しいオペレーティング システムをインストールするときに使用します。
@@ -191,6 +199,7 @@ SEMM へのデバイスの登録は、今後のデバイスの管理方法に影
 #### SEMM パッケージを USB ドライブに保存する
 
 1. USB ドライブを PC に接続します。 
+
 1. [ **ハブ 2S] を選択し、[** 次へ] を **選択します**。
 
    ![USB の選択](images/shm-fig13.png)
@@ -225,24 +234,25 @@ Windows 10 Pro または Enterprise イメージ (バージョン 1903 以降) �
 
 1. Windows 10 Pro インストールを作成するには、Windows 10 のダウンロード ページで、指示に従ってメディア作成ツール <a href="https://www.microsoft.com/software-download/windows10" target="_blank"> </a> をダウンロードします。 Windows 10 Enterprise をダウンロードするには、Microsoft ボリューム ライセンス サービス センター <a href="https://www.microsoft.com/licensing/servicecenter/default.aspx" target="_blank"> にアクセスします </a> 。
 
-2. 新しい USB ストレージ ドライブを挿入します。 
+1. 新しい USB ストレージ ドライブを挿入します。 
+
 1. メディア作成ツールを開き、[インストール メディアの作成] **を**選択し、[次へ] を選択 **します**。
 
    ![インストール メディアを作成します。](images/shm-fig16.png)
    
-3. 言語を選択し **、Windows 10 と 64** ビット **(x64) を選択します**。 次に、[次へ] を **選択します**。
+1. 言語を選択し **、Windows 10 と 64** ビット **(x64) を選択します**。 次に、[次へ] を **選択します**。
 
    ![言語を選択し、Windows 10 と 64 ビットを選択します。 次に、[次へ] を選択します。](images/shm-fig17.png)
    
-4. USB **フラッシュ ドライブを選択し、[** 次へ] を **選択します**。
+1. USB **フラッシュ ドライブを選択し、[** 次へ] を **選択します**。
 
    ![[U S B フラッシュ ドライブ] を選択し、[次へ] を選択します。](images/shm-fig18.png)
    
-5. ダウンロードが完了したら、[完了] を選択 **します**。
+1. ダウンロードが完了したら、[完了] を選択 **します**。
 
    ![[完了] を選択します。](images/shm-fig19.png)
    
-6. SURFACE Hub 2 (MSI ファイル) 上の Windows 10 Pro および Enterprise OS の SEMM パッケージ ファイルとドライバーとファームウェアを、Windows 10 イメージを含む USB フラッシュ ドライブ *(BOOTME)* のルートにコピーします。 BOOTME USB ドライブには次が含まれる。
+1. SURFACE Hub 2 (MSI ファイル) 上の Windows 10 Pro および Enterprise OS の SEMM パッケージ ファイルとドライバーとファームウェアを、Windows 10 イメージを含む USB フラッシュ ドライブ *(BOOTME)* のルートにコピーします。 BOOTME USB ドライブには次が含まれる。
 
     - Windows 10 の起動可能なイメージ。
     
@@ -296,7 +306,7 @@ Windows 10 Pro または Enterprise イメージ (バージョン 1903 以降) �
 
 3. デバイスが USB ドライブで自動的に起動しない場合は、デバイスの電源を切ります (電源コードを取り外してから、もう一方の電源を差し込む)。 電源コードを再度接続すると、数秒後にデバイスが起動します。 次に、画面の中央に白いロゴが表示されます。 
 
-    デバイスが有効でなかった場合は、電源ボタンを押して離します。 画面の中央にロゴが表示された直後に、白いロゴの下に回転する円が表示されるまでボリューム ボタンを長押しします。
+    デバイスが有効でなかった場合は、電源ボタンを押して離します。 画面の中央にロゴが表示された直後に、白いロゴの下に回転する円が表示されるまで、[ **音量 -]** ボタンを長押しします。
  
    ![U S B ドライブから Windows 10 を起動します。](images/shm-fig26.png)
    
