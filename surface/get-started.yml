@@ -11,18 +11,20 @@ metadata:
   ms.author: greglin
   audience: itpro
   ms.localizationpriority: High
-  ms.openlocfilehash: c356595e058c45cc95631d2ebd12ee2e5cc75c1d
-  ms.sourcegitcommit: b1c630dcf12530cf7034478bfe66ad3bb11b59c9
+  ms.openlocfilehash: aa883bb614b3d0230e00b4b8254e673182d60751
+  ms.sourcegitcommit: 00b6b59bd110633b6ae46345a592b72d68cc5121
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 11/12/2020
-  ms.locfileid: "11166649"
+  ms.lasthandoff: 01/11/2021
+  ms.locfileid: "11255688"
 landingContent:
 - title: Surface デバイス
   linkLists:
   - linkListType: whats-new
     links:
-    - text: Surface のラップトップでビジネスを開始
+    - text: Surface Pro 7+ for Business
+      url: https://www.microsoft.com/surface/business/surface-pro-7-plus
+    - text: Surface Laptop Go for Business
       url: https://www.microsoft.com/surface/business/surface-laptop-go
     - text: ビジネス向け Surface Pro X
       url: https://www.microsoft.com/surface/business/surface-pro-x
@@ -32,8 +34,8 @@ landingContent:
   linkLists:
   - linkListType: get-started
     links:
-    - text: Microsoft Surface で ROI を最大化する
-      url: forrester-tei-study.md
+    - text: Surface Pro 7+ for Business の新機能
+      url: https://techcommunity.microsoft.com/t5/surface-it-pro-blog/surface-pro-7-brings-next-level-performance-and-versatility-to/ba-p/1928797
     - text: Surface の Windows Virtual Desktop
       url: windows-virtual-desktop-surface.md
     - text: Surface Dock 2 の新機能
@@ -42,11 +44,11 @@ landingContent:
   linkLists:
   - linkListType: video
     links:
-    - text: Surface & 自動操縦によるゼロタッチ展開
+    - text: Surface & AutoPilot によるゼロ タッチ展開
       url: https://youtu.be/WQ-wg8fRzN0
-    - text: リモートワールドでの ARM 上の Surface Pro X と Windows
+    - text: リモートの世界で使ARM Surface Pro X と Windows
       url: https://youtu.be/bDw77ZQNPPw
-    - text: Surface Security – Microsoft からクラウドの先進エンドポイント保護へのチップ
+    - text: Surface Security – Microsoft からのクラウドモダン エンドポイント保護へのチップ
       url: https://youtu.be/uadAecDbqf4
 - title: Surface デバイスの展開
   linkLists:
@@ -82,9 +84,9 @@ landingContent:
   linkLists:
   - linkListType: how-to-guide
     links:
-    - text: Surface デバイスでの DMA の保護
+    - text: Surface デバイスでの DMA 保護
       url: dma-protect.md
-    - text: Surface Enterprise 管理モード (SEMM) での Secure Surface Dock 2 ポート
+    - text: Surface Enterprise 管理モード (SEMM) による Surface ドック 2 ポートのセキュリティ保護
       url: secure-surface-dock-ports-semm.md
     - text: Surface Data Eraser ツール
       url: microsoft-surface-data-eraser.md
@@ -98,7 +100,7 @@ landingContent:
       url: surface-enterprise-management-mode.md
     - text: バッテリーの制限の設定
       url: battery-limit.md
-- title: Surface コミュニティに参加する
+- title: Surface Community に参加する
   linkLists:
   - linkListType: learn
     links:
