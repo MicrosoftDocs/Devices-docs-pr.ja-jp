@@ -4,18 +4,17 @@
 
 ## 概要
 
+### [ビジネス向け Surface Pro 7+](https://www.microsoft.com/surface/business/surface-pro-7-plus)
+### [ビジネス向け Surface Go 2](https://www.microsoft.com/surface/business/surface-go-2)
+### [ビジネス向け Surface Pro X](https://www.microsoft.com/surface/business/surface-pro-x)
+### [ビジネス向け Surface Laptop 3](https://www.microsoft.com/surface/business/surface-laptop-3)
+### [ビジネス向け Surface Studio 2](https://www.microsoft.com/surface/business/surface-studio-2)
+### [ビジネス向け Surface Book 3](https://www.microsoft.com/surface/business/surface-book-3)
 ### [Microsoft Surface で ROI を最大化する](forrester-tei-study.md)
 ### [Microsoft Surface for Education の総合的な経済効果](forrester-tei-edu-study.md)
 ### [Surface Dock の新機能](surface-dock-whats-new.md)
 ### [Surface Book 3 GPU の技術概要](surface-book-GPU-overview.md)
 ### [Surface Book 3 Quadro RTX 3000 の技術概要](surface-book-quadro.md)
-### [ビジネス向け Surface Book 3](https://www.microsoft.com/surface/business/surface-book-3)
-### [ビジネス向け Surface Go 2](https://www.microsoft.com/surface/business/surface-go-2)
-### [ビジネス向け Surface Pro 7](https://www.microsoft.com/surface/business/surface-pro-7)
-### [ビジネス向け Surface Pro X](https://www.microsoft.com/surface/business/surface-pro-x)
-### [ビジネス向け Surface Laptop 3](https://www.microsoft.com/surface/business/surface-laptop-3)
-### [ビジネス向け Surface Studio 2](https://www.microsoft.com/surface/business/surface-studio-2)
-
 ### [LTE Advanced による、セキュリティで保護されて場所を問わず作業できるモビリティ機能](https://www.microsoft.com/surface/business/lte-laptops-and-tablets)
 
 ## プラン
