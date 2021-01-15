@@ -8,7 +8,7 @@ ms.sitesec: library
 author: mccoybot
 ms.author: v-todmc
 ms.topic: article
-ms.date: 01/13/2020
+ms.date: 01/13/2021
 ms.reviewer: ''
 manager: laurawi
 ms.audience: itpro
@@ -21,12 +21,12 @@ appliesto:
 ms.custom:
 - CI 121887
 - CSSTroubleshoot
-ms.openlocfilehash: b65feb24803311aba809819cd6da273ed6934c75
-ms.sourcegitcommit: 41124d496abaa38a0d989159f2afec3542d562ca
+ms.openlocfilehash: 51ef676e7379f0898d6b601bb08c96002c9e6ace
+ms.sourcegitcommit: d4e2a29aa21a911ee55642cd66b4337b89eebdd8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 01/14/2021
-ms.locfileid: "11269108"
+ms.locfileid: "11270632"
 ---
 # <span data-ttu-id="90a45-103">互換性のある Surface デバイスからの SSD 削除のベスト プラクティス</span><span class="sxs-lookup"><span data-stu-id="90a45-103">Best practices for SSD removal from compatible Surface devices</span></span>
 
