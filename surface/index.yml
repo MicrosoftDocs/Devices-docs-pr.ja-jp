@@ -12,12 +12,12 @@ metadata:
   ms.author: samanro
   ms.date: 07/03/2019
   localization_priority: Priority
-  ms.openlocfilehash: 8e97c8b1959364facbb74c6fac938fbaa279d2a1
-  ms.sourcegitcommit: 41124d496abaa38a0d989159f2afec3542d562ca
+  ms.openlocfilehash: 03c1481004ddfa6ff7fb8baae9934bbd2acf9ed6
+  ms.sourcegitcommit: 1053479c191fd10651d31a466fad1769fb0cd28b
   ms.translationtype: HT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 01/14/2021
-  ms.locfileid: "11269128"
+  ms.lasthandoff: 01/16/2021
+  ms.locfileid: "11271521"
 highlightedContent:
   items:
   - title: Surface デバイスのドキュメント
@@ -48,7 +48,7 @@ conceptualContent:
     links:
     - url: https://docs.microsoft.com/surface-hub/surface-hub-2s-85-install-mount
       itemType: how-to-guide
-      text: Surface Hub 2S 85 インチを設置して取り付ける (準備ガイド)
+      text: Surface Hub 2S 85" のインストールとマウント (準備ガイド)
     - url: https://docs.microsoft.com/surface-hub/surface-hub-2s-whats-new
       itemType: concept
       text: Surface Hub 2S の新機能
@@ -91,7 +91,7 @@ conceptualContent:
       text: Surface サポートへのお問い合わせ
   - title: Surface Hub ヘルプ
     links:
-    - url: https://support.serviceshub.microsoft.com/supportforbusiness/create?sapId=bb7066fb-e329-c1c0-9c13-8e9949c6a64e
+    - url: https://support.serviceshub.microsoft.com/supportforbusiness/create?sapId=bb7066fb-e329-c1c0-9c13-8e9949c6a64e&hidden=false
       itemType: learn
       text: Surface Hub のサポートへのお問い合わせ
   - title: Surface Duo ヘルプ
