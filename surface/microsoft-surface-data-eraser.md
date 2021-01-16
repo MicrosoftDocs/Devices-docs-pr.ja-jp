@@ -14,13 +14,13 @@ author: coveminer
 ms.author: greglin
 ms.topic: article
 audience: itpro
-ms.date: 10/12/2020
-ms.openlocfilehash: 8b201ce45533c28740a7c6bdfcb56688ada25718
-ms.sourcegitcommit: c1efb75e8524193bdc0a5f7496dc23a92ac665c8
+ms.date: 01/15/2021
+ms.openlocfilehash: 2ae1b7b3af93c1449b96bf6307c830a928c1f0a7
+ms.sourcegitcommit: 1053479c191fd10651d31a466fad1769fb0cd28b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/12/2020
-ms.locfileid: "11114705"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "11271411"
 ---
 # Microsoft Surface Data Eraser
 
@@ -37,11 +37,11 @@ Surface デバイスからデータを安全に消去するうえで Microsoft S
 - Surface Book (すべてのエディション)
 - Surface Go (すべてのエディション)
 - Surface Pro X (すべてのエディション)
-- Surface のノート Pc (すべてのエディション)
-- Surface のノート Pc の移動
+- Surface Laptop (すべてのエディション)
+- Surface Laptop Go
 - Surface Studio (すべてのエディション)
 - Surface Pro 2 以降
-- Surface Hub 2 の Windows 10 Pro と Enterprise
+- Surface Hub 2 の Windows 10 Pro および Enterprise
 
 Microsoft Surface Data Eraser が役立つシナリオには次のようなものがあります。
 
@@ -160,15 +160,22 @@ Microsoft Surface Data Eraser USB スティックを作成したら、次の手�
 
 Microsoft Surface Data Eraser は、Microsoft によって定期的に更新されます。 新しい各バージョンで提供される変更について詳しくは、以下をご覧ください。
 
+### 2.34.139.0
+*リリース日: 2021 年 1 月 15 日*
+
+このバージョンの Surface Data Eraser:
+
+- バグ修正を含む
+
 ### 3.33.139
-*リリース日: 2020 年9月9日*
+*リリース日: 2020 年 9 月 9 日*
 
-このバージョンの Surface データの消しゴムには、バグ修正が含まれており、次のサポートが追加されています。 
+このバージョンの Surface Data Eraser にはバグ修正が含まれており、次のサポートが追加されています。 
 
-- アーキテクチャの再設計により、新製品のリリースによる更新の必要性を軽減
-- 新しいツールの更新に使用できる通知
+- 新しい製品リリースで更新する必要性を減らしてアーキテクチャを再設計する
+- 新しいツールの更新で使用可能な通知
 - テレメトリの追加
-- Surface Hub 2 の Windows 10 Pro と Enterprise
+- Surface Hub 2 の Windows 10 Pro および Enterprise
 
 
 ### 3.30.139
@@ -180,16 +187,21 @@ Microsoft Surface Data Eraser は、Microsoft によって定期的に更新さ�
 - Surface Go の新しい SSD
 
 ### 3.28.137
-*リリース日: 2019 年 11 月 11 日* このバージョンの Surface Data Eraser:
+*リリース日: 2019 年 11 月 11 日*
+
+このバージョンの Surface Data Eraser:
 
 - バグ修正を含む
 
 ### バージョン 3.21.137
-*リリース日: 2019 年 10 月 21 日* このバージョンの Surface Data Eraser は x86 向けにコンパイルされており、次のデバイスのサポートが追加されています。
+*リリース日: 2019 年 10 月 21 日*
 
-- Surface Pro 7、Surface Pro X、Surface Laptop 3 がサポートされています
+このバージョンの Surface Data Eraser は x86 用にコンパイルされ、次のデバイスのサポートが追加されています。
+
+- Surface Pro 7、Surface Pro X、Surface Laptop 3
 
 ### バージョン 3.2.78.0
+
 *リリース日: 2018 年 12 月 4 日*
 
 このバージョンの Surface Data Eraser:
@@ -198,6 +210,7 @@ Microsoft Surface Data Eraser は、Microsoft によって定期的に更新さ�
 
 
 ### バージョン 3.2.75.0
+
 *リリース日: 2018 年 11 月 12 日*
 
 このバージョンの Surface Data Eraser:
@@ -206,6 +219,7 @@ Microsoft Surface Data Eraser は、Microsoft によって定期的に更新さ�
 - SD カードの問題を修正
 
 ### バージョン 3.2.69.0
+
 *リリース日: 2018 年 10 月 12 日*
 
 このバージョンの Surface Data Eraser では、次のサポートが追加されています。
@@ -214,18 +228,21 @@ Microsoft Surface Data Eraser は、Microsoft によって定期的に更新さ�
 - Surface Laptop 2
 
 ### バージョン 3.2.68.0
+
 このバージョンの Microsoft Surface Data Eraser では、以下のサポートが追加されています。
 
 - Surface Go
 
 
 ### バージョン 3.2.58.0
+
 このバージョンの Microsoft Surface Data Eraser では、以下のサポートが追加されています。
 
 - Surface Pro および Surface Laptop デバイス用の追加ストレージ デバイス (ドライブ)
 
 
 ### バージョン 3.2.46.0
+
 このバージョンの Microsoft Surface Data Eraser では、以下のサポートが追加されています。
 
 - Surface Pro LTE Advanced

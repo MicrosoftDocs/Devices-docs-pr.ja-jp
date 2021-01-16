@@ -2,8 +2,8 @@
 title: Windows Autopilot と Surface デバイス
 ms.reviewer: ''
 manager: laurawi
-description: Surface デバイスの Windows 自動操縦展開オプションについては、こちらを参照してください。
-keywords: 自動操縦、windows 10、サーフェス、展開
+description: Surface デバイスの Windows Autopilot 展開オプションについて説明します。
+keywords: autopilot, windows 10, surface, deployment
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.pagetype: surface, devices
@@ -14,77 +14,77 @@ ms.topic: article
 ms.localizationpriority: medium
 ms.audience: itpro
 ms.date: 9/14/2020
-ms.openlocfilehash: d2a948d236ffa286192937cc5ca71099b6eeeafb
-ms.sourcegitcommit: c2df79cab0e59e9d7ea6640e5899531b57cd383f
+ms.openlocfilehash: 31f11db8c3ab12d1af754267022d9060d3a8c026
+ms.sourcegitcommit: 1b86286bd13b13749ddbf454ae78d9a24fec44ee
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/16/2020
-ms.locfileid: "11016426"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "11271103"
 ---
 # Windows Autopilot と Surface デバイス
 
-Windows 自動操縦は、Windows 10 のクラウドベースの展開テクノロジです。 Windows 自動操縦を使用して、ゼロタッチプロセスでデバイスをリモートで展開して構成することができます。
+Windows Autopilot は、Windows 10 のクラウドベースの展開テクノロジです。 Windows Autopilot を使って、ゼロタッチ プロセスでデバイスをリモートで展開および構成できます。
 
-これまで、IT プロフェッショナルは、後で、まったく正常にインストールされている OS がインストールされているデバイスに展開されるように、多くの時間を費やしています。 Windows 自動操縦では、Windows デバイスをセットアップして構成するための一連のテクノロジを使って、新しいゼロタッチの展開方法が導入されています。 これにより、IT 部門は、管理するインフラストラクチャをほとんど必要とせずに、また簡単かつ簡単に処理を行うことができます。 ユーザーの視点から見ると、いくつかの簡単な手順を実行して、生産的な状態にすることができます。 実際には、エンドユーザーからの唯一の操作として、ネットワークに接続し、資格情報を確認する必要があります。 その後のすべての機能が完全に自動化されます。
+従来、IT のプロは、イメージの構築とカスタマイズに多くの時間を費やしていました。イメージは、既に完全に優れた OS が既にインストールされているデバイスに後で展開されます。 Windows Autopilot では、Windows デバイスをセットアップおよび構成するためのテクノロジのコレクションを使用して、新しいゼロタッチ展開アプローチが導入されています。 これにより、IT 部門は、管理するインフラストラクチャをほとんどまたは全く使用し、簡単で簡単なプロセスでイメージを構成/カスタマイズできます。 ユーザーの観点からは、Surface を生産性の高い状態にするための簡単な手順がいくつか必要です。 実際、エンド ユーザーが必要とする唯一の操作は、ネットワークに接続し、資格情報を確認する操作です。 その後のすべてが完全に自動化されます。
 
-Windows 自動操縦機能を使用すると、次のことができます。
+Windows Autopilot を使用すると、次のタスクを実行できます。
 
-- Azure Active Directory (Azure AD) にデバイスを自動的に参加します。
-- Microsoft Intune などの MDM サービスにデバイスを自動登録します (Azure AD Premium サブスクリプションが必要です)。
-- 管理者アカウントの作成を制限する。 自動操縦は、Windows にログインする最初のユーザーを標準ユーザーとして入力する唯一の方法です。
-- デバイスプロファイルに基づいて、デバイスを作成し、構成グループに自動的に割り当てます。
-- 組織の要件を満たすために、OOBE (Box) のコンテンツとブランドをカスタマイズします。
-- Intune で完全なデバイス構成を有効にします。
+- デバイスを Azure Active Directory (Azure AD) に自動的に参加AD。
+- Microsoft Intune などの MDM サービスにデバイスを自動登録します (Azure AD Premium サブスクリプションが必要)。
+- 管理者アカウントの作成を制限する。 Autopilot は、Windows にログインした最初のユーザーが標準ユーザーとして入力する唯一の方法です。
+- デバイス プロファイルに基づいて、デバイスを作成し、構成グループに自動割り当てします。
+- 組織の要件に合わせて OOBE (Out of Box Experience) コンテンツとブランド化をカスタマイズします。
+- Intune でデバイスの完全な構成を有効にします。
 - デバイスをリモートでリセットまたは再起動します。
 
 ## 動作のしくみ
 
-Windows 自動操縦装置-登録済みデバイスは、最初の起動時に、 *ハードウェアハッシュ*と呼ばれる一意のデバイス署名を介してインターネット経由で識別されます。 これらのユーザーは、Azure Active Directory (Azure AD) やモバイルデバイス管理などの先進の管理ソリューションを使用して、自動的に登録および構成されています。
+Windows Autopilot に登録されたデバイスは、最初の起動時に、ハードウェア ハッシュと呼ばれる一意のデバイス署名によってインターネット経由で *識別されます*。 Azure Active Directory (Azure AD) やモバイル デバイス管理などの最新の管理ソリューションを使用して、自動的に登録および構成されます。
 
-Surface devices は、Windows 自動操縦が有効になっている Surface パートナーから購入した時点で登録できます。 これらのパートナーは、新しいデバイスを直接ユーザーに送ることができます。 デバイスは、最初にオンになったときに自動的に登録され、構成されます。 このプロセスでは、展開中のイメージの再作成が不要になります。これにより、デバイスの管理と配布に関する新しい機敏な方法を実装することができます。
+購入時に、Windows Autopilot が有効になっている Surface パートナーから Surface デバイスを登録できます。 これらのパートナーは、ユーザーに新しいデバイスを直接出荷できます。 デバイスは、最初にオンになったときに自動的に登録され、構成されます。 このプロセスでは、展開時の再インストールが不要になります。これにより、デバイス管理と配布の新しいアジャイル メソッドを実装できます。
 
 ## 最新の管理機能
 
-自動操縦は、surface Pro 7、Surface ノート Pc 3、Surface Pro X など、Surface デバイスに推奨される展開オプションであり、自動操縦を通じて展開するために特別に設計されています。
+Autopilot は、Surface Pro 7+、Surface Laptop 3、Surface Pro 7、Surface Pro X など、特に Autopilot による展開用に設計された Surface デバイスに推奨される展開オプションです。
 
- Surface デバイスの登録は、Microsoft クラウドソリューションプロバイダーの支援として行うことをお勧めします。 この手順により、Intune から直接、Surface 上の UEFI ファームウェア設定を管理できます。 これにより、デバイスを直接操作して証明書を管理する必要がなくなります。 詳細については、「 [Surface の UEFI 管理のための Intune の設定](surface-manage-dfci-guide.md) 」をご覧ください。
+ Microsoft クラウド ソリューション プロバイダーの支援を受け、Surface デバイスを登録するのをお手伝いします。 この手順では、Intune から直接 Surface の UEFI ファームウェア設定を管理できます。 証明書を管理するためにデバイスに物理的にタッチする必要が排除されます。 詳 [しくは、Surface UEFI 設定の Intune 管理](surface-manage-dfci-guide.md) に関するページをご覧ください。
 
 ## Windows のバージョンに関する考慮事項
 
-Windows 自動操縦を介した Surface デバイスの広範な展開 (購入時に Surface パートナーによる登録を含む) には、Windows 10 バージョン 1709 (秋の更新プログラム) 以降が必要です。
+購入時の Surface パートナーによる登録を含め、Windows Autopilot による Surface デバイスの広範な展開には、Windows 10 Version 1709 (Fall Creators Update) 以降が必要です。
 
-これらの Windows のバージョンでは、Windows 自動操縦用のデバイスを一意に識別する4000バイト (4k) ハッシュ値がサポートされています。これは、展開時の展開に必要です。 Surface Pro 7、Surface Pro X、Surface のノート Pc 3 などのすべての新しい Surface デバイスは、Windows 10 バージョン1903以降で出荷されています。
+これらの Windows バージョンでは、大規模な展開に必要な Windows Autopilot のデバイスを一意に識別する 4,000 バイト (4k) ハッシュ値がサポートされています。 Surface Pro 7 以降、Surface Pro X、Surface Laptop 3 を含むすべての新しい Surface デバイスは、Windows 10 Version 1903 以降に搭載されています。
 
-## 修復または交換の必要性に応じた Surface デバイスでの Exchange の操作性
+## 修復または交換が必要な Surface デバイスでの Exchange エクスペリエンス
 
-Microsoft は、自動操縦のための各サーフェスを自動的にチェックし、お客様のテナントからデバイスを登録解除します。  Microsoft は、交換されたデバイスが、お客様にリリースされると、Windows 自動操縦に登録されることを保証します。 このサービスは、Microsoft とのすべてのデバイス交換サービス注文で利用できます。
+Microsoft は、すべての Surface で Autopilot 登録を自動的にチェックし、お客様のテナントからデバイスの登録を解除します。  Microsoft では、代替デバイスが顧客に出荷された後、代替デバイスが Windows Autopilot に登録されます。 このサービスは、Microsoft と直接のすべてのデバイス交換サービス注文で利用できます。
 
 > [!NOTE]
-> 顧客がパートナーを使ってデバイスを返品する場合、パートナーは Windows 自動操縦の登録解除とデバイスの登録など、exchange プロセスの管理を担当します。
+> お客様がパートナーを使用してデバイスを返却する場合、パートナーは Windows Autopilot へのデバイスの登録解除や登録などの交換プロセスの管理を担当します。
 
 ## Microsoft サポートの登録
 
-顧客および Microsoft クラウドソリューションプロバイダー (Csp) には、Microsoft サポートに要求を送信することによって Surface デバイスを登録するオプションがあります。 詳細については、「 [Windows 自動操縦の表面登録サポート](surface-autopilot-registration-support.md)」を参照してください。
+お客様と Microsoft クラウド ソリューション プロバイダー (CSP) には、Microsoft サポートに要求を送信して Surface デバイスを登録するオプションがあります。 詳しくは [、Windows Autopilot の Surface 登録サポートに関するページをご覧ください](surface-autopilot-registration-support.md)。
 
-## Windows 自動操縦に対応した Surface パートナー
+## Windows Autopilot が有効になっている Surface パートナー
 
-[Surface パートナーの選択] では、購入時に Windows 自動操縦に Surface デバイスを登録できます。 また、登録されたデバイスを直接ユーザーに送ることもできます。 デバイスは、Windows 自動操縦機能、Azure AD、モバイルデバイス管理を使用して、ゼロタッチプロセスで完全に構成できます。
+Surface パートナーは、購入時に Surface デバイスを Windows Autopilot に登録できます。 また、登録済みデバイスをユーザーに直接出荷することもできます。 デバイスは、Windows Autopilot、Azure AD、およびモバイル デバイス管理を使用して、ゼロタッチ プロセスを通じて完全に構成できます。
 
-Windows 自動操縦に対応した Surface パートナーには次のものがあります。
+Windows Autopilot が有効になっている Surface パートナーには、次のものが含まれます。
 
-| US パートナー | グローバルパートナー | US 販売業者 |
+| 米国パートナー | グローバル パートナー | 米国のディストリビューター |
 |--------------|---------------|-------------------|
 | * [CDW](https://www.cdw.com/) | * [また](https://www.also.com/ec/cms5/de_1010/1010_anbieter/microsoft/windows-autopilot/index.jsp) | * [Synnex](https://www.synnexcorp.com/us/microsoft/surface-autopilot/)  |
-| * [関連](https://www.connection.com/brand/microsoft/microsoft-surface)   | * [ATEA](https://www.atea.com/) | * [テクニカルデータ](https://www.techdata.com/)  |
-| * [知る](https://www.insight.com/en_US/buy/partner/microsoft/surface/windows-autopilot.html)  | * [/Htle](https://www.bechtle.com/marken/microsoft/microsoft-windows-autopilot) | * [Ingram](https://go.microsoft.com/fwlink/p/?LinkID=2128954)   |
-| * [SHI](https://www.shi.com/Surface) | * [Cancom](https://www.cancom.de/) |    |
+| * [接続](https://www.connection.com/brand/microsoft/microsoft-surface)   | * [ATEA](https://www.atea.com/) | * [Techdata](https://www.techdata.com/)  |
+| * [Insight](https://www.insight.com/en_US/buy/partner/microsoft/surface/windows-autopilot.html)  | * [ベクトレ](https://www.bechtle.com/marken/microsoft/microsoft-windows-autopilot) | * [Ingram](https://go.microsoft.com/fwlink/p/?LinkID=2128954)   |
+| * [数日](https://www.shi.com/Surface) | * [Cancom](https://www.cancom.de/) |    |
 | * [LDI Connect](https://www.myldi.com/managed-it/)  | * [Computacenter](https://www.computacenter.com/uk) |    |
 | * [F1](https://www.functiononeit.com/#empower)  |   |  |
 | * [保護された信頼](https://go.microsoft.com/fwlink/p/?LinkID=2129005) | | | 
 
 ## 詳細情報
 
-Windows 自動操縦の詳細については、以下を参照してください。
+Windows Autopilot の詳細については、以下を参照してください。
 - [Windows Autopilot の概要](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-10-autopilot)
 - [Windows Autopilot の要件](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-autopilot-requirements)
-- [Windows 自動操縦の表面登録サポート](surface-autopilot-registration-support.md)
+- [Windows Autopilot の Surface 登録サポート](surface-autopilot-registration-support.md)

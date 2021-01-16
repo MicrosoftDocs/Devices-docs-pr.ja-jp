@@ -19,48 +19,48 @@ ms.custom:
 - CSSTroubleshoot
 ms.reviewer: mablaik
 description: Microsoft Surface および Surface Hub 製品のサポート情報。
-ms.openlocfilehash: fa86756c122814e7f90351782fc8f6f34227ae42
-ms.sourcegitcommit: 56526c92d84dbc2cebcb8071d995efe399f306df
+ms.openlocfilehash: 41ed1cf624317234fb8786bb2c8615e6eed58551
+ms.sourcegitcommit: 1053479c191fd10651d31a466fad1769fb0cd28b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/08/2020
-ms.locfileid: "11105258"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "11271541"
 ---
-# Surface Support
+# Surface のサポート
 
-### お問い合わせの前に:  
+### お問い合わせの前に、  
 
-[Surface Diagnostic Toolkit For Business](https://docs.microsoft.com/surface/surface-diagnostic-toolkit-business) (SDT) を実行します。 SDT は、IT 管理者が Surface デバイスでのハードウェア、ソフトウェア、およびファームウェアの問題をすばやく調査、トラブルシューティング、解決することを可能にします。 デバイス正常性の分析や問題解決のガイダンスなど、さまざまな診断テストとソフトウェア修復を実行できます。 
+Surface [Diagnostic Toolkit for Business](https://docs.microsoft.com/surface/surface-diagnostic-toolkit-business) (SDT) を実行します。 SDT を使用すると、IT 管理者は Surface デバイスに関するハードウェア、ソフトウェア、ファームウェアの問題をすばやく調査、トラブルシューティング、解決できます。 デバイスの正常性に関する分析情報や問題を解決するためのガイダンスを取得する以外に、さまざまな診断テストとソフトウェア修復を実行できます。 
 
-ツールキットを実行しても問題が解決しない場合は、次のタブを使用してサポートオプションを選びます。
+ツールキットの実行後も問題が解決しない場合は、次のタブを使用してサポート オプションを選択します。
 
-## [オンラインサポート](#tab/online)
+## [オンライン サポート](#tab/online)
 
 > [!NOTE]
 > Microsoft アカウントまたは Azure Active Directory アカウントを使用して、オンライン申請ポータルにログインする必要があります。  
 
-[保証とサービスの請求フォーム](https://download.microsoft.com/download/2/e/0/2e00e1c2-3f49-4b6a-b605-74a0244cb88b/Warranty_and_Service_Claim_Submission_Form.xlsx)を使用して、保証とサービスリクエストを迅速化します。 フォームの使用方法については、「 [保証とサービスの請求書フォームの手順](warranty-and-service-claim-form.md) 」および「ケースの申請に添付する」を参照してください。
+保証およびサービス要求フォームを使用して、保証およびサービス [要求を迅速化します](https://download.microsoft.com/download/2/e/0/2e00e1c2-3f49-4b6a-b605-74a0244cb88b/Warranty_and_Service_Claim_Submission_Form.xlsx)。 フォームの使い方については、「 [保証](warranty-and-service-claim-form.md) とサービス クレーム フォームの手順」を参照し、ケース提出に添付してください。
 
-ビジネス顧客の場合: [サービスリクエストを送信](https://support.serviceshub.microsoft.com/supportforbusiness/create?sapId=d383b26c-f150-6220-8f1b-e8aa325d9727)します。 
+ビジネスのお客様の場合: [サービス リクエストを送信します](https://support.serviceshub.microsoft.com/supportforbusiness/create?sapId=d383b26c-f150-6220-8f1b-e8aa325d9727&hidden=false)。 
 
-Microsoft プレミアのお客様の場合: サービス [ハブでサービスリクエストを送信](https://serviceshub.microsoft.com/support/contactsupport)します。 
+Microsoft Premier のお客様の場合: [サービス ハブでサービス リクエストを送信します](https://serviceshub.microsoft.com/support/contactsupport)。 
 
  
-## [電話のサポート](#tab/phone)
+## [電話サポート](#tab/phone)
 
-[サービスリクエストを開始するには、こちらにお電話](https://support.microsoft.com/help/4051701/global-customer-service-phone-numbers)ください。 電話をかけるときに、デバイスのシリアル番号を用意しておきます。 
+[サービスリクエストを開始するためにお電話ください](https://support.microsoft.com/help/4051701/global-customer-service-phone-numbers)。 通話時にデバイスのシリアル番号を準備します。 
 
 ## [ストア内サポート](#tab/instore)
 
-## 中国 (インド)
+## 中国、インド
 
-問題の解決に役立つように、Surface Walk-In Center で予定を作成します。
+Surface Walk-In センターで、問題の解決に役立つ予定を作成します。
 
-1. [Surface Walk-In Center の [連絡先情報](https://support.microsoft.com/help/4498593/find-surface-walk-in-center-contact-information)] ページに移動します。 
-2. 目的の場所を選択して、最も近い Walk-In センターを検索します。  
-3. Walk-In センターを選択して、予定のスケジュールを設定します。
+1. [Surface Walk-In [センターの連絡先情報] ページに移動](https://support.microsoft.com/help/4498593/find-surface-walk-in-center-contact-information) します。 
+2. 場所を選択して、最も近Walk-Inセンターを検索します。  
+3. お客様のWalk-Inセンターを選択し、連絡して予定をスケジュールしてください。
 
 
 ---
 
-問題が解決しない場合は、 [Microsoft コミュニティ](https://answers.microsoft.com/)に移動します。
+問題が解決しない場合は、 Microsoft コミュニティ [に移動します](https://answers.microsoft.com/)。

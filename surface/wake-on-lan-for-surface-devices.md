@@ -1,7 +1,7 @@
 ---
-title: Surface devices 用の Wake on LAN (Surface)
-description: デバイスに電源が入っていない場合でも、Wake on LAN を使用して、管理またはメンテナンスタスクを実行したり、管理ソリューションを自動的に有効にしたりする方法について説明します。
-keywords: update、deploy、driver、wol、wake on-lan
+title: Surface デバイス用のスリープ解除 (LAN) (Surface)
+description: Wake On LAN を使ってデバイスをリモートでスリープ解除して管理タスクやメンテナンス タスクを実行する方法、または管理ソリューションを自動的に有効にする方法 (デバイスの電源が切っている場合でも) を参照してください。
+keywords: 更新, 展開, ドライバー, wol, wake-on-lan
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.pagetype: surface, devices
@@ -13,57 +13,59 @@ ms.topic: article
 ms.reviewer: scottmca
 manager: laurawi
 ms.audience: itpro
-ms.openlocfilehash: a56f6e01a4d7bf1cc40d73f34c3abf8e04443989
-ms.sourcegitcommit: c1efb75e8524193bdc0a5f7496dc23a92ac665c8
+ms.date: 1/15/2021
+ms.openlocfilehash: 709286cc0d62bd0b4c1e28e7626529fc4a215ae2
+ms.sourcegitcommit: 1b86286bd13b13749ddbf454ae78d9a24fec44ee
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/12/2020
-ms.locfileid: "11114615"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "11271124"
 ---
 # Surface デバイス での Wake On LAN の使用
 
-Windows 10、バージョン 1607 (Windows 10 記念日更新とも呼ばれます) 以降を実行している surface デバイスで、Surface Ethernet アダプターを使って有線ネットワークに接続し、接続されたスタンバイからの Wake On LAN (WOL) 機能を使用できます。 WOL を使用すると、デバイスをリモートでスリープ解除して管理またはメンテナンスタスクを実行したり、管理ソリューション (Microsoft Endpoint Configuration Manager など) を自動的に有効にしたりすることができます。 たとえば、Surface Dock または Surface Pro 3 のドッキングステーションと共にドッキングされた Surface デバイスにアプリケーションを展開するには、office が空になっているときに、夜間中央のウィンドウで Microsoft Endpoint Configuration Manager を使用します。
+Windows 10 バージョン 1607 (Windows 10 Anniversary Update とも呼ばれる) 以降を実行し、Surface イーサネット アダプターを使って有線ネットワークに接続する Surface デバイスは、コネクト スタンバイから Wake On LAN (WOL) を使用できます。 WOL を使用すると、デバイスをリモートで起動して管理タスクやメンテナンス タスクを実行したり、管理ソリューション (Microsoft Endpoint Configuration Manager など) を自動的に有効にできます。 たとえば、オフィスが空の夜間のウィンドウで Microsoft Endpoint Configuration Manager を使用して、Surface ドックまたは Surface Pro 3 ドッキング ステーションにドッキングされた Surface デバイスにアプリケーションを展開できます。
 
 >[!NOTE]
->WOL をサポートするには、Surface デバイスが AC 電源に接続され、接続されたスタンバイ (スリープ) に接続されている必要があります。 休止状態または電源がオフになっているデバイスから WOL は使用できません。
+>WOL をサポートするには、Surface デバイスを AC 電源と接続スタンバイ (スリープ) に接続する必要があります。 休止状態にあるデバイスや電源がオフになっているデバイスでは、WOL を使用できません。
 
 ## サポートされるデバイス
 
 WOL では、次のデバイスがサポートされています。
 
 * Surface Ethernet アダプター
-* Surface USB-C ~ Ethernet および USB アダプター
+* Surface USB-C からイーサネットおよび USB アダプター
 * Surface ドック
-* Surface Pro 3 用 surface ドッキングステーション
+* Surface Pro 3 用 Surface ドッキング ステーション
 * Surface 3
 * Surface Pro 3
 * Surface Pro 4
-* Surface Pro (第5世代)
-* LTE アドバンスト付き Surface Pro (第5世代)
+* Surface Pro (第 5 世代)
+* Surface Pro (第 5 世代) LTE Advanced
 * Surface Book
-* Surface ラップトップ (第1世代)
+* Surface Laptop (第 1 世代)
 * Surface Pro 6
 * Surface Book 2
 * Surface Laptop 2
 * Surface Go
 * Surface Go LTE Advanced
-* Surface Studio 2 (以下の「Surface Studio 2 の手順」を参照)
+* Surface Studio 2 (下記の Surface Studio 2 の手順を参照)
 * Surface Pro 7
 * Surface Laptop 3
-* Surface のノート Pc の移動
+* Surface Laptop Go
+* Surface Pro 7+
 
 ## WOL ドライバー
 
-Surface デバイスで WOL サポートを有効にするには、Surface Ethernet アダプター用の特定のドライバーが必要です。 このドライバーは、Surface デバイス用の標準ドライバーとファームウェアパックに含まれていません。別途ダウンロードしてインストールする必要があります。 Surface WOL ドライバー (SurfaceWOL.msi) は、Microsoft ダウンロードセンターの [ [Surface Tools](https://www.microsoft.com/download/details.aspx?id=46703) ] ページからダウンロードできます。
+Surface デバイスで WOL サポートを有効にするには、Surface イーサネット アダプター用の特定のドライバーが必要です。 このドライバーは、Surface デバイスの標準のドライバーおよびファームウェア パックには含まれていません。別途ダウンロードしてインストールする必要があります。 Surface WOL ドライバー (SurfaceWOL.msi) は、Microsoft ダウンロード センターの [[Surface Tools for IT]](https://www.microsoft.com/download/details.aspx?id=46703) ページからダウンロードできます。
 
-Surface デバイスでこの Microsoft Windows インストーラー (.msi) ファイルを実行して Surface WOL ドライバーをインストールしたり、Microsoft Endpoint Configuration Manager などのアプリケーション展開ソリューションを使用して Surface デバイスに配布したりすることができます。 展開時に Surface WOL ドライバーを含めるには、展開プロセス中に .msi ファイルをアプリケーションとしてインストールできます。 Surface WOL ドライバーファイルを抽出して展開プロセスに含めることもできます。 たとえば、Microsoft 展開ツールキット (MDT) 展開共有にそれらを含めることができます。 MDT での Surface の展開の詳細については、「 [Windows 10 を surface デバイスに展開して Microsoft 展開ツールキットを使用](https://technet.microsoft.com/itpro/surface/deploy-windows-10-to-surface-devices-with-mdt)する」を参照してください。
+Surface デバイスでこの Microsoft Windows インストーラー (.msi) ファイルを実行して Surface WOL ドライバーをインストールしたり、Microsoft Endpoint Configuration Manager などのアプリケーション展開ソリューションを使用して Surface デバイスに配布することができます。 展開中に Surface WOL ドライバーを含めるには、展開プロセス中に .msi ファイルをアプリケーションとしてインストールします。 展開プロセスに含める Surface WOL ドライバー ファイルを抽出することもできます。 たとえば、Microsoft Deployment Toolkit (MDT) 展開共有に含めできます。 MDT による Surface の展開の詳細については、「Microsoft Deployment Toolkit を使った Surface デバイスへの [Windows 10 の展開」をご覧ください](https://technet.microsoft.com/itpro/surface/deploy-windows-10-to-surface-devices-with-mdt)。
 
 > [!NOTE]
-> SurfaceWOL.msi のインストール中に、次のレジストリキーが1の値に設定されます。これにより、WOL ドライバーがインストールされているシステムを簡単に識別できるようになります。 展開時にこれらのドライバーを個別に抽出してインストールする場合は、このレジストリキーは構成されず、手動で、またはスクリプトを使って構成する必要があります。
+> SurfaceWOL.msi のインストール時に、次のレジストリ キーの値を 1 に設定すると、WOL ドライバーがインストールされているシステムを簡単に識別できます。 展開中にこれらのドライバーを個別に抽出してインストールすることを選択した場合、このレジストリ キーは構成されません。また、手動またはスクリプトを使用して構成する必要があります。
 > 
 > **HKLM\SYSTEM\CurrentControlSet\Control\Power AllowSystemRequiredPowerRequests** 
 
-SurfaceWOL.msi の内容を抽出するには、次の例に示すように MSIExec 管理インストールオプション (**/a**) を使用して、コンテンツを C:\WOL\ フォルダーに抽出します。
+SurfaceWOL.msi の内容を抽出するには、次の例に示すように MSIExec 管理インストール オプション (**/a)** を使用して、コンテンツを C:\WOL\ フォルダーに抽出します。
 
    `msiexec /a surfacewol.msi targetdir=C:\WOL /qn`
 
@@ -71,7 +73,7 @@ SurfaceWOL.msi の内容を抽出するには、次の例に示すように MSIE
 
 Surface Studio 2 で WOL を有効にするには、次の手順を使用する必要があります。
 
-1. 次のレジストリキーを作成します。
+1. 次のレジストリ キーを作成します。
 
    ```console
    ; Set CONNECTIVITYINSTANDBY to 1:
@@ -89,12 +91,12 @@ Surface Studio 2 で WOL を有効にするには、次の手順を使用する�
 
 ## Surface WOL の使用
 
-Surface WOL ドライバーは、WOL 標準に準拠しているため、デバイスはマジックパケットと呼ばれる特殊なネットワーク通信によって呼び出されます。 Magic packet は、6バイトの 255 (または16進数の FF) で構成され、その後にターゲットコンピューターの MAC アドレスが16回繰り返されます。 この magic packet と [ウィキペディア](https://wikipedia.org/wiki/Wake-on-LAN#Magic_packet)の WOL 標準の詳細については、こちらをご覧ください。
+Surface WOL ドライバーは WOL 標準に準拠しています。この場合、デバイスは、魔法のパケットと呼ばれる特別なネットワーク通信によって発生します。 この魔法のパケットは、255 の 6 バイト (または 16 進数の FF) と、ターゲット コンピューターの MAC アドレスの 16 回の繰り返しで構成されます。 魔法のパケットと WOL 標準の詳細については [、Wikipedia](https://wikipedia.org/wiki/Wake-on-LAN#Magic_packet)を参照してください。
 
 >[!NOTE]
->WOL を使って magic packet を送信し、デバイスをウェイクアップするには、ターゲットデバイスとイーサネットアダプターの MAC アドレスがわかっている必要があります。 Magic packet では IP ネットワークプロトコルを使用していないため、デバイスの IP アドレスまたは DNS 名を使うことはできません。
+>WOL を使用して魔法のパケットを送信し、デバイスをスリープ解除するには、ターゲット デバイスとイーサネット アダプターの MAC アドレスを知っている必要があります。 この魔法のパケットは IP ネットワーク プロトコルを使用しないので、デバイスの IP アドレスまたは DNS 名を使用することはできません。
 
-Configuration Manager などの多くの管理ソリューションは、WOL の組み込みサポートを提供しています。 Microsoft ストアアプリ、PowerShell モジュール、サードパーティ製のアプリケーション、サードパーティ製の管理ソリューションなど、デバイスをスリープ状態にするための magic packet を送信できるソリューションも数多くあります。 たとえば、TechNet スクリプトセンターで [Wake ON LAN PowerShell モジュール](https://gallery.technet.microsoft.com/scriptcenter/Wake-On-Lan-815424c4) を使用することができます。 
+Configuration Manager などの多くの管理ソリューションは、WOL の組み込みサポートを提供します。 また、Microsoft Store アプリ、PowerShell モジュール、サード パーティ製アプリケーション、サード パーティ製の管理ソリューションなど、多くのソリューションを使用して、デバイスをスリープ解除する魔法のパケットを送信できます。 たとえば、TechNet スクリプト センターの [Wake On LAN PowerShell](https://gallery.technet.microsoft.com/scriptcenter/Wake-On-Lan-815424c4) モジュールを使用できます。 
 
 >[!NOTE]
->デバイスが magic packet で起動された後、アプリケーションがシステムのスリープを積極的に妨害していない場合、または AllowSystemRequiredPowerRequests レジストリキーが1に設定されていない場合は、デバイスはスリープ状態に戻ります。これにより、アプリケーションはスリープを防ぐことができます。 このレジストリキーの詳細については、この記事の「 [WOL ドライバー](#wol-driver) 」セクションを参照してください。
+>デバイスが魔法のパケットで起動された後、アプリケーションがシステム上のスリープをアクティブに妨げない場合、または AllowSystemRequiredPowerRequests レジストリ キーが 1 に構成されていない場合、デバイスはスリープ状態に戻ります。これにより、アプリケーションはスリープ状態を回避できます。 このレジストリ [キーの詳細については](#wol-driver) 、この記事の WOL ドライバーセクションを参照してください。
