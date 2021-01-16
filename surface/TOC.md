@@ -15,7 +15,7 @@
 ### [Surface Dock の新機能](surface-dock-whats-new.md)
 ### [Surface Book 3 GPU の技術概要](surface-book-GPU-overview.md)
 ### [Surface Book 3 Quadro RTX 3000 の技術概要](surface-book-quadro.md)
-### [LTE Advanced による、セキュリティで保護されて場所を問わず作業できるモビリティ機能](https://www.microsoft.com/surface/business/lte-laptops-and-tablets)
+### [LTE Advanced による、安全でどこでも使えるモビリティ](https://www.microsoft.com/surface/business/lte-laptops-and-tablets)
 
 ## プラン
 
