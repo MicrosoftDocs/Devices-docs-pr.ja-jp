@@ -8,16 +8,16 @@ ms.sitesec: library
 author: coveminer
 ms.author: greglin
 ms.topic: article
-ms.date: 10/12/2020
+ms.date: 1/15/2021
 ms.reviewer: jessko
 manager: laurawi
 ms.audience: itpro
-ms.openlocfilehash: 7d82a24126798c20f11c51074f6099e1363c257f
-ms.sourcegitcommit: c1efb75e8524193bdc0a5f7496dc23a92ac665c8
+ms.openlocfilehash: 30f7cd7d861b6497cd536aeb0ea348b6946a2674
+ms.sourcegitcommit: 1053479c191fd10651d31a466fad1769fb0cd28b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/12/2020
-ms.locfileid: "11114625"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "11271361"
 ---
 # Surface Pro X の展開、管理、メンテナンス
 
@@ -42,7 +42,7 @@ Autopilot による展開には、いくつかの利点があります。ゼロ�
 
 ## イメージ ベースの展開に関する考慮事項
 
-現在、Microsoft Deployment Toolkit (MDT) および Microsoft Endpoint Configuration Manager (旧称 System Center Configuration Manager) では、Surface Pro X でのオペレーティング システムの展開がサポートされていません。 イメージ ベースの展開をご利用のお客様は、最新の展開ソリューションに移行する適切な時期を引き続き評価しつつ、Surface Pro 7 の使用をご検討ください。 
+現在、Microsoft Deployment Toolkit (MDT) および Microsoft Endpoint Configuration Manager (旧称 System Center Configuration Manager) では、Surface Pro X でのオペレーティング システムの展開がサポートされていません。 イメージ ベースの展開をご利用のお客様は、最新の展開ソリューションに移行する適切な時期を引き続き評価しつつ、Surface Pro 7+ の使用をご検討ください。 
 
 ## Surface Pro X デバイスの管理
 
@@ -180,7 +180,7 @@ ARM ベースのプロセッサで動作する Windows 10 PC が特定のサー�
 
 ### MDT または Endpoint Configuration Manager を使用して Surface Pro X を展開できますか?
 
-現在、Microsoft Deployment Toolkit (MDT) および Microsoft Endpoint Configuration Manager では、Surface Pro X でのオペレーティング システムの展開がサポートされていません。イメージ ベースの展開をご利用のお客様は、クラウドへの移行に適したタイミングを引き続き評価しつつ、Surface Pro 7 の使用をご検討ください。
+現在、Microsoft Deployment Toolkit (MDT) および Microsoft Endpoint Configuration Manager では、Surface Pro X でのオペレーティング システムの展開がサポートされていません。 イメージ ベースの展開をご利用のお客様は、クラウドへの移行に適したタイミングを引き続き評価しつつ、Surface Pro 7+ の使用をご検討ください。
 
 ### Surface Pro X を展開する方法は?
 
