@@ -16,6 +16,7 @@
 #### [Surface Hub 2S 用サイト計画](surface-hub-2s-site-planning.md)
 #### [Surface Hub 2S クイック スタート](surface-hub-2s-quick-start.md)
 #### [Surface Hub 2S を設置して取り付ける](surface-hub-2s-install-mount.md)
+#### [Surface Hub 2S 85 の移動と処理](hub-move.md)
 #### [Surface Hub 2S 85 を設置して取り付ける](surface-hub-2s-85-install-mount.md)
 #### [Surface Hub 2S の壁掛けをカスタマイズする](surface-hub-2s-custom-install.md)
 #### [セットアップのワークシート](setup-worksheet-surface-hub.md)
