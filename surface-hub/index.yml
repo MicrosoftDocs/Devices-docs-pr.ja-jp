@@ -14,12 +14,12 @@ metadata:
   author: greg-lindsay
   ms.author: greglin
   manager: laurawi
-  ms.openlocfilehash: b950d8e0a15609312ba552df2be084257a5cd4ad
-  ms.sourcegitcommit: 1053479c191fd10651d31a466fad1769fb0cd28b
+  ms.openlocfilehash: fb4d07fb216a283a2a6d7b576e06cdfe7dc74a47
+  ms.sourcegitcommit: 880980b64bb394423280acbcb1653012a4de5642
   ms.translationtype: HT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 01/16/2021
-  ms.locfileid: "11271551"
+  ms.lasthandoff: 01/22/2021
+  ms.locfileid: "11297070"
 landingContent:
 - title: Surface Hub 2S の導入準備
   linkLists:
@@ -63,24 +63,36 @@ landingContent:
       url: https://www.youtube.com/watch?v=CH2seLS5Wb0
     - text: Microsoft Surface Hub 2S IT プロ詳細情報
       url: https://youtu.be/fFiL60JztGk
+- title: 展開する
+  linkLists:
   - linkListType: deploy
     links:
+    - url: https://docs.microsoft.com/microsoftteams/rooms/coordinated-meetings
+      text: Microsoft Teams ミーティングと Surface Hub 間の調整された会議を設定する
     - url: surface-hub-2s-adoption-kit.md
       text: Surface Hub 2S の導入とトレーニング
-    - url: surface-hub-2s-deploy-checklist.md
-      text: Surface Hub 2S 展開チェックリスト
     - url: surface-hub-2s-account.md
       text: デバイス アカウントの作成
+- title: 管理
+  linkLists:
+  - linkListType: learn
+    links:
+    - url: https://docs.microsoft.com/microsoftteams/rooms/surface-hub-manage-config
+      text: Surface Hub で Microsoft Teams の設定を管理する
+    - url: surface-hub-2s-manage-intune.md
+      text: Intune で Surface Hub 2S を管理する
+    - url: local-management-surface-hub-settings.md
+      text: ローカル設定の管理
 - title: セキュリテイ保護
   linkLists:
   - linkListType: learn
     links:
     - url: surface-hub-security.md
       text: Surface Hub のセキュリティ概要
-    - url: surface-hub-2s-manage-intune.md
-      text: Intune による管理
-    - url: local-management-surface-hub-settings.md
-      text: ローカル設定の管理
+    - url: surface-hub-2s-phone-authenticate.md
+      text: Surface Hub でパスワードなしのサインインを構成する
+    - url: surface-hub-2s-secure-with-uefi-semm.md
+      text: SEMM と UEFI による Surface Hub 2S のセキュリティ保護と管理
 - title: トラブルシューティング
   linkLists:
   - linkListType: learn
