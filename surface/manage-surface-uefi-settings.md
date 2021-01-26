@@ -12,17 +12,17 @@ ms.author: greglin
 ms.topic: article
 ms.reviewer: hachidan
 manager: laurawi
-ms.date: 01/15/2021
-ms.openlocfilehash: d8d47db3bd6f69783670b285a797337373e02d72
-ms.sourcegitcommit: 1053479c191fd10651d31a466fad1769fb0cd28b
+ms.date: 01/25/2021
+ms.openlocfilehash: af9eac171dea5d29ce9776766a2c5842bea9eb8c
+ms.sourcegitcommit: 1b12ea363785697ddc705b0a0cc7bb35cad6b327
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "11271431"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "11300698"
 ---
 # Surface UEFI の設定を管理する
 
-Surface デバイスの現在および将来のすべての世代では、Microsoft が特にこれらのデバイス向けに設計した独自の Unified Extensible Firmware Interface (UEFI) を使用します。 Surface UEFI の設定では、組み込みのデバイスとコンポーネントを有効または無効にし、UEFI 設定の変更を保護し、Surface デバイスのブート設定を調整できます。 
+ Surface PC デバイスは、Microsoft が特にこれらのデバイス向けに設計した独自の Unified Extensible Firmware Interface (UEFI) を利用するように設計されています。 Surface UEFI の設定では、組み込みのデバイスとコンポーネントを有効または無効にし、UEFI 設定の変更を保護し、Surface デバイスのブート設定を調整できます。 
 
 ## サポートされる製品
 
@@ -32,7 +32,7 @@ UEFI 管理は、次の場合にサポートされます。
 - Surface Laptop (第 1 世代)、Surface Laptop 2、Surface Laptop 3、Surface Laptop Go
 - Surface Studio (第 1 世代)、Surface Studio 2
 - Surface Book、Surface Book 2、Surface Book 3
-- Surface Go、Surface Go 2
+- Surface Go、Surface Go 2[ <sup> 1 </sup> ](#references)
 
 ## クラウドベースの管理のサポート
 
@@ -44,7 +44,7 @@ Microsoft Intune (パブリック プレビューで使用可能) に組み込�
 
 1. Surface をシャットダウンし、約 10 秒待って、電源が切れるのを確認します。
 2. 音量を上げ **ボタン** を長押しし、同時に電源ボタンを長押し **します。**
-3. Microsoft または Surface ロゴが画面に表示されたら、UEFI**** 画面が表示されるまで音量を上げ続けるボタンを押したままにします。
+3. Microsoft または Surface ロゴが画面に表示されたら、UEFI**** 画面が表示されるまで音量を上げ続けます。
 
 ## UEFI PC 情報ページ
 
@@ -162,7 +162,7 @@ Surface デバイスの最新のファームウェア バージョンに関す�
  *8.ゼロ タッチ UEFI 管理と他の機能へのアクセスを管理する* 
 
 
-ゼロ タッチ UEFI 管理を使用すると、Intune 内のデバイス プロファイル (DFCI) と呼ばれるデバイス プロファイルを使用して、UEFI 設定をリモートで管理できます。 この設定を構成しない場合、DFCI を使用して対象デバイスを管理する機能は [準備完了] に設定 **されます**。 DFCI を回避するには、[オプトアウト] **を選択します**。 
+ゼロ タッチ UEFI 管理を使用すると、Intune 内のデバイス プロファイル (DFCI) と呼ばれるデバイス プロファイルを使用して、UEFI 設定をリモートで管理できます。 この設定を構成しない場合、DFCI を使用して対象デバイスを管理する機能が [準備完了] に設定 **されます**。 DFCI を回避するには、[オプトアウト] **を選択します**。 
 
 > [!NOTE]
 > 現在、UEFI 管理の設定ページと DFCI の使用は、Surface Pro 7+、Surface Laptop Go、Surface Book 3、Surface Laptop 3、Surface Pro 7、Surface Pro X で利用できます。詳しくは [、Surface UEFI 設定の Intune 管理に関するページをご覧ください](surface-manage-dfci-guide.md)。
@@ -201,13 +201,13 @@ Surface デバイスのファームウェアを Windows Update か手動イン�
 
 ![薄い緑色の進行状況バーが表示された Surface KIP ファームウェア](images/manage-surface-uefi-fig13.png "Surface touch firmware with light green progress bar")
 
-*図 15. Surface KIP のファームウェア更新プログラムは、明るい緑色の進行状況バーを表示します。*
+*図 15. Surface KIP のファームウェア更新プログラムに、明るい緑色の進行状況バーが表示される*
 
 ![ピンクの進行状況バーが表示された Surface ISH ファームウェア](images/manage-surface-uefi-fig14.png "Surface ISH firmware with pink progress bar")
 
 *図 16 Surface ISH ファームウェア更新プログラムに薄いピンクの進行状況バーが表示される*
 
-![灰色の進行状況バーを含む Surface Trackpad ファームウェア](images/manage-surface-uefi-fig15.png "Surface Trackpad firmware with gray progress bar")
+![灰色の進行状況バーが表示された Surface トラックパッドのファームウェア](images/manage-surface-uefi-fig15.png "Surface Trackpad firmware with gray progress bar")
 
 *図 17. Surface Trackpad のファームウェア更新プログラムにピンクの進行状況バーが表示される*
 
@@ -227,6 +227,10 @@ Surface デバイスのファームウェアを Windows Update か手動イン�
 ![セキュア ブートが無効になっていることを示す Surface のブート画面](images/manage-surface-uefi-fig18.png "Surface boot screen that indicates Secure Boot has been disabled")
 
 *図 20. Surface UEFI の設定でセキュア ブートが無効になっていることを示す Surface のブート画面*
+
+## 参考資料
+
+1. Surface Go と Surface Go 2 はサード パーティ製の UEFI を使用し、DFCI はサポートされていません。 
 
 ## 関連トピック
 
