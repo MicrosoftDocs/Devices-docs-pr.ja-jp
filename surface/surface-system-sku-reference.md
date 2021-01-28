@@ -1,7 +1,7 @@
 ---
-title: システム SKU リファレンス (Surface)
-description: システム モデルとシステム SKU 名のリファレンスを参照してください。
-keywords: uefi, 構成, ファームウェア, セキュア, semm
+title: Surface システム SKU リファレンス
+description: すべての Surface デバイスのシステム モデル名とシステム SKU 名のリファレンスをご覧ください。
+keywords: uefi, 構成, ファームウェア, セキュア, semm, Autopilot
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.pagetype: surface, devices, security
@@ -9,21 +9,21 @@ ms.sitesec: library
 author: coveminer
 ms.author: greglin
 ms.topic: article
-ms.date: 1/15/2021
+ms.date: 01/27/2021
 ms.reviewer: ''
 manager: laurawi
 ms.localizationpriority: medium
 ms.audience: itpro
-ms.openlocfilehash: 2140faf346229842bffc4f9348041f4667b94686
-ms.sourcegitcommit: 1053479c191fd10651d31a466fad1769fb0cd28b
+ms.openlocfilehash: 0fe13750e7e8c8188b52726c114a6b3668434d39
+ms.sourcegitcommit: 25b8d880c6438f94b008f47b4fecc3aa4c473e85
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "11271371"
+ms.lasthandoff: 01/28/2021
+ms.locfileid: "11304830"
 ---
-# システム SKU リファレンス
+# Surface システム SKU リファレンス
 
-このドキュメントでは、PowerShell または WMI を使用して特定のデバイスのコンピューターの状態をすばやく判断するために使用できるシステム モデルとシステム SKU 名の参照を提供します。
+このドキュメントでは、Surface デバイスを Windows Autopilot に登録したり、PowerShell や WMI を使って特定のデバイスのコンピューターの状態を確認したりなど、さまざまな IT タスクに使用できるリファレンスを提供します。
 
 システム モデルとシステム SKU は、Surface デバイスの UEFI レイヤーのシステム管理 BIOS (SMBIOS) テーブルに格納される変数です。 Surface Pro や LTE Advanced を搭載した Surface Pro など、同じシステム モデル名を持つデバイスを区別する必要がある場合は常に、システム SKU 名を使います。
 
@@ -53,7 +53,7 @@ ms.locfileid: "11271371"
 | Surface Pro 7+ LTE                                           | Surface Pro 7+ | Surface_Pro_7 + _with_LTE_Advanced_1961|
 | Surface Pro 7                 | Surface Pro 7    | Surface_Pro_7_1866         |
 | Surface Pro X                 | Surface Pro X    | Surface_Pro_X_1876         |
-| Sq2 プロセッサを搭載した Surface Pro X                | Surface Pro X    | Surface_Pro_X_H_1876        |
+| SQ2 プロセッサを搭載した Surface Pro X                | Surface Pro X    | Surface_Pro_X_H_1876        |
 | Surface Laptop 3 13" Intel | Surface Laptop 3 | Surface_Laptop_3_1867:1868 |
 | Surface Laptop 3 15" Intel | Surface Laptop 3 | Surface_Laptop_3_1872      |
 | Surface Laptop 3 15" AMD   | Surface Laptop 3 | Surface_Laptop_3_1873      | 
@@ -69,7 +69,7 @@ gwmi -namespace root\wmi -class MS_SystemInformation | select SystemSKU
 ```
 
 **システム情報を使用して SKU を取得する**  
-システム情報には、デバイスのシステム SKU とシステム モデルも **表示されます**。 これを行うには、次の手順を実行します。
+システム情報には、デバイスのシステム SKU とシステム モデルも **表示されます**。 これを行うには、次の手順に従います。
 
 1. [ **スタート]** を選択し、検索ボックスに **「MSInfo32」** と入力します。  
 1. [システム **情報] を選択します**。
@@ -81,3 +81,8 @@ gwmi -namespace root\wmi -class MS_SystemInformation | select SystemSKU
     - WMI Namespace – Root\WMI
     - WQL Query – SELECT * FROM MS_SystemInformation WHERE SystemSKU = "Surface_Pro_1796"
  ``` 
+
+## 詳細情報
+
+- [WMI リファレンス](https://docs.microsoft.com/windows/win32/wmisdk/wmi-reference)
+- [Windows Autopilot の Surface 登録サポート](surface-autopilot-registration-support.md)

@@ -9,18 +9,18 @@ ms.author: greglin
 manager: laurawi
 audience: Admin
 ms.topic: article
-ms.date: 03/27/2020
+ms.date: 01/26/2021
 ms.localizationpriority: High
-ms.openlocfilehash: f6022c4fd16cd8afbbea892e73ad831f12b10eaa
-ms.sourcegitcommit: ac34f0ec1a9df74ea688bf0da2a51fadf5139a41
+ms.openlocfilehash: 446166618161fc54a77bab94b2d61ad85359a082
+ms.sourcegitcommit: 25b8d880c6438f94b008f47b4fecc3aa4c473e85
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "10934857"
+ms.lasthandoff: 01/28/2021
+ms.locfileid: "11304850"
 ---
 # Surface Hub のセキュリティ概要
 
-Surface Hub は、Windows 10 Team オペレーティングシステムを実行しているカスタムプラットフォームファームウェアを備えたロックダウンコンピューティング製品を提供します。 これによりデバイスは、従来の "単一使用" セキュア キオスクの "必要なものだけを実行する" 戦略を採用し、それに基づいて先進のセキュリティを実現できます。 Surface Hub は、多様なコラボレーション ユーザー エクスペリエンスに対応するように構築されていて、常に進化しているセキュリティの脅威から保護されています。
+Surface Hub は、Windows 10 Team オペレーティング システムを実行するカスタム プラットフォーム ファームウェアで、ロックダウンされたアプライアンスのようなエクスペリエンスを提供します。 これによりデバイスは、従来の "単一使用" セキュア キオスクの "必要なものだけを実行する" 戦略を採用し、それに基づいて先進のセキュリティを実現できます。 Surface Hub は、多様なコラボレーション ユーザー エクスペリエンスに対応するように構築されていて、常に進化しているセキュリティの脅威から保護されています。
 
 Windows 10 上に構築されている Surface Hub は、エンタープライズ レベルの最新のセキュリティを実現します。IT 管理者は、BitLocker、トラステッド プラットフォーム モジュール 2.0 (TPM)、さらには Windows Defender (Microsoft Defender とも呼ばれます) を使用したクラウドベースのセキュリティを使ってデータ保護を強化できます。
 
@@ -28,7 +28,7 @@ Windows 10 上に構築されている Surface Hub は、エンタープライ�
 
 セキュリティ プロトコルは Surface Hub が有効になるとすぐに開始されます。 ファームウェア レベルで開始されると、Surface Hub は複数のセキュリティ チェックに反応してオペレーティング システムとそのコンポーネントの読み込みのみを行います。 Surface Hub では、多層防御と呼ばれる戦略が採用されています。この戦略では、独立した防御サブコンポーネントを多層化することによって、部分的に障害が発生した場合にシステム全体を保護します。 この業界手法は、潜在する一方的なエクスプロイトや、サブコンポーネント内の脆弱性を極めて効率的に軽減する実効性があることが分かっています。
 
-最新の統合された拡張ファームウェアインターフェイス (UEFI) は、内部ストレージから認証された Windows 10 Team オペレーティングシステムのみを起動するために、Microsoft によって静的かつ安全に構成されています。  Surface Hub で実行されるすべてのコード行には、実行前に検証される署名が含まれています。 オペレーティング システムの一部としてであれ、Microsoft Store を介してインストールされたものであれ、Microsoft による署名のあるアプリケーションのみが、Surface Hub 上で実行できます。 これらの要件を満たさないコードやアプリはブロックされます。
+最新の Unified Extensible Firmware Interface (UEFI) は、認証済みの Windows 10 Team オペレーティング システムのみを内部ストレージから起動するように、Microsoft によって静的かつ安全に構成されています。  Surface Hub で実行されるすべてのコード行には、実行前に検証される署名が含まれています。 オペレーティング システムの一部としてであれ、Microsoft Store を介してインストールされたものであれ、Microsoft による署名のあるアプリケーションのみが、Surface Hub 上で実行できます。 これらの要件を満たさないコードやアプリはブロックされます。
 
 Surface Hub のセキュリティ システムには以下のものが含まれます。
 
