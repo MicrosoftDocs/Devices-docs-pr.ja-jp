@@ -1,0 +1,46 @@
+---
+title: Surface Hub 2S 用の Microsoft Teams 認定アクセサリ
+description: Surface Hub 2S 50 インチおよび 85 インチ モデル向け Teams 認定オーディオおよびビデオ アクセサリをご覧ください。
+keywords: コンマで値を区切る
+ms.prod: surface-hub
+ms.sitesec: library
+author: greg-lindsay
+ms.author: greglin
+manager: laurawi
+audience: Admin
+ms.topic: article
+ms.date: 01/27/2020
+ms.localizationpriority: Medium
+ms.openlocfilehash: a7eb064786d313d94d6b41c41542cd3a5cbfe453
+ms.sourcegitcommit: 25b8d880c6438f94b008f47b4fecc3aa4c473e85
+ms.translationtype: MT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/28/2021
+ms.locfileid: "11304866"
+---
+# <span data-ttu-id="7a626-104">Surface Hub 2S 用の Microsoft Teams 認定オーディオおよびビデオ アクセサリ</span><span class="sxs-lookup"><span data-stu-id="7a626-104">Microsoft Teams certified audio and video accessories for Surface Hub 2S</span></span>
+
+<span data-ttu-id="7a626-105">Surface Hub 2S 50" および 85" モデルは、2.3 m の [Microsoft Teams](https://www.microsoft.com/microsoft-teams/across-devices/devices/product?deviceid=31) 向け認定を受け、ハドルとコラボレーションスペースの 1 台のデバイスとして認定されています。</span><span class="sxs-lookup"><span data-stu-id="7a626-105">Surface Hub 2S 50” and 85” models are [certified for Microsoft Teams](https://www.microsoft.com/microsoft-teams/across-devices/devices/product?deviceid=31) for 2.3 meters as an all-in-one device in huddle and collaboration spaces.</span></span> <span data-ttu-id="7a626-106">Surface Hub 2S ファミリは、次のテスト済みおよび承認済みの Microsoft Teams 認定周辺機器を使用して、より大きな部屋に拡張できます。Surface Hub 2S 50" および 85" と組み合わせると、スペースを最も多く使用できます。</span><span class="sxs-lookup"><span data-stu-id="7a626-106">The Surface Hub 2S family can be extended to larger rooms with the following tested and approved Microsoft Teams certified peripherals that bring the most out of any space when combined with Surface Hub 2S 50” and 85”.</span></span>
+
+## <span data-ttu-id="7a626-107">Microsoft Teams 認定オーディオ アクセサリ</span><span class="sxs-lookup"><span data-stu-id="7a626-107">Microsoft Teams certified audio accessories</span></span> 
+
+| <span data-ttu-id="7a626-108">モデル</span><span class="sxs-lookup"><span data-stu-id="7a626-108">Model</span></span>                                | <span data-ttu-id="7a626-109">説明</span><span class="sxs-lookup"><span data-stu-id="7a626-109">Description</span></span>                                                                                                                                                                                                                                                                                              |
+| ------------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **<span data-ttu-id="7a626-110">EPOS EXPAND 80T</span><span class="sxs-lookup"><span data-stu-id="7a626-110">EPOS EXPAND 80T</span></span>**<br>         | <span data-ttu-id="7a626-111">最大 7 人の参加者。</span><span class="sxs-lookup"><span data-stu-id="7a626-111">For up to seven participants.</span></span> <span data-ttu-id="7a626-112">Microsoft Teams 認定。</span><span class="sxs-lookup"><span data-stu-id="7a626-112">Microsoft Teams certified.</span></span><br><br><span data-ttu-id="7a626-113">- 1 人の EXPAND 80 Mic for Microsoft Teams 認定を中規模のミーティング ルームに添付し、最大 11 人の参加者を対象とします。</span><span class="sxs-lookup"><span data-stu-id="7a626-113">- Attach one EXPAND 80 Mic for Microsoft Teams certification in medium-sized meeting rooms for up to 11 participants.</span></span><br><span data-ttu-id="7a626-114">- 2 つの EXPAND 80 Mics for Microsoft Teams 認定を大規模なミーティング ルームに添付し、最大 18 人の参加者を対象とします。</span><span class="sxs-lookup"><span data-stu-id="7a626-114">- Attach two EXPAND 80 Mics for Microsoft Teams certification in large meeting rooms for up to 18 participants.</span></span> |
+| **<span data-ttu-id="7a626-115">Yamaha YVC-1000MS</span><span class="sxs-lookup"><span data-stu-id="7a626-115">Yamaha YVC-1000MS</span></span>**<br>        | <span data-ttu-id="7a626-116">最大 6 人の参加者。</span><span class="sxs-lookup"><span data-stu-id="7a626-116">For up to six participants.</span></span><br><br><span data-ttu-id="7a626-117">- 最大 40 人の参加者が参加する会議室で、Microsoft Teams 認定用に 1 ~ 5 台の拡張マイクを使用します。</span><span class="sxs-lookup"><span data-stu-id="7a626-117">- Use one to five expansion mics for Microsoft Teams certification in rooms with up to 40 participants.</span></span>                                                                                                                                                               |
+| **<span data-ttu-id="7a626-118">ゼンハイザー EXPAND SP 20</span><span class="sxs-lookup"><span data-stu-id="7a626-118">Sennheiser EXPAND SP 20</span></span>**<br> | <span data-ttu-id="7a626-119">最大 6 人の参加者。</span><span class="sxs-lookup"><span data-stu-id="7a626-119">For up to six participants.</span></span> <span data-ttu-id="7a626-120">Microsoft Teams 認定。</span><span class="sxs-lookup"><span data-stu-id="7a626-120">Microsoft Teams certified.</span></span>                                                                                                                                                                                                                                                   |
+| **<span data-ttu-id="7a626-121">Yealink CP900</span><span class="sxs-lookup"><span data-stu-id="7a626-121">Yealink CP900</span></span>**<br>           | <span data-ttu-id="7a626-122">最大 6 人の参加者。</span><span class="sxs-lookup"><span data-stu-id="7a626-122">For up to six participants.</span></span> <span data-ttu-id="7a626-123">Microsoft Teams 認定。</span><span class="sxs-lookup"><span data-stu-id="7a626-123">Microsoft Teams certified.</span></span>                                                                                                                                                                                                                                                   |
+
+ 
+## <span data-ttu-id="7a626-124">Microsoft Teams 認定ビデオ アクセサリ</span><span class="sxs-lookup"><span data-stu-id="7a626-124">Microsoft Teams certified video accessories</span></span>
+
+| <span data-ttu-id="7a626-125">モデル</span><span class="sxs-lookup"><span data-stu-id="7a626-125">Model</span></span>                                       | <span data-ttu-id="7a626-126">説明</span><span class="sxs-lookup"><span data-stu-id="7a626-126">Description</span></span>                                                                    |
+| ------------------------------------------- | ------------------------------------------------------------------------------ |
+| **<span data-ttu-id="7a626-127">Jabra PanaCast</span><span class="sxs-lookup"><span data-stu-id="7a626-127">Jabra PanaCast</span></span>**<br>                  | <span data-ttu-id="7a626-128">4K、180°。</span><span class="sxs-lookup"><span data-stu-id="7a626-128">4K, 180 degrees.</span></span><br><span data-ttu-id="7a626-129">ビデオの件名は最大 3 m</span><span class="sxs-lookup"><span data-stu-id="7a626-129">Up to 3 meters for video subjects</span></span>                          |
+| **<span data-ttu-id="7a626-130">Poly Studio - Huddle Room USB ビデオ バー</span><span class="sxs-lookup"><span data-stu-id="7a626-130">Poly Studio - Huddle Room USB Video Bar</span></span>** | <span data-ttu-id="7a626-131">4K、120°</span><span class="sxs-lookup"><span data-stu-id="7a626-131">4K, 120 degrees</span></span><br><span data-ttu-id="7a626-132">オーディオとビデオの件名に対して最大 3.7 m</span><span class="sxs-lookup"><span data-stu-id="7a626-132">Up to 3.7 meters for audio + video subjects</span></span>                 |
+| **<span data-ttu-id="7a626-133">Polycom の監督者 II</span><span class="sxs-lookup"><span data-stu-id="7a626-133">Polycom EagleEye Director II</span></span>**<br>    | <span data-ttu-id="7a626-134">1080p、65°</span><span class="sxs-lookup"><span data-stu-id="7a626-134">1080p, 65 degrees</span></span><br><span data-ttu-id="7a626-135">参加者 10 名以上の中規模ルーム</span><span class="sxs-lookup"><span data-stu-id="7a626-135">10+ participants medium rooms</span></span>                             |
+| **<span data-ttu-id="7a626-136">ロジクール のバー</span><span class="sxs-lookup"><span data-stu-id="7a626-136">Logitech Rally Bar</span></span>**                      | <span data-ttu-id="7a626-137">4K、90°、PTZ、手動/デジタル制御、USB 3.0 Type-C、プライバシー アシュアランス</span><span class="sxs-lookup"><span data-stu-id="7a626-137">4K, 90 degrees, PTZ, manual/digital control, USB 3.0 Type-C, privacy assurance</span></span> |
+
+## <span data-ttu-id="7a626-138">詳細情報</span><span class="sxs-lookup"><span data-stu-id="7a626-138">Learn more</span></span>
+
+- [<span data-ttu-id="7a626-139">会議室システム、VoIP 電話、ヘッドセット|Microsoft Teams</span><span class="sxs-lookup"><span data-stu-id="7a626-139">Meeting Room Systems, VoIP Phones, Headsets | Microsoft Teams</span></span>](https://www.microsoft.com/microsoft-teams/across-devices/)
