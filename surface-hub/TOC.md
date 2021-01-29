@@ -36,6 +36,7 @@
 ### [Intune を使用して Surface Hub 2S にアプリを展開する](surface-hub-2s-deploy-apps-intune.md)
 ### [PowerShell を使用して Surface Hub 2S オンプレミス アカウントを作成する](surface-hub-2s-onprem-powershell.md)
 ### [Surface Hub Teams アプリ](hub-teams-app.md)
+### [Surface Hub 2S 用の Teams 認定アクセサリ](surface-hub-2s-certifications.md)
 
 ## 管理
 ### [Surface Hub 2 の Windows 10 Pro または Enterprise に移行する](surface-hub-2s-migrate-os.md)
