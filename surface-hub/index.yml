@@ -14,17 +14,19 @@ metadata:
   author: greg-lindsay
   ms.author: greglin
   manager: laurawi
-  ms.openlocfilehash: b4161e3e041b8c6838ad7a498bb0c50784485fea
-  ms.sourcegitcommit: 9bf5c4367b471f77949482390fddf8ff137f60b5
+  ms.openlocfilehash: 655b10e575d1a7057e829c0312b586c2980462f4
+  ms.sourcegitcommit: 046623bfcc01a2daa3eacd229a6c5e70365d25b6
   ms.translationtype: HT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 01/25/2021
-  ms.locfileid: "11297900"
+  ms.lasthandoff: 01/29/2021
+  ms.locfileid: "11306087"
 landingContent:
 - title: Surface Hub 2S の導入準備
   linkLists:
   - linkListType: whats-new
     links:
+    - text: Surface Hub 2S 用の Microsoft Teams 認定オーディオおよびビデオ アクセサリ
+      url: surface-hub-2s-certifications.md
     - text: Windows 10 Team のロールアウトに関する更新プログラム
       url: https://techcommunity.microsoft.com/t5/surface-it-pro-blog/update-to-the-windows-10-team-rollout/ba-p/1669655
     - text: Surface Hub 2S 85 インチを設置して取り付ける (準備ガイド)
