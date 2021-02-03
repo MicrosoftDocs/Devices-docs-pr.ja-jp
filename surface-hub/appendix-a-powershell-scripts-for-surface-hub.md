@@ -1,6 +1,6 @@
 ---
-title: Surface Hub 用 PowerShell (Surface Hub)
-description: Microsoft Surface Hub の設定と管理に役立つ PowerShell スクリプトです。
+title: Surface Hub 用 PowerShell (v1)
+description: このページには、元の Surface Hub 用の PowerShell スクリプトが含まれています (v1)
 ms.assetid: 3EF48F63-8E4C-4D74-ACD5-461F1C653784
 ms.reviewer: ''
 manager: laurawi
@@ -10,68 +10,69 @@ ms.sitesec: library
 author: dansimp
 ms.author: dansimp
 ms.topic: article
-ms.date: 01/10/2018
+ms.date: 02/01/2021
 ms.localizationpriority: medium
-ms.openlocfilehash: 92b42139020db13251fa6c5f8439d7084a61a132
-ms.sourcegitcommit: 5d02cca9ca8c0a252798c2fc0a89dbda81911c44
+ms.openlocfilehash: c0fa06153dc5597827f2973ecc9f728e35d79e85
+ms.sourcegitcommit: 5cfac94c220c8a8d4620c6a7fa75ae2fae089c7f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "11195382"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "11312003"
 ---
-# <span data-ttu-id="6b623-104">Surface Hub 用 PowerShell</span><span class="sxs-lookup"><span data-stu-id="6b623-104">PowerShell for Surface Hub</span></span>
-
-<span data-ttu-id="6b623-105">Microsoft Surface Hub の設定と管理に役立つ PowerShell スクリプトです。</span><span class="sxs-lookup"><span data-stu-id="6b623-105">PowerShell scripts to help set up and manage your Microsoft Surface Hub.</span></span>
-
--   [<span data-ttu-id="6b623-106">Surface Hub 管理者向けの PowerShell スクリプト</span><span class="sxs-lookup"><span data-stu-id="6b623-106">PowerShell scripts for Surface Hub admins</span></span>](#scripts-for-admins)
-    -   [<span data-ttu-id="6b623-107">オンプレミスアカウントを作成する</span><span class="sxs-lookup"><span data-stu-id="6b623-107">Create an on-premises account</span></span>](#create-on-premises-ps-scripts)
-    -   [<span data-ttu-id="6b623-108">Office 365 を使ったデバイス アカウントの作成</span><span class="sxs-lookup"><span data-stu-id="6b623-108">Create a device account using Office 365</span></span>](#create-os356-ps-scripts)
-    -   [<span data-ttu-id="6b623-109">アカウント検証スクリプト</span><span class="sxs-lookup"><span data-stu-id="6b623-109">Account verification script</span></span>](#acct-verification-ps-scripts)
-    -   [<span data-ttu-id="6b623-110">Skype for Business の有効化 (EnableSfb.ps1)</span><span class="sxs-lookup"><span data-stu-id="6b623-110">Enable Skype for Business (EnableSfb.ps1)</span></span>](#enable-sfb-ps-scripts)
--   [<span data-ttu-id="6b623-111">便利なコマンドレット</span><span class="sxs-lookup"><span data-stu-id="6b623-111">Useful cmdlets</span></span>](#useful-cmdlets)
-    -   [<span data-ttu-id="6b623-112">Surface Hub と互換性のある Exchange ActiveSync ポリシーの作成</span><span class="sxs-lookup"><span data-stu-id="6b623-112">Creating a Surface Hub-compatible Exchange ActiveSync policy</span></span>](#create-compatible-as-policy)
-    -   [<span data-ttu-id="6b623-113">ActiveSync に対するデバイス ID の許可</span><span class="sxs-lookup"><span data-stu-id="6b623-113">Allowing device IDs for ActiveSync</span></span>](#whitelisting-device-ids-cmdlet)
-    -   [<span data-ttu-id="6b623-114">会議出席依頼の自動的な承諾と辞退</span><span class="sxs-lookup"><span data-stu-id="6b623-114">Auto-accepting and declining meeting requests</span></span>](#auto-accept-meetings-cmdlet)
-    -   [<span data-ttu-id="6b623-115">外部会議出席依頼の承諾</span><span class="sxs-lookup"><span data-stu-id="6b623-115">Accepting external meeting requests</span></span>](#accept-ext-meetings-cmdlet)
-    
- > [!NOTE]
- > <span data-ttu-id="6b623-116">「[モダン Auth」および「Exchange Online PowerShell V2 の無人スクリプト](https://techcommunity.microsoft.com/t5/exchange-team-blog/modern-auth-and-unattended-scripts-in-exchange-online-powershell/ba-p/1497387)」もご覧ください。</span><span class="sxs-lookup"><span data-stu-id="6b623-116">See also [Modern Auth and Unattended Scripts in Exchange Online PowerShell V2](https://techcommunity.microsoft.com/t5/exchange-team-blog/modern-auth-and-unattended-scripts-in-exchange-online-powershell/ba-p/1497387)</span></span>
-
-## <span data-ttu-id="6b623-117">前提条件</span><span class="sxs-lookup"><span data-stu-id="6b623-117">Prerequisites</span></span>
-
-<span data-ttu-id="6b623-118">これらの PowerShell スクリプトを正常に実行するには、次の前提条件をインストールする必要があります。</span><span class="sxs-lookup"><span data-stu-id="6b623-118">To successfully execute these PowerShell scripts, you will need to install the following prerequisites:</span></span>
-
-- [<span data-ttu-id="6b623-119">IT プロフェッショナル用 Microsoft Online Services サインイン アシスタント RTW</span><span class="sxs-lookup"><span data-stu-id="6b623-119">Microsoft Online Services Sign-in Assistant for IT Professionals RTW</span></span>](https://www.microsoft.com/download/details.aspx?id=41950)
-- [<span data-ttu-id="6b623-120">Windows PowerShell 用 Microsoft Azure Active Directory モジュール (64 ビット版)</span><span class="sxs-lookup"><span data-stu-id="6b623-120">Microsoft Azure Active Directory Module for Windows PowerShell (64-bit version)</span></span>](https://www.powershellgallery.com/packages/MSOnline/1.1.183.17)
-- [<span data-ttu-id="6b623-121">Windows PowerShell Module for Skype for Business Online</span><span class="sxs-lookup"><span data-stu-id="6b623-121">Windows PowerShell Module for Skype for Business Online</span></span>](https://www.microsoft.com/download/details.aspx?id=39366)
-
-## <a href="" id="scripts-for-admins"></a><span data-ttu-id="6b623-122">Surface Hub 管理者向けの PowerShell スクリプト</span><span class="sxs-lookup"><span data-stu-id="6b623-122">PowerShell scripts for Surface Hub administrators</span></span>
-
-<span data-ttu-id="6b623-123">スクリプトには、次の機能があります。</span><span class="sxs-lookup"><span data-stu-id="6b623-123">What do the scripts do?</span></span>
-
--   <span data-ttu-id="6b623-124">純粋な単一フォレストの社内 (Microsoft Exchange および Skype 2013 以降のみ) またはオンライン (Microsoft Office 365) を使って、セットアップ用にデバイス アカウントを作成します。作成したアカウントはお使いの Surface Hub 向けに正しく構成されます。</span><span class="sxs-lookup"><span data-stu-id="6b623-124">Create device accounts for setups using pure single-forest on-premises (Microsoft Exchange and Skype 2013 and later only) or online (Microsoft Office 365), that are configured correctly for your Surface Hub.</span></span>
--   <span data-ttu-id="6b623-125">任意のセットアップ (オンプレミスまたはオンライン) 用の既存のデバイス アカウントを検証して、アカウントに Surface Hub と互換性があることを確かめます。</span><span class="sxs-lookup"><span data-stu-id="6b623-125">Validate existing device accounts for any setup (on-premises or online) to make sure they're compatible with Surface Hub.</span></span>
--   <span data-ttu-id="6b623-126">独自のデバイス アカウント作成スクリプトや検証スクリプトを作成するすべてのユーザーに、基本となるテンプレートを提供します。</span><span class="sxs-lookup"><span data-stu-id="6b623-126">Provide a base template for anyone wanting to create their own device account creation or validation scripts.</span></span>
-
-<span data-ttu-id="6b623-127">スクリプトを実行するための要件は、次のとおりです。</span><span class="sxs-lookup"><span data-stu-id="6b623-127">What do you need in order to run the scripts?</span></span>
-
--   <span data-ttu-id="6b623-128">組織のドメインまたはテナント、Exchange サーバー、および Skype for Business サーバーへのリモートの PowerShell アクセス</span><span class="sxs-lookup"><span data-stu-id="6b623-128">Remote PowerShell access to your organization's domain or tenant, Exchange servers, and Skype for Business servers.</span></span>
--   <span data-ttu-id="6b623-129">組織のドメインまたはテナント、Exchange サーバー、および Skype for Business サーバーに対する管理者の資格情報</span><span class="sxs-lookup"><span data-stu-id="6b623-129">Admin credentials for your organization's domain or tenant, Exchange servers, and Skype for Business servers.</span></span>
+# <span data-ttu-id="17f8f-104">Surface Hub 用 PowerShell (v1)</span><span class="sxs-lookup"><span data-stu-id="17f8f-104">PowerShell for Surface Hub (v1)</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="6b623-130">新しいアカウントを作成する場合でも、既存のアカウントを変更する場合でも、検証スクリプトを実行すると、デバイス アカウントが正しく構成されていることが検証されます。</span><span class="sxs-lookup"><span data-stu-id="6b623-130">Whether you’re creating a new account or modifying an already-existing account, the validation script will verify that your device account is configured correctly.</span></span> <span data-ttu-id="6b623-131">デバイス アカウントを Surface Hub に追加する前には、必ず検証スクリプトを実行する必要があります。</span><span class="sxs-lookup"><span data-stu-id="6b623-131">You should always run the validation script before adding a device account to Surface Hub.</span></span>
+ ><span data-ttu-id="17f8f-105">このページには、元の Surface Hub (v1) 向け PowerShell スクリプトが含まれています。</span><span class="sxs-lookup"><span data-stu-id="17f8f-105">This page includes PowerShell scripts intended for the original Surface Hub (v1).</span></span> <span data-ttu-id="17f8f-106">Surface Hub 2S の最新のアカウント作成スクリプトについては、「Surface Hub 2S デバイス アカウントの [作成」を参照してください](surface-hub-2s-account.md)。</span><span class="sxs-lookup"><span data-stu-id="17f8f-106">For the latest account creation scripts for Surface Hub 2S, see [Create Surface Hub 2S device account](surface-hub-2s-account.md).</span></span>
 
-## <span data-ttu-id="6b623-132">スクリプトの実行</span><span class="sxs-lookup"><span data-stu-id="6b623-132">Running the scripts</span></span>
+-   [<span data-ttu-id="17f8f-107">Surface Hub 管理者向けの PowerShell スクリプト</span><span class="sxs-lookup"><span data-stu-id="17f8f-107">PowerShell scripts for Surface Hub admins</span></span>](#scripts-for-admins)
+    -   [<span data-ttu-id="17f8f-108">オンプレミス アカウントを作成する</span><span class="sxs-lookup"><span data-stu-id="17f8f-108">Create an on-premises account</span></span>](#create-on-premises-ps-scripts)
+    -   [<span data-ttu-id="17f8f-109">Office 365 を使ったデバイス アカウントの作成</span><span class="sxs-lookup"><span data-stu-id="17f8f-109">Create a device account using Office 365</span></span>](#create-os356-ps-scripts)
+    -   [<span data-ttu-id="17f8f-110">アカウント検証スクリプト</span><span class="sxs-lookup"><span data-stu-id="17f8f-110">Account verification script</span></span>](#acct-verification-ps-scripts)
+    -   [<span data-ttu-id="17f8f-111">Skype for Business の有効化 (EnableSfb.ps1)</span><span class="sxs-lookup"><span data-stu-id="17f8f-111">Enable Skype for Business (EnableSfb.ps1)</span></span>](#enable-sfb-ps-scripts)
+-   [<span data-ttu-id="17f8f-112">便利なコマンドレット</span><span class="sxs-lookup"><span data-stu-id="17f8f-112">Useful cmdlets</span></span>](#useful-cmdlets)
+    -   [<span data-ttu-id="17f8f-113">Surface Hub と互換性のある Exchange ActiveSync ポリシーの作成</span><span class="sxs-lookup"><span data-stu-id="17f8f-113">Creating a Surface Hub-compatible Exchange ActiveSync policy</span></span>](#create-compatible-as-policy)
+    -   [<span data-ttu-id="17f8f-114">ActiveSync に対するデバイス ID の許可</span><span class="sxs-lookup"><span data-stu-id="17f8f-114">Allowing device IDs for ActiveSync</span></span>](#allowing-device-ids-for-activesync)
+    -   [<span data-ttu-id="17f8f-115">会議出席依頼の自動的な承諾と辞退</span><span class="sxs-lookup"><span data-stu-id="17f8f-115">Auto-accepting and declining meeting requests</span></span>](#auto-accept-meetings-cmdlet)
+    -   [<span data-ttu-id="17f8f-116">外部会議出席依頼の承諾</span><span class="sxs-lookup"><span data-stu-id="17f8f-116">Accepting external meeting requests</span></span>](#accept-ext-meetings-cmdlet)
+    
+ > [!NOTE]
+ > <span data-ttu-id="17f8f-117">Exchange [Online PowerShell V2](https://techcommunity.microsoft.com/t5/exchange-team-blog/modern-auth-and-unattended-scripts-in-exchange-online-powershell/ba-p/1497387)の最新の認証および無人スクリプトも参照</span><span class="sxs-lookup"><span data-stu-id="17f8f-117">See also [Modern Auth and Unattended Scripts in Exchange Online PowerShell V2](https://techcommunity.microsoft.com/t5/exchange-team-blog/modern-auth-and-unattended-scripts-in-exchange-online-powershell/ba-p/1497387)</span></span>
 
-<span data-ttu-id="6b623-133">アカウント作成スクリプトでは、次の処理が実行されます。</span><span class="sxs-lookup"><span data-stu-id="6b623-133">The account creation scripts will:</span></span>
+## <span data-ttu-id="17f8f-118">前提条件</span><span class="sxs-lookup"><span data-stu-id="17f8f-118">Prerequisites</span></span>
 
--   <span data-ttu-id="6b623-134">管理者の資格情報を要求する。</span><span class="sxs-lookup"><span data-stu-id="6b623-134">Ask for administrator credentials</span></span>
--   <span data-ttu-id="6b623-135">ドメイン/テナントにデバイス アカウントを作成する。</span><span class="sxs-lookup"><span data-stu-id="6b623-135">Create device accounts in your domain/tenant</span></span>
--   <span data-ttu-id="6b623-136">Surface Hub と互換性のある ActiveSync ポリシーを作成する、またはこのようなポリシーをデバイス アカウントに割り当てる。</span><span class="sxs-lookup"><span data-stu-id="6b623-136">Create or assign a Surface Hub-compatible ActiveSync policy to the device account(s)</span></span>
--   <span data-ttu-id="6b623-137">Exchange と Skype for Business で、作成されたアカウントに関するさまざまな属性を設定する。</span><span class="sxs-lookup"><span data-stu-id="6b623-137">Set various attributes for the created account(s) in Exchange and Skype for Business.</span></span>
--   <span data-ttu-id="6b623-138">作成されたアカウントに、ライセンスとアクセス許可を割り当てる。</span><span class="sxs-lookup"><span data-stu-id="6b623-138">Assign licenses and permissions to the created account(s)</span></span>
+<span data-ttu-id="17f8f-119">これらの PowerShell スクリプトを正常に実行するには、次の前提条件をインストールする必要があります。</span><span class="sxs-lookup"><span data-stu-id="17f8f-119">To successfully execute these PowerShell scripts, you will need to install the following prerequisites:</span></span>
 
-<span data-ttu-id="6b623-139">スクリプトによって設定される属性は、次のとおりです。</span><span class="sxs-lookup"><span data-stu-id="6b623-139">These are the attributes that are set by the scripts:</span></span>
+- [<span data-ttu-id="17f8f-120">IT プロフェッショナル用 Microsoft Online Services サインイン アシスタント RTW</span><span class="sxs-lookup"><span data-stu-id="17f8f-120">Microsoft Online Services Sign-in Assistant for IT Professionals RTW</span></span>](https://www.microsoft.com/download/details.aspx?id=41950)
+- [<span data-ttu-id="17f8f-121">Windows PowerShell 用 Microsoft Azure Active Directory モジュール (64 ビット版)</span><span class="sxs-lookup"><span data-stu-id="17f8f-121">Microsoft Azure Active Directory Module for Windows PowerShell (64-bit version)</span></span>](https://www.powershellgallery.com/packages/MSOnline/1.1.183.17)
+- [<span data-ttu-id="17f8f-122">Windows PowerShell Module for Skype for Business Online</span><span class="sxs-lookup"><span data-stu-id="17f8f-122">Windows PowerShell Module for Skype for Business Online</span></span>](https://www.microsoft.com/download/details.aspx?id=39366)
+
+## <a href="" id="scripts-for-admins"></a><span data-ttu-id="17f8f-123">Surface Hub 管理者向けの PowerShell スクリプト</span><span class="sxs-lookup"><span data-stu-id="17f8f-123">PowerShell scripts for Surface Hub administrators</span></span>
+
+<span data-ttu-id="17f8f-124">スクリプトには、次の機能があります。</span><span class="sxs-lookup"><span data-stu-id="17f8f-124">What do the scripts do?</span></span>
+
+-   <span data-ttu-id="17f8f-125">純粋な単一フォレストの社内 (Microsoft Exchange および Skype 2013 以降のみ) またはオンライン (Microsoft Office 365) を使って、セットアップ用にデバイス アカウントを作成します。作成したアカウントはお使いの Surface Hub 向けに正しく構成されます。</span><span class="sxs-lookup"><span data-stu-id="17f8f-125">Create device accounts for setups using pure single-forest on-premises (Microsoft Exchange and Skype 2013 and later only) or online (Microsoft Office 365), that are configured correctly for your Surface Hub.</span></span>
+-   <span data-ttu-id="17f8f-126">任意のセットアップ (オンプレミスまたはオンライン) 用の既存のデバイス アカウントを検証して、アカウントに Surface Hub と互換性があることを確かめます。</span><span class="sxs-lookup"><span data-stu-id="17f8f-126">Validate existing device accounts for any setup (on-premises or online) to make sure they're compatible with Surface Hub.</span></span>
+-   <span data-ttu-id="17f8f-127">独自のデバイス アカウント作成スクリプトや検証スクリプトを作成するすべてのユーザーに、基本となるテンプレートを提供します。</span><span class="sxs-lookup"><span data-stu-id="17f8f-127">Provide a base template for anyone wanting to create their own device account creation or validation scripts.</span></span>
+
+<span data-ttu-id="17f8f-128">スクリプトを実行するための要件は、次のとおりです。</span><span class="sxs-lookup"><span data-stu-id="17f8f-128">What do you need in order to run the scripts?</span></span>
+
+-   <span data-ttu-id="17f8f-129">組織のドメインまたはテナント、Exchange サーバー、および Skype for Business サーバーへのリモートの PowerShell アクセス</span><span class="sxs-lookup"><span data-stu-id="17f8f-129">Remote PowerShell access to your organization's domain or tenant, Exchange servers, and Skype for Business servers.</span></span>
+-   <span data-ttu-id="17f8f-130">組織のドメインまたはテナント、Exchange サーバー、および Skype for Business サーバーに対する管理者の資格情報</span><span class="sxs-lookup"><span data-stu-id="17f8f-130">Admin credentials for your organization's domain or tenant, Exchange servers, and Skype for Business servers.</span></span>
+
+> [!NOTE]
+> <span data-ttu-id="17f8f-131">新しいアカウントを作成する場合でも、既存のアカウントを変更する場合でも、検証スクリプトを実行すると、デバイス アカウントが正しく構成されていることが検証されます。</span><span class="sxs-lookup"><span data-stu-id="17f8f-131">Whether you’re creating a new account or modifying an already-existing account, the validation script will verify that your device account is configured correctly.</span></span> <span data-ttu-id="17f8f-132">デバイス アカウントを Surface Hub に追加する前には、必ず検証スクリプトを実行する必要があります。</span><span class="sxs-lookup"><span data-stu-id="17f8f-132">You should always run the validation script before adding a device account to Surface Hub.</span></span>
+
+## <span data-ttu-id="17f8f-133">スクリプトの実行</span><span class="sxs-lookup"><span data-stu-id="17f8f-133">Running the scripts</span></span>
+
+<span data-ttu-id="17f8f-134">アカウント作成スクリプトでは、次の処理が実行されます。</span><span class="sxs-lookup"><span data-stu-id="17f8f-134">The account creation scripts will:</span></span>
+
+-   <span data-ttu-id="17f8f-135">管理者の資格情報を要求する。</span><span class="sxs-lookup"><span data-stu-id="17f8f-135">Ask for administrator credentials</span></span>
+-   <span data-ttu-id="17f8f-136">ドメイン/テナントにデバイス アカウントを作成する。</span><span class="sxs-lookup"><span data-stu-id="17f8f-136">Create device accounts in your domain/tenant</span></span>
+-   <span data-ttu-id="17f8f-137">Surface Hub と互換性のある ActiveSync ポリシーを作成する、またはこのようなポリシーをデバイス アカウントに割り当てる。</span><span class="sxs-lookup"><span data-stu-id="17f8f-137">Create or assign a Surface Hub-compatible ActiveSync policy to the device account(s)</span></span>
+-   <span data-ttu-id="17f8f-138">Exchange と Skype for Business で、作成されたアカウントに関するさまざまな属性を設定する。</span><span class="sxs-lookup"><span data-stu-id="17f8f-138">Set various attributes for the created account(s) in Exchange and Skype for Business.</span></span>
+-   <span data-ttu-id="17f8f-139">作成されたアカウントに、ライセンスとアクセス許可を割り当てる。</span><span class="sxs-lookup"><span data-stu-id="17f8f-139">Assign licenses and permissions to the created account(s)</span></span>
+
+<span data-ttu-id="17f8f-140">スクリプトによって設定される属性は、次のとおりです。</span><span class="sxs-lookup"><span data-stu-id="17f8f-140">These are the attributes that are set by the scripts:</span></span>
 
 <table>
 <colgroup>
@@ -81,114 +82,114 @@ ms.locfileid: "11195382"
 </colgroup>
 <thead>
 <tr class="header">
-<th align="left"><span data-ttu-id="6b623-140">コマンドレット</span><span class="sxs-lookup"><span data-stu-id="6b623-140">Cmdlet</span></span></th>
-<th align="left"><span data-ttu-id="6b623-141">属性</span><span class="sxs-lookup"><span data-stu-id="6b623-141">Attribute</span></span></th>
-<th align="left"><span data-ttu-id="6b623-142">値</span><span class="sxs-lookup"><span data-stu-id="6b623-142">Value</span></span></th>
+<th align="left"><span data-ttu-id="17f8f-141">コマンドレット</span><span class="sxs-lookup"><span data-stu-id="17f8f-141">Cmdlet</span></span></th>
+<th align="left"><span data-ttu-id="17f8f-142">属性</span><span class="sxs-lookup"><span data-stu-id="17f8f-142">Attribute</span></span></th>
+<th align="left"><span data-ttu-id="17f8f-143">値</span><span class="sxs-lookup"><span data-stu-id="17f8f-143">Value</span></span></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><p><span data-ttu-id="6b623-143">Set-Mailbox</span><span class="sxs-lookup"><span data-stu-id="6b623-143">Set-Mailbox</span></span></p></td>
-<td align="left"><p><span data-ttu-id="6b623-144">RoomMailboxPassword</span><span class="sxs-lookup"><span data-stu-id="6b623-144">RoomMailboxPassword</span></span></p></td>
-<td align="left"><p><span data-ttu-id="6b623-145">ユーザー指定</span><span class="sxs-lookup"><span data-stu-id="6b623-145">User-provided</span></span></p></td>
+<td align="left"><p><span data-ttu-id="17f8f-144">Set-Mailbox</span><span class="sxs-lookup"><span data-stu-id="17f8f-144">Set-Mailbox</span></span></p></td>
+<td align="left"><p><span data-ttu-id="17f8f-145">RoomMailboxPassword</span><span class="sxs-lookup"><span data-stu-id="17f8f-145">RoomMailboxPassword</span></span></p></td>
+<td align="left"><p><span data-ttu-id="17f8f-146">ユーザー指定</span><span class="sxs-lookup"><span data-stu-id="17f8f-146">User-provided</span></span></p></td>
 </tr>
 <tr class="even">
 <td align="left"><p></p></td>
-<td align="left"><p><span data-ttu-id="6b623-146">EnableRoomMailboxAccount</span><span class="sxs-lookup"><span data-stu-id="6b623-146">EnableRoomMailboxAccount</span></span></p></td>
-<td align="left"><p><span data-ttu-id="6b623-147">True</span><span class="sxs-lookup"><span data-stu-id="6b623-147">True</span></span></p></td>
+<td align="left"><p><span data-ttu-id="17f8f-147">EnableRoomMailboxAccount</span><span class="sxs-lookup"><span data-stu-id="17f8f-147">EnableRoomMailboxAccount</span></span></p></td>
+<td align="left"><p><span data-ttu-id="17f8f-148">True</span><span class="sxs-lookup"><span data-stu-id="17f8f-148">True</span></span></p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p></p></td>
-<td align="left"><p><span data-ttu-id="6b623-148">Type</span><span class="sxs-lookup"><span data-stu-id="6b623-148">Type</span></span></p></td>
-<td align="left"><p><span data-ttu-id="6b623-149">Room</span><span class="sxs-lookup"><span data-stu-id="6b623-149">Room</span></span></p></td>
+<td align="left"><p><span data-ttu-id="17f8f-149">Type</span><span class="sxs-lookup"><span data-stu-id="17f8f-149">Type</span></span></p></td>
+<td align="left"><p><span data-ttu-id="17f8f-150">Room</span><span class="sxs-lookup"><span data-stu-id="17f8f-150">Room</span></span></p></td>
 </tr>
 <tr class="even">
-<td align="left"><p><span data-ttu-id="6b623-150">Set-CalendarProcessing</span><span class="sxs-lookup"><span data-stu-id="6b623-150">Set-CalendarProcessing</span></span></p></td>
-<td align="left"><p><span data-ttu-id="6b623-151">AutomateProcessing</span><span class="sxs-lookup"><span data-stu-id="6b623-151">AutomateProcessing</span></span></p></td>
-<td align="left"><p><span data-ttu-id="6b623-152">AutoAccept</span><span class="sxs-lookup"><span data-stu-id="6b623-152">AutoAccept</span></span></p></td>
+<td align="left"><p><span data-ttu-id="17f8f-151">Set-CalendarProcessing</span><span class="sxs-lookup"><span data-stu-id="17f8f-151">Set-CalendarProcessing</span></span></p></td>
+<td align="left"><p><span data-ttu-id="17f8f-152">AutomateProcessing</span><span class="sxs-lookup"><span data-stu-id="17f8f-152">AutomateProcessing</span></span></p></td>
+<td align="left"><p><span data-ttu-id="17f8f-153">AutoAccept</span><span class="sxs-lookup"><span data-stu-id="17f8f-153">AutoAccept</span></span></p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p></p></td>
-<td align="left"><p><span data-ttu-id="6b623-153">RemovePrivateProperty</span><span class="sxs-lookup"><span data-stu-id="6b623-153">RemovePrivateProperty</span></span></p></td>
-<td align="left"><p><span data-ttu-id="6b623-154">False</span><span class="sxs-lookup"><span data-stu-id="6b623-154">False</span></span></p></td>
+<td align="left"><p><span data-ttu-id="17f8f-154">RemovePrivateProperty</span><span class="sxs-lookup"><span data-stu-id="17f8f-154">RemovePrivateProperty</span></span></p></td>
+<td align="left"><p><span data-ttu-id="17f8f-155">False</span><span class="sxs-lookup"><span data-stu-id="17f8f-155">False</span></span></p></td>
 </tr>
 <tr class="even">
 <td align="left"><p></p></td>
-<td align="left"><p><span data-ttu-id="6b623-155">DeleteSubject</span><span class="sxs-lookup"><span data-stu-id="6b623-155">DeleteSubject</span></span></p></td>
-<td align="left"><p><span data-ttu-id="6b623-156">False</span><span class="sxs-lookup"><span data-stu-id="6b623-156">False</span></span></p></td>
+<td align="left"><p><span data-ttu-id="17f8f-156">DeleteSubject</span><span class="sxs-lookup"><span data-stu-id="17f8f-156">DeleteSubject</span></span></p></td>
+<td align="left"><p><span data-ttu-id="17f8f-157">False</span><span class="sxs-lookup"><span data-stu-id="17f8f-157">False</span></span></p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p></p></td>
-<td align="left"><p><span data-ttu-id="6b623-157">DeleteComments</span><span class="sxs-lookup"><span data-stu-id="6b623-157">DeleteComments</span></span></p></td>
-<td align="left"><p><span data-ttu-id="6b623-158">False</span><span class="sxs-lookup"><span data-stu-id="6b623-158">False</span></span></p></td>
+<td align="left"><p><span data-ttu-id="17f8f-158">DeleteComments</span><span class="sxs-lookup"><span data-stu-id="17f8f-158">DeleteComments</span></span></p></td>
+<td align="left"><p><span data-ttu-id="17f8f-159">False</span><span class="sxs-lookup"><span data-stu-id="17f8f-159">False</span></span></p></td>
 </tr>
 <tr class="even">
 <td align="left"><p></p></td>
-<td align="left"><p><span data-ttu-id="6b623-159">AddOrganizerToSubject</span><span class="sxs-lookup"><span data-stu-id="6b623-159">AddOrganizerToSubject</span></span></p></td>
-<td align="left"><p><span data-ttu-id="6b623-160">False</span><span class="sxs-lookup"><span data-stu-id="6b623-160">False</span></span></p></td>
+<td align="left"><p><span data-ttu-id="17f8f-160">AddOrganizerToSubject</span><span class="sxs-lookup"><span data-stu-id="17f8f-160">AddOrganizerToSubject</span></span></p></td>
+<td align="left"><p><span data-ttu-id="17f8f-161">False</span><span class="sxs-lookup"><span data-stu-id="17f8f-161">False</span></span></p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p></p></td>
-<td align="left"><p><span data-ttu-id="6b623-161">AddAdditionalResponse</span><span class="sxs-lookup"><span data-stu-id="6b623-161">AddAdditionalResponse</span></span></p></td>
-<td align="left"><p><span data-ttu-id="6b623-162">True</span><span class="sxs-lookup"><span data-stu-id="6b623-162">True</span></span></p></td>
+<td align="left"><p><span data-ttu-id="17f8f-162">AddAdditionalResponse</span><span class="sxs-lookup"><span data-stu-id="17f8f-162">AddAdditionalResponse</span></span></p></td>
+<td align="left"><p><span data-ttu-id="17f8f-163">True</span><span class="sxs-lookup"><span data-stu-id="17f8f-163">True</span></span></p></td>
 </tr>
 <tr class="even">
 <td align="left"><p></p></td>
-<td align="left"><p><span data-ttu-id="6b623-163">AdditionalResponse</span><span class="sxs-lookup"><span data-stu-id="6b623-163">AdditionalResponse</span></span></p></td>
-<td align="left"><p><span data-ttu-id="6b623-164">&quot;This is a Surface Hub room!&quot;</span><span class="sxs-lookup"><span data-stu-id="6b623-164">&quot;This is a Surface Hub room!&quot;</span></span></p></td>
+<td align="left"><p><span data-ttu-id="17f8f-164">AdditionalResponse</span><span class="sxs-lookup"><span data-stu-id="17f8f-164">AdditionalResponse</span></span></p></td>
+<td align="left"><p><span data-ttu-id="17f8f-165">&quot;This is a Surface Hub room!&quot;</span><span class="sxs-lookup"><span data-stu-id="17f8f-165">&quot;This is a Surface Hub room!&quot;</span></span></p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p><span data-ttu-id="6b623-165">New-MobileDeviceMailboxPolicy</span><span class="sxs-lookup"><span data-stu-id="6b623-165">New-MobileDeviceMailboxPolicy</span></span></p></td>
-<td align="left"><p><span data-ttu-id="6b623-166">PasswordEnabled</span><span class="sxs-lookup"><span data-stu-id="6b623-166">PasswordEnabled</span></span></p></td>
-<td align="left"><p><span data-ttu-id="6b623-167">False</span><span class="sxs-lookup"><span data-stu-id="6b623-167">False</span></span></p></td>
+<td align="left"><p><span data-ttu-id="17f8f-166">New-MobileDeviceMailboxPolicy</span><span class="sxs-lookup"><span data-stu-id="17f8f-166">New-MobileDeviceMailboxPolicy</span></span></p></td>
+<td align="left"><p><span data-ttu-id="17f8f-167">PasswordEnabled</span><span class="sxs-lookup"><span data-stu-id="17f8f-167">PasswordEnabled</span></span></p></td>
+<td align="left"><p><span data-ttu-id="17f8f-168">False</span><span class="sxs-lookup"><span data-stu-id="17f8f-168">False</span></span></p></td>
 </tr>
 <tr class="even">
 <td align="left"><p></p></td>
-<td align="left"><p><span data-ttu-id="6b623-168">AllowNonProvisionableDevices</span><span class="sxs-lookup"><span data-stu-id="6b623-168">AllowNonProvisionableDevices</span></span></p></td>
-<td align="left"><p><span data-ttu-id="6b623-169">True</span><span class="sxs-lookup"><span data-stu-id="6b623-169">True</span></span></p></td>
+<td align="left"><p><span data-ttu-id="17f8f-169">AllowNonProvisionableDevices</span><span class="sxs-lookup"><span data-stu-id="17f8f-169">AllowNonProvisionableDevices</span></span></p></td>
+<td align="left"><p><span data-ttu-id="17f8f-170">True</span><span class="sxs-lookup"><span data-stu-id="17f8f-170">True</span></span></p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p><span data-ttu-id="6b623-170">Enable-CSMeetingRoom</span><span class="sxs-lookup"><span data-stu-id="6b623-170">Enable-CSMeetingRoom</span></span></p></td>
-<td align="left"><p><span data-ttu-id="6b623-171">RegistrarPool</span><span class="sxs-lookup"><span data-stu-id="6b623-171">RegistrarPool</span></span></p></td>
-<td align="left"><p><span data-ttu-id="6b623-172">ユーザー指定</span><span class="sxs-lookup"><span data-stu-id="6b623-172">User-provided</span></span></p></td>
+<td align="left"><p><span data-ttu-id="17f8f-171">Enable-CSMeetingRoom</span><span class="sxs-lookup"><span data-stu-id="17f8f-171">Enable-CSMeetingRoom</span></span></p></td>
+<td align="left"><p><span data-ttu-id="17f8f-172">RegistrarPool</span><span class="sxs-lookup"><span data-stu-id="17f8f-172">RegistrarPool</span></span></p></td>
+<td align="left"><p><span data-ttu-id="17f8f-173">ユーザー指定</span><span class="sxs-lookup"><span data-stu-id="17f8f-173">User-provided</span></span></p></td>
 </tr>
 <tr class="even">
 <td align="left"><p></p></td>
-<td align="left"><p><span data-ttu-id="6b623-173">SipAddress</span><span class="sxs-lookup"><span data-stu-id="6b623-173">SipAddress</span></span></p></td>
-<td align="left"><p><span data-ttu-id="6b623-174">デバイス アカウントのユーザー プリンシパル名 (UPN) に設定</span><span class="sxs-lookup"><span data-stu-id="6b623-174">Set to the User Principal Name (UPN) of the device account</span></span></p></td>
+<td align="left"><p><span data-ttu-id="17f8f-174">SipAddress</span><span class="sxs-lookup"><span data-stu-id="17f8f-174">SipAddress</span></span></p></td>
+<td align="left"><p><span data-ttu-id="17f8f-175">デバイス アカウントのユーザー プリンシパル名 (UPN) に設定</span><span class="sxs-lookup"><span data-stu-id="17f8f-175">Set to the User Principal Name (UPN) of the device account</span></span></p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p><span data-ttu-id="6b623-175">Set-MsolUserLicense (O365 のみ)</span><span class="sxs-lookup"><span data-stu-id="6b623-175">Set-MsolUserLicense (O365 only)</span></span></p></td>
-<td align="left"><p><span data-ttu-id="6b623-176">AddLicenses</span><span class="sxs-lookup"><span data-stu-id="6b623-176">AddLicenses</span></span></p></td>
-<td align="left"><p><span data-ttu-id="6b623-177">ユーザー指定</span><span class="sxs-lookup"><span data-stu-id="6b623-177">User-provided</span></span></p></td>
+<td align="left"><p><span data-ttu-id="17f8f-176">Set-MsolUserLicense (O365 のみ)</span><span class="sxs-lookup"><span data-stu-id="17f8f-176">Set-MsolUserLicense (O365 only)</span></span></p></td>
+<td align="left"><p><span data-ttu-id="17f8f-177">AddLicenses</span><span class="sxs-lookup"><span data-stu-id="17f8f-177">AddLicenses</span></span></p></td>
+<td align="left"><p><span data-ttu-id="17f8f-178">ユーザー指定</span><span class="sxs-lookup"><span data-stu-id="17f8f-178">User-provided</span></span></p></td>
 </tr>
 <tr class="even">
-<td align="left"><p><span data-ttu-id="6b623-178">Set-MsolUser (O365 のみ)</span><span class="sxs-lookup"><span data-stu-id="6b623-178">Set-MsolUser (O365 only)</span></span></p></td>
-<td align="left"><p><span data-ttu-id="6b623-179">PasswordNeverExpires</span><span class="sxs-lookup"><span data-stu-id="6b623-179">PasswordNeverExpires</span></span></p></td>
-<td align="left"><p><span data-ttu-id="6b623-180">True</span><span class="sxs-lookup"><span data-stu-id="6b623-180">True</span></span></p></td>
+<td align="left"><p><span data-ttu-id="17f8f-179">Set-MsolUser (O365 のみ)</span><span class="sxs-lookup"><span data-stu-id="17f8f-179">Set-MsolUser (O365 only)</span></span></p></td>
+<td align="left"><p><span data-ttu-id="17f8f-180">PasswordNeverExpires</span><span class="sxs-lookup"><span data-stu-id="17f8f-180">PasswordNeverExpires</span></span></p></td>
+<td align="left"><p><span data-ttu-id="17f8f-181">True</span><span class="sxs-lookup"><span data-stu-id="17f8f-181">True</span></span></p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p><span data-ttu-id="6b623-181">Set-AdUser (社内のみ)</span><span class="sxs-lookup"><span data-stu-id="6b623-181">Set-AdUser (On-prem only)</span></span></p></td>
-<td align="left"><p><span data-ttu-id="6b623-182">Enabled</span><span class="sxs-lookup"><span data-stu-id="6b623-182">Enabled</span></span></p></td>
-<td align="left"><p><span data-ttu-id="6b623-183">True</span><span class="sxs-lookup"><span data-stu-id="6b623-183">True</span></span></p></td>
+<td align="left"><p><span data-ttu-id="17f8f-182">Set-AdUser (社内のみ)</span><span class="sxs-lookup"><span data-stu-id="17f8f-182">Set-AdUser (On-prem only)</span></span></p></td>
+<td align="left"><p><span data-ttu-id="17f8f-183">Enabled</span><span class="sxs-lookup"><span data-stu-id="17f8f-183">Enabled</span></span></p></td>
+<td align="left"><p><span data-ttu-id="17f8f-184">True</span><span class="sxs-lookup"><span data-stu-id="17f8f-184">True</span></span></p></td>
 </tr>
 <tr class="even">
-<td align="left"><p><span data-ttu-id="6b623-184">Set-AdUser (社内のみ)</span><span class="sxs-lookup"><span data-stu-id="6b623-184">Set-AdUser (On-prem only)</span></span></p></td>
-<td align="left"><p><span data-ttu-id="6b623-185">PasswordNeverExpires</span><span class="sxs-lookup"><span data-stu-id="6b623-185">PasswordNeverExpires</span></span></p></td>
-<td align="left"><p><span data-ttu-id="6b623-186">True</span><span class="sxs-lookup"><span data-stu-id="6b623-186">True</span></span></p></td>
+<td align="left"><p><span data-ttu-id="17f8f-185">Set-AdUser (社内のみ)</span><span class="sxs-lookup"><span data-stu-id="17f8f-185">Set-AdUser (On-prem only)</span></span></p></td>
+<td align="left"><p><span data-ttu-id="17f8f-186">PasswordNeverExpires</span><span class="sxs-lookup"><span data-stu-id="17f8f-186">PasswordNeverExpires</span></span></p></td>
+<td align="left"><p><span data-ttu-id="17f8f-187">True</span><span class="sxs-lookup"><span data-stu-id="17f8f-187">True</span></span></p></td>
 </tr>
 </tbody>
 </table>
 
-## <span data-ttu-id="6b623-187">アカウント作成スクリプト</span><span class="sxs-lookup"><span data-stu-id="6b623-187">Account creation scripts</span></span>
+## <span data-ttu-id="17f8f-188">アカウント作成スクリプト</span><span class="sxs-lookup"><span data-stu-id="17f8f-188">Account creation scripts</span></span>
 
-<span data-ttu-id="6b623-188">これらのスクリプトを実行すると、デバイス アカウントが作成されます。</span><span class="sxs-lookup"><span data-stu-id="6b623-188">These scripts will create a device account for you.</span></span> <span data-ttu-id="6b623-189">正しく実行されたことを確かめるには、[アカウント検証スクリプト](#acct-verification-ps-scripts)を使用できます。</span><span class="sxs-lookup"><span data-stu-id="6b623-189">You can use the [Account verification script](#acct-verification-ps-scripts) to make sure they ran correctly.</span></span>
+<span data-ttu-id="17f8f-189">これらのスクリプトを実行すると、デバイス アカウントが作成されます。</span><span class="sxs-lookup"><span data-stu-id="17f8f-189">These scripts will create a device account for you.</span></span> <span data-ttu-id="17f8f-190">正しく実行されたことを確かめるには、[アカウント検証スクリプト](#acct-verification-ps-scripts)を使用できます。</span><span class="sxs-lookup"><span data-stu-id="17f8f-190">You can use the [Account verification script](#acct-verification-ps-scripts) to make sure they ran correctly.</span></span>
 
-<span data-ttu-id="6b623-190">アカウント作成スクリプトで既存のアカウントを変更することはできませんが、アカウント作成スクリプトを使うと、既存のアカウントを正しく構成するにはどのコマンドレットを実行する必要があるかを理解するのに役立ちます。</span><span class="sxs-lookup"><span data-stu-id="6b623-190">The account creation scripts cannot modify an already existing account, but can be used to help you understand which cmdlets need to be run to configure the existing account correctly.</span></span>
+<span data-ttu-id="17f8f-191">アカウント作成スクリプトで既存のアカウントを変更することはできませんが、アカウント作成スクリプトを使うと、既存のアカウントを正しく構成するにはどのコマンドレットを実行する必要があるかを理解するのに役立ちます。</span><span class="sxs-lookup"><span data-stu-id="17f8f-191">The account creation scripts cannot modify an already existing account, but can be used to help you understand which cmdlets need to be run to configure the existing account correctly.</span></span>
 
-### <a href="" id="create-on-premises-ps-scripts"></a><span data-ttu-id="6b623-191">オンプレミスアカウントを作成する</span><span class="sxs-lookup"><span data-stu-id="6b623-191">Create an on-premises account</span></span>
+### <a href="" id="create-on-premises-ps-scripts"></a><span data-ttu-id="17f8f-192">オンプレミス アカウントを作成する</span><span class="sxs-lookup"><span data-stu-id="17f8f-192">Create an on-premises account</span></span>
 
-<span data-ttu-id="6b623-192">「[社内展開](on-premises-deployment-surface-hub-device-accounts.md)」で説明しているとおりに、アカウントを作成します。</span><span class="sxs-lookup"><span data-stu-id="6b623-192">Creates an account as described in [On-premises deployment](on-premises-deployment-surface-hub-device-accounts.md).</span></span>
+<span data-ttu-id="17f8f-193">「[社内展開](on-premises-deployment-surface-hub-device-accounts.md)」で説明しているとおりに、アカウントを作成します。</span><span class="sxs-lookup"><span data-stu-id="17f8f-193">Creates an account as described in [On-premises deployment](on-premises-deployment-surface-hub-device-accounts.md).</span></span>
 
 ```PowerShell
 # SHAccountCreateOnPrem.ps1
@@ -546,9 +547,9 @@ else
 }
 ```
 
-### <a href="" id="create-os356-ps-scripts"></a><span data-ttu-id="6b623-193">Office 365 を使ったデバイス アカウントの作成</span><span class="sxs-lookup"><span data-stu-id="6b623-193">Create a device account using Office 365</span></span>
+### <a href="" id="create-os356-ps-scripts"></a><span data-ttu-id="17f8f-194">Office 365 を使ったデバイス アカウントの作成</span><span class="sxs-lookup"><span data-stu-id="17f8f-194">Create a device account using Office 365</span></span>
 
-<span data-ttu-id="6b623-194">「[Office 365 を使ったデバイス アカウントの作成](create-a-device-account-using-office-365.md)」で説明しているとおりに、アカウントを作成します。</span><span class="sxs-lookup"><span data-stu-id="6b623-194">Creates an account as described in [Create a device account using Office 365](create-a-device-account-using-office-365.md)</span></span>
+<span data-ttu-id="17f8f-195">「[Office 365 を使ったデバイス アカウントの作成](create-a-device-account-using-office-365.md)」で説明しているとおりに、アカウントを作成します。</span><span class="sxs-lookup"><span data-stu-id="17f8f-195">Creates an account as described in [Create a device account using Office 365](create-a-device-account-using-office-365.md)</span></span>
 
 ```PowerShell
 # SHAccountCreateO365.ps1
@@ -991,9 +992,9 @@ else
 }
 ```
 
-## <a href="" id="acct-verification-ps-scripts"></a><span data-ttu-id="6b623-195">アカウント検証スクリプト</span><span class="sxs-lookup"><span data-stu-id="6b623-195">Account verification script</span></span>
+## <a href="" id="acct-verification-ps-scripts"></a><span data-ttu-id="17f8f-196">アカウント検証スクリプト</span><span class="sxs-lookup"><span data-stu-id="17f8f-196">Account verification script</span></span>
 
-<span data-ttu-id="6b623-196">このスクリプトを実行すると、以前に作成した Surface Hub のデバイス アカウントが、作成時に使った方法に関係なく検証されます。</span><span class="sxs-lookup"><span data-stu-id="6b623-196">This script will validate the previously-created device account on a Surface Hub, no matter which method was used to create it.</span></span> <span data-ttu-id="6b623-197">このスクリプトは、基本的に合格/不合格方式です。</span><span class="sxs-lookup"><span data-stu-id="6b623-197">This script is basically pass/fail.</span></span> <span data-ttu-id="6b623-198">いずれかのテスト エラーが発生すると詳細なエラー メッセージが表示されますが、すべてのテストに合格すると、最終的な結果は要約レポートになります。</span><span class="sxs-lookup"><span data-stu-id="6b623-198">If one of the test errors out, it will show a detailed error message, but if all tests pass, the end result will be a summary report.</span></span> <span data-ttu-id="6b623-199">たとえば、次のような結果が表示されます。</span><span class="sxs-lookup"><span data-stu-id="6b623-199">For example, you might see:</span></span>
+<span data-ttu-id="17f8f-197">このスクリプトは、作成に使用した方法に関係なく、Surface Hub と Surface Hub 2S で以前に作成されたデバイス アカウントを検証します。</span><span class="sxs-lookup"><span data-stu-id="17f8f-197">This script validates the previously-created device account on Surface Hub and Surface Hub 2S, no matter which method was used to create it.</span></span> <span data-ttu-id="17f8f-198">このスクリプトは、基本的に合格/不合格方式です。</span><span class="sxs-lookup"><span data-stu-id="17f8f-198">This script is basically pass/fail.</span></span> <span data-ttu-id="17f8f-199">いずれかのテスト エラーが発生すると詳細なエラー メッセージが表示されますが、すべてのテストに合格すると、最終的な結果は要約レポートになります。</span><span class="sxs-lookup"><span data-stu-id="17f8f-199">If one of the test errors out, it will show a detailed error message, but if all tests pass, the end result will be a summary report.</span></span> <span data-ttu-id="17f8f-200">たとえば、次のような結果が表示されます。</span><span class="sxs-lookup"><span data-stu-id="17f8f-200">For example, you might see:</span></span>
 
 ``` syntax
 15 tests executed
@@ -1002,7 +1003,7 @@ else
 15 passed
 ```
 
-<span data-ttu-id="6b623-200">具体的な設定の詳細は表示されません。</span><span class="sxs-lookup"><span data-stu-id="6b623-200">Details of specific settings will not be shown.</span></span>
+<span data-ttu-id="17f8f-201">具体的な設定の詳細は表示されません。</span><span class="sxs-lookup"><span data-stu-id="17f8f-201">Details of specific settings will not be shown.</span></span>
 
 ```PowerShell
 # SHAccountValidate.ps1
@@ -1442,9 +1443,9 @@ Write-Host -ForegroundColor Green $Global:iTotalPasses "passes "
 Cleanup
 ```
 
-## <a href="" id="enable-sfb-ps-scripts"></a><span data-ttu-id="6b623-201">Skype for Business の有効化</span><span class="sxs-lookup"><span data-stu-id="6b623-201">Enable Skype for Business</span></span>
+## <a href="" id="enable-sfb-ps-scripts"></a><span data-ttu-id="17f8f-202">Skype for Business の有効化</span><span class="sxs-lookup"><span data-stu-id="17f8f-202">Enable Skype for Business</span></span>
 
-<span data-ttu-id="6b623-202">このスクリプトを実行すると、デバイス アカウントで Skype for Business が有効になります。</span><span class="sxs-lookup"><span data-stu-id="6b623-202">This script will enable Skype for Business on a device account.</span></span> <span data-ttu-id="6b623-203">アカウントの作成時にまだ Skype for Business が有効になっていなかった場合にのみ、このスクリプトを使います。</span><span class="sxs-lookup"><span data-stu-id="6b623-203">Use it only if Skype for Business wasn't previously enabled during account creation.</span></span>
+<span data-ttu-id="17f8f-203">このスクリプトを実行すると、デバイス アカウントで Skype for Business が有効になります。</span><span class="sxs-lookup"><span data-stu-id="17f8f-203">This script will enable Skype for Business on a device account.</span></span> <span data-ttu-id="17f8f-204">アカウントの作成時にまだ Skype for Business が有効になっていなかった場合にのみ、このスクリプトを使います。</span><span class="sxs-lookup"><span data-stu-id="17f8f-204">Use it only if Skype for Business wasn't previously enabled during account creation.</span></span>
 
 ```PowerShell
 ## This script performs only the Enable for Skype for Business step on an account. It should only be run if this step failed in SHAccountCreate and the other steps have been completed ##
@@ -1602,31 +1603,31 @@ PrintSuccess "Successfully enabled $strRoomUri as a Skype for Business meeting r
 Cleanup
 ```
 
-## <span data-ttu-id="6b623-204">便利なコマンドレット</span><span class="sxs-lookup"><span data-stu-id="6b623-204">Useful cmdlets</span></span>
+## <span data-ttu-id="17f8f-205">便利なコマンドレット</span><span class="sxs-lookup"><span data-stu-id="17f8f-205">Useful cmdlets</span></span>
 
-### <a href="" id="create-compatible-as-policy"></a><span data-ttu-id="6b623-205">Surface Hub と互換性のある ActiveSync ポリシーの作成</span><span class="sxs-lookup"><span data-stu-id="6b623-205">Creating a Surface Hub-compatible ActiveSync policy</span></span>
+### <a href="" id="create-compatible-as-policy"></a><span data-ttu-id="17f8f-206">Surface Hub と互換性のある ActiveSync ポリシーの作成</span><span class="sxs-lookup"><span data-stu-id="17f8f-206">Creating a Surface Hub-compatible ActiveSync policy</span></span>
 
-<span data-ttu-id="6b623-206">Surface Hub で Exchange サービスを使うには、互換性のある ActiveSync ポリシーで構成したデバイス アカウントを、デバイスにプロビジョニングする必要があります。</span><span class="sxs-lookup"><span data-stu-id="6b623-206">For Surface Hub to use Exchange services, a device account configured with a compatible ActiveSync policy must be provisioned on the device.</span></span> <span data-ttu-id="6b623-207">このポリシーには、</span><span class="sxs-lookup"><span data-stu-id="6b623-207">This policy has the following requirements:</span></span>
+<span data-ttu-id="17f8f-207">Surface Hub で Exchange サービスを使うには、互換性のある ActiveSync ポリシーで構成したデバイス アカウントを、デバイスにプロビジョニングする必要があります。</span><span class="sxs-lookup"><span data-stu-id="17f8f-207">For Surface Hub to use Exchange services, a device account configured with a compatible ActiveSync policy must be provisioned on the device.</span></span> <span data-ttu-id="17f8f-208">このポリシーには、</span><span class="sxs-lookup"><span data-stu-id="17f8f-208">This policy has the following requirements:</span></span>
 
 ``` syntax
 PasswordEnabled == 0
 ```
 
-<span data-ttu-id="6b623-208">次のコマンドレットでは、 `$strPolicy` は ActiveSync ポリシーの名前であり、 `$strRoomUpn` は、ポリシーを適用するデバイス アカウントの UPN です。</span><span class="sxs-lookup"><span data-stu-id="6b623-208">In the following cmdlets, `$strPolicy` is the name of the ActiveSync policy, and `$strRoomUpn` is the UPN of the device account you want to apply the policy to.</span></span>
+<span data-ttu-id="17f8f-209">次のコマンドレットでは、 `$strPolicy` は ActiveSync ポリシーの名前であり、 `$strRoomUpn` は、ポリシーを適用するデバイス アカウントの UPN です。</span><span class="sxs-lookup"><span data-stu-id="17f8f-209">In the following cmdlets, `$strPolicy` is the name of the ActiveSync policy, and `$strRoomUpn` is the UPN of the device account you want to apply the policy to.</span></span>
 
-<span data-ttu-id="6b623-209">コマンドレットを実行するには、リモート PowerShell セッションを確立し、次の要件を満たす必要があります。</span><span class="sxs-lookup"><span data-stu-id="6b623-209">Note that in order to run the cmdlets, you need to set up a remote PowerShell session and:</span></span>
+<span data-ttu-id="17f8f-210">コマンドレットを実行するには、リモート PowerShell セッションを確立し、次の要件を満たす必要があります。</span><span class="sxs-lookup"><span data-stu-id="17f8f-210">Note that in order to run the cmdlets, you need to set up a remote PowerShell session and:</span></span>
 
--   <span data-ttu-id="6b623-210">管理者アカウントがリモート PowerShell に対応している必要があります。</span><span class="sxs-lookup"><span data-stu-id="6b623-210">Your admin account must be remote-PowerShell-enabled.</span></span> <span data-ttu-id="6b623-211">これにより、スクリプトに必要な PowerShell コマンドレットを管理者が使用できます </span><span class="sxs-lookup"><span data-stu-id="6b623-211">This allows the admin to use the PowerShell cmdlets that are needed by the script.</span></span> <span data-ttu-id="6b623-212">(このアクセス許可を設定するには `set-user $admin -RemotePowerShellEnabled $true` を使用できます)。</span><span class="sxs-lookup"><span data-stu-id="6b623-212">(This permission can be set using `set-user $admin -RemotePowerShellEnabled $true`)</span></span>
--   <span data-ttu-id="6b623-213">作成スクリプトの実行を計画している場合は、管理者アカウントに "Reset Password/パスワードのリセット" 役割が必要です。</span><span class="sxs-lookup"><span data-stu-id="6b623-213">Your admin account must have the "Reset Password" role if you plan to run the creation scripts.</span></span> <span data-ttu-id="6b623-214">これにより、管理者がアカウントのパスワードを変更できます。この操作はスクリプトに必要です。</span><span class="sxs-lookup"><span data-stu-id="6b623-214">This allows the admin to change the password of the account, which is needed for the script.</span></span> <span data-ttu-id="6b623-215">"Reset Password/パスワードのリセット" 役割を有効にするには、Exchange 管理センターを使用できます。</span><span class="sxs-lookup"><span data-stu-id="6b623-215">The Reset Password Role can be enabled using the Exchange Admin Center.</span></span>
+-   <span data-ttu-id="17f8f-211">管理者アカウントがリモート PowerShell に対応している必要があります。</span><span class="sxs-lookup"><span data-stu-id="17f8f-211">Your admin account must be remote-PowerShell-enabled.</span></span> <span data-ttu-id="17f8f-212">これにより、スクリプトに必要な PowerShell コマンドレットを管理者が使用できます </span><span class="sxs-lookup"><span data-stu-id="17f8f-212">This allows the admin to use the PowerShell cmdlets that are needed by the script.</span></span> <span data-ttu-id="17f8f-213">(このアクセス許可を設定するには `set-user $admin -RemotePowerShellEnabled $true` を使用できます)。</span><span class="sxs-lookup"><span data-stu-id="17f8f-213">(This permission can be set using `set-user $admin -RemotePowerShellEnabled $true`)</span></span>
+-   <span data-ttu-id="17f8f-214">作成スクリプトの実行を計画している場合は、管理者アカウントに "Reset Password/パスワードのリセット" 役割が必要です。</span><span class="sxs-lookup"><span data-stu-id="17f8f-214">Your admin account must have the "Reset Password" role if you plan to run the creation scripts.</span></span> <span data-ttu-id="17f8f-215">これにより、管理者がアカウントのパスワードを変更できます。この操作はスクリプトに必要です。</span><span class="sxs-lookup"><span data-stu-id="17f8f-215">This allows the admin to change the password of the account, which is needed for the script.</span></span> <span data-ttu-id="17f8f-216">"Reset Password/パスワードのリセット" 役割を有効にするには、Exchange 管理センターを使用できます。</span><span class="sxs-lookup"><span data-stu-id="17f8f-216">The Reset Password Role can be enabled using the Exchange Admin Center.</span></span>
 
-<span data-ttu-id="6b623-216">ポリシーを作成します。</span><span class="sxs-lookup"><span data-stu-id="6b623-216">Create the policy.</span></span>
+<span data-ttu-id="17f8f-217">ポリシーを作成します。</span><span class="sxs-lookup"><span data-stu-id="17f8f-217">Create the policy.</span></span>
 
 ```PowerShell
 # Create new policy with PasswordEnabled == false
 New-MobileDeviceMailboxPolicy -Name $strPolicy -PasswordEnabled $false –AllowNonProvisionableDevices $true
 ```
 
-<span data-ttu-id="6b623-217">ポリシーを適用するには、メールボックスの種類を会議室にすることはできないため、最初にメールボックスをユーザーに変換する必要があります。</span><span class="sxs-lookup"><span data-stu-id="6b623-217">To apply the policy, the mailbox cannot be a room type, so it has to be converted into a user first.</span></span>
+<span data-ttu-id="17f8f-218">ポリシーを適用するには、メールボックスの種類を会議室にすることはできないため、最初にメールボックスをユーザーに変換する必要があります。</span><span class="sxs-lookup"><span data-stu-id="17f8f-218">To apply the policy, the mailbox cannot be a room type, so it has to be converted into a user first.</span></span>
 
 ```PowerShell
 # Convert user to regular type
@@ -1635,43 +1636,43 @@ Set-Mailbox $strRoomUpn -Type Regular
 Set-CASMailbox $strRoomUpn -ActiveSyncMailboxPolicy $strPolicy
 ```
 
-<span data-ttu-id="6b623-218">これで、必要な作業は、デバイス アカウントを変換して種類を会議室に戻すことだけになります。</span><span class="sxs-lookup"><span data-stu-id="6b623-218">Now the device account just needs to be converted back into a room type.</span></span>
+<span data-ttu-id="17f8f-219">これで、必要な作業は、デバイス アカウントを変換して種類を会議室に戻すことだけになります。</span><span class="sxs-lookup"><span data-stu-id="17f8f-219">Now the device account just needs to be converted back into a room type.</span></span>
 
 ```PowerShell
 # Convert back to room mailbox
 Set-Mailbox $strRoomUpn -Type Room
 ```
 
-### <a href="" id="whitelisting-device-ids-cmdlet"></a><span data-ttu-id="6b623-219">ActiveSync に対するデバイス ID の許可</span><span class="sxs-lookup"><span data-stu-id="6b623-219">Allowing device IDs for ActiveSync</span></span>
+### <span data-ttu-id="17f8f-220">ActiveSync に対するデバイス ID の許可</span><span class="sxs-lookup"><span data-stu-id="17f8f-220">Allowing device IDs for ActiveSync</span></span>
 
-<span data-ttu-id="6b623-220">アカウント `$strRoomUpn` を許可するには、次のコマンドを実行します。</span><span class="sxs-lookup"><span data-stu-id="6b623-220">To allow an account `$strRoomUpn`, run the following command:</span></span>
+<span data-ttu-id="17f8f-221">アカウント `$strRoomUpn` を許可するには、次のコマンドを実行します。</span><span class="sxs-lookup"><span data-stu-id="17f8f-221">To allow an account `$strRoomUpn`, run the following command:</span></span>
 
 ```PowerShell
 Set-CASMailbox –Identity $strRoomUpn –ActiveSyncAllowedDeviceIDs “<ID>”
 ```
 
-<span data-ttu-id="6b623-221">デバイスの ID を検索するには、次のコマンドを実行します。</span><span class="sxs-lookup"><span data-stu-id="6b623-221">To find a device's ID, run:</span></span>
+<span data-ttu-id="17f8f-222">デバイスの ID を検索するには、次のコマンドを実行します。</span><span class="sxs-lookup"><span data-stu-id="17f8f-222">To find a device's ID, run:</span></span>
 
 ```PowerShell
 Get-ActiveSyncDevice -Mailbox $strRoomUpn
 ```
 
-<span data-ttu-id="6b623-222">このコマンドを実行すると、`DeviceId` プロパティなど、アカウントのプロビジョニング先となっているすべてのデバイスのデバイス情報が取得されます。</span><span class="sxs-lookup"><span data-stu-id="6b623-222">This retrieves device information for every device that the account has been provisioned on, Including the `DeviceId` property.</span></span>
+<span data-ttu-id="17f8f-223">このコマンドを実行すると、`DeviceId` プロパティなど、アカウントのプロビジョニング先となっているすべてのデバイスのデバイス情報が取得されます。</span><span class="sxs-lookup"><span data-stu-id="17f8f-223">This retrieves device information for every device that the account has been provisioned on, Including the `DeviceId` property.</span></span>
 
-### <a href="" id="auto-accept-meetings-cmdlet"></a><span data-ttu-id="6b623-223">会議出席依頼の自動的な承諾と辞退</span><span class="sxs-lookup"><span data-stu-id="6b623-223">Auto-accepting and declining meeting requests</span></span>
+### <a href="" id="auto-accept-meetings-cmdlet"></a><span data-ttu-id="17f8f-224">会議出席依頼の自動的な承諾と辞退</span><span class="sxs-lookup"><span data-stu-id="17f8f-224">Auto-accepting and declining meeting requests</span></span>
 
-<span data-ttu-id="6b623-224">デバイス アカウントで、空き時間に基づいて会議出席依頼を自動的に承諾または辞退するには、**AutomateProcessing** 属性を **AutoAccept** に設定する必要があります。</span><span class="sxs-lookup"><span data-stu-id="6b623-224">For a device account to automatically accept or decline meeting requests based on its availability, the **AutomateProcessing** attribute must be set to **AutoAccept**.</span></span> <span data-ttu-id="6b623-225">これは、会議の重複を防ぐために推奨される方法です。</span><span class="sxs-lookup"><span data-stu-id="6b623-225">This is recommended as to prevent overlapping meetings.</span></span>
+<span data-ttu-id="17f8f-225">デバイス アカウントで、空き時間に基づいて会議出席依頼を自動的に承諾または辞退するには、**AutomateProcessing** 属性を **AutoAccept** に設定する必要があります。</span><span class="sxs-lookup"><span data-stu-id="17f8f-225">For a device account to automatically accept or decline meeting requests based on its availability, the **AutomateProcessing** attribute must be set to **AutoAccept**.</span></span> <span data-ttu-id="17f8f-226">これは、会議の重複を防ぐために推奨される方法です。</span><span class="sxs-lookup"><span data-stu-id="17f8f-226">This is recommended as to prevent overlapping meetings.</span></span>
 
 ```PowerShell
 Set-CalendarProcessing $strRoomUpn -AutomateProcessing AutoAccept
 ```
 
-### <a href="" id="accept-ext-meetings-cmdlet"></a><span data-ttu-id="6b623-226">外部会議出席依頼の承諾</span><span class="sxs-lookup"><span data-stu-id="6b623-226">Accepting external meeting requests</span></span>
+### <a href="" id="accept-ext-meetings-cmdlet"></a><span data-ttu-id="17f8f-227">外部会議出席依頼の承諾</span><span class="sxs-lookup"><span data-stu-id="17f8f-227">Accepting external meeting requests</span></span>
 
-<span data-ttu-id="6b623-227">デバイス アカウントで外部会議出席依頼 (同じテナント/ドメイン名にないアカウントからの会議出席依頼) を承諾するには、そのデバイス アカウントが、外部会議出席依頼の処理を許可するように設定されている必要があります。</span><span class="sxs-lookup"><span data-stu-id="6b623-227">For a device account to accept external meeting requests (a meeting request from an account not in the same tenant/domain), the device account must be set to allow processing of external meeting requests.</span></span> <span data-ttu-id="6b623-228">設定すると、外部アカウントからの会議出席依頼とローカル アカウントからの会議出席依頼が、デバイス アカウントで自動的に承諾または辞退されます。</span><span class="sxs-lookup"><span data-stu-id="6b623-228">Once set, the device account will automatically accept or decline meeting requests from external accounts as well as local accounts.</span></span>
+<span data-ttu-id="17f8f-228">デバイス アカウントで外部会議出席依頼 (同じテナント/ドメイン名にないアカウントからの会議出席依頼) を承諾するには、そのデバイス アカウントが、外部会議出席依頼の処理を許可するように設定されている必要があります。</span><span class="sxs-lookup"><span data-stu-id="17f8f-228">For a device account to accept external meeting requests (a meeting request from an account not in the same tenant/domain), the device account must be set to allow processing of external meeting requests.</span></span> <span data-ttu-id="17f8f-229">設定すると、外部アカウントからの会議出席依頼とローカル アカウントからの会議出席依頼が、デバイス アカウントで自動的に承諾または辞退されます。</span><span class="sxs-lookup"><span data-stu-id="17f8f-229">Once set, the device account will automatically accept or decline meeting requests from external accounts as well as local accounts.</span></span>
 
 > [!Note]
-> <span data-ttu-id="6b623-229">**オートマトン Eprocessing**属性が**autoaccept**に設定されていない場合、この設定を行っても効果はありません。</span><span class="sxs-lookup"><span data-stu-id="6b623-229">If the **AutomateProcessing** attribute is not set to **AutoAccept**, then setting this will have no effect.</span></span>
+> <span data-ttu-id="17f8f-230">**AutomateProcessing 属性**が**AutoAccept**に設定されていない場合、この設定は無効です。</span><span class="sxs-lookup"><span data-stu-id="17f8f-230">If the **AutomateProcessing** attribute is not set to **AutoAccept**, then setting this will have no effect.</span></span>
 
 ```PowerShell
 Set-CalendarProcessing $strRoomUpn -ProcessExternalMeetingMessages $true
