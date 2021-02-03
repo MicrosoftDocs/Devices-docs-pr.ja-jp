@@ -1,5 +1,5 @@
 ---
-title: 管理者グループの管理 (Surface Hub)
+title: 管理者グループの管理
 description: デバイスで設定アプリを起動すると、すべての Microsoft Surface Hub を個別に構成できます。
 ms.assetid: FA67209E-B355-4333-B903-482C4A3BDCCE
 ms.reviewer: ''
@@ -10,16 +10,16 @@ ms.sitesec: library
 author: dansimp
 ms.author: dansimp
 ms.topic: article
-ms.date: 07/27/2017
+ms.date: 02/01/2021
 ms.localizationpriority: medium
-ms.openlocfilehash: 716e409bf988e7178ec45e21165aad070d027eee
-ms.sourcegitcommit: 109d1d7608ac4667564fa5369e8722e569b8ea36
+ms.openlocfilehash: 36c6010307603b36b8798a09aed26f8b337b2c1b
+ms.sourcegitcommit: 5cfac94c220c8a8d4620c6a7fa75ae2fae089c7f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2020
-ms.locfileid: "10836342"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "11311953"
 ---
-# 管理者グループの管理 (Surface Hub)
+# Surface Hub の管理グループの管理
 
 
 デバイスで設定アプリを使用すると、すべての Surface Hub をローカルで構成できます。 承認されていないユーザーによって設定が変更されるのを防ぐため、設定アプリでは、アプリを起動する際に管理者の資格情報が求められます。
@@ -27,11 +27,12 @@ ms.locfileid: "10836342"
 
 ## 管理者グループの管理
 
-デバイスの管理者アカウントは、次の 3 つのうちいずれかの方法で設定できます。
+デバイスの管理者アカウントは、次の方法で設定できます。
 
--   ローカル管理者アカウントを作成する
--   デバイスを Active Directory (AD) ドメインに参加させる
--   デバイスを Azure Active Directory (Azure AD) に参加させる
+- [ローカル管理者アカウントを作成する](#create-a-local-admin-account)
+- [デバイスを Active Directory にドメイン参加する](#domain-join-the-device-to-active-directory)
+- [Azure ADデバイスに参加する](#azure-ad-join-the-device)
+- [参加しているデバイスに Azure AD管理者以外のアカウントを構成する (Surface Hub 2S)](#configure-non-global-admin-accounts-on-azure-ad-joined-devices)
 
 
 ### ローカル管理者アカウントを作成する
@@ -40,7 +41,7 @@ ms.locfileid: "10836342"
 
 ローカル管理者アカウントの情報は、ディレクトリ サービスによってサポートされないことに注意してください。 デバイスで Active Directory (AD) または Azure Active Directory (Azure AD) にアクセスできない場合にのみ、ローカル管理者を選ぶことをお勧めします。 ローカル管理者のパスワードを変更する場合は、[設定] で変更できます。 ただし、ローカル管理者アカウントの使用からドメインまたは Azure AD テナントのグループの使用に変更する場合は、[デバイスをリセット](device-reset-surface-hub.md)して、初回設定プログラムを再度実行する必要があります。
 
-### デバイスを Active Directory (AD) ドメインに参加させる
+### デバイスを Active Directory にドメイン参加
 
 Surface Hub を AD ドメインに参加させると、指定したセキュリティ グループのユーザーが設定を構成できるようになります。 初回実行時に、[Active Directory ドメイン サービス](first-run-program-surface-hub.md#use-active-directory-domain-services)の使用を選択します。 選択したドメインに参加させる権限のある資格情報と既存のセキュリティ グループの名前を指定する必要があります。 そのセキュリティ グループのメンバーであるユーザーが自身の資格情報を入力すると、設定のロックを解除できます。
 
@@ -56,9 +57,9 @@ Surface Hub では、ドメイン コントローラーからグループ ポリ
 > Surface Hub にドメインとの信頼がなくなった場合 (たとえば、ドメイン参加後にドメインから Surface Hub を削除する場合)、デバイスに対して認証を受けて設定を開くことができなくなります。 Surface Hub とドメインとの信頼関係を削除する場合は、先に[デバイスをリセット](device-reset-surface-hub.md)します。
 
 
-### デバイスを Azure Active Directory (Azure AD) に参加させる
+### Azure ADデバイスに参加する
 
-Surface Hub を Azure AD に参加させると、Azure AD テナントの IT 担当者が Surface Hub の設定を構成できるようになります。 初回実行時に、[Microsoft Azure Active Directory](first-run-program-surface-hub.md#use-microsoft-azure-active-directory) の使用を選択します。 選択した Azure AD テナントに参加させることのできる資格情報を入力する必要があります。 Azure AD への参加が正常に完了すると、適切なユーザーにデバイスの管理者権限が付与されます。
+Azure Active Directory (Azure AD) を使用して Surface Hub に参加すると、Azure AD テナントの IT 管理者が設定を構成できます。 初回実行時に、[Microsoft Azure Active Directory](first-run-program-surface-hub.md#use-microsoft-azure-active-directory) の使用を選択します。 選択した Azure AD テナントに参加させることのできる資格情報を入力する必要があります。 Azure AD への参加が正常に完了すると、適切なユーザーにデバイスの管理者権限が付与されます。
 
 既定では、すべての**グローバル管理者**に、Azure AD に参加している Surface Hub の管理者権限が与えられます。 **Azure AD Premium** または **Enterprise Mobility Suite (EMS)** では、その他の管理者を追加できます。
 1.  [Azure クラシック ポータル](https://manage.windowsazure.com/)で、**[Active Directory]** をクリックし、組織のディレクトリの名前をクリックします。
@@ -71,13 +72,13 @@ Surface Hub を Azure AD に参加させると、次のような処理が可能�
 - Azure AD テナントの適切なユーザーに管理者権限を付与します。
 - デバイスの BitLocker 回復キーを、Azure AD にデバイスを参加させるときに使用したアカウントに保存することによって、BitLocker 回復キーをバックアップします。 詳しくは、「[BitLocker キーの保存](save-bitlocker-key-surface-hub.md)」をご覧ください。
 
-### Azure Active Directory の参加による自動登録
+#### Azure Active Directory への参加による自動登録
 
-Surface Hub は、デバイスを Azure Active Directory に参加させることによって、Intune に自動的に登録する機能をサポートするようになりました。 
+Surface Hub では、デバイスを Azure Active Directory に参加することで、Intune に自動的に登録する機能がサポートされます。 
 
-詳細については、「 [Windows 10 の自動登録を有効にする](https://docs.microsoft.com/intune/windows-enroll#enable-windows-10-automatic-enrollment)」を参照してください。
+詳しくは [、「Windows 10 の自動登録を有効にする」をご覧ください](https://docs.microsoft.com/intune/windows-enroll#enable-windows-10-automatic-enrollment)。
 
-### 選択に関する推奨事項
+#### 選択に関する推奨事項
 
 組織で AD または Azure AD を使用している場合は、主にセキュリティ上の理由から、ドメインまたは Azure AD に参加させることをお勧めします。 ユーザーは、自身の資格情報を使用して、認証を行ったり、設定のロックを解除することができ、ドメインに関連付けられているセキュリティ グループの内外に移動することができます。
 
@@ -89,3 +90,6 @@ Surface Hub は、デバイスを Azure Active Directory に参加させるこ�
 | &nbsp;                                            | 組織でAzure AD Premium または Enterprise Mobility Suite (EMS) を使用している | グローバル管理者と追加の管理者 |
 
 
+### Azure に参加しているデバイスでグローバル管理者ADアカウントを構成する
+
+Azure AD に参加している Surface Hub 2S デバイスの場合、Windows 10 Team 2020 Update では、Surface Hub 2S の設定アプリの管理に対する管理者権限を制限できます。 これにより、Surface Hub 2S の管理者アクセス許可のみをスコープ設定し、望ましくない可能性のある管理者が Azure AD ドメイン全体にアクセスすることを防止できます。 詳細については [、「Surface Hub 2S でグローバル管理者以外のアカウントを構成する」を参照してください](surface-hub-2s-nonglobal-admin.md)。

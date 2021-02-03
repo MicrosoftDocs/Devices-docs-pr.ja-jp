@@ -13,21 +13,26 @@ ms.reviewer: scottmca
 ms.localizationpriority: medium
 ms.audience: itpro
 manager: jarrettr
+ms.date: 02/02/2021
 appliesto:
 - Surface Laptop (1st Gen)
 - Surface Laptop 2
 - Surface Laptop 3
-ms.openlocfilehash: d7ae6fc434f77cad86e73f111243968493de4ff2
-ms.sourcegitcommit: e6224f81f8efb6ac862afec0e60e3ddb182e9e6f
+ms.openlocfilehash: fb51dd3785882e74c90d8b2717e4cc499d492d6f
+ms.sourcegitcommit: 5cfac94c220c8a8d4620c6a7fa75ae2fae089c7f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "11247309"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "11312063"
 ---
 # MDT の展開中に Surface Laptop キーボードを有効にする方法
 
 この記事では、Microsoft Deployment Toolkit (MDT) を使用する展開方法について説明します。 この情報は、他の展開方法にも適用できます。 ほとんどの種類の Surface デバイスでは、ライト タッチ インストール (LTI) 中にキーボードが動作する必要があります。 ただし、Surface Laptop では、キーボードを有効にするために追加のドライバーが必要です。 Surface Laptop (第 1 世代) デバイスと Surface Laptop 2 デバイスでは、LTI の Windows プレインストール環境 (Windows PE) フェーズで使用するキーボード ドライバーを指定できるフォルダー構造と選択プロファイルを準備する必要があります。 このフォルダー構造の詳細については、「MDT を使った [Windows 10 イメージの展開: 手順 5:](https://docs.microsoft.com/windows/deployment/deploy-windows-mdt/deploy-a-windows-10-image-using-mdt?redirectedfrom=MSDN#step-5-prepare-the-drivers-repository)ドライバー リポジトリを準備する」を参照してください。
 
+> [!TIP]    
+> 同じ Windows PE ブート インスタンスで Surface Laptop 2 と Surface Laptop 3 のキーボード ドライバーを使う場合、キーボードまたはタッチパッドが Windows PE で動作しない場合は、ファームウェアを手動でリセットする必要があります。
+>
+> - 電源ボタンを 30 秒間長押しします。 電源ユニット (PSU) に接続している場合は、電源ボタンを長押しして、PSU コードの最後にあるライトが少しオフになるまで押し続け、電源をオンに戻します。
 
 > [!IMPORTANT]
 > Windows 10 (S モード) がプレインストールされている Surface Laptop に Windows 10 イメージを展開する場合は、KB [4032347](https://support.microsoft.com/help/4032347/surface-preinstall-windows10-s-mode-issues)を参照してください。S モードでプレインストールされた Windows 10 を使用して Surface デバイスに Windows を展開する際の問題について説明します。
@@ -50,78 +55,8 @@ ms.locfileid: "11247309"
    ![Deployment Workbench 内の WindowsPEX64 フォルダーの場所を示す画像](./images/surface-laptop-keyboard-1.png)
 
 4. **WindowsPEX64 フォルダーを右クリック**し、[Import **Drivers] (ドライバーのインポート) を選択します**。
+
 5. ドライバーのインポート ウィザードの指示に従って、ドライバー フォルダーを WindowsPEX64 フォルダーにインポートします。  
-
-> [!NOTE]
->  ダウンロードした MSI パッケージを確認して、形式とディレクトリ構造を確認します。  ディレクトリ構造は、MSI がリリースされた時期に応じて、SurfacePlatformInstaller (古い MSI ファイル) または SurfaceUpdate (新しい MSI ファイル) で始めます。 
-
-Surface Laptop (第 1 世代) をサポートするには、次のフォルダーをインポートします。
-
- - SurfacePlatformInstaller\Drivers\System\GPIO
- - SurfacePlatformInstaller\Drivers\System\SurfaceHidMiniDriver
- - SurfacePlatformInstaller\Drivers\System\SurfaceSerialHubDriver
- - SurfacePlatformInstaller\Drivers\System\PreciseTouch
-
-または、"SurfaceUpdate" で始まる新しい MSI ファイルの場合は、次の値を使用します。
-
-- SurfaceUpdate\SerialIOGPIO
-- SurfaceUpdate\SurfaceHidMiniDriver
-- SurfaceUpdate\SurfaceSerialHubDriver
-- SurfaceUpdate\Itouch
-
-Surface Laptop 2 をサポートするには、次のフォルダーをインポートします。
-
- - SurfacePlatformInstaller\Drivers\System\GPIO
- - SurfacePlatformInstaller\Drivers\System\SurfaceHIDMiniDriver
- - SurfacePlatformInstaller\Drivers\System\SurfaceSerialHubDriver
- - SurfacePlatformInstaller\Drivers\System\I2C
- - SurfacePlatformInstaller\Drivers\System\SPI
- - SurfacePlatformInstaller\Drivers\System\UART
- - SurfacePlatformInstaller\Drivers\System\PreciseTouch
-
-または、"SurfaceUpdate" で始まる新しい MSI ファイルの場合は、次の値を使用します。
-
-- SurfaceUpdate\SerialIOGPIO
-- SurfaceUpdate\IclSerialIOI2C
-- SurfaceUpdate\IclSerialIOSPI
-- SurfaceUpdate\IclSerialIOUART
-- SurfaceUpdate\SurfaceHidMini
-- SurfaceUpdate\SurfaceSerialHub
-- SurfaceUpdate\Itouch
-
- 
-Intel Processor で Surface Laptop 3 をサポートするには、次のフォルダーをインポートします。
-
-- SurfaceUpdate\IclSerialIOGPIO
-- SurfaceUpdate\IclSerialIOI2C
-- SurfaceUpdate\IclSerialIOSPI
-- SurfaceUpdate\IclSerialIOUART
-- SurfaceUpdate\SurfaceHidMini
-- SurfaceUpdate\SurfaceSerialHub
-- SurfaceUpdate\SurfaceHotPlug
-- SurfaceUpdate\Itouch
-
-次のフォルダーをインポートすると、Surface Laptop 3 の PE でキーボード、トラックパッド、タッチの完全な機能を有効にできます。
-
-- IclSerialIOGPIO
-- IclSerialIOI2C
-- IclSerialIOSPI
-- IclSerialIOUART
-- itouch
-- IclChipset
-- IclChipsetLPSS
-- IclChipsetNorthpeak
-- ManagementEngine
-- SurfaceAcpiNotify
-- SurfaceBattery
-- SurfaceDockIntegration
-- SurfaceHidMini
-- SurfaceHotPlug
-- SurfaceIntegration
-- SurfaceSerialHub
-- SurfaceService
-- SurfaceStorageFwUpdate
-
 
     > [!NOTE]
     >  ダウンロードした MSI パッケージを確認して、形式とディレクトリ構造を確認します。  ディレクトリ構造は、MSI がリリースされた時期に応じて、SurfacePlatformInstaller (古い MSI ファイル) または SurfaceUpdate (新しい MSI ファイル) で始めます。 
@@ -153,19 +88,89 @@ Intel Processor で Surface Laptop 3 をサポートするには、次のフォ�
     または、"SurfaceUpdate" で始まる新しい MSI ファイルの場合は、次の値を使用します。
 
     - SurfaceUpdate\SerialIOGPIO
-    - SurfaceUpdate\IclSerialIOI2C
-    - SurfaceUpdate\IclSerialIOSPI
-    - SurfaceUpdate\IclSerialIOUART
+    - SurfaceUpdate\serialioi2c
+    - SurfaceUpdate\SerialIOSPI
+    - SurfaceUpdate\SerialIOUART
+    - SurfaceUpdate\SurfaceHidMini
+    - SurfaceUpdate\SurfaceSerialHub
+    - SurfaceUpdate\Itouch
+
+     
+    Intel Processor で Surface Laptop 3 をサポートするには、次のフォルダーをインポートします。
+
+    - SurfaceUpdate\SerialIOGPIO
+    - SurfaceUpdate\SerialIOI2C
+    - SurfaceUpdate\SerialIOSPI
+    - SurfaceUpdate\SerialIOUART
+    - SurfaceUpdate\SurfaceHidMini
+    - SurfaceUpdate\SurfaceSerialHub
+    - SurfaceUpdate\SurfaceHotPlug
+    - SurfaceUpdate\Itouch
+
+    次のフォルダーをインポートすると、Surface Laptop 3 の PE でキーボード、トラックパッド、タッチの完全な機能を有効にできます。
+
+    - SerialIOGPIO
+    - SerialIOI2C
+    - SerialIOSPI
+    - SerialIOUART
+    - itouch
+    - チップセット
+    - ChipsetLPSS
+    - ChipsetNorthpeak
+    - ManagementEngine
+    - SurfaceAcpiNotify
+    - SurfaceBattery
+    - SurfaceDockIntegration
+    - SurfaceHidMini
+    - SurfaceHotPlug
+    - SurfaceIntegration
+    - SurfaceSerialHub
+    - SurfaceService
+    - SurfaceStorageFwUpdate
+
+     > [!NOTE]
+     >  ダウンロードした MSI パッケージを確認して、形式とディレクトリ構造を確認します。  ディレクトリ構造は、MSI がリリースされた時期に応じて、SurfacePlatformInstaller (古い MSI ファイル) または SurfaceUpdate (新しい MSI ファイル) で始めます。 
+
+     Surface Laptop (第 1 世代) をサポートするには、次のフォルダーをインポートします。
+
+    - SurfacePlatformInstaller\Drivers\System\GPIO
+    - SurfacePlatformInstaller\Drivers\System\SurfaceHidMiniDriver
+    - SurfacePlatformInstaller\Drivers\System\SurfaceSerialHubDriver
+    - SurfacePlatformInstaller\Drivers\System\PreciseTouch
+
+    または、"SurfaceUpdate" で始まる新しい MSI ファイルの場合は、次の値を使用します。
+
+    - SurfaceUpdate\SerialIOGPIO
+    - SurfaceUpdate\SurfaceHidMiniDriver
+    - SurfaceUpdate\SurfaceSerialHubDriver
+    - SurfaceUpdate\Itouch
+
+    Surface Laptop 2 をサポートするには、次のフォルダーをインポートします。
+
+    - SurfacePlatformInstaller\Drivers\System\GPIO
+    - SurfacePlatformInstaller\Drivers\System\SurfaceHIDMiniDriver
+    - SurfacePlatformInstaller\Drivers\System\SurfaceSerialHubDriver
+    - SurfacePlatformInstaller\Drivers\System\I2C
+    - SurfacePlatformInstaller\Drivers\System\SPI
+    - SurfacePlatformInstaller\Drivers\System\UART
+    - SurfacePlatformInstaller\Drivers\System\PreciseTouch
+
+    または、"SurfaceUpdate" で始まる新しい MSI ファイルの場合は、次の値を使用します。
+
+    - SurfaceUpdate\SerialIOGPIO
+    - SurfaceUpdate\SerialIOI2C
+    - SurfaceUpdate\SerialIOSPI
+    - SurfaceUpdate\SerialIOUART
     - SurfaceUpdate\SurfaceHidMini
     - SurfaceUpdate\SurfaceSerialHub
     - SurfaceUpdate\Itouch
 
     Intel Processor で Surface Laptop 3 をサポートするには、次のフォルダーをインポートします。
 
-    - SurfaceUpdate\IclSerialIOGPIO
-    - SurfaceUpdate\IclSerialIOI2C
-    - SurfaceUpdate\IclSerialIOSPI
-    - SurfaceUpdate\IclSerialIOUART
+    - SurfaceUpdate\SerialIOGPIO
+    - SurfaceUpdate\SerialIOI2C
+    - SurfaceUpdate\SerialIOSPI
+    - SurfaceUpdate\SerialIOUART
     - SurfaceUpdate\SurfaceHidMini
     - SurfaceUpdate\SurfaceSerialHub
     - SurfaceUpdate\SurfaceHotPlug
@@ -191,7 +196,7 @@ Intel Processor で Surface Laptop 3 をサポートするには、次のフォ�
    ![MDT 展開共有の Windows PE プロパティを示す画像](./images/surface-laptop-keyboard-4.png)
 
 9. 選択プロファイルまたは **DriverGroup001** 変数を使って、残りの Surface Laptop ドライバーが構成されていることを確認します。  
-   - Surface Laptop (第 1 世代) の場合、モデルは **Surface Laptop です**。 残りの Surface Laptop ドライバーは、次の図に示すように、\MDT Deployment Share\Out-of-Box Drivers\Windows10\X64\Surface Laptop フォルダーにあります。
+   - Surface Laptop (第 1 世代) の場合、モデルは **Surface Laptop です**。 次の図に示すように、残りの Surface Laptop ドライバーは\MDT Deployment Share\Out-of-Box Drivers\Windows10\X64\Surface Laptop フォルダーにあります。
    - Surface Laptop 2 の場合、モデルは **Surface Laptop 2 です**。 残りの Surface Laptop ドライバーは、\MDT Deployment Share\Out-of-Box Drivers\Windows10\X64\Surface Laptop 2 フォルダーにあります。 
    - Intel プロセッサを搭載した Surface Laptop 3 の場合、モデルは Surface Laptop 3 です。 残りの Surface Laptop ドライバーは、\MDT Deployment Share\Out-of-Box Drivers\Windows10\X64\Surface Laptop 3 フォルダーにあります。
 

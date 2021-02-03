@@ -1,6 +1,6 @@
 ---
-title: Surface Hub 用 PowerShell (Surface Hub)
-description: Microsoft Surface Hub の設定と管理に役立つ PowerShell スクリプトです。
+title: Surface Hub 用 PowerShell (v1)
+description: このページには、元の Surface Hub 用の PowerShell スクリプトが含まれています (v1)
 ms.assetid: 3EF48F63-8E4C-4D74-ACD5-461F1C653784
 ms.reviewer: ''
 manager: laurawi
@@ -10,32 +10,33 @@ ms.sitesec: library
 author: dansimp
 ms.author: dansimp
 ms.topic: article
-ms.date: 01/10/2018
+ms.date: 02/01/2021
 ms.localizationpriority: medium
-ms.openlocfilehash: 92b42139020db13251fa6c5f8439d7084a61a132
-ms.sourcegitcommit: 5d02cca9ca8c0a252798c2fc0a89dbda81911c44
+ms.openlocfilehash: c0fa06153dc5597827f2973ecc9f728e35d79e85
+ms.sourcegitcommit: 5cfac94c220c8a8d4620c6a7fa75ae2fae089c7f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "11195382"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "11312003"
 ---
-# Surface Hub 用 PowerShell
+# Surface Hub 用 PowerShell (v1)
 
-Microsoft Surface Hub の設定と管理に役立つ PowerShell スクリプトです。
+> [!NOTE]
+ >このページには、元の Surface Hub (v1) 向け PowerShell スクリプトが含まれています。 Surface Hub 2S の最新のアカウント作成スクリプトについては、「Surface Hub 2S デバイス アカウントの [作成」を参照してください](surface-hub-2s-account.md)。
 
 -   [Surface Hub 管理者向けの PowerShell スクリプト](#scripts-for-admins)
-    -   [オンプレミスアカウントを作成する](#create-on-premises-ps-scripts)
+    -   [オンプレミス アカウントを作成する](#create-on-premises-ps-scripts)
     -   [Office 365 を使ったデバイス アカウントの作成](#create-os356-ps-scripts)
     -   [アカウント検証スクリプト](#acct-verification-ps-scripts)
     -   [Skype for Business の有効化 (EnableSfb.ps1)](#enable-sfb-ps-scripts)
 -   [便利なコマンドレット](#useful-cmdlets)
     -   [Surface Hub と互換性のある Exchange ActiveSync ポリシーの作成](#create-compatible-as-policy)
-    -   [ActiveSync に対するデバイス ID の許可](#whitelisting-device-ids-cmdlet)
+    -   [ActiveSync に対するデバイス ID の許可](#allowing-device-ids-for-activesync)
     -   [会議出席依頼の自動的な承諾と辞退](#auto-accept-meetings-cmdlet)
     -   [外部会議出席依頼の承諾](#accept-ext-meetings-cmdlet)
     
  > [!NOTE]
- > 「[モダン Auth」および「Exchange Online PowerShell V2 の無人スクリプト](https://techcommunity.microsoft.com/t5/exchange-team-blog/modern-auth-and-unattended-scripts-in-exchange-online-powershell/ba-p/1497387)」もご覧ください。
+ > Exchange [Online PowerShell V2](https://techcommunity.microsoft.com/t5/exchange-team-blog/modern-auth-and-unattended-scripts-in-exchange-online-powershell/ba-p/1497387)の最新の認証および無人スクリプトも参照
 
 ## 前提条件
 
@@ -186,7 +187,7 @@ Microsoft Surface Hub の設定と管理に役立つ PowerShell スクリプト�
 
 アカウント作成スクリプトで既存のアカウントを変更することはできませんが、アカウント作成スクリプトを使うと、既存のアカウントを正しく構成するにはどのコマンドレットを実行する必要があるかを理解するのに役立ちます。
 
-### <a href="" id="create-on-premises-ps-scripts"></a>オンプレミスアカウントを作成する
+### <a href="" id="create-on-premises-ps-scripts"></a>オンプレミス アカウントを作成する
 
 「[社内展開](on-premises-deployment-surface-hub-device-accounts.md)」で説明しているとおりに、アカウントを作成します。
 
@@ -993,7 +994,7 @@ else
 
 ## <a href="" id="acct-verification-ps-scripts"></a>アカウント検証スクリプト
 
-このスクリプトを実行すると、以前に作成した Surface Hub のデバイス アカウントが、作成時に使った方法に関係なく検証されます。 このスクリプトは、基本的に合格/不合格方式です。 いずれかのテスト エラーが発生すると詳細なエラー メッセージが表示されますが、すべてのテストに合格すると、最終的な結果は要約レポートになります。 たとえば、次のような結果が表示されます。
+このスクリプトは、作成に使用した方法に関係なく、Surface Hub と Surface Hub 2S で以前に作成されたデバイス アカウントを検証します。 このスクリプトは、基本的に合格/不合格方式です。 いずれかのテスト エラーが発生すると詳細なエラー メッセージが表示されますが、すべてのテストに合格すると、最終的な結果は要約レポートになります。 たとえば、次のような結果が表示されます。
 
 ``` syntax
 15 tests executed
@@ -1642,7 +1643,7 @@ Set-CASMailbox $strRoomUpn -ActiveSyncMailboxPolicy $strPolicy
 Set-Mailbox $strRoomUpn -Type Room
 ```
 
-### <a href="" id="whitelisting-device-ids-cmdlet"></a>ActiveSync に対するデバイス ID の許可
+### ActiveSync に対するデバイス ID の許可
 
 アカウント `$strRoomUpn` を許可するには、次のコマンドを実行します。
 
@@ -1671,7 +1672,7 @@ Set-CalendarProcessing $strRoomUpn -AutomateProcessing AutoAccept
 デバイス アカウントで外部会議出席依頼 (同じテナント/ドメイン名にないアカウントからの会議出席依頼) を承諾するには、そのデバイス アカウントが、外部会議出席依頼の処理を許可するように設定されている必要があります。 設定すると、外部アカウントからの会議出席依頼とローカル アカウントからの会議出席依頼が、デバイス アカウントで自動的に承諾または辞退されます。
 
 > [!Note]
-> **オートマトン Eprocessing**属性が**autoaccept**に設定されていない場合、この設定を行っても効果はありません。
+> **AutomateProcessing 属性**が**AutoAccept**に設定されていない場合、この設定は無効です。
 
 ```PowerShell
 Set-CalendarProcessing $strRoomUpn -ProcessExternalMeetingMessages $true
