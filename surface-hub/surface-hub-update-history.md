@@ -9,16 +9,16 @@ author: v-miegge
 ms.author: v-miegge
 ms.topic: article
 ms.localizationpriority: medium
-ms.openlocfilehash: 28f6f844818a00078f2efa812da8bdd7dc28b115
-ms.sourcegitcommit: 5cfac94c220c8a8d4620c6a7fa75ae2fae089c7f
+ms.openlocfilehash: b26351fa822f1c3bc8933578902ea304581f5e6f
+ms.sourcegitcommit: 040dffc996fa5be0d93103b5093748c8d919679e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 02/03/2021
-ms.locfileid: "11311993"
+ms.locfileid: "11312713"
 ---
 # Surface Hub の更新履歴
 
-Windows 10 はサービスとして設計されています。つまり、定期的なソフトウェア更新プログラムによって自動的に向上します。 お気に入りは、通常、最新の Windows 10 更新プログラムを取得するために何もする必要はありません。更新プログラムが利用可能な場合は常に、ダウンロードしてインストールされます。
+Windows 10 は、定期的なソフトウェア更新プログラムによって自動的に向上するサービスとして設計されています。 お気に入りは、通常、最新の Windows 10 更新プログラムを取得するために何もする必要がなにもありません。更新プログラムが利用可能な場合は必ずダウンロードしてインストールされます。
 
 ほとんどの Windows 更新プログラムでは、24 時間 365 日の使用を維持するために、パフォーマンスとセキュリティの向上に重点を置いてお使いください。
 
@@ -28,6 +28,20 @@ Windows 10 はサービスとして設計されています。つまり、定期
 現在および過去のリリースで注意が必要な可能性がある関連トピックについては[、「Surface Hub](https://support.microsoft.com/products/surface-devices/surface-hub)の重要な情報」ページを参照してください。
 
 ## Windows 10 Team 2020 Update (20H2)
+
+<details>
+<summary>2021 年 2 月 2 日 - KB4598291* に基づく Team の更新プログラム (OS ビルド 19042.789)</summary>
+
+Surface Hub に対するこの更新プログラムには、品質の向上とセキュリティ修正プログラムが含まれています。 Windows 10 の更新履歴に既に説明されていない Surface Hub の主要な更新 [プログラムには、次のものが](https://support.microsoft.com/help/4581839/windows-10-update-history)含まれます。
+
+* デバイス アカウントの UPN が SMTP と等しくない場合に Exchange との予定表の同期が機能する問題を修正します。
+* 管理者が Exchange との予定表の同期中にモダン認証の使用を無効にする機能を追加します。
+* [デバイス アカウントの資格情報を使用する] 機能が有効にされた後に、Surface Hub ユーザーにプロキシ資格情報の入力を求めずに確認します。
+* 認証を必要とするプロキシが使用されている場合、Windows Update とストアの更新プログラムのチェックが完了しない問題を解決します。
+* ワイヤード (有線) 取り込みシナリオ中の Connect アプリの信頼性が向上します。
+
+デバイスの機能とサービスを有効または無効にする方法については [、Surface Hub](https://docs.microsoft.com/surface-hub/) 管理者ガイドを参照してください。 *[KB4598291](https://support.microsoft.com/help/4598291)
+</details>
 
 <details>
 <summary>2021 年 1 月 15 日 - Surface Hub 2S の更新プログラム</summary>
@@ -88,7 +102,7 @@ Surface Hub に対するこの更新プログラムには、品質の向上と�
 </details>
 
 <details>
-<summary>Windows 10 Team 2020 Update for Surface Hub — 一般リリース ノート (OS ビルド 19042.572)</summary>
+<summary>Surface Hub 用 Windows 10 Team 2020 Update - 一般的なリリース ノート (OS ビルド 19042.572)</summary>
 
 Surface Hub に対するこの更新プログラムには、品質の向上とセキュリティ修正プログラムが含まれています。 Surface Hub の主要な更新プログラム [(Windows 10](https://support.microsoft.com/help/4581839/windows-10-update-history)の更新履歴に関する説明は既に示されていない) は[、「Windows 10 Team 2020 Update](https://docs.microsoft.com/surface-hub/surface-hub-2020-update-whats-new)の新機能」ページに示されています。
 
@@ -145,19 +159,19 @@ Surface Hub に対するこの更新プログラムには、品質の向上と�
 <details>
 <summary>2020 年 2 月 11 日 - KB4537765* に基づく Team の更新プログラム (OS ビルド 15063.2284)</summary>
 
-Surface Hub に対するこの更新プログラムには、品質の向上とセキュリティ修正プログラムが含まれています。 Windows 10 の更新履歴に既に説明されていない Surface Hub の主要な更新 [プログラムには、次のものが](https://support.microsoft.com/help/4018124/windows-10-update-history)含まれます。
+Surface Hub に対するこの更新プログラムには、品質の向上とセキュリティ修正プログラムが含まれています。 [Windows 10](https://support.microsoft.com/help/4018124/windows-10-update-history)の更新履歴に示されていない Surface Hub の主要な更新プログラムには、次のものが含まれます。
 
 * Skype for Business 通話中に他の参加者が Hub 2S をうまく聞こえない問題を解決します。
 * Surface Hub でのアラビア語、ヘブライ語、その他の RTL 言語の使用シナリオの信頼性が向上します。
 
-デバイスの機能とサービスの有効化/無効化については [、Surface Hub](https://docs.microsoft.com/surface-hub/) 管理者ガイドを参照してください。
+デバイスの機能とサービスを有効または無効にする方法については [、Surface Hub](https://docs.microsoft.com/surface-hub/) 管理者ガイドを参照してください。
 *[KB4537765](https://support.microsoft.com/help/4537765)
 </details>
 
 <details>
 <summary>2020 年 1 月 14 日 - KB4534296* に基づく Team の更新プログラム (OS ビルド 15063.2254)</summary>
 
-Surface Hub に対するこの更新プログラムには、品質の向上とセキュリティ修正プログラムが含まれています。 Windows 10 の更新履歴に既に説明されていない Surface Hub の主要な更新 [プログラムには、次のものが](https://support.microsoft.com/help/4018124/windows-10-update-history)含まれます。
+Surface Hub に対するこの更新プログラムには、品質の向上とセキュリティ修正プログラムが含まれています。 [Windows 10](https://support.microsoft.com/help/4018124/windows-10-update-history)の更新履歴に示されていない Surface Hub の主要な更新プログラムには、次のものが含まれます。
 
 * Microsoft Surface Hub 2S のログ収集に関する問題に解決します。
 
@@ -177,14 +191,14 @@ Surface Hub に対するこの更新プログラムには、品質の向上と�
  * 一部の内部 Web サイトを参照するときに発生する Microsoft Edge の問題を修正しました。
  * 全画面モードで表示するときに発生する Skype for Business の問題を修正しました。
 
-デバイスの機能とサービスの有効化/無効化については [、Surface Hub](https://docs.microsoft.com/surface-hub/) 管理者ガイドを参照してください。
+デバイスの機能とサービスを有効または無効にする方法については [、Surface Hub](https://docs.microsoft.com/surface-hub/) 管理者ガイドを参照してください。
 *[KB4503289](https://support.microsoft.com/help/4503289)
 </details>
 
 <details>
 <summary>2019 年 8 月 17 日 - KB4512474* に基づく Team の更新プログラム (OS ビルド 15063.2021)</summary>
 
-Surface Hub に対するこの更新プログラムには、品質の向上とセキュリティ修正プログラムが含まれています。 [Windows 10](https://support.microsoft.com/help/4018124/windows-10-update-history)の更新履歴に示されていない Surface Hub の主要な更新プログラムには、次のものが含まれます。
+Surface Hub に対するこの更新プログラムには、品質の向上とセキュリティ修正プログラムが含まれています。 Windows 10 の更新履歴に既に説明されていない Surface Hub の主要な更新 [プログラムには、次のものが](https://support.microsoft.com/help/4018124/windows-10-update-history)含まれます。
 
  * Hub 2S でのビデオ アウトが既定で "重複" モードに設定されます。
  * Surface Hub での一部のアラビア語の使用シナリオの信頼性が向上します。
@@ -196,28 +210,28 @@ Surface Hub に対するこの更新プログラムには、品質の向上と�
 <details>
 <summary>2019 年 6 月 18 日 - KB4503289* に基づく Team の更新プログラム (OS ビルド 15063.1897)</summary>
 
-Surface Hub に対するこの更新プログラムには、品質の向上とセキュリティ修正プログラムが含まれています。 Windows 10 の更新履歴に既に説明されていない Surface Hub の主要な更新 [プログラムには、次のものが](https://support.microsoft.com/help/4018124/windows-10-update-history)含まれます。
+Surface Hub に対するこの更新プログラムには、品質の向上とセキュリティ修正プログラムが含まれています。 [Windows 10](https://support.microsoft.com/help/4018124/windows-10-update-history)の更新履歴に示されていない Surface Hub の主要な更新プログラムには、次のものが含まれます。
 
 * ユーザーが Azure Active Directory アカウントを使用して Microsoft Surface Hub デバイスにサインインする妨げの問題に解決します。 この問題は、前のセッションが正常に終了しなかったため発生します。
 * デバイス アカウントのセットアップ シナリオで、ID プロバイダーと Exchange に TLS 1.2 接続のサポートを追加します。
 * Hub 2S のハードウェア診断アプリの信頼性を向上させる修正プログラム。 
 * Hub 2S での初回実行時のセットアップ エクスペリエンスの一貫性を向上させる修正。 
 
-デバイスの機能とサービスの有効化/無効化については [、Surface Hub](https://docs.microsoft.com/surface-hub/) 管理者ガイドを参照してください。
+デバイスの機能とサービスを有効または無効にする方法については [、Surface Hub](https://docs.microsoft.com/surface-hub/) 管理者ガイドを参照してください。
 *[KB4503289](https://support.microsoft.com/help/4503289)
 </details>
 
 <details>
 <summary>2019 年 5 月 28 日 - KB4499162* に基づく Team の更新プログラム (OS ビルド 15063.1835)</summary>
 
-Surface Hub に対するこの更新プログラムには、品質の向上とセキュリティ修正プログラムが含まれています。 Windows 10 の更新履歴に既に説明されていない Surface Hub の主要な更新 [プログラムには、次のものが](https://support.microsoft.com/help/4018124/windows-10-update-history)含まれます。
+Surface Hub に対するこの更新プログラムには、品質の向上とセキュリティ修正プログラムが含まれています。 [Windows 10](https://support.microsoft.com/help/4018124/windows-10-update-history)の更新履歴に示されていない Surface Hub の主要な更新プログラムには、次のものが含まれます。
 
 * [デバイス アカウントの資格情報を使用する] 機能が有効にされた後に、Surface Hub ユーザーにプロキシ資格情報の入力を求めずに確認します。
 * 音声ビデオが正しいプロキシを使用しないので、Skype 接続が定期的に失敗する問題を解決します。
 * Skype for Business での TLS 1.2 のサポートを追加します。
 * Skype サーバーで TLS 1.0 または TLS 1.1 が無効になっている場合に、Skype クライアントで SIP 接続エラーを解決します。
 
-デバイスの機能とサービスを有効または無効にする方法については [、Surface Hub](https://docs.microsoft.com/surface-hub/) 管理者ガイドを参照してください。
+デバイスの機能とサービスの有効化/無効化については [、Surface Hub](https://docs.microsoft.com/surface-hub/) 管理者ガイドを参照してください。
 *[KB4499162](https://support.microsoft.com/help/4499162)
 </details>
 
@@ -228,18 +242,18 @@ Surface Hub に対するこの更新プログラムには、品質の向上と�
 
 * Surface Hub に接続されている一部の USB デバイスで、ビデオとオーディオの同期の問題を解決します。
 
-デバイスの機能とサービスの有効化/無効化については [、Surface Hub](https://docs.microsoft.com/surface-hub/) 管理者ガイドを参照してください。
+デバイスの機能とサービスを有効または無効にする方法については [、Surface Hub](https://docs.microsoft.com/surface-hub/) 管理者ガイドを参照してください。
 *[KB4493436](https://support.microsoft.com/help/4493436)
 </details>
 
 <details>
 <summary>2018 年 11 月 27 日 - KB4467699* に基づく Team の更新プログラム (OS ビルド 15063.1478)</summary>
 
-Surface Hub に対するこの更新プログラムには、品質の向上とセキュリティ修正プログラムが含まれています。 Windows 10 の更新履歴に既に説明されていない Surface Hub の主要な更新 [プログラムには、次のものが](https://support.microsoft.com/help/4018124/windows-10-update-history)含まれます。
+Surface Hub に対するこの更新プログラムには、品質の向上とセキュリティ修正プログラムが含まれています。 [Windows 10](https://support.microsoft.com/help/4018124/windows-10-update-history)の更新履歴に示されていない Surface Hub の主要な更新プログラムには、次のものが含まれます。
 
 * 一部のユーザーが "My Meetings and Files" にSigning-In妨げる問題に取り組んでいます。
 
-デバイスの機能とサービスを有効または無効にする方法については [、Surface Hub](https://docs.microsoft.com/surface-hub/) 管理者ガイドを参照してください。
+デバイスの機能とサービスの有効化/無効化については [、Surface Hub](https://docs.microsoft.com/surface-hub/) 管理者ガイドを参照してください。
 *[KBKB4467699](https://support.microsoft.com/help/KB4467699)
 </details>
 
@@ -276,7 +290,7 @@ Surface Hub に対するこの更新プログラムには、品質の向上と�
 <details>
 <summary>2018 年 6 月 21 日 - KB4284830* に基づく Team の更新プログラム (OS ビルド 15063.1182)</summary>
 
-Surface Hub に対するこの更新プログラムには、品質の向上とセキュリティ修正プログラムが含まれています。 [Windows 10](https://support.microsoft.com/help/4018124/windows-10-update-history)の更新履歴に示されていない Surface Hub の主要な更新プログラムには、次のものが含まれます。
+Surface Hub に対するこの更新プログラムには、品質の向上とセキュリティ修正プログラムが含まれています。 Windows 10 の更新履歴に既に説明されていない Surface Hub の主要な更新 [プログラムには、次のものが](https://support.microsoft.com/help/4018124/windows-10-update-history)含まれます。
 
 * EMEA での GDPR 要件のサポートに関するテレメトリの変更
 
@@ -287,7 +301,7 @@ Surface Hub に対するこの更新プログラムには、品質の向上と�
 <details>
 <summary>2018 年 4 月 17 日 - KB4093117* に基づく Team の更新プログラム (OS ビルド 15063.1058)</summary>
 
-Surface Hub に対するこの更新プログラムには、品質の向上とセキュリティ修正プログラムが含まれています。 Windows 10 の更新履歴に既に説明されていない Surface Hub の主要な更新 [プログラムには、次のものが](https://support.microsoft.com/help/4018124/windows-10-update-history)含まれます。
+Surface Hub に対するこの更新プログラムには、品質の向上とセキュリティ修正プログラムが含まれています。 [Windows 10](https://support.microsoft.com/help/4018124/windows-10-update-history)の更新履歴に示されていない Surface Hub の主要な更新プログラムには、次のものが含まれます。
 
 * ワイヤード (有線) プロジェクションの問題を解決します
 * 特定の MDM (モバイル デバイス管理) ポリシーの一括更新を有効にする
@@ -295,7 +309,7 @@ Surface Hub に対するこの更新プログラムには、品質の向上と�
 * 2 台の Surface Hub が同じ会議に参加する場合の画像解決の問題に対応します
 * OMS (Operations Management Suite) 証明書処理エラーを解決します
 * セッションの最後にクリーンアップする際のセキュリティの問題に解決する
-* Surface Hub がチャネル 149 ~ 165 に指定されている場合の Miracast の問題に対応
+* Surface Hub がチャネル 149 ~ 165 に指定されている場合の Miracast の問題に対応します
   * チャネル 149 ~ 165 は、地域政府の規制により、ヨーロッパ、日本、またはイスラエルでは引き続き使用できません。
 
 デバイスの機能とサービスの有効化/無効化については [、Surface Hub](https://docs.microsoft.com/surface-hub/) 管理者ガイドを参照してください。
@@ -305,7 +319,7 @@ Surface Hub に対するこの更新プログラムには、品質の向上と�
 <details>
 <summary>2018 年 2 月 23 日 - KB4077528* に基づく Team の更新プログラム (OS ビルド 15063.907)</summary>
 
-Surface Hub に対するこの更新プログラムには、品質の向上とセキュリティ修正プログラムが含まれています。 Windows 10 の更新履歴に既に説明されていない Surface Hub の主要な更新 [プログラムには、次のものが](https://support.microsoft.com/help/4018124/windows-10-update-history)含まれます。
+Surface Hub に対するこの更新プログラムには、品質の向上とセキュリティ修正プログラムが含まれています。 [Windows 10](https://support.microsoft.com/help/4018124/windows-10-update-history)の更新履歴に示されていない Surface Hub の主要な更新プログラムには、次のものが含まれます。
 
 * MDM 設定が正しく適用されない問題を解決しました
 * クリーンアップ 処理の改善
@@ -334,7 +348,7 @@ Surface Hub に対するこの更新プログラムには、品質の向上と�
 * Skype for Business 通話中にカメラのビデオフラッシュ (ちらつき) を解決します
 * 通知センターの SSD ID の問題を解決します
 
-デバイスの機能とサービスの有効化/無効化については [、Surface Hub](https://docs.microsoft.com/surface-hub/) 管理者ガイドを参照してください。
+デバイスの機能とサービスを有効または無効にする方法については [、Surface Hub](https://docs.microsoft.com/surface-hub/) 管理者ガイドを参照してください。
 *[KB4053580](https://support.microsoft.com/help/4053580)
 </details>
 
@@ -344,29 +358,29 @@ Surface Hub に対するこの更新プログラムには、品質の向上と�
 Surface Hub に対するこの更新プログラムには、品質の向上とセキュリティ修正プログラムが含まれています。 Windows 10 の更新履歴に既に説明されていない Surface Hub の主要な更新 [プログラムには、次のものが](https://support.microsoft.com/help/4018124/windows-10-update-history)含まれます。
 
 * MDM ポリシーを使用して 802.1x ワイヤード (有線) ネットワーク認証を有効にできる機能更新プログラム。
-* ファイルを開く際に、ユーザーが選択したアプリケーションを動的に選択できる機能更新プログラム。
-* セッションの終了クリーンアップによって、ユーザーのアカウントとデバイス間のすべての接続が完全に削除される問題を修正します。
+* ユーザーがファイルを開く際に、選択したアプリケーションを動的に選択できる機能更新プログラム。
+* セッションの終了クリーンアップによって、ユーザーのアカウントとデバイスの間のすべての接続が完全に削除される問題を修正します。
 * クリーンアップ時間と Miracast 接続時間を改善するパフォーマンスの修正。
 * Ad-hock 会議中の簡単な認証の利用について紹介します。
 * サービス コンポーネントがデバイス全体で構成されているのと同じプロキシを使用するように修正します。
 * デバイスによって送信される利用統計情報を減らし、さらに徹底的にセキュリティ保護し、帯域幅の使用率を削減します。
 * 会議の終了後にユーザーが Microsoft にフィードバックを提供できる機能を有効にします。
 
-デバイスの機能とサービスを有効または無効にする方法については [、Surface Hub](https://docs.microsoft.com/surface-hub/) 管理者ガイドを参照してください。
+デバイスの機能とサービスの有効化/無効化については [、Surface Hub](https://docs.microsoft.com/surface-hub/) 管理者ガイドを参照してください。
 *[KB4048954](https://support.microsoft.com/help/4048954)
 </details>
 
 <details>
 <summary>2017 年 10 月 10 日 - KB4041676* に基づく Team の更新プログラム (OS ビルド 15063.674)</summary>
 
-Surface Hub に対するこの更新プログラムには、品質の向上とセキュリティ修正プログラムが含まれています。 Windows 10 の更新履歴に既に説明されていない Surface Hub の主要な更新 [プログラムには、次のものが](https://support.microsoft.com/help/4018124/windows-10-update-history)含まれます。
+Surface Hub に対するこの更新プログラムには、品質の向上とセキュリティ修正プログラムが含まれています。 [Windows 10](https://support.microsoft.com/help/4018124/windows-10-update-history)の更新履歴に示されていない Surface Hub の主要な更新プログラムには、次のものが含まれます。
 
 * Skype for Business
   * スリープ状態から再起動するときにデバイスの再起動が必要だった問題を解決します。
   * 外部の連絡先が Skype Online Hub アカウントを介して解決しなかった問題を修正します。
 * PowerPoint
   * 一部の PowerPoint プレゼンテーションが Hub に表示されない問題を修正します。
-* 全般
+* 全般的な情報
   * システム管理者が USB ポートを無効にできない問題を解決する修正。
 
 *[KB4041676](https://support.microsoft.com/help/4041676)
@@ -379,8 +393,8 @@ Surface Hub に対するこの更新プログラムには、品質の向上と�
 
 * Security
   * デバイスがスリープ状態からスリープ解除される場合の Bitlocker の問題を解決します。
-* 全般
-  * デバイス正常性テレメトリの頻度/量を減らして、システムのパフォーマンスを向上させます。
+* 全般的な情報
+  * デバイス正常性の利用統計情報の頻度/量を減らして、システムのパフォーマンスを向上させます。
   * デバイスがシステム ログを収集妨げる問題を修正します。
 
 *[KB4038788](https://support.microsoft.com/help/4038788)
@@ -400,9 +414,9 @@ Surface Hub に対するこの更新プログラムには、品質の向上と�
 <details>
 <summary>2017 年 6 月 27 日 - KB4022716* に基づく Team の更新プログラム (OS ビルド 15063.442)</summary>
 
-Surface Hub に対するこの更新プログラムには、品質の向上とセキュリティ修正プログラムが含まれています。 Windows 10 の更新履歴に既に説明されていない Surface Hub の主要な更新 [プログラムには、次のものが](https://support.microsoft.com/help/4018124/windows-10-update-history)含まれます。
+Surface Hub に対するこの更新プログラムには、品質の向上とセキュリティ修正プログラムが含まれています。 [Windows 10](https://support.microsoft.com/help/4018124/windows-10-update-history)の更新履歴に示されていない Surface Hub の主要な更新プログラムには、次のものが含まれます。
 
-* NVIDIA ドライバーのクラッシュに対処します。84" Surface Hub の電源をオフにし、手動で再起動する必要があります。
+* NVIDIA ドライバーのクラッシュに対処します。このクラッシュでは、84" Surface Hub の電源をオフにし、手動で再起動する必要があります。
 * 一部のアプリが 84" Surface Hub で起動できない問題を解決しました。
 
 *[KB4022716](https://support.microsoft.com/help/4022716)
@@ -413,7 +427,7 @@ Surface Hub に対するこの更新プログラムには、品質の向上と�
 
 Surface Hub に対するこの更新プログラムには、品質の向上とセキュリティ修正プログラムが含まれています。 Windows 10 の更新履歴に既に説明されていない Surface Hub の主要な更新 [プログラムには、次のものが](https://support.microsoft.com/help/4018124/windows-10-update-history)含まれます。
 
-* 全般
+* 全般的な情報
   * ペンに関するペンインクドロップの問題の解決
   * 会議の "クリーンアップ" に時間が長引く問題が解決されました
 
@@ -425,7 +439,7 @@ Surface Hub に対するこの更新プログラムには、品質の向上と�
 
 Surface Hub に対するこの更新プログラムには、品質の向上とセキュリティ修正プログラムが含まれています。 Windows 10 の更新履歴に既に説明されていない Surface Hub の主要な更新 [プログラムには、次のものが](https://support.microsoft.com/help/4018124/windows-10-update-history)含まれます。
 
-* 全般
+* 全般的な情報
   * 更新時のプロキシ設定の保持に関する問題が解決されました
 
 *[KB4021573](https://support.microsoft.com/help/4021573)
@@ -434,12 +448,12 @@ Surface Hub に対するこの更新プログラムには、品質の向上と�
 <details>
 <summary>2017 年 5 月 9 日 - KB4016871* に基づく Team の更新プログラム (OS ビルド 15063.296)</summary>
 
-Surface Hub に対するこの更新プログラムには、品質の向上とセキュリティ修正プログラムが含まれています。 Windows 10 の更新履歴に既に説明されていない Surface Hub の主要な更新 [プログラムには、次のものが](https://support.microsoft.com/help/4018124/windows-10-update-history)含まれます。
+Surface Hub に対するこの更新プログラムには、品質の向上とセキュリティ修正プログラムが含まれています。 [Windows 10](https://support.microsoft.com/help/4018124/windows-10-update-history)の更新履歴に示されていない Surface Hub の主要な更新プログラムには、次のものが含まれます。
 
-* 全般
+* 全般的な情報
   * スリープ/スリープ解除サイクルの問題に対処する
   * リセットと回復のいくつかの問題を解決しました
-  * 更新履歴タブの問題の解決
+  * 更新履歴タブの問題に対処しました
   * Miracast サービスの起動に関する問題の解決
 * アプリ
   * 固定アプリ パッケージの更新エラー
@@ -469,8 +483,8 @@ Surface Hub に対するこの更新プログラムには、品質の向上と�
   * クラウドベースのデバイス回復サービス
   * エンタープライズ クライアント証明書のサポート
   * プロキシ資格情報のサポートの強化
-  * Skype Quality of Service (QoS) 構成のサポートの追加および/改善
-  * 設定で既定のデバイス ボリュームを設定する機能が追加されました
+  * Skype Quality of Service (QoS) 構成のサポートの追加と改善
+  * [設定] で既定のデバイス ボリュームを設定する機能が追加されました
   * Surface Hub の設定に対する MDM サポートの [強化](https://docs.microsoft.com/surface-hub/remote-surface-hub-management)
 * セキュリティの強化 
   * USB ドライブを BitLocker にのみ制限する機能が追加されました
@@ -484,11 +498,11 @@ Surface Hub に対するこの更新プログラムには、品質の向上と�
 * 信頼性とパフォーマンスの修正
   * リセットと回復のいくつかの問題を解決しました
   * クライアント証明書を利用する際の Surface Hub Exchange 認証の問題の解決
-  * ネットワーク接続Wi-Fi資格情報の安定性の向上
+  * ネットワークWi-Fiと資格情報の安定性の向上
   * ビデオ再生中に Miracast オーディオがポップアップし、同期の問題が修正されました
   * 自動接続動作を無効にする設定が含まれています
 
-*シングル サインイン機能では、Office365 と OneDrive for Business を使用する必要があります **サービス要件については、管理者ガイドを参照してください
+*シングル サインイン機能では、Office365 と OneDrive for Business を使用する必要があります **サービス要件については管理者ガイドを参照してください
 
 </details>
 
@@ -497,10 +511,10 @@ Surface Hub に対するこの更新プログラムには、品質の向上と�
 <details>
 <summary>2017 年 3 月 14 日 - KB4013429* に基づく Team の更新プログラム (OS ビルド 14393.953)</summary>
 
-Surface Hub に対するこの更新プログラムには、品質の向上とセキュリティ修正プログラムが含まれています。 Windows 10 の更新履歴に既に説明されていない Surface Hub の主要な更新 [プログラムには、次のものが](https://support.microsoft.com/help/4018124/windows-10-update-history)含まれます。
+Surface Hub に対するこの更新プログラムには、品質の向上とセキュリティ修正プログラムが含まれています。 [Windows 10](https://support.microsoft.com/help/4018124/windows-10-update-history)の更新履歴に示されていない Surface Hub の主要な更新プログラムには、次のものが含まれます。
 
-* 全般
-  * ファイルの場所の制限付きへの移動を防止するためのエクスプローラーのセキュリティ修正プログラム
+* 全般的な情報
+  * ファイルの場所が制限された場所への移動を防ぐためのエクスプローラーのセキュリティ修正プログラム
 * Skype for Business
   * リモート デスクトップ ベースの画面共有中の待機時間に対処するための修正
 
@@ -510,7 +524,7 @@ Surface Hub に対するこの更新プログラムには、品質の向上と�
 <details>
 <summary>2017 年 1 月 10 日 - KB4000825* に基づく Team の更新プログラム (OS ビルド 14393.693)</summary>
 
-Surface Hub に対するこの更新プログラムには、品質の向上とセキュリティ修正プログラムが含まれています。 [Windows 10](https://support.microsoft.com/help/4018124/windows-10-update-history)の更新履歴に示されていない Surface Hub の主要な更新プログラムには、次のものが含まれます。
+Surface Hub に対するこの更新プログラムには、品質の向上とセキュリティ修正プログラムが含まれています。 Windows 10 の更新履歴に既に説明されていない Surface Hub の主要な更新 [プログラムには、次のものが](https://support.microsoft.com/help/4018124/windows-10-update-history)含まれます。
 
 * 106/109 キーボード レイアウトの選択が有効で、物理的な日本語キーボードで使用できます。
 
@@ -520,7 +534,7 @@ Surface Hub に対するこの更新プログラムには、品質の向上と�
 <details>
 <summary>2016 年 12 月 13 日 - KB3206632* に基づく Team の更新プログラム (OS ビルド 14393.576)</summary>
 
-Surface Hub に対するこの更新プログラムには、品質の向上とセキュリティ修正プログラムが含まれています。 [Windows 10](https://support.microsoft.com/help/4018124/windows-10-update-history)の更新履歴に示されていない Surface Hub の主要な更新プログラムには、次のものが含まれます。
+Surface Hub に対するこの更新プログラムには、品質の向上とセキュリティ修正プログラムが含まれています。 Windows 10 の更新履歴に既に説明されていない Surface Hub の主要な更新 [プログラムには、次のものが](https://support.microsoft.com/help/4018124/windows-10-update-history)含まれます。
 
 * ワイヤード (有線) 接続のオーディオのゆがみの問題を解決します
 
@@ -530,7 +544,7 @@ Surface Hub に対するこの更新プログラムには、品質の向上と�
 <details>
 <summary>2016 年 11 月 4 日 - KB3200970* に基づく Team の更新プログラム (OS ビルド 14393.447)</summary>
 
-Surface Hub 用の Windows 10 Team Anniversary Update (バージョン 1607) に対するこの更新プログラムには、品質の向上とセキュリティ修正プログラムが含まれています。 Windows 10 の更新履歴に既に説明されていない Surface Hub の主要な更新 [プログラムには、次のものが](https://support.microsoft.com/help/4018124/windows-10-update-history)含まれます。
+Surface Hub 用の Windows 10 Team Anniversary Update (バージョン 1607) に対するこの更新プログラムには、品質の向上とセキュリティ修正プログラムが含まれています。 [Windows 10](https://support.microsoft.com/help/4018124/windows-10-update-history)の更新履歴に示されていない Surface Hub の主要な更新プログラムには、次のものが含まれます。
 
 * 信頼性を向上させる Skype for Business のバグ修正プログラム
 
@@ -543,7 +557,7 @@ Surface Hub 用の Windows 10 Team Anniversary Update (バージョン 1607) に
 Surface Hub に対するこの更新プログラムには、品質の向上とセキュリティ修正プログラムが含まれています。 Windows 10 の更新履歴に既に説明されていない Surface Hub の主要な更新 [プログラムには、次のものが](https://support.microsoft.com/help/4018124/windows-10-update-history)含まれます。
 
 * OS と Bios で新しいスリープ機能を有効にし、Surface Hub の消費電力を削減し、長期的な信頼性を向上させる
-* 全般
+* 全般的な情報
   * スクリーン キーボードが表示されない場合があるシナリオを解決します。
   * スケジュールされた会議を開く際にときどき発生するホワイトボード アプリケーションのシフトを解決します
   * デバイスのリセット後に管理者がローカル管理者パスワードを変更できない問題を解決します
@@ -556,7 +570,7 @@ Surface Hub に対するこの更新プログラムには、品質の向上と�
 <details>
 <summary>2016 年 10 月 11 日 - KB3194496* に基づく Team の更新プログラム (OS ビルド 14393.222)</summary>
 
-この更新プログラムにより、Windows 10 Team Anniversary Update が Surface Hub に追加され、品質の向上とセキュリティ修正プログラムが含まれています。 (デバイスは、インストール後に Windows 10 バージョン 1607 を実行します)。)Windows 10 の更新履歴に既に説明されていない Surface Hub の主要な更新 [プログラムには、次のものが](https://support.microsoft.com/help/4018124/windows-10-update-history)含まれます。
+この更新プログラムにより、Windows 10 Team Anniversary Update が Surface Hub に追加され、品質の向上とセキュリティ修正プログラムが含まれています。 (デバイスは、インストール後に Windows 10 Version 1607 を実行します)。)Windows 10 の更新履歴に既に説明されていない Surface Hub の主要な更新 [プログラムには、次のものが](https://support.microsoft.com/help/4018124/windows-10-update-history)含まれます。
 
 * Skype for Business
   * フェデレーション アカウントを使用して会議に参加する場合の問題など、会議に参加する際のパフォーマンスの向上
@@ -578,7 +592,7 @@ Surface Hub に対するこの更新プログラムには、品質の向上と�
   * プレインストール済みの PowerBI アプリ(ダッシュボードを表示)
   * 新Officeアプリ (Word、Excel、PowerPoint) はすべてインク対応です。
   * Surface Hub の Edge で Flash ベースの Web サイトがサポートされる
-* 全般
+* 全般的な情報
   * 有効なオーディオ デバイスの選択 (外部オーディオ デバイスを使用して接続された Surface Hub の場合)
   * DisplayPort 出力コネクタでの HDCP のサポートの有効化
   * 使いやすさの最適化のための設定に対するシステム UI の変更 (詳細については、「ユーザーガイドと [管理者](https://www.microsoft.com/surface/support/surface-hub) ガイド」を参照)
@@ -615,7 +629,7 @@ Surface Hub に対する Windows 10 Team (バージョン 1511) の更新プロ�
 * セッション後に一部のアプリ データが正しく削除されない問題を修正しました
 * NFC パフォーマンスを向上させるために更新された Broadcom NFC ドライバー
 * Miracast のWi-Fi向上するために、ドライバーを更新しました
-* 84" Surface Hub デバイスで暗いコンテンツやあいまいなコンテンツが表示される表示バグを修正するために更新された Nvidia ドライバー
+* 84" Surface Hub デバイスに暗いコンテンツやあいまいなコンテンツが表示される表示バグを修正する Nvidia ドライバーが更新されました
 * 次を含む、多数の Skype for Business の問題が修正されました。 
   * 会議中に Skype for Business が切断される原因となる問題
   * 会議の開催者がフェデレーション構成を使用していたときに、ユーザーが会議に参加できなかった問題
@@ -639,7 +653,7 @@ Surface Hub に対するこの更新プログラムには、品質の向上と�
 <details>
 <summary>2016 年 5 月 10 日 - KB3156421* に基づく Team の更新プログラム (OS ビルド 10586.318)</summary>
 
-Surface Hub に対するこの更新プログラムには、品質の向上とセキュリティ修正プログラムが含まれています。 この更新プログラムでは、新しいオペレーティング システム機能は導入されません。 [Windows 10](https://support.microsoft.com/help/4018124/windows-10-update-history)の更新履歴に示されていない Surface Hub の主要な更新プログラムには、次のものが含まれます。
+Surface Hub に対するこの更新プログラムには、品質の向上とセキュリティ修正プログラムが含まれています。 この更新プログラムでは、新しいオペレーティング システム機能は導入されません。 Windows 10 の更新履歴に既に説明されていない Surface Hub の主要な更新 [プログラムには、次のものが](https://support.microsoft.com/help/4018124/windows-10-update-history)含まれます。
 
 * 特定のストア アプリ (OneDrive) のインストールを妨げる問題を修正しました
 * アプリケーションでタッチ入力の応答が停止する原因となる問題を修正しました
