@@ -1,10 +1,10 @@
 ---
-title: UI を使用してデバイス アカウントを作成する (Surface Hub)
+title: UI を使ったデバイス アカウントの作成 (Surface Hub v1)
 description: グラフィカル ユーザー インターフェイスを使用する場合は、Office 365 の UI または Exchange 管理センターを使って Microsoft Surface Hub のデバイス アカウントを作成できます。
 ms.assetid: D11BCDC4-DABA-4B9A-9ECB-58E02CC8218C
 ms.reviewer: ''
 manager: laurawi
-keywords: デバイスアカウント、Office 365 UI、Exchange 管理センター、Microsoft 365 管理センター、Skype for Business、モバイルデバイスメールボックスポリシーを作成する
+keywords: デバイス アカウントの作成, Office 365 UI, Exchange 管理センター, Microsoft 365 管理センター, Skype for Business, モバイル デバイス メールボックス ポリシー
 ms.prod: surface-hub
 ms.sitesec: library
 author: dansimp
@@ -12,22 +12,24 @@ ms.author: dansimp
 ms.topic: article
 ms.date: 05/04/2018
 ms.localizationpriority: medium
-ms.openlocfilehash: e1f82f084103d4eef942e812c5e4f0e8bf425def
-ms.sourcegitcommit: 109d1d7608ac4667564fa5369e8722e569b8ea36
+ms.openlocfilehash: 9e6d72dc2b36bb149ee09c2edab885c80e60ac14
+ms.sourcegitcommit: 7809222a51eb184f07d6b3ffbdd04a6272b247f9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2020
-ms.locfileid: "10836742"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "11314470"
 ---
-# UI を使用してデバイス アカウントを作成する (Surface Hub)
+# UI を使ったデバイス アカウントの作成 (Surface Hub v1)
 
+ > [!NOTE]
+ >このページには、元の Surface Hub (v1) に関する情報が含まれています。 Surface Hub 2S の場合は、「Surface Hub 2S デバイス アカウントの [作成」を参照してください](surface-hub-2s-account.md)。
 
 グラフィカル ユーザー インターフェイスを使用する場合は、[Office 365 の UI](#create-device-acct-o365) または [Exchange 管理センター](#create-device-acct-eac)を使って Microsoft Surface Hub のデバイス アカウントを作成できます。
 
 ## <a href="" id="create-device-acct-o365"></a>Office 365 を使ったデバイス アカウントの作成
 
 
-1.  [Microsoft 365 管理センターでアカウントを作成](#create-device-acct-o365-admin-ctr)します。
+1.  [Microsoft 365 管理センターでアカウントを作成します](#create-device-acct-o365-admin-ctr)。
 2.  [Microsoft Exchange 管理センターからのモバイル デバイス メールボックス (ActiveSync) ポリシーの作成](#create-device-acct-o365-mbx-policy)
 3.  [PowerShell の使用によるデバイス アカウント作成の完了](#create-device-acct-o365-complete-acct).
 4.  [PowerShell の使用によるアカウントの Exchange プロパティの構成](#create-device-acct-o365-configure-exch-prop)
@@ -35,14 +37,14 @@ ms.locfileid: "10836742"
 
 ### <a href="" id="create-device-acct-o365-admin-ctr"></a>管理センターでアカウントを作成する
 
-1.  アクセスして、Office 365 にサインインします。https://portal.office.com
-2.  Office 365 テナントの管理者資格情報を入力します。 この操作を行うと、Microsoft 365 管理センターに移動します。
+1.  アクセスして Office 365 にサインインする https://portal.office.com
+2.  Office 365 テナントの管理者資格情報を入力します。 これにより、Microsoft 365 管理センターに移動します。
 
-    ![Microsoft 365 管理センター](images/setupdeviceaccto365-02.png)
+    ![Microsoft 365 管理センター。](images/setupdeviceaccto365-02.png)
 
-3. 管理センターで、左側のパネルにある [**リソース**] に移動し、[**ルーム & 備品**] をクリックします。
+3. 管理センターで、左側のパネルの **[リソース** ] に移動し、[会議室と備品& **します**。
 
-    ![管理センターで & の会議室のオプション](images/room-equipment.png)
+    ![管理&の会議室と備品オプション](images/room-equipment.png)
 
 4. **[追加]** をクリックして会議室アカウントを作成します。 アカウントの表示名とメール アドレスを入力し、**[追加]** をクリックします。
 
@@ -54,9 +56,9 @@ ms.locfileid: "10836742"
 
 ### <a href="" id="create-device-acct-o365-mbx-policy"></a>Exchange 管理センターからのモバイル デバイス メールボックス (ActiveSync) ポリシーの作成
 
-1.  管理センターの左側のパネルで、[**管理者**] をクリックし、[ **Exchange**] をクリックします。
+1.  管理センターの左側のパネルで、[管理]**をクリックし****、[Exchange] をクリックします**。
 
-    ![管理センター、exchange のアクティブユーザーを示しています。](images/setupdeviceaccto365-08.png)
+    ![管理センター。Exchange のアクティブなユーザーを表示します。](images/setupdeviceaccto365-08.png)
 
 2.  ブラウザーの別のタブが開き、Exchange 管理センターが表示されます。ここで、Surface Hub のメールボックスの設定を作成して設定できます。
 
@@ -82,7 +84,7 @@ ms.locfileid: "10836742"
 
 これらの PowerShell スクリプトで使用されるコマンドレットを実行するには、次のツールを管理者用 PowerShell コンソールにインストールする必要があります。
 
--   [IT プロフェッショナル向け Microsoft Online Service サインインアシスタントプロフェッショナル用 RTWHTTP://GO.MICROSOFT.COM/FWLINK/?LINKID=625123](https://www.microsoft.com/download/details.aspx?id=41950)
+-   [MICROSOFT ONLINE SERVICES Sign-In IT プロフェッショナル RTW アシスタント](https://www.microsoft.com/download/details.aspx?id=41950)
 -   [Windows PowerShell 用 Microsoft Azure Active Directory モジュール](https://www.microsoft.com/web/handlers/webpi.ashx/getinstaller/WindowsAzurePowershellGet.3f.3f.3fnew.appids)
 -   [Windows PowerShell Module for Skype for Business Online](https://www.microsoft.com/download/details.aspx?id=39366)
 
@@ -197,10 +199,10 @@ Powershell で次のモジュールをインストールする
 
 Skype for Business を有効にするには、環境が次の前提条件を満たしている必要があります。
 
--   O365 プランでは、Skype for Business Online スタンドアロンプラン2以上が必要です。 プランで会議機能がサポートされている必要があります。
--   Surface Hub のテレフォニーサービスプロバイダーを使用してエンタープライズ Voip (PSTN テレフォニー) が必要な場合は、Skype for Business Online スタンドアロンプラン3が必要です。
+-   O365 プランに Skype for Business Online スタンドアロン プラン 2 以上が必要です。 プランで会議機能がサポートされている必要があります。
+-   Surface Hub 用のエンタープライズ VoIPサービス プロバイダーを使用して電話 (PSTN テレフォニー) を使用する必要がある場合は、Skype for Business Online スタンドアロン プラン 3 が必要です。
 -   テナント ユーザーが Exchange メールボックスを持っている必要があります。
--   Surface Hub アカウントには、Skype for Business Online Standalone Plan 2 または Skype for Business Online Standalone Plan 3 ライセンスが必要ですが、Exchange Online のライセンスは必要ありません。
+-   Surface Hub アカウントには Skype for Business Online スタンドアロン プラン 2 または Skype for Business Online スタンドアロン プラン 3 のライセンスが必要ですが、Exchange Online ライセンスは必要ではありません。
 
 1.  まず、PC でリモート PowerShell セッションを作成します。
 
@@ -225,7 +227,7 @@ Skype for Business を有効にするには、環境が次の前提条件を満�
 ## <a href="" id="create-device-acct-eac"></a>Exchange 管理センターの使用によるデバイス アカウントの作成
 
 >[!NOTE]
->この方法は、オンプレミスの Active Directory から同期している場合にのみ機能します。
+>このメソッドは、オンプレミスの Active Directory から同期する場合にのみ機能します。
 
 Exchange 管理センターを使用して、デバイス アカウントを作成できます。
 
@@ -248,7 +250,7 @@ Exchange 管理センターを使用して、デバイス アカウントを作�
 ### <a href="" id="create-device-acct-exch-mbx-policy"></a>Exchange 管理センターからのモバイル デバイス メールボックス ポリシーの作成
 
 >[!NOTE]
->作成したアカウントにポリシーを作成して割り当てる必要がある場合に、Exchange 2010 を使っている場合は、ポリシーの作成とポリシーの割り当てについて、EMC (Exchange 管理コンソール) を使用する際に、対応する情報を参照してください。
+>作成したアカウントにポリシーを作成して割り当て、Exchange 2010 を使用する場合は、EMC (Exchange 管理コンソール) を使用するときに、ポリシーの作成とポリシーの割り当てに関する対応する情報を参照します。
 
  
 
@@ -314,7 +316,7 @@ Exchange 管理センターを使用して、デバイス アカウントを作�
 
     正しいメール アドレスが表示されます。
 
-2.  アカウントを会議室メールボックスに変換する必要があります。そのためには、次の操作を実行します。
+2.  アカウントをルーム メールボックスに変換する必要があります。次のコマンドを実行します。
 
     ``` syntax
     Set-Mailbox $strEmail -Type Room
@@ -357,12 +359,12 @@ Exchange 管理センターを使用して、デバイス アカウントを作�
 
 Skype for Business を有効にするには、環境が次の前提条件を満たしている必要があります。
 
--   O365 プランでは、Skype for Business Online スタンドアロンプラン2以上が必要です。 プランで会議機能がサポートされている必要があります。
--   Surface Hub のテレフォニーサービスプロバイダーを使用してエンタープライズ Voip (PSTN テレフォニー) が必要な場合は、Skype for Business Online スタンドアロンプラン3が必要です。
--   テナント ユーザーが Exchange メールボックスを持っている必要があります。
--   Surface Hub アカウントには、Skype for Business Online Standalone Plan 2 または Skype for Business Online Standalone Plan 3 ライセンスが必要ですが、Exchange Online のライセンスは必要ありません。
+- O365 プランに Skype for Business Online スタンドアロン プラン 2 以上が必要です。 プランで会議機能がサポートされている必要があります。
+- Surface Hub 用のエンタープライズ VoIPサービス プロバイダーを使用して電話 (PSTN テレフォニー) を使用する必要がある場合は、Skype for Business Online スタンドアロン プラン 3 が必要です。
+- テナント ユーザーが Exchange メールボックスを持っている必要があります。
+- Surface Hub アカウントには Skype for Business Online スタンドアロン プラン 2 または Skype for Business Online スタンドアロン プラン 3 のライセンスが必要ですが、Exchange Online ライセンスは必要ではありません。
 
-1.  まず、PC でリモート PowerShell セッションを作成します。
+1. まず、PC でリモート PowerShell セッションを作成します。
 
     ```PowerShell
     Import-Module SkypeOnlineConnector
@@ -370,23 +372,16 @@ Skype for Business を有効にするには、環境が次の前提条件を満�
     Import-PSSession $cssess -AllowClobber
     ```
 
-2. Surface Hub アカウントレジストラープールを取得する
+2. Surface Hub アカウントレジストラー プールを取得する
 
 環境内の `RegistrarPool` パラメーターに使用する値がわからない場合は、次のコマンドレットを使用して、既存の Skype for Business ユーザーから値を取得できます。
 
-    ```PowerShell
+ ```PowerShell
     Get-CsOnlineUser -Identity ‘alice@contoso.microsoft.com’| fl *registrarpool*
-    ```
-    
+ ```
+
 3. Skype for Business Server に対して Surface Hub アカウントを有効にするには、次のコマンドレットを実行します。
 
    ```PowerShell
    Enable-CsMeetingRoom -Identity $strEmail -RegistrarPool "sippoolbl20a04.infra.lync.com" -SipAddressType EmailAddress
    ```
-
-    
-
-
-
-
-

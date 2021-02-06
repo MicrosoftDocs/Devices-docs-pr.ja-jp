@@ -12,17 +12,20 @@ ms.author: dansimp
 ms.topic: article
 ms.date: 06/20/2019
 ms.localizationpriority: medium
-ms.openlocfilehash: b5f828ee6757c150b1287e8210c81592e970b74a
-ms.sourcegitcommit: 5cfac94c220c8a8d4620c6a7fa75ae2fae089c7f
+appliesto:
+- Surface Hub
+- Surface Hub 2S
+ms.openlocfilehash: 4db5066c62f4e0e324a5cc3ddad027e00a2e18c9
+ms.sourcegitcommit: 7809222a51eb184f07d6b3ffbdd04a6272b247f9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "11311963"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "11314410"
 ---
 # デバイス アカウントへの ActiveSync ポリシーの適用 (Surface Hub)
 
 
-Microsoft Surface Hub のデバイス アカウントでは、ActiveSync を使用してメールとカレンダーが同期されます。 これにより、スケジュール設定済みの会議に Surface Hub から参加して開始でき、会議中に作成したすべてのホワイトボードをメールで送信できます。
+すべてのバージョンの Microsoft Surface Hub のデバイス アカウントは、ActiveSync を使用してメールと予定表を同期します。 これにより、スケジュール設定済みの会議に Surface Hub から参加して開始でき、会議中に作成したすべてのホワイトボードをメールで送信できます。
 
 これらの機能が動作するには、組織の ActiveSync ポリシーが次のように構成されている必要があります。
 

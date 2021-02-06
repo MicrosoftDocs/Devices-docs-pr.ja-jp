@@ -1,7 +1,7 @@
 ---
 title: Surface Hub 2S 85 インチ
 description: この記事では、Surface Hub 2S 85 インチについて紹介します。
-keywords: Surface Hub 2S 85 の技術仕様
+keywords: Surface Hub 2S 85、技術仕様
 ms.prod: surface-hub
 ms.sitesec: library
 author: greg-lindsay
@@ -9,22 +9,22 @@ ms.author: greglin
 manager: laurawi
 audience: Admin
 ms.topic: article
-ms.date: 11/26/2020
+ms.date: 02/05/2021
 ms.localizationpriority: Medium
-ms.openlocfilehash: 093185838250e9b52c078ece4e206639f8b7a630
-ms.sourcegitcommit: 38bb1d92064fb1ab0fe69f9c88ef6e44c9232b97
+ms.openlocfilehash: 01d9712bce55a6be28a58adccdc9a2eef0837c52
+ms.sourcegitcommit: 7809222a51eb184f07d6b3ffbdd04a6272b247f9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/27/2021
-ms.locfileid: "11304505"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "11314390"
 ---
 # Surface Hub 2S 85" の概要と&仕様
 
-Surface Hub ファミリの 85" バージョンでは、会議室、ボード ルーム、より大きなハドル スペースなど、大きな画面が必要なスペースに Surface Hub 2S エクスペリエンスが提供されます。 Surface Hub 2S 85" は、次のエクスペリエンスを提供します。
+Surface Hub ファミリの 85" バージョンでは、会議室、ボード ルーム、より大きな取り付けスペースなど、大きな画面が必要なスペースに Surface Hub 2S エクスペリエンスが提供されます。 Surface Hub 2S 85" は、次のエクスペリエンスを提供します。
 
 - **グループコラボレーション用に設計されています。** Microsoft Whiteboard で同時にインク入力を行い、Microsoft Teams の寿命を超えるリモート参加者を招待します。
 - **一貫した Surface Hub 2S エクスペリエンス。** Surface Hub 2S 50 と同じプレミアム デザイン、4K 表示テクノロジ、タッチ、ペン/インク、コンピューティング、カメラのサポートを提供します。
-- **既存および新しい A/V システムとの統合。** Microsoft Teams 認定周辺機器と組み合わせ、Microsoft Teams Rooms と統合します。
+- **既存および新しい A/V システムとの統合。** Microsoft Teams 認定周辺機器と組み合わせ、Microsoft Teams ルームと統合します。
 
 ![Surface Hub 2S 85"](images/hub-2s-85.png)
 
@@ -32,10 +32,12 @@ Surface Hub ファミリの 85" バージョンでは、会議室、ボード �
 
 | コンポーネント    | 説明                                                                                                                                                                                                                                         |
 | ----------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| ディメンション        | 44.5" x 77.1" x 3.4"<br>(1130mm x 1959mm x 85.6mm)                                                                                                                                                                                                        |
-| 重量            | 185 lb. (84kg)                                                                                                                                                                                                                                            |
+| ディメンション        | 44.5" x 77.1" x 3.4"<br>(1130 mm x 1959 mm x 85.6 mm)                                                                                                                                                                                                        |
+| 配送先のディメンション        | 89.5" x 62" x 22.8"<br>(2275 mm x 1573 mm x 580 mm)                                                                                                                                                                                                        |
+| 重量            | 185 lbs (84 フィート)                                                                                                                                                                                                                                            |
+| 出荷の重み            | 399 lbs (181 フィート)                                                                                                                                                                                                                                            |
 | 解決方法        | 3840 x 2160                                                                                                                                                                                                                                               |
-| ディスプレイ           | PixelSense™ Display、16:9 縦横比、10 ビット カラー、30.5mm 罫線の幅、アンチハイザー、IPS の TOUCH、20 の同時タッチ ポイントによるインセル タッチ                                                                                                           |
+| Display           | PixelSense™ Display、16:9 縦横比、10 ビット カラー、30.5mm 罫線の幅、アンチハイザー、IPS の TOUCH、20 の同時タッチ ポイントによるインセル タッチ                                                                                                           |
 | コンピュート           | Modular Compute Cartridge<br>クアッド コア第 8 世代 Intel® Core™ i5 プロセッサ、8 GB RAM、128 GB SSD <sup> 1</sup>                                                                                                                                                      |
 | ソフトウェア <sup> 2</sup>         | Windows 10 Team OS <sup> 3</sup><br>Surface Hub 用 Microsoft Teams<br>Skype for Business<br>Microsoft Whiteboard<br>Microsoft Office (モバイル)<br>Microsoft Power BI                                                                                                   |
 | Connections       | USB-A<br>Mini-DisplayPortビデオ出力<br>RJ45 ギガビット イーサネット<br>HDMI ビデオ入力<br>DisplayPort 入力® USB-C<br>(3) USB-C® (ディスプレイ)                                                                                                           |
@@ -59,7 +61,7 @@ Surface Hub ファミリの 85" バージョンでは、会議室、ボード �
 2. 一部の機能に必要なソフトウェア ライセンス。 別途販売。
 3. Windows 10 Team から Windows 10 Pro または Enterprise への移行は、現在 Surface Hub 2S 50 でのみ利用可能です。" 詳しくは [、「Surface Hub 2 での Windows 10 Pro または Enterprise への移行」をご覧ください](https://docs.microsoft.com/surface-hub/surface-hub-2s-migrate-os)。
 4. ドップラー センサーは、香港、インド、クウェート、およびオマーンでは使用できません。
-5. マイクロソフトの制限付き保証は、お客様の消費者法の権利に加えて適用されます。 
+5. マイクロソフトの制限付き保証は、お客様の消費者法上の権利に加えて適用されます。 
 
 ## 詳細情報
 

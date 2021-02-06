@@ -1,8 +1,8 @@
 ---
-title: 84" Surface Hub の技術情報
+title: 84" Surface Hub の技術情報 (v1)
 ms.reviewer: ''
 manager: laurawi
-description: 84" Surface Hub の仕様
+description: 84" Surface Hub (v1) の仕様
 ms.prod: surface-hub
 ms.sitesec: library
 author: dansimp
@@ -10,14 +10,16 @@ ms.author: dansimp
 ms.topic: article
 ms.localizationpriority: medium
 ms.date: 12/21/2020
-ms.openlocfilehash: e8f01a7e6ce087f649d99c1fc13f149fa375fc8a
-ms.sourcegitcommit: e83316c8b5e3c29b0af0730ef05fd8b96b0d0cdd
+appliesto:
+- Surface Hub
+ms.openlocfilehash: 6d309dbc05cd4fcb9abae54bd8a604787b74b312
+ms.sourcegitcommit: 7809222a51eb184f07d6b3ffbdd04a6272b247f9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/21/2020
-ms.locfileid: "11238112"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "11314460"
 ---
-# 84" Surface Hub の技術情報
+# 84" Surface Hub の技術情報 (v1)
 
 |
 --- | ---
@@ -26,11 +28,11 @@ Size |  46.12" x 86.7" x 4.15" (1171.5mm x 2202.9mm x 105.4mm)
 ストレージ/RAM | 8 GB RAM を搭載した SSD 128GB
 処理者   | 第 4 世代 Intel® Core™ i7 
 グラフィックス |  NVIDIA Quadro K2200 
-ポート | **内部 PC**<br>• (1) USB 3.0 (下部) + (1) USB 3.0 (サイド アクセス)<br>• (4) USB 2.0<br>• Ethernet 1000 Base-T<br>• DisplayPort ビデオ出力<br>• 3.5mm ステレオ 出力<br>• システム レベル制御用の RJ11 コネクタ<br>**代替 PC**<br>• (2) USB 2.0 タイプ B 出力<br>• カメラ、センサー、マイク、スピーカーの接続<br>• (2) DisplayPort ビデオ入力<br>**ゲスト PC**<br>• DisplayPort ビデオ入力<br>• HDMI ビデオ入力<br>• VGA ビデオ入力<br>• 3.5mm ステレオ入力<br>• (1) USB 2.0 タイプの B タッチバック™出力
+ポート | **内部 PC**<br>• (1) USB 3.0 (下部) + (1) USB 3.0 (サイド アクセス)<br>• (4) USB 2.0<br>• Ethernet 1000 Base-T<br>• DisplayPort ビデオ出力<br>• 3.5mm ステレオ 出力<br>• システム レベル制御用の RJ11 コネクタ<br>**代替 PC**<br>• (2) USB 2.0 タイプ B 出力<br>• カメラ、センサー、マイク、スピーカーの接続<br>• (2) DisplayPort ビデオ入力<br>**ゲスト PC**<br>• DisplayPort ビデオ入力<br>• HDMI ビデオ入力<br>• VGA ビデオ入力<br>• 3.5mm ステレオ入力<br>• (1) USB 2.0 タイプ B タッチバック™出力
 センサー  | (2) パッシブ赤外線プレゼンス センサー、環境光センサー 
 スピーカー |  (2) 正面ステレオ スピーカー 
 マイク |    高パフォーマンスの 4 要素配列 
-カメラ |    (2) 広角 HD カメラ 1080p @ 30fps 
+Camera |    (2) 広角 HD カメラ 1080p @ 30fps 
 ペン |   (2) 有効、アクティブ、サブpixelの精度 
 物理的なサイド ボタン | 電源、入力の選択、音量、明るさ 
 ソフトウェア |  Windows 10 + Office (Word、PowerPoint、Excel) 
@@ -100,28 +102,28 @@ RJ11、下部 I/O | ![](images/rj11.png) | ルーム コントロール シス�
 
 ## ポートとファイアウォールの図
 
-**_トップ ビューの 84" Surface Hub_*_
+***84" Surface Hub のトップ ビュー***
 
 ![](images/sh-84-top.png)
 
 ---
 
 
-_*_84" Surface Hub のフロント ビュー_*_
+***84" Surface Hub のフロント ビュー***
 
 ![](images/sh-84-front.png)
 
 
 ---
 
-_*_84" Surface Hub の下部ビュー_*_
+***84" Surface Hub の下部ビュー***
 
 ![](images/sh-84-bottom.png)
 
 
 ---
 
-_*_84 インチの Surface Hub の代替 PC ポート。_*_
+***84 インチの Surface Hub の代替 PC ポート。***
 
 ![](images/sh-84-rpc-ports.png)
 
@@ -129,21 +131,21 @@ _*_84 インチの Surface Hub の代替 PC ポート。_*_
 
 ---
 
-_*_84" Surface Hub の背面図_*_
+***84" Surface Hub の背面図***
 
 ![](images/sh-84-rear.png)
 
 
 ---
 
-_*_84" Surface Hub 用のセール_*_
+***84" Surface Hub 用のセール***
 
 ![](images/sh-84-clearance.png)
 
 ---
 
 
-_*_84" Surface Hub のリムーバブルリフティング ハンドル_*_
+***84" Surface Hub 上のリムーバブルリフティング ハンドル***
 
 ![](images/sh-84-hand.png)
 
@@ -151,17 +153,17 @@ _*_84" Surface Hub のリムーバブルリフティング ハンドル_*_
 ---
 
 
-_*_84" Surface Hub の背面のウォール マウント スレッド_*_
+***84" Surface Hub の背面のウォール マウント スレッド***
 
 ![](images/sh-84-wall.png)
 
 ---
-_*_84" Surface Hub の上部表示でのハンドルの持ち上げ_*_
+***84" Surface Hub の上部表示でのハンドルの持ち上げ***
 
 ![](images/sh-84-hand-top.png)
 
 ---
-_*_サイド ビューの 84" Surface Hub_**
+***84" Surface Hub のサイド ビュー***
 
 ![](images/sh-84-side.png)
 

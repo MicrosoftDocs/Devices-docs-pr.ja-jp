@@ -12,12 +12,15 @@ ms.author: dansimp
 ms.topic: article
 ms.date: 02/01/2021
 ms.localizationpriority: medium
-ms.openlocfilehash: 36c6010307603b36b8798a09aed26f8b337b2c1b
-ms.sourcegitcommit: 5cfac94c220c8a8d4620c6a7fa75ae2fae089c7f
+appliesto:
+- Surface Hub
+- Surface Hub 2S
+ms.openlocfilehash: c76ac577c1560020bf865a25d4a812343089013a
+ms.sourcegitcommit: 7809222a51eb184f07d6b3ffbdd04a6272b247f9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "11311953"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "11314440"
 ---
 # Surface Hub の管理グループの管理
 
@@ -30,9 +33,9 @@ ms.locfileid: "11311953"
 デバイスの管理者アカウントは、次の方法で設定できます。
 
 - [ローカル管理者アカウントを作成する](#create-a-local-admin-account)
-- [デバイスを Active Directory にドメイン参加する](#domain-join-the-device-to-active-directory)
+- [デバイスを Active Directory にドメイン参加](#domain-join-the-device-to-active-directory)
 - [Azure ADデバイスに参加する](#azure-ad-join-the-device)
-- [参加しているデバイスに Azure AD管理者以外のアカウントを構成する (Surface Hub 2S)](#configure-non-global-admin-accounts-on-azure-ad-joined-devices)
+- [Azure または参加しているデバイスでグローバル管理者ADアカウントを構成する (Surface Hub 2S)](#configure-non-global-admin-accounts-on-azure-ad-joined-devices)
 
 
 ### ローカル管理者アカウントを作成する
@@ -41,7 +44,7 @@ ms.locfileid: "11311953"
 
 ローカル管理者アカウントの情報は、ディレクトリ サービスによってサポートされないことに注意してください。 デバイスで Active Directory (AD) または Azure Active Directory (Azure AD) にアクセスできない場合にのみ、ローカル管理者を選ぶことをお勧めします。 ローカル管理者のパスワードを変更する場合は、[設定] で変更できます。 ただし、ローカル管理者アカウントの使用からドメインまたは Azure AD テナントのグループの使用に変更する場合は、[デバイスをリセット](device-reset-surface-hub.md)して、初回設定プログラムを再度実行する必要があります。
 
-### デバイスを Active Directory にドメイン参加
+### デバイスを Active Directory にドメイン参加する
 
 Surface Hub を AD ドメインに参加させると、指定したセキュリティ グループのユーザーが設定を構成できるようになります。 初回実行時に、[Active Directory ドメイン サービス](first-run-program-surface-hub.md#use-active-directory-domain-services)の使用を選択します。 選択したドメインに参加させる権限のある資格情報と既存のセキュリティ グループの名前を指定する必要があります。 そのセキュリティ グループのメンバーであるユーザーが自身の資格情報を入力すると、設定のロックを解除できます。
 
@@ -51,7 +54,7 @@ Surface Hub をドメインに参加させると、次のような処理が可�
 - デバイスの BitLocker 回復キーを AD のコンピューター オブジェクトに保存することによって、BitLocker 回復キーをバックアップします。 詳しくは、「[BitLocker キーの保存](save-bitlocker-key-surface-hub.md)」をご覧ください。
 - 暗号化された通信用にシステム クロックをドメイン コントローラーと同期します。
 
-Surface Hub では、ドメイン コントローラーからグループ ポリシーまたは証明書を適用することはサポートされていません。
+Surface Hub では、ドメイン コントローラーからのグループ ポリシーまたは証明書の適用はサポートされていません。
 
 > [!NOTE]
 > Surface Hub にドメインとの信頼がなくなった場合 (たとえば、ドメイン参加後にドメインから Surface Hub を削除する場合)、デバイスに対して認証を受けて設定を開くことができなくなります。 Surface Hub とドメインとの信頼関係を削除する場合は、先に[デバイスをリセット](device-reset-surface-hub.md)します。
@@ -90,6 +93,6 @@ Surface Hub では、デバイスを Azure Active Directory に参加するこ�
 | &nbsp;                                            | 組織でAzure AD Premium または Enterprise Mobility Suite (EMS) を使用している | グローバル管理者と追加の管理者 |
 
 
-### Azure に参加しているデバイスでグローバル管理者ADアカウントを構成する
+### Azure ADに参加しているデバイスでグローバル管理者以外のアカウントを構成する
 
-Azure AD に参加している Surface Hub 2S デバイスの場合、Windows 10 Team 2020 Update では、Surface Hub 2S の設定アプリの管理に対する管理者権限を制限できます。 これにより、Surface Hub 2S の管理者アクセス許可のみをスコープ設定し、望ましくない可能性のある管理者が Azure AD ドメイン全体にアクセスすることを防止できます。 詳細については [、「Surface Hub 2S でグローバル管理者以外のアカウントを構成する」を参照してください](surface-hub-2s-nonglobal-admin.md)。
+Azure AD に参加している Surface Hub 2S デバイスの場合、Windows 10 Team 2020 Update では、Surface Hub 2S での設定アプリの管理に対する管理者権限を制限できます。 これにより、Surface Hub 2S の管理者アクセス許可のみをスコープ設定し、望ましくない可能性のある管理者が Azure AD ドメイン全体にアクセスすることを防止できます。 詳細については [、「Surface Hub 2S でグローバル管理者以外のアカウントを構成する」を参照してください](surface-hub-2s-nonglobal-admin.md)。

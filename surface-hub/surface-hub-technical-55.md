@@ -1,8 +1,8 @@
 ---
-title: 55" Surface Hub の技術情報
+title: 55" Surface Hub の技術情報 (v1)
 ms.reviewer: ''
 manager: laurawi
-description: 55" Surface Hub の仕様
+description: 55" Surface Hub (v1) の仕様
 ms.prod: surface-hub
 ms.sitesec: library
 author: dansimp
@@ -10,14 +10,16 @@ ms.author: dansimp
 ms.topic: article
 ms.localizationpriority: medium
 ms.date: 12/21/2020
-ms.openlocfilehash: e321b64ebbbc62da70cfdc1979053ee8facb7235
-ms.sourcegitcommit: e83316c8b5e3c29b0af0730ef05fd8b96b0d0cdd
+appliesto:
+- Surface Hub
+ms.openlocfilehash: 5d0c88b1e0b7fdd0f144a7ee641dcab7599c68a1
+ms.sourcegitcommit: 7809222a51eb184f07d6b3ffbdd04a6272b247f9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/21/2020
-ms.locfileid: "11238092"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "11314450"
 ---
-# 55" Surface Hub の技術情報
+# 55" Surface Hub の技術情報 (v1)
 
 |
 --- | ---
@@ -30,7 +32,7 @@ Size |  31.75" x 59.62" x 3.38" (806.4mm x 1514.3mm x 85.8mm)
 センサー |   (2) パッシブ赤外線プレゼンス センサー、環境光センサー 
 スピーカー |  (2) 正面ステレオ スピーカー 
 マイク |    高パフォーマンスの 4 要素配列 
-カメラ |    (2) 広角 HD カメラ 1080p @ 30fps 
+Camera |    (2) 広角 HD カメラ 1080p @ 30fps 
 ペン  | (2) 有効でアクティブなサブpixel精度 
 物理的なサイド ボタン | 電源、入力の選択、音量、明るさ 
 ソフトウェア |  Windows 10 + Office (Word、PowerPoint、Excel) 
@@ -46,7 +48,7 @@ Orientation  | 横向きのみ。 縦向きの表示は使用できません。
 BTU  | 1706 BTU/h
 画像の解像度 |  1920 x 1080
 フレーム レート |    120Hz
-EDID 優先タイミング、代替 PC | 1920 x 1080、120Hz 垂直更新
+EDID の優先タイミング、代替 PC | 1920 x 1080、120Hz 垂直更新
 EDID 優先タイミング、有線接続 |  1920 x 1080、60Hz 垂直更新
 入力の入力 | (50/60Hz) 110/230v 名目、最大 90 ~ 265v
 入力電源、動作 |    最大 500W
@@ -66,7 +68,7 @@ EDID 優先タイミング、有線接続 |  1920 x 1080、60Hz 垂直更新
 スイッチ、下部 I/O | ![](images/switch.png) | 内部 PC と外部 PC の間で機能を切り替えします。
 表示ポート、下部 I/O | ![](images/dport.png) | 代替 PC の入力を提供します。
 USB タイプ B、下部 I/O | ![](images/usb.png) | 代替 PC から内部周辺機器への USB 接続を提供します。 
-USB タイプ B、下部 I/O | ![](images/usb.png) | 統合ハブ用の USB 接続を提供します。
+USB タイプ B、下部 I/O | ![](images/usb.png) | 統合ハブの USB 接続を提供します。
 
 
 ## ワイヤード (有線) 接続
@@ -84,10 +86,10 @@ USB タイプ B、下部 I/O | ![](images/usb.png) | ビデオ インジェス�
 コネクタと場所 | Label | 説明
 --- | --- | ---
 USB タイプ A、サイド I/O | ![](images/usb.png) | USB デバイスに 1 つの USB 3.0 接続を提供します。 スリープ解除が可能な USB デバイス。
-USB タイプ A、下部 I/O、青いボタン付き | ![](images/usb.png) | USB 3.0 接続を提供します。
+USB タイプ A、下部 I/O、青いボタン | ![](images/usb.png) | USB 3.0 接続を提供します。
 3.5mm、下部 I/O | ![](images/analog.png) | アナログ オーディオ 出力を提供します。
 表示ポート、下部 I/O | ![](images/dportout.png) | ミラー化されたビデオアウト機能を別のディスプレイに提供します。
-IEC/EN60320-C13 ハード スイッチ付き | ![](images/iec.png) | AC 入力と EU の電源要件への準拠を提供します。
+IEC/EN60320-C13 ハード スイッチ付き | ![](images/iec.png) | AC 入力と EU 電力要件への準拠を提供します。
 RJ45、下部 I/O | ![](images/rj45.png) | イーサネットに接続します。
 RJ11、下部 I/O | ![](images/rj11.png) | ルーム コントロール システムに接続します。
 
@@ -103,56 +105,56 @@ RJ11、下部 I/O | ![](images/rj11.png) | ルーム コントロール シス�
 
 ## ポートとファイアウォールの図
 
-**_55" Surface Hub のトップ ビュー_*_
+***55" Surface Hub のトップ ビュー***
 
 ![](images/sh-55-top.png)
 
 ---
 
 
-_*_55" Surface Hub のフロント ビュー_*_
+***55" Surface Hub のフロント ビュー***
 
 ![](images/sh-55-front.png)
 
 
 ---
 
-_*_55" Surface Hub の下のビュー_*_
+***55" Surface Hub の下のビュー***
 
 ![](images/sh-55-bottom.png)
 
 
 ---
 
-_*_55 インチの Surface Hub の代替 PC ポート。_*_
+***55 インチの Surface Hub の代替 PC ポート。***
 
 ![](images/sh-55-rpc-ports.png)
 
 
 ---
 
-_*_55" Surface Hub の右側のキーパッド_*_
+***55" Surface Hub の右側のキーパッド***
 
 ![](images/key-55.png)
 
 
 ---
 
-_*_55" Surface Hub の背面図_*_
+***55" Surface Hub の背面図***
 
 ![](images/sh-55-rear.png)
 
 
 ---
 
-_*_55" Surface Hub 用のセール_*_
+***55" Surface Hub 用のセール***
 
 ![](images/sh-55-clearance.png)
 
 ---
 
 
-_*_55" Surface Hub のフロントハンドホールドと下部のハンドホールドとフロント ホールド_*_
+***55" Surface Hub のフロントハンドホールドと下部のハンドホールドとフロント ホールド***
 
 ![](images/sh-55-hand.png)
 
@@ -160,7 +162,7 @@ _*_55" Surface Hub のフロントハンドホールドと下部のハンドホ�
 ---
 
 
-_*_55" Surface Hub_の背面のハンドホールドとホールド**
+***55" Surface Hub の背面の手差しと背面の取り外し***
 
 ![](images/sh-55-hand-rear.png)
 
