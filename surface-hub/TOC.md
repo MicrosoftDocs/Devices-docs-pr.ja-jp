@@ -70,12 +70,12 @@
 ### [修理対象の Surface Hub 2S を梱包および発送する方法](surface-hub-2s-pack-components.md)
 ### [変更履歴](surface-hub-2s-change-history.md)
 
-# Surface Hub
+# Surface Hub (v1)
 ## 概要
 ### [Surface Hub 用 Windows 10 Version 1703 の新機能](surfacehub-whats-new-1703.md)
 ### [オペレーティングシステムの基礎 (Surface Hub)](differences-between-surface-hub-and-windows-10-enterprise.md)
-### [55 インチ Microsoft Surface Hub の技術情報](surface-hub-technical-55.md)
-### [84 インチ Microsoft Surface Hub の技術情報](surface-hub-technical-84.md)
+### [55 インチ Microsoft Surface Hub (v1) の技術情報](surface-hub-technical-55.md)
+### [84 インチ Microsoft Surface Hub (v1) の技術情報](surface-hub-technical-84.md)
 ### [Surface Hub で Microsoft Whiteboard を使用する](https://support.office.com/article/use-microsoft-whiteboard-on-a-surface-hub-5c594985-129d-43f9-ace5-7dee96f7621d)
 
 ## プラン
