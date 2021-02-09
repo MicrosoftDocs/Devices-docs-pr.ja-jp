@@ -14,12 +14,12 @@ ms.date: 02/01/2021
 ms.localizationpriority: medium
 appliesto:
 - Surface Hub
-ms.openlocfilehash: 09d600efbf07bb58de1b5ebffcb6731e4125a62d
-ms.sourcegitcommit: 7809222a51eb184f07d6b3ffbdd04a6272b247f9
+ms.openlocfilehash: 73c028357849cd660d3b8720aaaa28aade12fea1
+ms.sourcegitcommit: 32b6c25698479fa289f642c5b5761ff3be15b686
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "11314430"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "11317981"
 ---
 # Surface Hub 用 PowerShell (v1)
 
@@ -68,11 +68,11 @@ ms.locfileid: "11314430"
 
 アカウント作成スクリプトでは、次の処理が実行されます。
 
--   管理者の資格情報を要求する。
--   ドメイン/テナントにデバイス アカウントを作成する。
--   Surface Hub と互換性のある ActiveSync ポリシーを作成する、またはこのようなポリシーをデバイス アカウントに割り当てる。
+-   管理者の資格情報を要求します。
+-   ドメイン/テナントにデバイス アカウントを作成します。
+-   Surface Hub と互換性のある ActiveSync ポリシーを作成するか、デバイス アカウントに割り当てる。
 -   Exchange と Skype for Business で、作成されたアカウントに関するさまざまな属性を設定する。
--   作成されたアカウントに、ライセンスとアクセス許可を割り当てる。
+-   作成したアカウントにライセンスとアクセス許可を割り当てる。
 
 スクリプトによって設定される属性は、次のとおりです。
 
@@ -551,7 +551,7 @@ else
 
 ### <a href="" id="create-os356-ps-scripts"></a>Office 365 を使ったデバイス アカウントの作成
 
-「[Office 365 を使ったデバイス アカウントの作成](create-a-device-account-using-office-365.md)」で説明しているとおりに、アカウントを作成します。
+「Create a device [account using Office 365](create-a-device-account-using-office-365.md)」の説明に従ってアカウントを作成します。
 
 ```PowerShell
 # SHAccountCreateO365.ps1
@@ -998,7 +998,7 @@ else
 
 このスクリプトは、作成に使用した方法に関係なく、Surface Hub と Surface Hub 2S で以前に作成されたデバイス アカウントを検証します。 このスクリプトは、基本的に合格/不合格方式です。 いずれかのテスト エラーが発生すると詳細なエラー メッセージが表示されますが、すべてのテストに合格すると、最終的な結果は要約レポートになります。 たとえば、次のような結果が表示されます。
 
-``` syntax
+```console
 15 tests executed
 0 failures
 2 warnings

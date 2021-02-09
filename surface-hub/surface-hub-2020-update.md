@@ -11,37 +11,40 @@ audience: Admin
 ms.topic: article
 ms.date: 12/17/2020
 ms.localizationpriority: Medium
-ms.openlocfilehash: c89063765462a76ae48d17e1480bbff29f48ebdc
-ms.sourcegitcommit: 8bca7edea5401dfc97614e18a058a023aa9497c4
+appliesto:
+- Surface Hub
+- Surface Hub 2S
+ms.openlocfilehash: 291a2eda0c1fa6e5e2fd2240861c8570d00054df
+ms.sourcegitcommit: 7029e80d9ca1a3de5c336cf662e566ed4b6b3e7a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "11254206"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "11319181"
 ---
 # Windows 10 Team 2020 の更新プログラムをインストールする 
 
-Windows **10 バージョン 20H2**に基づく新しい Surface Hub オペレーティング システムである Windows 10 Team 2020 Update が、すべての Surface Hub 2S デバイスで利用できます。  
+Windows **10 バージョン 20H2**に基づく新しい Surface Hub オペレーティング システムである Windows 10 Team 2020 Update が、Surface Hub 2S と元の Surface Hub (v1) で利用できます。 
 
-- See also: [Known issues: Windows 10 Team 2020 Update](surface-hub-2020-update.md)
+- See also: [Known issues: Windows 10 Team 2020 Update](surface-hub-2020-team-update-known-issues.md)
 
 ## [Distribution] (配布)
 
 Windows 2020 Update は、次のいずれかの方法で入手できます。
 
 - **Windows Update for Business**.
-- **ベア メタル回復 (BMR) イメージ**。 デバイスを Azure Active Directory に参加しているお客様、またはデバイスがインターネットから更新プログラムを受信できないお客様に推奨されるオプションです。 始めるには、「Surface の回復 [イメージをダウンロードする」をご覧ください](https://support.microsoft.com/surfacerecoveryimage)。
+- **ベア メタル回復 (BMR) イメージ**。 デバイスを Azure Active Directory に参加しているユーザー、またはデバイスがインターネットから更新プログラムを受信できない場合に推奨されるオプションです。 開始するには、「Surface の回復 [イメージをダウンロードする」を参照してください](https://support.microsoft.com/surfacerecoveryimage)。
 - **Windows Update。** 可用性は、次の表に示す地域/国によって異なります。
 
 | フェーズ | 国/地域                         | 開始          |
 | ----- | -------------------------------------- | ----------------- |
-| 1     | NZ、オーストラリア、カナダ、ベルギー、メキシコ | 2020 年 10 月 27 日  |
-| 2     | 英国、日本、スイス、イタリア          | 2020 年 11 月 10 日 |
-| 3     | 米国、ドイツ                            | TBD |
-| 4     | グローバル                                 | TBD  |
+| 1     | NZ、オーストラリア、カナダ、ベルギー、メキシコ | 2020 年 10 月  |
+| 2     | 英国、日本、スイス、イタリア          | 2020 年 11 月 |
+| 3     | 米国、ドイツ                            | 2021 年 2 月後半 |
+| 4     | グローバル                                 | 2021 年 2 月後半 |
 
 ## Windows 10 Team Edition バージョン 1703 での Surface Hub のサービス提供 
 
-Windows 10 Team Edition バージョン 1703 の完全なサービス サポートは、2021 年 3 月 16 日まで継続する予定です。
+[Windows 10 Team Edition バージョン 1703](https://support.microsoft.com/topic/november-12-2019-kb4525245-os-build-15063-2172-dfc81b85-11a6-54ef-4370-11408193419f)の完全なサービス サポートは、2021 年 3 月 16 日まで継続する予定です。
 
 ### 2S デバイス 
 
@@ -49,7 +52,7 @@ Windows 10 Team Edition バージョン 1703 の完全なサービス サポー�
 
 ### V1 デバイス 
 
-すべての地域のお客様は、Surface Hub 回復ツールを使って Surface Hub v1 デバイスを 2020 Update に [更新できます](surface-hub-recovery-tool.md)。 これらのデバイスを Windows 10 Team 2020 Update に更新する他の方法は、間もなく利用可能になります。 詳細については [、Surface IT Pro ブログを参照してください](https://techcommunity.microsoft.com/t5/surface-it-pro-blog/surface-hub-windows-10-team-2020-update/ba-p/2000144)。
+すべての地域のお客様は、Surface Hub 回復ツールを使って Surface Hub v1 デバイスを 2020 Update に [更新できます](surface-hub-recovery-tool.md)。 これらのデバイスを Windows 10 Team 2020 Update に更新する他の方法は、間もなく利用可能になります。 詳細については [、Surface IT Pro ブログを参照してください](https://techcommunity.microsoft.com/t5/surface-it-pro-blog/update-to-the-windows-10-team-rollout/ba-p/1669655)。
  
 ## 新機能
 
@@ -70,5 +73,5 @@ Windows 10 Team 2020 Update をインストールする前に、デバイスに�
 
 ## 詳細情報
 
-- [既知の問題: Windows 10 Team 2020 Update](surface-hub-2020-team-update-known-issues.md)
-- [Surface Hub Windows 10 Team 2020 Update の重要な更新プログラム](https://techcommunity.microsoft.com/t5/surface-it-pro-blog/important-updates-on-the-surface-hub-windows-10-team-2020-update/ba-p/1960897)
+- [Windows 10 Team 2020 更新プログラムの新機能](surface-hub-2020-update-whats-new.md)
+- [Windows 10 Team のロールアウトに関する更新プログラム](https://techcommunity.microsoft.com/t5/surface-it-pro-blog/update-to-the-windows-10-team-rollout/ba-p/1669655)

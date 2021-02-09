@@ -12,12 +12,12 @@ ms.author: dansimp
 ms.topic: article
 ms.date: 05/04/2018
 ms.localizationpriority: medium
-ms.openlocfilehash: 9e6d72dc2b36bb149ee09c2edab885c80e60ac14
-ms.sourcegitcommit: 7809222a51eb184f07d6b3ffbdd04a6272b247f9
+ms.openlocfilehash: dd19e2fd2417acd29e71c7555e94ee849fbc1bec
+ms.sourcegitcommit: 32b6c25698479fa289f642c5b5761ff3be15b686
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "11314470"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "11318011"
 ---
 # UI を使ったデバイス アカウントの作成 (Surface Hub v1)
 
@@ -37,18 +37,22 @@ ms.locfileid: "11314470"
 
 ### <a href="" id="create-device-acct-o365-admin-ctr"></a>管理センターでアカウントを作成する
 
-1.  アクセスして Office 365 にサインインする https://portal.office.com
+1.  にアクセスして Office 365 にサインインします [https://portal.office.com](https://portal.office.com) 。
+
 2.  Office 365 テナントの管理者資格情報を入力します。 これにより、Microsoft 365 管理センターに移動します。
 
-    ![Microsoft 365 管理センター。](images/setupdeviceaccto365-02.png)
+    > [!div class="mx-imgBorder"]
+    > ![Microsoft 365 管理センター。](images/setupdeviceaccto365-02.png)
 
-3. 管理センターで、左側のパネルの **[リソース** ] に移動し、[会議室と備品& **します**。
+3. 管理センターで、左側のパネルの **[リソース** ] に移動し、[会議室] を& **します**。
 
-    ![管理&の会議室と備品オプション](images/room-equipment.png)
+    > [!div class="mx-imgBorder"]
+    > ![管理&の会議室と備品オプション](images/room-equipment.png)
 
 4. **[追加]** をクリックして会議室アカウントを作成します。 アカウントの表示名とメール アドレスを入力し、**[追加]** をクリックします。
 
-    ![新しい会議室アカウントの作成ウィンドウ](images/room-add.png)
+    > [!div class="mx-imgBorder"]
+    > ![新しい会議室アカウントの作成ウィンドウ](images/room-add.png)
 
 5. 作成した会議室アカウントを [アクティブなユーザー] の一覧で選択します。 右側のパネルに、アカウントのプロパティといくつかの省略可能なオプションが表示されます。 **[パスワードのリセット]** をクリックしてパスワードを変更し、**[このユーザーが最初にサインインしたときに、パスワードの変更を行うようにする]** をオフにします (Surface Hub のサインイン フローではパスワードを変更できないため)。
 
@@ -58,15 +62,18 @@ ms.locfileid: "11314470"
 
 1.  管理センターの左側のパネルで、[管理]**をクリックし****、[Exchange] をクリックします**。
 
-    ![管理センター。Exchange のアクティブなユーザーを表示します。](images/setupdeviceaccto365-08.png)
+    > [!div class="mx-imgBorder"]
+    > ![管理センター。Exchange のアクティブなユーザーを表示します。](images/setupdeviceaccto365-08.png)
 
 2.  ブラウザーの別のタブが開き、Exchange 管理センターが表示されます。ここで、Surface Hub のメールボックスの設定を作成して設定できます。
 
-    ![Exchange 管理センター。](images/setupdeviceaccto365-09.png)
+    > [!div class="mx-imgBorder"]
+    > ![Exchange 管理センター。](images/setupdeviceaccto365-09.png)
 
 3.  モバイル デバイス メールボックス ポリシーを作成するには、左側のパネルの **[モバイル]** をクリックし、**[モバイル デバイス メールボックス ポリシー]** をクリックします。 Surface Hub には、パスワードを要求しないモバイル デバイス メールボックス ポリシーが適用されたアカウントが必要です。したがって、この要件に一致するポリシーが既に存在する場合は、アカウントにそのポリシーを適用できます。 それ以外の場合は、次の手順を使用して、Surface Hub デバイス アカウントのみに対して使用される新しいポリシーを作成します。
 
-    ![Exchange 管理センター - モバイル デバイス メールボックス ポリシーの作成。](images/setupdeviceaccto365-10.png)
+    > [!div class="mx-imgBorder"]
+    > ![Exchange 管理センター - モバイル デバイス メールボックス ポリシーの作成。](images/setupdeviceaccto365-10.png)
 
 4.  新しい Surface Hub のモバイル デバイス メールボックス ポリシーを作成するには、ポリシーの一覧の上に表示されているコントロールで **+** をクリックし、新しいポリシーを追加します。 名前については、このポリシーと他のデバイス アカウントを区別しやすい名前 (たとえば、*SurfaceHubDeviceMobilePolicy*) を入力します。 ポリシーに割り当てられたデバイスのパスワードがこのポリシーで要求されないようにします。そのため、**[パスワードを要求する]** チェック ボックスがオフになっていることを確認し、**[保存]** をクリックします。
 
@@ -74,7 +81,8 @@ ms.locfileid: "11314470"
 
 5.  新しいモバイル デバイス メールボックス ポリシーを作成したら、**Exchange 管理センター**に戻ります。新しいポリシーが一覧に表示されます。
 
-    ![Exchange 管理センターでの新しいモバイル デバイス メールボックス ポリシーの画像。](images/setupdeviceaccto365-12.png)
+    > [!div class="mx-imgBorder"]
+    > ![Exchange 管理センターでの新しいモバイル デバイス メールボックス ポリシーの画像。](images/setupdeviceaccto365-12.png)
 
 
 
@@ -88,17 +96,19 @@ ms.locfileid: "11314470"
 -   [Windows PowerShell 用 Microsoft Azure Active Directory モジュール](https://www.microsoft.com/web/handlers/webpi.ashx/getinstaller/WindowsAzurePowershellGet.3f.3f.3fnew.appids)
 -   [Windows PowerShell Module for Skype for Business Online](https://www.microsoft.com/download/details.aspx?id=39366)
 
-Powershell で次のモジュールをインストールする
-``` syntax
-    install-module AzureAD
-    Install-module MsOnline
+PowerShell に次のモジュールをインストールします。
+
+```powershell
+install-module AzureAD
+Install-module MsOnline
 ```
 
 ### オンライン サービスへの接続
 
 1.  管理者として Windows PowerShell を実行します。
 
-    ![Windows PowerShell を起動し、管理者として実行する方法を示す画像。](images/setupdeviceaccto365-17.png)
+    > [!div class="mx-imgBorder"]
+    > ![Windows PowerShell を起動し、管理者として実行する方法を示す画像。](images/setupdeviceaccto365-17.png)
 
 2.  Credentials オブジェクトを作成し、Skype for Business Online に接続している新しいセッションを作成します。次に、グローバルのテナント管理者アカウントを指定し、**[OK]** をクリックします。
 
@@ -106,7 +116,7 @@ Powershell で次のモジュールをインストールする
 
 3.  Microsoft Online Services に接続するには、次のコマンドを実行します。
 
-    ``` syntax
+    ```powershell
     Connect-MsolService -Credential $Cred
     ```
 
@@ -114,7 +124,7 @@ Powershell で次のモジュールをインストールする
 
 4.  ここで、Skype for Business Online サービスに接続するには、次のコマンドを実行します。
 
-    ``` syntax
+    ```powershell
     $sfbsession = New-CsOnlineSession -Credential $cred
     ```
 
@@ -122,7 +132,7 @@ Powershell で次のモジュールをインストールする
 
 5.  最後に、Exchange Online サービスに接続するには、次のコマンドを実行します。
 
-    ``` syntax
+    ```powershell
     $exchangeSession = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri "https://outlook.office365.com/powershell-liveid/" -Credential $cred -Authentication "Basic" –AllowRedirection
     ```
 
@@ -130,7 +140,7 @@ Powershell で次のモジュールをインストールする
 
 6.  ここで、Skype for Business Online セッションと、前の手順で作成した Exchange Online セッションをインポートする必要があります。これにより、Exchange と Skype のコマンドをローカルで使用できるようにインポートします。
 
-    ``` syntax
+    ```powershell
     Import-PSSession $exchangesession -AllowClobber -WarningAction SilentlyContinue
     Import-PSSession $sfbsession -AllowClobber -WarningAction SilentlyContinue
     ```
@@ -180,7 +190,7 @@ Powershell で次のモジュールをインストールする
 
 4.  会議エクスペリエンスを向上させるには、さまざまな Exchange プロパティをデバイス アカウントに設定できます。 設定が必要なプロパティについては、「[Exchange プロパティ](exchange-properties-for-surface-hub-device-accounts.md)」をご覧ください。
 
-    ``` syntax
+    ```powershell
     Set-CalendarProcessing -Identity $strEmail -AutomateProcessing AutoAccept -AddOrganizerToSubject $false –AllowConflicts   $false –DeleteComments $false -DeleteSubject $false -RemovePrivateProperty $false
     Set-CalendarProcessing -Identity $strEmail -AddAdditionalResponse $true -AdditionalResponse "This is a Surface Hub room!"
     ```
@@ -189,7 +199,7 @@ Powershell で次のモジュールをインストールする
 
 5.  パスワードを無期限にする場合は、PowerShell コマンドレットでも設定できます。 詳細については、「[パスワード管理](password-management-for-surface-hub-device-accounts.md)」をご覧ください。
 
-    ``` syntax
+    ```powershell
     Set-MsolUser -UserPrincipalName $strEmail -PasswordNeverExpires $True
     ```
 
@@ -200,7 +210,7 @@ Powershell で次のモジュールをインストールする
 Skype for Business を有効にするには、環境が次の前提条件を満たしている必要があります。
 
 -   O365 プランに Skype for Business Online スタンドアロン プラン 2 以上が必要です。 プランで会議機能がサポートされている必要があります。
--   Surface Hub 用のエンタープライズ VoIPサービス プロバイダーを使用して電話 (PSTN テレフォニー) を使用する必要がある場合は、Skype for Business Online スタンドアロン プラン 3 が必要です。
+-   Surface Hub 用のエンタープライズ VoIPサービス プロバイダーを使用する PSTN テレフォニー (PSTN テレフォニー) が必要な場合は、Skype for Business Online スタンドアロン プラン 3 が必要です。
 -   テナント ユーザーが Exchange メールボックスを持っている必要があります。
 -   Surface Hub アカウントには Skype for Business Online スタンドアロン プラン 2 または Skype for Business Online スタンドアロン プラン 3 のライセンスが必要ですが、Exchange Online ライセンスは必要ではありません。
 
@@ -214,13 +224,13 @@ Skype for Business を有効にするには、環境が次の前提条件を満�
 
 2.  Skype for Business Server に対して Surface Hub アカウントを有効にするには、次のコマンドレットを実行します。
 
-    ```PowerShell
+    ```powershell
     Enable-CsMeetingRoom -Identity $strEmail -RegistrarPool "sippoolbl20a04.infra.lync.com" -SipAddressType EmailAddress
     ```
 
-    環境内の `RegistrarPool` パラメーターに使用する値がわからない場合は、次のコマンドレットを使用して、既存の Skype for Business ユーザーから値を取得できます。
+     環境内の `RegistrarPool` パラメーターに使用する値がわからない場合は、次のコマンドレットを使用して、既存の Skype for Business ユーザーから値を取得できます。
 
-    ```PowerShell
+    ```powershell
     Get-CsOnlineUser -Identity ‘alice@contoso.microsoft.com’| fl *registrarpool*
     ```
 
@@ -298,19 +308,19 @@ Exchange 管理センターを使用して、デバイス アカウントを作�
 
 1.  アカウントのメール アドレスを入力し、その値が格納された変数を作成する必要があります。
 
-    ``` syntax
+    ```powershell
     $mailbox = (Get-Mailbox <your device account’s alias>)
     ```
 
     値を格納するには、メールボックスからその値を取得します。
 
-    ``` syntax
+    ```powershell
     $strEmail = $mailbox.WindowsEmailAddress
     ```
 
     次のコマンドレットを実行して値を出力します。
 
-    ``` syntax
+    ```powershell
     $strEmail
     ```
 
@@ -318,38 +328,38 @@ Exchange 管理センターを使用して、デバイス アカウントを作�
 
 2.  アカウントをルーム メールボックスに変換する必要があります。次のコマンドを実行します。
 
-    ``` syntax
+    ```powershell
     Set-Mailbox $strEmail -Type Room
     ```
 
 3.  Surface Hub に対してデバイス アカウントが認証を受けるには、会議室メールボックス アカウントを有効にしてパスワードを設定します。これにより、アカウントをデバイスで使って、ActiveSync を使って会議情報を取得し、Skype for Business にログインします。
 
-    ``` syntax
+    ```powershell
     Set-Mailbox $strEmail -RoomMailboxPassword (ConvertTo-SecureString  -String "<your password>" -AsPlainText -Force) -EnableRoomMailboxAccount $true
     ```
 
 4.  会議エクスペリエンスを向上させるには、さまざまな Exchange プロパティをデバイス アカウントに設定できます。 設定が必要なプロパティについては、「[Exchange プロパティ](exchange-properties-for-surface-hub-device-accounts.md)」をご覧ください。
 
-    ``` syntax
+    ```powershell
     Set-CalendarProcessing -Identity $strEmail -AutomateProcessing AutoAccept -AddOrganizerToSubject $false –AllowConflicts   $false –DeleteComments $false -DeleteSubject $false -RemovePrivateProperty $false
     Set-CalendarProcessing -Identity $strEmail -AddAdditionalResponse $true -AdditionalResponse "This is a Surface Hub room!"
     ```
 
 5.  ここで、AD でプロパティをいくつか設定する必要があります。 そのためには、アカウントのエイリアス ("@" の前に表記されている部分の UPN) が必要です。
 
-    ``` syntax
+    ```powershell
     $strAlias = “<your device account’s alias>”
     ```
 
 6.  ユーザーを AD で有効にしてから、Surface Hub を使用して認証する必要があります。 次のコマンドを実行します。
 
-    ``` syntax
+    ```powershell
     Set-ADUser $strAlias -Enabled $True
     ```
 
 7.  パスワードを無期限にする場合は、PowerShell コマンドレットでも設定できます。 詳細については、「[パスワード管理](password-management-for-surface-hub-device-accounts.md)」をご覧ください。
 
-    ``` syntax
+    ```powershell
     Set-ADUser $strAlias -PasswordNeverExpires $True
     ```
 
@@ -372,13 +382,13 @@ Skype for Business を有効にするには、環境が次の前提条件を満�
     Import-PSSession $cssess -AllowClobber
     ```
 
-2. Surface Hub アカウントレジストラー プールを取得する
+2. Surface Hub アカウントのレジストラー プールを取得します。
 
-環境内の `RegistrarPool` パラメーターに使用する値がわからない場合は、次のコマンドレットを使用して、既存の Skype for Business ユーザーから値を取得できます。
+   環境内の `RegistrarPool` パラメーターに使用する値がわからない場合は、次のコマンドレットを使用して、既存の Skype for Business ユーザーから値を取得できます。
 
- ```PowerShell
-    Get-CsOnlineUser -Identity ‘alice@contoso.microsoft.com’| fl *registrarpool*
- ```
+   ```PowerShell
+   Get-CsOnlineUser -Identity ‘alice@contoso.microsoft.com’| fl *registrarpool*
+   ```
 
 3. Skype for Business Server に対して Surface Hub アカウントを有効にするには、次のコマンドレットを実行します。
 
