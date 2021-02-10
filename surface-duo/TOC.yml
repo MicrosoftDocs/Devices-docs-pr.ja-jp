@@ -1,0 +1,29 @@
+- name: Surface Duo
+  href: index.yml
+  items:
+    - name: 概要
+      items:
+        - name: Surface Duo の管理の概要
+          href: surface-duo-manage.md
+        - name: Surface Duo のセキュリティの概要
+          href: surface-duo-secure.md
+        - name: Surface Duo の技術仕様
+          href: 'https://www.microsoft.com/surface/business/surface-duo'
+    - name: セキュリテイ保護
+      items:
+        - name: Android Enterprise セキュリティ構成フレームワーク
+          href: 'https://docs.microsoft.com/mem/intune/enrollment/android-configuration-framework'
+    - name: 管理
+      items:
+        - name: Surface Duo 用の仕事用プロファイルの構成
+          href: surface-duo-config-work-profile.md
+        - name: Surface Duo 用の Microsoft Launcher の構成
+          href: surface-duo-launcher-config.md
+    - name: サポート
+      items:
+        - name: Surface Duo のサポートへのお問い合わせ
+          href: contact-surface-duo-support.md
+        - name: 保証サービスの提供
+          href: surface-lifecycle-android-devices.md
+        - name: Android ベースのデバイスの Surface ライフサイクル
+          href: 'https://www.microsoft.com/surface/business/warranty-service-offerings-and-support'
