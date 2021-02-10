@@ -1,0 +1,122 @@
+### YamlMime:Landing
+title: Surface Duo ドキュメント
+summary: Microsoft 365 と Android モバイル アプリの 2 つの画面によるモバイルの生産性
+metadata:
+  title: Surface Duo ドキュメント
+  description: Microsoft Surface Duo の使用を開始する
+  ms.service: product-insights
+  ms.topic: landing-page
+  manager: laurawi
+  author: greg-lindsay
+  ms.author: greglin
+  audience: itpro
+  ms.localizationpriority: medium
+  ms.openlocfilehash: 21a98b8daa3cb3200109edbf65f3344c2058cf11
+  ms.sourcegitcommit: 37e0994e2b8ae62b0352b016b698edcc7ca500fb
+  ms.translationtype: HT
+  ms.contentlocale: ja-JP
+  ms.lasthandoff: 02/10/2021
+  ms.locfileid: "11326042"
+landingContent:
+- title: 新着情報
+  linkLists:
+  - linkListType: whats-new
+    links:
+    - text: Surface Duo 用の Fluent UI フレームワーク
+      url: https://devblogs.microsoft.com/surface-duo/fluent-ui-android-dual-screen
+    - text: Android Enterprise 専用デバイスを Azure AD 共有デバイス モードに登録
+      url: https://techcommunity.microsoft.com/t5/intune-customer-success/intune-public-preview-enroll-android-enterprise-dedicated/ba-p/1820093
+    - text: Microsoft Mechanics による Surface Duo の舞台裏
+      url: https://techcommunity.microsoft.com/t5/surface-it-pro-blog/behind-the-scenes-on-surface-duo-with-microsoft-mechanics/ba-p/1665998
+- title: 概要
+  linkLists:
+  - linkListType: get-started
+    links:
+    - text: Surface Duo の新しい使い方を知る (YouTube)
+      url: https://www.youtube.com/playlist?list=PLNA-j_cL4mUTCt7P_IZrMZL5Manoz4QrX
+    - text: Surface Duo の商用再販業者を検索する
+      url: https://www.microsoft.com/surface/business/where-to-buy-microsoft-surface
+    - text: 管理対象 Google Play アプリの追加
+      url: https://docs.microsoft.com/mem/intune/apps/apps-add-android-for-work
+- title: Surface Duo
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: Surface Duo の管理の概要
+      url: surface-duo-manage.md
+    - text: Surface Duo のセキュリティの概要
+      url: surface-duo-secure.md
+    - text: Surface Duo の技術仕様
+      url: https://www.microsoft.com/surface/business/surface-duo
+- title: MDM 管理での Surface Duo の登録
+  linkLists:
+  - linkListType: deploy
+    links:
+    - text: Android Enterprise の仕事用プロファイル デバイスの登録
+      url: https://docs.microsoft.com/mem/intune/enrollment/android-work-profile-enroll
+    - text: 完全管理されるデバイスの登録
+      url: https://docs.microsoft.com/mem/intune/enrollment/android-fully-managed-enroll
+    - text: 専用デバイスの登録
+      url: https://docs.microsoft.com/mem/intune/enrollment/android-kiosk-enroll
+- title: Surface Duo の管理
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: Surface Duo 用の Android Enterprise 仕事用プロファイルの構成
+      url: surface-duo-config-work-profile.md
+    - text: 管理対象 Android Enterprise デバイスのアプリ構成ポリシーの追加
+      url: https://docs.microsoft.com/mem/intune/apps/app-configuration-policies-use-android
+    - text: Microsoft Intune によるデバイスの管理
+      url: https://docs.microsoft.com/mem/intune/remote-actions/device-management
+  - linkListType: video
+    links:
+    - text: エンタープライズでの Surface Duo の展開、管理、および Surface Duo による生産性の有効化
+      url: https://youtu.be/DOsBMNFmdfw
+- title: セキュリティ ガイダンスの検索
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: Android Enterprise セキュリティ構成フレームワーク
+      url: https://docs.microsoft.com/mem/intune/enrollment/android-configuration-framework
+    - text: Android Enterprise 仕事用プロファイルのセキュリティ構成
+      url: https://docs.microsoft.com/mem/intune/enrollment/android-work-profile-security-settings
+    - text: Android Enterprise コンプライアンス設定
+      url: https://docs.microsoft.com/mem/intune/protect/compliance-policy-create-android-for-work
+- title: Surface Duo 用アプリの開発
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: Surface Duo SDK の取得
+      url: https://docs.microsoft.com/dual-screen/android/get-duo-sdk
+    - text: Android アプリを Surface Duo に取り込む
+      url: https://docs.microsoft.com/dual-screen/android/bring-to-duo
+    - text: Surface Duo エミュレーターの使用
+      url: https://docs.microsoft.com/dual-screen/android/use-emulator
+- title: Surface Duo のトラブルシューティング
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: Android Enterprise デバイスの問題のトラブルシューティング
+      url: https://docs.microsoft.com/mem/intune/enrollment/troubleshoot-android-enrollment
+    - text: モバイル アプリケーション管理のトラブルシューティング
+      url: https://docs.microsoft.com/mem/intune/apps/troubleshoot-mam
+    - text: Android ベースのデバイスの Surface ライフサイクル
+      url: surface-lifecycle-android-devices.md
+- title: Surface コミュニティへの参加
+  linkLists:
+  - linkListType: learn
+    links:
+    - text: Microsoft Ignite - Android デバイス管理
+      url: https://youtu.be/szQMosnYETc
+    - text: IT 担当者向けの Surface のブログ
+      url: https://techcommunity.microsoft.com/t5/Surface-IT-Pro-Blog/bg-p/SurfaceITPro
+    - text: Surface デバイス テクニカル コミュニティ
+      url: https://techcommunity.microsoft.com/t5/Surface-Devices/ct-p/SurfaceDevices
+- title: 支援が必要な場合
+  linkLists:
+  - linkListType: learn
+    links:
+    - text: Surface Duo のサポートへのお問い合わせ
+      url: /surface-duo/contact-surface-duo-support
+    - text: ビジネス向け Surface の保証と延長サービス プラン
+      url: https://www.microsoft.com/surface/business/warranty-service-offerings-and-support
