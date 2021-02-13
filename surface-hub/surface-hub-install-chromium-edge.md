@@ -9,24 +9,24 @@ ms.author: greglin
 manager: laurawi
 audience: Admin
 ms.topic: article
-ms.date: 02/08/2021
+ms.date: 02/10/2021
 ms.localizationpriority: Medium
 appliesto:
 - Surface Hub
 - Surface Hub 2S
-ms.openlocfilehash: 74ae47e80447f89753110c52a49daf649478dd50
-ms.sourcegitcommit: 7029e80d9ca1a3de5c336cf662e566ed4b6b3e7a
+ms.openlocfilehash: 2bc11fb18137ce21cba27368e0c12bbb9e73a4c2
+ms.sourcegitcommit: 7e028c1e66fb393dc0e8917dac257ce95e5e9ce7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "11319171"
+ms.lasthandoff: 02/12/2021
+ms.locfileid: "11327311"
 ---
 # Surface Hub に新しい Microsoft Edge をインストールして構成する
 
 Windows 10 Team 2020 Update は、Surface Hub 2S および Surface Hub (v1) の推奨ブラウザーとして Chromium (バージョン 85 以上) に基づく新しい Microsoft Edge をサポートしています。 この記事では、プロビジョニング パッケージ、Microsoft Intune、またはサード パーティのモバイル デバイス管理 (MDM) プロバイダーの 3 つの方法のいずれかを使用してブラウザーをインストールする方法について説明します。
 
 > [!IMPORTANT]
-> 既定では、Surface Hub デバイスには Microsoft Edge レガシ (バージョン 44) がプレインストールされています。 [2020 Update](surface-hub-2020-update.md)をインストールした後、新しい Microsoft Edge ブラウザーに切り替えてお勧めします。Microsoft [Edge レガシのサポートは](https://support.microsoft.com/microsoft-edge/what-is-microsoft-edge-legacy-3e779e55-4c55-08e6-ecc8-2333768c0fb0)2021 年 3 月 9 日に終了します。
+> 既定では、Surface Hub デバイスには Microsoft Edge レガシ (バージョン 44) がプレインストールされています。 [2020 Update](surface-hub-2020-update.md)をインストールした後、新しい Microsoft Edge ブラウザーに切り替えておきます。Microsoft [Edge レガシのサポートは](https://support.microsoft.com/microsoft-edge/what-is-microsoft-edge-legacy-3e779e55-4c55-08e6-ecc8-2333768c0fb0)2021 年 3 月 9 日に終了します。
 
 ## プロビジョニング パッケージを使用して Microsoft Edge をインストールする
 
@@ -49,15 +49,15 @@ Windows 10 Team 2020 Update は、Surface Hub 2S および Surface Hub (v1) の�
  
 
 1. [Microsoft Edge インストーラーをダウンロードします](https://www.microsoft.com/edge/business/download)。
-    - Stable チャネルの現在 [のバージョンを使用する](https://docs.microsoft.com/deployedge/microsoft-edge-channels) **(バージョン 85)**
+    - Stable チャネルの現在の [バージョンを使用する](https://docs.microsoft.com/deployedge/microsoft-edge-channels) **(バージョン 85)**
     - **Windows 64 ビットの選択**
-2. [Microsoft Edge インストーラーを、Microsoft Intune](https://docs.microsoft.com/mem/intune/apps/lob-apps-windows)に業務用アプリとして追加します。
-    - Microsoft Edge Update を使用して Microsoft Edge への自動更新を処理する場合は****、アプリ情報ウィンドウの [アプリのバージョンを無視する] 設定を必ず**構成**してください。 この設定を [は**** い] に切り替えた場合、Microsoft Intune では、Surface Hub デバイスにインストールされているアプリのバージョンは適用されません。
+2. [Microsoft Edge インストーラーを](https://docs.microsoft.com/mem/intune/apps/lob-apps-windows)、Microsoft Intune に業務用アプリとして追加します。
+    - Microsoft Edge Update を使用して Microsoft Edge への自動更新を処理する場合は****、必ず [アプリ情報] ウィンドウの [アプリのバージョンを無視する] 設定**を構成**してください。 この設定を [は**** い] に切り替えた場合、Microsoft Intune では、Surface Hub デバイスにインストールされているアプリのバージョンは適用されません。
 
 ## サード パーティの MDM プロバイダーを使用して Microsoft Edge をインストールする
 
 1. [Microsoft Edge インストーラーを Microsoft からダウンロードします](https://www.microsoft.com/edge/business/download)。
-    - Stable チャネルの現在 [のバージョンを使用する](https://docs.microsoft.com/deployedge/microsoft-edge-channels) **(バージョン 85)**
+    - Stable チャネルの現在の [バージョンを使用する](https://docs.microsoft.com/deployedge/microsoft-edge-channels) **(バージョン 85)**
     - **Windows 64 ビットの選択**
 2. ローカル ファイル共有 (\\server\share\MicrosoftEdgeEnterpriseX64.msi) などのホストされた場所に Microsoft Edge インストーラーを\\server\share\MicrosoftEdgeEnterpriseX64.msi。 Surface Hub デバイスには、ホストされている場所にアクセスするためのアクセス許可が必要です。
 3. MDM [プロバイダーで EnterpriseDesktopAppManagement 構成](https://docs.microsoft.com/windows/client-management/mdm/enterprisedesktopappmanagement-csp) サービス プロバイダー (CSP) を使用して、Microsoft Edge をインストールします。
@@ -78,7 +78,7 @@ Microsoft Edge には、Surface Hub 向けに最適化されたエクスペリ�
 | [BackgroundModeEnabled](https://docs.microsoft.com/deployedge/microsoft-edge-policies#backgroundmodeenabled)           | 最後のブラウザー ウィンドウを閉じた後でも Microsoft Edge プロセスをバックグラウンドで実行し続け、セッション中に Web アプリに高速にアクセスできます。                                                                                                      | 1                 |
 | [BrowserAddProfileEnabled](https://docs.microsoft.com/deployedge/microsoft-edge-policies#browseraddprofileenabled)     | ユーザーが Microsoft Edge で新しいプロファイルを作成できない。 これにより、閲覧とサインインエクスペリエンスが簡素化されます。                                                                                                                                                      | 0                 |
 | [BrowserGuestModeEnabled](https://docs.microsoft.com/deployedge/microsoft-edge-policies#browserguestmodeenabled)       | 1 人のユーザーだけが Microsoft Edge にサインインできます。 これにより、閲覧とサインインエクスペリエンスが簡素化されます。                                                                                                                                                                | 0                 |
-| [BrowserSignin](https://docs.microsoft.com/deployedge/microsoft-edge-policies#browsersignin)                           | ユーザーは Microsoft Edge でシングル Sign-On (SSO) を利用できます。 ユーザーが Surface Hub にサインインすると、ユーザーの資格情報は、再認証を要求することなく、サポートされている Web サイトに流れる可能性があります。  | 1                 |
+| [BrowserSignin](https://docs.microsoft.com/deployedge/microsoft-edge-policies#browsersignin)                           | ユーザーは Microsoft Edge でシングル Sign-On (SSO) を利用できます。 ユーザーが Surface Hub にサインインすると、ユーザーの資格情報は、再認証を必要とせずに、サポートされている Web サイトに流れる可能性があります。  | 1                 |
 | [ExtensionInstallBlockList](https://docs.microsoft.com/deployedge/microsoft-edge-policies#extensioninstallblocklist)   | 管理者以外のユーザーが Microsoft Edge に新しい拡張機能をインストールし込むのを防ぐ。 既定でインストールする拡張機能の一覧を構成するには [、ExtensionInstallForcelist を使用します](https://docs.microsoft.com/deployedge/microsoft-edge-policies#extensioninstallforcelist)。 | *                 |
 | [HideFirstRunExperience](https://docs.microsoft.com/deployedge/microsoft-edge-policies#hidefirstrunexperience)         | ユーザーが Microsoft Edge を初めて実行するときに通常表示される最初の実行エクスペリエンスとスプラッシュ画面を非表示にします。 Surface Hub は共有デバイスです。これにより、ユーザー エクスペリエンスが簡素化されます。                                                                      | 1                 |
 | [InPrivateModeAvailability](https://docs.microsoft.com/deployedge/microsoft-edge-policies#inprivatemodeavailability)   | InPrivate モードを無効にします。 終了セッションでは閲覧データが既にクリアされています。これにより、閲覧とサインインのエクスペリエンスが簡素化されます。                                                                                                                                          | 1                 |
@@ -93,7 +93,7 @@ Microsoft Edge には、Surface Hub 向けに最適化されたエクスペリ�
 
 ### Microsoft Edge ポリシー設定を構成する
 
-[Microsoft Edge のブラウザー ポリシーを使用して、Microsoft](https://docs.microsoft.com/deployedge/microsoft-edge-policies) Edge のブラウザー設定を構成します。 これらのポリシーは、以下を使用して適用できます。
+[Microsoft Edge のブラウザー ポリシーを使用して](https://docs.microsoft.com/deployedge/microsoft-edge-policies)、Microsoft Edge のブラウザー設定を構成します。 これらのポリシーは、以下を使用して適用できます。
 
 - [Microsoft Intune](https://docs.microsoft.com/deployedge/configure-edge-with-intune)、
 - [ADMX インジェストを](https://docs.microsoft.com/deployedge/configure-edge-with-mdm)サポートする、お好みのモバイル デバイス管理 (MDM) プロバイダー
@@ -108,33 +108,10 @@ Surface Hub は、次の Microsoft Edge 更新ポリシーをサポートして�
 - **Allowsx -** Surface Hub では、Microsoft Edge Stable チャネルは常に Microsoft Edge レガシに取って代わる機能です。
 - **CreateDesktopShortcut** – Surface Hub はデスクトップ ショートカットを使用しない。
 
-> [!NOTE]
->  Microsoft Edge の機能を利用するには、インターネットに接続する必要があります。 ファイアウォールや [他のセキュリティ メカニズムを](https://docs.microsoft.com/deployedge/microsoft-edge-security-endpoints) 介した通信を保証するために、必要なドメイン URL が許可リストに追加されます。
- 
-### Surface Hub のスタート メニューに Microsoft Edge を表示する
-
-既定のスタート メニューレイアウトを使用している場合は、Microsoft Edge プロビジョニング パッケージを含むスタート メニューをインストールして、ピン留めされたアプリとして Microsoft Edge を追加できます。
-カスタマイズしたスタート メニューのレイアウトを適用する場合は、次の XML を使用して、Microsoft Edge のピン留めされたタイルを追加します。
-
-```xml
-
-<start:DesktopApplicationTile
-
-DesktopApplicationLinkPath="C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe"
-
-Size="2x2"
-
-Row="0"
-
-Column="0"/>
-```
-
-詳しくは、「Surface Hub のスタート [メニューの構成」をご覧ください](https://docs.microsoft.com/surface-hub/surface-hub-start-menu)。
- 
-> [!NOTE]
-> 新しい Microsoft Edge では、ピン留めされた Web サイトはサポートされていません。
+> [!TIP]
+>  Microsoft Edge の機能を利用するには、インターネットに接続する必要があります。 ファイアウォールや [他のセキュリティ メカニズムを](https://docs.microsoft.com/deployedge/microsoft-edge-security-endpoints) 介した通信を確実に行う場合は、必要なドメイン URL が許可リストに追加されます。
 
 ## 関連リンク
 
-- [Microsoft Edge のドキュメント](https://docs.microsoft.com/microsoft-edge/)。
+- [Microsoft Edge ドキュメント](https://docs.microsoft.com/microsoft-edge/)
 
