@@ -11,12 +11,12 @@ audience: Admin
 ms.topic: article
 ms.date: 12/10/2020
 ms.localizationpriority: Medium
-ms.openlocfilehash: 6b5dac9f418207293e3b9b386d59fd26762feb72
-ms.sourcegitcommit: 4b1cfcac090910a3ea634929942063eb51fc54f9
+ms.openlocfilehash: 3b3b5ed47e3a34369c6890aac051436db1f42347
+ms.sourcegitcommit: f8f32455b1230742c58ee74004cbaaad037069b6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "11206301"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "11328211"
 ---
 # Intune で Surface Hub 2S を管理する
 
@@ -48,13 +48,13 @@ IT 管理者は Surface Hub 2S で、モバイル デバイス管理 (MDM) プ�
 
 これらの設定は、アプリとエクスペリエンス、Azure の運用に関する分析情報、メンテナンス、セッション、ワイヤレス プロジェクションのカテゴリに分かれています。  
 
-## サポートされている構成サービス プロバイダー (CSP)
+## サポートされる構成サービス プロバイダー (CSP)
 
 Intune コンソールから直接利用できるポリシーに加えて、レジストリ キーまたはファイルにマップされる多数の構成サービス プロバイダー (CSP) があります。 
 
-Microsoft は通常、Windows 10 オペレーティング システムの新しいバージョンごとに新しい CSP を提供します。 [Windows 10 Team 2020 Update](surface-hub-2020-update.md)には、Surface Hub と Surface Hub 2S 用の 20 を超える新しいデバイス管理ポリシーと更新されたデバイス管理ポリシーが含まれています。 これらの MDM ポリシーにより、IT 管理者は、Microsoft Store からのアプリの更新、Miracast over インフラストラクチャなどのワイヤレス プロジェクション設定、サービス品質や 802.1x ワイヤード (有線) 認証などのネットワーク設定、新しいプライバシー/GDPR 関連の設定に対する制御を強化できます。
+Microsoft は通常、Windows 10 オペレーティング システムの新しいバージョンごとに新しい CSP を提供します。 [Windows 10 Team 2020 Update](surface-hub-2020-update.md)には、Surface Hub と Surface Hub 2S 用に 20 を超える新しいデバイス管理ポリシーと更新されたデバイス管理ポリシーが含まれています。 これらの MDM ポリシーにより、IT 管理者は、Microsoft Store からのアプリの更新プログラム、Miracast over インフラストラクチャなどのワイヤレス プロジェクション設定、サービス品質や 802.1x ワイヤード (有線) 認証などのネットワーク設定、新しいプライバシー/GDPR 関連の設定を強化できます。
 
-詳しくは、次のリソースをご覧ください。 
+詳しくは、次のリソースを参照してください。 
 
 - [構成サービス プロバイダーのリファレンス](https://docs.microsoft.com/windows/client-management/mdm/configuration-service-provider-reference) 
 - [SurfaceHub CSP](https://docs.microsoft.com/windows/client-management/mdm/surfacehub-csp)
@@ -73,22 +73,29 @@ Surface Hub 2S で最適なビデオおよびオーディオ品質を確保す�
 |**オーディオ DSCP**| オーディオ ポートのマーキング | ./Device/Vendor/MSFT/NetworkQoSPolicy/TeamsAudio/DSCPAction | Integer | 46 |
 |**ビデオ ポート**| ビデオ ポートの範囲 | ./Device/Vendor/MSFT/NetworkQoSPolicy/TeamsVideo/DestinationPortMatchCondition | String  | 3480 |
 |**ビデオ DSCP**| ビデオ ポートのマーキング | ./Device/Vendor/MSFT/NetworkQoSPolicy/TeamsVideo/DSCPAction | Integer | 34 |
+|**共有ポート**| 共有ポート範囲 | ./Device/Vendor/MSFT/NetworkQoSPolicy/TeamsSharing/DestinationPortMatchCondition | String  | 3481 |
+|**DSCP の共有**| ポートのマーキングを共有する | ./Device/Vendor/MSFT/NetworkQoSPolicy/TeamsSharing/DSCPAction | Integer | 18 |
 |**P2P オーディオ ポート**| オーディオ ポートの範囲 | ./Device/Vendor/MSFT/NetworkQoSPolicy/TeamsP2PAudio/DestinationPortMatchCondition | String  | 50000-50019 |
 |**P2P オーディオ DSCP**| オーディオ ポートのマーキング | ./Device/Vendor/MSFT/NetworkQoSPolicy/TeamsP2PAudio/DSCPAction | Integer | 46 |
 |**P2P ビデオ ポート**| ビデオ ポートの範囲 | ./Device/Vendor/MSFT/NetworkQoSPolicy/TeamsP2PVideo/DestinationPortMatchCondition | String  | 50020-50039 |
 |**P2P ビデオ DSCP**| ビデオ ポートのマーキング | ./Device/Vendor/MSFT/NetworkQoSPolicy/TeamsP2PVideo/DSCPAction | Integer | 34 |
+|**P2P 共有ポート**| 共有ポート範囲 | ./Device/Vendor/MSFT/NetworkQoSPolicy/TeamsP2PSharing/DestinationPortMatchCondition | String  | 50040-50059 |
+|**P2P 共有 DSCP**| ポートのマーキングを共有する | ./Device/Vendor/MSFT/NetworkQoSPolicy/TeamsP2PSharing/DSCPAction | Integer | 18 |
 
 
 ### Skype for Business の QoS 設定
 
-| 名前               | 説明         | OMA-URI                                                                  | 型    | 値                          |
-| ------------------ | ------------------- | ------------------------------------------------------------------------ | ------- | ------------------------------ |
-| オーディオ ポート        | オーディオ ポートの範囲    | ./Device/Vendor/MSFT/NetworkQoSPolicy/SfBAudio/SourcePortMatchCondition  | String  | 50000-50019                    |
-| オーディオ DSCP         | オーディオ ポートのマーキング | ./Device/Vendor/MSFT/NetworkQoSPolicy/SfBAudio/DSCPAction                | Integer | 46                             |
-| オーディオ メディア ソース | Skype アプリ名      | ./Device/Vendor/MSFT/NetworkQoSPolicy/SfBAudio/AppPathNameMatchCondition | String  | Microsoft.PPISkype.Windows.exe |
-| ビデオ ポート        | ビデオ ポートの範囲    | ./Device/Vendor/MSFT/NetworkQoSPolicy/SfBVideo/SourcePortMatchCondition  | String  | 50020-50039                    |
-| ビデオ DSCP         | ビデオ ポートのマーキング | ./Device/Vendor/MSFT/NetworkQoSPolicy/SfBVideo/DSCPAction                | Integer | 34                             |
-| ビデオ メディア ソース | Skype アプリ名      | ./Device/Vendor/MSFT/NetworkQoSPolicy/SfBVideo/AppPathNameMatchCondition | String  | Microsoft.PPISkype.Windows.exe |
+| 名前                 | 説明           | OMA-URI                                                                    | 型    | 値                          |
+| -------------------- | --------------------- | -------------------------------------------------------------------------- | ------- | ------------------------------ |
+| オーディオ ポート          | オーディオ ポートの範囲      | ./Device/Vendor/MSFT/NetworkQoSPolicy/SfBAudio/SourcePortMatchCondition    | String  | 50000-50019                    |
+| オーディオ DSCP           | オーディオ ポートのマーキング   | ./Device/Vendor/MSFT/NetworkQoSPolicy/SfBAudio/DSCPAction                  | Integer | 46                             |
+| オーディオ メディア ソース   | Skype アプリ名        | ./Device/Vendor/MSFT/NetworkQoSPolicy/SfBAudio/AppPathNameMatchCondition   | String  | Microsoft.PPISkype.Windows.exe |
+| ビデオ ポート          | ビデオ ポートの範囲      | ./Device/Vendor/MSFT/NetworkQoSPolicy/SfBVideo/SourcePortMatchCondition    | String  | 50020-50039                    |
+| ビデオ DSCP           | ビデオ ポートのマーキング   | ./Device/Vendor/MSFT/NetworkQoSPolicy/SfBVideo/DSCPAction                  | Integer | 34                             |
+| ビデオ メディア ソース   | Skype アプリ名        | ./Device/Vendor/MSFT/NetworkQoSPolicy/SfBVideo/AppPathNameMatchCondition   | String  | Microsoft.PPISkype.Windows.exe |
+| ポートの共有        | 共有ポート範囲    | ./Device/Vendor/MSFT/NetworkQoSPolicy/SfBSharing/SourcePortMatchCondition  | String  | 50040-50059                    |
+| DSCP の共有         | ポートのマーキングを共有する | ./Device/Vendor/MSFT/NetworkQoSPolicy/SfBSharing/DSCPAction                | Integer | 18                             |
+| メディア ソースの共有 | Skype アプリ名        | ./Device/Vendor/MSFT/NetworkQoSPolicy/SfBSharing/AppPathNameMatchCondition | String  | Microsoft.PPISkype.Windows.exe |
 
 > [!NOTE]
 > 両方の表に、既定のポート範囲が表示されます。 管理者は、Skype for Business と Teams のコントロール パネルでポート範囲を変更できます。
