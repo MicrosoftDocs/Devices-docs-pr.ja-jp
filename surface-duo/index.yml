@@ -11,12 +11,12 @@ metadata:
   ms.author: greglin
   audience: itpro
   ms.localizationpriority: medium
-  ms.openlocfilehash: 21a98b8daa3cb3200109edbf65f3344c2058cf11
-  ms.sourcegitcommit: 37e0994e2b8ae62b0352b016b698edcc7ca500fb
+  ms.openlocfilehash: b3e289a93c564e59aa459d5dd452bb104dacef60
+  ms.sourcegitcommit: f8f32455b1230742c58ee74004cbaaad037069b6
   ms.translationtype: HT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 02/10/2021
-  ms.locfileid: "11326042"
+  ms.lasthandoff: 02/14/2021
+  ms.locfileid: "11328171"
 landingContent:
 - title: 新着情報
   linkLists:
@@ -118,5 +118,5 @@ landingContent:
     links:
     - text: Surface Duo のサポートへのお問い合わせ
       url: /surface-duo/contact-surface-duo-support
-    - text: ビジネス向け Surface の保証と延長サービス プラン
+    - text: Surface for Business の保証および保護プラン
       url: https://www.microsoft.com/surface/business/warranty-service-offerings-and-support
