@@ -12,16 +12,16 @@ ms.author: dansimp
 ms.topic: article
 ms.date: 02/11/2020
 ms.localizationpriority: medium
-ms.openlocfilehash: 34a05eeabd284e0ad43317577b8e7ff9348ffe21
-ms.sourcegitcommit: 7e028c1e66fb393dc0e8917dac257ce95e5e9ce7
+ms.openlocfilehash: 0cc444eab51e9c3cc0bf2f9c2f0c36ac491906b1
+ms.sourcegitcommit: 7b09b4bc757c5385c4f5560713cb03448afde9ea
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/12/2021
-ms.locfileid: "11327341"
+ms.lasthandoff: 02/16/2021
+ms.locfileid: "11339368"
 ---
 # Surface Hub の回復ツールの使用
 
-[Microsoft Surface Hub 回復](https://www.microsoft.com/download/details.aspx?id=52210)ツールは、サポートを呼び出したり SSD を交換したりすることなく、Windows 10 デスクトップ デバイスを使って Surface Hub Solid State Drive (SSD) のイメージを再イメージ化するのに役立ちます。 このツールを使用すると、不明な管理者パスワードを持つ SSD、ブート エラー、クラウド回復を完了できなかった SSD、またはオペレーティング システムの古いバージョンを持つデバイスのイメージを再作成できます。 物理的に破損した SSD は修正されません。
+[Microsoft Surface Hub 回復](https://www.microsoft.com/download/details.aspx?id=52210)ツールは、サポートを呼び出したり SSD を交換したりすることなく、Windows 10 デスクトップ デバイスを使って Surface Hub Solid State Drive (SSD) を再イメージ化するのに役立ちます。 このツールを使用すると、不明な管理者パスワードを持つ SSD、ブート エラー、クラウド回復を完了できなかった SSD、またはオペレーティング システムの古いバージョンを持つデバイスのイメージを再作成できます。 物理的に破損した SSD は修正されません。
 
 回復ツールを使って Surface Hub SSD を再イメージ化するには、Surface Hub から SSD を取り外し、ドライブを USB から SATA ケーブルに接続し、回復ツールがインストールされているデスクトップ PC にケーブルを接続する必要があります。 Surface Hub から既存のドライブを削除する方法について詳しくは、Surface Hub SSD の交換に関する [ページをご覧ください](surface-hub-ssd-replacement.md)。
 
@@ -48,7 +48,7 @@ ms.locfileid: "11327341"
 - USB 3.0 以上の USB- SATA ケーブル
 - イメージング ツールは、次のケーブルの作成とモデルでテストされました。
     - Startech USB312SAT3CB
-    - サギス RCUC16001
+    - サギット RCUC16001
     - Ugreen 20231
 
 ## Surface Hub 回復ツールのダウンロード
@@ -56,7 +56,7 @@ ms.locfileid: "11327341"
 Surface Hub 回復ツールは[、Surface Hub Tools for IT](https://www.microsoft.com/download/details.aspx?id=52210)からファイル名の下でダウンロード**SurfaceHub_Recovery_v2.7.139.0.msi。 **
 
 > [!IMPORTANT]
-> 2021 年 2 月 11 日にリリースされたこのバージョンは、機能しなくなった以前のビルドに置き換わるものになります。 このツールを以前にダウンロードした場合は、現在のバージョンを破棄して使用してください。
+> 2021 年 2 月 11 日にリリースされたこのバージョンは、機能しなくなった以前のビルドに置き換わるものになります。 このツールを以前にダウンロードした場合は、アンインストールして現在のバージョンをインストールしてください。
 
 ダウンロードを開始するには、[ダウンロード] を **クリック**し、一覧から **SurfaceHub_Recovery_v2.7.139.0.msi**  を選択して、[次へ] をクリック **します**。 ポップアップから、次のいずれかを選択します。
 
@@ -82,9 +82,9 @@ Surface Hub 回復ツールは[、Surface Hub Tools for IT](https://www.microsof
 
 4. [イメージの選択] ウィンドウで **、RS2**または後続の**20H2**をクリックし、[続行] を選択して、[イメージのダウンロード]**を選択します。** ****
 
-     ![回復ツール イメージの選択 ](images/shrt-select-image.png) ![ 回復ツールのダウンロード イメージ](images/shrt-download-image.png)
+     ![回復ツールイメージの選択 ](images/shrt-select-image.png) ![ 回復ツールのダウンロード イメージ](images/shrt-download-image.png)
 
-5. 回復イメージをダウンロードする時間は、インターネット接続の速度に依存します。 平均的な企業接続では、8 GB の画像ファイルをダウンロードするために最大 1 時間かかる場合があります。
+5. 回復イメージをダウンロードする時間は、インターネット接続の速度に依存します。 企業の平均接続では、8 GB の画像ファイルをダウンロードするために最大 1 時間かかる場合があります。
 
     ![イメージのダウンロード](images/shrt-download.png)
 
@@ -106,10 +106,10 @@ Surface Hub 回復ツールは[、Surface Hub Tools for IT](https://www.microsof
 
 問題 | 備考
 --- | ---
-SSD のイメージ作成に失敗する | 出荷時の SSD とテスト済みケーブルのいずれかを使用してください。
-再作プロセスが停止/固定された状態で表示される | SSD に影響を与え、Surface Hub 回復ツールを閉じて再起動しても安全です。
+ツールが SSD のイメージ作成に失敗する | 出荷時の SSD とテスト済みケーブルのいずれかを使用してください。
+再作プロセスが停止/フリーズしたと表示される | SSD に影響を与え、Surface Hub 回復ツールを閉じて再起動しても安全です。
 ドライブがツールによって認識されない | Surface Hub SSD が"LITEON L CH-128V2S USB デバイスLite-Onドライブとして列挙されている必要があります。  ドライブが別の名前付きデバイスとして認識される場合、現在のケーブルは互換性がありません。 別のケーブルまたは上記のテスト済みケーブルのいずれかを試してください。
-エラー: -2147024809 | ディスク マネージャーを開き、Surface Hub ドライブ上のパーティションを削除します。  ドライブを切断し、ホスト コンピューターに再接続します。 イメージング ツールを再度再起動します。
+エラー: -2147024809 | ディスク マネージャーを開き、Surface Hub ドライブ上のパーティションを削除します。  ドライブを切断し、ホスト コンピューターに再接続します。 イメージング ツールを再起動します。
 
 ドライブの再インストールに失敗した場合は、Surface Hub サポートにお問 [い合わせください](https://support.microsoft.com/help/4037644/surface-contact-surface-warranty-and-software-support)。
 
