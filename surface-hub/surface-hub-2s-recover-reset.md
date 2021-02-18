@@ -11,12 +11,12 @@ audience: Admin
 ms.topic: article
 ms.date: 12/05/2019
 ms.localizationpriority: Medium
-ms.openlocfilehash: 88f5d912f7505aecaa5bd7ba659acab2d6c4fa1a
-ms.sourcegitcommit: 25b8d880c6438f94b008f47b4fecc3aa4c473e85
+ms.openlocfilehash: 64ceee291d3d3e067f581707d9431fa92398c785
+ms.sourcegitcommit: ecb4909c091e69b7bdb1faacfc8c34b480dc884b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/28/2021
-ms.locfileid: "11304810"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "11342977"
 ---
 # Surface Hub 2S のリセットと回復
 
@@ -38,7 +38,7 @@ Surface Hub 2S で問題が発生した場合は、デバイスを出荷時の�
   
 3. デバイスを再構成するには、初回セットアップ プログラムを実行します。
 
-4. Microsoft Intune または別のモバイル デバイス管理ソリューションを使用してデバイスを管理する場合は、前のレコードを廃止して削除してから、新しいデバイスを再登録します。 詳細については、「ワイプ、リタイア、または手動によるデバイスの登録解除を使用してデバイスを削除する」を [参照してください](https://docs.microsoft.com/intune/devices-wipe)。
+4. Microsoft Intune または別のモバイル デバイス管理ソリューションを使用してデバイスを管理する場合は、前のレコードを廃止して削除してから、新しいデバイスを再登録します。 詳細については、「ワイプ、リタイア、または手動でのデバイスの登録解除を使用してデバイスを削除する」を [参照してください](https://docs.microsoft.com/intune/devices-wipe)。
 
    > [!div class="mx-imgBorder"]
    > ![*Surface Hub 2S のリセットと回復*](images/sh2-reset.png)
@@ -57,11 +57,25 @@ Surface Hub 2S を使用すると、回復イメージを使用してデバイ�
 
 1. 別の PC から [、Surface Recovery](https://support.microsoft.com/surfacerecoveryimage?devicetype=surfacehub2s) Web サイトから .zip ファイルの回復イメージをダウンロードし、次の手順に戻ってください。 
 
-1. ダウンロードしたファイルを USB ドライブのルートに解凍します。  
+1. タスク バーの検索ボックスに回復ドライブ**** を入力し、結果から****[回復ドライブまたは回復ドライブの**作成]** を選択します。 管理者パスワードの入力または選択の確認が必要な場合があります。
+
+1. [ユーザー アカウント **制御] ボックスで、[** はい] を **選択します**。
+
+1. [システム ファイルを回復ドライブにバックアップする] **チェック ボックス** をオフにし、[次へ] を選択 **します**。
+
+1. USB ドライブを選び、[次へ] を> **します**。  一部のユーティリティは回復ドライブにコピーする必要があります。そのため、これには数分かかる場合があります。
+
+1. 回復ドライブの準備ができたら、[完了] を選択 **します**。
+
+1. 以前にダウンロードした回復イメージの .zip ファイルをダブルクリックして開きます。
+
+1. 回復イメージ フォルダーからすべてのファイルを選択し、USB ドライブのルートにコピーしてから、[Choose **to replace the files in the destination**] (復元イメージ フォルダー内のファイルを置き換える) を選択します。
+
+1. ファイルのコピーが完了したら、タスク バーの****[ハードウェアの安全な取り外しとメディアの取り出し] アイコンを選択し、USB ドライブを取り外します。
 
 1. USB ドライブを Surface Hub 2S 上の USB-C ポートまたは USB-A ポートに接続します。
 
-1. デバイスをオフにします。
+1. ハブをオフにしてから、次の手順を実行して USB ドライブから起動します。
 
    1. 音量ボタンを押しながら、電源ボタンを押します。
    1. Windows ロゴが表示されるまで、両方のボタンを押し続けます。
