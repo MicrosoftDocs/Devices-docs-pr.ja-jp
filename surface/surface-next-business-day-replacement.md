@@ -3,7 +3,7 @@ title: 翌営業日交換の情報と対象地域
 ms.author: v-kaij
 author: greg-lindsay
 manager: laurawi
-ms.date: 02/11/2021
+ms.date: 02/19/2021
 audience: Admin
 ms.topic: article
 ms.prod: surface
