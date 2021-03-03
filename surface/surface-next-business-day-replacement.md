@@ -8,45 +8,46 @@ audience: Admin
 ms.topic: article
 ms.prod: surface
 localization_priority: medium
+ROBOTS: NO INDEX, NO FOLLOW
 ms.custom: references_regions
 appliesto:
 - Surface
 - Surface Hub
 ms.reviewer: irenewhite
 description: 翌営業日交換の情報と対象地域について説明します。
-ms.openlocfilehash: 494016dc8d6dd4b9d59420cbbda3d889fa7e9d19
-ms.sourcegitcommit: f8f32455b1230742c58ee74004cbaaad037069b6
-ms.translationtype: HT
+ms.openlocfilehash: e3634ff69729ac7e4452dbaecea191b7253e5686
+ms.sourcegitcommit: 7e1b351024e33926901ddbdc562ba12aea0b4196
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "11328227"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "11385155"
 ---
-# 翌営業日配送サービスの情報及び提供地域 
+# <a name="next-business-day-replacement-information--coverage-areas"></a>翌営業日交換の情報と対象地域
 
-翌営業日配送サービスは交換のSurfaceデバイスが翌営業日までにお届けする有料プランです。 
+交換用の Surface デバイスが翌営業日までに施設に配送される有料サービスです。 
 
-本サービスはComplete for Business Plusに含まれております。現在の提供可能地域は米国及び、カナダ、ヨーロッパ（オーストリア、ベルギー、チェコ共和国、フランス、ドイツ、オランダ、ポーランド、英国のみ）オーストラリア、シンガポール、日本です。翌営業日配送サービスは、弊社のカスタマーサービスエージェントが交換の必要性を判断し、在庫の確認後、定められた時間までに作成された交換オーダーに適用されます。
+次の営業日の交換は、米国、カナダ、ヨーロッパ (オーストリア、ベルギー、チェコ共和国、フランス、ドイツ、オランダ、ポーランド、英国)、オーストラリア、シンガポール、日本のビジネスプラス保護プランで利用できます。 これらのサービスは、担当者が交換用デバイスが必要であると判断し、在庫があり、マイクロソフトが事前に決定した標準の締め切り時間までに交換品を注文した後に適用されます。 
 
-## ガイドライン
+## <a name="guidelines"></a>ガイドライン
 
-- 夜間配送は弊社の認定配送業者の状況により対応できない場合があります。
-- 交換デバイスを翌営業日までにお届けする為には、交換オーダーの作成を (表１) に表示されている時間までに完了する必要があります。交換オーダー作成時点で在庫が確保できない場合や、交通事情、天候など複数の要因により翌日配送ができない場合があります。
-- 約款と条件は[こちら](https://support.microsoft.com/topic/warranties-extended-service-plans-and-terms-conditions-for-your-device-eedf7a23-84a7-1a47-480b-0e10503eedf5)をご参照ください。
+- 翌日配達は、弊社の認定翌日配達業者の空き状況によります。
+- 翌営業日までに交換用デバイスを必ず配送するためには、デバイスの交換要求を表 1 に記載されている締め切り時間までに完了する必要があります。 
+- 完全な契約条件については、「[保証、延長サービス プラン、およびデバイスに関する条件](https://support.microsoft.com/topic/warranties-extended-service-plans-and-terms-conditions-for-your-device-eedf7a23-84a7-1a47-480b-0e10503eedf5)」を参照してください。
 
-### 交換オーダーの締め切り時間（表１）
+### <a name="table-1-replacement-request-cutoff-times-by-locale"></a>表 1. 置換要求の締め切り時間 (ロケール別)
 
 | 国                                                                                                    | 締め切り時間 |
 | -------------------------------------------------------------------------------------------------------------- | --------------- |
-| **米国、カナダ**                                                                                     | 14:00 CST    (UTC-6)      |
-| **ヨーロッパ** （オーストリア、ベルギー、チェコ共和国、フランス、ドイツ、オランダ、ポーランド、英国のみ） | 12:00 CET   (UTC+1)     |
+| **米国およびカナダ**                                                                                     | 14:00 CST    (UTC-6)      |
+| **ヨーロッパ** (オーストリア、ベルギー、チェコ共和国、フランス、ドイツ、オランダ、ポーランド、英国に限る) | 12:00 CET   (UTC+1)     |
 | **オーストラリア**                                                                                                  | 13:00 AET   (UTC+11)    |
 | **シンガポール**                                                                                                  | 13:00 SGT    (UTC+8)   |
 | **日本**                                                                                                      | 13:00 JST    (UTC+9)   |
 
 
-##  日本の提供可能地域 
+##  <a name="available-areas-in-japan"></a>日本で利用可能な領域 
 
-日本には以下の地域にて提供可能になります。詳細については、[Surface Complete for Business Plus (日本)](https://cdn.techcommunity.microsoft.com/assets/Surface/jp-next-day-replace-surface.pdf) を参照してください。
+これは、日本の次の地域で利用可能になります。 詳細については [、「Surface Complete for Business Plus (日本)」を参照してください。](https://cdn.techcommunity.microsoft.com/assets/Surface/jp-next-day-replace-surface.pdf)
 
 - 青森県
 - 岩手県
@@ -57,25 +58,25 @@ ms.locfileid: "11328227"
 - 茨城県
 - 埼玉県
 - 千葉県
-- 東京都 
+- 東京都
 - 神奈川県
-- 新潟県
+- 新潟
 - 富山県
 - 石川県
 - 福井県
 - 山梨県
-- 長野県
+- 名古屋市
 - 岐阜県
 - 静岡県
 - 愛知県
 - 三重県
 - 滋賀県
 - 京都府
-- 大阪府 
+- 大阪府
 - 兵庫県
 - 奈良県
-- 和歌山
-- 鳥取県
+- 和歌山県
+- 鳥取
 - 広島県
-- 山口県
+- やまぐち
 

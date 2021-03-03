@@ -1,6 +1,6 @@
 ---
 title: Surface Hub 2S でグローバル管理者以外のアカウントを構成する
-description: この記事では、グローバル管理者以外のアカウントを構成して Surface Hub 2S を管理する方法について説明します。
+description: この記事では、Surface Hub 2S を管理するためにグローバル管理者以外のアカウントを構成する方法について説明します。
 keywords: Surface Hub 2S
 ms.prod: surface-hub
 ms.sitesec: library
@@ -13,58 +13,58 @@ ms.date: 12/07/2020
 ms.localizationpriority: Medium
 appliesto:
 - Surface Hub 2S 2020 Update
-ms.openlocfilehash: 647a7bf53e5ca8dc52ddec21ec8393cc574ee95a
-ms.sourcegitcommit: 16cc2e8d9dfc5d6e061e0b5b6ddfcf35547643f2
+ms.openlocfilehash: e16e4f8bd4b2b253233fa9790987287cf17966c7
+ms.sourcegitcommit: 7e1b351024e33926901ddbdc562ba12aea0b4196
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "11196816"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "11385175"
 ---
-# Surface Hub 2S でグローバル管理者以外のアカウントを構成する
+# <a name="configure-non-global-admin-accounts-on-surface-hub-2s"></a>Surface Hub 2S でグローバル管理者以外のアカウントを構成する
 
-Surface Hub 2S を Azure AD ドメインに参加させるときは、Surface Hub 2S の設定アプリの管理に対するアクセス許可を制限する、グローバル管理者以外のアカウントを構成することができます。 これにより、Surface Hub 2S の管理権限のスコープのみが可能になり、不要な管理者が Azure AD ドメイン全体にアクセスできなくなります。 作業を始める前に、Surface Hub の2S が Azure AD に参加していることを確認してください。 それ以外の場合は、Surface Hub 2 をリセットし、初めての (OOBE) セットアッププログラムを実行して、Azure AD に参加するためのオプションを選択する必要があります。
+Surface Hub 2S を Azure AD ドメインに参加する場合、Surface Hub 2S の設定アプリの管理に対するアクセス許可を制限するグローバル管理者以外のアカウントを構成できます。 これにより、Surface Hub 2S の管理者アクセス許可のみを対象範囲に設定し、Azure Hub ドメイン全体で望ましくない可能性のある管理者アクセスをADできます。 開始する前に、Surface Hub 2S が Azure サーバーに参加AD。 設定されていない場合は、Surface Hub 2S をリセットし、初めての既定の (OOBE) セットアップ プログラムを完了し、Azure AD に参加するオプションを選択する必要があります。
 
-## まとめ 
+## <a name="summary"></a>要約 
 
 グローバル管理者以外のアカウントを作成するプロセスには、次の手順が含まれます。 
 
-1. Microsoft Intune で、Surface Hub 2S を管理するために指定された管理者を含むセキュリティグループを作成します。
-2. PowerShell を使用して Azure AD グループ SID を取得します。
-3. Azure AD グループ SID を含む XML ファイルを作成します。
-4. 非グローバル管理者セキュリティグループによって管理される Surface Hub 2S デバイスを含むセキュリティグループを作成します。
-5. Surface Hub 2S デバイスを含むセキュリティグループを対象としたカスタム構成プロファイルを作成します。 
+1. Microsoft Intune で、Surface Hub 2S の管理に指定された管理者を含むセキュリティ グループを作成します。
+2. PowerShell を使用AD Azure グループ SID を取得します。
+3. Azure グループ SID を含む XML AD作成します。
+4. グローバル管理者以外のセキュリティ グループによって管理される Surface Hub 2S デバイスを含むセキュリティ グループを作成します。
+5. Surface Hub 2S デバイスを含むセキュリティ グループを対象とするカスタム構成プロファイルを作成します。 
 
 
-## Azure AD セキュリティグループを作成する
+## <a name="create-azure-ad-security-groups"></a>Azure ADセキュリティ グループを作成する
 
-最初に、管理者アカウントを含むセキュリティグループを作成します。 次に、Surface Hub デバイス用の別のセキュリティグループを作成します。  
+まず、管理者アカウントを含むセキュリティ グループを作成します。 次に、Surface Hub デバイス用に別のセキュリティ グループを作成します。  
 
-### 管理者アカウントのセキュリティグループを作成する
+### <a name="create-security-group-for-admin-accounts"></a>管理者アカウントのセキュリティ グループを作成する
 
-1. [Microsoft Endpoint Manager 管理センター](https://go.microsoft.com/fwlink/?linkid=2109431)を使用して Intune にサインインして、 **[グループの**  >  **新しいグループ**] を選択し > [グループの種類] で [セキュリティ] を選択し**ます。** 
-2. グループ名を入力します。たとえば、 **Surface Hub のローカル管理者** で、[作成] を選び **ます。** 
+1. Microsoft Endpoint Manager 管理センターを介して**** Intune にサインインし、[[グループ](https://go.microsoft.com/fwlink/?linkid=2109431)の新しいグループ] を選択し、[グループ>の種類] で  >  ****、[セキュリティ] を**選択します。** 
+2. グループ名 (Surface Hub ローカル管理者など) を入力 **し** 、[作成] を選択 **します。** 
 
-     ![ハブ管理者のセキュリティグループを作成する](images/sh-create-sec-group.png)
+     ![ハブ管理者のセキュリティ グループを作成する](images/sh-create-sec-group.png)
 
-3. グループを開き、[ **メンバー**] を選択し、[ **メンバーの追加** ] を選択して、Surface Hub 2s の非グローバル管理者として指定する管理者アカウントを入力します。 Intune でグループを作成する方法の詳細については、「  [ユーザーとデバイスを整理するためにグループを追加する](https://docs.microsoft.com/mem/intune/fundamentals/groups-add)」を参照してください。
+3. グループを開き、[**メンバー**] を選択**** し、[メンバーの追加] を選択して、Surface Hub 2S でグローバル管理者以外として指定する管理者アカウントを入力します。 Intune でグループを作成する方法の詳細については、「グループを追加してユーザーとデバイスを整理  [する」を参照してください](https://docs.microsoft.com/mem/intune/fundamentals/groups-add)。
 
-### Surface Hub 2S デバイスのセキュリティグループを作成する
+### <a name="create-security-group-for-surface-hub-2s-devices"></a>Surface Hub 2S デバイスのセキュリティ グループを作成する
 
-1. ハブデバイス用の別のセキュリティグループを作成するには、前の手順を繰り返します。たとえば、 **Surface Hub デバイス**などです。 
+1. 前の手順を繰り返して、ハブ デバイス用に別のセキュリティ グループを作成します。たとえば **、Surface Hub デバイス**。 
 
-     ![ハブデバイスのセキュリティグループを作成する](images/sh-create-sec-group-devices.png) 
+     ![ハブ デバイスのセキュリティ グループを作成する](images/sh-create-sec-group-devices.png) 
 
-## PowerShell を使用して Azure AD グループ SID を取得する
+## <a name="obtain-azure-ad-group-sid-using-powershell"></a>PowerShell を使用AD Azure グループ SID を取得する
 
-1. 昇格されたアカウントの特権 (**管理者として実行**) で powershell を起動し、システムが powershell スクリプトを実行するように構成されていることを確認します。 詳細については、「 [実行ポリシーについて](https://docs.microsoft.com/powershell/module/microsoft.powershell.core/about/about_execution_policies?)」を参照してください。 
-2. [Azure PowerShell モジュールをインストール](https://docs.microsoft.com/powershell/azure/install-az-ps)します。
-3. Azure AD テナントにサインインします。
+1. 管理者特権 (管理者として**実行)** を使用して PowerShell を起動し、PowerShell スクリプトを実行するようにシステムが構成されていることを確認します。 詳細については、「実行ポリシー [について」を参照してください](https://docs.microsoft.com/powershell/module/microsoft.powershell.core/about/about_execution_policies?)。 
+2. [Azure PowerShell モジュールをインストールします](https://docs.microsoft.com/powershell/azure/install-az-ps)。
+3. Azure のテナントにサインインADします。
 
     ```powershell
     Connect-AzureAD
     ```
 
-4. テナントにサインインしたら、次の方法レットを実行します。 "Azure AD グループのオブジェクト ID を入力してください" というメッセージが表示されます。
+4. テナントにサインインしている場合は、次のコマンドレットを実行します。 「Azure グループのオブジェクト ID を入力してください」というメッセージが表示ADされます。
 
     ```powershell
     function Convert-ObjectIdToSid
@@ -74,11 +74,11 @@ Surface Hub 2S を Azure AD ドメインに参加させるときは、Surface Hu
     }
     ```
 
-5. [Intune] で、前に作成したグループを選択し、次の図に示すように、オブジェクト id をコピーします。 
+5. Intune で、前に作成したグループを選択し、次の図に示すようにオブジェクト ID をコピーします。 
 
-     ![セキュリティグループのオブジェクト id をコピーする](images/sh-objectid.png)
+     ![セキュリティ グループのオブジェクト ID のコピー](images/sh-objectid.png)
 
-6. セキュリティグループの SID を取得するには、次の方法レットを実行します。
+6. セキュリティ グループの SID を取得するには、次のコマンドレットを実行します。
 
     ```powershell
     $AADGroup = Read-Host "Please type the Object ID of your Azure AD Group"
@@ -86,11 +86,11 @@ Surface Hub 2S を Azure AD ドメインに参加させるときは、Surface Hu
     Write-Host "Your Azure Ad Group SID is" -ForegroundColor Yellow $Result
     ```
     
-7. オブジェクト id を PowerShell の入力レットに貼り付け、 **enter**キーを押してから、 **Azure AD グループの SID** をテキストエディターにコピーします。 
+7. オブジェクト ID を PowerShell コマンドレットに貼り付け **、Enter**キーを押して **、Azure** AD SID をテキスト エディターにコピーします。 
 
-## Azure AD グループ SID を含む XML ファイルを作成する
+## <a name="create-xml-file-containing-azure-ad-group-sid"></a>Azure グループ SID を含む XML ファイルAD作成する
 
-1. テキストエディターに次の内容をコピーします。 
+1. 以下をテキスト エディターにコピーします。 
 
     ```xml
       <groupmembership>   
@@ -101,30 +101,30 @@ Surface Hub 2S を Azure AD ドメインに参加させるときは、Surface Hu
       </groupmembership>
       ```
 
-2. プレースホルダー SID (S ~ 1-12-1 以降) を **AZURE AD グループ SID** に置き換えて、そのファイルを XML として保存します。たとえば、 **aad-local-admin.xml**とします。 
+2. プレースホルダー SID (S-1-12-1 以降) を Azure AD **グループ SID** に置き換え、ファイルを XML として保存します。たとえば ** 、aad-local-admin.xml**。 
 
-## カスタム構成プロファイルを作成する
+## <a name="create-custom-configuration-profile"></a>カスタム構成プロファイルの作成
 
-1. エンドポイントマネージャーで、[**デバイス**  >  **構成プロファイル**の  >  **作成プロファイル**] を選択します。 
-2. [プラットフォーム] で **、[Windows 10**以降] を選びます。 [プロファイル] で、[ **カスタム**] を選択し、[作成] を選択し **ます。**
-3. 名前と説明を追加して、[次へ] を選び **ます。**
-4. [**構成設定**  >  の**oma-uri 設定**] で [**追加**] を選びます。
-5. [行の追加] ウィンドウで、名前と [     **oma-uri] URI**に次の文字列を追加します。 
+1. エンドポイント マネージャーで、[**** デバイス構成プロファイル  >  **プロファイルの作成**  >  **] を選択します**。 
+2. [プラットフォーム] で **、[Windows 10 以降] を選択します。** [プロファイル] で、[カスタム] **を**選択し、[作成] を **選択します。**
+3. 名前と説明を追加し、[次へ] を **選択します。**
+4. [**構成設定**  >  **OMA-URI の設定] で、[** 追加] を**選択します**。
+5. [行の追加] ウィンドウで、名前を追加し     **、[OMA-URI]** の下に次の文字列を追加します。 
 
     ```OMA-URI
     ./Device/Vendor/MSFT/Policy/Config/RestrictedGroups/ConfigureGroupMembership
     ```
-6. [データ型] で [ **文字列 XML** ] を選択し、前の手順で作成した xml ファイルを参照して開きます。 
+6. [データ型] で[ **文字列 XML]** を選択し、前の手順で作成した XML ファイルを参照して開きます。 
 
-     ![ローカル管理 xml 構成ファイルをアップロードする](images/sh-local-admin-config.png)
+     ![ローカル管理者 xml 構成ファイルのアップロード](images/sh-local-admin-config.png)
 
 7. **[保存]** をクリックします。
-8. [ **グループの選択] を** クリックして、 [前に作成したセキュリティグループ](#create-security-group-for-surface-hub-2s-devices) (**Surface Hub デバイス**) を追加して選択します。 **[次へ]** をクリックします。
-9. [適用規則] で、必要に応じてルールを追加します。 それ以外の場合は、[ **次へ** ] を選択し、[ **作成**] を選択します。
+8. [グループ**の選択] をクリックして**含め、前に作成したセキュリティ[グループ](#create-security-group-for-surface-hub-2s-devices)**(Surface Hub デバイス) を選択します**。 **[次へ]** をクリックします。
+9. [適用ルール] で、必要に応じてルールを追加します。 それ以外の場合は、[ **次へ] を選択** し、[作成] を **選択します**。
 
-OMA-URI 文字列を使ったカスタム構成プロファイルの詳細については、「 [Intune で Windows 10 デバイスのカスタム設定を使用](https://docs.microsoft.com/mem/intune/configuration/custom-settings-windows-10)する」を参照してください。
+OMA-URI 文字列を使用したカスタム構成プロファイルの詳細については、「Intune で [Windows 10](https://docs.microsoft.com/mem/intune/configuration/custom-settings-windows-10)デバイスのカスタム設定を使用する」を参照してください。
 
 
-## Surface Hub 2S を管理するグローバル管理者以外
+## <a name="non-global-admins-managing-surface-hub-2s"></a>Surface Hub 2S を管理する非グローバル管理者
 
-**Surface hub のローカル管理者**セキュリティグループのメンバーは、Surface hub 2S の設定アプリにサインインして、設定を管理できるようになりました。
+**Surface Hub ローカル管理者**セキュリティ グループのメンバーは、Surface Hub 2S の設定アプリにサインインし、設定を管理できます。

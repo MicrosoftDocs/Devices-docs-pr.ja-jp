@@ -9,67 +9,67 @@ ms.author: greglin
 manager: laurawi
 audience: Admin
 ms.topic: article
-ms.date: 02/01/2021
+ms.date: 02/18/2021
 ms.localizationpriority: Medium
-ms.openlocfilehash: 76ac960be2ab30a30b4e29618f350a13a284f52a
-ms.sourcegitcommit: 5cfac94c220c8a8d4620c6a7fa75ae2fae089c7f
+ms.openlocfilehash: 3afd4115ff4bd22a84f9a5fb86ceb6805c347f8a
+ms.sourcegitcommit: 7e1b351024e33926901ddbdc562ba12aea0b4196
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "11312023"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "11385225"
 ---
-# Surface Hub 2S デバイス アカウントの作成
+# <a name="create-surface-hub-2s-device-account"></a>Surface Hub 2S デバイス アカウントの作成
 
-Surface Hub デバイス アカウント (会議室メールボックスとも呼ばれる) を作成すると、Surface Hub 2S は会議出席依頼を受信、承認、または辞退し、会議に参加できます。 Out-of-Box Experience (OOBE) のセットアップ中にデバイス アカウントを構成します。 必要に応じて、後で変更できます (OOBE セットアップは行わずに行います)。
+Surface Hub デバイス アカウント (会議室メールボックスとも呼ばれる) を作成すると、Surface Hub 2S は会議出席依頼の受信、承認、または辞退を行い、会議に参加できます。 アウトオブボックス エクスペリエンス (OOBE) のセットアップ中にデバイス アカウントを構成します。 必要に応じて、後で (OOBE セットアップを実行せずに) 変更できます。
 
-Microsoft 365 管理センターからアカウントを作成するには、次の方法Windows PowerShell。 
+Microsoft 365 管理センターからアカウントを作成するには、次の情報と組み合わせてWindows PowerShell。 
 
-- **管理センターからアカウントを作成します**。 最小要件を満たすために、アカウントに必要なすべてを [Microsoft 365 管理センターから直接構成できます](https://admin.microsoft.com/AdminPortal)。 ホワイトボード アプリからホワイトボードを直接共有する場合など、一部の機能では PowerShell を使用して ActiveSync を構成する必要があります。この [ページでメール アプリの使用が必要な場合は、「ActiveSync](#enable-activesync-if-use-of-email-app-is-required) を有効にする」をご覧ください。
+- **管理センターからアカウントを作成します**。 最小要件を満たすために、アカウントに必要なすべてを [Microsoft 365](https://admin.microsoft.com/AdminPortal)管理センターから直接構成できます。 ホワイトボード アプリからホワイトボードを直接共有する機能の中には、PowerShell を使用して ActiveSync を構成する必要がある機能があります。このページ [では、「電子メール アプリの使用が必要な場合は ActiveSync](#enable-activesync-if-use-of-email-app-is-required) を有効にする」を参照してください。
 
-- **PowerShell を使用してアカウントを作成します**。 PowerShell スクリプトを使用すると、複数のデバイス アカウントの作成を容易にし、次に示す特定の機能をすばやく構成できます。
-    - すべての Surface Hub デバイス アカウントの予定表の処理。
-    - スケジュール設定要求へのカスタム自動返信。
+- **PowerShell を使用してアカウントを作成します**。 PowerShell スクリプトを使用すると、複数のデバイス アカウントの作成を容易にし、以下を含む特定の機能をすばやく構成できます。
+    - すべての Surface Hub デバイス アカウントの予定表処理。
+    - スケジュール要求に対するカスタム自動返信。
     - 既定の ActiveSync メールボックス ポリシーが他のユーザーまたは別のプロセスによって既に変更されている場合は、新しい ActiveSync メールボックス ポリシーを作成して割り当てる必要があります。
 
 > [!TIP]
 > アカウントのセットアップを確認するには、以下のアカウント検証 [スクリプトを実行](#account-verification-script) します。
 
 > [!NOTE]  
-> Surface Hub デバイス アカウントは、サード パーティのフェデレーション ID プロバイダー (FIP) をサポートしず、標準の Active Directory または Azure Active Directory アカウントである必要があります。
+> Surface Hub デバイス アカウントは、サード パーティのフェデレーション ID プロバイダー (FIP) をサポートし、標準の Active Directory アカウントまたは Azure Active Directory アカウントである必要があります。
 
-## 管理センターからアカウントを作成する
+## <a name="create-account-via-admin-center"></a>管理センター経由でアカウントを作成する
 
-1. Microsoft 365 管理センターで、[リソース****] に移動し、[会議室&**備品**] を選択し、[+ リソースの追加]**を選択します**。
+1. Microsoft 365 管理センターで、[リソース****] に移動し、[会議室] &し、[+ リソース**の追加****] を選択します**。
 
 2. デバイス アカウントの名前と電子メール アドレスを指定します。 残りの設定は既定の状態のままにします。
 
-   ![名前とメール アドレスを入力する](images/sh2-account2.png)
+   ![名前とメール アドレスを指定する](images/sh2-account2.png)
 
-   ![残りの設定は既定の状態のままにする](images/sh2-account3.png)
+   ![既定の状態で残りの設定を変更しない](images/sh2-account3.png)
 
-3. デバイス アカウントのパスワードを設定します。 パスワードを設定するには、[ユーザー] を選択 **し** 、[アクティブなユーザー] **を選択します**。 新しく作成したユーザーを検索してパスワードを設定します。 [このユーザー **が初** めてサインインするときにパスワードを変更する] オプション **を選択していないことを確認します。**
+3. デバイス アカウントのパスワードを設定します。 パスワードを設定するには、[ユーザー] を **選択し** 、[アクティブ ユーザー] **を選択します**。 次に、新しく作成したユーザーを検索してパスワードを設定します。 [このユーザー **が最初に** サインインするときにパスワードを変更する] オプション **が選択されていないことを確認します。**
 
    ![デバイス アカウントのパスワードを設定する](images/sh2-account4.png)
 
-4. 365 ライセンスを持つOffice割り当てる。 Office 365 Meeting **Room** ライセンスを割り当て、Microsoft Teams と Skype for Business のアカウントを自動的に有効にしてください。
+4. 365 ライセンスを使用してOffice割り当てる。 Microsoft Teams と Skype for Business のアカウント**** を自動的に有効Office 365 ミーティング ルーム ライセンスを割り当てるのをお勧めします。
 
-   ![365 Officeを割り当てる](images/sh2-account5.png)
+   ![365 ライセンスOffice割り当てる](images/sh2-account5.png)
 
 
 > [!NOTE]  
-> Skype for Business を使用している場合は、PowerShell を使用してセットアップを完了する必要があります -- Skype for Business カレンダー: [このアカウント](#set-calendar-auto-processing-skype-for-business-only) の予定表の自動処理を設定します。 
+> Skype for Business を使用する場合は、PowerShell 経由でセットアップを完了する必要があります。Skype for Business Calendar: Set [Calendar Autoprocessing for](#set-calendar-auto-processing-skype-for-business-only) this account. 
 
-## PowerShell を使用してアカウントを作成する
+## <a name="create-account-via-powershell"></a>PowerShell 経由でアカウントを作成する
 
- PowerShell を使用して Surface Hub のタスクを迅速に自動化しても、必ずしも PowerShell の専門知識が必要であるとは限りません。 このページで適切なスクリプトを使用する前に、セットアップの前提条件が完了していることを確認します。
+ PowerShell を使用して Surface Hub 上のタスクを迅速に自動化しても、必ずしも PowerShell の専門知識が必要であるとは限りません。 このページで適切なスクリプトを使用する前に、セットアップの前提条件を完了していることを確認してください。
 
-### PowerShell を使用して Surface Hub を管理するための前提条件 
+### <a name="prerequisites-for-using-powershell-to-manage-surface-hub"></a>PowerShell を使用して Surface Hub を管理するための前提条件 
 
-1. 管理者特権 (管理者として**実行)** で PowerShell を起動し、PowerShell スクリプトを実行するようにシステムが構成されていることを確認します。 詳細については、「実行ポリシー [について」を参照してください](https://docs.microsoft.com/powershell/module/microsoft.powershell.core/about/about_execution_policies?)。 
+1. 管理者特権 (管理者として**実行)** を使用して PowerShell を起動し、PowerShell スクリプトを実行するようにシステムが構成されていることを確認します。 詳細については、「実行ポリシー [について」を参照してください](https://docs.microsoft.com/powershell/module/microsoft.powershell.core/about/about_execution_policies?)。 
 2. [Azure PowerShell モジュールをインストールします](https://docs.microsoft.com/powershell/azure/install-az-ps)。
 
 
-### Exchange Online PowerShell への接続
+### <a name="connect-to-exchange-online-powershell"></a>Exchange Online PowerShell に接続する
 
 ```powershell
 Install-Module -Name ExchangeOnlineManagement
@@ -77,22 +77,22 @@ Import-Module ExchangeOnlineManagement
 Connect-ExchangeOnline -UserPrincipalName admin@contoso.com -ShowProgress $true
 ```
 
-### メールボックスを作成する
+### <a name="create-mailbox"></a>メールボックスの作成
 
 ```powershell
 New-Mailbox -MicrosoftOnlineServicesID 'SurfaceHub01@contoso.com' -Alias SurfaceHub01 -Name "Surface Hub 01" -Room -EnableRoomMailboxAccount $true -RoomMailboxPassword (ConvertTo-SecureString -String 'Pass@word1' -AsPlainText -Force)
 ```
 
-### 予定表の自動処理を設定する (Skype for Business のみ)
+### <a name="set-calendar-auto-processing-skype-for-business-only"></a>予定表の自動処理の設定 (Skype for Business のみ)
 
 ```powershell
 Set-CalendarProcessing -Identity 'SurfaceHub01@contoso.com' -AutomateProcessing AutoAccept -AddOrganizerToSubject $false -AllowConflicts $false -DeleteComments $false -DeleteSubject $false -RemovePrivateProperty $false
 Set-CalendarProcessing -Identity 'SurfaceHub01@contoso.com' -AddAdditionalResponse $true -AdditionalResponse "This is a Microsoft Surface Hub. Please make sure this meeting is a Microsoft Teams meeting!"
 ```
 
-### メール アプリの使用が必要な場合は ActiveSync を有効にする
+### <a name="enable-activesync-if-use-of-email-app-is-required"></a>電子メール アプリの使用が必要な場合は ActiveSync を有効にする
 
- 既定の ActiveSync ポリシーは、変更されていない場合に機能します。 それ以外の場合は、新しいポリシーを作成して割り当てる必要があります。
+ 既定の ActiveSync ポリシーは、変更されていない場合に動作します。 それ以外の場合は、新しいポリシーを作成して割り当てる。
 
 ```powershell
 New-MobileDeviceMailboxPolicy -Name:"SurfaceHub" -PasswordEnabled:$false
@@ -100,13 +100,13 @@ New-MobileDeviceMailboxPolicy -Name:"SurfaceHub" -PasswordEnabled:$false
 Set-CASMailbox -Identity SurfaceHub01@contoso.com -ActiveSyncMailboxPolicy "SurfaceHub"
 ```
 
-### Azure AD への接続
+### <a name="connect-to-azure-ad"></a>Azure AD への接続
 
 ```powershell
 Connect-AzureAD
 ```
 
-### ライセンスを割り当てる
+### <a name="assign-a-license"></a>ライセンスの割り当て
 
 ```powershell
 Set-AzureADUser -ObjectId 'SurfaceHub01@contoso.com' -UsageLocation US
@@ -117,7 +117,7 @@ $Licenses.AddLicenses = $License
 Set-AzureADUserLicense -ObjectId 'SurfaceHub01@contoso.com' -AssignedLicenses $Licenses
 ```
 
-### 利用可能なライセンスを確認する
+### <a name="check-for-available-licenses"></a>使用可能なライセンスを確認する
 
 ```powershell
 Get-AzureADUser -Filter "userPrincipalName eq 'SurfaceHub01@contoso.com'" |fl *
@@ -125,9 +125,9 @@ Get-AzureADUser -Filter "userPrincipalName eq 'SurfaceHub01@contoso.com'" |fl *
 6070a4c8-34c6-4937-8dfb-39bbc6397a60
 ```
 
-## アカウント検証スクリプト
+## <a name="account-verification-script"></a>アカウント検証スクリプト
 
-デバイス アカウントを作成した後、次の検証スクリプトを実行できます。 このスクリプトは、以前に作成されたデバイス アカウントを検証し、概要レポートを生成します。 次に、例を示します。
+デバイス アカウントを作成した後、次の検証スクリプトを実行できます。 このスクリプトは、以前に作成したデバイス アカウントを検証し、概要レポートを生成します。 次に、例を示します。
 
 ``` syntax
 15 tests executed
@@ -432,6 +432,6 @@ function Validate()
 }
 ```
 
-## 詳細情報
+## <a name="learn-more"></a>詳細情報
 
 - [PowerShell を使用して Surface Hub 2S オンプレミス アカウントを作成する](surface-hub-2s-onprem-powershell.md)

@@ -13,19 +13,19 @@ ms.date: 12/10/2020
 ms.localizationpriority: Medium
 appliesto:
 - Surface Hub 2S 2020 Update
-ms.openlocfilehash: dd0b0ad257abbc52c443b075e62db00dcf5713ea
-ms.sourcegitcommit: 4b1cfcac090910a3ea634929942063eb51fc54f9
+ms.openlocfilehash: 1674b7abd74a666e2ab1040f66d9ea548ab3c201
+ms.sourcegitcommit: 7e1b351024e33926901ddbdc562ba12aea0b4196
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "11206281"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "11385165"
 ---
-# Surface Hub の先進認証
+# <a name="modern-authentication-on-surface-hub"></a>Surface Hub の先進認証
 
-クラウドベースのアカウントの最新認証のサポートは [、Windows 10 Team 2020 Update に完全に統合されています](surface-hub-2020-update.md)。 2020 更新プログラムをインストールすると、従来の基本認証から移行し、Microsoft Azure と Exchange Online の最新のセキュリティ強化機能を使用できます。 2020 Update では、Surface Hub は Exchange Web サービス (EWS) プロトコルと Active Directory 認証ライブラリ (ADAL) ベースの認証をサポートし、デバイス アカウントの同期用に Exchange Online を有効にします。
+Windows 10 Team 2020 Update では、一部のシナリオでハブ デバイス アカウントのモダン認証のサポートが追加されています。 2020 更新プログラムをインストールすると、デバイス アカウントが Azure Active Directory 経由で認証され、アカウントのメールボックスが Exchange Online でホストされている場合、従来の基本認証から移行して最新のセキュリティ改善を利用できます。 2020 Update では、デバイス アカウントを Exchange Online と同期するときに、Surface Hub は Exchange Web Services (EWS) プロトコルと Active Directory 認証ライブラリ (ADAL) ベースの認証をサポートします。
 
-新しいクラウドベースのアカウントの場合、Surface Hub はモダン認証を自動的に使用して Exchange Online に接続します。単に alias@contoso.com という形式を使用してデバイス アカウントを作成する以外に、追加の構成 [は必要ありません](mailto:alias@contoso.com)。 従来の形式である Contoso\alias は使用しない。これは、最新の認証ではサポートされていません。 詳しくは [、「Surface Hub 2S デバイス アカウントの作成」をご覧ください](https://docs.microsoft.com/surface-hub/surface-hub-2s-account)。
+新しいクラウドベースのアカウントの場合、Surface Hub はモダン認証を自動的に使用して Exchange Online に接続し、単にデバイス アカウントを作成する以外の構成を必要とせずに、次の形式でデバイス アカウントを作成[alias@contoso.com。](mailto:alias@contoso.com) 従来の形式を使用しない – Contoso\alias(最新の認証ではサポートされていません)。 詳細については [、「Create Surface Hub 2S デバイス アカウント」を参照してください](https://docs.microsoft.com/surface-hub/surface-hub-2s-account)。
 
 > [!NOTE]
-> Surface Hub では、オンプレミス アカウントの最新の認証はサポートされていません。 アカウントはクラウドで作成する必要があります。
+> Surface Hub では、オンプレミス アカウントの最新の認証はサポートされていません。 アカウントはクラウドに作成する必要があります。
 
