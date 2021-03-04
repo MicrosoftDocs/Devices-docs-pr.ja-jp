@@ -1,48 +1,48 @@
 ---
 title: オペレーティングシステムの基礎 (Surface Hub)
-description: このトピックでは、Windows 10 Team オペレーティングシステムの固有の側面と、Windows 10 Enterprise との違いについて説明します。
+description: このトピックでは、Windows 10 Team オペレーティング システムの固有の側面と、Windows 10 Enterprise との違いについて説明します。
 keywords: 変更履歴
 ms.prod: surface-hub
 ms.sitesec: library
 author: dansimp
 ms.author: dansimp
 ms.topic: article
-ms.date: 09/11/2020
+ms.date: 03/03/2021
 ms.reviewer: ''
 manager: laurawi
 ms.localizationpriority: medium
-ms.openlocfilehash: cae09fa3a21fe497d021f38621085b639b15c4da
-ms.sourcegitcommit: ae0dae16e0b7bb9c906de78095634c3070a58c61
+ms.openlocfilehash: f3ffcc46912fba3313e4489f5713b6ffcacf2d8a
+ms.sourcegitcommit: 5c904229a0257297be7f724c264e484d2c4b5168
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "11013407"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "11387475"
 ---
-# オペレーティングシステムの基礎 (Surface Hub)
+# <a name="operating-system-essentials-surface-hub"></a>オペレーティングシステムの基礎 (Surface Hub)
 
 Surface Hub のオペレーティング システムである Windows 10 Team は Windows 10 Enterprise をベースとしていて、エンタープライズ管理、セキュリティ、およびその他の機能の豊富なサポートを提供します。 しかし、これらの間には重要な違いがあります。 Enterprise エディションは、PC 向けに設計されていますが、Windows 10 Team は大画面および会議室での使用向けに新たに設計されています。 Surface Hub のセキュリティおよび管理の要件を評価する場合、新しいオペレーティング システムと見なすことをお勧めします。 この記事は、Surface Hub の Windows 10 Team と Windows 10 Enterprise の主な相違点と、その相違点が組織にどう影響を与えるかを示すことを目的としています。
 
-2020年9月以降、ユーザーは Surface Hub 2S で Windows 10 Pro または Enterprise に移行するオプションを利用できます。 詳しくは、次のトピックをご覧ください。
+2020 年 9 月から、お客様は Surface Hub 2S で Windows 10 Pro または Enterprise に移行できます。 詳しくは、次のトピックをご覧ください。
 
-- [Surface Hub 2 での Windows 10 Pro と Enterprise の可用性を発表](https://techcommunity.microsoft.com/t5/surface-it-pro-blog/announcing-the-availability-of-windows-10-pro-and-enterprise-on/ba-p/1624107)します。
+- [Surface Hub 2 での Windows 10 Pro と Enterprise の可用性を発表します](https://techcommunity.microsoft.com/t5/surface-it-pro-blog/announcing-the-availability-of-windows-10-pro-and-enterprise-on/ba-p/1624107)。
 
 - [Surface Hub 2 の Windows 10 Pro または Enterprise に移行する](surface-hub-2s-migrate-os.md)
 
-## ユーザー インターフェイス
+## <a name="user-interface"></a>ユーザー インターフェイス
 
-### シェル (OSのユーザー インターフェイス)
+### <a name="shell-os-user-interface"></a>シェル (OSのユーザー インターフェイス)
 
 Surface Hub のシェルは、大画面での表示およびタッチ操作向けに、新たに設計されています。 Windows 10 Enterprise と同じシェルは使用されていません。
 
 *これにより影響を受ける可能性のある組織ポリシー:* <br> Windows 10 Enterprise のシェルのコントロールに関する設定は、Surface Hub には適用されません。
 
-### ロック画面とスクリーン セーバー
+### <a name="lock-screen-and-screensaver"></a>ロック画面とスクリーン セーバー
 
 Surface Hub にはロック画面やスクリーン セーバーがありませんが、ようこそ画面と呼ばれる同様の機能があります。 ようこそ画面には、デバイス アカウントのカレンダーでスケジュール設定済みの会議、および Skype for Business、ホワイトボード、接続といった Surface Hub のトップ アプリへの簡易エントリ ポイントが表示されます。
 
 *これにより影響を受ける可能性のある組織ポリシー:* <br> ロック画面、画面のタイムアウト、およびスクリーン セーバーの設定は、Surface Hub には適用されません。
 
-### ユーザー サインイン
+### <a name="user-sign-in"></a>ユーザー サインイン
 
 Surface Hub は、会議室などの共同スペースで使用できるように設計されています。 Windows PC とは異なり、ユーザーにサインインが求められることなく、だれでも Surface Hub を使用できます。 この共有機能を有効にするために、Surface Hub では、Windows 10 Enterprise のような (ユーザーが OS にサインインして、その資格情報が OS 全体で使用される形式の) Windows サインインがサポートされていません。 代わりに、ローカルで自動サインインの低特権ユーザーが、常に Surface Hub にログインしているという形になります。 管理ユーザーを含めて、追加ユーザーのサインインはサポートされません (つまり、管理者がサインインしても、OS へのサインインではありません)。
 
@@ -51,7 +51,7 @@ Surface Hub は、会議室などの共同スペースで使用できるよう�
 
 *これにより影響を受ける可能性のある組織ポリシー:* <br> 通常、Surface Hub ではセキュリティ強化のため、ユーザー アクセス制御ではなくロックダウン機能を使用します。 パスワード要件、対話型ログオン、ユーザー アカウント、およびアクセス制御に関するポリシーは、Surface Hub には適用されません。
 
-### ファイルの保存と参照
+### <a name="saving-and-browsing-files"></a>ファイルの保存と参照
 
 ユーザーがアクセスできるのは、次に示す Surface Hub の一部のディレクトリのみです。
 - ミュージック
@@ -64,9 +64,9 @@ Surface Hub は、会議室などの共同スペースで使用できるよう�
 
 *これにより影響を受ける可能性のある組織ポリシー:* <br> アクセス許可およびファイルとフォルダーの所有権に関するポリシーは、Surface Hub には適用されません。 ユーザーは、システム ディレクトリやネットワーク フォルダーを参照したり、そこにファイルを保存したりすることはできません。
 
-## アプリケーション
+## <a name="applications"></a>アプリケーション
 
-### 既定のアプリケーション
+### <a name="default-applications"></a>既定のアプリケーション
 
 ほとんど例外なく、Surface Hub の既定の ユニバーサル Windows プラットフォーム (UWP) アプリは、Windows 10 PC でも利用可能です。
 
@@ -94,13 +94,13 @@ Surface Hub にプレインストールされている UWP アプリ:
 
 *これにより影響を受ける可能性のある組織ポリシー:* <br> Windows 10 Enterprise のガイドラインを使用して、Surface Hub の既定のアプリの機能およびネットワーク要件を判断します。
 
-### アプリ、ドライバー、およびサービスのインストール
+### <a name="installing-apps-drivers-and-services"></a>アプリ、ドライバー、およびサービスのインストール
 
 アプライアンスのようなデバイス特性を維持するために、Surface Hub でサポートされているのはユニバーサル Windows プラットフォーム (UWP) アプリのインストールのみで、従来の Win32 アプリ、サービス、およびドライバーのインストールはサポートされていません。 さらに、UWP アプリをインストールするためのアクセス権を持つのは管理者だけです。
 
 *これにより影響を受ける可能性のある組織ポリシー:* <br> 従業員は管理者がインストールしたアプリを使用することしかできないため、意図しない使用の軽減に役立ちます。 Surface Hub では、従来の多くの PC 管理および監視ツールで必要とされる Win32 エージェントのインストールがサポートされていません。
 
-## セキュリティとロックダウン
+## <a name="security-and-lockdown"></a>セキュリティとロックダウン
 
 会議室などの共同スペースで使用するため、Surface Hub のカスタム OS には、Windows 10 で利用可能なセキュリティ機能とロックダウン機能の多くが実装されています。
 
@@ -122,47 +122,45 @@ Surface Hub に実装されている Windows 10 のセキュリティ機能:
 
 *これにより影響を受ける可能性のある組織ポリシー:* <br> Surface Hub のセキュリティの評価を行うときは、これらの機能を考慮してください。
 
-## 管理
+## <a name="management"></a>管理
 
-### デバイス設定
+### <a name="device-settings"></a>デバイス設定
 
 デバイス設定は、設定アプリで構成できます。 設定アプリは Surface Hub 用にカスタマイズされていますが、Windows 10 デスクトップで使い慣れた設定も多く含まれています。 設定アプリを開くと、管理者の資格情報を検証するためにユーザー アカウント制御 (UAC) のプロンプトが表示されますが、管理者としてサインインすることはできません。
 
 *これにより影響を受ける可能性のある組織ポリシー:* <br> 従業員は会議で Surface Hub を使用できますが、デバイスの設定を変更することはできません。 ロックダウン機能と UAC により、従業員は会議機能の使用しかできません。
 
-### 管理機能
+### <a name="administrative-features"></a>管理機能
 
 Microsoft 管理コンソール、ファイル名を指定して実行、コマンド プロンプト、PowerShell、レジストリ エディター、イベント ビューアー、タスク マネージャーといった Windows 10 Enterprise の管理機能は、Surface Hub ではサポートされていません。 設定アプリに、Surface Hub のローカルで利用可能な管理機能がすべて含まれています。
 
-*これにより影響を受ける可能性のある組織ポリシー:* <br> Surface Hub は、従来の PC と同様の方法では管理されません。 設定の構成には MDM を使用し、Surface Hub の監視には OMS を使用します。
+### <a name="remote-management-and-monitoring"></a>リモート管理および監視
 
-### リモート管理および監視
-
-Surface Hub は、 [Microsoft Intune](https://docs.microsoft.com/intune/) などのモバイルデバイス管理 (MDM) ソリューションでのリモート管理をサポートしています。また、 [Azure モニター](https://azure.microsoft.com/services/monitor/)での監視もサポートされています。 
+Surface Hub は [、Microsoft Intune](https://docs.microsoft.com/intune/) などのモバイル デバイス管理 (MDM) ソリューションや Azure Monitor による監視を通じてリモート管理 [をサポートします](https://azure.microsoft.com/services/monitor/)。 
 
 *これにより影響を受ける可能性のある組織ポリシー:* <br> Surface Hub では、System Center Operations Manager といった従来の多くの PC 管理および監視ツールで必要とされる Win32 エージェントのインストールがサポートされていません。
 
-### グループ ポリシー
+### <a name="group-policy"></a>グループ ポリシー
 
-Surface Hub は、監査を含む Windows グループポリシーをサポートしていません。 代わりに、MDM を使用して Surface Hub にポリシーを適用します。 MDM について詳しくは、「[MDM プロバイダーによる設定の管理](manage-settings-with-mdm-for-surface-hub.md)」をご覧ください。
+Surface Hub では、監査を含む Windows グループ ポリシーはサポートされていません。 代わりに、MDM を使用して Surface Hub にポリシーを適用します。 MDM について詳しくは、「[MDM プロバイダーによる設定の管理](manage-settings-with-mdm-for-surface-hub.md)」をご覧ください。
 
 *これにより影響を受ける可能性のある組織ポリシー:* <br> グループ ポリシーではなく MDM を使用して Surface Hub を管理します。
 
-### リモート アシスタンス
+### <a name="remote-assistance"></a>リモート アシスタンス
 
 Surface Hub では、リモート アシスタンスがサポートされていません。
 
 *これにより影響を受ける可能性のある組織ポリシー:* <br> リモート アシスタンスに関するポリシーは、Surface Hub には適用されません。
 
-## ネットワーク
+## <a name="network"></a>ネットワーク
 
-### ドメイン参加と Azure Active Directory (Azure AD) 参加 
+### <a name="domain-join-and-azure-active-directory-azure-ad-join"></a>ドメイン参加と Azure Active Directory (Azure AD) 参加 
 
 Surface Hub は主にドメイン参加と Azure AD 参加を使用して、ディレクトリでサポートされる管理者グループを提供します。 ユーザーは、ドメイン アカウントではサインインできません。 詳しくは、「[管理者グループの管理](admin-group-management-for-surface-hub.md)」をご覧ください。
 
 *これにより影響を受ける可能性のある組織ポリシー:* <br> Surface Hub がドメインに参加している場合、グループ ポリシーは適用されません。 ドメイン メンバーシップに関するポリシーは、Surface Hub には適用されません。
 
-### ドメインのリソースへのアクセス
+### <a name="accessing-domain-resources"></a>ドメインのリソースへのアクセス
 
 ユーザーは、Microsoft Edge にサインインしてイントラネット サイトと (Office 365 などの) オンライン リソースにアクセスできます。 Surface Hub がデバイス アカウントで構成されている場合は、システムはそのアカウントを使用して Exchange と Skype for Business にアクセスします。 ただし、Surface Hub では、ファイル共有やプリンターといったドメインのリソースへのアクセスはサポートされていません。
 
@@ -176,7 +174,7 @@ Surface Hub は主にドメイン参加と Azure AD 参加を使用して、デ�
 *Organization policies that this may affect:* <br> 
 -->
 
-### 診断データ
+### <a name="diagnostic-data"></a>診断データ
 
 Surface Hub の OS は、Windows 10 の接続ユーザー エクスペリエンスとテレメトリのコンポーネントを使用して診断データを収集して送信します。 詳細については、「[組織内の Windows 診断データの構成](https://technet.microsoft.com/itpro/windows/manage/configure-windows-diagnostic-data-in-your-organization)」を参照してください。
 

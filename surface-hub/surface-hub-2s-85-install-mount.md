@@ -9,14 +9,14 @@ ms.author: greglin
 manager: laurawi
 audience: Admin
 ms.topic: article
-ms.date: 03/01/2020
+ms.date: 03/02/2020
 ms.localizationpriority: Medium
-ms.openlocfilehash: 28278827aeba20f46d5fd79b7a1de6c54bfce1e8
-ms.sourcegitcommit: 7e1b351024e33926901ddbdc562ba12aea0b4196
+ms.openlocfilehash: 1fab09ef21dbddbb2b4f292acd716c6e6cbaff7e
+ms.sourcegitcommit: 5c904229a0257297be7f724c264e484d2c4b5168
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "11385255"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "11387487"
 ---
 # <a name="install-and-mount-surface-hub-2s-85"></a>Surface Hub 2S 85" のインストールとマウント
 
@@ -24,7 +24,11 @@ ms.locfileid: "11385255"
 
 ## <a name="unboxing-video"></a>ビデオのボックス化を解除する
 
-Surface Hub 2S 85" を移動してインストールするビデオの方法をコンパニオンが利用できます。 開始する前に [、Microsoft Surface Hub 2S 85" Unboxing and Set Up を確認してください](https://www.microsoft.com/zh-cn/videoplayer/embed/RE4MRqV)。  
+- 開始する前に、Microsoft Surface Hub 2S 85" Unboxing and Set Up video を確認してください。
+
+>[!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWwwgL]
+
+- このビデオの中国語版は、以下の付録 [B で参照](#appendix-b-unboxing-video) できます。 
 
 ## <a name="follow-all-safety-precautions"></a>すべての安全上の注意に従う 
 
@@ -37,7 +41,7 @@ Surface Hub 2S 85" を移動してインストールするビデオの方法を�
 >- トリップの危険を回避するには、梱包材のアセンブリ領域を明確にしてください。
 
 > [!IMPORTANT]
->先に進む前に、以下の付録に記載されている追加の安全情報 [を確認](#appendix) してください。
+>先に進む前に、以下の付録 A に記載されている追加 [の安全情報を確認](#appendix-a-additional-safety-information) してください。
 
 ## <a name="1-remove-outer-packaging-materials"></a>1. 外側の梱包材を削除する
 
@@ -151,9 +155,7 @@ Surface Hub 2S 85" は、600 x 600 VESA マウント パターンを使用しま
 
 内側の梱包用のストラップ素材の追加セットは、背面右下のキットに含まれています。
 
-## <a name="appendix"></a>付録 
-
-### <a name="additional-safety-information"></a>その他の安全に関する情報
+## <a name="appendix-a-additional-safety-information"></a>付録 A: その他の安全に関する情報
 
 > [!WARNING]
 > **重いオブジェクト/人間工学に基づいた持ち上げ**<br>
@@ -203,6 +205,14 @@ Surface Hub 2S 85" は、600 x 600 VESA マウント パターンを使用しま
 > [!WARNING]
 >  **適切なインストール**<br>
 不適切なデバイスのインストールに関連する危険を回避するには、作業を開始する前にインストール手順を読んで理解しているユーザーがインストールを実行する必要があります。 必要な機器や専門知識が必要ない場合、または取り付け面が不明な場合は、プロのインストーラーに問い合わせください。
+
+
+## <a name="appendix-b-unboxing-video"></a>付録 B: ボックス化解除ビデオ
+
+
+### <a name="microsoft-surface-hub-2s-85-unboxing-and-set-up-video-chinese"></a>Microsoft Surface Hub 2S 85" Unboxing and Set Up video (中国語)
+
+> [!VIDEO https://www.microsoft.com/zh-cn/videoplayer/embed/RE4MRqV]
 
 
 ## <a name="more-information"></a>詳細情報
