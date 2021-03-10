@@ -26,7 +26,7 @@ ms.locfileid: "11387487"
 
 - <span data-ttu-id="8a482-107">開始する前に、Microsoft Surface Hub 2S 85" Unboxing and Set Up video を確認してください。</span><span class="sxs-lookup"><span data-stu-id="8a482-107">Before you begin, please review Microsoft Surface Hub 2S 85" Unboxing and Set Up video:</span></span>
 
->[!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWwwgL]
+>[!VIDEO https://www.microsoft.com/ja-jp/videoplayer/embed/RWwwgL]
 
 - <span data-ttu-id="8a482-108">このビデオの中国語版は、以下の[付録 B](#appendix-b-unboxing-video) で参照できます。</span><span class="sxs-lookup"><span data-stu-id="8a482-108">A Chinese version of this video is available in [Appendix B](#appendix-b-unboxing-video) below.</span></span> 
 
