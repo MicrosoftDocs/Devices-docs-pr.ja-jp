@@ -10,18 +10,18 @@ ms.date: 08/28/2017
 ms.reviewer: ''
 manager: laurawi
 localizationpriority: medium
-ms.openlocfilehash: 11768488d2ef7509af6a592b9e4ac945a7e35650
-ms.sourcegitcommit: 109d1d7608ac4667564fa5369e8722e569b8ea36
+ms.openlocfilehash: f8a2bf8ddb75ca6dd3ff89e16fe0d37e099be29d
+ms.sourcegitcommit: 85f5a2e67b34fe073ec588ed441ebee239ab0ac6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2020
-ms.locfileid: "10835254"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "11400738"
 ---
-# Microsoft Authenticator を使った Surface Hub へのサインイン
+# <a name="sign-in-to-surface-hub-with-microsoft-authenticator"></a>Microsoft Authenticator を使った Surface Hub へのサインイン
 
 組織内のユーザーは、Android と iOS で使用できる Microsoft Authenticator アプリを使用して、パスワードを使用せずに Surface Hub にサインインできます。
 
-## 組織の前提条件
+## <a name="organization-prerequisites"></a>組織の前提条件
 
 組織内のユーザーがパスワードの代わりにスマートフォンやその他のデバイスを使用して Surface Hub にサインインできるようにするには、組織が以下の前提条件を満たしていることを確認する必要があります。 
 
@@ -33,15 +33,13 @@ ms.locfileid: "10835254"
 
     ![多要素認証のオプション](images/mfa-options.png)
 
-- Office、SharePoint などの Azure AD サービスでコンテンツホスティングを有効にします。 
+- Azure ADサービス (Office SharePoint など) でコンテンツ ホスティングを有効にする。 
 
 - Surface Hub で Windows 10 バージョン 1703 以降が実行されている必要があります。
 
 - Surface Hub は、ローカル アカウントまたはドメインに参加しているアカウントを使用して設定します。
 
-現時点では、Microsoft Authenticator を使用して、Azure AD に参加している Surface Hub にサインインすることはできません。
-
-## 個々の前提条件
+## <a name="individual-prerequisites"></a>個々の前提条件
 
 - Android 6.0 以降を実行する Android フォンまたは iOS9 以降を実行する iPhone や iPad。 
 
@@ -54,9 +52,7 @@ ms.locfileid: "10835254"
 
 - デバイスでパスコードや画面のロックが有効になっていること。
 
-- 標準的な SMTP メール アドレス (例: joe@contoso.com)。 非標準またはバニティ SMTP メール アドレス (例: firstname.lastname@contoso.com) は現在動作しません。
-
-## Microsoft Authenticator アプリの使い方
+## <a name="how-to-set-up-the-microsoft-authenticator-app"></a>Microsoft Authenticator アプリの使い方
 
 >[!NOTE]
 >Android デバイスにポータル サイトがインストールされている場合は、Microsoft Authenticator をセットアップする前にアンインストールします。 アプリをセットアップした後、ポータル サイトを再インストールすることができます。
@@ -67,7 +63,7 @@ ms.locfileid: "10835254"
 2. **設定**に移動し、デバイスを登録します。
 3. アカウント ページに戻り、アカウントのドロップダウン メニューから **[電話によるサインインを有効にする]** を選択します。
 
-## 会議中に Surface Hub にサインインする方法
+## <a name="how-to-sign-in-to-surface-hub-during-a-meeting"></a>会議中に Surface Hub にサインインする方法
 
 1. 会議をセットアップした後、Surface Hub に移動し、**[サインインしてミーティングとファイルを参照する]** を選択します。
 
