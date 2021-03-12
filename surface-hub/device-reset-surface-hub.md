@@ -1,29 +1,29 @@
 ---
-title: Surface Hub をリセットまたは復元する
-description: Surface Hub のリセットと回復のプロセスについて説明し、手順を示します。
+title: Surface Hub のリセットまたは回復
+description: Surface Hub のリセットおよび回復プロセスについて説明し、手順を示します。
 ms.assetid: 44E82EEE-1905-464B-A758-C2A1463909FF
 ms.reviewer: ''
 manager: laurawi
-keywords: Surface Hub のリセット, 回復
+keywords: Surface Hub のリセット、回復
 ms.prod: surface-hub
 ms.sitesec: library
 author: dansimp
 ms.author: dansimp
 ms.topic: article
-ms.date: 07/31/2019
+ms.date: 03/10/2021
 ms.localizationpriority: medium
-ms.openlocfilehash: 73c7cf5a387bf7506bb69f62100171df4d94ad2d
-ms.sourcegitcommit: 25b8d880c6438f94b008f47b4fecc3aa4c473e85
+ms.openlocfilehash: 4b6797a83936b919aa43a7ae9fc8ae4dd720223a
+ms.sourcegitcommit: f0c976664116c45605edf3d56c4f58119a246b93
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/28/2021
-ms.locfileid: "11304820"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "11406640"
 ---
-# Surface Hub をリセットまたは復元する
+# <a name="reset-or-recover-a-surface-hub"></a>Surface Hub のリセットまたは回復
 
-この記事では、Microsoft Surface Hub をリセットまたは復元する方法について説明します。  
+この記事では、Microsoft Surface Hub をリセットまたは回復する方法について説明します。  
 
-[Surface Hub をリセットすると](#reset-a-surface-hub) 、オペレーティング システムは最後の累積的な Windows 更新プログラムに戻り、ローカル ユーザー ファイルと構成情報はすべて削除されます。 削除される情報には、次の情報が含まれます。
+[Surface Hub をリセットすると](#reset-a-surface-hub) 、オペレーティング システムは最後の累積的な Windows 更新プログラムに戻され、すべてのローカル ユーザー ファイルと構成情報が削除されます。 削除される情報には、次の情報が含まれます。
 
 - デバイス アカウント
 - デバイスのローカル管理者のアカウント情報
@@ -31,13 +31,13 @@ ms.locfileid: "11304820"
 - モバイル デバイス管理 (MDM) 登録情報
 - MDM または設定アプリを使用して設定された構成情報
 
-[クラウドから Surface Hub を回復すると、](#recover-a-surface-hub-from-the-cloud) この情報も削除されます。 さらに、Surface Hub は新しいオペレーティング システム イメージをダウンロードしてインストールします。 回復プロセスで、Surface Hub に保存されている他の情報を保持するかどうかを指定できます。 どちらのオプションも使用しない Surface Hub を回復する必要がある場合は [、Surface Hub](surface-hub-recovery-tool.md) 回復ツールでも同じオペレーティング システム イメージが使用されます。
+[クラウドから Surface Hub を復元すると、](#recover-a-surface-hub-from-the-cloud) この情報も削除されます。 さらに、Surface Hub は新しいオペレーティング システム イメージをダウンロードしてインストールします。 回復プロセスが Surface Hub に保存されている他の情報を保持するかどうかを指定できます。 これらのどちらのオプションも使用しない Surface Hub を回復する必要がある場合は [、Surface Hub](surface-hub-recovery-tool.md) 回復ツールで同じオペレーティング システム イメージが使用されます。
 
-## Surface Hub をリセットする
+## <a name="reset-a-surface-hub"></a>Surface Hub のリセット
 
-次のような理由により、Surface Hub のリセットが必要な場合があります。
+次のような理由で Surface Hub をリセットする必要がある場合があります。
 
-- 新しい会議スペース用にデバイスを再利用し、再構成する場合。
+- 新しい会議スペース用にデバイスを再削除し、再構成する必要があります。
 - ローカルでのデバイスの管理方法を変更したい。
 - デバイス アカウントまたは管理者アカウントのユーザー名またはパスワードが失われました。
 - 更新プログラムをインストールすると、デバイスのパフォーマンスが低下します。
@@ -45,92 +45,87 @@ ms.locfileid: "11304820"
 リセットプロセス中に、長時間空白の画面が表示される場合は、何も実行しないでお待ちください。
 
 > [!WARNING]
-> デバイスのリセット プロセスには、最大 6 時間かかる場合があります。 プロセスが完了するまで、Surface Hub をオフにしたり、取り外したりしない。 プロセスを中断すると、デバイスは動作しなくなります。 デバイスが再び機能するには、保証サービスが必要です。
+> デバイスのリセット プロセスには最大 6 時間かかる場合があります。 プロセスが完了するまで、Surface Hub の電源をオフにしたり、プラグを抜かしたりしない。 プロセスを中断すると、デバイスは操作不能になります。 デバイスが再び機能するには、保証サービスが必要です。
 
 1. Surface Hub で **[設定]** を開きます。
 
    ![Surface Hub の設定アプリを示す画像。](images/sh-settings.png)
 
-2. [セキュリティ **の更新&選択します**。
+2. [ **セキュリティの更新&] を選択します**。
 
    ![Surface Hub の設定アプリ&セキュリティ グループの更新プログラムを示す画像。](images/sh-settings-update-security.png)
 
-3. [ **回復] を**選択し、[デバイスの **リセット]** で [開始] **を選択します**。
+3. [ **回復] を**選択し、[デバイスのリセット] **で**、[スタート] **を選択します**。
 
    > [!IMPORTANT]
-   > デバイスをリセットする前に、BitLocker キーが利用可能な状態にしてください(後で入力を求めるメッセージが表示されます)。 詳細については [、「BitLocker キーを保存する」を参照してください](save-bitlocker-key-surface-hub.md)。 ハブが回復パーティションに再起動すると、BitLocker キーの入力を求めるメッセージが表示されます。 このプロンプトをスキップすると、リセットが失敗します。
+   > デバイスをリセットする前に、BitLocker キーを使用できる状態にしてください。後でデバイスの入力を求めるメッセージが表示されます。 詳細については [、「Save your BitLocker key 」を参照してください](save-bitlocker-key-surface-hub.md)。 ハブが回復パーティションに再起動すると、BitLocker キーを入力するように求めるメッセージが表示されます。 このプロンプトをスキップすると、リセットが失敗します。
    
    ![Surface Hub の設定アプリの [デバイスのリセット] オプションを示す画像。](images/sh-settings-reset-device.png)
 
-   リセット プロセスが完了すると、Surface Hub は最初の実行 [プログラムを再度起動](first-run-program-surface-hub.md) します。 リセット プロセスで問題が発生した場合は、Surface Hub を以前のオペレーティング システム イメージにロールバックし、ようこそ画面を表示します。
+   リセット プロセスが完了すると、Surface Hub は最初の実行 [プログラムを再度開始](first-run-program-surface-hub.md) します。 リセット プロセスで問題が発生した場合は、Surface Hub を以前のオペレーティング システム イメージにロールバックし、[ようこそ] 画面を表示します。
 
 <span id="cloud-recovery" />
 
-## クラウドから Surface Hub を回復する
+## <a name="recover-a-surface-hub-from-the-cloud"></a>クラウドから Surface Hub を回復する
 
-何らかの理由で Surface Hub が使用できなくなる場合でも、Microsoft サポートの支援なしにクラウドから回復できます。 Surface Hub は、クラウドから新しいオペレーティング システム イメージをダウンロードし、そのイメージを使ってオペレーティング システムを再インストールできます。
+何らかの理由で Surface Hub が使用できなくなっている場合でも、Microsoft サポートの支援を受けずにクラウドから回復できます。 Surface Hub は、クラウドから新しいオペレーティング システム イメージをダウンロードし、そのイメージを使用してオペレーティング システムを再インストールできます。
 
-次の状況では、この種類の回復プロセスの使用が必要な場合があります。
+次の状況では、この種類の回復プロセスを使用する必要がある場合があります。
 
-- [Surface Hub または関連アカウントが不安定な状態になった](#recover-a-surface-hub-in-a-bad-state)
+- [Surface Hub または関連するアカウントが不安定な状態になった](#recover-a-surface-hub-in-a-bad-state)
 - [Surface Hub がロックされている](#recover-a-locked-surface-hub)
 
 >[!IMPORTANT]
->クラウド **プロセスからの回復** には、オープン インターネット接続を提供するワイヤード (有線) 接続が必要です (プロキシや他の認証プロンプトはありません)。
+>クラウド **からの回復プロセスでは** 、オープン インターネット接続を提供する有線接続が必要です (プロキシや他の認証プロンプトはありません)。
 
-### 正常な状態でない Surface Hub を回復する
+### <a name="recover-a-surface-hub-in-a-bad-state"></a>正常な状態でない Surface Hub を回復する
 
-デバイス アカウントが不安定な状態になった場合、または管理者アカウントで問題が発生した場合は、設定アプリを使用してクラウド回復プロセスを開始できます。 クラウド回復プロセスは、デバイスのリセット プロセス[](#reset-a-surface-hub)で問題が解決しない場合にのみ使用してください。
+デバイス アカウントが不安定な状態になった場合、または管理者アカウントに問題が発生した場合は、設定アプリを使用してクラウド回復プロセスを開始できます。 デバイスのリセット プロセスで問題が解決しない[](#reset-a-surface-hub)場合にのみ、クラウド回復プロセスを使用する必要があります。
 
-1. Surface Hub で、[設定の更新] **を**選択 &gt; **&回復** &gt; **します**。
+1. Surface Hub で、[設定の更新] **を** &gt; **選択&回復** &gt; **します**。
 
-2. [ **クラウドからの回復] で、[今**すぐ **再起動] を選択します**。
+2. [ **クラウドからの回復] で、[** 今すぐ再起動 **する] を選択します**。
 
    ![クラウドから回復する](images/recover-from-the-cloud.png)
 
-### ロックされた Surface Hub を回復する
+### <a name="recover-a-locked-surface-hub"></a>ロックされた Surface Hub を回復する
 
-まれに、Surface Hub で、セッションの終了時にユーザーとアプリのデータのクリーンアップする際にエラーが発生する場合があります。 この場合、デバイスは自動的に再起動し、もう一度操作を試みます。 ただし、この操作が繰り返し失敗した場合、デバイスはユーザー データを保護するために自動的にロックされます。 ロックを解除するには [、デバイスを](#reset-a-surface-hub) リセットするか、デバイスが動作しない場合はクラウドから回復する必要があります。
+まれに、Surface Hub で、セッションの終了時にユーザーとアプリのデータのクリーンアップする際にエラーが発生する場合があります。 この場合、デバイスは自動的に再起動し、操作を再度試行します。 ただし、この操作が繰り返し失敗した場合、デバイスは自動的にロックしてユーザー データを保護します。 ロックを解除するには、デバイス [をリセット](#reset-a-surface-hub) するか、動作しない場合はクラウドから復元する必要があります。
 
-1. Surface Hub の下部にある電源スイッチを見つける。 電源スイッチが電源コード接続の横にある。 電源スイッチについて詳しくは、Surface Hub サイトの準備ガイド [(PDF) をご覧ください](surface-hub-site-readiness-guide.md)。
+1. Surface Hub の下部にある電源スイッチを見つける。 電源スイッチは、電源コード接続の横に表示されます。 電源スイッチの詳細については [、「Surface Hub Site 準備ガイド (PDF)」を参照してください](surface-hub-site-readiness-guide.md)。
 
-2. Surface Hub にようこそ画面が表示されている間は、電源スイッチを使って Surface Hub をオフにします。
+2. Surface Hub に [ようこそ] 画面が表示されている間は、電源スイッチを使用して Surface Hub をオフにします。
 
-3. 電源スイッチを使って Surface Hub をオンに戻します。 デバイスが起動し、Surface Hub ロゴ画面が表示されます。 Surface Hub ロゴの下に回転するドットが表示された場合は、電源スイッチを使って Surface Hub を再びオフにします。  
+3. Surface Hub をオンに戻す場合は、電源スイッチを使用します。 デバイスが起動し、[Surface Hub ロゴ] 画面が表示されます。 Surface Hub ロゴの下に回転ドットが表示されている場合は、電源スイッチを使用して Surface Hub を再度オフにします。  
 
-4. 手順 3 を 3 回繰り返します。または、Surface Hub に [自動修復の準備] メッセージが表示されるまで繰り返します。 このメッセージが表示された後、Surface Hub には Windows RE 画面が表示されます。
+4. 手順 3 を 3 回繰り返します。または Surface Hub に [自動修復の準備] メッセージが表示されるまで繰り返します。 このメッセージが表示された後、Surface Hub は Windows RE 画面を表示します。
 
-5. [詳細 **オプション] を選択します**。
+ 
+5. [リセット **] を選択して Windows を再インストールします**。 
+![再インストールへのリセット](images/recover-from-cloud.png)
 
-6. [クラウド **からの回復] を選択します**。 (必要に応じて、[リセット] を選択 **できます**。 ただし、 **クラウドからの回復が** 推奨されるアプローチです)。
+8. [クラウド **ダウンロード] を選択します。** 
 
-   ![クラウドからの回復](images/recover-from-cloud.png)
-7. Bitlocker キーの入力を求めるメッセージが表示されたら、次のいずれかの操作を行います。
+   ![クラウドダウンロード](images/recover-cloud-download.png)
 
-   - Surface Hub で Bitlocker が保護する情報を保持するには、Bitlocker キーを入力します。
-   - 保護された情報を破棄するには、[このドライブをスキップ **する] を選択します。**  
+>[!IMPORTANT]
+>[ダウンロードできない] というエラー**** メッセージが表示された場合は、[キャンセル] を選択**し**、もう一度やり直してください。
 
-8. メッセージが表示されたら、[再インストール] を **選択します**。
+9. [**ドライブを完全にクリーンアップする] を選択します。**  
+![ドライブの回復と完全なクリーン](images/recover-fully-clean-drive.png)
 
-    ![再インストール](images/reinstall.png)
+10. このデバイスをリセットする **準備ができているかという質問が表示されます**。 **[リセット]** を選択します。 
+![リセットの回復と確認](images/recover-confirm-reset.png)
 
-9. ディスクを再パーティション化するには、[はい] を **選択します**。
+11. ダウンロードが開始され、回復プロセスは、このデバイス **のリセットを示します**。 
+![進行中の回復](images/recover-in-progress.png)
 
-   ![パーティションの再作成](images/repartition.png)
+## <a name="contact-support"></a>サポートに問い合わせ
 
-   最初に、回復プロセスによって、クラウドからオペレーティング システム イメージがダウンロードされます。  
-
-   ![ダウンロード中 97&](images/recover-progress.png)
-
-   ダウンロードが完了すると、選択したオプションに従って回復プロセスによって Surface Hub が復元されます。
-   
-
-## サポートに問い合わせ
-
-質問がある場合やサポートが必要な場合は、サポート [リクエストを作成できます](https://support.microsoft.com/supportforbusiness/productselection)。
+質問がある場合やサポートが必要な場合は、サポート [要求を作成できます](https://support.microsoft.com/supportforbusiness/productselection)。
 
 
-## 関連トピック
+## <a name="related-topics"></a>関連トピック
 
 [Microsoft Surface Hub の管理](manage-surface-hub.md)
 
