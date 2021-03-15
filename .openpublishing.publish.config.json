@@ -18,7 +18,7 @@
       "docset_name": "Surface-Duo",
       "build_source_folder": "surface-duo",
       "build_output_subfolder": "Surface-Duo",
-      "locale": "en-us",
+      "locale": "ja-jp",
       "monikers": [],
       "moniker_ranges": [],
       "open_to_public_contributors": true,
@@ -43,7 +43,7 @@
       "template_folder": "_themes"
     }
   ],
-  "notification_subscribers": ["mor-oitac-eng@rws.com"],
+  "notification_subscribers": [],
   "sync_notification_subscribers": [],
   "branches_to_filter": [
     "live",
@@ -72,16 +72,12 @@
       "branch": "live",
       "branch_mapping": {
         "live": "live",
-        "master": "master"
+        "main": "main"
       }
     }
   ],
   "branch_target_mapping": {
     "live": [
-      "Publish",
-      "Pdf"
-    ],
-    "live-sxs": [
       "Publish",
       "Pdf"
     ]
