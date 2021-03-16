@@ -14,12 +14,12 @@ metadata:
   author: greg-lindsay
   ms.author: greglin
   manager: laurawi
-  ms.openlocfilehash: 9be85d412a96351e8cb92013eb6ca0afe9b7c304
-  ms.sourcegitcommit: 7e1b351024e33926901ddbdc562ba12aea0b4196
+  ms.openlocfilehash: 0aa7a76d8b010991b7c3dbc7c4c12f35f3715acb
+  ms.sourcegitcommit: ea853f2dba67e63e6df33538670fd581e17facab
   ms.translationtype: HT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 03/03/2021
-  ms.locfileid: "11385135"
+  ms.lasthandoff: 03/15/2021
+  ms.locfileid: "11408802"
 landingContent:
 - title: Surface Hub 2S の導入準備
   linkLists:
@@ -27,8 +27,8 @@ landingContent:
     links:
     - text: Surface Hub Windows 10 Team 2020 更新プログラム - 2 月の状況
       url: https://techcommunity.microsoft.com/t5/surface-it-pro-blog/surface-hub-windows-10-team-2020-update-february-status/ba-p/2118369
-    - text: Windows Update から入手可能な Surface Hub v1 の 2020 更新プログラム
-      url: https://techcommunity.microsoft.com/t5/surface-it-pro-blog/2020-update-for-surface-hub-v1-available-via-windows-update/ba-p/2118370
+    - text: Surface Hub Windows 10 Team 2020 更新プログラム – Hub v1 の状況
+      url: https://techcommunity.microsoft.com/t5/surface-it-pro-blog/surface-hub-windows-10-team-2020-update-hub-v1-status/ba-p/2118371
     - text: Surface Hub 2S 85 インチを設置して取り付ける (準備ガイド)
       url: surface-hub-2s-85-install-mount.md
     - text: Windows 10 Team 2020 更新プログラムの新機能
@@ -103,6 +103,8 @@ landingContent:
       text: サービスと保証
     - url: surface-hub-2s-recover-reset.md
       text: Surface Hub 2S の回復と再設定
+    - url: device-reset-surface-hub.md
+      text: Surface Hub v1 をクラウドから復元する
     - url: support-solutions-surface-hub.md
       text: Surface Hub のサポート ソリューション
     - text: Surface Hub の更新の履歴
