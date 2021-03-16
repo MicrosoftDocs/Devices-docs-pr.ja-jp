@@ -12,12 +12,12 @@ ms.author: dansimp
 ms.topic: article
 ms.date: 03/10/2021
 ms.localizationpriority: medium
-ms.openlocfilehash: 4b6797a83936b919aa43a7ae9fc8ae4dd720223a
-ms.sourcegitcommit: f0c976664116c45605edf3d56c4f58119a246b93
+ms.openlocfilehash: 8d9a4f995abda4e005e8136ace62e10fb564c9b8
+ms.sourcegitcommit: ea853f2dba67e63e6df33538670fd581e17facab
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "11406640"
+ms.lasthandoff: 03/15/2021
+ms.locfileid: "11408812"
 ---
 # <a name="reset-or-recover-a-surface-hub"></a>Surface Hub のリセットまたは回復
 
@@ -37,7 +37,7 @@ ms.locfileid: "11406640"
 
 次のような理由で Surface Hub をリセットする必要がある場合があります。
 
-- 新しい会議スペース用にデバイスを再削除し、再構成する必要があります。
+- 新しい会議スペース用にデバイスを再利用し、再構成します。
 - ローカルでのデバイスの管理方法を変更したい。
 - デバイス アカウントまたは管理者アカウントのユーザー名またはパスワードが失われました。
 - 更新プログラムをインストールすると、デバイスのパフォーマンスが低下します。
@@ -49,18 +49,21 @@ ms.locfileid: "11406640"
 
 1. Surface Hub で **[設定]** を開きます。
 
-   ![Surface Hub の設定アプリを示す画像。](images/sh-settings.png)
+   > [!div class="mx-imgBorder"]
+   > ![Surface Hub の設定アプリを示す画像。](images/sh-settings.png)
 
 2. [ **セキュリティの更新&] を選択します**。
 
-   ![Surface Hub の設定アプリ&セキュリティ グループの更新プログラムを示す画像。](images/sh-settings-update-security.png)
+   > [!div class="mx-imgBorder"]
+   > ![Surface Hub の設定アプリ&セキュリティ グループの更新プログラムを示す画像。](images/sh-settings-update-security.png)
 
 3. [ **回復] を**選択し、[デバイスのリセット] **で**、[スタート] **を選択します**。
 
    > [!IMPORTANT]
    > デバイスをリセットする前に、BitLocker キーを使用できる状態にしてください。後でデバイスの入力を求めるメッセージが表示されます。 詳細については [、「Save your BitLocker key 」を参照してください](save-bitlocker-key-surface-hub.md)。 ハブが回復パーティションに再起動すると、BitLocker キーを入力するように求めるメッセージが表示されます。 このプロンプトをスキップすると、リセットが失敗します。
    
-   ![Surface Hub の設定アプリの [デバイスのリセット] オプションを示す画像。](images/sh-settings-reset-device.png)
+   > [!div class="mx-imgBorder"]
+   > ![Surface Hub の設定アプリの [デバイスのリセット] オプションを示す画像。](images/sh-settings-reset-device.png)
 
    リセット プロセスが完了すると、Surface Hub は最初の実行 [プログラムを再度開始](first-run-program-surface-hub.md) します。 リセット プロセスで問題が発生した場合は、Surface Hub を以前のオペレーティング システム イメージにロールバックし、[ようこそ] 画面を表示します。
 
@@ -86,7 +89,8 @@ ms.locfileid: "11406640"
 
 2. [ **クラウドからの回復] で、[** 今すぐ再起動 **する] を選択します**。
 
-   ![クラウドから回復する](images/recover-from-the-cloud.png)
+   > [!div class="mx-imgBorder"]
+   > ![クラウドから回復する](images/recover-from-the-cloud.png)
 
 ### <a name="recover-a-locked-surface-hub"></a>ロックされた Surface Hub を回復する
 
@@ -99,26 +103,31 @@ ms.locfileid: "11406640"
 3. Surface Hub をオンに戻す場合は、電源スイッチを使用します。 デバイスが起動し、[Surface Hub ロゴ] 画面が表示されます。 Surface Hub ロゴの下に回転ドットが表示されている場合は、電源スイッチを使用して Surface Hub を再度オフにします。  
 
 4. 手順 3 を 3 回繰り返します。または Surface Hub に [自動修復の準備] メッセージが表示されるまで繰り返します。 このメッセージが表示された後、Surface Hub は Windows RE 画面を表示します。
-
  
-5. [リセット **] を選択して Windows を再インストールします**。 
-![再インストールへのリセット](images/recover-from-cloud.png)
+5. **[リセット]** を選択します。 
 
-8. [クラウド **ダウンロード] を選択します。** 
+6. BitLocker キーの入力を求めるメッセージが表示されたら、次のいずれかの操作を行います。
+   - Surface Hub で BitLocker が保護する情報を保持するには、BitLocker キーを入力します。
+   - 保護された情報を破棄するには、[このドライブをスキップする] を選択します。
+
+7. [クラウド **ダウンロード] を選択します。** 
 
    ![クラウドダウンロード](images/recover-cloud-download.png)
 
->[!IMPORTANT]
->[ダウンロードできない] というエラー**** メッセージが表示された場合は、[キャンセル] を選択**し**、もう一度やり直してください。
+   >[!IMPORTANT]
+   >[ダウンロードできない] を示す**** エラー メッセージが表示された場合は、[**キャンセル**] を選択し、[リセット] を**再度選択**します。
 
-9. [**ドライブを完全にクリーンアップする] を選択します。**  
-![ドライブの回復と完全なクリーン](images/recover-fully-clean-drive.png)
+8. [ **ドライブを完全にクリーンアップする] を選択します。**
+ 
+   ![ドライブの回復と完全なクリーン](images/recover-fully-clean-drive.png)
 
-10. このデバイスをリセットする **準備ができているかという質問が表示されます**。 **[リセット]** を選択します。 
-![リセットの回復と確認](images/recover-confirm-reset.png)
+9. このデバイスをリセットする **準備ができているかという質問が表示されます**。 **[リセット]** を選択します。 
+   
+   ![リセットの回復と確認](images/recover-confirm-reset.png)
 
-11. ダウンロードが開始され、回復プロセスは、このデバイス **のリセットを示します**。 
-![進行中の回復](images/recover-in-progress.png)
+10. ダウンロードが開始され、回復プロセスは、このデバイス **のリセットを示します**。
+
+    ![進行中の回復](images/recover-in-progress.png)
 
 ## <a name="contact-support"></a>サポートに問い合わせ
 
