@@ -17,7 +17,7 @@ ms.reviewer: irenewhite
 description: 翌営業日交換の情報と対象地域について説明します。
 ms.openlocfilehash: e3634ff69729ac7e4452dbaecea191b7253e5686
 ms.sourcegitcommit: 7e1b351024e33926901ddbdc562ba12aea0b4196
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 03/03/2021
 ms.locfileid: "11385155"
@@ -26,7 +26,7 @@ ms.locfileid: "11385155"
 
 交換用の Surface デバイスが翌営業日までに施設に配送される有料サービスです。 
 
-次の営業日の交換は、米国、カナダ、ヨーロッパ (オーストリア、ベルギー、チェコ共和国、フランス、ドイツ、オランダ、ポーランド、英国)、オーストラリア、シンガポール、日本のビジネスプラス保護プランで利用できます。 これらのサービスは、担当者が交換用デバイスが必要であると判断し、在庫があり、マイクロソフトが事前に決定した標準の締め切り時間までに交換品を注文した後に適用されます。 
+翌営業日交換は、米国、カナダ、ヨーロッパ (オーストリア、ベルギー、チェコ共和国、フランス、ドイツ、オランダ、ポーランド、英国)、オーストラリア、シンガポール、日本での Complete for Business Plus 保護プランでご利用いただけます。 これらのサービスは、担当者が交換用デバイスが必要であると判断し、在庫があり、マイクロソフトが事前に決定した標準の締め切り時間までに交換品を注文した後に適用されます。 
 
 ## <a name="guidelines"></a>ガイドライン
 
@@ -47,7 +47,7 @@ ms.locfileid: "11385155"
 
 ##  <a name="available-areas-in-japan"></a>日本で利用可能な領域 
 
-これは、日本の次の地域で利用可能になります。 詳細については [、「Surface Complete for Business Plus (日本)」を参照してください。](https://cdn.techcommunity.microsoft.com/assets/Surface/jp-next-day-replace-surface.pdf)
+これは、日本の次の地域で利用可能になります。 詳細については、「[Surface Complete for Business Plus (日本)](https://cdn.techcommunity.microsoft.com/assets/Surface/jp-next-day-replace-surface.pdf)」を参照してください。
 
 - 青森県
 - 岩手県
@@ -65,7 +65,7 @@ ms.locfileid: "11385155"
 - 石川県
 - 福井県
 - 山梨県
-- 名古屋市
+- 長野県
 - 岐阜県
 - 静岡県
 - 愛知県
@@ -76,7 +76,7 @@ ms.locfileid: "11385155"
 - 兵庫県
 - 奈良県
 - 和歌山県
-- 鳥取
+- 鳥取県
 - 広島県
-- やまぐち
+- 山口県
 
