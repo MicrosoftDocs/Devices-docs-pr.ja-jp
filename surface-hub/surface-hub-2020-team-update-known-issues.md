@@ -11,12 +11,12 @@ audience: Admin
 ms.topic: article
 ms.date: 02/09/2021
 ms.localizationpriority: Medium
-ms.openlocfilehash: ddfa9369c03296d9a7792ee0b28bf3b91163b9c7
-ms.sourcegitcommit: f0c976664116c45605edf3d56c4f58119a246b93
+ms.openlocfilehash: 903307112433d794052a4a4e9694f3e793d248c8
+ms.sourcegitcommit: 8b35cdee6c638359403697711ee53d07cca6ee51
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "11406600"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "11442115"
 ---
 # <a name="known-issues-windows-10-team-2020-update"></a>既知の問題: Windows 10 Team 2020 Update 
 
@@ -37,4 +37,3 @@ Surface Hub が最新の更新プログラムを確実に受信するには、�
 | 電話を使用して Surface Hub にサインインすると、Azure Active Directory に参加しているデバイスでシングル サインオンが失敗する | IT 管理者が、パスワードレス認証を使用[](surface-hub-2s-phone-authenticate.md)して Surface Hub にサインインするようにテナントを構成し、デバイスが AAD に参加している場合、ユーザーは電話などのモバイル デバイスを使用してサインインできません。                                                                                                       | Surface Hub に手動でサインインします。                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
 | エッジ レガシ ブラウザー Web Notes を使用する場合は、電子メールで共有できません。 | Web メモを作成し、共有フローを通過してメモを電子メールで送信すると、[送信] ボタンは表示されません。 そのため、メモを電子メールで共有することはできません。 | 2020 更新プログラムがインストールされている Surface Hub を新しい Microsoft Edge ブラウザーにアップグレードし、電子メールを介してメモを共有すると、そのブラウザーで動作します。<br> <br>**詳細 :** Surface [Hub に新しい Microsoft Edge をインストールする](surface-hub-install-chromium-edge.md) |
 | アクション センターには、クリックできない [設定] リンクがあります。 | このリンクは Windows 10 Team には表示されません。混乱を招く可能性があります。   | この機能は、2020 の更新プログラム以前と同じです。[スタート] メニューの [アプリ] セクションを使用して、設定アプリを起動する必要があります。    |
-| 2020 年 11 月 24 日に Windows 10 Team 2020 for 2S 用の更新プログラムを更新した後、シリアル番号のすべての 0 を報告するハブ 2S デバイス。 | Windows 10 Team 2020 用の Surface Hub 2S 2S 11 月 24 日の更新プログラムをインストールするか、Windows 10 Team 2020 回復イメージ (BMR) をインストールした後、一部のデバイスではシリアル番号のすべてのゼロが報告されています。 これにより、デバイスは MDM プロバイダーに登録できません。  | この問題は、デバイスに Surface **SMC ファームウェア更新プログラム 1.177.139.0** がインストールされていない場合に発生しました (9 月 1 日の一部、 2020 Windows 10 Team Creators Update) に移行する前に SMC ファームウェア更新プログラム **3.91.139.0** (元の Windows 10 Team 2020 BMR、または Windows 10 Team 2020 の 2020 年 11 月 24 日の更新プログラムの一部に含まれています)。 **Surface SMC ファームウェア更新プログラム 3.93.139.0**が現在の Windows 10 Team 2020 BMR に含まれていて、Windows Update を介して Surface Hub 2S デバイスに提供されたので、この問題は発生しなくなりました。 既に影響を受けるデバイスには、ファームウェア更新プログラムのインストール後に新しいシリアル番号が生成されます。 インストールを完了するには、更新プログラムのインストール後にデバイスを 2 回再起動する必要があります。 **詳細については、「Surface** [Hub の更新履歴」を参照してください](surface-hub-update-history.md)。 |

@@ -1,140 +1,81 @@
 ---
-title: Microsoft Surface Hub の環境を準備する (v1)
-description: このセクションでは、Microsoft Surface Hub の全機能を使用できるように環境を準備するために必要な手順の概要を説明します。
+title: Microsoft Surface Hub 用の環境の準備
+description: このページでは、Surface Hub v1 または Surface Hub 2S のセットアップと管理の依存関係について説明します。
 ms.assetid: 336A206C-5893-413E-A270-61BFF3DF7DA9
 ms.reviewer: ''
 manager: laurawi
-keywords: 環境の準備, Surface Hub の機能, デバイス アカウントの作成およびテスト, ネットワークが使用可能かどうかの確認
+keywords: 準備環境, Surface Hub, デバイス アカウント, ネットワーク可用性, M365 エンドポイント, Intune
 ms.prod: surface-hub
 ms.sitesec: library
 author: dansimp
 ms.author: dansimp
 ms.topic: article
-ms.date: 03/03/2021
+ms.date: 03/16/2021
 ms.localizationpriority: medium
 appliesto:
 - Surface Hub
-ms.openlocfilehash: 075724153709fd86ccc00ef98ad532bf45557714
-ms.sourcegitcommit: 5c904229a0257297be7f724c264e484d2c4b5168
+- Surface Hub 2S
+ms.openlocfilehash: 33724f84171cb9485bd20ff5c437ad8b3f60a463
+ms.sourcegitcommit: 8b35cdee6c638359403697711ee53d07cca6ee51
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "11387448"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "11442125"
 ---
-# <a name="prepare-your-environment-for-microsoft-surface-hub-v1"></a>Microsoft Surface Hub の環境を準備する (v1)
-
-
-ここでは、設定の依存関係とセットアップ プロセスの概要を示します。 環境の準備に役立つ情報を確認し、Surface Hub のセットアップに必要な情報を収集します。
-
-
-## <a name="review-infrastructure-dependencies"></a>インフラストラクチャの依存関係の確認
-お使いの IT インフラストラクチャで Surface Hub の機能が確実に動作するように、次の依存関係を確認してください。
-
-| 依存関係        | 目的           |
-|-------------|------------------|
-| Active Directory または Azure Active Directory (Azure AD) | <p>Surface Hub は、Active Directory または Azure AD のアカウント (**デバイス アカウント**と呼ばれます) を使用して Exchange および Skype for Business のサービスにアクセスします。 デバイス アカウントの資格情報を検証し、デバイス アカウントの表示名、エイリアス、Exchange サーバー、セッション開始プロトコル (SIP) アドレスなどの情報にアクセスすることを目的に、Surface Hub が Active Directory ドメイン コントローラーまたは Azure AD テナントに接続できる必要があります。</p>また、Surface Hub のドメイン参加または Azure AD 参加により、承認されたユーザーのグループによる Surface Hub の設定の構成が可能になります。 |
-| Exchange (Exchange 2013 以降または Exchange Online)、Exchange ActiveSync | <p>Exchange は、メールとカレンダーの機能を有効にするために使用されます。また、デバイスを使用しているユーザーが会議出席依頼を Surface Hub に送信できるようになり、ワンタッチでの会議参加が可能になります。</p>ActiveSync は、デバイス アカウントのカレンダーとメールを Surface Hub に同期するために使用されます。 デバイスで ActiveSync を使用できない場合は、ようこそ画面に会議が表示されず、会議への参加とホワイトボードのメール送信が有効になりません。 |
-| Skype for Business (Lync Server 2013 以降または Skype for Business Online)  | Skype for Business は、ビデオ通話、インスタント メッセージング、画面の共有など、さまざまな会議機能に使用されます。|
-| モバイル デバイス管理 (MDM) ソリューション (Microsoft Intune、Microsoft Endpoint Configuration Manager、またはサポートされているサードパーティ MDM プロバイダー) | リモートで同時に複数のデバイスに設定を適用し、アプリをインストールするには、MDM ソリューションをセットアップして、そのソリューションにデバイスを登録する必要があります。 詳しくは、「[MDM プロバイダーによる設定の管理](manage-settings-with-mdm-for-surface-hub.md)」をご覧ください。 |
-|Azure Monitor   | Azure Monitor は、Surface Hub デバイスの正常性を監視するために使用されます。 正常性を [追跡するには、「Azure Monitor で Surface Hubs を監視する」を参照してください](https://docs.microsoft.com/azure/azure-monitor/insights/surface-hubs)。 
-| ネットワークとインターネット アクセス   | Surface Hub が正常に機能するには、ワイヤード (有線) またはワイヤレス ネットワークへのアクセスが必要です。 一般的には、ワイヤード (有線) 接続をお勧めします。 802.1X 認証は、ワイヤード (有線) 接続とワイヤレス接続の両方をサポートします。</br></br></br>**802.1X 認証:** Surface Hub の Windows 10 Version 1703 では、ワイヤード (有線) およびワイヤレス接続用に 802.1X 認証が既定で有効になっています。 組織で 802.1X 認証を使用しない場合、構成の必要はなく、Surface Hub は引き続き通常どおりに機能します。 802.1X 認証を使用する場合は、Surface Hub に認証証明書がインストールされていることを確認する必要があります。 MDM で [ClientCertificateInstall CSP](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/clientcertificateinstall-csp) を使用して、Surface Hub に証明書を配布することも、[プロビジョニング パッケージを作成](provisioning-packages-for-surface-hub.md)して、最初の実行時または設定アプリでインストールすることもできます。 証明書が Surface Hub に適用されると、802.1X 認証は自動的に機能し始めます。</br><br>**注:** Surface Hub で 802.1X ワイヤード (有線) 認証を有効にする方法の詳細については、「[802.1x ワイヤード (有線) 認証を有効にする](enable-8021x-wired-authentication.md)」をご覧ください。</br></br>**動的 IP:** 静的 IP を使うように Surface Hub を構成することはできません。 IP アドレスを割り当てるには DHCP を使う必要があります。</br></br>**プロキシ サーバー:** インターネット サービスに到達するためにプロキシ サーバーへの接続がトポロジによって求められる場合は、最初の実行時または [設定] でこの接続を構成できます。 プロキシの資格情報は、Surface Hub のセッション間で保存されるため、設定は一度だけで済みます。 |
-
-さらに、Surface Hub では次のポートを開けておくことが求められます。
-- HTTPS: 443
-- HTTP: 80
-- NTP: 123
-
-Skype for Business で Surface Hub を使用している場合は、追加のポートを開く必要があります。 以下のガイダンスに従ってください。
-- Skype for Business Online を使用する場合は [、「Office 365 IP URL と IP アドレス範囲」を参照してください](https://support.office.com/article/Office-365-URLs-and-IP-address-ranges-8548a211-3fe7-47cb-abb1-355ea5aa88a2?ui=en-US&rs=en-US&ad=US)。
-- Skype for Business Server を使用する場合は、「Skype for Business Server: 内部サーバーのポートと [プロトコル」を参照してください](https://docs.microsoft.com/SkypeForBusiness/plan-your-deployment/network-requirements/ports-and-protocols)。 
-- Skype for Business Online と Skype for Business Server のハイブリッドを使用する場合は [、Office 365 IP URL](https://support.office.com/article/Office-365-URLs-and-IP-address-ranges-8548a211-3fe7-47cb-abb1-355ea5aa88a2?ui=en-US&rs=en-US&ad=US) と IP アドレス範囲 [、Skype for Business Server:](https://docs.microsoft.com/SkypeForBusiness/plan-your-deployment/network-requirements/ports-and-protocols?toc=/SkypeForBusiness/toc.json&bc=/SkypeForBusiness/breadcrumb/toc.json)内部サーバーのポートとプロトコルからすべてのドキュメント ポートを開く必要があります。
-
-Microsoft は、Surface Hub エクスペリエンスの改善に役立てるために、診断データを収集します。 以下のサイトを許可リストに追加してください。
-- 診断データ クライアント エンドポイント: `https://vortex.data.microsoft.com/`
-- 診断データ設定エンドポイント: `https://settings.data.microsoft.com/`
-
-### <a name="proxy-configuration"></a>プロキシの構成
-
-ネットワーク上のコンピューターがインターネットに接続できないように社内で制限している場合、ビジネス向け Microsoft Store を利用するデバイスのために、いくつかの URL を利用可能な状態にしておく必要があります。 ビジネス向け Store のいくつかの機能には、Microsoft Store アプリと Microsoft Store Services が使われています。 ビジネス向け Store を使ってアプリを取得、インストール、更新するデバイスは、以下の URL にアクセスします。 プロキシ サーバーを使ってトラフィックをブロックしている場合、実際の構成でこれらの URL を許可する必要があります。
-
-- login.live.com
-- login.windows.net
-- account.live.com
-- clientconfig.passport.net
-- windowsphone.com
-- *.wns.windows.com
-- *.microsoft.com
-- www.msftncsi.com (Windows 10 バージョン 1607 より前の場合)
-- www.msftconnecttest.com/connecttest.txt (Windows 10 バージョン 1607 以降の場合。www.msftncsi.com に置き換わる URL です)
-
-
-## <a name="work-with-other-admins"></a>他の管理者との連携
-
-Surface Hub は、他の少数の製品やサービスと連携しています。 組織の規模によっては、お使いの環境に含まれるさまざまな製品をサポートする担当者が複数存在することがあります。 Exchange、Active Directory (または Azure Active Directory)、モバイル デバイス管理 (MDM)、およびネットワーク リソースの管理者を計画に含めて、Surface Hub の展開を準備してください。 
-
-
-## <a name="create-and-verify-device-account"></a>デバイス アカウントの作成と検証
-
-デバイス アカウントは、会議カレンダーの表示、Skype for Business 通話への参加、メールの送信、(オプションの) Exchange への認証などの目的で、Surface Hub で使用される Exchange リソース アカウントです。 詳しくは、「[デバイス アカウントの作成およびテスト](create-and-test-a-device-account-surface-hub.md)」をご覧ください。
-
-デバイス アカウントを作成した後、正しくセットアップされていることを確認するには、Surface Hub デバイス アカウント検証 PowerShell スクリプトを実行します。 詳細については、このガイドの「[Surface Hub 用 PowerShell スクリプト](appendix-a-powershell-scripts-for-surface-hub.md)」をご覧ください。 
+# <a name="prepare-your-environment-for-microsoft-surface-hub"></a>Microsoft Surface Hub 用の環境の準備
 
  
+このページでは、Surface Hub v1 または Surface Hub 2S のセットアップと管理の依存関係について説明します。
+ 
 
-## <a name="prepare-for-first-run-program"></a>最初の実行プログラム用の準備 
-[最初の実行プログラム](first-run-program-surface-hub.md)を開始する前に、あといくつかの点を考慮する必要があります。  
+## <a name="infrastructure-dependencies"></a>インフラストラクチャの依存関係
 
-### <a name="create-provisioning-packages-optional"></a>プロビジョニング パッケージの作成 (省略可能)
-プロビジョニング パッケージを使用して、証明書の追加、設定のカスタマイズ、アプリのインストールを行うことができます。 詳しくは、「[プロビジョニング パッケージの作成](provisioning-packages-for-certificates-surface-hub.md)」をご覧ください。 [プロビジョニング パッケージは、最初の実行でインストール](first-run-program-surface-hub.md#first-page)することができます。
+お使いの IT インフラストラクチャで Surface Hub の機能が確実に動作するように、次の依存関係を確認してください。
+ 
+ 
+| 依存関係                                                                                                                                  | 説明                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               | 詳細情報                                                                                                                                                                                                                                                                                 |
+| ------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| オンプレミス サービスと Active Directory または M365                                                                                           |  Surface Hub は、Active Directory または Azure AD アカウント (デバイス アカウントと呼 **ばれる)** を使用して、Exchange および Teams (または Skype for Business) サービスにアクセスします。 デバイス アカウントの資格情報を検証し、デバイス アカウントの表示名、エイリアス、Exchange サーバー、セッション開始プロトコル (SIP) アドレスなどの情報にアクセスすることを目的に、Surface Hub が Active Directory ドメイン コントローラーまたは Azure AD テナントに接続できる必要があります。  <br><br>**メモ: Surface Hubs は、Microsoft Teams、Skype for Business Server 2019、Skype for Business Server 2015、または Skype for Business Online で動作します。 Lync Server 2013 などの以前のプラットフォームはサポートされていません。 Surface Hubs は、GCC High 環境または DoD 環境ではサポートされていません。**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         | [Microsoft 365 エンドポイント](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-endpoints) <br> <br> [デバイス アカウントの作成およびテスト](create-and-test-a-device-account-surface-hub.md)                                                                                                                                                    |
+| Windows Update、ストア、診断                                                                                                       | Windows Update または Windows Update for Business へのアクセスは、OS 機能と品質更新プログラムを使用して Surface Hub を維持するために必要です。 アプリを管理するには、Microsoft Store へのアクセスが必要です。                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              | [Windows 10 Enterprise バージョン 20H2 の接続エンドポイントの管理](https://docs.microsoft.com/windows/privacy/manage-windows-20h2-endpoints)<br> <br>[Surface Hub で Windows 更新プログラムを管理する](manage-windows-updates-for-surface-hub.md) |
+| モバイル デバイス管理 (MDM) ソリューション (Microsoft Intune、Microsoft Endpoint Configuration Manager、またはサポートされているサードパーティ MDM プロバイダー) | リモートで同時に複数のデバイスに設定を適用し、アプリをインストールするには、MDM ソリューションをセットアップして、そのソリューションにデバイスを登録する必要があります。                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        | [Microsoft Intune のネットワーク エンドポイント](https://docs.microsoft.com/mem/intune/fundamentals/intune-endpoints)<br> <br>[MDM プロバイダーによる設定の管理](manage-settings-with-mdm-for-surface-hub.md)                                  |
+| Azure Monitor                                                                                                                               | Azure Monitor を使用すると、Surface Hub デバイスの正常性を監視できます。 <br><br>**注: Surface Hubs は現在、Azure Monitor が利用する Log Analytics サービスと通信するためのプロキシ サーバーの使用をサポートしません。**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  | [Log Analytics エンドポイント](https://docs.microsoft.com/azure/azure-monitor/agents/log-analytics-agent#firewall-requirements)<br> <br> [Azure Monitor を使用して Surface Hubs を監視し、正常性を追跡します](https://docs.microsoft.com/azure/azure-monitor/insights/surface-hubs)。                                                                                                                                               |
+| ネットワーク アクセス                                                                                                                              |  Surface Hubs は、有線接続とワイヤレス接続の両方をサポートします (有線接続が推奨されます)。 <br> <br>**802.1X 認証**<br>Windows 10 Team 20H2 では、有線およびワイヤレス接続の 802.1X 認証が既定で有効になっていますが、802.1x ネットワーク プロファイルと認証証明書が Surface Hub にもインストールされていることを確認する必要があります。 Intune または他のモバイル デバイス管理ソリューションを使用して Surface Hub を管理する場合は [、ClientCertificateInstall CSP](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/clientcertificateinstall-csp)を使用して証明書を配信できます。 それ以外の場合は、プロビジョニング パッケージを [作成](provisioning-packages-for-surface-hub.md) し、最初の実行時にインストールするか、設定アプリを使用してインストールできます。 証明書が適用されると、802.1X 認証が自動的に開始されます。<br> <br>**動的 IP**<br>静的 IP を使用するように Surface Hubs を構成することはできません。 DHCP を介して IP アドレスを割り当てる必要があります。<br> <br>**ポート**<br>Surface Hub には、次の開いているポートが必要です。<br><br>HTTPS: 443<br>HTTP: 80<br>NTP: 123 | [802.1x ワイヤード (有線) 認証を有効にする](enable-8021x-wired-authentication.md)  <br><br>[Surface Hub 2S 用プロビジョニング パッケージの作成](surface-hub-2s-deploy.md)                                                                                 |
 
-### <a name="set-up-admin-groups"></a>管理者グループのセットアップ
-デバイスで設定アプリを使用すると、すべての Surface Hub をローカルで構成できます。 承認されていないユーザーによって設定が変更されるのを防ぐため、設定アプリでは、アプリを起動する際に管理者の資格情報が求められます。 管理者グループを設定および管理する方法の詳細については、「[管理者グループの管理](admin-group-management-for-surface-hub.md)」をご覧ください。 [デバイスの管理者は最初の実行時にセットアップ](first-run-program-surface-hub.md#setup-admins)します。
+## <a name="device-affiliation"></a>デバイスの所属
+
+デバイスの所属を使用して、Surface Hub の設定アプリへのユーザー アクセスを管理します。 Windows 10 Team オペレーティング システム (Surface Hub で実行される) では、承認されたユーザーのみが設定アプリを使用して設定を調整できます。 所属を選択すると機能の可用性に影響を与える可能性があるから、ユーザーが意図した通り機能にアクセスできるよう適切に計画してください。
+ 
+ 
+> [!NOTE]
+> デバイスの所属は、最初のアウトオブボックス エクスペリエンス (OOBE) セットアップ中にのみ設定できます。 デバイスの所属をリセットする必要がある場合は、OOBE セットアップを繰り返す必要があります。
+ 
+
+### <a name="no-affiliation"></a>所属なし
+
+各 Surface Hub に異なるローカル管理者アカウントを持つワークグループに Surface Hub を含む所属はありません。 [所属なし] を選択した場合は、BitLocker キーを USB サム [ドライブにローカルに保存する必要があります](https://docs.microsoft.com/surface-hub/save-bitlocker-key-surface-hub)。 Intune でデバイスを登録することもできます。ただし、OOBE 中に構成されたアカウント資格情報を使用して、ローカル管理者だけが設定アプリにアクセスできます。 管理者アカウントのパスワードは、設定アプリから変更できます。
+ 
+
+### <a name="active-directory-domain-services"></a>Active Directory Domain Services
+
+Surface Hub をオンプレミスの Active Directory ドメイン サービスに関連付けられている場合は、ドメインのセキュリティ グループを使用して設定アプリへのアクセスを管理する必要があります。 これにより、すべてのセキュリティ グループ メンバーに Surface Hub の設定を変更するアクセス許可が付与されます。 また、Surface Hub がオンプレミスの Active Directory ドメイン サービスに関連付けられている場合、BitLocker キーを Active Directory スキーマに保存できます。 詳細については、「組織を BitLocker 用に準備する: 計画と [ポリシー」を参照してください](https://docs.microsoft.com/windows/security/information-protection/bitlocker/prepare-your-organization-for-bitlocker-planning-and-policies)。
+ 
+組織の信頼されたルート CA は Surface Hub の同じコンテナーにプッシュされます。つまり、プロビジョニング パッケージを使用してインポートする必要はありません。
+ 
+デバイスを Intune に登録して、Surface Hub の設定を一方的に管理することもできます。
+ 
+
+### <a name="azure-active-directory"></a>Azure Active Directory
+
+Surface Hub を Azure Active Directory (Azure AD) に関連付け選択すると、グローバル管理者セキュリティ グループのすべてのユーザーが Surface Hub の設定アプリにサインインできます。 また、Surface Hub の設定アプリの管理にアクセス許可を制限するグローバル管理者以外のアカウントを構成することもできます。 これにより、Surface Hub の管理者アクセス許可のみを対象範囲に設定し、Azure サーバードメイン全体で望ましくない可能性のある管理者アクセスをADできます。
+
+組織で [Intune 自動登録を有効](https://docs.microsoft.com/mem/intune/enrollment/windows-enroll#enable-windows-10-automatic-enrollment) にした場合、Surface Hub は Intune に自動的に登録します。 デバイスの BitLocker キーは、Azure サーバーに自動的にAD。
+
+Azure を使用して Surface Hub を管理する方法の詳細についてはADを参照してください。
+
+- [管理者グループの管理](admin-group-management-for-surface-hub.md)
+- [Surface Hub でグローバル管理者以外のアカウントを構成する](surface-hub-2s-nonglobal-admin.md)
 
 ### <a name="review-and-complete-surface-hub-setup-worksheet-optional"></a>Surface Hub セットアップ ワークシートの確認と完了 (省略可能)
+
 Surface Hub 用に最初の実行プログラムを実行する場合、指定する必要のある情報がいくつかあります。 セットアップ ワークシートを使用すると、指定する必要のある情報をまとめて、最初の実行プログラムを実行する場合に必要な環境固有の情報を一覧にすることができます。 詳しくは、「[セットアップのワークシート](setup-worksheet-surface-hub.md)」をご覧ください。
-
-
-## <a name="in-this-section"></a>このセクションの内容
-
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left">トピック</th>
-<th align="left">説明</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><p><a href="create-and-test-a-device-account-surface-hub.md" data-raw-source="[Create and test a device account](create-and-test-a-device-account-surface-hub.md)">デバイス アカウントの作成およびテスト</a></p></td>
-<td align="left"><p>このトピックでは、Skype と通信するために Surface Hub で使用するデバイス アカウントを作成およびテストする方法について説明します。</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p><a href="provisioning-packages-for-certificates-surface-hub.md" data-raw-source="[Create provisioning packages](provisioning-packages-for-certificates-surface-hub.md)">プロビジョニング パッケージの作成</a></p></td>
-<td align="left"><p>Windows 10 では、レジストリやコンテンツ サービス プラットフォーム (CSP) を使用する設定を、プロビジョニング パッケージによって構成することができます。 また、プロビジョニングを使用して、初回実行プロセスで証明書を追加することもできます。</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p><a href="admin-group-management-for-surface-hub.md" data-raw-source="[Admin group management](admin-group-management-for-surface-hub.md)">管理者グループの管理</a></p></td>
-<td align="left"><p>デバイスで設定アプリを起動すると、すべての Surface Hub を個別に構成できます。 ただし、管理者でないユーザーによって設定が変更されるのを防ぐため、設定アプリでは、アプリを起動して設定を変更する際に管理者の資格情報が求められます。</p>
-<p>設定アプリを開くには、ローカル管理者の資格情報が必要です。</p></td>
-</tr>
-</tbody>
-</table>
-
-## <a name="more-information"></a>詳細情報
-
-- [ブログの投稿: Surface Hub と Skype for Business の信頼される側のドメインの一覧](https://blogs.technet.microsoft.com/y0av/2017/10/25/95/)
-- [ブログの投稿: マルチドメイン環境での Surface Hub](https://blogs.technet.microsoft.com/y0av/2017/11/08/11/)
-- [ブログの投稿: Surface Hub のプロキシの構成](https://blogs.technet.microsoft.com/y0av/2017/12/03/7/)
-
- 
-
- 
-
-
-
-
 
