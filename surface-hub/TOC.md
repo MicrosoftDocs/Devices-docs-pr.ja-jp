@@ -22,7 +22,7 @@
 #### [セットアップのワークシート](setup-worksheet-surface-hub.md)
 #### [Surface Hub 2S のポート/キーパッド概要](surface-hub-2s-port-keypad-overview.md)
 #### [デバイスを Surface Hub 2S に接続する](surface-hub-2s-connect.md)
-### [Microsoft Surface Hub 2S 用の環境の準備](surface-hub-2s-prepare-environment.md)
+### [Microsoft Surface Hub 用の環境の準備](prepare-your-environment-for-surface-hub.md)
 
 
 ## 展開

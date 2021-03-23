@@ -14,12 +14,12 @@ ms.reviewer: jesko
 manager: laurawi
 ms.audience: itpro
 ms.date: 3/19/2021
-ms.openlocfilehash: 1fbbf899876d154469d48fa75a179196697205c1
-ms.sourcegitcommit: 8b35cdee6c638359403697711ee53d07cca6ee51
+ms.openlocfilehash: 9c3302616de97cf60b7d750948fed653456a7cba
+ms.sourcegitcommit: 6c362c5d5f67449f1adf4618847093eaf6ad087b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "11442167"
+ms.lasthandoff: 03/22/2021
+ms.locfileid: "11442891"
 ---
 # <a name="wake-on-lan-for-surface-devices"></a><span data-ttu-id="ac30d-104">Surface デバイス での Wake On LAN の使用</span><span class="sxs-lookup"><span data-stu-id="ac30d-104">Wake On LAN for Surface devices</span></span>
 
@@ -44,7 +44,7 @@ ms.locfileid: "11442167"
 <span data-ttu-id="ac30d-120">Microsoft Endpoint Configuration Manager やサード パーティの Microsoft Store アプリなどの多くの管理ソリューションは、WOL の組み込みのサポートを提供します。</span><span class="sxs-lookup"><span data-stu-id="ac30d-120">Many management solutions, such as Microsoft Endpoint Configuration Manager and third party Microsoft Store apps provide built-in support for WOL.</span></span> <span data-ttu-id="ac30d-121">デバイスは、接続スタンバイ (スリープ) モードで AC 電源に接続されている必要があります。</span><span class="sxs-lookup"><span data-stu-id="ac30d-121">Note that devices need to be in Connected Standby (Sleep) mode and connected to AC power.</span></span> <span data-ttu-id="ac30d-122">エンドポイント構成マネージャーを使用してデバイスを起動する方法の詳細については [、「Configure Wake on LAN - Configuration Manager」を参照してください](https://docs.microsoft.com/mem/configmgr/core/clients/deploy/configure-wake-on-lan)。</span><span class="sxs-lookup"><span data-stu-id="ac30d-122">To learn more about waking devices with Endpoint Configuration Manager, see [Configure Wake on LAN - Configuration Manager](https://docs.microsoft.com/mem/configmgr/core/clients/deploy/configure-wake-on-lan).</span></span>
 
 
-## <a name="to-check-wol-is-enabled-on-your-device"></a><span data-ttu-id="ac30d-123">デバイスで WOL が有効になっているのを確認するには</span><span class="sxs-lookup"><span data-stu-id="ac30d-123">To check WOL is enabled on your device</span></span>
+### <a name="to-check-wol-is-enabled-on-your-device"></a><span data-ttu-id="ac30d-123">デバイスで WOL が有効になっているのを確認するには</span><span class="sxs-lookup"><span data-stu-id="ac30d-123">To check WOL is enabled on your device</span></span>
 
 1. <span data-ttu-id="ac30d-124">イーサネット接続デバイスで、ネットワーク アダプターを選択し、[プロパティ] を **選択します**。</span><span class="sxs-lookup"><span data-stu-id="ac30d-124">On your Ethernet connected device, select your network adapter, and then select **Properties**.</span></span>
 
