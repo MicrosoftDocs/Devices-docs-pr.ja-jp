@@ -7,20 +7,19 @@ ms.date: 02/19/2021
 audience: Admin
 ms.topic: article
 ms.prod: surface
-localization_priority: medium
-ROBOTS: NO INDEX, NO FOLLOW
+localization_priority: high
 ms.custom: references_regions
 appliesto:
 - Surface
 - Surface Hub
 ms.reviewer: irenewhite
 description: 翌営業日交換の情報と対象地域について説明します。
-ms.openlocfilehash: e3634ff69729ac7e4452dbaecea191b7253e5686
-ms.sourcegitcommit: 7e1b351024e33926901ddbdc562ba12aea0b4196
+ms.openlocfilehash: febc81156fea88d1f08ef162152b9cde6d78a559
+ms.sourcegitcommit: 8b35cdee6c638359403697711ee53d07cca6ee51
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "11385155"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "11442135"
 ---
 # <a name="next-business-day-replacement-information--coverage-areas"></a>翌営業日交換の情報と対象地域
 
@@ -36,7 +35,7 @@ ms.locfileid: "11385155"
 
 ### <a name="table-1-replacement-request-cutoff-times-by-locale"></a>表 1. 置換要求の締め切り時間 (ロケール別)
 
-| 国                                                                                                    | 締め切り時間 |
+| ロケール                                                                                                    | 締め切り時間 |
 | -------------------------------------------------------------------------------------------------------------- | --------------- |
 | **米国およびカナダ**                                                                                     | 14:00 CST    (UTC-6)      |
 | **ヨーロッパ** (オーストリア、ベルギー、チェコ共和国、フランス、ドイツ、オランダ、ポーランド、英国に限る) | 12:00 CET   (UTC+1)     |
