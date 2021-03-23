@@ -14,12 +14,12 @@ ms.reviewer: jesko
 manager: laurawi
 ms.audience: itpro
 ms.date: 3/19/2021
-ms.openlocfilehash: 1fbbf899876d154469d48fa75a179196697205c1
-ms.sourcegitcommit: 8b35cdee6c638359403697711ee53d07cca6ee51
+ms.openlocfilehash: 9c3302616de97cf60b7d750948fed653456a7cba
+ms.sourcegitcommit: 6c362c5d5f67449f1adf4618847093eaf6ad087b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "11442167"
+ms.lasthandoff: 03/22/2021
+ms.locfileid: "11442891"
 ---
 # <a name="wake-on-lan-for-surface-devices"></a>Surface デバイス での Wake On LAN の使用
 
@@ -44,7 +44,7 @@ IT 管理者は、対象のコンピューターの MAC アドレスを含むウ
 Microsoft Endpoint Configuration Manager やサード パーティの Microsoft Store アプリなどの多くの管理ソリューションは、WOL の組み込みのサポートを提供します。 デバイスは、接続スタンバイ (スリープ) モードで AC 電源に接続されている必要があります。 エンドポイント構成マネージャーを使用してデバイスを起動する方法の詳細については [、「Configure Wake on LAN - Configuration Manager」を参照してください](https://docs.microsoft.com/mem/configmgr/core/clients/deploy/configure-wake-on-lan)。
 
 
-## <a name="to-check-wol-is-enabled-on-your-device"></a>デバイスで WOL が有効になっているのを確認するには
+### <a name="to-check-wol-is-enabled-on-your-device"></a>デバイスで WOL が有効になっているのを確認するには
 
 1. イーサネット接続デバイスで、ネットワーク アダプターを選択し、[プロパティ] を **選択します**。
 

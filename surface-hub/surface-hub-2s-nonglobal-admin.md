@@ -1,7 +1,7 @@
 ---
-title: Surface Hub 2S でグローバル管理者以外のアカウントを構成する
-description: この記事では、Surface Hub 2S を管理するためにグローバル管理者以外のアカウントを構成する方法について説明します。
-keywords: Surface Hub 2S
+title: Surface Hub でグローバル管理者以外のアカウントを構成する
+description: この記事では、Surface Hub と Surface Hub 2S を管理するために、グローバル以外の管理者アカウントを構成する方法について説明します。
+keywords: Surface Hub、Surface Hub v1、Surface Hub 2S
 ms.prod: surface-hub
 ms.sitesec: library
 author: greg-lindsay
@@ -9,30 +9,31 @@ ms.author: greglin
 manager: laurawi
 audience: Admin
 ms.topic: article
-ms.date: 12/07/2020
+ms.date: 03/22/2021
 ms.localizationpriority: Medium
 appliesto:
-- Surface Hub 2S 2020 Update
-ms.openlocfilehash: e16e4f8bd4b2b253233fa9790987287cf17966c7
-ms.sourcegitcommit: 7e1b351024e33926901ddbdc562ba12aea0b4196
+- Surface Hub
+- Surface Hub 2S
+ms.openlocfilehash: ceac8fc1b0e168b206d937197ef404990b8e40ae
+ms.sourcegitcommit: 6c362c5d5f67449f1adf4618847093eaf6ad087b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "11385175"
+ms.lasthandoff: 03/22/2021
+ms.locfileid: "11442901"
 ---
-# <a name="configure-non-global-admin-accounts-on-surface-hub-2s"></a>Surface Hub 2S でグローバル管理者以外のアカウントを構成する
+# <a name="configure-non-global-admin-accounts-on-surface-hub"></a>Surface Hub でグローバル管理者以外のアカウントを構成する
 
-Surface Hub 2S を Azure AD ドメインに参加する場合、Surface Hub 2S の設定アプリの管理に対するアクセス許可を制限するグローバル管理者以外のアカウントを構成できます。 これにより、Surface Hub 2S の管理者アクセス許可のみを対象範囲に設定し、Azure Hub ドメイン全体で望ましくない可能性のある管理者アクセスをADできます。 開始する前に、Surface Hub 2S が Azure サーバーに参加AD。 設定されていない場合は、Surface Hub 2S をリセットし、初めての既定の (OOBE) セットアップ プログラムを完了し、Azure AD に参加するオプションを選択する必要があります。
+Surface Hub v1 または Surface Hub 2S を Azure AD ドメインに参加する場合、Surface Hub の設定アプリの管理に対するアクセス許可を制限するグローバル管理者以外のアカウントを構成できます。 これにより、Surface Hub の管理者アクセス許可のみを対象範囲に設定し、Azure サーバードメイン全体で望ましくない可能性のある管理者アクセスをADできます。 開始する前に、Surface Hub が Azure サーバーに参加AD。 設定されていない場合は、Surface Hub をリセットし、初めての既定の (OOBE) セットアップ プログラムを完了し、Azure AD に参加するオプションを選択する必要があります。
 
 ## <a name="summary"></a>要約 
 
 グローバル管理者以外のアカウントを作成するプロセスには、次の手順が含まれます。 
 
-1. Microsoft Intune で、Surface Hub 2S の管理に指定された管理者を含むセキュリティ グループを作成します。
+1. Microsoft Intune で、Surface Hub の管理に指定された管理者を含むセキュリティ グループを作成します。
 2. PowerShell を使用AD Azure グループ SID を取得します。
 3. Azure グループ SID を含む XML AD作成します。
-4. グローバル管理者以外のセキュリティ グループによって管理される Surface Hub 2S デバイスを含むセキュリティ グループを作成します。
-5. Surface Hub 2S デバイスを含むセキュリティ グループを対象とするカスタム構成プロファイルを作成します。 
+4. グローバル管理者以外のセキュリティ グループによって管理される Surface Hub デバイスを含むセキュリティ グループを作成します。
+5. Surface Hub デバイスを含むセキュリティ グループを対象とするカスタム構成プロファイルを作成します。 
 
 
 ## <a name="create-azure-ad-security-groups"></a>Azure ADセキュリティ グループを作成する
@@ -46,9 +47,9 @@ Surface Hub 2S を Azure AD ドメインに参加する場合、Surface Hub 2S �
 
      ![ハブ管理者のセキュリティ グループを作成する](images/sh-create-sec-group.png)
 
-3. グループを開き、[**メンバー**] を選択**** し、[メンバーの追加] を選択して、Surface Hub 2S でグローバル管理者以外として指定する管理者アカウントを入力します。 Intune でグループを作成する方法の詳細については、「グループを追加してユーザーとデバイスを整理  [する」を参照してください](https://docs.microsoft.com/mem/intune/fundamentals/groups-add)。
+3. グループを開き、[**メンバー**] を選択**** し、[メンバーの追加] を選択して、Surface Hub でグローバル以外の管理者として指定する管理者アカウントを入力します。 Intune でグループを作成する方法の詳細については、「グループを追加してユーザーとデバイスを整理  [する」を参照してください](https://docs.microsoft.com/mem/intune/fundamentals/groups-add)。
 
-### <a name="create-security-group-for-surface-hub-2s-devices"></a>Surface Hub 2S デバイスのセキュリティ グループを作成する
+### <a name="create-security-group-for-surface-hub-devices"></a>Surface Hub デバイスのセキュリティ グループを作成する
 
 1. 前の手順を繰り返して、ハブ デバイス用に別のセキュリティ グループを作成します。たとえば **、Surface Hub デバイス**。 
 
@@ -119,12 +120,12 @@ Surface Hub 2S を Azure AD ドメインに参加する場合、Surface Hub 2S �
      ![ローカル管理者 xml 構成ファイルのアップロード](images/sh-local-admin-config.png)
 
 7. **[保存]** をクリックします。
-8. [グループ**の選択] をクリックして**含め、前に作成したセキュリティ[グループ](#create-security-group-for-surface-hub-2s-devices)**(Surface Hub デバイス) を選択します**。 **[次へ]** をクリックします。
+8. [グループ**の選択] をクリックして**含め、前に作成したセキュリティ[グループ](#create-security-group-for-surface-hub-devices)**(Surface Hub デバイス) を選択します**。 **[次へ]** をクリックします。
 9. [適用ルール] で、必要に応じてルールを追加します。 それ以外の場合は、[ **次へ] を選択** し、[作成] を **選択します**。
 
 OMA-URI 文字列を使用したカスタム構成プロファイルの詳細については、「Intune で [Windows 10](https://docs.microsoft.com/mem/intune/configuration/custom-settings-windows-10)デバイスのカスタム設定を使用する」を参照してください。
 
 
-## <a name="non-global-admins-managing-surface-hub-2s"></a>Surface Hub 2S を管理する非グローバル管理者
+## <a name="non-global-admins-managing-surface-hub"></a>Surface Hub を管理する非グローバル管理者
 
-**Surface Hub ローカル管理者**セキュリティ グループのメンバーは、Surface Hub 2S の設定アプリにサインインし、設定を管理できます。
+**Surface Hub ローカル管理者セキュリティ グループ**のメンバーは、Surface Hub の設定アプリにサインインし、設定を管理できます。

@@ -9,14 +9,14 @@ ms.author: greglin
 manager: laurawi
 audience: Admin
 ms.topic: article
-ms.date: 03/02/2020
+ms.date: 03/22/2020
 ms.localizationpriority: Medium
-ms.openlocfilehash: 1fab09ef21dbddbb2b4f292acd716c6e6cbaff7e
-ms.sourcegitcommit: 5c904229a0257297be7f724c264e484d2c4b5168
-ms.translationtype: HT
+ms.openlocfilehash: 6224f9aa3abed85d5aff7e7e58fccbb6df41d283
+ms.sourcegitcommit: 6c362c5d5f67449f1adf4618847093eaf6ad087b
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "11387487"
+ms.lasthandoff: 03/22/2021
+ms.locfileid: "11442911"
 ---
 # <a name="install-and-mount-surface-hub-2s-85"></a>Surface Hub 2S 85" のインストールとマウント
 
@@ -27,8 +27,6 @@ ms.locfileid: "11387487"
 - 開始する前に、Microsoft Surface Hub 2S 85" Unboxing and Set Up video を確認してください。
 
 >[!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWwwgL]
-
-- このビデオの中国語版は、以下の[付録 B](#appendix-b-unboxing-video) で参照できます。 
 
 ## <a name="follow-all-safety-precautions"></a>すべての安全上の注意に従う 
 
@@ -205,15 +203,6 @@ Surface Hub 2S 85" は、600 x 600 VESA マウント パターンを使用しま
 > [!WARNING]
 >  **適切なインストール**<br>
 不適切なデバイスのインストールに関連する危険を回避するには、作業を開始する前にインストール手順を読んで理解している人がインストールを実行する必要があります。 必要な機器や専門知識がない場合、または取り付け面が不明な場合は、プロのインストーラーに問い合わせください。
-
-
-## <a name="appendix-b-unboxing-video"></a>付録 B: ボックス化解除ビデオ
-
-
-### <a name="microsoft-surface-hub-2s-85-unboxing-and-set-up-video-chinese"></a>Microsoft Surface Hub 2S 85" Unboxing and Set Up video (中国語)
-
-> [!VIDEO https://www.microsoft.com/zh-cn/videoplayer/embed/RE4MRqV]
-
 
 ## <a name="more-information"></a>詳細情報
 
