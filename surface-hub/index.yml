@@ -14,12 +14,12 @@ metadata:
   author: greg-lindsay
   ms.author: greglin
   manager: laurawi
-  ms.openlocfilehash: 0aa7a76d8b010991b7c3dbc7c4c12f35f3715acb
-  ms.sourcegitcommit: ea853f2dba67e63e6df33538670fd581e17facab
+  ms.openlocfilehash: 24ff4e62cfe71791eca937483b610ab27ca0c60b
+  ms.sourcegitcommit: 8b35cdee6c638359403697711ee53d07cca6ee51
   ms.translationtype: HT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 03/15/2021
-  ms.locfileid: "11408802"
+  ms.lasthandoff: 03/20/2021
+  ms.locfileid: "11442145"
 landingContent:
 - title: Surface Hub 2S の導入準備
   linkLists:
@@ -41,12 +41,12 @@ landingContent:
       url: https://techcommunity.microsoft.com/t5/surface-it-pro-blog/announcing-the-availability-of-windows-10-pro-and-enterprise-on/ba-p/1624107
     - text: Surface Hub 2 の Windows 10 Pro または Enterprise に移行する
       url: surface-hub-2s-migrate-os.md
-- title: 概要
+- title: 作業の開始
   linkLists:
   - linkListType: get-started
     links:
-    - text: 新しい Surface Hub 2S 85" の内容
-      url: https://techcommunity.microsoft.com/t5/surface-it-pro-blog/inside-look-at-the-new-surface-hub-2s-85/ba-p/1721773
+    - text: Surface Hub 用の環境の準備
+      url: prepare-your-environment-for-surface-hub.md
     - text: Surface Hub 2S の発注
       url: https://www.microsoft.com/p/surface-hub-2S/8P62MW6BN9G4?activetab=pivot:overviewtab
     - text: オペレーティングシステムの基礎
