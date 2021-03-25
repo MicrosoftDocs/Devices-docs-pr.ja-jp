@@ -7,16 +7,16 @@ ms.sitesec: library
 author: dansimp
 ms.author: dansimp
 ms.topic: article
-ms.date: 03/03/2021
+ms.date: 03/23/2021
 ms.reviewer: ''
 manager: laurawi
 ms.localizationpriority: medium
-ms.openlocfilehash: f3ffcc46912fba3313e4489f5713b6ffcacf2d8a
-ms.sourcegitcommit: 5c904229a0257297be7f724c264e484d2c4b5168
+ms.openlocfilehash: 9c76f9405146c5cda4afe6b46ce7e1cce0062682
+ms.sourcegitcommit: 88ce9e77afdc3d09984edc05286cd0f1eb054223
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "11387475"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "11448301"
 ---
 # <a name="operating-system-essentials-surface-hub"></a>オペレーティングシステムの基礎 (Surface Hub)
 
@@ -71,26 +71,26 @@ Surface Hub は、会議室などの共同スペースで使用できるよう�
 ほとんど例外なく、Surface Hub の既定の ユニバーサル Windows プラットフォーム (UWP) アプリは、Windows 10 PC でも利用可能です。
 
 Surface Hub にプレインストールされている UWP アプリ:
+
 - アラーム & クロック
 - 電卓
 - 接続
 - Excel Mobile
 - フィードバック Hub
-- エクスプローラー*
+- エクスプローラー
 - はじめに
 - マップ
 - Microsoft Edge
 - Microsoft Power BI
+- Microsoft Teams
+- Microsoft Whiteboard
 - OneDrive
 - フォト
 - PowerPoint Mobile
-- 設定*
-- Skype for Business*
+- 設定
 - ストア
-- ホワイトボード*
+- ヒント
 - Word Mobile
-
-*アスタリスク (&ast;) が付いているアプリは Surface Hub に固有のものです。*
 
 *これにより影響を受ける可能性のある組織ポリシー:* <br> Windows 10 Enterprise のガイドラインを使用して、Surface Hub の既定のアプリの機能およびネットワーク要件を判断します。
 
@@ -106,11 +106,11 @@ Surface Hub にプレインストールされている UWP アプリ:
 
 Surface Hub に実装されている Windows 10 のセキュリティ機能:
 - [UEFI セキュア ブート](https://msdn.microsoft.com/windows/hardware/commercialize/manufacture/desktop/secure-boot-overview)
-- [Device Guard を使用したユーザー モード コード整合性 (UMCI)](https://technet.microsoft.com/itpro/windows/keep-secure/introduction-to-device-guard-virtualization-based-security-and-code-integrity-policies)
+- [Windows Defender アプリケーション制御とコード整合性の仮想化ベースの保護](https://technet.microsoft.com/itpro/windows/keep-secure/introduction-to-device-guard-virtualization-based-security-and-code-integrity-policies)
 - [AppLocker を使用したアプリケーション制限ポリシー](https://technet.microsoft.com/itpro/windows/keep-secure/applocker-overview)
 - [BitLocker ドライブ暗号化](https://technet.microsoft.com/itpro/windows/keep-secure/bitlocker-overview)
 - [トラステッド プラットフォーム モジュール (TPM)](https://technet.microsoft.com/itpro/windows/keep-secure/trusted-platform-module-overview)
-- [Windows Defender](https://technet.microsoft.com/itpro/windows/keep-secure/windows-defender-in-windows-10)
+- [Microsoft Defender](https://technet.microsoft.com/itpro/windows/keep-secure/windows-defender-in-windows-10)
 - 設定アプリにアクセスするための[ユーザー アカウント制御 (UAC)](https://technet.microsoft.com/itpro/windows/keep-secure/user-account-control-overview)
 
 これらの Surface Hub 機能によって提供される追加のセキュリティ:
@@ -121,6 +121,8 @@ Surface Hub に実装されている Windows 10 のセキュリティ機能:
 - 高度なプラグ アンド プレイ ドライバーのダウンロードの無効化
 
 *これにより影響を受ける可能性のある組織ポリシー:* <br> Surface Hub のセキュリティの評価を行うときは、これらの機能を考慮してください。
+
+詳細については [、「Surface Hub セキュリティの概要」を参照してください。](surface-hub-security.md)
 
 ## <a name="management"></a>管理
 
