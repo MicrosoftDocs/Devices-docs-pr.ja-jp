@@ -84,6 +84,6 @@
 ## 保証と保護プラン
 ### [Surface for Business の保証および保護プラン](https://www.microsoft.com/surface/business/warranty-service-offerings-and-support)
 ### [利用規約](https://support.microsoft.com/help/4493926/warranties-extended-service-plans-and-terms-conditions-for-your-device)
-### [次の営業日の代替日](surface-next-business-day-replacement.md)
+### [翌営業日交換](surface-next-business-day-replacement.md)
 ### [デバイスの保証状況を確認する](https://mybusinessservice.surface.com/)
 ### [サービスのために Surface を送るときのデータの保護](https://support.microsoft.com/help/4023508/surface-faq-protecting-your-data-service)
