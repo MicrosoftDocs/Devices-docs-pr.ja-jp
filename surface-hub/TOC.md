@@ -4,7 +4,6 @@
 
 ## 概要
 ### [Windows 10 Team 2020 更新プログラムの新機能](surface-hub-2020-update-whats-new.md)
-### [Surface Hub 2S の新機能 (IT 管理者)](surface-hub-2s-whats-new.md)
 ### [Surface Hub 2S 50" の技術仕様](surface-hub-2s-techspecs.md) 
 ### [Surface Hub 2S 85" の技術仕様](surface-hub-2s-85.md)
 ### [オペレーティング システムの基礎 (Surface Hub)](differences-between-surface-hub-and-windows-10-enterprise.md)
@@ -44,11 +43,11 @@
 ### [Surface Hub 2 の Windows 10 Pro および Enterprise 用の必須アドオン](surface-hub-2-essential-add-ons.md)
 ### [Windows 10 Team 2020 の更新プログラムをインストールする](surface-hub-2020-update.md)  
 ### [既知の問題 - Windows 10 Team 2020 更新プログラム](surface-hub-2020-team-update-known-issues.md)
-### [Surface Hub 2S でグローバル管理者以外のアカウントを構成する](surface-hub-2s-nonglobal-admin.md)
+### [Surface Hub でグローバル管理者以外のアカウントを構成する](surface-hub-2s-nonglobal-admin.md)
 ### [Surface Hub に新しい Microsoft Edge をインストールして構成する](surface-hub-install-chromium-edge.md)        
 ### [Microsoft Intune で Surface Hub 2S を管理する](surface-hub-2s-manage-intune.md)
 ### [Surface Hub 2S の設定のローカル管理](local-management-surface-hub-settings.md)
-### [デバイス アカウントでのパスワード循環の管理](surface-hub-2s-manage-passwords.md)
+### [デバイス アカウントでのパスワード循環の管理](password-management-for-surface-hub-device-accounts.md)
 ### [Windows 更新プログラムの管理](manage-windows-updates-for-surface-hub.md)
 ### [既存のワイヤレス ネットワークまたは LAN での Miracast](miracast-over-infrastructure.md)
 ### [BitLocker キーの保存](save-bitlocker-key-surface-hub.md)
