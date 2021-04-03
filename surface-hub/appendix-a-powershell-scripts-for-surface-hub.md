@@ -1,6 +1,6 @@
 ---
 title: Surface Hub 用 PowerShell (v1)
-description: このページには、元の Surface Hub 用の PowerShell スクリプトが含まれています (v1)
+description: このページには、元の Surface Hub (v1) 用の PowerShell スクリプトが含まれています。
 ms.assetid: 3EF48F63-8E4C-4D74-ACD5-461F1C653784
 ms.reviewer: ''
 manager: laurawi
@@ -14,20 +14,20 @@ ms.date: 02/01/2021
 ms.localizationpriority: medium
 appliesto:
 - Surface Hub
-ms.openlocfilehash: 73c028357849cd660d3b8720aaaa28aade12fea1
-ms.sourcegitcommit: 32b6c25698479fa289f642c5b5761ff3be15b686
+ms.openlocfilehash: bf130c2707de4507a76f0c0d6f711af3082a7647
+ms.sourcegitcommit: 4ec96ff1cd563d055fa0689a63f136acf2794a2e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "11317981"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "11474754"
 ---
-# Surface Hub 用 PowerShell (v1)
+# <a name="powershell-for-surface-hub-v1"></a>Surface Hub 用 PowerShell (v1)
 
 > [!NOTE]
- >このページには、元の Surface Hub (v1) 向け PowerShell スクリプトが含まれています。 Surface Hub 2S の最新のアカウント作成スクリプトについては、「Surface Hub 2S デバイス アカウントの [作成」を参照してください](surface-hub-2s-account.md)。
+ >このページには、元の Surface Hub (v1) 用の PowerShell スクリプトが含まれています。 Surface Hub 2S の最新のアカウント作成スクリプトについては、「デバイス アカウントの作成とテスト [」を参照してください](create-and-test-a-device-account-surface-hub.md)。
 
 -   [Surface Hub 管理者向けの PowerShell スクリプト](#scripts-for-admins)
-    -   [オンプレミス アカウントを作成する](#create-on-premises-ps-scripts)
+    -   [オンプレミス アカウントの作成](#create-on-premises-ps-scripts)
     -   [Office 365 を使ったデバイス アカウントの作成](#create-os356-ps-scripts)
     -   [アカウント検証スクリプト](#acct-verification-ps-scripts)
     -   [Skype for Business の有効化 (EnableSfb.ps1)](#enable-sfb-ps-scripts)
@@ -38,9 +38,9 @@ ms.locfileid: "11317981"
     -   [外部会議出席依頼の承諾](#accept-ext-meetings-cmdlet)
     
  > [!NOTE]
- > Exchange [Online PowerShell V2](https://techcommunity.microsoft.com/t5/exchange-team-blog/modern-auth-and-unattended-scripts-in-exchange-online-powershell/ba-p/1497387)の最新の認証および無人スクリプトも参照
+ > 「Exchange Online PowerShell V2 のモダン Auth スクリプトと無人スクリプト [」も参照してください。](https://techcommunity.microsoft.com/t5/exchange-team-blog/modern-auth-and-unattended-scripts-in-exchange-online-powershell/ba-p/1497387)
 
-## 前提条件
+## <a name="prerequisites"></a>前提条件
 
 これらの PowerShell スクリプトを正常に実行するには、次の前提条件をインストールする必要があります。
 
@@ -48,7 +48,7 @@ ms.locfileid: "11317981"
 - [Windows PowerShell 用 Microsoft Azure Active Directory モジュール (64 ビット版)](https://www.powershellgallery.com/packages/MSOnline/1.1.183.17)
 - [Windows PowerShell Module for Skype for Business Online](https://www.microsoft.com/download/details.aspx?id=39366)
 
-## <a href="" id="scripts-for-admins"></a>Surface Hub 管理者向けの PowerShell スクリプト
+## <a name="powershell-scripts-for-surface-hub-administrators"></a><a href="" id="scripts-for-admins"></a>Surface Hub 管理者向けの PowerShell スクリプト
 
 スクリプトには、次の機能があります。
 
@@ -64,13 +64,13 @@ ms.locfileid: "11317981"
 > [!NOTE]
 > 新しいアカウントを作成する場合でも、既存のアカウントを変更する場合でも、検証スクリプトを実行すると、デバイス アカウントが正しく構成されていることが検証されます。 デバイス アカウントを Surface Hub に追加する前には、必ず検証スクリプトを実行する必要があります。
 
-## スクリプトの実行
+## <a name="running-the-scripts"></a>スクリプトの実行
 
 アカウント作成スクリプトでは、次の処理が実行されます。
 
 -   管理者の資格情報を要求します。
 -   ドメイン/テナントにデバイス アカウントを作成します。
--   Surface Hub と互換性のある ActiveSync ポリシーを作成するか、デバイス アカウントに割り当てる。
+-   Surface Hub 互換の ActiveSync ポリシーを作成またはデバイス アカウントに割り当てる。
 -   Exchange と Skype for Business で、作成されたアカウントに関するさまざまな属性を設定する。
 -   作成したアカウントにライセンスとアクセス許可を割り当てる。
 
@@ -183,15 +183,14 @@ ms.locfileid: "11317981"
 </tbody>
 </table>
 
-## アカウント作成スクリプト
+## <a name="account-creation-scripts"></a>アカウント作成スクリプト
 
 これらのスクリプトを実行すると、デバイス アカウントが作成されます。 正しく実行されたことを確かめるには、[アカウント検証スクリプト](#acct-verification-ps-scripts)を使用できます。
 
 アカウント作成スクリプトで既存のアカウントを変更することはできませんが、アカウント作成スクリプトを使うと、既存のアカウントを正しく構成するにはどのコマンドレットを実行する必要があるかを理解するのに役立ちます。
 
-### <a href="" id="create-on-premises-ps-scripts"></a>オンプレミス アカウントを作成する
+### <a name="create-an-on-premises-account"></a><a href="" id="create-on-premises-ps-scripts"></a>オンプレミス アカウントの作成
 
-「[社内展開](on-premises-deployment-surface-hub-device-accounts.md)」で説明しているとおりに、アカウントを作成します。
 
 ```PowerShell
 # SHAccountCreateOnPrem.ps1
@@ -549,9 +548,9 @@ else
 }
 ```
 
-### <a href="" id="create-os356-ps-scripts"></a>Office 365 を使ったデバイス アカウントの作成
+### <a name="create-a-device-account-using-office-365"></a><a href="" id="create-os356-ps-scripts"></a>Office 365 を使ったデバイス アカウントの作成
 
-「Create a device [account using Office 365](create-a-device-account-using-office-365.md)」の説明に従ってアカウントを作成します。
+[「365](create-and-test-a-device-account-surface-hub.md)を使用してデバイス アカウントを作成する」の説明に従ってOfficeします。
 
 ```PowerShell
 # SHAccountCreateO365.ps1
@@ -994,9 +993,9 @@ else
 }
 ```
 
-## <a href="" id="acct-verification-ps-scripts"></a>アカウント検証スクリプト
+## <a name="account-verification-script"></a><a href="" id="acct-verification-ps-scripts"></a>アカウント検証スクリプト
 
-このスクリプトは、作成に使用した方法に関係なく、Surface Hub と Surface Hub 2S で以前に作成されたデバイス アカウントを検証します。 このスクリプトは、基本的に合格/不合格方式です。 いずれかのテスト エラーが発生すると詳細なエラー メッセージが表示されますが、すべてのテストに合格すると、最終的な結果は要約レポートになります。 たとえば、次のような結果が表示されます。
+このスクリプトは、Surface Hub と Surface Hub 2S で以前に作成されたデバイス アカウントを検証します。このアカウントの作成に使用されたメソッドは関係ありません。 このスクリプトは、基本的に合格/不合格方式です。 いずれかのテスト エラーが発生すると詳細なエラー メッセージが表示されますが、すべてのテストに合格すると、最終的な結果は要約レポートになります。 たとえば、次のような結果が表示されます。
 
 ```console
 15 tests executed
@@ -1445,7 +1444,7 @@ Write-Host -ForegroundColor Green $Global:iTotalPasses "passes "
 Cleanup
 ```
 
-## <a href="" id="enable-sfb-ps-scripts"></a>Skype for Business の有効化
+## <a name="enable-skype-for-business"></a><a href="" id="enable-sfb-ps-scripts"></a>Skype for Business の有効化
 
 このスクリプトを実行すると、デバイス アカウントで Skype for Business が有効になります。 アカウントの作成時にまだ Skype for Business が有効になっていなかった場合にのみ、このスクリプトを使います。
 
@@ -1605,9 +1604,9 @@ PrintSuccess "Successfully enabled $strRoomUri as a Skype for Business meeting r
 Cleanup
 ```
 
-## 便利なコマンドレット
+## <a name="useful-cmdlets"></a>便利なコマンドレット
 
-### <a href="" id="create-compatible-as-policy"></a>Surface Hub と互換性のある ActiveSync ポリシーの作成
+### <a name="creating-a-surface-hub-compatible-activesync-policy"></a><a href="" id="create-compatible-as-policy"></a>Surface Hub と互換性のある ActiveSync ポリシーの作成
 
 Surface Hub で Exchange サービスを使うには、互換性のある ActiveSync ポリシーで構成したデバイス アカウントを、デバイスにプロビジョニングする必要があります。 このポリシーには、
 
@@ -1645,7 +1644,7 @@ Set-CASMailbox $strRoomUpn -ActiveSyncMailboxPolicy $strPolicy
 Set-Mailbox $strRoomUpn -Type Room
 ```
 
-### ActiveSync に対するデバイス ID の許可
+### <a name="allowing-device-ids-for-activesync"></a>ActiveSync に対するデバイス ID の許可
 
 アカウント `$strRoomUpn` を許可するには、次のコマンドを実行します。
 
@@ -1661,7 +1660,7 @@ Get-ActiveSyncDevice -Mailbox $strRoomUpn
 
 このコマンドを実行すると、`DeviceId` プロパティなど、アカウントのプロビジョニング先となっているすべてのデバイスのデバイス情報が取得されます。
 
-### <a href="" id="auto-accept-meetings-cmdlet"></a>会議出席依頼の自動的な承諾と辞退
+### <a name="auto-accepting-and-declining-meeting-requests"></a><a href="" id="auto-accept-meetings-cmdlet"></a>会議出席依頼の自動的な承諾と辞退
 
 デバイス アカウントで、空き時間に基づいて会議出席依頼を自動的に承諾または辞退するには、**AutomateProcessing** 属性を **AutoAccept** に設定する必要があります。 これは、会議の重複を防ぐために推奨される方法です。
 
@@ -1669,12 +1668,12 @@ Get-ActiveSyncDevice -Mailbox $strRoomUpn
 Set-CalendarProcessing $strRoomUpn -AutomateProcessing AutoAccept
 ```
 
-### <a href="" id="accept-ext-meetings-cmdlet"></a>外部会議出席依頼の承諾
+### <a name="accepting-external-meeting-requests"></a><a href="" id="accept-ext-meetings-cmdlet"></a>外部会議出席依頼の承諾
 
 デバイス アカウントで外部会議出席依頼 (同じテナント/ドメイン名にないアカウントからの会議出席依頼) を承諾するには、そのデバイス アカウントが、外部会議出席依頼の処理を許可するように設定されている必要があります。 設定すると、外部アカウントからの会議出席依頼とローカル アカウントからの会議出席依頼が、デバイス アカウントで自動的に承諾または辞退されます。
 
 > [!Note]
-> **AutomateProcessing 属性**が**AutoAccept**に設定されていない場合、この設定は無効です。
+> **AutomateProcessing 属性が** **AutoAccept**に設定されていない場合、この設定は無効になります。
 
 ```PowerShell
 Set-CalendarProcessing $strRoomUpn -ProcessExternalMeetingMessages $true

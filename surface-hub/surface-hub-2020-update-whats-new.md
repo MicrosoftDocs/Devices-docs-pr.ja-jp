@@ -9,14 +9,14 @@ ms.author: greglin
 manager: laurawi
 audience: Admin
 ms.topic: article
-ms.date: 02/01/2021
+ms.date: 03/25/2021
 ms.localizationpriority: Medium
-ms.openlocfilehash: 96452885e19adc9784bb8d14be8ac6f2f86e883d
-ms.sourcegitcommit: 6c362c5d5f67449f1adf4618847093eaf6ad087b
+ms.openlocfilehash: 14e08cf099ac441f7b2b3b76366406868ac6c056
+ms.sourcegitcommit: f9e7c091a26df0f99500c0d8b6cf40a81133e4e2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "11442871"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "11470425"
 ---
 # <a name="whats-new-in-windows-10-team-2020-update"></a>Windows 10 Team 2020 更新プログラムの新機能
 
@@ -25,9 +25,18 @@ Windows 10 Team 2020 Update は、最新の Windows 10 機能と共に、デバ�
 ##  <a name="deployment-and-manageability"></a>展開と管理のしやすさ
 
 - **クラウド デバイス アカウントの最新の認証**。 Surface Hub は、Exchange に接続するための Exchange Web サービス (EWS) および Active Directory 認証ライブラリ (ADAL) ベースの認証をサポートしており、お客様は基本認証の使用を非推奨にできます。 詳細については [、「Surface Hub でのモダン認証」を参照してください](https://docs.microsoft.com/surface-hub/surface-hub-modern-auth)。
-- **20 以上の新しく更新されたモバイル デバイス管理 (MDM) ポリシー**。      これらのポリシーにより、IT 管理者は、Microsoft Store からのアプリの更新、インフラストラクチャ上の Miracast などのワイヤレスプロジェクション設定、Quality-Of-Service や 802.1x 有線認証などのネットワーク設定、新しいプライバシー/GDPR 関連の設定など、複数のデバイス設定を管理できます。 詳細については、次を参照してください。 
-- [Microsoft Intune を使用して Surface Hub を管理します](surface-hub-2s-manage-intune.md)。
-- [Microsoft Surface Hub でサポートされている Policy CSP](https://docs.microsoft.com//windows/client-management/mdm/policy-csps-supported-by-surface-hub)
+- **20 を超える新規および更新されたモバイル デバイス管理 (MDM) ポリシー設定**。  これらのポリシー設定により、IT 管理者は、Microsoft Store からのアプリの更新、インフラストラクチャ上の Miracast などのワイヤレスプロジェクション設定、Quality-Of-Service や 802.1x 有線認証などのネットワーク設定、プライバシー/GDPR 関連の新しい設定など、複数のデバイス設定を制御できます。 新しい構成サービス プロバイダー (CSP) には、次のものが含まれます。 
+
+  - [Accounts CSP](https://docs.microsoft.com/windows/client-management/mdm/accounts-csp) 
+  - [Firewall-CSP](https://docs.microsoft.com/windows/client-management/mdm/firewall-csp) 
+  - [RemoteWipe CSP](https://docs.microsoft.com/windows/client-management/mdm/remotewipe-csp) 
+  - [Wifi-CSP](https://docs.microsoft.com/windows/client-management/mdm/wifi-csp) 
+  - [Wirednetwork-CSP](https://docs.microsoft.com/windows/client-management/mdm/wirednetwork-csp) 
+
+詳細については、次を参照してください。 
+- [Microsoft Surface Hub でサポートされている CSP](https://docs.microsoft.com/windows/client-management/mdm/configuration-service-provider-reference#surfacehubcspsupport)
+- [MDM プロバイダーを使用して Surface Hub を管理する](manage-settings-with-mdm-for-surface-hub.md)
+
 
 ##  <a name="azure-active-directory-joined-devices"></a>Azure Active Directory 参加デバイス
 
@@ -51,7 +60,7 @@ Windows 10 Team 2020 Update は、最新の Windows 10 機能と共に、デバ�
 
 - **Microsoft Teams との調整された会議のサポート**。 Surface Hub と Microsoft Teams Room デバイスを備える会議室、または 2 台の Surface Hub デバイスを備えるスペースでは、調整された会議を使用すると、Microsoft Teams 会議中に両方のデバイスを簡単に利用できます。 1 回のタップで、ユーザーはいずれかのデバイスから会議に参加し、1 つのデバイスにビデオ フィードを表示し、もう一方のデバイスにデジタル ホワイトボードまたはコンテンツを表示することで、画面の不動産を最大化できます。 Windows 10 Team 2020 Update では、モバイル デバイス管理 (MDM) のサポートが追加され、調整された会議を構成する機能が Microsoft Store.To を通じて Microsoft Teams の更新プログラムとしてリリースされます。詳細については、「Set up Coordinated Meetings with Microsoft Teams Rooms and [Surface Hub」](https://docs.microsoft.com/microsoftteams/rooms/coordinated-meetings)を参照してください。
 
-## <a name="security"></a>セキュリティ
+## <a name="security"></a>Security
 
 - **FIDO2 セキュリティ キーを使用したパスワードレス サインイン**     FIDO2 セキュリティ キーを使用すると、ユーザー名とパスワードを入力することなく、Surface Hub にすばやく簡単にサインインできます。 シングル Sign-On (SSO) と組み合わせて、この機能は会議中にファイル、アプリ、および Web サイトに高速かつシームレスな認証を提供します。 詳細については [、「Configure passwordless sign-in on Surface Hub」を参照してください](https://docs.microsoft.com/surface-hub/surface-hub-2s-phone-authenticate)。
 - **Microsoft Authenticator を使用したパスワードレス サインインの機能強化**。  Azure ADを使用する組織では、ユーザーはユーザー名とパスワードを入力することなく、Microsoft Authenticator アプリを使用してサインインできます。 さらに、ユーザーは、ユーザー プリンシパル名 (UPN) に加えて、Azure AD優先メール エイリアスを使用してサインインできます。 詳細については [、「Microsoft Authenticator を使用して Surface Hub にサインインする」を参照してください](https://docs.microsoft.com/surface-hub/surface-hub-authenticator-app)。
