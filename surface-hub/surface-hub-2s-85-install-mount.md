@@ -9,14 +9,14 @@ ms.author: greglin
 manager: laurawi
 audience: Admin
 ms.topic: article
-ms.date: 03/22/2020
+ms.date: 03/22/2021
 ms.localizationpriority: Medium
-ms.openlocfilehash: 6224f9aa3abed85d5aff7e7e58fccbb6df41d283
-ms.sourcegitcommit: 6c362c5d5f67449f1adf4618847093eaf6ad087b
+ms.openlocfilehash: 9b7a3e49f3fa05117fa37cbd47695e54ff26e899
+ms.sourcegitcommit: f9e7c091a26df0f99500c0d8b6cf40a81133e4e2
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "11442911"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "11470495"
 ---
 # <a name="install-and-mount-surface-hub-2s-85"></a><span data-ttu-id="6175b-104">Surface Hub 2S 85" のインストールとマウント</span><span class="sxs-lookup"><span data-stu-id="6175b-104">Install and mount Surface Hub 2S 85”</span></span>
 
