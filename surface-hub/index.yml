@@ -14,12 +14,12 @@ metadata:
   author: greg-lindsay
   ms.author: greglin
   manager: laurawi
-  ms.openlocfilehash: 24ff4e62cfe71791eca937483b610ab27ca0c60b
-  ms.sourcegitcommit: 8b35cdee6c638359403697711ee53d07cca6ee51
+  ms.openlocfilehash: 19d3941e9fd13df437770bd75588d87eddcd30ac
+  ms.sourcegitcommit: f9e7c091a26df0f99500c0d8b6cf40a81133e4e2
   ms.translationtype: HT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 03/20/2021
-  ms.locfileid: "11442145"
+  ms.lasthandoff: 04/01/2021
+  ms.locfileid: "11470435"
 landingContent:
 - title: Surface Hub 2S の導入準備
   linkLists:
@@ -81,8 +81,8 @@ landingContent:
     links:
     - url: https://docs.microsoft.com/microsoftteams/rooms/surface-hub-manage-config
       text: Surface Hub で Microsoft Teams の設定を管理する
-    - url: surface-hub-2s-manage-intune.md
-      text: Intune で Surface Hub 2S を管理する
+    - url: manage-settings-with-mdm-for-surface-hub.md
+      text: MDM プロバイダーを使用して Surface Hub を管理する
     - url: local-management-surface-hub-settings.md
       text: ローカル設定の管理
 - title: セキュリテイ保護
