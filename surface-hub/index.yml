@@ -14,12 +14,12 @@ metadata:
   author: greg-lindsay
   ms.author: greglin
   manager: laurawi
-  ms.openlocfilehash: 19d3941e9fd13df437770bd75588d87eddcd30ac
-  ms.sourcegitcommit: f9e7c091a26df0f99500c0d8b6cf40a81133e4e2
+  ms.openlocfilehash: 3eb4acb7d169a725cab3a5c1b70056495c0419b1
+  ms.sourcegitcommit: 4ec96ff1cd563d055fa0689a63f136acf2794a2e
   ms.translationtype: HT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 04/01/2021
-  ms.locfileid: "11470435"
+  ms.lasthandoff: 04/02/2021
+  ms.locfileid: "11474794"
 landingContent:
 - title: Surface Hub 2S の導入準備
   linkLists:
@@ -73,8 +73,8 @@ landingContent:
       text: Microsoft Teams ミーティングと Surface Hub 間の調整された会議を設定する
     - url: surface-hub-2s-adoption-kit.md
       text: Surface Hub 2S の導入とトレーニング
-    - url: surface-hub-2s-account.md
-      text: デバイス アカウントの作成
+    - url: create-and-test-a-device-account-surface-hub.md
+      text: デバイス アカウントの作成およびテスト
 - title: 管理
   linkLists:
   - linkListType: learn
