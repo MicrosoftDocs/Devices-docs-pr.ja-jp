@@ -30,10 +30,10 @@
 ### [Surface Hub 2S の初回セットアップ](surface-hub-2s-setup.md)
 ### [デバイスを Surface Hub 2S に接続する](surface-hub-2s-connect.md)
 ### [Surface Hub 2S 展開チェックリスト](surface-hub-2s-deploy-checklist.md)
-### [Surface Hub 2S デバイス アカウントの作成](surface-hub-2s-account.md)
+### [デバイス アカウントの作成およびテスト](create-and-test-a-device-account-surface-hub.md)
 ### [Surface Hub 2S 用プロビジョニング パッケージの作成](surface-hub-2s-deploy.md)
 ### [Intune を使用して Surface Hub 2S にアプリを展開する](surface-hub-2s-deploy-apps-intune.md)
-### [PowerShell を使用して Surface Hub 2S オンプレミス アカウントを作成する](surface-hub-2s-onprem-powershell.md)
+### [PowerShell を使用して Surface Hub 2S オンプレミス アカウントを作成する](https://docs.microsoft.com/microsoftteams/rooms/with-skype-for-business-server-2015)
 ### [Surface Hub Teams アプリ](hub-teams-app.md)
 ### [Surface Hub 2S 用の Teams 認定アクセサリ](surface-hub-2s-certifications.md)
 
@@ -84,12 +84,10 @@
 
 ## 展開
 ### [デバイス アカウントの作成およびテスト](create-and-test-a-device-account-surface-hub.md)
-#### [オンライン展開](online-deployment-surface-hub-device-accounts.md)
-#### [オンプレミス展開 (単一フォレスト)](on-premises-deployment-surface-hub-device-accounts.md)
-#### [オンプレミス展開 (複数フォレスト)](on-premises-deployment-surface-hub-multi-forest.md)
+#### [オンライン展開](https://docs.microsoft.com/microsoftteams/rooms/with-office-365)
+#### [オンプレミス展開 (単一フォレスト)](https://docs.microsoft.com/microsoftteams/rooms/with-skype-for-business-server-2015)
+#### [オンプレミス展開 (複数フォレスト)](https://docs.microsoft.com/skypeforbusiness/deploy/deploy-clients/multiple-forest-on-premises-deployments
 #### [ハイブリッド展開](hybrid-deployment-surface-hub-device-accounts.md)
-#### [Skype Hybrid Voice 環境を使用したオンラインまたはハイブリッド展開](skype-hybrid-voice.md)
-#### [UI を使用したデバイス アカウントの作成](create-a-device-account-using-office-365.md)
 #### [Microsoft Exchange プロパティ](exchange-properties-for-surface-hub-device-accounts.md)
 #### [デバイス アカウントへの ActiveSync ポリシーの適用](apply-activesync-policies-for-surface-hub-device-accounts.md)
 #### [パスワード管理](password-management-for-surface-hub-device-accounts.md)
