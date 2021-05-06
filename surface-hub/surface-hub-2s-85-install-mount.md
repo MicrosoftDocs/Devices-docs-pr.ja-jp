@@ -26,7 +26,7 @@ ms.locfileid: "11470495"
 
 - <span data-ttu-id="6175b-107">開始する前に、Microsoft Surface Hub 2S 85 インチのボックス化解除とセットアップのビデオを確認してください。</span><span class="sxs-lookup"><span data-stu-id="6175b-107">Before you begin, please review Microsoft Surface Hub 2S 85" Unboxing and Set Up video:</span></span>
 
->[!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWwwgL]
+>[!VIDEO https://www.microsoft.com/ja-jp/videoplayer/embed/RWwwgL]
 
 ## <a name="follow-all-safety-precautions"></a><span data-ttu-id="6175b-108">すべての安全上の注意に従う</span><span class="sxs-lookup"><span data-stu-id="6175b-108">Follow all safety precautions</span></span> 
 
