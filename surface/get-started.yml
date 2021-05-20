@@ -11,44 +11,46 @@ metadata:
   ms.author: greglin
   audience: itpro
   ms.localizationpriority: High
-  ms.openlocfilehash: 9360df030e5a562dfeb3ad471c228408122c3471
-  ms.sourcegitcommit: f8f32455b1230742c58ee74004cbaaad037069b6
+  ms.openlocfilehash: 301a4b733ee477c1e9999dba84cd58283c02844f
+  ms.sourcegitcommit: a4f8d271b1372321c3b45fc5a7a29703976964a4
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 02/14/2021
-  ms.locfileid: "11328181"
+  ms.lasthandoff: 05/20/2021
+  ms.locfileid: "11576827"
 landingContent:
 - title: Surface デバイス
   linkLists:
   - linkListType: whats-new
     links:
+    - text: Surface Laptop 4 + for Business
+      url: https://www.microsoft.com/surface/business/surface-laptop-4
     - text: ビジネス向け Surface Pro 7+
       url: https://www.microsoft.com/surface/business/surface-pro-7-plus
-    - text: Surface Laptop Go for Business
+    - text: Surface LaptopGo for Business
       url: https://www.microsoft.com/surface/business/surface-laptop-go
     - text: ビジネス向け Surface Pro X
       url: https://www.microsoft.com/surface/business/surface-pro-x
     - text: すべての Surface ファミリー製品を見る
       url: https://www.microsoft.com/surface/business
-- title: 概要
+- title: 作業の開始
   linkLists:
   - linkListType: get-started
     links:
-    - text: Surface Pro 7+ for Business の新機能
-      url: https://techcommunity.microsoft.com/t5/surface-it-pro-blog/surface-pro-7-brings-next-level-performance-and-versatility-to/ba-p/1928797
+    - text: Surface Laptop 4 プロセッサの技術概要
+      url: surface-laptop-processors.md
+    - text: Surface Headphones 2+ 技術の概要
+      url: surface-headphones.md
     - text: Surface の Windows Virtual Desktop
       url: windows-virtual-desktop-surface.md
-    - text: Surface Dock 2 の新機能
-      url: surface-dock-whats-new.md
 - title: Microsoft Ignite
   linkLists:
   - linkListType: video
     links:
-    - text: Surface & AutoPilot によるゼロ タッチ展開
+    - text: Surface の自動パイロットによるゼロ タッチ&展開
       url: https://youtu.be/WQ-wg8fRzN0
-    - text: リモートの世界で使ARM Surface Pro X と Windows
+    - text: Surface ProX とWindowsリモートARMのネットワーク
       url: https://youtu.be/bDw77ZQNPPw
-    - text: Surface Security – Microsoft からのクラウドモダン エンドポイント保護へのチップ
+    - text: Surface Security – Microsoft からクラウドモダン Endpoint Protectionへのチップ
       url: https://youtu.be/uadAecDbqf4
 - title: Surface デバイスの展開
   linkLists:
@@ -64,12 +66,12 @@ landingContent:
   linkLists:
   - linkListType: how-to-guide
     links:
+    - text: Surface エンタープライズ管理モード
+      url: surface-enterprise-management-mode.md
     - text: Surface のドライバーおよびファームウェアの更新プログラムを管理および展開する
       url: manage-surface-driver-and-firmware-updates.md
-    - text: Surface UEFI の設定の Intune 管理
+    - text: Surface デバイスでの DFCI の管理
       url: surface-manage-dfci-guide.md
-    - text: Surface Pro X の展開、管理、メンテナンス
-      url: surface-pro-arm-app-management.md
 - title: トラブルシューティング
   linkLists:
   - linkListType: learn
@@ -86,7 +88,7 @@ landingContent:
     links:
     - text: Surface デバイスでの DMA 保護
       url: dma-protect.md
-    - text: Surface Enterprise 管理モード (SEMM) による Surface ドック 2 ポートのセキュリティ保護
+    - text: Surface Enterprise 管理モード (SEMM) を使用した Surface ドック 2 ポートのセキュリティ保護
       url: secure-surface-dock-ports-semm.md
     - text: Surface Data Eraser ツール
       url: microsoft-surface-data-eraser.md

@@ -10,20 +10,20 @@ ms.date: 08/15/2018
 ms.reviewer: ''
 manager: laurawi
 ms.localizationpriority: medium
-ms.openlocfilehash: c5b6a083d543649eab899d2fea36327d08f8bc29
-ms.sourcegitcommit: 109d1d7608ac4667564fa5369e8722e569b8ea36
+ms.openlocfilehash: cf9649b8d1f747722064793fbbde70116bc7f424
+ms.sourcegitcommit: a4f8d271b1372321c3b45fc5a7a29703976964a4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2020
-ms.locfileid: "10834517"
+ms.lasthandoff: 05/20/2021
+ms.locfileid: "11576847"
 ---
-# Surface Hub のスタート メニューの構成
+# <a name="configure-surface-hub-start-menu"></a>Surface Hub のスタート メニューの構成
 
 [Windows 10 の 2018 年 1 月 17日 の更新プログラム](https://support.microsoft.com/help/4057144) (ビルド 15063.877) により、Surface Hub デバイスでスタート メニューをカスタマイズできるようになりました。 カスタマイズしたスタート メニューのレイアウトを適用するには、モバイル デバイス管理 (MDM) を使用します。
 
 カスタマイズしたスタート メニューのレイアウトを Surface Hub に適用すると、ユーザーはスタート画面でアプリをピン留めしたり、ピン留めを外したり、アンインストールしたりすることはできなません。 
 
-## Surface Hub にカスタマイズしたスタート メニューを適用する方法
+## <a name="how-to-apply-a-customized-start-menu-to-surface-hub"></a>Surface Hub にカスタマイズしたスタート メニューを適用する方法
 
 カスタマイズしたスタート メニューは、スタート画面のレイアウトの XML ファイルで定義されます。 スタート画面のレイアウト XML ファイルを作成するには、2 つのオプションがあります。
 
@@ -41,19 +41,23 @@ ms.locfileid: "10834517"
 スタート画面のレイアウトの XML でスタート メニューが定義されている場合、[レイアウトを適用するための MDM ポリシーを作成します](https://docs.microsoft.com/windows/configuration/customize-windows-10-start-screens-by-using-mobile-device-management#a-href-idbkmk-domaingpodeploymentacreate-a-policy-for-your-customized-start-layout)。
 
 <span id="differences" />
-## Surface Hub とデスクトップのスタートメニューの相違点
+
+## <a name="differences-between-surface-hub-and-desktop-start-menu"></a>Surface Hub とデスクトップのスタートメニューの相違点
 
 Surface Hub と Windows 10 デスクトップでは、スタート メニューのカスタマイズにいくつかの大きな違いがあります。
 
-- **DesktopApplicationTile** https://docs.microsoft.com/windows/configuration/start-layout-xml-desktop#startdesktopapplicationtile) Windows デスクトップアプリケーション (Win32) は Surface Hub ではサポートされていないため、desktopapplicationtile は使用できません (スタートレイアウト XML では使用できません)。
+- デスクトップ アプリケーション (Win32) は、Windows デスクトップ アプリケーション (Win32) でサポートされていないので、スタート レイアウト XML で**DesktopApplicationTile** https://docs.microsoft.com/windows/configuration/start-layout-xml-desktop#startdesktopapplicationtile) を使用Surface Hub。
 - スタート画面のレイアウトの XML を使用して、Surface Hub のタスク バーやようこそ画面を構成することはできません。  
+- スタート レイアウト ポリシーは、ユーザーではなくデバイスにのみ割り当てる必要があります。
+- ポリシーで使用する OMA-URI 設定は、 `./Device/Vendor/MSFT/Policy/Config/Start/StartLayout`
 - Surface Hub がサポートしているのは最大 6 列 (6 個の 1 x 1 タイル) ですが、`GroupCellWidth=8` を定義する**必要があります**。ただし、Surface Hub で表示されるのは列 0 ～ 5 のタイルのみで、列 6 および 7 は表示されません。
 - Surface Hub は最大 6 行 (6 個の 1 x 1 タイル) をサポートしています。
 - `SecondaryTile` は、リンク用に使用され、Microsoft Edge でリンクを開くために使用されます。
 
 
 <span id="default" />
-## 例: 既定の Surface Hub のスタート画面のレイアウト
+
+## <a name="example-default-surface-hub-start-layout"></a>例: 既定の Surface Hub のスタート画面のレイアウト
 
 ```xml
 <LayoutModificationTemplate Version="1" xmlns="http://schemas.microsoft.com/Start/2014/LayoutModification">
@@ -110,9 +114,10 @@ Surface Hub と Windows 10 デスクトップでは、スタート メニュー�
 ```
 
 <span id="edge" />
-## 例: Microsoft Edge のリンクを含むスタート画面のレイアウト
 
-この例では、Web サイトへのリンクと .pdf ファイルへのリンクを示します。 Microsoft Edge のセカンダリタイルでは、150 x 150 ピクセルのアイコンが使用されます。
+## <a name="example-start-layout-that-includes-a-microsoft-edge-link"></a>例: Microsoft Edge のリンクを含むスタート画面のレイアウト
+
+この例では、Web サイトへのリンクと .pdf ファイルへのリンクを示します。 ユーザーのセカンダリ タイルMicrosoft Edge 150 x 150 ピクセル のアイコンを使用します。
 
 ```xml
 <LayoutModificationTemplate Version="1" xmlns="http://schemas.microsoft.com/Start/2014/LayoutModification">
@@ -186,4 +191,4 @@ Surface Hub と Windows 10 デスクトップでは、スタート メニュー�
 ```
 
 >[!NOTE]
->Is light の既定値 `ForegroundText` は、値を `ForegroundText` ダークに変更しない限り、XML に含める必要はありません。
+>既定値は明るい値です。値を濃色に変更しない限り、XML に含 `ForegroundText` `ForegroundText` める必要があります。
