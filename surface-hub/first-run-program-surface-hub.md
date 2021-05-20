@@ -12,14 +12,14 @@ ms.author: dansimp
 ms.topic: article
 ms.date: 10/27/2020
 ms.localizationpriority: medium
-ms.openlocfilehash: e070c28d13cd8466bff47022f4508fdb8aa06331
-ms.sourcegitcommit: 19d2a78242777590bd09af3ac6552c07b032e0a1
+ms.openlocfilehash: af6f6cc71a94d075341637499fe98f8206157e49
+ms.sourcegitcommit: a4f8d271b1372321c3b45fc5a7a29703976964a4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "11142916"
+ms.lasthandoff: 05/20/2021
+ms.locfileid: "11576577"
 ---
-# 最初の実行プログラム (Surface Hub)
+# <a name="first-run-program-surface-hub"></a>最初の実行プログラム (Surface Hub)
 
 
 "最初の実行" という語は Microsoft Surface Hub を初めて起動したときに行う一連の手順を指し、"Out-Of-Box Experience" (OOBE) と同じ意味を持ちます。 このセクションでは、このプロセスの手順について説明します。
@@ -47,7 +47,7 @@ ms.locfileid: "11142916"
 
  
 
-## <a href="" id="first-page"></a>[こんにちは] ページ
+## <a name="hi-there-page"></a><a href="" id="first-page"></a>[こんにちは] ページ
 
 
 これは、Surface Hub を初めて起動したときに最初に表示される画面です。 この画面では、デバイスのローカライズ情報を入力します。
@@ -59,7 +59,7 @@ ms.locfileid: "11142916"
 
 ![ICD オプションのチェックリストを示す画像。](images/setuplocale.png)
 
-### 詳細
+### <a name="details"></a>詳細
 
 表示された既定値が正しい場合は、**[次へ]** をクリックして先に進みます。 値が正しくない場合は、適切なテキスト ボックスにデータを入力する必要があります。
 
@@ -68,7 +68,7 @@ ms.locfileid: "11142916"
 -   **キーボード レイアウト:** デバイスで使用するスクリーン キーボードと物理キーボードのキーボード レイアウトを選択します。
 -   **タイム ゾーン:** Surface Hub を使用する場所のタイム ゾーンを選択します。
 
-### 動作
+### <a name="what-happens"></a>動作
 
 >[!NOTE]
 > このページの設定を入力すると、デバイスをリセットしない限りこの画面に戻ることはできません (「[デバイスのリセット](device-reset-surface-hub.md)」をご覧ください)。 操作を続行する前に、設定が適切に構成されていることを確認してください。
@@ -79,58 +79,59 @@ ms.locfileid: "11142916"
 
 ワイヤード (有線) 接続が見つからない場合は、デバイスでワイヤレス接続のセットアップが試行され、[[ネットワークのセットアップ] ページ](#network-setup)が表示されます。
 
-## <a href="" id="network-setup"></a>[ネットワークのセットアップ] ページ
+## <a name="network-setup-page"></a><a href="" id="network-setup"></a>[ネットワークのセットアップ] ページ
 
 
 ネットワークまたはインターネットへの接続に使用できるワイヤード (優先) 接続をデバイスで検出できない場合、このページが表示されます。 このページでは、ワイヤレス ネットワークに接続するか、ネットワーク接続の確立を省略できます。
 
 ![[ネットワークのセットアップ] ページの画像。](images/setupnetworksetup-1.png)
 
-### 詳細
+### <a name="details"></a>詳細
 
 この画面は、デバイスがワイヤード (有線) ネットワークの検出に失敗した場合にのみ表示されます。 この画面が表示された場合、選択できる操作は 3 つあります。
 
 -   表示されているワイヤレス ネットワークのいずれかを選択します。 ネットワークがセキュリティで保護されている場合は、ログイン ページが表示されます。 詳しくは、「[ワイヤレス ネットワークのセットアップ](#wireless)」をご覧ください。
 -   **[この手順をスキップする]** をクリックして、ネットワークへの接続を省略します。 [おすすめの設定ページ](#set-up-for-you)が表示されます。
     >[!NOTE]
-    >接続を省略すると、デバイスではネットワークに接続できず、Surface Hub ではネットワーク接続が必要な機能 (システム更新プログラム、電子メールとカレンダーの同期など) が動作しません。 設定を使用すると、後でワイヤレスネットワークに接続できます (「 [ワイヤレスネットワーク管理](wireless-network-management-for-surface-hub.md)」を参照してください)。
+    >接続を省略すると、デバイスではネットワークに接続できず、Surface Hub ではネットワーク接続が必要な機能 (システム更新プログラム、電子メールとカレンダーの同期など) が動作しません。 後でワイヤレス ネットワークに接続するには、設定を使用します (「[ワイヤレス ネットワーク管理」を参照)。](wireless-network-management-for-surface-hub.md)
 
      
 
 -   ネットワーク ケーブルは、この画面を表示したまま接続できます。 接続するとデバイスが検出し、画面に **[次へ]** が表示されます。 **[次へ]** をクリックして、ワイヤード (有線) 接続の確立に進みます。
 
-### 動作
+### <a name="what-happens"></a>動作
 
 デバイスの起動時にワイヤード (有線) 接続が検出され、ネットワークまたはインターネットへの接続を確立できる場合、このページは表示されません。 デバイスをワイヤレス接続に接続する場合は、最初の実行時にイーサネット ケーブルが接続されていないことを確認してください。接続されていると、この画面が表示されます。 この画面でセットアップした内容に関係なく、後で [[設定] を使用して](wireless-network-management-for-surface-hub.md) 別の接続を設定できます。
 
 このページからセキュリティで保護されたワイヤレス ネットワークに接続する場合は、任意のネットワークをクリックした後、接続に必要な情報 (パスワードやアカウント資格情報) を入力してください。 「[ワイヤレス ネットワークのセットアップ](#wireless)」をご覧ください。
 
-## <a href="" id="wireless"></a>ワイヤレス ネットワークのセットアップ
+## <a name="wireless-network-setup"></a><a href="" id="wireless"></a>ワイヤレス ネットワークのセットアップ
 
 
 このページは、セキュリティで保護されたワイヤレス ネットワークを選択している場合に表示されます。
 
 ![ワイヤレス ネットワークのセットアップ ページを示す画像。](images/setupnetworksetup-3.png)
 
-### 詳細
+### <a name="details"></a>詳細
 
 -   **ユーザー名:** 選択したワイヤレス ネットワークのユーザー名を入力します。
 -   **パスワード:** ネットワークのパスワードです。
 
-### 動作
+### <a name="what-happens"></a>動作
 
 デバイスが、指定されたネットワークの接続を試行します。 接続が成功した場合は、[おすすめの設定ページ](#set-up-for-you)が表示されます。
 
-## <a href="" id="proxy"></a>ネットワーク プロキシのセットアップ
+## <a name="network-proxy-setup"></a><a href="" id="proxy"></a>ネットワーク プロキシのセットアップ
 
 
 このページは、制限付きの接続を行うワイヤード (有線) 接続がデバイスで検出された場合に表示されます。 次の 3 つのオプションがあります。
 
 -   制限付きのワイヤード (有線) 接続の代わりに、ワイヤレス ネットワークの使用を選択できます。
--   **[この手順をスキップする]** を選択すると、ネットワークへの接続を省略できます。 [おすすめの設定ページ](#set-up-for-you)が表示されます。
-    **注**  接続を省略すると、デバイスではネットワークに接続できず、Surface Hub ではネットワーク接続が必要な機能 (電子メールとカレンダーの同期など) が動作しません。 設定を使用すると、後でワイヤレスネットワークに接続できます (「 [ワイヤレスネットワーク管理](wireless-network-management-for-surface-hub.md)」を参照してください)。
 
-     
+-   **[この手順をスキップする]** を選択すると、ネットワークへの接続を省略できます。 [おすすめの設定ページ](#set-up-for-you)が表示されます。
+
+    > [!NOTE]
+    > 接続を省略すると、デバイスではネットワークに接続できず、Surface Hub ではネットワーク接続が必要な機能 (電子メールとカレンダーの同期など) が動作しません。 後でワイヤレス ネットワークに接続するには、設定を使用します (「[ワイヤレス ネットワーク管理」を参照)。](wireless-network-management-for-surface-hub.md)
 
 -   **[プロキシの設定を入力する]** を選択して、ネットワーク プロキシの使用方法を指定できます。 次の画面が表示されます。
 
@@ -140,42 +141,42 @@ ms.locfileid: "11142916"
 
     ![プロキシ サーバーの設定の詳細を示す画像。](images/setupnetworksetup-4.png)
 
-### 詳細
+### <a name="details"></a>詳細
 
 ネットワーク接続を確立するには、スクリプト名か、プロキシ サーバーおよびポート情報のどちらかを入力する必要があります。
 
 -   **プロキシ スクリプト:** プロキシ スクリプトのアドレスを提供します。
 -   **プロキシ サーバーとポート:** プロキシ サーバーのアドレスとポートを入力します。
 
-### 動作
+### <a name="what-happens"></a>動作
 
 **[次へ]** をクリックすると、デバイスはプロキシ サーバーへの接続を試行します。 接続が成功した場合は、[おすすめの設定ページ](#set-up-for-you)が表示されます。
 
 **[この手順をスキップする]** を選択すると、ネットワークへの接続を省略できます。 [おすすめの設定ページ](#set-up-for-you)が表示されます。
 
 >[!NOTE]
->接続を省略すると、デバイスではネットワークに接続できず、Surface Hub ではネットワーク接続が必要な機能 (電子メールとカレンダーの同期など) が動作しません。 設定を使用すると、後でワイヤレスネットワークに接続できます (「 [ワイヤレスネットワーク管理](wireless-network-management-for-surface-hub.md)」を参照してください)。
+>接続を省略すると、デバイスではネットワークに接続できず、Surface Hub ではネットワーク接続が必要な機能 (電子メールとカレンダーの同期など) が動作しません。 後でワイヤレス ネットワークに接続するには、設定を使用します (「[ワイヤレス ネットワーク管理」を参照)。](wireless-network-management-for-surface-hub.md)
 
  
 
-## <a href="" id="set-up-for-you"></a>おすすめの設定ページ
+## <a name="set-up-for-you-page"></a><a href="" id="set-up-for-you"></a>おすすめの設定ページ
 
 
 この画面は純粋に情報提供を目的としており、既定で有効になっている推奨設定が表示されます。
 
 ![おすすめの設定ページを示す画像。](images/setupsetupforyou.png)
 
-### 詳細
+### <a name="details"></a>詳細
 
 この画面の内容を読み、既定で有効になっているサービスを確認してください。 どのサービスも、必要に応じて設定アプリを使用して変更できます。ただし、変更による影響に注意してください。 詳しくは、「[Microsoft Surface Hub の概要](intro-to-surface-hub.md)」をご覧ください。
 
 設定を確認し終わったら、**[次へ]** をクリックして先に進みます。
 
-### 動作
+### <a name="what-happens"></a>動作
 
 ページには既に設定されている内容が表示されます。この設定は、最初の実行が完了するまで変更できません。
 
-## <a href="" id="device-account"></a>デバイス アカウント ページ
+## <a name="device-account-page"></a><a href="" id="device-account"></a>デバイス アカウント ページ
 
 
 このページでは、以前構成したデバイス アカウントの資格情報が求められます  (詳しくは、「[デバイス アカウントの作成およびテスト](create-and-test-a-device-account-surface-hub.md)」をご覧ください)。Surface Hub は、アカウントのさまざまなプロパティの確認を試みます。確認に失敗した場合は、別のページで追加の情報が求められることがあります。
@@ -186,7 +187,7 @@ ms.locfileid: "11142916"
 
 ![[デバイスのアカウント情報を入力してください] ページを示す画像。](images/setupdeviceacct.png)
 
-### 詳細
+### <a name="details"></a>詳細
 
 1 つ目の入力フィールドでは、アカウント識別子として**ユーザー プリンシパル名 (UPN)** または**ドメイン\\ユーザー名**のいずれかを使用します。 環境で適切な形式を使用し、パスワードを入力します。
 
@@ -208,9 +209,9 @@ ms.locfileid: "11142916"
 
 **[デバイス アカウントの設定をスキップする]** をクリックすると、デバイスでデバイス アカウントが設定されていない場合に発生する状況を示すダイアログ ボックスが表示されます。 **[はい、スキップします]** を選択すると、[[このデバイスに名前を付ける] ページ](#name-this-device)が表示されます。
 
-![デバイスアカウントの作成をスキップすることを確認するメッセージが表示された画像。](images/setupskipdeviceacct.png)
+![デバイス アカウントの作成をスキップするメッセージを示す画像が表示されます。](images/setupskipdeviceacct.png)
 
-### 動作
+### <a name="what-happens"></a>動作
 
 デバイスは、デバイス アカウントの UPN またはドメイン\\ユーザー名とパスワードを使用して、以下の操作を実行します。
 
@@ -222,14 +223,14 @@ ms.locfileid: "11142916"
 -   セッション開始プロトコル (SIP) アドレスでアカウントを検索します。
 -   アカウントの表示名属性とエイリアス属性を取得します。
 
-## <a href="" id="exchange-server"></a>Exchange サーバー ページ
+## <a name="exchange-server-page"></a><a href="" id="exchange-server"></a>Exchange サーバー ページ
 
 
 このページは、問題が発生した場合にのみ表示されます。 このページが表示された場合、通常は、入力したデバイス アカウントが Active Directory (AD) または Azure Active Directory (Azure AD) で見つかったが、アカウントの Exchange サーバーが検出されなかったことを意味します。
 
 ![Exchange サーバー ページを示す画像。](images/setupexchangeserver-01.png)
 
-### 詳細
+### <a name="details"></a>詳細
 
 デバイス アカウントのメールボックスがホストされている Exchange サーバーの名前を入力します。
 
@@ -247,13 +248,13 @@ ms.locfileid: "11142916"
 
 ![Exchange サービスの設定を省略するときに表示される確認メッセージを示す画像。](images/setupexchangeserver-02.png)
 
-### 動作
+### <a name="what-happens"></a>動作
 
 Surface Hub は、ここで入力する Exchange サーバー上のデバイス アカウントの検証を試みます。 Exchange サーバーにアクセスし、検証することができる場合は、最初の実行が続行されます。
 
 Exchange サービスの設定を省略する場合は、Surface Hub が Exchange サーバーの検索を停止し、Exchange サービス (電子メールやカレンダー) は有効になりません。
 
-## <a href="" id="exchange-policies"></a>Exchange ポリシー ページ
+## <a name="exchange-policies-page"></a><a href="" id="exchange-policies"></a>Exchange ポリシー ページ
 
 
 このページは、以下のような場合に表示されます。
@@ -266,14 +267,14 @@ Exchange サービスの設定を省略する場合は、Surface Hub が Exchang
 
 ![Exchange ポリシーのページを示す画像。](images/setupexchangepolicies.png)
 
-### 詳細
+### <a name="details"></a>詳細
 
 このページは純粋に情報提供を目的としているため、入力は必要ありません。 ただし、操作を続ける方法には 2 つのオプションがあり、操作を省略して先に進むか、エラーが発生した検証を再試行することができます。 どちらのオプションが最適かを判断する前に、下記の「**動作**」セクションをご覧ください。 どちらかのオプションをクリックする前に、別の場所で問題を解決できる場合があります。
 
 -   **サポートされていないポリシーを引き続き使用するにはここをクリック**: 最初の実行を続けるには、ここをクリックします。 Surface Hub で Exchange サービス (同期) を使用することはできなくなります。
 -   **再試行**: Exchange サーバー上のポリシーをもう一度確認します。
 
-### 動作
+### <a name="what-happens"></a>動作
 
 Surface Hub が、デバイス アカウントの EAS ポリシーで PasswordEnabled ポリシーが 0 (False) に設定されているかどうかを確認します。 設定されていない場合は、電子メールとカレンダーを同期できず、Surface Hub では Exchange サービスを使用できません。 PC から Exchange 管理ツールを使用すると、デバイス アカウントで PasswordEnabled ポリシーが 0 に設定されているかどうかを確認できます。 設定されていない場合は、ここでアカウントを再構成し、**[再試行]** をクリックしてください。
 
@@ -283,14 +284,14 @@ Exchange にアクセスできない原因としてもう 1 つ考えられる�
 
 このチェックを省略する場合は、Surface Hub が Exchange サーバーの検索と EAS ポリシーの検証を停止し、Exchange サービスは有効になりません。 設定の依存関係について詳しくは、「[Microsoft Surface Hub の概要](intro-to-surface-hub.md)」をご覧ください。
 
-## <a href="" id="name-this-device"></a>[このデバイスに名前を付ける] ページ
+## <a name="name-this-device-page"></a><a href="" id="name-this-device"></a>[このデバイスに名前を付ける] ページ
 
 
 このページでは、Surface Hub を識別するために使用する 2 つの名前を入力するように求められます。
 
 ![[このデバイスに名前を付ける] ページを示す画像。](images/setupnamedevice.png)
 
-### 詳細
+### <a name="details"></a>詳細
 
 表示された既定値が正しい場合は、**[次へ]** をクリックして先に進みます。 それ以外の場合は、いずれかまたは両方のテキスト ボックスにデータを入力してください。
 
@@ -299,7 +300,7 @@ Exchange にアクセスできない原因としてもう 1 つ考えられる�
 
 両方の名前が、長さの要件を満たし、制限されている文字を含んでいなければ、**[次へ]** をクリックすると次の [[このデバイスの管理者を設定します]](#setup-admins)ページが表示されます。
 
-### 動作
+### <a name="what-happens"></a>動作
 
 Surface Hub では、デバイスに 2 つの名前が必要です。この名前は既定で次のように設定されます。
 
@@ -314,7 +315,7 @@ Surface Hub では、デバイスに 2 つの名前が必要です。この名�
 >[!NOTE]
 >[Miracast over Infrastructure](miracast-over-infrastructure.md) を有効にする場合、DNS 経由でデバイス名を検出できる必要があります。 これを実現するには、Surface Hub が動的 DNS によって自動的に登録することを許可するか、Surface Hub のデバイス名の A または AAAA レコードを手動で作成します。
 
-## <a href="" id="setup-admins"></a>[このデバイスの管理者を設定します] ページ
+## <a name="set-up-admins-for-this-device-page"></a><a href="" id="setup-admins"></a>[このデバイスの管理者を設定します] ページ
 
 
 このページでは、デバイスをローカルで管理するための管理者アカウントを設定する方法について、いくつかのオプションから選択します。
@@ -328,7 +329,7 @@ Surface Hub では、デバイスに 2 つの名前が必要です。この名�
 
 ![[このデバイスの管理者を設定します] ページを示す画像。](images/setupsetupadmins.png)
 
-### 詳細
+### <a name="details"></a>詳細
 
 使用可能な 3 つのオプションのいずれかを選択します。
 
@@ -336,18 +337,16 @@ Surface Hub では、デバイスに 2 つの名前が必要です。この名�
 -   **Active Directory ドメイン サービスを使用する**
 -   **ローカル管理者を使用する**
 
-### 動作
+### <a name="what-happens"></a>動作
 
 各オプションを選択すると、次の動作が実行されます。
 
 -   **Microsoft Azure Active Directory を使用する**
 
-    このオプションをクリックすると、デバイスを Azure AD に参加させることができます。 **[次へ]** をクリックすると、デバイスが再起動していくつかの設定が適用され、[[Microsoft Azure Active Directory を使用する]](#use-microsoft-azure) ページが表示されて Azure AD に参加できる資格情報を入力するように求められます。 参加した組織の Azure グローバル管理者ロールのメンバーは、設定アプリを使うことができます。 許可されるユーザーは、Azure AD サブスクリプションや、Azure AD 組織の設定をどのように構成しているかによって異なります。
+    このオプションをクリックすると、デバイスを Azure AD に参加させることができます。 **[次へ]** をクリックすると、デバイスが再起動していくつかの設定が適用され、[[Microsoft Azure Active Directory を使用する]](#use-microsoft-azure) ページが表示されて Azure AD に参加できる資格情報を入力するように求められます。 参加している組織の Azure Global Admins ロールのメンバーは、新しいアプリ設定できます。 許可されるユーザーは、Azure AD サブスクリプションや、Azure AD 組織の設定をどのように構成しているかによって異なります。
     
     > [!IMPORTANT]
-    > Azure AD にデバイスを参加した後に、Azure デバイス管理者の役割に追加された管理者は、設定アプリを使用できなくなります。
-    >
-    > 最初の実行セットアップ中に Surface Hub を Azure AD に参加させると、Office アプリのシングル サインオン (SSO) が正常に機能しません。 ユーザーは、各 Office アプリで個別にサインインを要求されます。
+    > 設定 アプリを使用して Surface Hub を管理できるユーザーを構成するには、デバイス[](/mem/intune/enrollment/windows-enroll#enable-windows-10-automatic-enrollment)を Azure AD に参加する前に、テナントで Intune の自動登録が有効AD。 Intune ポリシーを使用して、Surface Hubs で [グローバル以外](surface-hub-2s-nonglobal-admin.md) の管理者を構成できます。
 
 -   **Active Directory ドメイン サービスを使用する**
 
@@ -364,7 +363,7 @@ Surface Hub では、デバイスに 2 つの名前が必要です。この名�
 
  
 
-### <a href="" id="use-microsoft-azure"></a>Microsoft Azure Active Directory を使用する
+### <a name="use-microsoft-azure-active-directory"></a><a href="" id="use-microsoft-azure"></a>Microsoft Azure Active Directory を使用する
 
 Surface Hub を Azure Active Directory (Azure AD) に参加させる場合は、この **[次に実行される処理]** ページが表示されます。 ページの内容を読んで **[次へ]** をクリックし、**[サインイン]** ページに進みます。
 
@@ -376,7 +375,7 @@ Azure AD に参加する利点は、主に 2 つあります。
 
     ![Surface Hub を Azure Active Directory に参加させるときに表示されるメッセージを示す画像。](images/setupjoiningazuread-1.png)
 
-### 詳細
+### <a name="details"></a>詳細
 
 以下の項目を入力する必要があります。
 
@@ -389,11 +388,11 @@ Azure AD に参加する利点は、主に 2 つあります。
 
 ![[理者アカウントを設定してください] ページを示す画像。](images/setupjoiningazuread-3.png)
 
-### 動作
+### <a name="what-happens"></a>動作
 
 Azure AD アカウントの有効な資格情報を入力すると、デバイスは、関連付けられた Azure AD 組織への参加を試行します。 参加に成功した場合、デバイスはその組織の従業員をローカル管理者になるようにプロビジョニングします。 このために Azure AD テナントが構成されている場合は、デバイスは MDM にも登録されます。
 
-### <a href="" id="use-active-directory"></a>Active Directory ドメイン サービスを使用する
+### <a name="use-active-directory-domain-services"></a><a href="" id="use-active-directory"></a>Active Directory ドメイン サービスを使用する
 
 このページでは、Surface Hub でデバイスの管理者としてセキュリティ グループをプロビジョニングできるように、ドメインに参加するための資格情報が求められます。
 
@@ -401,7 +400,7 @@ Azure AD アカウントの有効な資格情報を入力すると、デバイ�
 
 ![[ドメイン参加の使用による管理者の設定] ページを示す画像。](images/setupdomainjoin.png)
 
-### 詳細
+### <a name="details"></a>詳細
 
 以下の項目を入力する必要があります。
 
@@ -413,7 +412,7 @@ Azure AD アカウントの有効な資格情報を入力すると、デバイ�
 
 ![[セキュリティ グループの入力] ページを示す画像。](images/setupsecuritygroup-1.png)
 
-### 動作
+### <a name="what-happens"></a>動作
 
 Surface Hub は、入力されたドメイン、[[Active Directory ドメイン サービスを使用する] ページ](#use-active-directory)のアカウント資格情報、[[このデバイスに名前を付ける]](#name-this-device) ページのデバイス名を使用して、ドメインへの参加を試行します。 参加が成功した場合は、最初の実行が続行され、セキュリティ グループが求められます。 参加が成功しなかった場合、最初の実行は停止し、入力した情報を変更するように求められます。
 
@@ -424,13 +423,13 @@ Surface Hub は、入力されたドメイン、[[Active Directory ドメイン 
 
  
 
-### ローカル管理者を使用する
+### <a name="use-a-local-admin"></a>ローカル管理者を使用する
 
 Surface Hub の管理に Azure Active Directory (Azure AD) や Active Directory (AD) を使用しない場合は、ローカル管理者アカウントを作成する必要があります。
 
 ![ローカル管理者用の [管理者アカウントを設定してください] ページを示す画像。](images/setuplocaladmin.png)
 
-### 詳細
+### <a name="details"></a>詳細
 
 以下の項目を入力する必要があります。
 
@@ -438,11 +437,11 @@ Surface Hub の管理に Azure Active Directory (Azure AD) や Active Directory 
 -   **パスワード:** デバイス アカウントのパスワードです。
 -   **パスワードの再入力:** パスワードが前のテキスト ボックスで入力されたとおりかどうかを検証します。
 
-### 動作
+### <a name="what-happens"></a>動作
 
 このページでは、ここで入力する資格情報を使用して、新しい管理者アカウントの作成が試みられます。 作成が成功した場合は、最初の実行が終了します。 作成が失敗した場合は、別の資格情報を入力するように求められます。
 
-## <a href="" id="update-surface-hub"></a>Surface Hub の更新
+## <a name="update-the-surface-hub"></a><a href="" id="update-surface-hub"></a>Surface Hub の更新
 
 
 >[!IMPORTANT]
@@ -452,7 +451,7 @@ Surface Hub の管理に Azure Active Directory (Azure AD) や Active Directory 
 
 最新の機能や修正プログラムを取得するため、上記の最初の実行手順がすべて完了したらすぐに Surface Hub を更新してください。
 
-1.  デバイスが Windows Update サーバーにアクセスできることを確認します。 
+1.  デバイスが更新サーバーにアクセスWindows確認します。 
 2.  [設定] を開き、**[更新とセキュリティ]**、**[Windows Update]**、**[更新プログラムの確認]** を順にクリックします。
 3.  更新プログラムが提供されている場合は、ダウンロードされます。 ダウンロードが完了したら、**[今すぐ更新]** ボタンをクリックして更新プログラムをインストールします。
 4.  更新プログラムがインストールされたら、画面の指示に従います。 デバイスの再起動が必要な場合があります。
