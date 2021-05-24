@@ -1,0 +1,93 @@
+items:
+  - name: バリアフリー技術ラボ
+    href: index.md
+    items:
+      - name: 障がい者のための機能設計について
+        href: understanding-function-to-design-for-disabilities.md
+        items:
+          - name: アクセシビリティへの障壁が同時に発生する可能性
+            href: barriers-to-accessibility-can-co-occur.md
+          - name: 認知能力について
+            href: cognition.md
+            items:
+              - name: 注意
+                href: cognition-attention.md
+              - name: 記憶
+                href: cognition-memory.md
+              - name: 判断
+                href: cognition-judgment.md
+              - name: 処理 (速度)
+                href: cognition-processing-speed.md
+              - name: 処理 (理解力)
+                href: cognition-processing-comprehension.md
+          - name: 機動性について
+            href: mobility.md
+            items:
+              - name: 把握
+                href: mobility-grasp.md
+              - name: 良好な運動能力
+                href: mobility-fine-motor-skills.md
+              - name: 調整
+                href: mobility-coordination.md
+              - name: 制御 (自発的・非自発的な動き)
+                href: mobility-control.md
+              - name: 速度
+                href: mobility-speed.md
+              - name: 筋肉の緊張
+                href: mobility-muscle-tone.md
+              - name: 持久力
+                href: mobility-endurance.md
+              - name: 姿勢
+                href: mobility-posture.md
+          - name: 視覚について
+            href: vision.md
+            items:
+              - name: 全盲 (視覚なし)
+                href: vision-blindness-sightlessness.md
+              - name: 弱視 (部分的に見える)
+                href: vision-low-vision-partially-sighted.md
+              - name: 視力低下
+                href: vision-decreased-acuity.md
+              - name: 視野の狭窄
+                href: vision-visual-field-loss.md
+              - name: 色覚異常
+                href: vision-color-blindness.md
+              - name: 光恐怖症 (光過敏)
+                href: vision-photophobia-light-sensitivity.md
+          - name: 聴覚とは?
+            href: hearing.md
+            items:
+              - name: 聴覚損失 (軽度)
+                href: hearing-mild.md
+              - name: 聴力損失 (中/重度)
+                href: hearing-moderate-severe.md
+              - name: 聴力損失 (最重度)
+                href: hearing-profound.md
+              - name: 難聴 (非対称)
+                href: hearing-asymmetrical.md
+          - name: 音声、発言、およびコミュニケーションについて
+            href: voice-speech-communication.md
+            items:
+              - name: 失語症 (感覚性)
+                href: voice-speech-communication-aphasia-receptive.md
+              - name: 失語症 (運動性)
+                href: voice-speech-communication-aphasia-expressive.md
+              - name: 発話能力
+                href: voice-speech-communication-speech-quality.md
+              - name: 社会参加
+                href: voice-speech-communication-social-participation.md
+              - name: 非言語
+                href: voice-speech-communication-non-verbal.md
+          - name: 行動と認識について
+            href: sensation-perception.md
+            items:
+              - name: 前庭
+                href: sensation-perception-vestibular.md
+              - name: 慢性痛
+                href: sensation-perception-chronic-pain.md
+              - name: 皮膚整合性
+                href: sensation-perception-skin-integrity.md
+              - name: 感覚 (超敏症および過敏症)
+                href: sensation-perception-sensation.md
+              - name: 固有受容感覚
+                href: sensation-perception-proprioception.md

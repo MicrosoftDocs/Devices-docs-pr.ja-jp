@@ -12,96 +12,90 @@ metadata:
   ms.author: samanro
   ms.date: 07/03/2019
   localization_priority: Priority
-  ms.openlocfilehash: 03c1481004ddfa6ff7fb8baae9934bbd2acf9ed6
-  ms.sourcegitcommit: 1053479c191fd10651d31a466fad1769fb0cd28b
-  ms.translationtype: HT
-  ms.contentlocale: ja-JP
-  ms.lasthandoff: 01/16/2021
-  ms.locfileid: "11271521"
 highlightedContent:
   items:
-  - title: Surface デバイスのドキュメント
-    itemType: learn
-    url: https://docs.microsoft.com/surface/get-started
-  - title: Surface Hub ドキュメント
-    itemType: learn
-    url: https://docs.microsoft.com/surface-hub/index
-  - title: Surface Duo ドキュメント
-    itemType: learn
-    url: https://docs.microsoft.com/surface-duo/index
+    - title: Surface デバイスのドキュメント
+      itemType: learn
+      url: 'https://docs.microsoft.com/surface/get-started'
+    - title: Surface Hub ドキュメント
+      itemType: learn
+      url: 'https://docs.microsoft.com/surface-hub/index'
+    - title: Surface Duo ドキュメント
+      itemType: learn
+      url: 'https://docs.microsoft.com/surface-duo/index'
 conceptualContent:
   title: Surface デバイス
   summary: Microsoft Surface デバイスのリソースを見つけます。
   items:
-  - title: Surface の概要
-    links:
-    - url: https://www.microsoft.com/surface/business/surface-pro-7-plus
-      itemType: concept
-      text: ビジネス向け Surface Laptop Pro 7+
-    - url: https://www.microsoft.com/surface/business/surface-laptop-go
-      itemType: concept
-      text: ビジネス向け Surface Laptop Go
-    - url: https://www.microsoft.com/surface/business
-      itemType: concept
-      text: すべての Surface ファミリー製品を見る
-  - title: Surface Hub の概要
-    links:
-    - url: https://docs.microsoft.com/surface-hub/surface-hub-2s-85-install-mount
-      itemType: how-to-guide
-      text: Surface Hub 2S 85" のインストールとマウント (準備ガイド)
-    - url: https://docs.microsoft.com/surface-hub/surface-hub-2s-whats-new
-      itemType: concept
-      text: Surface Hub 2S の新機能
-    - url: https://docs.microsoft.com/surface-hub/surface-hub-2s-techspecs
-      itemType: concept
-      text: Surface Hub 2S の技術仕様
-  - title: Surface Duo の概要
-    links:
-    - url: https://docs.microsoft.com/surface-duo/surface-duo-manage
-      itemType: concept
-      text: Surface Duo の管理の概要
-    - url: https://docs.microsoft.com/surface-duo/surface-duo-secure
-      itemType: concept
-      text: Surface Duo のセキュリティの概要
-    - url: https://www.microsoft.com/surface/business/surface-duo
-      itemType: concept
-      text: Surface Duo の技術仕様
-  - title: Surface コミュニティ
-    links:
-    - url: https://techcommunity.microsoft.com/t5/Surface-IT-Pro-Blog/bg-p/SurfaceITPro
-      itemType: reference
-      text: IT 担当者向けの Surface のブログ
-    - url: https://techcommunity.microsoft.com/t5/Surface-Devices/ct-p/SurfaceDevices
-      itemType: reference
-      text: Surface デバイス テクニカル コミュニティ
-  - title: Surface Hub コミュニティ
-    links:
-    - url: https://techcommunity.microsoft.com/t5/surface-hub/bd-p/SurfaceHub
-      itemType: reference
-      text: Surface Hub Tech コミュニティ
-  - title: Surface Duo コミュニティ
-    links:
-    - url: https://aka.ms/SurfaceDuoITBlog
-      itemType: reference
-      text: IT 担当者向けの Surface のブログ
-  - title: Surface ヘルプ
-    links:
-    - url: contact-surface-support.md
-      itemType: learn
-      text: Surface サポートへのお問い合わせ
-  - title: Surface Hub ヘルプ
-    links:
-    - url: https://support.serviceshub.microsoft.com/supportforbusiness/create?sapId=bb7066fb-e329-c1c0-9c13-8e9949c6a64e&hidden=false
-      itemType: learn
-      text: Surface Hub のサポートへのお問い合わせ
-  - title: Surface Duo ヘルプ
-    links:
-    - url: https://docs.microsoft.com/en-us/surface-duo/contact-surface-duo-support
-      itemType: learn
-      text: Surface Duo のサポートへのお問い合わせ
-    - url: https://docs.microsoft.com/en-us/dual-screen/android/get-duo-sdk?tabs=windows
-      itemType: learn
-      text: Surface Duo SDK を入手する
-    - url: https://www.microsoft.com/download/details.aspx?id=100847
-      itemType: learn
-      text: Surface Duo エミュレーターをダウンロードする
+    - title: Surface の概要
+      links:
+        - url: 'https://www.microsoft.com/surface/business/surface-laptop-4'
+          itemType: concept
+          text: Surface Laptop 4 for Business
+        - url: 'https://www.microsoft.com/surface/business/surface-pro-7-plus'
+          itemType: concept
+          text: ビジネス向け Surface Pro 7+
+        - url: 'https://www.microsoft.com/surface/business'
+          itemType: concept
+          text: すべての Surface ファミリー製品を見る
+    - title: Surface Hub の概要
+      links:
+        - url: 'https://docs.microsoft.com/surface-hub/surface-hub-2s-85-install-mount'
+          itemType: how-to-guide
+          text: Surface Hub 2S 85 インチを設置して取り付ける (準備ガイド)
+        - url: 'https://docs.microsoft.com/surface-hub/surface-hub-2s-whats-new'
+          itemType: concept
+          text: Surface Hub 2S の新機能
+        - url: 'https://docs.microsoft.com/surface-hub/surface-hub-2s-techspecs'
+          itemType: concept
+          text: Surface Hub 2S の技術仕様
+    - title: Surface Duo の概要
+      links:
+        - url: 'https://docs.microsoft.com/surface-duo/surface-duo-manage'
+          itemType: concept
+          text: Surface Duo の管理の概要
+        - url: 'https://docs.microsoft.com/surface-duo/surface-duo-secure'
+          itemType: concept
+          text: Surface Duo のセキュリティの概要
+        - url: 'https://www.microsoft.com/surface/business/surface-duo'
+          itemType: concept
+          text: Surface Duo の技術仕様
+    - title: Surface コミュニティ
+      links:
+        - url: 'https://techcommunity.microsoft.com/t5/Surface-IT-Pro-Blog/bg-p/SurfaceITPro'
+          itemType: reference
+          text: IT 担当者向けの Surface のブログ
+        - url: 'https://techcommunity.microsoft.com/t5/Surface-Devices/ct-p/SurfaceDevices'
+          itemType: reference
+          text: Surface デバイス テクニカル コミュニティ
+    - title: Surface Hub コミュニティ
+      links:
+        - url: 'https://techcommunity.microsoft.com/t5/surface-hub/bd-p/SurfaceHub'
+          itemType: reference
+          text: Surface Hub Tech コミュニティ
+    - title: Surface Duo コミュニティ
+      links:
+        - url: 'https://aka.ms/SurfaceDuoITBlog'
+          itemType: reference
+          text: IT 担当者向けの Surface のブログ
+    - title: Surface ヘルプ
+      links:
+        - url: contact-surface-support.md
+          itemType: learn
+          text: Surface サポートへのお問い合わせ
+    - title: Surface Hub ヘルプ
+      links:
+        - url: 'https://support.serviceshub.microsoft.com/supportforbusiness/create?sapId=bb7066fb-e329-c1c0-9c13-8e9949c6a64e&hidden=false'
+          itemType: learn
+          text: Surface Hub のサポートへのお問い合わせ
+    - title: Surface Duo ヘルプ
+      links:
+        - url: 'https://docs.microsoft.com/en-us/surface-duo/contact-surface-duo-support'
+          itemType: learn
+          text: Surface Duo のサポートへのお問い合わせ
+        - url: 'https://docs.microsoft.com/en-us/dual-screen/android/get-duo-sdk?tabs=windows'
+          itemType: learn
+          text: Surface Duo SDK を入手する
+        - url: 'https://www.microsoft.com/download/details.aspx?id=100847'
+          itemType: learn
+          text: Surface Duo エミュレーターをダウンロードする
