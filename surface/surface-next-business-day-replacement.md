@@ -3,7 +3,7 @@ title: 翌営業日交換の情報と対象地域
 ms.author: v-kaij
 author: greg-lindsay
 manager: laurawi
-ms.date: 05/18/2021
+ms.date: 05/23/2021
 audience: Admin
 ms.topic: article
 ms.prod: surface
@@ -14,12 +14,12 @@ appliesto:
 - Surface Hub
 ms.reviewer: irenewhite
 description: 翌営業日交換の情報と対象地域。
-ms.openlocfilehash: 387286698a1f82066bf1631682e2ceb749c0a6ab
-ms.sourcegitcommit: a4f8d271b1372321c3b45fc5a7a29703976964a4
+ms.openlocfilehash: 2708890c864582cf638c48474f85ddc01ef36576
+ms.sourcegitcommit: 77b2c51f8467ac3ac37399551b0cc20d9ce57d24
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/20/2021
-ms.locfileid: "11577087"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "11585928"
 ---
 # <a name="next-business-day-replacement-information--coverage-areas"></a>翌営業日交換の情報と対象地域
 
@@ -46,6 +46,7 @@ ms.locfileid: "11577087"
 - [フィンランド](#finland)
 - [フランス](#france)
 - [ドイツ](#germany)
+- [香港](#hong-kong)
 - [アイルランド](#ireland)
 - [イタリア](#italy)
 - [日本](#japan)
@@ -81,6 +82,7 @@ ms.locfileid: "11577087"
 #### <a name="czech-republic"></a>チェコ共和国
 
 - カットオフ時間: 12:00 CET (UTC+1)
+- [翌営業日の対象範囲](https://download.microsoft.com/download/9/2/6/926014cb-38b2-4270-b841-d3dc56f6e341/NBD%20Coverage%20-%20Czech%20Republic%20Post%20Codes%20042821.xlsx)
 
 #### <a name="denmark"></a>デンマーク 
 
@@ -95,10 +97,16 @@ ms.locfileid: "11577087"
 #### <a name="france"></a>フランス
 
 - カットオフ時間: 12:00 CET (UTC+1)
+- [翌営業日の対象範囲](https://download.microsoft.com/download/7/b/0/7b0fa1bb-4c75-474a-83be-6d55e0fa719f/NBD%20Coverage%20-%20France%20Postal%20Codes%20042821.xlsx)
 
 #### <a name="germany"></a>ドイツ
 
 - カットオフ時間: 12:00 CET (UTC+1)
+- [翌営業日の対象範囲](https://download.microsoft.com/download/d/4/f/d4f6c11f-ada2-4400-b502-2e722644427b/NBD%20Coverage%20-%20Germany%20Post%20Codes%20042821.xlsx)
+
+#### <a name="hong-kong"></a>香港
+
+- カットオフ時間:16:00 HKT (UTC+8) 
 
 #### <a name="ireland"></a>アイルランド
 
@@ -113,40 +121,7 @@ ms.locfileid: "11577087"
 #### <a name="japan"></a>日本
 
 - カットオフ時間: 15:30 JST (UTC+9)
-- [翌営業日の対象範囲](https://cdn.techcommunity.microsoft.com/assets/Surface/jp-next-day-replace-surface.pdf)
-
-**日本で利用可能な地域** 
-
-- 青森県
-- 岩手県
-- 宮城県
-- 秋田県
-- 山形県
-- 福島県
-- 茨城県
-- 埼玉県
-- 千葉県
-- 東京都
-- 神奈川県
-- 新潟
-- 富山県
-- 石川県
-- 福井県
-- 山梨県
-- 長野県
-- 岐阜県
-- 静岡県
-- 愛知県
-- 三重県
-- 滋賀県
-- 京都府
-- 大阪府
-- 兵庫県
-- 奈良県
-- 和歌山県
-- 鳥取県
-- 広島県
-- 山口県
+- [翌営業日の対象範囲](https://download.microsoft.com/download/c/7/8/c781a035-19f7-4563-9dd9-e8c5f3713342/NBD%20Coverage%20-%20Japan%20Post%20Codes%20060121.xlsx)
 
 #### <a name="norway"></a>ノルウェー
 
@@ -156,7 +131,8 @@ ms.locfileid: "11577087"
 #### <a name="poland"></a>ポーランド
 
 - カットオフ時間: 12:00 CET (UTC+1)
-
+- [翌営業日の対象範囲](https://download.microsoft.com/download/f/e/8/fe8b9b43-5f72-4cf1-971d-78dd46f8ea1c/NBD%20Coverage%20-%20Poland%20Post%20Codes%20042821.xlsx
+)
 
 #### <a name="portugal"></a>ポルトガル
 
@@ -185,6 +161,7 @@ ms.locfileid: "11577087"
 #### <a name="the-netherlands"></a>オランダ
 
 - カットオフ時間: 12:00 CET (UTC+1)
+- [翌営業日の対象範囲](https://download.microsoft.com/download/6/3/f/63f2ff4c-3b8f-465e-9498-0878f7ba70f3/NBD%20Coverage%20-%20Netherlands%20Post%20Codes%20042821.xlsx)
 
 #### <a name="united-states"></a>米国 
 

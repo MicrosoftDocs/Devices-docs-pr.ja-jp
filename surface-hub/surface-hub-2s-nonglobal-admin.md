@@ -14,12 +14,12 @@ ms.localizationpriority: Medium
 appliesto:
 - Surface Hub
 - Surface Hub 2S
-ms.openlocfilehash: 03359a7d8ea028a8094c064c1fcb82cc9a53fe6a
-ms.sourcegitcommit: a4f8d271b1372321c3b45fc5a7a29703976964a4
+ms.openlocfilehash: cdb6dbdb49b34857f7b30feebb39f7a5c36e883c
+ms.sourcegitcommit: 77b2c51f8467ac3ac37399551b0cc20d9ce57d24
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/20/2021
-ms.locfileid: "11576767"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "11585958"
 ---
 # <a name="configure-non-global-admin-accounts-on-surface-hub"></a>Surface Hub でグローバル管理者以外のアカウントを構成する
 
@@ -47,7 +47,7 @@ Windows 10 Team 2020 Update では、Azure AD ドメインに参加している 
 
      ![ハブ管理者のセキュリティ グループを作成する](images/sh-create-sec-group.png)
 
-3. グループを開き、[**メンバー]** を選択**** し、[メンバーの追加] を選択して、管理者アカウントとして指定する管理者アカウントを入力Surface Hub。 Intune でグループを作成する方法の詳細については、「グループを追加してユーザーとデバイスを整理  [する」を参照してください](https://docs.microsoft.com/mem/intune/fundamentals/groups-add)。
+3. グループを開き、[**メンバー]** を選択**** し、[メンバーの追加] を選択して、管理者アカウントとして指定する管理者アカウントを入力Surface Hub。 Intune でグループを作成する方法の詳細については、「グループを追加してユーザーとデバイスを整理  [する」を参照してください](/mem/intune/fundamentals/groups-add)。
 
 ### <a name="create-security-group-for-surface-hub-devices"></a>デバイスのセキュリティ グループSurface Hubする
 
@@ -57,8 +57,8 @@ Windows 10 Team 2020 Update では、Azure AD ドメインに参加している 
 
 ## <a name="obtain-azure-ad-group-sid-using-powershell"></a>PowerShell を使用AD Azure グループ SID を取得する
 
-1. 管理者特権 (管理者として**実行)** を使用して PowerShell を起動し、PowerShell スクリプトを実行するようにシステムが構成されていることを確認します。 詳細については、「実行ポリシー [について」を参照してください](https://docs.microsoft.com/powershell/module/microsoft.powershell.core/about/about_execution_policies?)。 
-2. [モジュールAzure PowerShellインストールします](https://docs.microsoft.com/powershell/azure/install-az-ps)。
+1. 管理者特権 (管理者として**実行)** を使用して PowerShell を起動し、PowerShell スクリプトを実行するようにシステムが構成されていることを確認します。 詳細については、「実行ポリシー [について」を参照してください](/powershell/module/microsoft.powershell.core/about/about_execution_policies?)。 
+2. [モジュールAzure PowerShellインストールします](/powershell/azure/install-az-ps)。
 3. Azure のテナントにサインインADします。
 
     ```powershell
@@ -106,6 +106,9 @@ Windows 10 Team 2020 Update では、Azure AD ドメインに参加している 
 
 2. プレースホルダー SID (S-1-12-1 以降) を Azure AD **グループ SID** に置き換え、ファイルを XML として保存します。たとえば ** 、aad-local-admin.xml**。 
 
+      > [!NOTE]
+      > グループは SID を介して指定する必要があります。Azure ユーザーを直接追加する場合は、次の形式でユーザー プリンシパル名 (UPN) を指定して追加できます。 `<member name = "AzureAD\user@contoso.com" />`
+
 ## <a name="create-custom-configuration-profile"></a>カスタム構成プロファイルの作成
 
 1. [エンドポイント マネージャー] で、[**デバイス**  >  **構成プロファイル] [プロファイル**  >  **の作成] を選択します**。 
@@ -125,7 +128,7 @@ Windows 10 Team 2020 Update では、Azure AD ドメインに参加している 
 8. [グループ**を選択して含める]** をクリックし、前に作成したセキュリティ グループ[(Surface Hub](#create-security-group-for-surface-hub-devices)**選択します**)。 **[次へ]** をクリックします。
 9. [適用ルール] で、必要に応じてルールを追加します。 それ以外の場合は、[ **次へ] を選択** し、[作成] を **選択します**。
 
-OMA-URI 文字列を使用したカスタム構成プロファイルの詳細については、「Intune のデバイスでカスタム設定を使用Windows 10[を参照してください](https://docs.microsoft.com/mem/intune/configuration/custom-settings-windows-10)。
+OMA-URI 文字列を使用したカスタム構成プロファイルの詳細については、「Intune のデバイスでカスタム設定を使用Windows 10[を参照してください](/mem/intune/configuration/custom-settings-windows-10)。
 
 
 ## <a name="non-global-admins-managing-surface-hub"></a>管理者を管理するグローバルSurface Hub
