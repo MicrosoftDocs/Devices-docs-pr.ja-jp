@@ -32,7 +32,7 @@ ms.locfileid: "11271581"
 - [<span data-ttu-id="9b927-111">デバイスと最適な構成を比較して詳細なレポートを取得します。</span><span class="sxs-lookup"><span data-stu-id="9b927-111">Obtain detailed report comparing device vs optimal configuration.</span></span>](surface-diagnostic-toolkit-desktop-mode.md#detailed-report)
 
 
-## <span data-ttu-id="9b927-112">主なシナリオとダウンロード リソース</span><span class="sxs-lookup"><span data-stu-id="9b927-112">Primary scenarios and download resources</span></span> 
+## <a name="primary-scenarios-and-download-resources"></a><span data-ttu-id="9b927-112">主なシナリオとダウンロード リソース</span><span class="sxs-lookup"><span data-stu-id="9b927-112">Primary scenarios and download resources</span></span> 
 
 <span data-ttu-id="9b927-113">SDT for Business を実行するには、次の表に示すコンポーネントをダウンロードします。</span><span class="sxs-lookup"><span data-stu-id="9b927-113">To run SDT for Business, download the components listed in the following table.</span></span>
 
@@ -42,7 +42,7 @@ ms.locfileid: "11271581"
 <span data-ttu-id="9b927-118">デスクトップ モード</span><span class="sxs-lookup"><span data-stu-id="9b927-118">Desktop mode</span></span> |  <span data-ttu-id="9b927-119">ユーザーが Surface デバイスで SDT を実行して問題のトラブルシューティングを行うのを支援します。</span><span class="sxs-lookup"><span data-stu-id="9b927-119">Assist users in running SDT on their Surface devices to troubleshoot issues.</span></span><br><span data-ttu-id="9b927-120">1 つ以上の Surface デバイスに展開するカスタム パッケージを作成すると、ユーザーは特定のログを選択して収集および分析できます。</span><span class="sxs-lookup"><span data-stu-id="9b927-120">Create a custom package to deploy on one or more Surface devices allowing users to select specific logs to collect and analyze.</span></span> | <span data-ttu-id="9b927-121">SDT 配布可能 MSI パッケージ:</span><span class="sxs-lookup"><span data-stu-id="9b927-121">SDT distributable MSI package:</span></span><br><span data-ttu-id="9b927-122">Microsoft Surface Diagnostic Toolkit for Business インストーラー</span><span class="sxs-lookup"><span data-stu-id="9b927-122">Microsoft Surface Diagnostic Toolkit for Business Installer</span></span><br>[<span data-ttu-id="9b927-123">IT 担当者向け Surface ツール</span><span class="sxs-lookup"><span data-stu-id="9b927-123">Surface Tools for IT</span></span>](https://www.microsoft.com/download/details.aspx?id=46703) | [<span data-ttu-id="9b927-124">デスクトップ モードで Surface Diagnostic Toolkitを使用する</span><span class="sxs-lookup"><span data-stu-id="9b927-124">Use Surface Diagnostic Toolkit in desktop mode</span></span>](surface-diagnostic-toolkit-desktop-mode.md)
 <span data-ttu-id="9b927-125">コマンド ライン</span><span class="sxs-lookup"><span data-stu-id="9b927-125">Command line</span></span> |  <span data-ttu-id="9b927-126">Configuration Manager などの標準ツールを使用して、ユーザーの操作なしにリモートで Surface デバイスを直接トラブルシューティングします。</span><span class="sxs-lookup"><span data-stu-id="9b927-126">Directly troubleshoot Surface devices remotely without user interaction, using standard tools such as Configuration Manager.</span></span> <span data-ttu-id="9b927-127">これには、次のコマンドが含まれます。</span><span class="sxs-lookup"><span data-stu-id="9b927-127">It includes the following commands:</span></span><br>`-DataCollector` <span data-ttu-id="9b927-128">すべてのログ ファイルを収集します</span><span class="sxs-lookup"><span data-stu-id="9b927-128">collects all log files</span></span><br>`-bpa` <span data-ttu-id="9b927-129">ベスト プラクティス アナライザーを使用して正常性診断を実行します。</span><span class="sxs-lookup"><span data-stu-id="9b927-129">runs health diagnostics using Best Practice Analyzer.</span></span><br>`-windowsupdate` <span data-ttu-id="9b927-130">ファームウェアまたはドライバーの更新プログラムが見つからないか Windows Update をチェックします。</span><span class="sxs-lookup"><span data-stu-id="9b927-130">checks Windows Update for missing firmware or driver updates.</span></span><br>`-warranty` <span data-ttu-id="9b927-131">保証情報を確認します。</span><span class="sxs-lookup"><span data-stu-id="9b927-131">checks warranty information.</span></span> <br><br>| <span data-ttu-id="9b927-132">SDT コンソール アプリ:</span><span class="sxs-lookup"><span data-stu-id="9b927-132">SDT console app:</span></span><br><span data-ttu-id="9b927-133">Microsoft Surface Diagnostics アプリ コンソール</span><span class="sxs-lookup"><span data-stu-id="9b927-133">Microsoft Surface Diagnostics App Console</span></span><br>[<span data-ttu-id="9b927-134">IT 担当者向け Surface ツール</span><span class="sxs-lookup"><span data-stu-id="9b927-134">Surface Tools for IT</span></span>](https://www.microsoft.com/download/details.aspx?id=46703) | [<span data-ttu-id="9b927-135">コマンドを使用して Surface 診断Toolkitを実行する</span><span class="sxs-lookup"><span data-stu-id="9b927-135">Run Surface Diagnostic Toolkit using commands</span></span>](surface-diagnostic-toolkit-command-line.md)
 
-## <span data-ttu-id="9b927-136">サポートされるデバイス</span><span class="sxs-lookup"><span data-stu-id="9b927-136">Supported devices</span></span> 
+## <a name="supported-devices-"></a><span data-ttu-id="9b927-136">サポートされるデバイス</span><span class="sxs-lookup"><span data-stu-id="9b927-136">Supported devices</span></span> 
 
 <span data-ttu-id="9b927-137">SDT for Business は、次の Surface 3 以降のデバイスでサポートされています。</span><span class="sxs-lookup"><span data-stu-id="9b927-137">SDT for Business is supported on Surface 3 and later devices, including:</span></span>
 
@@ -56,7 +56,7 @@ ms.locfileid: "11271581"
 - <span data-ttu-id="9b927-145">Surface 3</span><span class="sxs-lookup"><span data-stu-id="9b927-145">Surface 3</span></span>
 
 
-## <span data-ttu-id="9b927-146">Surface Diagnostic Toolkit for Business のインストール</span><span class="sxs-lookup"><span data-stu-id="9b927-146">Installing Surface Diagnostic Toolkit for Business</span></span>
+## <a name="installing-surface-diagnostic-toolkit-for-business"></a><span data-ttu-id="9b927-146">Surface Diagnostic Toolkit for Business のインストール</span><span class="sxs-lookup"><span data-stu-id="9b927-146">Installing Surface Diagnostic Toolkit for Business</span></span>
 
 <span data-ttu-id="9b927-147">組織内のユーザーに配布できる SDT パッケージを作成するには、</span><span class="sxs-lookup"><span data-stu-id="9b927-147">To create an SDT package that you can distribute to users in your organization:</span></span>
 
@@ -83,13 +83,13 @@ ms.locfileid: "11271581"
 
 7. <span data-ttu-id="9b927-161">[次 **へ] をクリック** し、[インストール] を **クリックします**。</span><span class="sxs-lookup"><span data-stu-id="9b927-161">Click **Next** and then click **Install**.</span></span> 
 
-## <span data-ttu-id="9b927-162">コマンド ラインを使用したインストール</span><span class="sxs-lookup"><span data-stu-id="9b927-162">Installing using the command line</span></span>
+## <a name="installing-using-the-command-line"></a><span data-ttu-id="9b927-162">コマンド ラインを使用したインストール</span><span class="sxs-lookup"><span data-stu-id="9b927-162">Installing using the command line</span></span>
 <span data-ttu-id="9b927-163">必要に応じて、コマンド プロンプトで SDT をインストールし、カスタム フラグを設定して管理モードでツールをインストールできます。</span><span class="sxs-lookup"><span data-stu-id="9b927-163">If desired, you can install SDT at a command prompt and set a custom flag to install the tool in admin mode.</span></span> <span data-ttu-id="9b927-164">SDT には、次のインストール オプション フラグが含まれます。</span><span class="sxs-lookup"><span data-stu-id="9b927-164">SDT contains the following install option flags:</span></span>
 
 - `SENDTELEMETRY` <span data-ttu-id="9b927-165">利用統計情報を Microsoft に送信します。</span><span class="sxs-lookup"><span data-stu-id="9b927-165">sends telemetry data to Microsoft.</span></span> <span data-ttu-id="9b927-166">フラグは無効または `0` 有効を `1` 受け入れる。</span><span class="sxs-lookup"><span data-stu-id="9b927-166">The flag accepts `0` for disabled or `1` for enabled.</span></span> <span data-ttu-id="9b927-167">既定値は利用統計情報 `1` を送信します。</span><span class="sxs-lookup"><span data-stu-id="9b927-167">The default value is `1` to send telemetry.</span></span>
 - `ADMINMODE` <span data-ttu-id="9b927-168">管理モードでインストールするツールを構成します。</span><span class="sxs-lookup"><span data-stu-id="9b927-168">configures the tool to be installed in admin mode.</span></span> <span data-ttu-id="9b927-169">このフラグは、クライアント `0` モードまたは `1` IT 管理者モードに対して受け入れ可能です。</span><span class="sxs-lookup"><span data-stu-id="9b927-169">The flag accepts `0` for client mode or `1` for IT Administrator mode.</span></span> <span data-ttu-id="9b927-170">既定値は、`0` です。</span><span class="sxs-lookup"><span data-stu-id="9b927-170">The default value is `0`.</span></span>
 
-### <span data-ttu-id="9b927-171">コマンド ラインから SDT をインストールするには、次の手順を実行します。</span><span class="sxs-lookup"><span data-stu-id="9b927-171">To install SDT from the command line:</span></span>
+### <a name="to-install-sdt-from-the-command-line"></a><span data-ttu-id="9b927-171">コマンド ラインから SDT をインストールするには、次の手順を実行します。</span><span class="sxs-lookup"><span data-stu-id="9b927-171">To install SDT from the command line:</span></span>
 
 1. <span data-ttu-id="9b927-172">コマンド プロンプトを開き、次のコマンドを入力します。</span><span class="sxs-lookup"><span data-stu-id="9b927-172">Open a command prompt and enter:</span></span>
 
@@ -102,7 +102,7 @@ ms.locfileid: "11271581"
     C:\Users\Administrator> msiexec.exe/I"C:\Users\Administrator\Desktop\Microsoft_Surface_Diagnostic_Toolkit_for_Business_Installer.msi" ADMINMODE=1
     ```
 
-## <span data-ttu-id="9b927-174">Surface デバイスでの SDT の検索</span><span class="sxs-lookup"><span data-stu-id="9b927-174">Locating SDT on your Surface device</span></span>
+## <a name="locating-sdt-on-your-surface-device"></a><span data-ttu-id="9b927-174">Surface デバイスでの SDT の検索</span><span class="sxs-lookup"><span data-stu-id="9b927-174">Locating SDT on your Surface device</span></span>
 
 <span data-ttu-id="9b927-175">SDT と SDT アプリ コンソールの両方がインストールされます `C:\Program Files\Microsoft\Surface\Microsoft Surface Diagnostic Toolkit for Business` 。</span><span class="sxs-lookup"><span data-stu-id="9b927-175">Both SDT and the SDT app console are installed at `C:\Program Files\Microsoft\Surface\Microsoft Surface Diagnostic Toolkit for Business`.</span></span>
 
@@ -112,7 +112,7 @@ ms.locfileid: "11271581"
 
 *<span data-ttu-id="9b927-178">図 2. </span><span class="sxs-lookup"><span data-stu-id="9b927-178">Figure 2.</span></span> <span data-ttu-id="9b927-179">SDT によってインストールされるファイル</span><span class="sxs-lookup"><span data-stu-id="9b927-179">Files installed by SDT</span></span>*
 
-## <span data-ttu-id="9b927-180">配布用の SDT パッケージの準備</span><span class="sxs-lookup"><span data-stu-id="9b927-180">Preparing the SDT package for distribution</span></span>
+## <a name="preparing-the-sdt-package-for-distribution"></a><span data-ttu-id="9b927-180">配布用の SDT パッケージの準備</span><span class="sxs-lookup"><span data-stu-id="9b927-180">Preparing the SDT package for distribution</span></span>
 
 <span data-ttu-id="9b927-181">カスタム パッケージを作成すると、特定の既知の問題をツールのターゲットに設定できます。</span><span class="sxs-lookup"><span data-stu-id="9b927-181">Creating a custom package allows you to target the tool to specific known issues.</span></span>
 
@@ -123,7 +123,7 @@ ms.locfileid: "11271581"
 
     *<span data-ttu-id="9b927-185">図 3. </span><span class="sxs-lookup"><span data-stu-id="9b927-185">Figure 3.</span></span> <span data-ttu-id="9b927-186">カスタム パッケージを作成する</span><span class="sxs-lookup"><span data-stu-id="9b927-186">Create custom package</span></span>*
 
-### <span data-ttu-id="9b927-187">言語と利用統計情報の設定</span><span class="sxs-lookup"><span data-stu-id="9b927-187">Language and telemetry settings</span></span>
+### <a name="language-and-telemetry-settings"></a><span data-ttu-id="9b927-187">言語と利用統計情報の設定</span><span class="sxs-lookup"><span data-stu-id="9b927-187">Language and telemetry settings</span></span>
 
   <span data-ttu-id="9b927-188">パッケージを作成する場合は、言語設定を選択するか、利用統計情報の Microsoft への送信をオプトアウトできます。</span><span class="sxs-lookup"><span data-stu-id="9b927-188">When creating a package, you can select language settings or opt out of sending telemetry information to Microsoft.</span></span> <span data-ttu-id="9b927-189">既定では、SDT は、Microsoft のプライバシーに関する声明に従って、アプリケーションの改善に使用される利用統計情報を Microsoft に [送信します](https://privacy.microsoft.com/privacystatement)。</span><span class="sxs-lookup"><span data-stu-id="9b927-189">By default, SDT sends telemetry to Microsoft that is used to improve the application in accordance with the [Microsoft Privacy Statement](https://privacy.microsoft.com/privacystatement).</span></span> <span data-ttu-id="9b927-190">拒否する場合は、次に示すように、カスタム パッケージを作成するときにチェック ボックスをオフにします。</span><span class="sxs-lookup"><span data-stu-id="9b927-190">If you wish to decline, clear the check box when creating a custom package, as shown below.</span></span> <span data-ttu-id="9b927-191">または、SDT セットアップ中に [インストール\*\*\*\* オプション] ページの **[Microsoft**に利用統計情報を送信する] チェック ボックスをオフにします。</span><span class="sxs-lookup"><span data-stu-id="9b927-191">Or clear the **Send telemetry to Microsoft** check box on the **Install Options** page during SDT Setup.</span></span> 
 
@@ -136,7 +136,7 @@ ms.locfileid: "11271581"
 *<span data-ttu-id="9b927-194">図 4: </span><span class="sxs-lookup"><span data-stu-id="9b927-194">Figure 4.</span></span> <span data-ttu-id="9b927-195">言語と利用統計情報の設定を選択する</span><span class="sxs-lookup"><span data-stu-id="9b927-195">Select language and telemetry settings</span></span>*
 
 
-### <span data-ttu-id="9b927-196">Windows Update ページ</span><span class="sxs-lookup"><span data-stu-id="9b927-196">Windows Update page</span></span>
+### <a name="windows-update-page"></a><span data-ttu-id="9b927-196">Windows Update ページ</span><span class="sxs-lookup"><span data-stu-id="9b927-196">Windows Update page</span></span>
 
 <span data-ttu-id="9b927-197">組織に適したオプションを選択します。</span><span class="sxs-lookup"><span data-stu-id="9b927-197">Select the option appropriate for your organization.</span></span> <span data-ttu-id="9b927-198">図 5 に示すように、複数のユーザーを持つほとんどの組織では、通常、Windows Server Update Services (WSUS) 経由で更新プログラムを受信します。</span><span class="sxs-lookup"><span data-stu-id="9b927-198">Most organizations with multiple users will typically select to receive updates via Windows Server Update Services (WSUS), as shown in figure 5.</span></span> <span data-ttu-id="9b927-199">ローカルの Windows Update パッケージまたは WSUS を使う場合は、必要に応じてパスを入力します。</span><span class="sxs-lookup"><span data-stu-id="9b927-199">If using local Windows Update packages or WSUS, enter the path as appropriate.</span></span> 
 
@@ -144,7 +144,7 @@ ms.locfileid: "11271581"
 
 *<span data-ttu-id="9b927-201">図 5: </span><span class="sxs-lookup"><span data-stu-id="9b927-201">Figure 5.</span></span> <span data-ttu-id="9b927-202">Windows Update オプション</span><span class="sxs-lookup"><span data-stu-id="9b927-202">Windows Update option</span></span>*
 
-### <span data-ttu-id="9b927-203">ソフトウェア修復ページ</span><span class="sxs-lookup"><span data-stu-id="9b927-203">Software repair page</span></span>
+### <a name="software-repair-page"></a><span data-ttu-id="9b927-203">ソフトウェア修復ページ</span><span class="sxs-lookup"><span data-stu-id="9b927-203">Software repair page</span></span>
 
 <span data-ttu-id="9b927-204">これにより、ソフトウェア修復の更新を実行するオプションを選択または削除できます。</span><span class="sxs-lookup"><span data-stu-id="9b927-204">This allows you to select or remove the option to run software repair updates.</span></span> 
 
@@ -152,7 +152,7 @@ ms.locfileid: "11271581"
 
 *<span data-ttu-id="9b927-206">図 6. </span><span class="sxs-lookup"><span data-stu-id="9b927-206">Figure 6.</span></span> <span data-ttu-id="9b927-207">ソフトウェア修復オプション</span><span class="sxs-lookup"><span data-stu-id="9b927-207">Software repair option</span></span>*
 
-### <span data-ttu-id="9b927-208">ログの収集とパッケージ の保存ページ</span><span class="sxs-lookup"><span data-stu-id="9b927-208">Collecting logs and saving package page</span></span>
+### <a name="collecting-logs-and-saving-package-page"></a><span data-ttu-id="9b927-208">ログの収集とパッケージ の保存ページ</span><span class="sxs-lookup"><span data-stu-id="9b927-208">Collecting logs and saving package page</span></span>
 
 <span data-ttu-id="9b927-209">さまざまなアプリケーション、ドライバー、ハードウェア、オペレーティング システムでさまざまなログを実行できます。</span><span class="sxs-lookup"><span data-stu-id="9b927-209">You can select to run a wide range of logs across applications, drivers, hardware, and the operating system.</span></span> <span data-ttu-id="9b927-210">該当する領域をクリックし、使用可能なログのメニューから選択します。</span><span class="sxs-lookup"><span data-stu-id="9b927-210">Click the appropriate area and select from the menu of available logs.</span></span> <span data-ttu-id="9b927-211">その後、ユーザーがアクセスできるソフトウェア配布ポイントまたは同等の場所にパッケージを保存できます。</span><span class="sxs-lookup"><span data-stu-id="9b927-211">You can then save the package to a software distribution point or equivalent location that users can access.</span></span> 
 
@@ -160,14 +160,14 @@ ms.locfileid: "11271581"
 
 *<span data-ttu-id="9b927-213">図 7.</span><span class="sxs-lookup"><span data-stu-id="9b927-213">Figure 7.</span></span> <span data-ttu-id="9b927-214">ログ オプションとパッケージの保存</span><span class="sxs-lookup"><span data-stu-id="9b927-214">Log option and save package</span></span>*
 
-## <span data-ttu-id="9b927-215">次のステップ</span><span class="sxs-lookup"><span data-stu-id="9b927-215">Next steps</span></span>
+## <a name="next-steps"></a><span data-ttu-id="9b927-215">次のステップ</span><span class="sxs-lookup"><span data-stu-id="9b927-215">Next steps</span></span>
 
 - [<span data-ttu-id="9b927-216">ビジネス向け Surface 診断ツールキットをデスクトップ モードで使用する</span><span class="sxs-lookup"><span data-stu-id="9b927-216">Use Surface Diagnostic Toolkit for Business in desktop mode</span></span>](surface-diagnostic-toolkit-desktop-mode.md)
 - [<span data-ttu-id="9b927-217">コマンドを使用して Surface Diagnostic Toolkit for Business を使用する</span><span class="sxs-lookup"><span data-stu-id="9b927-217">Use Surface Diagnostic Toolkit for Business using commands</span></span>](surface-diagnostic-toolkit-command-line.md)
 
-## <span data-ttu-id="9b927-218">変更と更新</span><span class="sxs-lookup"><span data-stu-id="9b927-218">Changes and updates</span></span>
+## <a name="changes-and-updates"></a><span data-ttu-id="9b927-218">変更と更新</span><span class="sxs-lookup"><span data-stu-id="9b927-218">Changes and updates</span></span>
 
-### <span data-ttu-id="9b927-219">バージョン 2.131.139.0</span><span class="sxs-lookup"><span data-stu-id="9b927-219">Version 2.131.139.0</span></span>
+### <a name="version-2.131.139.0"></a><span data-ttu-id="9b927-219">バージョン 2.131.139.0</span><span class="sxs-lookup"><span data-stu-id="9b927-219">Version 2.131.139.0</span></span>
 
 <span data-ttu-id="9b927-220">このバージョンの Surface Diagnostic Toolkit for Business では、次のサポートが追加されています。</span><span class="sxs-lookup"><span data-stu-id="9b927-220">This version of Surface Diagnostic Toolkit for Business adds support for the following:</span></span>
 
@@ -176,7 +176,7 @@ ms.locfileid: "11271581"
 - <span data-ttu-id="9b927-223">セキュリティの強化</span><span class="sxs-lookup"><span data-stu-id="9b927-223">Security improvements</span></span>
 - <span data-ttu-id="9b927-224">包括的なユーザー エクスペリエンスの向上</span><span class="sxs-lookup"><span data-stu-id="9b927-224">Inclusive user experience improvements</span></span>
 
-### <span data-ttu-id="9b927-225">バージョン 2.124.139.0</span><span class="sxs-lookup"><span data-stu-id="9b927-225">Version 2.124.139.0</span></span>
+### <a name="version-2.124.139.0"></a><span data-ttu-id="9b927-225">バージョン 2.124.139.0</span><span class="sxs-lookup"><span data-stu-id="9b927-225">Version 2.124.139.0</span></span>
 
 <span data-ttu-id="9b927-226">このバージョンの Surface Diagnostic Toolkit for Business では、次のサポートが追加されています。</span><span class="sxs-lookup"><span data-stu-id="9b927-226">This version of Surface Diagnostic Toolkit for Business adds support for the following:</span></span>
 
@@ -188,14 +188,14 @@ ms.locfileid: "11271581"
 - <span data-ttu-id="9b927-232">ストレージ テストで発生する可能性がある障害としてドライブにフラグを設定する</span><span class="sxs-lookup"><span data-stu-id="9b927-232">Flag drives as potential failures in storage test</span></span>
 - <span data-ttu-id="9b927-233">ストアリンクを削除する</span><span class="sxs-lookup"><span data-stu-id="9b927-233">Remove store link</span></span> 
 
-### <span data-ttu-id="9b927-234">バージョン 2.121.139</span><span class="sxs-lookup"><span data-stu-id="9b927-234">Version 2.121.139</span></span>
+### <a name="version-2.121.139"></a><span data-ttu-id="9b927-234">バージョン 2.121.139</span><span class="sxs-lookup"><span data-stu-id="9b927-234">Version 2.121.139</span></span>
 *<span data-ttu-id="9b927-235">リリース日: 2020 年 7 月 31 日</span><span class="sxs-lookup"><span data-stu-id="9b927-235">Release date: July 31 2020</span></span>*<br>
 <span data-ttu-id="9b927-236">このバージョンの Surface Diagnostic Toolkit for Business では、次のサポートが追加されています。</span><span class="sxs-lookup"><span data-stu-id="9b927-236">This version of Surface Diagnostic Toolkit for Business adds support for the following:</span></span>
 
 - <span data-ttu-id="9b927-237">シームレスなサポート エクスペリエンス</span><span class="sxs-lookup"><span data-stu-id="9b927-237">Seamless support experience</span></span>
 - <span data-ttu-id="9b927-238">バグ修正</span><span class="sxs-lookup"><span data-stu-id="9b927-238">Bug fixes</span></span>
 
-### <span data-ttu-id="9b927-239">バージョン 2.94.139.0</span><span class="sxs-lookup"><span data-stu-id="9b927-239">Version 2.94.139.0</span></span>
+### <a name="version-2.94.139.0"></a><span data-ttu-id="9b927-239">バージョン 2.94.139.0</span><span class="sxs-lookup"><span data-stu-id="9b927-239">Version 2.94.139.0</span></span>
 *<span data-ttu-id="9b927-240">リリース日: 2020 年 5 月 11 日</span><span class="sxs-lookup"><span data-stu-id="9b927-240">Release date: May 11, 2020</span></span>*<br>
 <span data-ttu-id="9b927-241">このバージョンの Surface Diagnostic Toolkit for Business では、次のサポートが追加されています。</span><span class="sxs-lookup"><span data-stu-id="9b927-241">This version of Surface Diagnostic Toolkit for Business adds support for the following:</span></span>
 
@@ -206,27 +206,27 @@ ms.locfileid: "11271581"
 - <span data-ttu-id="9b927-246">進行状況インジケーターを表示する</span><span class="sxs-lookup"><span data-stu-id="9b927-246">Show progress indicator</span></span>
 
 
-### <span data-ttu-id="9b927-247">バージョン 2.43.139.0</span><span class="sxs-lookup"><span data-stu-id="9b927-247">Version 2.43.139.0</span></span>
+### <a name="version-2.43.139.0"></a><span data-ttu-id="9b927-247">バージョン 2.43.139.0</span><span class="sxs-lookup"><span data-stu-id="9b927-247">Version 2.43.139.0</span></span>
 *<span data-ttu-id="9b927-248">リリース日: 2019 年 10 月 21 日</span><span class="sxs-lookup"><span data-stu-id="9b927-248">Release date: October 21, 2019</span></span>*<br>
 <span data-ttu-id="9b927-249">このバージョンの Surface Diagnostic Toolkit for Business では、次のサポートが追加されています。</span><span class="sxs-lookup"><span data-stu-id="9b927-249">This version of Surface Diagnostic Toolkit for Business adds support for the following:</span></span>
 
 - <span data-ttu-id="9b927-250">Surface Pro 7</span><span class="sxs-lookup"><span data-stu-id="9b927-250">Surface Pro 7</span></span>
 - <span data-ttu-id="9b927-251">Surface Laptop 3</span><span class="sxs-lookup"><span data-stu-id="9b927-251">Surface Laptop 3</span></span>
 
-### <span data-ttu-id="9b927-252">バージョン 2.42.139.0</span><span class="sxs-lookup"><span data-stu-id="9b927-252">Version 2.42.139.0</span></span>
+### <a name="version-2.42.139.0"></a><span data-ttu-id="9b927-252">バージョン 2.42.139.0</span><span class="sxs-lookup"><span data-stu-id="9b927-252">Version 2.42.139.0</span></span>
 *<span data-ttu-id="9b927-253">リリース日: 2019 年 9 月 24 日</span><span class="sxs-lookup"><span data-stu-id="9b927-253">Release date: September 24, 2019</span></span>*<br>
 <span data-ttu-id="9b927-254">このバージョンの Surface Diagnostic Toolkit for Business では、次のサポートが追加されています。</span><span class="sxs-lookup"><span data-stu-id="9b927-254">This version of Surface Diagnostic Toolkit for Business adds support for the following:</span></span> 
 - <span data-ttu-id="9b927-255">ハードウェア レポートをダウンロードする機能。</span><span class="sxs-lookup"><span data-stu-id="9b927-255">Ability to download hardware reports.</span></span>
 - <span data-ttu-id="9b927-256">ツールから直接 Microsoft サポートに問い合わせ可能。</span><span class="sxs-lookup"><span data-stu-id="9b927-256">Ability to contact Microsoft Support directly from the tool.</span></span> <br>
 
-### <span data-ttu-id="9b927-257">バージョン 2.41.139.0</span><span class="sxs-lookup"><span data-stu-id="9b927-257">Version 2.41.139.0</span></span>
+### <a name="version-2.41.139.0"></a><span data-ttu-id="9b927-257">バージョン 2.41.139.0</span><span class="sxs-lookup"><span data-stu-id="9b927-257">Version 2.41.139.0</span></span>
 *<span data-ttu-id="9b927-258">リリース日: 2019 年 6 月 24 日</span><span class="sxs-lookup"><span data-stu-id="9b927-258">Release date: June 24, 2019</span></span>*<br>
 <span data-ttu-id="9b927-259">このバージョンの Surface Diagnostic Toolkit for Business では、次のサポートが追加されています。</span><span class="sxs-lookup"><span data-stu-id="9b927-259">This version of Surface Diagnostic Toolkit for Business adds support for the following:</span></span> 
 - <span data-ttu-id="9b927-260">ログとレポートに含まれるドライバーのバージョン情報。</span><span class="sxs-lookup"><span data-stu-id="9b927-260">Driver version information included in logs and report.</span></span>
 - <span data-ttu-id="9b927-261">アプリに関するフィードバックを提供する機能。</span><span class="sxs-lookup"><span data-stu-id="9b927-261">Ability to provide feedback about the app.</span></span><br>
 
 
-### <span data-ttu-id="9b927-262">バージョン 2.36.139.0</span><span class="sxs-lookup"><span data-stu-id="9b927-262">Version 2.36.139.0</span></span>
+### <a name="version-2.36.139.0"></a><span data-ttu-id="9b927-262">バージョン 2.36.139.0</span><span class="sxs-lookup"><span data-stu-id="9b927-262">Version 2.36.139.0</span></span>
 *<span data-ttu-id="9b927-263">リリース日: 2019 年 4 月 26 日</span><span class="sxs-lookup"><span data-stu-id="9b927-263">Release date: April 26, 2019</span></span>*<br>
 <span data-ttu-id="9b927-264">このバージョンの Surface Diagnostic Toolkit for Business では、次のサポートが追加されています。</span><span class="sxs-lookup"><span data-stu-id="9b927-264">This version of Surface Diagnostic Toolkit for Business adds support for the following:</span></span> 
 - <span data-ttu-id="9b927-265">コマンド ライン構成を必要とせずに、インストーラー UI を使用して管理機能をロック解除するための高度なセットアップ オプション。</span><span class="sxs-lookup"><span data-stu-id="9b927-265">Advanced Setup option to unlock admin capabilities through the installer UI, without requiring command line configuration.</span></span>

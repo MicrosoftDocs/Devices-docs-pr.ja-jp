@@ -28,7 +28,7 @@ ms.locfileid: "10836948"
 
 <span data-ttu-id="516db-114">Surface Hub への Miracast の問題には、通常 2 つの種類があります。[接続](#connect-issues)と[パフォーマンス](#performance-issues)の問題です。</span><span class="sxs-lookup"><span data-stu-id="516db-114">There are generally two types of issues with Miracast to Surface Hub: [connection](#connect-issues) and [performance](#performance-issues).</span></span> <span data-ttu-id="516db-115">どちらの場合も、Surface Hub の場所でのワイヤレスネットワークアクティビティの一般的な画像を取得することをお勧めします。</span><span class="sxs-lookup"><span data-stu-id="516db-115">In either case, it is a good idea to get a general picture of wireless network activity in the Surface Hub's location.</span></span> <span data-ttu-id="516db-116">ネットワーク スキャン ツールを実行すると、環境内で使用可能なネットワークとチャネルの使用状況が示されます。</span><span class="sxs-lookup"><span data-stu-id="516db-116">Running a network scanning tool will show you the available networks and channel usage in the environment.</span></span>
 
-## <span data-ttu-id="516db-117">接続の問題</span><span class="sxs-lookup"><span data-stu-id="516db-117">Connect issues</span></span>
+## <a name="connect-issues"></a><span data-ttu-id="516db-117">接続の問題</span><span class="sxs-lookup"><span data-stu-id="516db-117">Connect issues</span></span>
 
 <span data-ttu-id="516db-118">Surface Hub の設定で、Wi‑Fi と Miracast の両方が有効になっていることを確認します。</span><span class="sxs-lookup"><span data-stu-id="516db-118">Ensure both Wi-Fi and Miracast are both enabled in Settings on Surface Hub.</span></span> 
 
@@ -38,11 +38,11 @@ ms.locfileid: "10836948"
 
 <span data-ttu-id="516db-126">また、接続の問題は、接続されているデバイスの問題が原因で発生する可能性があります。</span><span class="sxs-lookup"><span data-stu-id="516db-126">It is also possible that the connect issue can be the result of a problem on the connecting device.</span></span> <span data-ttu-id="516db-127">プロジェクション元デバイスが Windows を実行している場合、Miracast を完全にサポートするには Windows 8.1 以降である必要があります。</span><span class="sxs-lookup"><span data-stu-id="516db-127">If the projecting device is running Windows, it should be Windows 8.1 or newer for full Miracast support.</span></span> <span data-ttu-id="516db-128">繰り返しますが、トラブルシューティングのために、すべての Wi‑Fi ネットワークからプロジェクション元デバイスを切断してください。</span><span class="sxs-lookup"><span data-stu-id="516db-128">Again, for troubleshooting, disconnect the projecting device from any Wi-Fi networks.</span></span> <span data-ttu-id="516db-129">これにより、アクセス ポイント チャネルと、Surface Hub で設定された Miracast チャネルとのチャネル切り替えがなくなります。</span><span class="sxs-lookup"><span data-stu-id="516db-129">This will eliminate any channel switching between the access point channel and the Miracast channel set on Surface Hub.</span></span> <span data-ttu-id="516db-130">また、一部のグループ ポリシーとファイアウォールの設定が、Wi‑Fi ネットワークに関連付けられている可能性があります。</span><span class="sxs-lookup"><span data-stu-id="516db-130">Also, some Group Policy and firewall settings may be tied to a Wi-Fi network.</span></span>
 
-### <span data-ttu-id="516db-131">ドライバーの確認</span><span class="sxs-lookup"><span data-stu-id="516db-131">Check drivers</span></span>
+### <a name="check-drivers"></a><span data-ttu-id="516db-131">ドライバーの確認</span><span class="sxs-lookup"><span data-stu-id="516db-131">Check drivers</span></span>
 
 <span data-ttu-id="516db-132">また、プロジェクション元デバイスに、最新のドライバーと更新プログラムがインストールされていることを確認することもお勧めします。</span><span class="sxs-lookup"><span data-stu-id="516db-132">It is also a good idea to ensure the latest drivers and updates are installed on the projecting device.</span></span> <span data-ttu-id="516db-133">デバイス マネージャーで、Wi-Fi アダプターとビデオ アダプターを開き、更新されたドライバーのバージョンを確認します。</span><span class="sxs-lookup"><span data-stu-id="516db-133">In Device Manager, open the Wi-Fi adapter and video adapter and check for an updated driver version.</span></span> <span data-ttu-id="516db-134">Surface Pro 3 や Surface Pro 4 で古い Wi-Fi ドライバーを使用している場合、[修正プログラム 3120232](https://support.microsoft.com/help/3120232/poor-wireless-performance-on-5-ghz-connections-on-surface-pro-3-and-surface-3) を適用することを強くお勧めします。</span><span class="sxs-lookup"><span data-stu-id="516db-134">[Hotfix 3120232](https://support.microsoft.com/help/3120232/poor-wireless-performance-on-5-ghz-connections-on-surface-pro-3-and-surface-3) is highly recommended for Surface Pro 3 and Surface Pro 4 if they are on an older Wi-Fi driver.</span></span> 
 
-### <span data-ttu-id="516db-135">Miracast のサポートの確認</span><span class="sxs-lookup"><span data-stu-id="516db-135">Check for Miracast support</span></span>
+### <a name="check-for-miracast-support"></a><span data-ttu-id="516db-135">Miracast のサポートの確認</span><span class="sxs-lookup"><span data-stu-id="516db-135">Check for Miracast support</span></span>
 
 <span data-ttu-id="516db-136">次に、デバイスで Miracast がサポートされていることを確認します。</span><span class="sxs-lookup"><span data-stu-id="516db-136">Next, ensure Miracast is supported on the device.</span></span> 
 
@@ -50,14 +50,14 @@ ms.locfileid: "10836948"
 2. <span data-ttu-id="516db-138">[情報をすべて保存] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="516db-138">Click "Save all information".</span></span> 
 3. <span data-ttu-id="516db-139">保存した dxdiag.txt を開き、**Miracast** を検索します。</span><span class="sxs-lookup"><span data-stu-id="516db-139">Open the saved dxdiag.txt and find **Miracast**.</span></span> <span data-ttu-id="516db-140">"**Available, with HDCP**" と表示されることを確認します。</span><span class="sxs-lookup"><span data-stu-id="516db-140">It should say **Available, with HDCP**.</span></span> 
     
-### <span data-ttu-id="516db-141">ファイアウォールの確認</span><span class="sxs-lookup"><span data-stu-id="516db-141">Check firewall</span></span>
+### <a name="check-firewall"></a><span data-ttu-id="516db-141">ファイアウォールの確認</span><span class="sxs-lookup"><span data-stu-id="516db-141">Check firewall</span></span>
     
 <span data-ttu-id="516db-142">Windows ファイアウォールが、Miracast のトラフィックをブロックする場合があります。</span><span class="sxs-lookup"><span data-stu-id="516db-142">The Windows firewall can block Miracast traffic.</span></span> <span data-ttu-id="516db-143">最も簡単なテストは、ファイアウォールを無効にし、プロジェクションをテストします。</span><span class="sxs-lookup"><span data-stu-id="516db-143">The simplest test is to disable the firewall and test projection.</span></span> <span data-ttu-id="516db-144">ファイアウォールが無効にすると Miracast が動作する場合は、例外を追加します。</span><span class="sxs-lookup"><span data-stu-id="516db-144">If Miracast works with the firewall disabled, add an exception for</span></span>
 
     C:\Windows\System32\WUDFHost.exe
     Allow In/Out connections for TCP and UDP, Ports: All.
 
-### <span data-ttu-id="516db-145">グループ ポリシー設定の確認</span><span class="sxs-lookup"><span data-stu-id="516db-145">Check Group Policy settings</span></span>
+### <a name="check-group-policy-settings"></a><span data-ttu-id="516db-145">グループ ポリシー設定の確認</span><span class="sxs-lookup"><span data-stu-id="516db-145">Check Group Policy settings</span></span>
 
 <span data-ttu-id="516db-146">ドメインに参加しているデバイスでは、グループ ポリシーが Miracast をブロックする場合もあります。</span><span class="sxs-lookup"><span data-stu-id="516db-146">On domain-joined devices, Group Policy can also block Miracast.</span></span> 
 
@@ -66,11 +66,11 @@ ms.locfileid: "10836948"
 3. <span data-ttu-id="516db-151">ワイヤレス ポリシーの設定をダブルクリックすると、ダイアログ ボックスが表示されます。</span><span class="sxs-lookup"><span data-stu-id="516db-151">Double click the setting for wireless policies and a dialog box will appear.</span></span> 
 4. <span data-ttu-id="516db-152">**[ネットワークのアクセス許可]** タブを開き、**[すべてのユーザー プロファイルをすべてのユーザーが作成できる]** を選択します。</span><span class="sxs-lookup"><span data-stu-id="516db-152">Open the **Network Permissions** tab and select **Allow everyone to create all user profiles**.</span></span>
 
-### <span data-ttu-id="516db-153">イベント ログの確認</span><span class="sxs-lookup"><span data-stu-id="516db-153">Check event logs</span></span>
+### <a name="check-event-logs"></a><span data-ttu-id="516db-153">イベント ログの確認</span><span class="sxs-lookup"><span data-stu-id="516db-153">Check event logs</span></span>
 
 <span data-ttu-id="516db-154">確認する最後の場所はイベント ログ内です。</span><span class="sxs-lookup"><span data-stu-id="516db-154">The last place to check is in the Event logs.</span></span> <span data-ttu-id="516db-155">Miracast イベントは、**Wlanautoconfig** に記録されます。</span><span class="sxs-lookup"><span data-stu-id="516db-155">Miracast events will be logged to **Wlanautoconfig**.</span></span> <span data-ttu-id="516db-156">これは Surface Hub とプロジェクション元デバイスの両方に当てはまります。</span><span class="sxs-lookup"><span data-stu-id="516db-156">This is true on both Surface Hub and the projecting device.</span></span> <span data-ttu-id="516db-157">Surface Hub のログをエクスポートする場合は、Surface Hub の Wlanautoconfig を**WindowsEventLog**フォルダーに表示することができます。</span><span class="sxs-lookup"><span data-stu-id="516db-157">If you export Surface Hub logs, you can view Surface Hub's Wlanautoconfig in the **WindowsEventLog** folder.</span></span> <span data-ttu-id="516db-158">イベント ログ内のエラーが、接続が失敗した場所に関する追加の詳細情報を提供している場合があります。</span><span class="sxs-lookup"><span data-stu-id="516db-158">Errors in the event log can provide some additional details on where the connection fails.</span></span>
 
-## <span data-ttu-id="516db-159">パフォーマンスの問題</span><span class="sxs-lookup"><span data-stu-id="516db-159">Performance issues</span></span>
+## <a name="performance-issues"></a><span data-ttu-id="516db-159">パフォーマンスの問題</span><span class="sxs-lookup"><span data-stu-id="516db-159">Performance issues</span></span>
 
 <span data-ttu-id="516db-160">ワイヤレス プロジェクションが接続された後、パフォーマンスの問題によって遅延が発生する可能性があります。</span><span class="sxs-lookup"><span data-stu-id="516db-160">After wireless projection is connected, it is possible to see performance issues causing latency.</span></span> <span data-ttu-id="516db-161">通常、これは、全体的なチャネル飽和状態またはチャネルの切り替えの原因となる状況による結果です。</span><span class="sxs-lookup"><span data-stu-id="516db-161">This is generally a result of overall channel saturation or a situation that causes channel switching.</span></span> 
 
@@ -84,6 +84,6 @@ ms.locfileid: "10836948"
 
 <span data-ttu-id="516db-174">環境に複数の Wi-Fi ネットワークまたはアクセス ポイントがある場合、一部のチャネル切り替えは回避できません。</span><span class="sxs-lookup"><span data-stu-id="516db-174">If there are multiple Wi-Fi networks or access points in the environment, some channel switching is unavoidable.</span></span> <span data-ttu-id="516db-175">これは、すべての Wi-Fi ドライバーを最新の状態にすることで適切に修正されます。</span><span class="sxs-lookup"><span data-stu-id="516db-175">This is best addressed by ensuring all Wi-Fi drivers are up to date.</span></span>
 
-## <span data-ttu-id="516db-176">サポートに問い合わせ</span><span class="sxs-lookup"><span data-stu-id="516db-176">Contact Support</span></span>
+## <a name="contact-support"></a><span data-ttu-id="516db-176">サポートに問い合わせ</span><span class="sxs-lookup"><span data-stu-id="516db-176">Contact Support</span></span>
 
 <span data-ttu-id="516db-177">質問がある場合やヘルプが必要な場合は、[サポートリクエストを作成](https://support.microsoft.com/supportforbusiness/productselection)できます。</span><span class="sxs-lookup"><span data-stu-id="516db-177">If you have questions or need help, you can [create a support request](https://support.microsoft.com/supportforbusiness/productselection).</span></span>

@@ -26,7 +26,7 @@ ms.locfileid: "10836702"
 >[!NOTE]
 ><span data-ttu-id="5f7d1-106">Surface Hub は、新しい接続が行われるか、既存の接続が中断されるか、または Connect アプリが閉じられるまで、選択したビデオ入力を使います。</span><span class="sxs-lookup"><span data-stu-id="5f7d1-106">Surface Hub will use the video input that you select until a new connection is made, the existing connection is disrupted, or the Connect App is closed.</span></span>
 
-## <span data-ttu-id="5f7d1-107">推奨される方法</span><span class="sxs-lookup"><span data-stu-id="5f7d1-107">Which method should I choose?</span></span>
+## <a name="which-method-should-i-choose"></a><span data-ttu-id="5f7d1-107">推奨される方法</span><span class="sxs-lookup"><span data-stu-id="5f7d1-107">Which method should I choose?</span></span>
 
 <span data-ttu-id="5f7d1-108">外部のデバイスとディスプレイを Surface Hub 接続する場合、複数のオプションを利用できます。</span><span class="sxs-lookup"><span data-stu-id="5f7d1-108">When connecting external devices and displays to a Surface Hub, there are several available options.</span></span> <span data-ttu-id="5f7d1-109">使用する方法はシナリオとニーズによって異なります。</span><span class="sxs-lookup"><span data-stu-id="5f7d1-109">The method you use will depend upon your scenario and needs.</span></span> 
 
@@ -37,7 +37,7 @@ ms.locfileid: "10836702"
 | <span data-ttu-id="5f7d1-116">外部の Windows 10 PC を Surface Hub の動力にして、Surface Hub の内蔵コンピューターをオフにする。</span><span class="sxs-lookup"><span data-stu-id="5f7d1-116">Power the Surface Hub from an external Windows 10 PC, turning off the embedded computer of the Surface Hub.</span></span> <span data-ttu-id="5f7d1-117">ペンやタッチに加えて、カメラ、マイク、スピーカーなどの周辺機器は外部 PC に送る。</span><span class="sxs-lookup"><span data-stu-id="5f7d1-117">Cameras, microphones, speakers, and other peripherals, are sent to the external PC, in addition to pen and touch.</span></span> | [<span data-ttu-id="5f7d1-118">代替 PC モード</span><span class="sxs-lookup"><span data-stu-id="5f7d1-118">Replacement PC Mode</span></span>](#replacement-pc-mode) |
 
 
-## <span data-ttu-id="5f7d1-119">ゲスト モード</span><span class="sxs-lookup"><span data-stu-id="5f7d1-119">Guest Mode</span></span>
+## <a name="guest-mode"></a><span data-ttu-id="5f7d1-119">ゲスト モード</span><span class="sxs-lookup"><span data-stu-id="5f7d1-119">Guest Mode</span></span>
 
 
 <span data-ttu-id="5f7d1-120">ゲスト モードでは、ワイヤード (有線) 接続を使用することで、ユーザーのデバイスのコンテンツを Surface Hub に表示できます。</span><span class="sxs-lookup"><span data-stu-id="5f7d1-120">Guest Mode uses a wired connection, so people can display content from their devices to the Surface Hub.</span></span> <span data-ttu-id="5f7d1-121">ソース デバイスが Windows ベースの場合は、そのデバイスで touchback と inkback を使うこともできます。</span><span class="sxs-lookup"><span data-stu-id="5f7d1-121">If the source device is Windows-based, that device can also provide Touchback and Inkback.</span></span> <span data-ttu-id="5f7d1-122">Surface Hub の内部 PC は、接続されたデバイスからビデオとオーディオを受取り、Surface Hub に表示します。</span><span class="sxs-lookup"><span data-stu-id="5f7d1-122">Surface Hub's internal PC takes video and audio from the connected device and presents them on the Surface Hub.</span></span> <span data-ttu-id="5f7d1-123">Surface Hub が高帯域幅デジタルコンテンツ保護 (HDCP) 信号を検出した場合、ソースは黒色の画像として表示されます。</span><span class="sxs-lookup"><span data-stu-id="5f7d1-123">If Surface Hub encounters a High-Bandwidth Digital Content Protection (HDCP) signal, the source will be displayed as a black image.</span></span> <span data-ttu-id="5f7d1-124">HDCP 要件に違反することなくコンテンツを表示するには、Surface Hub の右側にあるキーパッドを使用して外部ソースを直接選択します。</span><span class="sxs-lookup"><span data-stu-id="5f7d1-124">To display your content without violating HDCP requirements, use the keypad on the right side of the Surface Hub to directly choose the external source.</span></span>
@@ -45,7 +45,7 @@ ms.locfileid: "10836702"
 >[!NOTE]
 ><span data-ttu-id="5f7d1-125">HDCP ソースが接続されている場合、サイド キーパッドを使用して、ソースの入力を変更します。</span><span class="sxs-lookup"><span data-stu-id="5f7d1-125">When an HDCP source is connected, use the side  keypad to change source inputs.</span></span>
 
-### <span data-ttu-id="5f7d1-126">ポート</span><span class="sxs-lookup"><span data-stu-id="5f7d1-126">Ports</span></span>
+### <a name="ports"></a><span data-ttu-id="5f7d1-126">ポート</span><span class="sxs-lookup"><span data-stu-id="5f7d1-126">Ports</span></span>
 
 <span data-ttu-id="5f7d1-127">ゲスト モードには、以下の Surface Hub のポートを使用します。</span><span class="sxs-lookup"><span data-stu-id="5f7d1-127">Use these ports on the Surface Hub for Guest Mode.</span></span>
 
@@ -116,7 +116,7 @@ ms.locfileid: "10836702"
 
  
 
-### <span data-ttu-id="5f7d1-158">ポートの場所</span><span class="sxs-lookup"><span data-stu-id="5f7d1-158">Port locations</span></span>
+### <a name="port-locations"></a><span data-ttu-id="5f7d1-158">ポートの場所</span><span class="sxs-lookup"><span data-stu-id="5f7d1-158">Port locations</span></span>
 
 <span data-ttu-id="5f7d1-159">以下に、ゲスト モードに使用する 55 インチと 84 インチの Surface Hub のポート接続を示します。</span><span class="sxs-lookup"><span data-stu-id="5f7d1-159">These are the port connections used for Guest Mode on the 55" and 84" Surface Hubs.</span></span>
 
@@ -128,7 +128,7 @@ ms.locfileid: "10836702"
 
 <span data-ttu-id="5f7d1-163">84 インチの Surface Hub のワイヤード (有線) 接続</span><span class="sxs-lookup"><span data-stu-id="5f7d1-163">Wired port connections on 84" Surface Hub</span></span>
 
-### <span data-ttu-id="5f7d1-164">ポートの列挙</span><span class="sxs-lookup"><span data-stu-id="5f7d1-164">Port enumeration</span></span>
+### <a name="port-enumeration"></a><span data-ttu-id="5f7d1-164">ポートの列挙</span><span class="sxs-lookup"><span data-stu-id="5f7d1-164">Port enumeration</span></span>
 
 <span data-ttu-id="5f7d1-165">ワイヤード (有線) 接続 USB ポートを使用して Surface Hub にゲスト コンピューターが接続されると、さまざまな USB デバイスが検出および設定されます。</span><span class="sxs-lookup"><span data-stu-id="5f7d1-165">When a Surface hub is connected to a guest computer with the wired connect USB port, a number of USB devices are discovered and configured.</span></span> <span data-ttu-id="5f7d1-166">以下の周辺機器は、touchback と inkback に対応しています。</span><span class="sxs-lookup"><span data-stu-id="5f7d1-166">These peripheral devices are created for Touchback and Inkback.</span></span> <span data-ttu-id="5f7d1-167">これらの周辺機器は、デバイス マネージャーで表示できます。</span><span class="sxs-lookup"><span data-stu-id="5f7d1-167">The peripheral devices can be viewed in Device Manager.</span></span> <span data-ttu-id="5f7d1-168">一部のデバイスについては、デバイス マネージャーに名前が重複して表示されます。</span><span class="sxs-lookup"><span data-stu-id="5f7d1-168">Device Manager will show duplicate names for some devices.</span></span>
 
@@ -162,7 +162,7 @@ ms.locfileid: "10836702"
 
 -   <span data-ttu-id="5f7d1-183">USB 複合デバイス</span><span class="sxs-lookup"><span data-stu-id="5f7d1-183">USB composite device</span></span>
 
-### <span data-ttu-id="5f7d1-184">ゲスト モードの接続</span><span class="sxs-lookup"><span data-stu-id="5f7d1-184">Guest Mode connectivity</span></span>
+### <a name="guest-mode-connectivity"></a><span data-ttu-id="5f7d1-184">ゲスト モードの接続</span><span class="sxs-lookup"><span data-stu-id="5f7d1-184">Guest Mode connectivity</span></span>
 
 <span data-ttu-id="5f7d1-185">どのビデオ ケーブルを使うかは、ソース入力で利用可能な規格によって決まります。</span><span class="sxs-lookup"><span data-stu-id="5f7d1-185">Your choice of video cable will be determined by what is available from your source input.</span></span> <span data-ttu-id="5f7d1-186">Surface Hub には、DisplayPort、HDMI、および VGA の 3 種類のビデオ入力があります。</span><span class="sxs-lookup"><span data-stu-id="5f7d1-186">The Surface Hub has three choices of video input: DisplayPort, HDMI, and VGA.</span></span> <span data-ttu-id="5f7d1-187">利用可能な解像度については、次の表をご覧ください。</span><span class="sxs-lookup"><span data-stu-id="5f7d1-187">See the following chart for available resolutions.</span></span>
 
@@ -243,20 +243,20 @@ ms.locfileid: "10836702"
 
 <span data-ttu-id="5f7d1-231">ゲスト モードを使用しているコンピューターが、touchback と inkback に対応していない場合は、USB ケーブルは必要ありません。</span><span class="sxs-lookup"><span data-stu-id="5f7d1-231">If the computer you are using for Guest Mode is not compatible with Touchback and Inkback, then you won't need the USB cable.</span></span>
 
-## <span data-ttu-id="5f7d1-232">代替 PC モード</span><span class="sxs-lookup"><span data-stu-id="5f7d1-232">Replacement PC Mode</span></span>
+## <a name="replacement-pc-mode"></a><span data-ttu-id="5f7d1-232">代替 PC モード</span><span class="sxs-lookup"><span data-stu-id="5f7d1-232">Replacement PC Mode</span></span>
 
 
 <span data-ttu-id="5f7d1-233">代替 PC モードでは、Surface Hub の埋め込みコンピューターをオフにして、外部 PC を Surface Hub に接続します。</span><span class="sxs-lookup"><span data-stu-id="5f7d1-233">In Replacement PC Mode, the embedded computer of the Surface Hub is turned off and an external PC is connected to the Surface Hub.</span></span> <span data-ttu-id="5f7d1-234">代替 PC ポートに接続すると、画面、ペン、タッチ機能など、Surface Hub の主な周辺機器にアクセスできます。</span><span class="sxs-lookup"><span data-stu-id="5f7d1-234">Connections to replacement PC ports give access to key peripherals on the Surface Hub, including the screen, pen, and touch features.</span></span> <span data-ttu-id="5f7d1-235">つまり、Surface Hub における Windows チーム エクスペリエンスのメリットはなくなりますが、ユーザー自身の Windows コンピューターを用意して操作できることによる柔軟性がもたらされます。</span><span class="sxs-lookup"><span data-stu-id="5f7d1-235">This does mean that your Surface Hub won’t have the benefit of the Windows Team experience, but you will have the flexibility offered by providing and managing your own Windows computer.</span></span>
 
-### <span data-ttu-id="5f7d1-236">ソフトウェア要件</span><span class="sxs-lookup"><span data-stu-id="5f7d1-236">Software requirements</span></span>
+### <a name="software-requirements"></a><span data-ttu-id="5f7d1-236">ソフトウェア要件</span><span class="sxs-lookup"><span data-stu-id="5f7d1-236">Software requirements</span></span>
 
 <span data-ttu-id="5f7d1-237">代替 PC モードでは、64 ビット版の Windows 10 Home、Windows 10 Pro、および Windows 10 Enterprise を使用して Surface Hub を実行できます。</span><span class="sxs-lookup"><span data-stu-id="5f7d1-237">You can run Surface Hub in Replacement PC Mode with 64-bit versions of Windows 10 Home, Windows 10 Pro, and Windows 10 Enterprise.</span></span> <span data-ttu-id="5f7d1-238">[Surface Hub 代替 PC ドライバー パッケージ](https://www.microsoft.com/download/details.aspx?id=52210)は、Microsoft ダウンロード センターからダウンロードできます。</span><span class="sxs-lookup"><span data-stu-id="5f7d1-238">You can download the  [Surface Hub Replacement PC driver package](https://www.microsoft.com/download/details.aspx?id=52210) from the Microsoft Download Center.</span></span> <span data-ttu-id="5f7d1-239">代替 PC として使用することを計画しているコンピューターには、このドライバーをインストールすることをお勧めします。</span><span class="sxs-lookup"><span data-stu-id="5f7d1-239">We recommend that you install these drivers on any computer you plan to use as a replacement PC.</span></span>
 
-### <span data-ttu-id="5f7d1-240">ハードウェア要件</span><span class="sxs-lookup"><span data-stu-id="5f7d1-240">Hardware requirements</span></span>
+### <a name="hardware-requirements"></a><span data-ttu-id="5f7d1-240">ハードウェア要件</span><span class="sxs-lookup"><span data-stu-id="5f7d1-240">Hardware requirements</span></span>
 
 <span data-ttu-id="5f7d1-241">Surface Hub は、さまざまなハードウェアと互換性があります。</span><span class="sxs-lookup"><span data-stu-id="5f7d1-241">Surface Hub is compatible with a range of hardware.</span></span> <span data-ttu-id="5f7d1-242">代替 PC のプロセッサとメモリ構成を選び、使用するプログラムがサポートされるようにします。</span><span class="sxs-lookup"><span data-stu-id="5f7d1-242">Choose the processor and memory confirmation for your replacement PC so that it supports the programs you'll be using.</span></span> <span data-ttu-id="5f7d1-243">代替 PC ハードウェアは、64 ビット版の Windows 10 をサポートする必要があります。</span><span class="sxs-lookup"><span data-stu-id="5f7d1-243">Your replacement PC hardware needs to support 64-bit versions of Windows 10.</span></span>
 
-### <span data-ttu-id="5f7d1-244">グラフィックス アダプター</span><span class="sxs-lookup"><span data-stu-id="5f7d1-244">Graphics adapter</span></span>
+### <a name="graphics-adapter"></a><span data-ttu-id="5f7d1-244">グラフィックス アダプター</span><span class="sxs-lookup"><span data-stu-id="5f7d1-244">Graphics adapter</span></span>
 
 <span data-ttu-id="5f7d1-245">Surface Hub は代替 PC モードでは、DisplayPort 信号を生成するグラフィックス アダプターをサポートします。</span><span class="sxs-lookup"><span data-stu-id="5f7d1-245">In Replacement PC Mode, Surface Hub supports any graphics adapter that can produce a DisplayPort signal.</span></span> <span data-ttu-id="5f7d1-246">Surface Hub の解像度とリフレッシュ レートに対応できるグラフィックス アダプターを使用することで、エクスペリエンスを向上できます。</span><span class="sxs-lookup"><span data-stu-id="5f7d1-246">You'll improve your experience with a graphics adapter that can match Surface Hub's resolution and refresh rate.</span></span> <span data-ttu-id="5f7d1-247">たとえば、Surface Hub で最適な推奨される代替 PC エクスペリエンスは、120 Hz のビデオ信号です。</span><span class="sxs-lookup"><span data-stu-id="5f7d1-247">For example, the best and recommended replacement PC experience on the Surface Hub is with a 120Hz video signal.</span></span>
 
@@ -295,7 +295,7 @@ ms.locfileid: "10836702"
 
  
 
-### <span data-ttu-id="5f7d1-258">ポート</span><span class="sxs-lookup"><span data-stu-id="5f7d1-258">Ports</span></span>
+### <a name="ports"></a><span data-ttu-id="5f7d1-258">ポート</span><span class="sxs-lookup"><span data-stu-id="5f7d1-258">Ports</span></span>
 
 <span data-ttu-id="5f7d1-259">55 インチの Surface Hub の代替 PC ポート。</span><span class="sxs-lookup"><span data-stu-id="5f7d1-259">Replacement PC ports on 55" Surface Hub</span></span>
 
@@ -411,7 +411,7 @@ ms.locfileid: "10836702"
 
  
 
-### <span data-ttu-id="5f7d1-311">代替 PC のセットアップ手順</span><span class="sxs-lookup"><span data-stu-id="5f7d1-311">Replacement PC setup instructions</span></span>
+### <a name="replacement-pc-setup-instructions"></a><span data-ttu-id="5f7d1-311">代替 PC のセットアップ手順</span><span class="sxs-lookup"><span data-stu-id="5f7d1-311">Replacement PC setup instructions</span></span>
 
 **<span data-ttu-id="5f7d1-312">代替 PC モードを使用するには</span><span class="sxs-lookup"><span data-stu-id="5f7d1-312">To use Replacement PC Mode</span></span>**
 
@@ -445,11 +445,11 @@ ms.locfileid: "10836702"
 3.  <span data-ttu-id="5f7d1-329">電源ケーブルの横にある電源スイッチを使用して、Surface Hub の電源を入れます。</span><span class="sxs-lookup"><span data-stu-id="5f7d1-329">Turn on the Surface Hub using the power switch next to the power cable.</span></span>
 
  
-## <span data-ttu-id="5f7d1-330">ビデオ出力</span><span class="sxs-lookup"><span data-stu-id="5f7d1-330">Video Out</span></span>
+## <a name="video-out"></a><span data-ttu-id="5f7d1-330">ビデオ出力</span><span class="sxs-lookup"><span data-stu-id="5f7d1-330">Video Out</span></span>
  
 <span data-ttu-id="5f7d1-331">Surface Hub には、Surface Hub から別のディスプレイに視覚的なコンテンツをミラーリングするために、ビデオ出力ポートが搭載されています。</span><span class="sxs-lookup"><span data-stu-id="5f7d1-331">The Surface Hub includes a Video Out port for mirroring visual content from the Surface Hub to another display.</span></span>
 
-### <span data-ttu-id="5f7d1-332">ポート</span><span class="sxs-lookup"><span data-stu-id="5f7d1-332">Ports</span></span>
+### <a name="ports"></a><span data-ttu-id="5f7d1-332">ポート</span><span class="sxs-lookup"><span data-stu-id="5f7d1-332">Ports</span></span>
 
 <span data-ttu-id="5f7d1-333">55 インチの Surface Hub のビデオ出力ポート</span><span class="sxs-lookup"><span data-stu-id="5f7d1-333">Video Out port on the 55" Surface Hub</span></span>
 
@@ -481,12 +481,12 @@ ms.locfileid: "10836702"
 </tbody>
 </table>
 
-## <span data-ttu-id="5f7d1-346">ケーブル (複数)</span><span class="sxs-lookup"><span data-stu-id="5f7d1-346">Cables</span></span>
+## <a name="cables"></a><span data-ttu-id="5f7d1-346">ケーブル (複数)</span><span class="sxs-lookup"><span data-stu-id="5f7d1-346">Cables</span></span>
 
 <span data-ttu-id="5f7d1-347">55 インチと 84 インチのどちらの Surface Hub デバイスも、認定 DisplayPort および HDMI ケーブルで動作することがテストされています。</span><span class="sxs-lookup"><span data-stu-id="5f7d1-347">Both the 55” and 84” Surface Hub devices have been tested to work with Certified DisplayPort and HDMI cables.</span></span>  <span data-ttu-id="5f7d1-348">ベンダーにより販売されている長いケーブルも Surface Hub で動作する可能性がありますが、Hub で動作することが確認されているのはテスト ラボにより認定されているこれらのケーブルだけです。</span><span class="sxs-lookup"><span data-stu-id="5f7d1-348">While vendors do sell longer cables that may work with the Surface Hub, only those cables that have been certified by testing labs are certain to work with the Hub.</span></span> <span data-ttu-id="5f7d1-349">たとえば、認定されている DisplayPort ケーブルは最大 3 メートルですが、多くのベンダーが 3 倍の長さのケーブルを販売しています。</span><span class="sxs-lookup"><span data-stu-id="5f7d1-349">For example, DisplayPort cables are certified only up to 3 meters, however many vendors sell cables that are 3 times that length.</span></span> <span data-ttu-id="5f7d1-350">長いケーブルが必要な場合は、HDMI を使うことを強くお勧めします。</span><span class="sxs-lookup"><span data-stu-id="5f7d1-350">If a long cable is necessary, we strongly suggest using HDMI.</span></span>  <span data-ttu-id="5f7d1-351">HDMI には、リピーターの使用など、コスト効率の高い長距離ケーブル用ソリューションが多く用意されています。</span><span class="sxs-lookup"><span data-stu-id="5f7d1-351">HDMI has many cost-effective solutions for long-haul cables, including the use of repeaters.</span></span> <span data-ttu-id="5f7d1-352">ほぼすべての DisplayPort ソースは、HDMI シンクが検出された場合に HDMI 信号に自動的に切り替えます。</span><span class="sxs-lookup"><span data-stu-id="5f7d1-352">Nearly every DisplayPort source will automatically switch to HDMI signaling if a HDMI sink is detected.</span></span>
 
 
-## <span data-ttu-id="5f7d1-353">Bluetooth アクセサリ</span><span class="sxs-lookup"><span data-stu-id="5f7d1-353">Bluetooth accessories</span></span>
+## <a name="bluetooth-accessories"></a><span data-ttu-id="5f7d1-353">Bluetooth アクセサリ</span><span class="sxs-lookup"><span data-stu-id="5f7d1-353">Bluetooth accessories</span></span>
 
 <span data-ttu-id="5f7d1-354">次のアクセサリは、Bluetooth を使って Surface Hub に接続できます。</span><span class="sxs-lookup"><span data-stu-id="5f7d1-354">You can connect the following accessories to Surface Hub using Bluetooth:</span></span>
 

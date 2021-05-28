@@ -72,7 +72,7 @@ ms.locfileid: "11145942"
 
 <span id="multiple" />
 
-## <span data-ttu-id="036c5-141">複数のハードウェアテストを実行して問題のトラブルシューティングを行う</span><span class="sxs-lookup"><span data-stu-id="036c5-141">Running multiple hardware tests to troubleshoot issues</span></span>
+## <a name="running-multiple-hardware-tests-to-troubleshoot-issues"></a><span data-ttu-id="036c5-141">複数のハードウェアテストを実行して問題のトラブルシューティングを行う</span><span class="sxs-lookup"><span data-stu-id="036c5-141">Running multiple hardware tests to troubleshoot issues</span></span>
 
 <span data-ttu-id="036c5-142">SDT は、一連のテストを実行する対話型ツールとして設計されています。</span><span class="sxs-lookup"><span data-stu-id="036c5-142">SDT is designed as an interactive tool that runs a series of tests.</span></span> <span data-ttu-id="036c5-143">各テストについて、SDT では、テストの性質と、テストを成功させるためにユーザーが必要としている、または探していることを確認する手順を示します。</span><span class="sxs-lookup"><span data-stu-id="036c5-143">For each test, SDT provides instructions summarizing  the nature of the test and what users should expect or look for in order for the test to be successful.</span></span> <span data-ttu-id="036c5-144">たとえば、ディスプレイの輝度が正常に機能しているかどうかを診断するために、SDT は100ゼロから始まり、 **[はい** ] または [ **いいえ** ] に応答することで、ユーザーに確認を求めます。図4に示すように、明るさは期待どおりに機能しています。</span><span class="sxs-lookup"><span data-stu-id="036c5-144">For example, to diagnose if the display brightness is working properly, SDT starts at zero and increases the brightness to 100 percent, asking users to confirm – by answering **Yes** or **No** -- that brightness is functioning as expected, as shown in figure 4.</span></span> 
 
@@ -87,7 +87,7 @@ ms.locfileid: "11145942"
 3. <span data-ttu-id="036c5-149">必要に応じて、残りのテストをユーザーに案内します。</span><span class="sxs-lookup"><span data-stu-id="036c5-149">Guide users through remaining tests as appropriate.</span></span> <span data-ttu-id="036c5-150">完了すると、SDT は、ハードウェアの問題の考えられる原因、および解決のガイダンスなど、レポートの概要を自動的に表示します。</span><span class="sxs-lookup"><span data-stu-id="036c5-150">When finished, SDT automatically provides a high-level summary of the report, including the possible causes of any hardware issues along with guidance for resolution.</span></span>
 
 
-### <span data-ttu-id="036c5-151">アプリケーションの修復</span><span class="sxs-lookup"><span data-stu-id="036c5-151">Repairing applications</span></span>
+### <a name="repairing-applications"></a><span data-ttu-id="036c5-151">アプリケーションの修復</span><span class="sxs-lookup"><span data-stu-id="036c5-151">Repairing applications</span></span>
 
 <span data-ttu-id="036c5-152">SDT 問題の原因となっている可能性があるアプリケーションを診断して修復することができます。図5に示します。</span><span class="sxs-lookup"><span data-stu-id="036c5-152">SDT enables you to diagnose and repair applications that may be causing issues, as shown in figure 5.</span></span>
 
@@ -96,7 +96,7 @@ ms.locfileid: "11145942"
 *Figure 5. Running repairs*</span></span>
 <span id="logs" />
 
-### <span data-ttu-id="036c5-154">問題を分析するためのログの生成</span><span class="sxs-lookup"><span data-stu-id="036c5-154">Generating logs for analyzing issues</span></span> 
+### <a name="generating-logs-for-analyzing-issues"></a><span data-ttu-id="036c5-154">問題を分析するためのログの生成</span><span class="sxs-lookup"><span data-stu-id="036c5-154">Generating logs for analyzing issues</span></span> 
 
 <span data-ttu-id="036c5-155">SDT アプリケーション、ドライバー、ハードウェア、オペレーティングシステムの問題に対して、さまざまなログ対応診断サポートを提供します (図 6)。</span><span class="sxs-lookup"><span data-stu-id="036c5-155">SDT provides extensive log-enabled diagnosis support across applications, drivers, hardware, and operating system issues, as shown in figure 6.</span></span>
 
@@ -106,11 +106,11 @@ ms.locfileid: "11145942"
 
 <span id="detailed-report" />
 
-### <span data-ttu-id="036c5-157">デバイスと最適な構成の比較詳細レポートを生成しています</span><span class="sxs-lookup"><span data-stu-id="036c5-157">Generating detailed report comparing device vs. optimal configuration</span></span>
+### <a name="generating-detailed-report-comparing-device-vs.-optimal-configuration"></a><span data-ttu-id="036c5-157">デバイスと最適な構成の比較詳細レポートを生成しています</span><span class="sxs-lookup"><span data-stu-id="036c5-157">Generating detailed report comparing device vs. optimal configuration</span></span>
 
 <span data-ttu-id="036c5-158">これらのログに基づいて、SDT は、お好みの場所に保存できるソフトウェアとファームウェアベースの問題に関するレポートを生成します。</span><span class="sxs-lookup"><span data-stu-id="036c5-158">Based on the logs, SDT generates a report for software- and firmware-based issues that you can save to a preferred location.</span></span>
 
-## <span data-ttu-id="036c5-159">関連トピック</span><span class="sxs-lookup"><span data-stu-id="036c5-159">Related topics</span></span>
+## <a name="related-topics"></a><span data-ttu-id="036c5-159">関連トピック</span><span class="sxs-lookup"><span data-stu-id="036c5-159">Related topics</span></span>
 
 - [<span data-ttu-id="036c5-160">コマンドを使用してビジネス向け Surface 診断ツールキットを実行する</span><span class="sxs-lookup"><span data-stu-id="036c5-160">Run Surface Diagnostic Toolkit for Business using commands</span></span>](surface-diagnostic-toolkit-command-line.md)
 

@@ -30,7 +30,7 @@ ms.locfileid: "11145618"
 > [!Note]
 > <span data-ttu-id="e02d3-112">この記事で説明されているプロセスは、以前のバージョンのエンドポイント構成マネージャー、または他のサードパーティの管理ソリューションでも動作する可能性がありますが、Microsoft Surface UEFI Manager と PowerShell を使用した SEMM の管理は、エンドポイント構成マネージャーの現在の分岐でのみサポートされます。</span><span class="sxs-lookup"><span data-stu-id="e02d3-112">Although the process described in this article may work with earlier versions of Endpoint Configuration Manager or with other third-party management solutions, management of SEMM with Microsoft Surface UEFI Manager and PowerShell is supported only with the Current Branch of Endpoint Configuration Manager.</span></span>
 
-#### <span data-ttu-id="e02d3-113">前提条件</span><span class="sxs-lookup"><span data-stu-id="e02d3-113">Prerequisites</span></span>
+#### <a name="prerequisites"></a><span data-ttu-id="e02d3-113">前提条件</span><span class="sxs-lookup"><span data-stu-id="e02d3-113">Prerequisites</span></span>
 
 <span data-ttu-id="e02d3-114">この記事で説明されている手順を開始する前に、次のテクノロジとツールについて理解しておく必要があります。</span><span class="sxs-lookup"><span data-stu-id="e02d3-114">Before you begin the process outlined in this article, familiarize yourself with the following technologies and tools:</span></span>
 
@@ -53,7 +53,7 @@ ms.locfileid: "11145618"
 
 <span data-ttu-id="e02d3-128">Microsoft Surface UEFI Manager がクライアント Surface デバイスにインストールされた後、SEMM は PowerShell スクリプトを使って展開および管理されます。</span><span class="sxs-lookup"><span data-stu-id="e02d3-128">After Microsoft Surface UEFI Manager is installed on the client Surface device, SEMM is deployed and managed with PowerShell scripts.</span></span> <span data-ttu-id="e02d3-129">[Semm 管理スクリプト](https://www.microsoft.com/download/details.aspx?id=46703)のサンプルは、ダウンロードセンターからダウンロードできます。</span><span class="sxs-lookup"><span data-stu-id="e02d3-129">You can download samples of the [SEMM management scripts](https://www.microsoft.com/download/details.aspx?id=46703) from the Download Center.</span></span>
 
-## <span data-ttu-id="e02d3-130">Microsoft Surface UEFI Manager を展開する</span><span class="sxs-lookup"><span data-stu-id="e02d3-130">Deploy Microsoft Surface UEFI Manager</span></span>
+## <a name="deploy-microsoft-surface-uefi-manager"></a><span data-ttu-id="e02d3-130">Microsoft Surface UEFI Manager を展開する</span><span class="sxs-lookup"><span data-stu-id="e02d3-130">Deploy Microsoft Surface UEFI Manager</span></span>
 
 <span data-ttu-id="e02d3-131">Microsoft Surface UEFI Manager の展開は、一般的なアプリケーションの展開です。</span><span class="sxs-lookup"><span data-stu-id="e02d3-131">Deployment of Microsoft Surface UEFI Manager is a typical application deployment.</span></span> <span data-ttu-id="e02d3-132">Microsoft Surface UEFI マネージャーのインストーラーファイルは、標準の [quiet オプション](https://msdn.microsoft.com/library/windows/desktop/aa367988)と共にインストールできる標準の Windows インストーラーファイルです。</span><span class="sxs-lookup"><span data-stu-id="e02d3-132">The Microsoft Surface UEFI Manager installer file is a standard Windows Installer file that you can install with the [standard quiet option](https://msdn.microsoft.com/library/windows/desktop/aa367988).</span></span>
 
@@ -93,7 +93,7 @@ ms.locfileid: "11145618"
 
 <span data-ttu-id="e02d3-165">SEMM で管理されないデバイスに Microsoft Surface UEFI Manager アセンブリをインストールしない場合は、Microsoft Surface UEFI Manager を SEMM Configuration Manager スクリプトの依存関係として構成できます。</span><span class="sxs-lookup"><span data-stu-id="e02d3-165">If you do not want to install the Microsoft Surface UEFI Manager assemblies on devices that will not be managed with SEMM, you can configure Microsoft Surface UEFI Manager as a dependency of the SEMM Configuration Manager scripts.</span></span> <span data-ttu-id="e02d3-166">このシナリオについては、この記事の後半の「 [SEMM 構成マネージャースクリプトの展開](#deploy-semm-configuration-manager-scripts) 」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="e02d3-166">This scenario is covered in the [Deploy SEMM Configuration Manager Scripts](#deploy-semm-configuration-manager-scripts) section later in this article.</span></span>
 
-## <span data-ttu-id="e02d3-167">SEMM 構成マネージャーのスクリプトを作成または変更する</span><span class="sxs-lookup"><span data-stu-id="e02d3-167">Create or modify the SEMM Configuration Manager scripts</span></span>
+## <a name="create-or-modify-the-semm-configuration-manager-scripts"></a><span data-ttu-id="e02d3-167">SEMM 構成マネージャーのスクリプトを作成または変更する</span><span class="sxs-lookup"><span data-stu-id="e02d3-167">Create or modify the SEMM Configuration Manager scripts</span></span>
 
 <span data-ttu-id="e02d3-168">必要なアセンブリがデバイスにインストールされた後、SEMM でデバイスを登録して Surface UEFI を構成するプロセスは、PowerShell スクリプトで実行され、Configuration Manager を使用してスクリプトアプリケーションとして展開されます。</span><span class="sxs-lookup"><span data-stu-id="e02d3-168">After the required assemblies have been installed on the devices, the process of enrolling the devices in SEMM and configuring Surface UEFI is done with PowerShell scripts and deployed as a script application with Configuration Manager.</span></span> <span data-ttu-id="e02d3-169">これらのスクリプトは、組織と環境のニーズに合わせて変更できます。</span><span class="sxs-lookup"><span data-stu-id="e02d3-169">These scripts can be modified to fit the needs of your organization and environment.</span></span> <span data-ttu-id="e02d3-170">たとえば、さまざまな部門またはロールで、管理された Surface デバイスの複数の構成を作成できます。</span><span class="sxs-lookup"><span data-stu-id="e02d3-170">For example, you can create multiple configurations for managed Surface devices in different departments or roles.</span></span> <span data-ttu-id="e02d3-171">SEMM および Configuration Manager のスクリプトのサンプルは、この記事の最初の「 [前提条件](#prerequisites) 」セクションのリンクからダウンロードできます。</span><span class="sxs-lookup"><span data-stu-id="e02d3-171">You can download samples of the scripts for SEMM and Configuration Manager from the link in the [Prerequisites](#prerequisites) section at the beginning of this article.</span></span>
 
@@ -107,7 +107,7 @@ ms.locfileid: "11145618"
 > [!NOTE]
 > <span data-ttu-id="e02d3-178">SEMM 構成マネージャーのスクリプトとエクスポートされた SEMM 証明書ファイル (.pfx) は、構成マネージャーに追加される前に、他のファイルを持たない同じフォルダーに配置する必要があります。</span><span class="sxs-lookup"><span data-stu-id="e02d3-178">The SEMM Configuration Manager scripts and the exported SEMM certificate file (.pfx) should be placed in the same folder with no other files before they are added to Configuration Manager.</span></span>
 
-### <span data-ttu-id="e02d3-179">証明書とパッケージ名を指定する</span><span class="sxs-lookup"><span data-stu-id="e02d3-179">Specify certificate and package names</span></span>
+### <a name="specify-certificate-and-package-names"></a><span data-ttu-id="e02d3-179">証明書とパッケージ名を指定する</span><span class="sxs-lookup"><span data-stu-id="e02d3-179">Specify certificate and package names</span></span>
 
 <span data-ttu-id="e02d3-180">変更する必要があるスクリプトの最初の領域は、SEMM 証明書を指定して読み込む部分であり、SurfaceUEFIManager のバージョン、および SEMM 構成パッケージと SEMM のリセットパッケージの名前も示しています。</span><span class="sxs-lookup"><span data-stu-id="e02d3-180">The first region of the script that you need to modify is the portion that specifies and loads the SEMM certificate, and also indicates SurfaceUEFIManager version, and the names for the SEMM configuration package and SEMM reset package.</span></span> <span data-ttu-id="e02d3-181">証明書の名前と SurfaceUEFIManager のバージョンは、スクリプト ConfigureSEMM.ps1 の 56 ~ 73 の行に指定されています。</span><span class="sxs-lookup"><span data-stu-id="e02d3-181">The certificate name and SurfaceUEFIManager version are specified on lines 56 through 73 in the ConfigureSEMM.ps1 script.</span></span>
 
@@ -163,7 +163,7 @@ ms.locfileid: "11145618"
 > [!NOTE]
 > <span data-ttu-id="e02d3-199">構成マネージャーがアンインストールアクションを使ってデバイスから SEMM を削除できるようにするには、ResetSEMM.ps1 スクリプトのこのセクションに SEMM 証明書の名前とパスワードも入力する必要があります。</span><span class="sxs-lookup"><span data-stu-id="e02d3-199">The SEMM certificate name and password must also be entered in this section of the ResetSEMM.ps1 script to enable Configuration Manager to remove SEMM from the device with the uninstall action.</span></span>
 
-### <span data-ttu-id="e02d3-200">権限を構成する</span><span class="sxs-lookup"><span data-stu-id="e02d3-200">Configure permissions</span></span>
+### <a name="configure-permissions"></a><span data-ttu-id="e02d3-200">権限を構成する</span><span class="sxs-lookup"><span data-stu-id="e02d3-200">Configure permissions</span></span>
 
 <span data-ttu-id="e02d3-201">Surface UEFI の構成を指定するスクリプトの最初の領域は、 **"アクセス許可の構成"** 領域です。</span><span class="sxs-lookup"><span data-stu-id="e02d3-201">The first region of the script where you will specify the configuration for Surface UEFI is the **Configure Permissions** region.</span></span> <span data-ttu-id="e02d3-202">この領域は、 **"# Configure アクセス許可"** というコメントを含むサンプルスクリプトの行210から始まり、行247まで続きます。</span><span class="sxs-lookup"><span data-stu-id="e02d3-202">This region begins at line 210 in the sample script with the comment **# Configure Permissions** and continues to line 247.</span></span> <span data-ttu-id="e02d3-203">次のコード例では、最初にすべての Surface UEFI 設定へのアクセス許可を設定します。これにより、これらの設定が SEMM のみで変更される可能性があります。また、ローカルユーザーが Surface UEFI パスワード、TPM、およびフロントカメラとバックカメラを変更できるように、明示的な権限を追加します。</span><span class="sxs-lookup"><span data-stu-id="e02d3-203">The following code fragment first sets permissions to all Surface UEFI settings so that they may be modified by SEMM only, then adds explicit permissions to allow the local user to modify the Surface UEFI password, TPM, and front and rear cameras.</span></span>
 
@@ -215,7 +215,7 @@ ms.locfileid: "11145618"
 
 <span data-ttu-id="e02d3-207">Surface UEFI の使用可能な設定名と Id については、この記事の「 [設定名と id](#settings-names-and-ids) 」セクションを参照してください。</span><span class="sxs-lookup"><span data-stu-id="e02d3-207">You can find information about the available settings names and IDs for Surface UEFI in the [Settings Names and IDs](#settings-names-and-ids) section of this article.</span></span>
 
-### <span data-ttu-id="e02d3-208">設定の構成</span><span class="sxs-lookup"><span data-stu-id="e02d3-208">Configure settings</span></span>
+### <a name="configure-settings"></a><span data-ttu-id="e02d3-208">設定の構成</span><span class="sxs-lookup"><span data-stu-id="e02d3-208">Configure settings</span></span>
 
 <span data-ttu-id="e02d3-209">Surface UEFI の構成を指定するスクリプトの2番目の領域は、各設定を有効または無効にするかどうかを構成する、ConfigureSEMM.ps1 スクリプトの **構成設定** 領域です。</span><span class="sxs-lookup"><span data-stu-id="e02d3-209">The second region of the script where you will specify the configuration for Surface UEFI is the **Configure Settings** region of the ConfigureSEMM.ps1 script, which configures whether each setting is enabled or disabled.</span></span> <span data-ttu-id="e02d3-210">サンプルスクリプトには、すべての設定を既定値に設定する手順が含まれています。</span><span class="sxs-lookup"><span data-stu-id="e02d3-210">The sample script includes instructions to set all settings to their default values.</span></span> <span data-ttu-id="e02d3-211">次に、スクリプトは、PXE ブートのために IPv6 を無効にするための明示的な指示を提供し、Surface UEFI 管理者パスワードは変更しないでください。</span><span class="sxs-lookup"><span data-stu-id="e02d3-211">The script then provides explicit instructions to disable IPv6 for PXE Boot and to leave the Surface UEFI Administrator password unchanged.</span></span> <span data-ttu-id="e02d3-212">この領域は、最初に **# Configure 設定** のコメント (291 から行335のサンプルスクリプト) から始まります。</span><span class="sxs-lookup"><span data-stu-id="e02d3-212">You can find this region beginning with the **# Configure Settings** comment at line 291 through line 335 in the sample script.</span></span> <span data-ttu-id="e02d3-213">次のような領域が表示されます。</span><span class="sxs-lookup"><span data-stu-id="e02d3-213">The region appears as follows.</span></span>
 
@@ -273,7 +273,7 @@ ms.locfileid: "11145618"
 
 <span data-ttu-id="e02d3-218">Surface UEFI の使用可能な設定名と Id の詳細については、この記事の後半の「 [設定名と id](#settings-names-and-ids) 」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="e02d3-218">You can find information about the available settings names and IDs for Surface UEFI in the [Settings Names and IDs](#settings-names-and-ids) section later in this article.</span></span>
 
-### <span data-ttu-id="e02d3-219">設定レジストリキー</span><span class="sxs-lookup"><span data-stu-id="e02d3-219">Settings registry key</span></span>
+### <a name="settings-registry-key"></a><span data-ttu-id="e02d3-219">設定レジストリキー</span><span class="sxs-lookup"><span data-stu-id="e02d3-219">Settings registry key</span></span>
 
 <span data-ttu-id="e02d3-220">Configuration Manager の登録済みシステムを特定するために、ConfigureSEMM.ps1 スクリプトは、SEMM 構成スクリプトを使用してインストールされている登録済みシステムを識別するために使用できるレジストリキーを書き込みます。</span><span class="sxs-lookup"><span data-stu-id="e02d3-220">To identify enrolled systems for Configuration Manager, the ConfigureSEMM.ps1 script writes registry keys that can be used to identify enrolled systems as having been installed with the SEMM configuration script.</span></span> <span data-ttu-id="e02d3-221">これらのキーは、次の場所にあります。</span><span class="sxs-lookup"><span data-stu-id="e02d3-221">These keys can be found at the following location.</span></span>
 
@@ -382,14 +382,14 @@ ms.locfileid: "11145618"
 477 }
 ```
 
-### <span data-ttu-id="e02d3-223">設定名と Id</span><span class="sxs-lookup"><span data-stu-id="e02d3-223">Settings names and IDs</span></span>
+### <a name="settings-names-and-ids"></a><span data-ttu-id="e02d3-223">設定名と Id</span><span class="sxs-lookup"><span data-stu-id="e02d3-223">Settings names and IDs</span></span>
 
 <span data-ttu-id="e02d3-224">Surface uefi の設定または Surface UEFI 設定の権限を構成するには、設定名または設定 ID のいずれかで、各設定を参照する必要があります。</span><span class="sxs-lookup"><span data-stu-id="e02d3-224">To configure Surface UEFI settings or permissions for Surface UEFI settings, you must refer to each setting by either its setting name or setting ID.</span></span> <span data-ttu-id="e02d3-225">Surface UEFI の新しい更新があるたびに、新しい設定が追加されることがあります。</span><span class="sxs-lookup"><span data-stu-id="e02d3-225">With each new update for Surface UEFI, new settings may be added.</span></span> <span data-ttu-id="e02d3-226">Surface デバイスで利用可能な設定の完全な一覧を取得する最適な方法は、[設定名] と [設定] Id と共に、 [Surface ツール](https://www.microsoft.com/download/details.aspx?id=46703)の SEMM_Powershell.zip の ShowSettingsOptions.ps1 スクリプトを使って、IT をダウンロードすることです。</span><span class="sxs-lookup"><span data-stu-id="e02d3-226">The best way to get a complete list of the settings available on a Surface device, along with the settings name and settings IDs, is to use the ShowSettingsOptions.ps1 script from SEMM_Powershell.zip in [Surface Tools for IT Downloads](https://www.microsoft.com/download/details.aspx?id=46703)</span></span> 
 
 <span data-ttu-id="e02d3-227">ShowSettingsOptions.ps1 を実行するコンピューターには Microsoft Surface UEFI Manager がインストールされている必要がありますが、スクリプトは Surface デバイスを必要としません。</span><span class="sxs-lookup"><span data-stu-id="e02d3-227">The computer where ShowSettingsOptions.ps1 is run must have Microsoft Surface UEFI Manager installed, but the script does not require a Surface device.</span></span>
 
 
-## <span data-ttu-id="e02d3-228">SEMM Configuration Manager スクリプトの展開</span><span class="sxs-lookup"><span data-stu-id="e02d3-228">Deploy SEMM Configuration Manager scripts</span></span>
+## <a name="deploy-semm-configuration-manager-scripts"></a><span data-ttu-id="e02d3-228">SEMM Configuration Manager スクリプトの展開</span><span class="sxs-lookup"><span data-stu-id="e02d3-228">Deploy SEMM Configuration Manager scripts</span></span>
 
 <span data-ttu-id="e02d3-229">クライアントデバイスで SEMM を構成して有効にする準備ができたら、次の手順として、これらのスクリプトを Configuration Manager でアプリケーションとして追加します。</span><span class="sxs-lookup"><span data-stu-id="e02d3-229">After your scripts are prepared to configure and enable SEMM on the client device, the next step is to add these scripts as an application in Configuration Manager.</span></span> <span data-ttu-id="e02d3-230">構成マネージャーを開く前に、他のファイルを含まない共有フォルダーに次のファイルが存在することを確認します。</span><span class="sxs-lookup"><span data-stu-id="e02d3-230">Before you open Configuration Manager, ensure that the following files are in a shared folder that does not include other files:</span></span>
 

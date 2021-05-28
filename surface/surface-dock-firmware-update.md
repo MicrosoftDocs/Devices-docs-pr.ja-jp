@@ -31,7 +31,7 @@ ms.locfileid: "11319211"
 
 <span data-ttu-id="7b670-112">このツールは、以前は It 向け Surface Tools の一部としてダウンロード可能だった、以前の Microsoft Surface Dock Updater ツールに取ってかわるツールです。</span><span class="sxs-lookup"><span data-stu-id="7b670-112">This tool supersedes the earlier Microsoft Surface Dock Updater tool, previously available for download as part of Surface Tools for IT.</span></span> <span data-ttu-id="7b670-113">以前のツールの名前は Surface_Dock_Updater_vx.xx.xxx.x.msi (x はバージョン番号を示します) で、ダウンロードできなくなったので、使用できません。</span><span class="sxs-lookup"><span data-stu-id="7b670-113">The earlier tool was named Surface_Dock_Updater_vx.xx.xxx.x.msi (where x indicates the version number) and is no longer available for download and should not be used.</span></span>
 
-## <span data-ttu-id="7b670-114">Surface ドックのファームウェア更新プログラムをインストールする</span><span class="sxs-lookup"><span data-stu-id="7b670-114">Install the Surface Dock Firmware Update</span></span>
+## <a name="install-the-surface-dock-firmware-update"></a><span data-ttu-id="7b670-114">Surface ドックのファームウェア更新プログラムをインストールする</span><span class="sxs-lookup"><span data-stu-id="7b670-114">Install the Surface Dock Firmware Update</span></span>
 
 <span data-ttu-id="7b670-115">このセクションでは、ファームウェア更新プログラムを手動でインストールする方法について説明します。</span><span class="sxs-lookup"><span data-stu-id="7b670-115">This section describes how to manually install the firmware update.</span></span>
 
@@ -44,7 +44,7 @@ ms.locfileid: "11319211"
 
 2. <span data-ttu-id="7b670-123">Surface ドックから Surface デバイスを取り外し、5 秒待って再接続します。</span><span class="sxs-lookup"><span data-stu-id="7b670-123">Disconnect your Surface device from the Surface Dock, wait ~5 seconds, and then reconnect.</span></span> <span data-ttu-id="7b670-124">Surface ドックのファームウェア更新プログラムは、バックグラウンドでサイレント モードでドックを更新します。</span><span class="sxs-lookup"><span data-stu-id="7b670-124">The Surface Dock Firmware Update will update the dock silently in background.</span></span> <span data-ttu-id="7b670-125">プロセスが完了するには数分かかる場合があります。中断された場合でも続行されます。</span><span class="sxs-lookup"><span data-stu-id="7b670-125">The process can take a few minutes to complete and will continue even if interrupted.</span></span> 
 
-## <span data-ttu-id="7b670-126">Surface ドックのファームウェア更新プログラムを監視する</span><span class="sxs-lookup"><span data-stu-id="7b670-126">Monitor the Surface Dock Firmware Update</span></span>
+## <a name="monitor-the-surface-dock-firmware-update"></a><span data-ttu-id="7b670-126">Surface ドックのファームウェア更新プログラムを監視する</span><span class="sxs-lookup"><span data-stu-id="7b670-126">Monitor the Surface Dock Firmware Update</span></span>
 
 <span data-ttu-id="7b670-127">このセクションは省略可能であり、ファームウェア更新プログラムのインストールを監視する方法の概要を示します。</span><span class="sxs-lookup"><span data-stu-id="7b670-127">This section is optional and provides an overview of how to monitor installation of the firmware update.</span></span> 
 
@@ -77,7 +77,7 @@ ms.locfileid: "11319211"
   - [<span data-ttu-id="7b670-144">トラブルシューティングのヒント</span><span class="sxs-lookup"><span data-stu-id="7b670-144">Troubleshooting tips</span></span>](#troubleshooting-tips)
   - [<span data-ttu-id="7b670-145">バージョン リファレンス</span><span class="sxs-lookup"><span data-stu-id="7b670-145">Versions reference</span></span>](#versions-reference)
 
-## <span data-ttu-id="7b670-146">ネットワーク展開</span><span class="sxs-lookup"><span data-stu-id="7b670-146">Network deployment</span></span>
+## <a name="network-deployment"></a><span data-ttu-id="7b670-146">ネットワーク展開</span><span class="sxs-lookup"><span data-stu-id="7b670-146">Network deployment</span></span>
 
 <span data-ttu-id="7b670-147">Windows インストーラー コマンド (Msiexec.exe) を使って、Surface Dock Firmware Update をネットワーク上の複数のデバイスに展開できます。</span><span class="sxs-lookup"><span data-stu-id="7b670-147">You can use Windows Installer commands (Msiexec.exe) to deploy Surface Dock Firmware Update to multiple devices across your network.</span></span> <span data-ttu-id="7b670-148">Microsoft Endpoint Configuration Manager または他の展開ツールを使用する場合は、次の構文を入力してインストールがサイレント モードに設定されます。</span><span class="sxs-lookup"><span data-stu-id="7b670-148">When using Microsoft Endpoint Configuration Manager or other deployment tool, enter the following syntax to ensure the installation is silent:</span></span>
 
@@ -97,14 +97,14 @@ msiexec /i "\\share\folder\Surface_Dock_FwUpdate_1.42.139_Win10_17134_19.084.316
 > [!IMPORTANT]
 > <span data-ttu-id="7b670-154">他の方法で Surface ドックを最新の状態に保つ場合は [、「Surface ドック](https://support.microsoft.com/help/4023478/surface-update-your-surface-dock) の更新」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="7b670-154">If you want to keep your Surface Dock updated using any other method, refer to [Update your Surface Dock](https://support.microsoft.com/help/4023478/surface-update-your-surface-dock) for details.</span></span>
 
-## <span data-ttu-id="7b670-155">Intune の展開</span><span class="sxs-lookup"><span data-stu-id="7b670-155">Intune deployment</span></span>
+## <a name="intune-deployment"></a><span data-ttu-id="7b670-155">Intune の展開</span><span class="sxs-lookup"><span data-stu-id="7b670-155">Intune deployment</span></span>
 
 <span data-ttu-id="7b670-156">Intune を使って Surface ドックのファームウェア更新プログラムをデバイスに配布できます。</span><span class="sxs-lookup"><span data-stu-id="7b670-156">You can use Intune to distribute Surface Dock Firmware Update to your devices.</span></span> <span data-ttu-id="7b670-157">まず、次のドキュメントで説明するように、MSI ファイルを .intunewin 形式に変換する [必要があります。Intune スタンドアロン - Win32 アプリ管理](https://docs.microsoft.com/intune/apps/apps-win32-app-management)。</span><span class="sxs-lookup"><span data-stu-id="7b670-157">First you will need to convert the MSI file to the .intunewin format, as described in the following documentation: [Intune Standalone - Win32 app management](https://docs.microsoft.com/intune/apps/apps-win32-app-management).</span></span>
 
 <span data-ttu-id="7b670-158">次のコマンドを使用します。</span><span class="sxs-lookup"><span data-stu-id="7b670-158">Use the following command:</span></span>
   - **<span data-ttu-id="7b670-159">msiexec /i \<path to msi file\> /quiet /q</span><span class="sxs-lookup"><span data-stu-id="7b670-159">msiexec /i \<path to msi file\> /quiet /q</span></span>**
 
-## <span data-ttu-id="7b670-160">ファームウェア更新プログラムの完了を確認する方法</span><span class="sxs-lookup"><span data-stu-id="7b670-160">How to verify completion of the firmware update</span></span>
+## <a name="how-to-verify-completion-of-the-firmware-update"></a><span data-ttu-id="7b670-160">ファームウェア更新プログラムの完了を確認する方法</span><span class="sxs-lookup"><span data-stu-id="7b670-160">How to verify completion of the firmware update</span></span>
 
 <span data-ttu-id="7b670-161">Surface ドックのファームウェアは、次の 2 つのコンポーネントで構成されています。</span><span class="sxs-lookup"><span data-stu-id="7b670-161">Surface dock firmware consists of two components:</span></span>
 
@@ -127,7 +127,7 @@ msiexec /i "\\share\folder\Surface_Dock_FwUpdate_1.42.139_Win10_17134_19.084.316
 
 4. <span data-ttu-id="7b670-172">確認できない場合は、次のセクションでイベント ログとトラブルシューティングのヒントを確認してください。</span><span class="sxs-lookup"><span data-stu-id="7b670-172">If unable to verify, review Event logging and Troubleshooting tips in the next section.</span></span>
 
-## <span data-ttu-id="7b670-173">イベント ログ</span><span class="sxs-lookup"><span data-stu-id="7b670-173">Event logging</span></span>
+## <a name="event-logging"></a><span data-ttu-id="7b670-173">イベント ログ</span><span class="sxs-lookup"><span data-stu-id="7b670-173">Event logging</span></span>
 
 **<span data-ttu-id="7b670-174">表 1.</span><span class="sxs-lookup"><span data-stu-id="7b670-174">Table 1.</span></span> <span data-ttu-id="7b670-175">Surface Dock Firmware Update のログ ファイル</span><span class="sxs-lookup"><span data-stu-id="7b670-175">Log files for Surface Dock Firmware Update</span></span>**
 
@@ -152,7 +152,7 @@ msiexec /i "\\share\folder\Surface_Dock_FwUpdate_1.42.139_Win10_17134_19.084.316
 | <span data-ttu-id="7b670-205">2008</span><span class="sxs-lookup"><span data-stu-id="7b670-205">2008</span></span>     | <span data-ttu-id="7b670-206">BEGIN ドックの利用統計情報。</span><span class="sxs-lookup"><span data-stu-id="7b670-206">BEGIN dock telemetry.</span></span>                                                |
 | <span data-ttu-id="7b670-207">2011</span><span class="sxs-lookup"><span data-stu-id="7b670-207">2011</span></span>     | <span data-ttu-id="7b670-208">END ドックの利用統計情報。</span><span class="sxs-lookup"><span data-stu-id="7b670-208">END dock telemetry.</span></span>                                                  |
 
-## <span data-ttu-id="7b670-209">トラブルシューティングのヒント</span><span class="sxs-lookup"><span data-stu-id="7b670-209">Troubleshooting tips</span></span>
+## <a name="troubleshooting-tips"></a><span data-ttu-id="7b670-209">トラブルシューティングのヒント</span><span class="sxs-lookup"><span data-stu-id="7b670-209">Troubleshooting tips</span></span>
 
 - <span data-ttu-id="7b670-210">Surface ドックの電源を AC 電源から完全に取り外して、Surface ドックをリセットします。</span><span class="sxs-lookup"><span data-stu-id="7b670-210">Completely disconnect power for Surface dock from the AC power to reset the Surface Dock.</span></span>
 - <span data-ttu-id="7b670-211">Surface ドック以外のすべての周辺機器を取り外します。</span><span class="sxs-lookup"><span data-stu-id="7b670-211">Disconnect all peripherals except for the Surface Dock.</span></span>
@@ -160,12 +160,12 @@ msiexec /i "\\share\folder\Surface_Dock_FwUpdate_1.42.139_Win10_17134_19.084.316
 - <span data-ttu-id="7b670-213">Surface ドックが取り外され、ドックのイーサネット ポートの LED を介して監視された状態で更新が完了するのに十分な時間を確保します。</span><span class="sxs-lookup"><span data-stu-id="7b670-213">Ensure that the Surface Dock is disconnected, and then allow enough time for the update to complete as monitored via an LED in the Ethernet port of the dock.</span></span> <span data-ttu-id="7b670-214">Surface ドックの電源を取り外す前に、LED が点滅し始めるまで待ちます。</span><span class="sxs-lookup"><span data-stu-id="7b670-214">Wait until the LED stops blinking before you unplug Surface Dock from power.</span></span>
 - <span data-ttu-id="7b670-215">Surface ドックを別のデバイスに接続して、ドックを更新することができるか確認します。</span><span class="sxs-lookup"><span data-stu-id="7b670-215">Connect the Surface Dock to a different device to see if it is able to update the dock.</span></span>
 
-## <span data-ttu-id="7b670-216">バージョン リファレンス</span><span class="sxs-lookup"><span data-stu-id="7b670-216">Versions reference</span></span>
+## <a name="versions-reference"></a><span data-ttu-id="7b670-216">バージョン リファレンス</span><span class="sxs-lookup"><span data-stu-id="7b670-216">Versions reference</span></span>
 
 >[!NOTE]
 ><span data-ttu-id="7b670-217">インストール ファイルは、Surface_Dock_FwUpdate_X.XX.XXX_Win10_XXXXX_XX.XXX.XXXXX_X.MSI\*\* (Surface_Dock_FwUpdate_1.42.139_Win10_17134_19.084.31680_0.msi \*\* など) の名前付け形式でリリースされ、既定では C:\Program Files\SurfaceUpdate にインストールされます。</span><span class="sxs-lookup"><span data-stu-id="7b670-217">The installation file is released with the following naming format: **Surface_Dock_FwUpdate_X.XX.XXX_Win10_XXXXX_XX.XXX.XXXXX_X.MSI** (ex: Surface_Dock_FwUpdate_1.42.139_Win10_17134_19.084.31680_0.msi) and installs by default to C:\Program Files\SurfaceUpdate.</span></span>
 
-### <span data-ttu-id="7b670-218">バージョン 1.53.139.0</span><span class="sxs-lookup"><span data-stu-id="7b670-218">Version 1.53.139.0</span></span>
+### <a name="version-1.53.139.0"></a><span data-ttu-id="7b670-218">バージョン 1.53.139.0</span><span class="sxs-lookup"><span data-stu-id="7b670-218">Version 1.53.139.0</span></span>
 *<span data-ttu-id="7b670-219">リリース日: 2020 年 8 月 4 日</span><span class="sxs-lookup"><span data-stu-id="7b670-219">Release Date: August 4, 2020</span></span>*
 
 <span data-ttu-id="7b670-220">このバージョンの Surface Dock Firmware Update には、次のバグ修正プログラムとサポートが含まれています。</span><span class="sxs-lookup"><span data-stu-id="7b670-220">This version of Surface Dock Firmware Update includes bug fixes and support for:</span></span>
@@ -180,7 +180,7 @@ msiexec /i "\\share\folder\Surface_Dock_FwUpdate_1.42.139_Win10_17134_19.084.316
 - <span data-ttu-id="7b670-226">Component10CurrentFwVersion を **4ac3970 に更新しました**。</span><span class="sxs-lookup"><span data-stu-id="7b670-226">Component10CurrentFwVersion updated to **4ac3970**.</span></span>
 - <span data-ttu-id="7b670-227">Component20CurrentFwVersion を **4a1d570**に更新しました。</span><span class="sxs-lookup"><span data-stu-id="7b670-227">Component20CurrentFwVersion updated to **4a1d570**.</span></span>
  
-### <span data-ttu-id="7b670-228">バージョン 1.42.139</span><span class="sxs-lookup"><span data-stu-id="7b670-228">Version 1.42.139</span></span> 
+### <a name="version-1.42.139"></a><span data-ttu-id="7b670-228">バージョン 1.42.139</span><span class="sxs-lookup"><span data-stu-id="7b670-228">Version 1.42.139</span></span> 
 *<span data-ttu-id="7b670-229">リリース日: 2019 年 9 月 18 日</span><span class="sxs-lookup"><span data-stu-id="7b670-229">Release Date: September 18 2019</span></span>*
 
 <span data-ttu-id="7b670-230">このバージョンは、Surface_Dock_FwUpdate_1.42.139_Win10_17134_19.084.31680_0.MSIに含まれている場合に、ファームウェアを更新します。</span><span class="sxs-lookup"><span data-stu-id="7b670-230">This version, contained in Surface_Dock_FwUpdate_1.42.139_Win10_17134_19.084.31680_0.MSI, updates firmware in the background.</span></span> 
@@ -192,9 +192,9 @@ msiexec /i "\\share\folder\Surface_Dock_FwUpdate_1.42.139_Win10_17134_19.084.316
 
 <span data-ttu-id="7b670-234">Surface Pro 7 と Surface Laptop 3 のサポートが追加されました。</span><span class="sxs-lookup"><span data-stu-id="7b670-234">It adds support for Surface Pro 7 and Surface Laptop 3.</span></span>
 
-## <span data-ttu-id="7b670-235">レガシ バージョン</span><span class="sxs-lookup"><span data-stu-id="7b670-235">Legacy versions</span></span>
+## <a name="legacy-versions"></a><span data-ttu-id="7b670-235">レガシ バージョン</span><span class="sxs-lookup"><span data-stu-id="7b670-235">Legacy versions</span></span>
 
-### <span data-ttu-id="7b670-236">バージョン 2.23.139.0</span><span class="sxs-lookup"><span data-stu-id="7b670-236">Version 2.23.139.0</span></span>
+### <a name="version-2.23.139.0"></a><span data-ttu-id="7b670-236">バージョン 2.23.139.0</span><span class="sxs-lookup"><span data-stu-id="7b670-236">Version 2.23.139.0</span></span>
 *<span data-ttu-id="7b670-237">リリース日: 2018 年 10 月 10 日</span><span class="sxs-lookup"><span data-stu-id="7b670-237">Release Date: 10 October 2018</span></span>*
 
 <span data-ttu-id="7b670-238">このバージョンの Surface Dock Updater では、次の機能のサポートが追加されています。</span><span class="sxs-lookup"><span data-stu-id="7b670-238">This version of Surface Dock Updater adds support for the following:</span></span>
@@ -203,7 +203,7 @@ msiexec /i "\\share\folder\Surface_Dock_FwUpdate_1.42.139_Win10_17134_19.084.316
 - <span data-ttu-id="7b670-240">Surface Laptop 2 のサポートを追加する</span><span class="sxs-lookup"><span data-stu-id="7b670-240">Add support for Surface Laptop 2</span></span>
 
 
-### <span data-ttu-id="7b670-241">バージョン 2.22.139.0</span><span class="sxs-lookup"><span data-stu-id="7b670-241">Version 2.22.139.0</span></span>
+### <a name="version-2.22.139.0"></a><span data-ttu-id="7b670-241">バージョン 2.22.139.0</span><span class="sxs-lookup"><span data-stu-id="7b670-241">Version 2.22.139.0</span></span>
 *<span data-ttu-id="7b670-242">リリース日: 2018 年 7 月 26 日</span><span class="sxs-lookup"><span data-stu-id="7b670-242">Release Date: 26 July 2018</span></span>*
 
 <span data-ttu-id="7b670-243">このバージョンの Surface Dock Updater では、次の機能のサポートが追加されています。</span><span class="sxs-lookup"><span data-stu-id="7b670-243">This version of Surface Dock Updater adds support for the following:</span></span>
@@ -211,7 +211,7 @@ msiexec /i "\\share\folder\Surface_Dock_FwUpdate_1.42.139_Win10_17134_19.084.316
 - <span data-ttu-id="7b670-244">更新の信頼性を高める</span><span class="sxs-lookup"><span data-stu-id="7b670-244">Increase update reliability</span></span>
 - <span data-ttu-id="7b670-245">Surface Go のサポートを追加する</span><span class="sxs-lookup"><span data-stu-id="7b670-245">Add support for Surface Go</span></span>
 
-### <span data-ttu-id="7b670-246">バージョン 2.12.136.0</span><span class="sxs-lookup"><span data-stu-id="7b670-246">Version 2.12.136.0</span></span>
+### <a name="version-2.12.136.0"></a><span data-ttu-id="7b670-246">バージョン 2.12.136.0</span><span class="sxs-lookup"><span data-stu-id="7b670-246">Version 2.12.136.0</span></span>
 *<span data-ttu-id="7b670-247">リリース日: 2018 年 1 月 29 日</span><span class="sxs-lookup"><span data-stu-id="7b670-247">Release Date: 29 January 2018</span></span>*
 
 <span data-ttu-id="7b670-248">このバージョンの Surface Dock Updater では、次の機能のサポートが追加されています。</span><span class="sxs-lookup"><span data-stu-id="7b670-248">This version of Surface Dock Updater adds support for the following:</span></span>
@@ -224,7 +224,7 @@ msiexec /i "\\share\folder\Surface_Dock_FwUpdate_1.42.139_Win10_17134_19.084.316
 * <span data-ttu-id="7b670-254">Surface Book デバイスを対象とした機能強化による Surface ドック ファームウェア更新プログラムのサポートの追加</span><span class="sxs-lookup"><span data-stu-id="7b670-254">Added support for Surface Dock firmware updates with improvements targeted to Surface Book devices</span></span>
 
 
-### <span data-ttu-id="7b670-255">バージョン 2.9.136.0</span><span class="sxs-lookup"><span data-stu-id="7b670-255">Version 2.9.136.0</span></span>
+### <a name="version-2.9.136.0"></a><span data-ttu-id="7b670-255">バージョン 2.9.136.0</span><span class="sxs-lookup"><span data-stu-id="7b670-255">Version 2.9.136.0</span></span>
 *<span data-ttu-id="7b670-256">リリース日: 2017 年 11 月 3 日</span><span class="sxs-lookup"><span data-stu-id="7b670-256">Release date: November 3, 2017</span></span>*
 
 <span data-ttu-id="7b670-257">このバージョンの Surface Dock Updater では、次の機能のサポートが追加されています。</span><span class="sxs-lookup"><span data-stu-id="7b670-257">This version of Surface Dock Updater adds support for the following:</span></span>
@@ -232,7 +232,7 @@ msiexec /i "\\share\folder\Surface_Dock_FwUpdate_1.42.139_Win10_17134_19.084.316
 * <span data-ttu-id="7b670-258">Surface ドックの DisplayPort ファームウェア更新プログラム</span><span class="sxs-lookup"><span data-stu-id="7b670-258">Update for Surface Dock DisplayPort Firmware</span></span>
 * <span data-ttu-id="7b670-259">パッシブ ディスプレイ ポート アダプター経由でのオーディオの問題を解決します。</span><span class="sxs-lookup"><span data-stu-id="7b670-259">Resolves an issue with audio over passive display port adapters</span></span>
 
-### <span data-ttu-id="7b670-260">バージョン 2.1.15.0</span><span class="sxs-lookup"><span data-stu-id="7b670-260">Version 2.1.15.0</span></span>
+### <a name="version-2.1.15.0"></a><span data-ttu-id="7b670-260">バージョン 2.1.15.0</span><span class="sxs-lookup"><span data-stu-id="7b670-260">Version 2.1.15.0</span></span>
 *<span data-ttu-id="7b670-261">リリース日 : 2017 年 6 月 19 日</span><span class="sxs-lookup"><span data-stu-id="7b670-261">Release date: June 19, 2017</span></span>*
 
 <span data-ttu-id="7b670-262">このバージョンの Surface Dock Updater では、次の機能のサポートが追加されています。</span><span class="sxs-lookup"><span data-stu-id="7b670-262">This version of Surface Dock Updater adds support for the following:</span></span>
@@ -240,7 +240,7 @@ msiexec /i "\\share\folder\Surface_Dock_FwUpdate_1.42.139_Win10_17134_19.084.316
 * <span data-ttu-id="7b670-263">Surface Laptop</span><span class="sxs-lookup"><span data-stu-id="7b670-263">Surface Laptop</span></span>
 * <span data-ttu-id="7b670-264">Surface Pro</span><span class="sxs-lookup"><span data-stu-id="7b670-264">Surface Pro</span></span>
 
-### <span data-ttu-id="7b670-265">バージョン 2.1.6.0</span><span class="sxs-lookup"><span data-stu-id="7b670-265">Version 2.1.6.0</span></span>
+### <a name="version-2.1.6.0"></a><span data-ttu-id="7b670-265">バージョン 2.1.6.0</span><span class="sxs-lookup"><span data-stu-id="7b670-265">Version 2.1.6.0</span></span>
 *<span data-ttu-id="7b670-266">リリース日: 2016 年 4 月 7 日</span><span class="sxs-lookup"><span data-stu-id="7b670-266">Release date: April 7, 2017</span></span>*
 
 <span data-ttu-id="7b670-267">このバージョンの Surface Dock Updater では、次の機能のサポートが追加されています。</span><span class="sxs-lookup"><span data-stu-id="7b670-267">This version of Surface Dock Updater adds support for the following:</span></span>
@@ -248,7 +248,7 @@ msiexec /i "\\share\folder\Surface_Dock_FwUpdate_1.42.139_Win10_17134_19.084.316
 * <span data-ttu-id="7b670-268">Surface ドックの DisplayPort ファームウェア更新プログラム</span><span class="sxs-lookup"><span data-stu-id="7b670-268">Update for Surface Dock DisplayPort firmware</span></span>
 * <span data-ttu-id="7b670-269">Windows 10 が必要</span><span class="sxs-lookup"><span data-stu-id="7b670-269">Requires Windows 10</span></span>
 
-### <span data-ttu-id="7b670-270">バージョン 2.0.22.0</span><span class="sxs-lookup"><span data-stu-id="7b670-270">Version 2.0.22.0</span></span>
+### <a name="version-2.0.22.0"></a><span data-ttu-id="7b670-270">バージョン 2.0.22.0</span><span class="sxs-lookup"><span data-stu-id="7b670-270">Version 2.0.22.0</span></span>
 *<span data-ttu-id="7b670-271">リリース日: 2016 年 10 月 21 日</span><span class="sxs-lookup"><span data-stu-id="7b670-271">Release date: October 21, 2016</span></span>*
 
 <span data-ttu-id="7b670-272">このバージョンの Surface Dock Updater では、次の機能のサポートが追加されています。</span><span class="sxs-lookup"><span data-stu-id="7b670-272">This version of Surface Dock Updater adds support for the following:</span></span>
@@ -256,7 +256,7 @@ msiexec /i "\\share\folder\Surface_Dock_FwUpdate_1.42.139_Win10_17134_19.084.316
 * <span data-ttu-id="7b670-273">Surface ドックの USB ファームウェア更新プログラム</span><span class="sxs-lookup"><span data-stu-id="7b670-273">Update for Surface Dock USB firmware</span></span>
 * <span data-ttu-id="7b670-274">イーサネット、オーディオ、USB ポートの信頼性の向上</span><span class="sxs-lookup"><span data-stu-id="7b670-274">Improved reliability of Ethernet, audio, and USB ports</span></span>
 
-### <span data-ttu-id="7b670-275">バージョン 1.0.8.0</span><span class="sxs-lookup"><span data-stu-id="7b670-275">Version 1.0.8.0</span></span>
+### <a name="version-1.0.8.0"></a><span data-ttu-id="7b670-275">バージョン 1.0.8.0</span><span class="sxs-lookup"><span data-stu-id="7b670-275">Version 1.0.8.0</span></span>
 *<span data-ttu-id="7b670-276">リリース日: 2016 年 4 月 26 日</span><span class="sxs-lookup"><span data-stu-id="7b670-276">Release date: April 26, 2016</span></span>*
 
 <span data-ttu-id="7b670-277">このバージョンの Surface Dock Updater では、次の機能のサポートが追加されています。</span><span class="sxs-lookup"><span data-stu-id="7b670-277">This version of Surface Dock Updater adds support for the following:</span></span>

@@ -23,7 +23,7 @@ ms.locfileid: "11271401"
 
 <span data-ttu-id="daa75-105">Surface デバイスは、モバイル デバイスのエネルギー消費量の最新の進歩を活用して、ワークロード間で最適化された効率的なエクスペリエンスを提供するように設計されています。</span><span class="sxs-lookup"><span data-stu-id="daa75-105">Surface devices are designed to take advantage of the latest advances in mobile device energy consumption to deliver a streamlined experience optimized across workloads.</span></span> <span data-ttu-id="daa75-106">実行内容に応じて、Surface は、低電力アイドル状態 (S0ix) に戻る前に、バックグラウンド タスク (受信メールやネットワーク トラフィックなど) を処理するためにシステム コンポーネントを一時停止して、個々のハードウェア コンポーネントに電力を流す方法を動的に微調整します。</span><span class="sxs-lookup"><span data-stu-id="daa75-106">Depending on what you’re doing, Surface dynamically fine tunes how power flows to individual hardware components, momentarily waking up system components to handle background tasks -- such as an incoming email or network traffic -- before returning to a low power idle state (S0ix).</span></span>
 
-## <span data-ttu-id="daa75-107">IT 管理者向け推奨事項の概要</span><span class="sxs-lookup"><span data-stu-id="daa75-107">Summary of recommendations for IT administrators</span></span>
+## <a name="summary-of-recommendations-for-it-administrators"></a><span data-ttu-id="daa75-107">IT 管理者向け推奨事項の概要</span><span class="sxs-lookup"><span data-stu-id="daa75-107">Summary of recommendations for IT administrators</span></span>
 
 <span data-ttu-id="daa75-108">組織全体の Surface デバイスで Surface の電源最適化機能を十分に利用するには、次の方法を使用します。</span><span class="sxs-lookup"><span data-stu-id="daa75-108">To ensure Surface devices across your organization fully benefit from Surface power optimization features:</span></span>
 
@@ -36,18 +36,18 @@ ms.locfileid: "11271401"
 
 - <span data-ttu-id="daa75-117">Surface デバイスを既存の電源管理ポリシー設定から除外します。</span><span class="sxs-lookup"><span data-stu-id="daa75-117">Exclude Surface devices from any existing power management policy settings.</span></span> 
 
-## <span data-ttu-id="daa75-118">Background</span><span class="sxs-lookup"><span data-stu-id="daa75-118">Background</span></span>
+## <a name="background"></a><span data-ttu-id="daa75-118">Background</span><span class="sxs-lookup"><span data-stu-id="daa75-118">Background</span></span>
 
 <span data-ttu-id="daa75-119">Surface が電源管理を実装する方法は、一連のスリープ状態で徐々に電源を減らして電源をオフにする以前の OS 標準とは大きく異なります。たとえば、S1、S2、S3 などの循環。</span><span class="sxs-lookup"><span data-stu-id="daa75-119">The way Surface implements power management differs significantly from the earlier OS standard that gradually reduces and turns off power via a series of sleep states; for example, cycling through S1, S2, S3, and so on.</span></span>
 
 <span data-ttu-id="daa75-120">代わりに、Surface は、従来のスリープ機能と電力消費機能を最新のスタンバイ機能と動的な微調整に置き換えるカスタム電源プロファイルで画像化されます。</span><span class="sxs-lookup"><span data-stu-id="daa75-120">Instead, Surface is imaged with a custom power profile that replaces legacy sleep and energy consumption functionality with modern standby features and dynamic fine tuning.</span></span> <span data-ttu-id="daa75-121">このカスタム電源プロファイルは、Surface Serial Hub Driver とシステム集計モジュール (SAM) によって実装されます。</span><span class="sxs-lookup"><span data-stu-id="daa75-121">This custom power profile is implemented via the Surface Serial Hub Driver and the system aggregator module (SAM).</span></span> <span data-ttu-id="daa75-122">SAM チップは Surface デバイスの電源ポリシー所有者として機能し、アルゴリズムを使用して最適な電力要件を計算します。</span><span class="sxs-lookup"><span data-stu-id="daa75-122">The SAM chip functions as the Surface device power-policy owner, using algorithms to calculate optimal power requirements.</span></span> <span data-ttu-id="daa75-123">Windows Power Manager と連携して、ハードウェア コンポーネントが機能するために必要な正確な電力量のみを割り当てるか調整します。</span><span class="sxs-lookup"><span data-stu-id="daa75-123">It works in conjunction with Windows power manager to allocate or throttle only the exact amount of power required for hardware components to function.</span></span> <span data-ttu-id="daa75-124">この記事は、Surface Pro 7+、Surface Laptop Go、Surface Pro 7、Surface Pro X、Surface Laptop 3 など、現在サポートされている Surface デバイスすべてに適用されます。</span><span class="sxs-lookup"><span data-stu-id="daa75-124">This article applies to all currently supported Surface devices including Surface Pro 7+, Surface Laptop Go, Surface Pro 7, Surface Pro X, and Surface Laptop 3.</span></span>
 
-## <span data-ttu-id="daa75-125">Surface でのカスタム電源プロファイルの利用</span><span class="sxs-lookup"><span data-stu-id="daa75-125">Utilizing the custom power profile in Surface</span></span>
+## <a name="utilizing-the-custom-power-profile-in-surface"></a><span data-ttu-id="daa75-125">Surface でのカスタム電源プロファイルの利用</span><span class="sxs-lookup"><span data-stu-id="daa75-125">Utilizing the custom power profile in Surface</span></span>
 
 <span data-ttu-id="daa75-126">Surface デバイスの電源オプションに移動すると、利用可能な電源プランが 1 つ表示されます。</span><span class="sxs-lookup"><span data-stu-id="daa75-126">If you go into the power options on a surface device, you'll see that there's a single power plan available.</span></span> <span data-ttu-id="daa75-127">これは、カスタム電源プロファイルです。</span><span class="sxs-lookup"><span data-stu-id="daa75-127">This is the custom power profile.</span></span> <span data-ttu-id="daa75-128">また、高度な電源設定に移動すると、Windows 10 を実行している汎用 PC に比べて、電源オプションのサブセットがはるかに小さくても表示されます。</span><span class="sxs-lookup"><span data-stu-id="daa75-128">And if you go to the advanced power settings, you’ll see a much smaller subset of power options compared to a generic PC running Windows 10.</span></span> <span data-ttu-id="daa75-129">一般的なデバイスとは異なり、Surface には、これらの電源オプションを管理するためのファームウェアとカスタム コンポーネントがあります。</span><span class="sxs-lookup"><span data-stu-id="daa75-129">Unlike generic devices, Surface has firmware and custom components to manage these power options.</span></span>
 
 
-## <span data-ttu-id="daa75-130">モダン スタンバイ</span><span class="sxs-lookup"><span data-stu-id="daa75-130">Modern Standby</span></span>
+## <a name="modern-standby"></a><span data-ttu-id="daa75-130">モダン スタンバイ</span><span class="sxs-lookup"><span data-stu-id="daa75-130">Modern Standby</span></span>
 
 <span data-ttu-id="daa75-131">アルゴリズム的に埋め込まれたカスタム電源プロファイルを使用すると、スマートフォンの一般的なオン/インスタント オフの機能に対して低電力状態を維持することで、Surface の最新のスタンバイ接続が可能になります。</span><span class="sxs-lookup"><span data-stu-id="daa75-131">The algorithmically embedded custom power profile enables modern standby connectivity for Surface by maintaining a low power state for instant on/instant off functionality typical of smartphones.</span></span> <span data-ttu-id="daa75-132">S0ix (Deepest Runtime Idle Platform State (IDLES) とも呼ばれる) は、Surface デバイスの既定の電源モードです。</span><span class="sxs-lookup"><span data-stu-id="daa75-132">S0ix, also known as Deepest Runtime Idle Platform State (DRIPS), is the default power mode for Surface devices.</span></span> <span data-ttu-id="daa75-133">モダン スタンバイには、次の 2 つのモードがあります。</span><span class="sxs-lookup"><span data-stu-id="daa75-133">Modern standby has two modes:</span></span>
 
@@ -57,7 +57,7 @@ ms.locfileid: "11271401"
 
 <span data-ttu-id="daa75-138">モダン スタンバイの詳細については、Microsoft ハードウェア デベロッパー センター [を参照してください](https://docs.microsoft.com/windows-hardware/design/device-experiences/modern-standby-wake-sources)。</span><span class="sxs-lookup"><span data-stu-id="daa75-138">To learn more about modern standby, refer to the [Microsoft Hardware Dev Center](https://docs.microsoft.com/windows-hardware/design/device-experiences/modern-standby-wake-sources).</span></span>
 
-## <span data-ttu-id="daa75-139">Surface で電源管理エクスペリエンスを効率化する方法</span><span class="sxs-lookup"><span data-stu-id="daa75-139">How Surface streamlines the power management experience</span></span> 
+## <a name="how-surface-streamlines-the-power-management-experience"></a><span data-ttu-id="daa75-139">Surface で電源管理エクスペリエンスを効率化する方法</span><span class="sxs-lookup"><span data-stu-id="daa75-139">How Surface streamlines the power management experience</span></span> 
 
 <span data-ttu-id="daa75-140">Surface には、ユーザーが電源管理エクスペリエンスを最適化するために設計された次の機能が統合されています。</span><span class="sxs-lookup"><span data-stu-id="daa75-140">Surface integrates the following features designed to help users optimize the power management experience:</span></span>
 
@@ -67,11 +67,11 @@ ms.locfileid: "11271401"
 
 - [<span data-ttu-id="daa75-143">Windows パフォーマンス の電源スライダー</span><span class="sxs-lookup"><span data-stu-id="daa75-143">Windows performance power slider</span></span>](#windows-performance-power-slider)
 
-### <span data-ttu-id="daa75-144">単一の電源プラン</span><span class="sxs-lookup"><span data-stu-id="daa75-144">Singular power plan</span></span>
+### <a name="singular-power-plan"></a><span data-ttu-id="daa75-144">単一の電源プラン</span><span class="sxs-lookup"><span data-stu-id="daa75-144">Singular power plan</span></span>
 
 <span data-ttu-id="daa75-145">Surface は、カスタムの電源プランを作成したり、電源設定を手動で構成したりする必要がななく、効率的な電源管理エクスペリエンスを提供するように設計されています。</span><span class="sxs-lookup"><span data-stu-id="daa75-145">Surface is designed for a streamlined power management experience that eliminates the need to create custom power plans or manually configure power settings.</span></span> <span data-ttu-id="daa75-146">Microsoft では、標準の Windows ビルドから複数の電源プランを置き換える単一の電源プラン (バランス) を提供することで、ユーザー エクスペリエンスを合理化します。</span><span class="sxs-lookup"><span data-stu-id="daa75-146">Microsoft streamlines the user experience by delivering a single power plan (balanced) that replaces the multiple power plans from standard Windows builds.</span></span>
 
-### <span data-ttu-id="daa75-147">簡略化された電源設定のユーザー インターフェイス</span><span class="sxs-lookup"><span data-stu-id="daa75-147">Simplified power settings user interface</span></span>
+### <a name="simplified-power-settings-user-interface"></a><span data-ttu-id="daa75-147">簡略化された電源設定のユーザー インターフェイス</span><span class="sxs-lookup"><span data-stu-id="daa75-147">Simplified power settings user interface</span></span>
 
 <span data-ttu-id="daa75-148">Surface は、ベスト プラクティスの電源設定の推奨事項に従って、簡素化された UI を提供します。</span><span class="sxs-lookup"><span data-stu-id="daa75-148">Surface provides a simplified UI in accord with best practice power setting recommendations.</span></span> <span data-ttu-id="daa75-149">一般に、既定のユーザー インターフェイスに表示される設定のみを調整し、高度な電源設定やグループ ポリシー設定の構成を避けることをお勧めします。</span><span class="sxs-lookup"><span data-stu-id="daa75-149">In general, it's recommended to only adjust settings visible in the default user interface and avoid configuring advanced power settings or Group Policy settings.</span></span> <span data-ttu-id="daa75-150">既定の画面タイムアウトとスリープ タイムアウトを使用し、最大明るさレベルを回避する方法は、ユーザーがバッテリ寿命を延長する最も効果的な方法です。</span><span class="sxs-lookup"><span data-stu-id="daa75-150">Using the default screen and sleep timeouts while avoiding maximum brightness levels are the most effective ways for users to maintain extended battery life.</span></span>
 
@@ -79,7 +79,7 @@ ms.locfileid: "11271401"
 
 <span data-ttu-id="daa75-153">図 1. </span><span class="sxs-lookup"><span data-stu-id="daa75-153">Figure 1.</span></span> <span data-ttu-id="daa75-154">簡略化された電源とスリープの設定</span><span class="sxs-lookup"><span data-stu-id="daa75-154">Simplified power and sleep settings</span></span>
 
-### <span data-ttu-id="daa75-155">Windows パフォーマンス の電源スライダー</span><span class="sxs-lookup"><span data-stu-id="daa75-155">Windows performance power slider</span></span>
+### <a name="windows-performance-power-slider"></a><span data-ttu-id="daa75-155">Windows パフォーマンス の電源スライダー</span><span class="sxs-lookup"><span data-stu-id="daa75-155">Windows performance power slider</span></span>
 
 <span data-ttu-id="daa75-156">Windows 10 ビルド 1709 以降を実行している Surface デバイスには、電源スライダーが搭載されています。必要に応じてバッテリー残量を優先したり、必要に応じてパフォーマンスを優先することができます。</span><span class="sxs-lookup"><span data-stu-id="daa75-156">Surface devices running Windows 10 build 1709 and later include a power slider allowing you to prioritize battery life when needed or favor performance if desired.</span></span> <span data-ttu-id="daa75-157">タスク バーから電源スライダーにアクセスするには、バッテリー アイコンをクリックします。</span><span class="sxs-lookup"><span data-stu-id="daa75-157">You can access the power slider from the taskbar by clicking on the battery icon.</span></span> <span data-ttu-id="daa75-158">パフォーマンスを向上するために、バッテリ寿命を長くする場合は左に、(バッテリー節約モード)、スライドは右にスライドします。</span><span class="sxs-lookup"><span data-stu-id="daa75-158">Slide left for longer battery life (battery saver mode) or slide right for faster performance.</span></span>
 
@@ -114,7 +114,7 @@ ms.locfileid: "11271401"
 
 -   [<span data-ttu-id="daa75-193">バッテリー節約機能。</span><span class="sxs-lookup"><span data-stu-id="daa75-193">Battery saver.</span></span>](https://docs.microsoft.com/windows-hardware/design/component-guidelines/battery-saver)
 
-## <span data-ttu-id="daa75-194">バッテリー残量の延長に関するベスト プラクティス</span><span class="sxs-lookup"><span data-stu-id="daa75-194">Best practices for extended battery life</span></span>
+## <a name="best-practices-for-extended-battery-life"></a><span data-ttu-id="daa75-194">バッテリー残量の延長に関するベスト プラクティス</span><span class="sxs-lookup"><span data-stu-id="daa75-194">Best practices for extended battery life</span></span>
 
 
 | <span data-ttu-id="daa75-195">ベスト プラクティス</span><span class="sxs-lookup"><span data-stu-id="daa75-195">Best practice</span></span> | <span data-ttu-id="daa75-196">次の場所に移動します。</span><span class="sxs-lookup"><span data-stu-id="daa75-196">Go to</span></span> | <span data-ttu-id="daa75-197">次のステップ</span><span class="sxs-lookup"><span data-stu-id="daa75-197">Next steps</span></span> |
@@ -128,7 +128,7 @@ ms.locfileid: "11271401"
 | <span data-ttu-id="daa75-217">アプリの使用状況を確認する</span><span class="sxs-lookup"><span data-stu-id="daa75-217">Check app usage</span></span> | <span data-ttu-id="daa75-218">アプリ</span><span class="sxs-lookup"><span data-stu-id="daa75-218">Your apps</span></span> | <span data-ttu-id="daa75-219">アプリを閉じます。</span><span class="sxs-lookup"><span data-stu-id="daa75-219">Close apps.</span></span>|
 | <span data-ttu-id="daa75-220">電源コードに損傷が生じなかったか確認します。</span><span class="sxs-lookup"><span data-stu-id="daa75-220">Check your power cord for any damage.</span></span>| <span data-ttu-id="daa75-221">電源コード</span><span class="sxs-lookup"><span data-stu-id="daa75-221">Your power cord</span></span> | <span data-ttu-id="daa75-222">電源コードが破損している場合は交換してください。</span><span class="sxs-lookup"><span data-stu-id="daa75-222">Replace power cord if worn or damaged.</span></span>|
 
-## <span data-ttu-id="daa75-223">詳細情報</span><span class="sxs-lookup"><span data-stu-id="daa75-223">Learn more</span></span> 
+## <a name="learn-more"></a><span data-ttu-id="daa75-223">詳細情報</span><span class="sxs-lookup"><span data-stu-id="daa75-223">Learn more</span></span> 
 
 - [<span data-ttu-id="daa75-224">モダン スタンバイ</span><span class="sxs-lookup"><span data-stu-id="daa75-224">Modern   standby</span></span>](https://docs.microsoft.com/windows-hardware/design/device-experiences/modern-standby-wake-sources)
 

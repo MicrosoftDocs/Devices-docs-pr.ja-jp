@@ -26,7 +26,7 @@ ms.locfileid: "10834846"
 
 <span data-ttu-id="13b7f-106">Surface Hub でルーム コントロール システムを使用するには、ルーム コントロール ハードウェアを Surface Hub に接続します。通常、接続には Surface Hub の下部にある RJ11 シリアル ポートを使用します。</span><span class="sxs-lookup"><span data-stu-id="13b7f-106">Using a room control system with your Surface Hub involves connecting room control hardware to the Surface Hub, usually through the RJ11 serial port on the bottom of the Surface Hub.</span></span>
 
-## <span data-ttu-id="13b7f-107">端末の設定</span><span class="sxs-lookup"><span data-stu-id="13b7f-107">Terminal settings</span></span>
+## <a name="terminal-settings"></a><span data-ttu-id="13b7f-107">端末の設定</span><span class="sxs-lookup"><span data-stu-id="13b7f-107">Terminal settings</span></span>
 
 <span data-ttu-id="13b7f-108">ルーム コントロール システムのコントロール パネルに接続するために、Surface Hub で端末の設定を構成する必要はありません。</span><span class="sxs-lookup"><span data-stu-id="13b7f-108">To connect to a room control system control panel, you don't need to configure any terminal settings on the Surface Hub.</span></span> <span data-ttu-id="13b7f-109">PC やノート PC を Surface Hub に接続して Surface Hub からシリアル コマンドを送信する場合は、Tera Term や PuTTY などの端末エミュレーターを使用できます。</span><span class="sxs-lookup"><span data-stu-id="13b7f-109">If you want to connect a PC or laptop to your Surface Hub and send serial commands from the Surface Hub, you can use a terminal emulator program like Tera Term or PuTTY.</span></span> 
 
@@ -40,7 +40,7 @@ ms.locfileid: "10834846"
 | <span data-ttu-id="13b7f-122">ライン フィード</span><span class="sxs-lookup"><span data-stu-id="13b7f-122">Line feed</span></span> | <span data-ttu-id="13b7f-123">すべてのキャリッジ リターン</span><span class="sxs-lookup"><span data-stu-id="13b7f-123">every carriage return</span></span> |
  
 
-## <span data-ttu-id="13b7f-124">配線図</span><span class="sxs-lookup"><span data-stu-id="13b7f-124">Wiring diagram</span></span>
+## <a name="wiring-diagram"></a><span data-ttu-id="13b7f-124">配線図</span><span class="sxs-lookup"><span data-stu-id="13b7f-124">Wiring diagram</span></span>
 
 <span data-ttu-id="13b7f-125">Surface Hub のシリアル ポートをルーム コントロール システムに接続する際は、標準的な RJ-11 (6P6C) コネクタを使用できます。</span><span class="sxs-lookup"><span data-stu-id="13b7f-125">You can use a standard RJ-11 (6P6C) connector to connect the Surface Hub serial port to a room control system.</span></span> <span data-ttu-id="13b7f-126">これは、推奨されている接続方法です。</span><span class="sxs-lookup"><span data-stu-id="13b7f-126">This is the recommended method.</span></span> <span data-ttu-id="13b7f-127">RJ-11 4 コンダクター ケーブルを使用することもできますが、この方法は推奨されません。</span><span class="sxs-lookup"><span data-stu-id="13b7f-127">You can also use an RJ-11 4-conductor cable, but we do not recommend this method.</span></span>
 
@@ -48,7 +48,7 @@ ms.locfileid: "10834846"
 
 ![配線図を示す画像。](images/room-control-wiring-diagram.png)
 
-## <span data-ttu-id="13b7f-130">コマンド セット</span><span class="sxs-lookup"><span data-stu-id="13b7f-130">Command sets</span></span>
+## <a name="command-sets"></a><span data-ttu-id="13b7f-130">コマンド セット</span><span class="sxs-lookup"><span data-stu-id="13b7f-130">Command sets</span></span>
 
 <span data-ttu-id="13b7f-131">ルーム コントロール システムでは、コマンドに関して一般的な会議室シナリオを使用します。</span><span class="sxs-lookup"><span data-stu-id="13b7f-131">Room control systems use common meeting-room scenarios for commands.</span></span> <span data-ttu-id="13b7f-132">コマンドはルーム コントロール システムで生成され、Surface Hub とのシリアル接続を介して伝達されます。</span><span class="sxs-lookup"><span data-stu-id="13b7f-132">Commands originate from the room control system, and are communicated over a serial connection to a Surface Hub.</span></span> <span data-ttu-id="13b7f-133">コマンドは ASCII ベースで、Surface Hub は状態変化の発生を認識します。</span><span class="sxs-lookup"><span data-stu-id="13b7f-133">Commands are ASCII based, and the Surface Hub will acknowledge when state changes occur.</span></span>
 
@@ -62,7 +62,7 @@ ms.locfileid: "10834846"
 | <span data-ttu-id="13b7f-142">?</span><span class="sxs-lookup"><span data-stu-id="13b7f-142">?</span></span> | <span data-ttu-id="13b7f-143">現在の値を照会する</span><span class="sxs-lookup"><span data-stu-id="13b7f-143">Queries for a current value</span></span> |
  
 
-## <span data-ttu-id="13b7f-144">電源</span><span class="sxs-lookup"><span data-stu-id="13b7f-144">Power</span></span>
+## <a name="power"></a><span data-ttu-id="13b7f-144">電源</span><span class="sxs-lookup"><span data-stu-id="13b7f-144">Power</span></span>
 
 <span data-ttu-id="13b7f-145">Surface Hub の電力は、以下のいずれかの状態になります。</span><span class="sxs-lookup"><span data-stu-id="13b7f-145">Surface Hub can be in one of these power states.</span></span>
 
@@ -91,7 +91,7 @@ ms.locfileid: "10834846"
 
 
 
-## <span data-ttu-id="13b7f-187">Brightness</span><span class="sxs-lookup"><span data-stu-id="13b7f-187">Brightness</span></span>
+## <a name="brightness"></a><span data-ttu-id="13b7f-187">Brightness</span><span class="sxs-lookup"><span data-stu-id="13b7f-187">Brightness</span></span>
 
 <span data-ttu-id="13b7f-188">現在の明るさレベルの範囲は、0 ~ 100 です。</span><span class="sxs-lookup"><span data-stu-id="13b7f-188">The current brightness level is a range from 0 to 100.</span></span>
 
@@ -102,7 +102,7 @@ ms.locfileid: "10834846"
 | <span data-ttu-id="13b7f-193">Brightness+</span><span class="sxs-lookup"><span data-stu-id="13b7f-193">Brightness+</span></span> | <span data-ttu-id="13b7f-194">システム管理コントローラー (SMC) が、明るさを上げるコマンドを送信します。</span><span class="sxs-lookup"><span data-stu-id="13b7f-194">System management controller (SMC) sends the brightness up command.</span></span></br></br><span data-ttu-id="13b7f-195">ルーム コントロール システムの PC サービスによって、新しい明るさレベルが SMC に通知されます。</span><span class="sxs-lookup"><span data-stu-id="13b7f-195">PC service on the room control system notifies SMC of new brightness level.</span></span> |  <span data-ttu-id="13b7f-196">Brightness = 51</span><span class="sxs-lookup"><span data-stu-id="13b7f-196">Brightness = 51</span></span> |
 | <span data-ttu-id="13b7f-197">Brightness-</span><span class="sxs-lookup"><span data-stu-id="13b7f-197">Brightness-</span></span> |  <span data-ttu-id="13b7f-198">SMC が、明るさを下げるコマンドを送信します。</span><span class="sxs-lookup"><span data-stu-id="13b7f-198">SMC sends the brightness down command.</span></span></br></br><span data-ttu-id="13b7f-199">PC サービスによって、新しい明るさレベルが SMC に通知されます。</span><span class="sxs-lookup"><span data-stu-id="13b7f-199">PC service notifies SMC of new brightness level.</span></span> | <span data-ttu-id="13b7f-200">Brightness = 50</span><span class="sxs-lookup"><span data-stu-id="13b7f-200">Brightness = 50</span></span> |
 
-## <span data-ttu-id="13b7f-201">Volume</span><span class="sxs-lookup"><span data-stu-id="13b7f-201">Volume</span></span>
+## <a name="volume"></a><span data-ttu-id="13b7f-201">Volume</span><span class="sxs-lookup"><span data-stu-id="13b7f-201">Volume</span></span>
 
 <span data-ttu-id="13b7f-202">現在の音量レベルの範囲は、0 ~ 100 です。</span><span class="sxs-lookup"><span data-stu-id="13b7f-202">The current volume level is a range from 0 to 100.</span></span>
 
@@ -119,7 +119,7 @@ ms.locfileid: "10834846"
 
  
 
-## <span data-ttu-id="13b7f-217">オーディオのミュート</span><span class="sxs-lookup"><span data-stu-id="13b7f-217">Mute for audio</span></span>
+## <a name="mute-for-audio"></a><span data-ttu-id="13b7f-217">オーディオのミュート</span><span class="sxs-lookup"><span data-stu-id="13b7f-217">Mute for audio</span></span>
 
 <span data-ttu-id="13b7f-218">オーディオをミュートすることができます。</span><span class="sxs-lookup"><span data-stu-id="13b7f-218">Audio can be muted.</span></span>
 
@@ -130,7 +130,7 @@ ms.locfileid: "10834846"
 
  
 
-## <span data-ttu-id="13b7f-226">ビデオ ソース</span><span class="sxs-lookup"><span data-stu-id="13b7f-226">Video source</span></span>
+## <a name="video-source"></a><span data-ttu-id="13b7f-226">ビデオ ソース</span><span class="sxs-lookup"><span data-stu-id="13b7f-226">Video source</span></span>
 
 <span data-ttu-id="13b7f-227">複数の表示ソースを使用できます。</span><span class="sxs-lookup"><span data-stu-id="13b7f-227">Several display sources can be used.</span></span>
 
@@ -153,7 +153,7 @@ ms.locfileid: "10834846"
 | <span data-ttu-id="13b7f-250">Source-</span><span class="sxs-lookup"><span data-stu-id="13b7f-250">Source-</span></span> | <span data-ttu-id="13b7f-251">SMC によって前のアクティブな入力ソースに移行されます。</span><span class="sxs-lookup"><span data-stu-id="13b7f-251">SMC cycles to the previous active input source.</span></span></br></br><span data-ttu-id="13b7f-252">PC サービスによって、現在の入力ソースが SMC に通知されます。</span><span class="sxs-lookup"><span data-stu-id="13b7f-252">PC service notifies SMC of the current input source.</span></span> |  <span data-ttu-id="13b7f-253">Source=&lt;#&gt;</span><span class="sxs-lookup"><span data-stu-id="13b7f-253">Source=&lt;#&gt;</span></span> |
 | <span data-ttu-id="13b7f-254">Source?</span><span class="sxs-lookup"><span data-stu-id="13b7f-254">Source?</span></span> |  <span data-ttu-id="13b7f-255">SMC が、PC サービスでアクティブな入力ソースを照会します。</span><span class="sxs-lookup"><span data-stu-id="13b7f-255">SMC queries PC service for the active input source.</span></span></br></br><span data-ttu-id="13b7f-256">PC サービスによって、現在の入力ソースが SMC に通知されます。</span><span class="sxs-lookup"><span data-stu-id="13b7f-256">PC service notifies SMC of the current in;put source.</span></span> | <span data-ttu-id="13b7f-257">Source=&lt;#&gt;</span><span class="sxs-lookup"><span data-stu-id="13b7f-257">Source=&lt;#&gt;</span></span> |
 
-## <span data-ttu-id="13b7f-258">Errors</span><span class="sxs-lookup"><span data-stu-id="13b7f-258">Errors</span></span>
+## <a name="errors"></a><span data-ttu-id="13b7f-258">Errors</span><span class="sxs-lookup"><span data-stu-id="13b7f-258">Errors</span></span>
 
 <span data-ttu-id="13b7f-259">エラーは、次の表の形式に従って返されます。</span><span class="sxs-lookup"><span data-stu-id="13b7f-259">Errors are returned following the format in this table.</span></span>
 
@@ -167,7 +167,7 @@ ms.locfileid: "10834846"
 
  
 
-## <span data-ttu-id="13b7f-274">関連トピック</span><span class="sxs-lookup"><span data-stu-id="13b7f-274">Related topics</span></span>
+## <a name="related-topics"></a><span data-ttu-id="13b7f-274">関連トピック</span><span class="sxs-lookup"><span data-stu-id="13b7f-274">Related topics</span></span>
 
 
 [<span data-ttu-id="13b7f-275">Microsoft Surface Hub の管理</span><span class="sxs-lookup"><span data-stu-id="13b7f-275">Manage Microsoft Surface Hub</span></span>](manage-surface-hub.md)

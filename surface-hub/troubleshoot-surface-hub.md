@@ -31,12 +31,12 @@ ms.locfileid: "10834893"
 
 
 
-## <span data-ttu-id="3ee43-113">セットアップのトラブルシューティング</span><span class="sxs-lookup"><span data-stu-id="3ee43-113">Setup troubleshooting</span></span>
+## <a name="setup-troubleshooting"></a><span data-ttu-id="3ee43-113">セットアップのトラブルシューティング</span><span class="sxs-lookup"><span data-stu-id="3ee43-113">Setup troubleshooting</span></span>
 
 
 <span data-ttu-id="3ee43-114">このセクションでは、Microsoft Surface Hub を設定するときに想定される問題のトラブルシューティングに役立つ、原因および考えられる修正方法の一覧を示します。</span><span class="sxs-lookup"><span data-stu-id="3ee43-114">This section lists causes, and possible fixes to help troubleshoot issues you might find when you set up your Microsoft Surface Hub.</span></span>
 
-### <span data-ttu-id="3ee43-115">デバイス上</span><span class="sxs-lookup"><span data-stu-id="3ee43-115">On-device</span></span>
+### <a name="on-device"></a><span data-ttu-id="3ee43-115">デバイス上</span><span class="sxs-lookup"><span data-stu-id="3ee43-115">On-device</span></span>
 
 <span data-ttu-id="3ee43-116">最初の実行プログラムの完了後に Surface Hub で発生する問題に対して考えられる修正方法です。</span><span class="sxs-lookup"><span data-stu-id="3ee43-116">Possible fixes for issues on the Surface Hub after you've completed the first-run program.</span></span>
 
@@ -143,7 +143,7 @@ ms.locfileid: "10834893"
 </table>
  
 
-### <span data-ttu-id="3ee43-150">最初の実行</span><span class="sxs-lookup"><span data-stu-id="3ee43-150">First run</span></span>
+### <a name="first-run"></a><span data-ttu-id="3ee43-150">最初の実行</span><span class="sxs-lookup"><span data-stu-id="3ee43-150">First run</span></span>
 
 <span data-ttu-id="3ee43-151">Surface Hub の最初の実行プログラムで発生する問題に対して考えられる修正方法です。</span><span class="sxs-lookup"><span data-stu-id="3ee43-151">Possible fixes for issues with Surface Hub first-run program.</span></span>
 
@@ -212,7 +212,7 @@ ms.locfileid: "10834893"
 
  
 
-### <span data-ttu-id="3ee43-178">[デバイス アカウント] ページ (既存のアカウントの設定に関する問題)</span><span class="sxs-lookup"><span data-stu-id="3ee43-178">Device account page, issues for existing account settings</span></span>
+### <a name="device-account-page,-issues-for-existing-account-settings"></a><span data-ttu-id="3ee43-178">[デバイス アカウント] ページ (既存のアカウントの設定に関する問題)</span><span class="sxs-lookup"><span data-stu-id="3ee43-178">Device account page, issues for existing account settings</span></span>
 
 <table>
 <tr>
@@ -372,7 +372,7 @@ ms.locfileid: "10834893"
 
  
 
-### <span data-ttu-id="3ee43-227">最初の実行 (Exchange サーバー ページ)</span><span class="sxs-lookup"><span data-stu-id="3ee43-227">First run, Exchange server page</span></span>
+### <a name="first-run,-exchange-server-page"></a><span data-ttu-id="3ee43-227">最初の実行 (Exchange サーバー ページ)</span><span class="sxs-lookup"><span data-stu-id="3ee43-227">First run, Exchange server page</span></span>
 
 <table>
 <colgroup>
@@ -431,7 +431,7 @@ ms.locfileid: "10834893"
 
  
 
-## <span data-ttu-id="3ee43-243">Exchange ActiveSync エラー</span><span class="sxs-lookup"><span data-stu-id="3ee43-243">Exchange ActiveSync errors</span></span>
+## <a name="exchange-activesync-errors"></a><span data-ttu-id="3ee43-243">Exchange ActiveSync エラー</span><span class="sxs-lookup"><span data-stu-id="3ee43-243">Exchange ActiveSync errors</span></span>
 
 
 <span data-ttu-id="3ee43-244">このセクションでは、状態コード、マッピング、ユーザー メッセージ、および管理者が Exchange ActiveSync エラーを解決するために実行できる操作を示します。</span><span class="sxs-lookup"><span data-stu-id="3ee43-244">This section lists status codes, mapping, user messages, and actions an admin can take to solve Exchange ActiveSync errors.</span></span>
@@ -607,13 +607,13 @@ ms.locfileid: "10834893"
 </tbody>
 </table>
 
-## <span data-ttu-id="3ee43-372">サポートに問い合わせ</span><span class="sxs-lookup"><span data-stu-id="3ee43-372">Contact Support</span></span>
+## <a name="contact-support"></a><span data-ttu-id="3ee43-372">サポートに問い合わせ</span><span class="sxs-lookup"><span data-stu-id="3ee43-372">Contact Support</span></span>
 
 <span data-ttu-id="3ee43-373">質問がある場合やヘルプが必要な場合は、[サポートリクエストを作成](https://support.microsoft.com/supportforbusiness/productselection)できます。</span><span class="sxs-lookup"><span data-stu-id="3ee43-373">If you have questions or need help, you can [create a support request](https://support.microsoft.com/supportforbusiness/productselection).</span></span>
 
 
  
-## <span data-ttu-id="3ee43-374">関連するコンテンツ</span><span class="sxs-lookup"><span data-stu-id="3ee43-374">Related content</span></span>
+## <a name="related-content"></a><span data-ttu-id="3ee43-374">関連するコンテンツ</span><span class="sxs-lookup"><span data-stu-id="3ee43-374">Related content</span></span>
 
 - [<span data-ttu-id="3ee43-375">Surface Hub への Miracast 接続のトラブルシューティング</span><span class="sxs-lookup"><span data-stu-id="3ee43-375">Troubleshooting Miracast connection to the Surface Hub</span></span>](https://docs.microsoft.com/surface-hub/miracast-troubleshooting)
  

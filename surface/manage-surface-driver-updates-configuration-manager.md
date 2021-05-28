@@ -23,11 +23,11 @@ ms.locfileid: "10897075"
 ---
 # <span data-ttu-id="423d9-104">構成マネージャーのドライバーの更新</span><span class="sxs-lookup"><span data-stu-id="423d9-104">Manage Surface driver updates in Configuration Manager</span></span>
 
-## <span data-ttu-id="423d9-105">まとめ</span><span class="sxs-lookup"><span data-stu-id="423d9-105">Summary</span></span>
+## <a name="summary"></a><span data-ttu-id="423d9-105">まとめ</span><span class="sxs-lookup"><span data-stu-id="423d9-105">Summary</span></span>
 
 <span data-ttu-id="423d9-106">[Microsoft System Center Configuration manager バージョン 1710](https://docs.microsoft.com/sccm/core/plan-design/changes/whats-new-in-version-1710#software-updates)以降では、configuration manager クライアントを通じて、microsoft Surface ファームウェアとドライバー更新プログラムを直接、同期して展開することができます。</span><span class="sxs-lookup"><span data-stu-id="423d9-106">Starting in [Microsoft System Center Configuration Manager version 1710](https://docs.microsoft.com/sccm/core/plan-design/changes/whats-new-in-version-1710#software-updates), you can synchronize and deploy Microsoft Surface firmware and driver updates directly through the Configuration Manager client.</span></span> <span data-ttu-id="423d9-107">このプロセスは、定期的な更新プログラムの展開と似ています。</span><span class="sxs-lookup"><span data-stu-id="423d9-107">The process resembles deploying regular updates.</span></span> <span data-ttu-id="423d9-108">ただし、Surface driver の更新をカタログに追加するには、いくつかの追加構成が必要です。</span><span class="sxs-lookup"><span data-stu-id="423d9-108">However, some additional configurations are required to get the Surface driver updates into your catalog.</span></span>
 
-## <span data-ttu-id="423d9-109">前提条件</span><span class="sxs-lookup"><span data-stu-id="423d9-109">Prerequisites</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="423d9-109">前提条件</span><span class="sxs-lookup"><span data-stu-id="423d9-109">Prerequisites</span></span>
 
 <span data-ttu-id="423d9-110">Surface driver の更新を管理するには、次の前提条件が満たされている必要があります。</span><span class="sxs-lookup"><span data-stu-id="423d9-110">To manage Surface driver updates, the following prerequisites must be met:</span></span>
 
@@ -37,7 +37,7 @@ ms.locfileid: "10897075"
 > [!NOTE]
 > <span data-ttu-id="423d9-114">環境が前提条件を満たしていない場合は、「[よく寄せ](#frequently-asked-questions-faq)られる質問 (FAQ)」で、「Surface ドライバーとファームウェアの更新プログラムを展開するための[別の方法](https://support.microsoft.com/help/4098906/manage-surface-driver-updates-in-configuration-manager#1)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="423d9-114">If your environment doesn’t meet the prerequisites, refer to the [alternative methods](https://support.microsoft.com/help/4098906/manage-surface-driver-updates-in-configuration-manager#1) to deploy Surface driver and firmware updates in the [FAQ](#frequently-asked-questions-faq) section.</span></span>
 
-## <span data-ttu-id="423d9-115">有用なログファイル</span><span class="sxs-lookup"><span data-stu-id="423d9-115">Useful log files</span></span>
+## <a name="useful-log-files"></a><span data-ttu-id="423d9-115">有用なログファイル</span><span class="sxs-lookup"><span data-stu-id="423d9-115">Useful log files</span></span>
 
 <span data-ttu-id="423d9-116">次のログは、Surface ドライバーの更新を管理するときに特に便利です。</span><span class="sxs-lookup"><span data-stu-id="423d9-116">The following logs are especially useful when you manage Surface driver updates.</span></span>
 
@@ -49,7 +49,7 @@ ms.locfileid: "10897075"
 <span data-ttu-id="423d9-123">これらのログは、SUP を管理するサイトサーバー上、または SUP 自体がサイトサーバーに直接インストールされている場合は、SUP 上にあります。</span><span class="sxs-lookup"><span data-stu-id="423d9-123">These logs are located on the site server that manages the SUP, or on the SUP itself if it's installed directly on a site server.</span></span>
 <span data-ttu-id="423d9-124">Configuration Manager ログの完全な一覧については、「 [System Center Configuration manager でログファイル](https://docs.microsoft.com/sccm/core/plan-design/hierarchy/log-files)を確認する」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="423d9-124">For a complete list of Configuration Manager logs, see [Log files in System Center Configuration Manager](https://docs.microsoft.com/sccm/core/plan-design/hierarchy/log-files).</span></span>
 
-## <span data-ttu-id="423d9-125">Surface driver の更新管理を有効にする</span><span class="sxs-lookup"><span data-stu-id="423d9-125">Enabling Surface driver updates management</span></span>
+## <a name="enabling-surface-driver-updates-management"></a><span data-ttu-id="423d9-125">Surface driver の更新管理を有効にする</span><span class="sxs-lookup"><span data-stu-id="423d9-125">Enabling Surface driver updates management</span></span>
 
 <span data-ttu-id="423d9-126">Configuration Manager で Surface driver の更新プログラムの管理を有効にするには、次の手順を実行します。</span><span class="sxs-lookup"><span data-stu-id="423d9-126">To enable Surface driver updates management in Configuration Manager, follow these steps:</span></span>
 
@@ -83,7 +83,7 @@ ms.locfileid: "10897075"
    > [!NOTE]
    > <span data-ttu-id="423d9-148">ほとんどの Surface ドライバーは、複数の Windows 10 製品グループに属しています。</span><span class="sxs-lookup"><span data-stu-id="423d9-148">Most Surface drivers belong to multiple Windows 10 product groups.</span></span> <span data-ttu-id="423d9-149">ここに記載されているすべての製品を選択する必要はありません。</span><span class="sxs-lookup"><span data-stu-id="423d9-149">You may not have to select all the products that are listed here.</span></span> <span data-ttu-id="423d9-150">更新プログラムカタログに設定されている製品の数を減らすために、同期のために環境で必要な製品のみを選ぶことをお勧めします。</span><span class="sxs-lookup"><span data-stu-id="423d9-150">To help reduce the number of products that populate your Update Catalog, we recommend that you select only the products that are required by your environment for synchronization.</span></span>
 
-## <span data-ttu-id="423d9-151">構成を確認する</span><span class="sxs-lookup"><span data-stu-id="423d9-151">Verifying the configuration</span></span>
+## <a name="verifying-the-configuration"></a><span data-ttu-id="423d9-151">構成を確認する</span><span class="sxs-lookup"><span data-stu-id="423d9-151">Verifying the configuration</span></span>
 
 <span data-ttu-id="423d9-152">SUP が正しく構成されていることを確認するには、次の手順を実行します。</span><span class="sxs-lookup"><span data-stu-id="423d9-152">To verify that the SUP is configured correctly, follow these steps:</span></span>
 
@@ -123,7 +123,7 @@ ms.locfileid: "10897075"
 
    ![すべてのソフトウェア更新プログラムの検索結果](images/manage-surface-driver-updates-4.png)
 
-## <span data-ttu-id="423d9-163">手動同期</span><span class="sxs-lookup"><span data-stu-id="423d9-163">Manual synchronization</span></span>
+## <a name="manual-synchronization"></a><span data-ttu-id="423d9-163">手動同期</span><span class="sxs-lookup"><span data-stu-id="423d9-163">Manual synchronization</span></span>
 
 <span data-ttu-id="423d9-164">次の同期を待つ必要がない場合は、次の手順に従って同期を開始します。</span><span class="sxs-lookup"><span data-stu-id="423d9-164">If you don't want to wait until the next synchronization, follow these steps to start a synchronization:</span></span>
 
@@ -150,13 +150,13 @@ ms.locfileid: "10897075"
    Synchronizing update 74102899-0a49-48cf-97e6-05bde18a27ff - Microsoft driver update for Surface UEFI
    ```
 
-## <span data-ttu-id="423d9-169">Surface ファームウェアとドライバー更新プログラムを展開する</span><span class="sxs-lookup"><span data-stu-id="423d9-169">Deploying Surface firmware and driver updates</span></span>
+## <a name="deploying-surface-firmware-and-driver-updates"></a><span data-ttu-id="423d9-169">Surface ファームウェアとドライバー更新プログラムを展開する</span><span class="sxs-lookup"><span data-stu-id="423d9-169">Deploying Surface firmware and driver updates</span></span>
 
 <span data-ttu-id="423d9-170">他の更新プログラムを展開する場合と同じ方法で、Surface ファームウェアとドライバーの更新プログラムを展開することができます。</span><span class="sxs-lookup"><span data-stu-id="423d9-170">You can deploy Surface firmware and driver updates in the same manner as you deploy other updates.</span></span>
 
 <span data-ttu-id="423d9-171">展開の詳細については、「 [System Center 2012 構成マネージャー– Part7: ソフトウェア更新プログラム (展開)](https://blogs.technet.microsoft.com/elie/2012/05/25/system-center-2012-configuration-managerpart7-software-updates-deploy/)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="423d9-171">For more information about deployment, see [System Center 2012 Configuration Manager–Part7: Software Updates (Deploy)](https://blogs.technet.microsoft.com/elie/2012/05/25/system-center-2012-configuration-managerpart7-software-updates-deploy/).</span></span>
 
-## <span data-ttu-id="423d9-172">よく寄せられる質問 (FAQ)</span><span class="sxs-lookup"><span data-stu-id="423d9-172">Frequently asked questions (FAQ)</span></span>
+## <a name="frequently-asked-questions-faq"></a><span data-ttu-id="423d9-172">よく寄せられる質問 (FAQ)</span><span class="sxs-lookup"><span data-stu-id="423d9-172">Frequently asked questions (FAQ)</span></span>
 
 **<span data-ttu-id="423d9-173">この記事の手順を実行しても、Surface ドライバーが同期されません。</span><span class="sxs-lookup"><span data-stu-id="423d9-173">After I follow the steps in this article, my Surface drivers are still not synchronized.</span></span> <span data-ttu-id="423d9-174">どうしてでしょうか?</span><span class="sxs-lookup"><span data-stu-id="423d9-174">Why?</span></span>**
 
@@ -176,7 +176,7 @@ ms.locfileid: "10897075"
 
 <span data-ttu-id="423d9-193">代替チャネルを使用して Surface ドライバーとファームウェア更新プログラムを展開する方法について詳しくは、「 [surface ドライバーとファームウェア更新プログラムを管理](manage-surface-driver-and-firmware-updates.md)する」をご覧ください。</span><span class="sxs-lookup"><span data-stu-id="423d9-193">For information about how to deploy Surface driver and firmware updates through alternative channels, see [Manage Surface driver and firmware updates](manage-surface-driver-and-firmware-updates.md).</span></span> <span data-ttu-id="423d9-194">.Msi または .exe ファイルをダウンロードして、従来のソフトウェア展開チャネルを使用して展開する場合は、「 [Surface ファームウェアを Configuration Manager で更新](https://docs.microsoft.com/archive/blogs/thejoncallahan/keeping-surface-firmware-updated-with-configuration-manager)する」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="423d9-194">If you want to download the .msi or .exe file, and then deploy through traditional software deployment channels, see [Keeping Surface Firmware Updated with Configuration Manager](https://docs.microsoft.com/archive/blogs/thejoncallahan/keeping-surface-firmware-updated-with-configuration-manager).</span></span>
 
-## <span data-ttu-id="423d9-195">追加情報</span><span class="sxs-lookup"><span data-stu-id="423d9-195">Additional Information</span></span>
+## <a name="additional-information"></a><span data-ttu-id="423d9-195">追加情報</span><span class="sxs-lookup"><span data-stu-id="423d9-195">Additional Information</span></span>
 
 <span data-ttu-id="423d9-196">Surface ドライバーとファームウェアの更新の詳細については、次の記事を参照してください。</span><span class="sxs-lookup"><span data-stu-id="423d9-196">For more information about Surface driver and firmware updates, see the following articles:</span></span>
 
