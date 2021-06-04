@@ -34,7 +34,7 @@ USB スティックやファイル共有から小さな MSI パッケージを�
 
 PEAP、EAP-FAST、または Cisco LEAP のインストール ファイルを、Microsoft ダウンロード センターから 1 つの zip アーカイブ ファイルでダウンロードできます。 このファイルをダウンロードするには、Microsoft ダウンロード センターの [IT 向け Surface ツールに関するページ](https://www.microsoft.com/download/details.aspx?id=46703)で、**[ダウンロード]** をクリックし、**[Cisco EAP-Supplicant Installer.zip]** ファイルを選択します。
 
-## MDT で PEAP、EAP-FAST、または Cisco LEAP を展開する
+##  <a name="deploy-peap,-eap-fast,-or-cisco-leap-with-mdt"></a>MDT で PEAP、EAP-FAST、または Cisco LEAP を展開する
 
 
 組織内で Surface デバイスへの Windows の展開を既に行っている場合は、展開中に各プロトコルのインストール ファイルを展開共有に追加し、自動インストールを構成する方法が迅速かつ簡単です。 以前に展開した Surface デバイスを更新するタスク シーケンスを構成して、同じプロセスを使ってこれらのプロトコルのサポートを提供するようにすることもできます。
@@ -83,7 +83,7 @@ PEAP、EAP-FAST、または Cisco LEAP のインストール ファイルを、M
 
 6.  目的のプロトコルごとに手順 2 ～ 5 を繰り返します。
 
-## Configuration Manager で PEAP、EAP-FAST、または Cisco LEAP を展開する
+##  <a name="deploy-peap,-eap-fast,-or-cisco-leap-with-configuration-manager"></a>Configuration Manager で PEAP、EAP-FAST、または Cisco LEAP を展開する
 
 
 Configuration Manager で Surface デバイスを管理する組織の場合は、さらに簡単に PEAP、EAP-FAST、または Cisco LEAP のサポートを Surface デバイスに展開できます。 ソフトウェア ライブラリからアプリケーションとして各 MSI ファイルをインポートし、Surface デバイス コレクションへの展開を構成するだけです。

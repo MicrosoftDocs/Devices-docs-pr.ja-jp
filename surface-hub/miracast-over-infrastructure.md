@@ -31,7 +31,7 @@ Miracast over Infrastructure は多くのメリットを提供します。
 - 接続にかかる時間を短縮し、非常に安定してストリームを提供する既存の接続を活用します。
 
 
-## 動作のしくみ
+##  <a name="how-it-works"></a>動作のしくみ
 
 ユーザーは、以前と同じように、Wi-fi アダプターを介して Miracast レシーバーに接続しようとします。 Miracast レシーバーの一覧が作成されると、Windows 10 はレシーバーがインフラストラクチャ経由での接続をサポートできるかどうかを識別します。 ユーザーが Miracast レシーバーを選択すると、Windows 10 は標準的な DNS、およびマルチキャスト DNS (mDNS) によってデバイスのホスト名を解決しようとします。 名前が DNS のいずれかの方法で解決できない場合、Windows 10 は、標準的な Wi-Fi Direct 接続を使用した Miracast セッションの確立にフォールバックします。
 
@@ -41,7 +41,7 @@ Miracast over Infrastructure は多くのメリットを提供します。
 
 
 
-## Miracast over Infrastructure の有効化 
+##  <a name="enabling-miracast-over-infrastructure-"></a>Miracast over Infrastructure の有効化 
 
 Windows 10 Version 1703 に更新済みの Surface Hub やその他の Windows 10 デバイスがある場合、自動的にこの新しい機能が含まれています。 お客様の環境内で最大限に活用するには、展開環境で次の条件が満たされていることを確認する必要があります。
 
@@ -59,6 +59,6 @@ Miracast over Infrastructure は標準の Miracast の代わりにではない�
 
 [SurfaceHub 構成サービス プロバイダー (CSP)](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/surfacehub-csp) の **InBoxApps/WirelessProjection/PinRequired** 設定は、Miracast over Infrastructure では必要ありません。 Miracast over Infrastructure は両方のデバイスが同じ企業ネットワークに接続されている場合のみ動作するためです。 これにより、以前にはなかったセキュリティの制限が Miracast から削除されます。 (以前に使用していた場合) 引き続きこの設定を使用することをお勧めします。インフラストラクチャ接続が機能しない場合、Miracast は通常の Miracast にフォールバックするためです。 
 
-## FAQ
+##  <a name="faq"></a>FAQ
 **インフラストラクチャで Miracast を使用するために Wi-fi がまだ必要なのはなぜですか?**<br>
 Miracast レシーバーを特定する証拠開示要求は、Wi-fi アダプター経由でのみ実行できます。 受信者が識別されると、Windows 10 はネットワークへの接続を試みることができます。

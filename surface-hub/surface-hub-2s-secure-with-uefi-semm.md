@@ -43,11 +43,11 @@ Microsoft Surface UEFI コンフィギュレーターを使用して、次の UE
     - Boot
     - 日付/時刻
 
-## UEFI 構成のイメージを作成する
+##  <a name="create-uefi-configuration-image"></a>UEFI 構成のイメージを作成する
 
 他の Surface デバイスとは異なり、MSI ファイルまたは Win PE イメージを使って Surface Hub 2S でこれらの設定を適用することはできません。 代わりに、デバイスに読み込む USB イメージを作成する必要があります。 Surface Hub 2S UEFI 構成イメージを作成するには、Microsoft ダウンロードセンターの [ [Surface Tools](https://www.microsoft.com/download/details.aspx?id=46703) ] ページから、最新バージョンの MICROSOFT Surface uefi コンフィギュレーターをダウンロードしてインストールします。 UEFI と SEMM の使い方について詳しくは、「 [Microsoft Surface Enterprise Management モード](https://docs.microsoft.com/surface/surface-enterprise-management-mode)」をご覧ください。
 
-## Surface Hub 2S で UEFI を構成するには
+##  <a name="to-configure-uefi-on-surface-hub-2s"></a>Surface Hub 2S で UEFI を構成するには
 
 1. UEFI コンフィギュレーターを起動し、最初の画面で [**構成パッケージ**] を選びます。<br><br>
 ![* UEFI コンフィギュレーターを開始し、「構成パッケージ」を選択します。](images/sh2-uefi1.png) <br> <br>
@@ -68,6 +68,6 @@ Microsoft Surface UEFI コンフィギュレーターを使用して、次の UE
 9. パッケージの作成が正常に完了すると、証明書の拇印の最後の2文字が表示されます。 Surface Hub 2S に構成をインポートするときは、これらの文字が必要です。<br>
 ![* パッケージの正常な構成 *](images/sh2-uefi10.png) <br>
 
-## UEFI を起動するには
+##  <a name="to-boot-into-uefi"></a>UEFI を起動するには
 
 Surface Hub 2S をオフにします。 **音量を上げる**ボタンを長押しして、**電源**ボタンを押します。 [UEFI] メニューが表示されるまで、[音量を上げる] ボタンを押したままにします。

@@ -26,7 +26,7 @@ Surface Hub のセットアップ手順には、セットアップのワーク�
 
 Microsoft Surface Hub を初めて起動する前に、「[Surface Hub 用の環境の準備](prepare-your-environment-for-surface-hub.md)」セクションの最後にあるチェックリストを完了していて、「[セットアップのワークシート](setup-worksheet-surface-hub.md)」に記載されている情報が手元にあることを確認してください。 Surface Hub の電源を入れると、デバイスには一連のセットアップ画面が順番に表示されます。 環境を適切にセットアップしていない場合や、必要な情報を入手していない場合は、後で追加の作業を行って設定が正しいことを確認する必要があります。
 
-## このセクションの内容
+##  <a name="in-this-section"></a>このセクションの内容
 
 
 <table>

@@ -128,7 +128,7 @@ Windows 10 ビルド 1709 以降を実行している Surface デバイスには
 | アプリの使用状況を確認する | アプリ | アプリを閉じます。|
 | 電源コードに損傷が生じなかったか確認します。| 電源コード | 電源コードが破損している場合は交換してください。|
 
-## 詳細情報 
+##  <a name="learn-more"></a>詳細情報 
 
 - [モダン スタンバイ](https://docs.microsoft.com/windows-hardware/design/device-experiences/modern-standby-wake-sources)
 

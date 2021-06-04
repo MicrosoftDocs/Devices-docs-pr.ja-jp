@@ -25,7 +25,7 @@ ms.locfileid: "11327331"
 >[!NOTE]
 >コマンドを使用して SDT を実行するには、Administrator アカウントにサインインするか、Surface デバイスの Administrator グループのメンバーであるアカウントにサインインする必要があります。
 
-## SDT アプリ コンソールの実行
+##  <a name="running-sdt-app-console"></a>SDT アプリ コンソールの実行
 
 Surface Tools for IT ダウンロード ページから SDT アプリ コンソール [をダウンロードしてインストールします](https://www.microsoft.com/download/details.aspx?id=46703)。 Windows コマンド プロンプト (cmd.exe) または次のWindows PowerShell使用できます。 
 
@@ -49,7 +49,7 @@ Surface Tools for IT ダウンロード ページから SDT アプリ コンソ�
 >[!NOTE]
 >SDT アプリ コンソールをターゲット デバイスでリモートで実行するには、Microsoft Endpoint Configuration Manager などの構成管理ツールを使用できます。 または、コンソール アプリと適切なコンソール コマンドを含む .zip ファイルを作成し、組織のソフトウェア配布プロセスごとに展開することもできます。 
 
-## ベスト プラクティス アナライザーの実行 
+##  <a name="running-best-practice-analyzer"></a>ベスト プラクティス アナライザーの実行 
 
 BitLocker、セキュア ブート、トラステッド プラットフォーム モジュール (TPM) などの主要コンポーネント間で BPA テストを実行し、共有可能なファイルに結果を出力できます。 このツールは、色分けされた見出しと条件記述子を持つ一連のテーブルと、問題を解決する方法に関するガイダンスを生成します。 
 
@@ -57,7 +57,7 @@ BitLocker、セキュア ブート、トラステッド プラットフォーム
 - オレンジ色は、コンポーネントが最適な状態で実行されていない (最適ではない) 状態を示します。
 - 赤は、コンポーネントが異常な状態を示します。 
 
-### サンプル BPA 結果の出力
+###  <a name="sample-bpa-results-output"></a>サンプル BPA 結果の出力
 
 <table>
 <tr><th colspan="2"><font color="00ff00">BitLocker</font></th></tr>

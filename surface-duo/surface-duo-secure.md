@@ -34,7 +34,7 @@ Surface Surface の保護は、デバイス、ID、およびデータのセキ�
 - **Microsoft Defender ATP。** Windows 10 のエンタープライズ レベルのウイルス対策およびマルウェア保護ソフトウェアは、Intune から管理されている Android デバイスで利用できます。 詳細については、Android 用 [Microsoft Defender ATP に関するページを参照してください](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-atp-android)。 
 
 
-## モバイル デバイス管理のセキュリティ
+##  <a name="mobile-device-management-security"></a>モバイル デバイス管理のセキュリティ
 
 Surface Surface のセキュリティは、Enterprise Mobility Management (EMM) ソリューションを使用して企業環境でセキュリティ保護されます。このソリューションは、組織とコンプライアンスの要件に合わせて調整できる一貫した保護ツール、テクノロジ、ベスト プラクティスのセットを提供します。 幅広い管理 API により、IT 部門はさまざまなシナリオでデータ漏洩を防止し、コンプライアンスを実施するためのツールを提供します。 マルチプロファイル サポートとデバイス管理オプションを使用すると、仕事用データと個人データを分離し、会社のデータのセキュリティを維持できます。
 
@@ -43,13 +43,13 @@ MDM セキュリティは、拡張された一連の構成テクノロジを基�
 たとえば、ユーザーに 6 桁の英数字のピンと 2 要素認証を入力する必要が生じ、デバイス認証を強化できます。  ユーザーが登録できるデバイスを制限して、ライセンスの制限に準拠し続けるか、"脱獄" 電話などのサポートされていないデバイスの種類へのアクセスを許可しないようにすることができます。
 Intune とその他の EMM は、組織のニーズに応じてデバイスを柔軟に管理できます。
 
-## アプリ保護ポリシー
+##  <a name="app-protection-policies"></a>アプリ保護ポリシー
 
 アプリ保護ポリシー (APP) は、組織のデータが安全なままか、管理対象アプリに含まれるかを保証する規則です。 ポリシーには、ユーザーが "企業" データにアクセスまたは移動しようとするときに適用されるルールや、ユーザーがアプリ内にいる際に禁止または監視される一連のアクションを指定できます。 管理対象アプリとは、アプリ保護ポリシーが適用され、Intune で管理できるアプリです。
 
 アプリ保護ポリシーを使用すると、アプリケーション内で組織のデータを管理および保護できます。 アプリなどの生産性アプリの多くは、Microsoft Office Intune MAM で管理できます。 一般利用できる [Microsoft Intune で保護されたアプリの公式](https://docs.microsoft.com/mem/intune/apps/apps-supported-intune-apps) リストをご覧ください。
 
-## Surface Surface の管理に関するセキュリティに関する考慮事項
+##  <a name="security-considerations-for-managing-surface-duo"></a>Surface Surface の管理に関するセキュリティに関する考慮事項
 
 モバイル デバイス管理ソリューションで利用できるポリシー設定の数が増えているので、組織は特定のニーズに合わせて保護レベルを調整できます。 組織が Surface Surface のセキュリティ設定 (または他の Android デバイス) のセキュリティ設定に優先順位を付け支援するために、Intune では、Android [Enterprise](https://docs.microsoft.com/mem/intune/enrollment/android-configuration-framework) のセキュリティ構成フレームワークをいくつかの異なる構成シナリオに編成し、作業プロファイルと完全に管理されたシナリオに関するガイダンスを提供しています。
  

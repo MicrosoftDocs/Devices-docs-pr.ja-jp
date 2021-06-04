@@ -40,7 +40,7 @@ Microsoft Surface UEFI Configurator Windows インストーラー (.msi) ファ�
 >[!NOTE]
 >Microsoft Surface UEFI コンフィエーターは、Windows 10 でのみサポートされています。
 
-## Surface UEFI 構成パッケージを作成する
+##  <a name="create-a-surface-uefi-configuration-package"></a>Surface UEFI 構成パッケージを作成する
 
 Surface UEFI 構成パッケージは、SEMM で管理される Surface デバイスに Surface UEFI 設定の新しい構成を適用する役割と、SEMM に Surface デバイスを登録する役割の両方を実行します。 構成パッケージを作成するには、各 Surface デバイスで UEFI 設定の構成をセキュリティで保護するために、SEMM で使用する署名証明書が必要です。 SEMM 証明書の要件の詳細については、Microsoft Surface Enterprise 管理モード [を参照してください](https://technet.microsoft.com/itpro/surface/surface-enterprise-management-mode)。
 
@@ -100,7 +100,7 @@ Surface UEFI 構成パッケージを作成したら、Surface デバイスを�
 >[!NOTE]
 >Surface UEFI 構成パッケージが作成されると、構成パッケージの設定とオプションの詳細を含むログ ファイルがデスクトップに作成されます。
 
-## SEMM での Surface デバイスの登録
+##  <a name="enroll-a-surface-device-in-semm"></a>SEMM での Surface デバイスの登録
 Surface UEFI 構成パッケージが実行されると、SEMM 証明書と Surface UEFI 構成ファイルが Surface デバイスのファームウェア ストレージに格納されます。 Surface デバイスが再起動すると、Surface UEFI がこれらのファイルを処理し、図 7 に示すように、Surface UEFI 構成の適用または SEMM での Surface デバイスの登録のプロセスを開始します。
 
 ![Surface UEFI または登録の構成に関する SEMM プロセス](images/surface-semm-enroll-fig7.png "SEMM process for configuration of Surface UEFI or enrollment")
@@ -143,7 +143,7 @@ SURFACE UEFI 構成パッケージを使用して SEMM に Surface デバイス�
 *図 11. Surface UEFI Enterprise の管理ページ*
 
 
-## SEMM を使用して Surface UEFI の設定を構成する
+##  <a name="configure-surface-uefi-settings-with-semm"></a>SEMM を使用して Surface UEFI の設定を構成する
 
 デバイスを SEMM に登録した後、同じ SEMM 証明書で署名された Surface UEFI 構成パッケージを実行して、新しい Surface UEFI 設定を適用できます。 これらの設定は、次回デバイスが起動すると自動的に適用され、ユーザーによる操作は行われます。 Microsoft Endpoint Configuration Manager のようなアプリケーション展開ソリューションを使用して、Surface UEFI 構成パッケージを Surface デバイスに展開し、Surface UEFI の設定を変更または管理できます。
 

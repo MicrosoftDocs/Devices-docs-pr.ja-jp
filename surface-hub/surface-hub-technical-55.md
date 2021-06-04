@@ -61,7 +61,7 @@ EDID 優先タイミング、有線接続 |  1920 x 1080、60Hz 垂直更新
 > - [Surface Hub の設定のローカル管理](local-management-surface-hub-settings.md)
 > - [SurfaceHub CSP - Windows クライアント管理](https://docs.microsoft.com/windows/client-management/mdm/surfacehub-csp)
 
-## 代替 PC 接続 
+##  <a name="replacement-pc-connections"></a>代替 PC 接続 
 
 コネクタと場所 | Label | 説明
 --- | --- | ---
@@ -71,7 +71,7 @@ USB タイプ B、下部 I/O | ![](images/usb.png) | 代替 PC から内部周�
 USB タイプ B、下部 I/O | ![](images/usb.png) | 統合ハブの USB 接続を提供します。
 
 
-## ワイヤード (有線) 接続
+##  <a name="wired-connect-connections"></a>ワイヤード (有線) 接続
 
 コネクタと場所 | Label | 説明
 --- | --- | ---
@@ -81,7 +81,7 @@ VGA、下部 I/O | ![](images/vga.png) | ワイヤード (有線) 接続 PC に 
 3.5mm、下部 I/O | ![](images/35mm.png) | アナログ オーディオ入力を提供します。
 USB タイプ B、下部 I/O | ![](images/usb.png) | ビデオ インジェスト タッチバック用の USB 接続を提供します。
 
-## 追加の接続
+##  <a name="additional-connections"></a>追加の接続
 
 コネクタと場所 | Label | 説明
 --- | --- | ---
@@ -103,7 +103,7 @@ RJ11、下部 I/O | ![](images/rj11.png) | ルーム コントロール シス�
 
 
 
-## ポートとファイアウォールの図
+##  <a name="diagrams-of-ports-and-clearances"></a>ポートとファイアウォールの図
 
 ***55" Surface Hub のトップ ビュー***
 

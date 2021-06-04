@@ -8,13 +8,13 @@ ms.locfileid: "10834525"
 ---
 <!-- BEGIN MICROSOFT SECURITY.MD V0.0.5 BLOCK -->
 
-## セキュリティ
+##  <a name="security"></a>セキュリティ
 
 Microsoft は、 [microsoft](https://github.com/Microsoft)、 [Azure](https://github.com/Azure)、 [.net](https://github.com/dotnet)、 [AspNet](https://github.com/aspnet)、 [Xamarin](https://github.com/xamarin)、および[github の組織](https://opensource.microsoft.com/)を含む github 組織によって管理されるすべてのソースコードリポジトリを、真剣に受け止めています。
 
 [Microsoft のセキュリティの脆弱性](https://docs.microsoft.com/en-us/previous-versions/tn-archive/cc751383(v=technet.10))を満たしている microsoft 所有のリポジトリで、セキュリティの脆弱性を発見したと判断される場合は、以下の説明に従ってご報告ください。
 
-## セキュリティの問題を報告する
+##  <a name="reporting-security-issues"></a>セキュリティの問題を報告する
 
 **パブリック GitHub の問題により、セキュリティの脆弱性を報告しないでください。**
 
@@ -38,11 +38,11 @@ Microsoft は、 [microsoft](https://github.com/Microsoft)、 [Azure](https://gi
 
 バグ bounty を報告している場合は、さらに包括的なレポートをより高い bounty 賞に投稿できます。 お客様のアクティブなプログラムの詳細については、 [Microsoft のバグ Bounty プログラム](https://microsoft.com/msrc/bounty)のページを参照してください。
 
-## 優先する言語
+##  <a name="preferred-languages"></a>優先する言語
 
 すべての通信は英語で行うことをお勧めします。
 
-## ポリシー
+##  <a name="policy"></a>ポリシー
 
 Microsoft は、調整された[脆弱性の漏えい](https://www.microsoft.com/en-us/msrc/cvd)の原則に従います。
 

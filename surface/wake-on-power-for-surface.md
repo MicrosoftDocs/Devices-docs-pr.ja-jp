@@ -48,14 +48,14 @@ Surface デバイスは、デスクから離れた状態で電源をオフにし
 - Surface Pro X 
 
 
-## 概要と前提条件
+##  <a name="overview-and-prerequisites"></a>概要と前提条件
 
 Surface UEFI Configurator を使うと、ターゲット デバイスに配布するために、Windows インストーラー .msi パッケージに個々の UEFI 設定を保存できます。 
 
 > [!NOTE]
 > この記事では、SEMM の使い方を知っている必要があります。 詳細については [、Surface Enterprise Management Mode (SEMM) のドキュメントを参照](surface-enterprise-management-mode.md) してください。
 
-## 電源でスリープ解除を有効にするには
+##  <a name="to-enable-wake-on-power"></a>電源でスリープ解除を有効にするには
 
 1.  Surface UEFI コンフィエーター [の最新バージョンをダウンロードします](https://www.microsoft.com/download/confirmation.aspx?id=46703)。
 2.  管理者として Surface デバイスにサインインし **、Surface UEFI**コンフィケーターを開き **、Surface デバイス**を選択して、[次へ] を選択 **します**。
@@ -76,7 +76,7 @@ Surface UEFI Configurator を使うと、ターゲット デバイスに配布�
     > 初めて設定をデバイスに提供する場合は、証明書の拇印の最後の 2 文字も入力するように求めるメッセージが表示されます。 
 9.  .msi パッケージを保存します。 
 
-## MSI パッケージを適用する 
+##  <a name="apply-the-msi-package"></a>MSI パッケージを適用する 
 
 Microsoft Endpoint Configuration Manager などのソフトウェア配布ツールを使用して、ネットワーク上のデバイスに MSI パッケージを適用できます。 この手順には、ローカル コンピューターにパッケージをインストールする手順が含まれています。 
 
@@ -96,7 +96,7 @@ Microsoft Endpoint Configuration Manager などのソフトウェア配布ツー
 
 電源でスリープ解除が構成されます。 設定をテストするには、デバイスをオフにし、電源を切り、電源を再接続します。 デバイスが自動的に起動します。 
 
-## 参考資料
+##  <a name="references"></a>参考資料
 
 詳細については、次の記事を参照してください。 
 

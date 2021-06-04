@@ -24,7 +24,7 @@ Surface Hub 2S で問題が発生した場合は、デバイスを工場出荷�
 
 まず、管理者の資格情報を使用して Surface Hub 2S にサインインし、**[設定]** アプリを開き、**[更新とセキュリティ]**、**[回復]** の順に選択します。
 
-## デバイスをリセットする
+##  <a name="reset-device"></a>デバイスをリセットする
 
    > [!IMPORTANT]
    > デバイスをリセットする前に、BitLocker キーが使用できることを確認してください。後で入力するように求められます。 詳細については、「[BitLocker キーの保存](save-bitlocker-key-surface-hub.md)」を参照してください。
@@ -44,11 +44,11 @@ Surface Hub 2S で問題が発生した場合は、デバイスを工場出荷�
    > ![*Surface Hub 2S のリセットと回復*](images/sh2-reset.png)
    <br/>*図 1. Surface Hub 2S のリセットと回復* 
 
-## USB 回復ドライブを使用して Surface Hub 2S を回復する
+##  <a name="recover-surface-hub-2s-by-using-a-usb-recovery-drive"></a>USB 回復ドライブを使用して Surface Hub 2S を回復する
 
 Surface Hub 2S の新機能で、回復イメージを使用してデバイスを再インストールできるようになりました。
 
-### USB ドライブからの回復
+###  <a name="recovery-from-a-usb-drive"></a>USB ドライブからの回復
 
 Surface Hub 2S を使用すると、回復イメージを使用してデバイスを再インストールできます。 これにより、BitLocker キーを紛失した場合、または設定アプリへの管理者の資格情報がなくなった場合に、デバイスを工場出荷時の設定に再インストールできます。
 
@@ -90,6 +90,6 @@ Surface Hub 2S を使用すると、回復イメージを使用してデバイ�
 
 初回セットアップ画面が表示されたら、USB ドライブを取り外します。
 
-## サポートに問い合わせ
+##  <a name="contact-support"></a>サポートに問い合わせ
 
 ご質問がある場合や、移行を開始するためのサポートが必要な場合は、[サポート要求を作成](https://support.microsoft.com/supportforbusiness/productselection)できます。

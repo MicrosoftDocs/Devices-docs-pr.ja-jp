@@ -21,19 +21,19 @@ ms.locfileid: "11271531"
 ---
 # Surface の Windows Virtual Desktop
 
-## はじめに
+##  <a name="introduction"></a>はじめに
 
 Surface 上の Windows Virtual Desktop を使用すると、Surface デバイスで仮想デスクトップ インフラストラクチャ (VDI) を実行し、ローカル デスクトップ エクスペリエンスと、タッチ、ペン、インク、生体認証が物理環境と仮想環境の両方にまたがる仮想デスクトップの間の線をぼやかします。 コンピューティングの進化におけるもう 1 つのマイルストーンである Surface 1 の Windows Virtual Desktop は <a href="#1"><sup> 、Microsoft 365 (Azure クラウドで仮想化) と、高度なセキュリティ保護、エンタープライズ レベルの管理性、Surface 上の Windows 10 の生産性向上ツールを組み合わせたものになります。 </sup></a>  Azure のプレミアム フォーム ファクターと仮想デスクトップ インフラストラクチャのこの組み合わせは、ユーザー エクスペリエンス、移植性、セキュリティ、ビジネス継続性、および最新の管理全体にわたって例外的な顧客価値を提供します。
 
-### Windows Virtual Desktop
+###  <a name="windows-virtual-desktop"></a>Windows Virtual Desktop
 
 Windows Virtual Desktop (WVD) は、Azure クラウドで実行される包括的なデスクトップおよびアプリ仮想化サービスです。 これは、簡素化された管理、マルチセッション Windows 10、Office 365 ProPlus の最適化、リモート デスクトップ サービス (RDS) 環境のサポートを提供する唯一の仮想デスクトップ インフラストラクチャです。 WVD を使用すると、Azure 上で Windows デスクトップとアプリをすばやく展開および拡張し、組み込みのセキュリティ機能とコンプライアンス機能を利用できます。
 
-### Windows Virtual Desktop パートナーの統合
+###  <a name="windows-virtual-desktop-partner-integrations"></a>Windows Virtual Desktop パートナーの統合
 
 Windows Virtual Desktop の承認済みパートナー プロバイダーと独立系ソフトウェア ベンダーの一覧については、Windows Virtual Desktop パートナー統合に関するページ [をご覧ください](https://docs.microsoft.com/azure/virtual-desktop/partners)。 一部のパートナーは、サービスとしての仮想デスクトップ (DaaS) も提供しています。 DaaS では、完全に管理されたターンキー デスクトップと仮想化サービスを提供することで、独自の仮想マシン (VM) を維持する必要がなされます。 カスタマイズされたデスクトップを世界中のユーザーに提供する機能により、企業は必要なときに必要なときにクラウド デスクトップをオンデマンドで回転することで、市場の状況の変化に迅速に対応できます。
  
-## Microsoft Surface Devices
+##  <a name="microsoft-surface-devices"></a>Microsoft Surface Devices
 
 Surface のエンジニアリングでは、タッチ、音声、インク、Surface Dial など、デバイスを操作するより自然な方法を想像し、キーボードとマウスを超えて技術革新のための新しい標準を長い間設定しています。 また、Microsoft 365 のチップ間統合と Windows 10 Pro のセキュリティと管理性により、Surface は意図した方法で接続されたハードウェア、ソフトウェア、アプリ、およびサービスを提供します。 Windows デバイスから WVD を実行して Windows 7 に戻す可能性はあり得るが、Microsoft Surface デバイスには次のサポートを含む独自の利点があります。
 
@@ -41,11 +41,11 @@ Surface のエンジニアリングでは、タッチ、音声、インク、Sur
 - **永続的、オンデマンド、および Just-In-Time** の作業シナリオ - 生産性の高いエクスペリエンスを実現するオフラインアクセスとオンデバイス アクセス。
 - **Windows 10 の最新のデバイスのセキュリティと管理** 性 - どこからでも生産性を高め、柔軟性を提供します。
 
-## 柔軟なフォーム ファクターとプレミアム ユーザー エクスペリエンス
+##  <a name="flexible-form-factors-and-premium-user-experience"></a>柔軟なフォーム ファクターとプレミアム ユーザー エクスペリエンス
 
 Microsoft Surface for Business ファミリは、従来のノート PC、1 台のコンピューター、2 in 1 デバイスなど、さまざまなフォーム ファクターのポートフォリオで構成されています。 Surface デバイスは、条件に取り組む上で必要な選択と柔軟性をユーザーが好むエクスペリエンスを提供します。
 
-### 最新の仮想デスクトップ エンドポイント
+###  <a name="the-modern-virtual-desktop-endpoint"></a>最新の仮想デスクトップ エンドポイント
 
 [Surface Go 2](https://www.microsoft.com/p/surface-go-2) (10.5")、Surface Pro [7+](https://www.microsoft.com/surface/business/surface-pro-7-plus) (12")、Surface Pro [X](https://www.microsoft.com/p/surface-pro-x/) (13") などの Surface 2 in 1 デバイスは、移植性、柔軟性、電源、および全日バッテリーの最適なバランスを取り入れた理想的なクラウド デスクトップ エンドポイントをユーザーに提供します。 タブレット モードの Surface Go 2 に依存するサイト エンジニアから、ドックと複数のモニターに Surface Pro 7 を接続する財務アドバイザーまで、2 in 1 デバイスは現代の職場を定義する柔軟性を提供します。
 
@@ -61,15 +61,15 @@ Microsoft Surface for Business ファミリは、従来のノート PC、1 台�
 - 標準プリンター、3D プリンター、カメラ、クレジット カード リーダー、バーコード スキャナーなど、幅広い周辺機器のサポート。 Surface パートナー向け設計の大規模なエコシステムは、ライセンスを取得した認定済みの Surface アクセサリを提供します。
 - 幅広いデバイス リダイレクトのサポート。
 
-### デバイス リダイレクトのサポート
+###  <a name="device-redirection-support"></a>デバイス リダイレクトのサポート
 
 上記の Surface 中心の生産性エクスペリエンスは、Windows 10 でデバイス リダイレクト機能を利用することで、Windows Virtual Desktop 環境でさらに魅力的になります。 Surface は、OEM シン クライアントや固定ターミナル、Android、iOS/macOS、Web ベースのアクセスと比較して、幅広いデバイス リダイレクト サポートを提供します。 Windows 受信トレイ (MSTSC) および Windows デスクトップ (MSRDC) クライアントは、入力リダイレクト (キーボード、マウス、ペン、タッチ)、ポート リダイレクト (シリアルと USB)、その他のリダイレクト (カメラ、クリップボード、ローカル ドライブ/ストレージ、場所、マイク、プリンター、スキャナー、スマート カード、スピーカー) など、最も多くのデバイス リダイレクト機能を提供します。 デバイス リダイレクトのサポートの詳細な比較については、デバイス リダイレクトのドキュメント [を参照してください](https://docs.microsoft.com/windows-server/remote/remote-desktop-services/clients/remote-desktop-app-compare#redirection-support)。
 
-### 使い慣れたデスクトップ エクスペリエンス
+###  <a name="familiar-desktop-experience"></a>使い慣れたデスクトップ エクスペリエンス
 
 Surface デバイスで Windows デスクトップ クライアントを実行すると、さまざまなデバイス リダイレクト機能がユーザーに提供されるだけでなく、スタート メニューまたは検索バーから直接、すべてのユーザーが使い慣れた方法でアプリを起動できます。
 
-### 永続的、オンデマンド、および Just-In-Time の作業シナリオ
+###  <a name="persistent,-on-demand-and-just-in-time-work-scenarios"></a>永続的、オンデマンド、および Just-In-Time の作業シナリオ
 
 Surface 上の Windows Virtual Desktop は、お客様が業界、従業員の役割、および作業環境全体でますます複雑化するビジネス要件とセキュリティ要件を満たすのに役立ちます。 以下に例を示します。
 
@@ -80,13 +80,13 @@ Surface 上の Windows Virtual Desktop は、お客様が業界、従業員の�
 - プロセッサを集中的に使用する特殊なワークロードをサポートする機能。
 - 中断中に操作を維持するための回復性。
 
-### 表 1. Windows Virtual Desktop のビジネス会話
+###  <a name="surface-hub-2-fingerprint-reader-tech-specs"></a>表 1. Windows Virtual Desktop のビジネス会話
 
 | セキュリティ&規制                                | 柔軟な従業員                                                            | 作業の役割                                                        | 特殊なワークロード                                                            | ビジネス継続性                                  |
 | ---------------------------------------------------- | ---------------------------------------------------------------------------- | ----------------------------------------------------------------- | ---------------------------------------------------------------------------- | ---------------------------------------------------- |
 | - 金融サービス<br>- 医療<br>- 政府機関 | - 合併&取得<br>- 短期従業員<br>- 請負業者と&パートナー | - BYOD & Mobile<br>- カスタマー サポート/サービス<br>- ブランチ ワーカー | - 設計&エンジニアリング<br>- レガシ アプリのサポート<br>- ソフトウェア開発&テスト | - オンデマンド<br>- Just-in-Time (JIT)<br>- Work @ Home |
 
-### 生産性を向上するエクスペリエンスを実現するオフラインアクセスとオンデバイス アクセス
+###  <a name="offline-and-on-device-access-for-more-productive-experiences"></a>生産性を向上するエクスペリエンスを実現するオフラインアクセスとオンデバイス アクセス
 
 従来、VDI ソリューションは、エンドポイントがインターネットに接続されている場合にのみ機能します。 しかし、何らかの理由でインターネットや電源が利用できない場合 (モビリティ、平面上、停電などによって) は何が起こるでしょうか。
  
@@ -96,7 +96,7 @@ Surface 上の Windows Virtual Desktop は、お客様が業界、従業員の�
  
 従来のアプリケーションをローカルにインストールする代わりに、最新バージョンの Microsoft Edge を利用することもできます。Microsoft Edge には、段階的な Web アプリ (PWA) のサポートが付属しています。 PAS は、サポート プラットフォーム上のネイティブ アプリのように機能するために徐々に拡張された Web サイトです。 PWA の特徴は、プッシュ通知、バックグラウンド データ更新、オフライン サポートなどの追加機能によって、Web アプリとネイティブ アプリの最高の機能を組み合わせたものになります。
 
-### 仮想 GPU
+###  <a name="virtual-gpus"></a>仮想 GPU
 
 GPU は、AI コンピューティングとグラフィックスを集中的に消費するワークロードに最適です。お客様は、高性能のリモート可視化、ディープ ラーニング、予測分析などのシナリオを通じて技術革新を推進できます。  ただし、さまざまな程度の内部 GPU 能力が物理デバイスに結び付き、モビリティと柔軟性が制限され、リモートで作業する必要がある、または出張中に作業する必要がある専門家には適していません。
  
@@ -104,7 +104,7 @@ GPU は、AI コンピューティングとグラフィックスを集中的に�
  
 Azure N シリーズでは、これらの機能が Surface デバイスで有効に機能し、どこにいても任意の方法で作業できます。  [Azure N シリーズと GPU に最適化された仮想マシンのサイズについて説明します。](https://docs.microsoft.com/azure/virtual-machines/sizes-gpu)
 
-## Microsoft 365 と Surface
+##  <a name="microsoft-365-and-surface"></a>Microsoft 365 と Surface
 
 仮想化されたデスクトップ環境でも、Microsoft 365 と Surface は、従業員が好むエクスペリエンス、保護組織が要求するエクスペリエンス、およびチームが自分の方法で作業するための柔軟性を提供します。 Forrester Research の場合: <a href="#4"><sup> 4</sup></a>
 
@@ -112,7 +112,7 @@ Azure N シリーズでは、これらの機能が Surface デバイスで有効
 - 従業員の満足度と保持率の向上に役立つ Microsoft 365 搭載 Surface デバイスに 75% が同意
 - Microsoft 365 搭載 Surface デバイスが従業員の満足度と保持率の向上に役立ったと同意します。
 
-### セキュリティと管理
+###  <a name="security-and-management"></a>セキュリティと管理
 
 チップからクラウドまで、Microsoft 365 と Surface は、組織が保護され、最新の情報を得るために役立ちます。
 Surface ハードウェアとソフトウェアの両方を Microsoft が設計、構築、およびテストすることで、ユーザーはチップからクラウドまでの最先端のテクノロジによって生産性と保護を確信できます。  リモートで作業するユーザーの数が増える中、企業データと知的財産の保護はこれまで以上に重要になります。 Surface 上の Windows Virtual Desktop は、すべてのアクセス要求が強力に認証され、ポリシーの制約内で承認され、アクセスを許可する前に異常を検査するゼロ信頼セキュリティ モデルを中心に設計されています。
@@ -132,15 +132,15 @@ Surface の Windows Virtual Desktop で提供されるセキュリティと管�
 - **従来の Windows 7 ワークロード** のブリッジ - 従来の Windows OS 環境に依存するソリューション シナリオの場合、企業は Azure で実行されている Windows 7 の VDI インスタンスを使用できます。 これにより、最新のセキュリティ更新プログラムを受信しなくなった古い Windows 7 コンピューターに依存するリスクなしに、Surface のような最新のデバイスをサポートできます。  これらの"将来の校正" の利点に加えて、最新の Windows 10 ハードウェアが既に展開されている場合、従来のワークロードの移行は大幅に簡素化されます。
 - **ゼロタッチ展開** - Autopilot は、Surface デバイスに推奨される最新の管理展開オプションです。 Surface 上の Windows Autopilot は、Windows 10 のクラウドベースの展開テクノロジです。 Surface の Windows Autopilot を使って、ゼロタッチ プロセスでデバイスをリモートで展開および構成できます。 Windows Autopilot に登録されたデバイスは、最初の起動時に、ハードウェア ハッシュと呼ばれる一意のデバイス署名によってインターネット経由で識別されます。 Azure Active Directory (Azure AD) やモバイル デバイス管理などの最新の管理ソリューションを使用して、自動的に登録および構成されます。
 
-### Surface デバイス: 環境への影響を最小限に抑える
+###  <a name="surface-devices:-minimizing-environmental-impacts"></a>Surface デバイス: 環境への影響を最小限に抑える
 
 Surface はライフ サイクル評価を実行して、製品ライフ サイクルの主要な段階にわたってデバイスの環境への影響を計算し、Microsoft がこれらの影響を最小限に抑えます。 各 Surface 製品には、エネルギー消費量と素材構成データ、パッケージ化、リサイクル、関連する基準に関する詳細が含まれる、BOOKING プロファイルがあります。 Surface デバイスごとにプロファイルをダウンロードするには、Microsoft ダウンロード センターの [「SURFACE プロファイル](https://www.microsoft.com/download/details.aspx?id=55974) 」を参照してください。
 
-## 要約
+##  <a name="summary"></a>要約
 
 Surface 上の Windows Virtual Desktop は、ユーザー、関係者、および顧客の多様なニーズを満たす柔軟性と回復性を組織に提供します。 Surface デバイスで Windows Virtual Desktop ソリューションを実行すると、レガシ デバイスへの依存を継続する場合と異なる利点があります。  Surface Go 2 や Surface Pro 7+ などの柔軟なフォーム ファクターは、クラウド (またはオフライン) に接続され、いつでもどこからでも生産性を高めることができます。 従業員が永続的なシナリオ、オンデマンド シナリオ、または Just-In-Time シナリオで作業する場合でも、Surface 上の Windows Virtual Desktop は、公衆の健康上の緊急事態や他の予期しないイベントによる中断を通じて生産性を維持する柔軟性を企業に提供します。 企業は、Windows 10 の組み込みの多層セキュリティと最新の管理性を使用して、クラウド ベースのサービスのエコシステムの拡張を活用して、Windows デスクトップとアプリを迅速に展開および拡張できます。 簡単に言うと、Surface 上の Windows Virtual Desktop は、必要不可欠なテクノロジを、すべてのサイズの組織や企業に提供します。
 
-## 詳細情報
+##  <a name="learn-more"></a>詳細情報
 
 詳しくは、次のリソースをご覧ください。
 

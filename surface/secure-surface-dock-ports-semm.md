@@ -24,22 +24,22 @@ ms.locfileid: "11114695"
 ---
 # Surface Enterprise 管理モード (SEMM) での Secure Surface Dock 2 ポート
 
-## はじめに
+##  <a name="introduction"></a>はじめに
 
 Surface Enterprise 管理モード (SEMM) を使用すると、IT 管理者は、Windows インストーラー構成パッケージで UEFI 設定を構成することによって Surface Dock 2 ポートをセキュリティで保護し、管理することができます。MSI ファイル) 企業環境全体で互換性のある Surface デバイスに展開されます。
 
-### サポートされるデバイス
+###  <a name="supported-devices"></a>サポートされるデバイス
 
 SEMM での surface Dock 2 の管理は、surface Book 3、surface ノートブック3、surface ノートブック移動、surface Pro 7、Surface Pro X に接続されているドックで利用できます。これらの互換性のある Surface デバイスは、一般的に **ホストデバイス**と呼ばれます。 ホストデバイスが **認証** されているか、 **認証**されていないかに基づいて、パッケージがデバイスに適用されます。 構成済みの設定は、IT 管理者である、カメラなどの他の組み込みのペリフェラルと同じように、Surface Dock 2 を管理するために、ホストデバイス上の UEFI レイヤーに存在します。
 
 >[!NOTE]
 >Surface Dock 2 のポートを管理できるのは、Dock が次の互換性のあるデバイスのいずれかに接続されている場合のみです。 Surface Book 3、Surface Pc 3、Surface Pro 7。 UEFI 認証されたポリシー設定を受け取らないデバイスは、本質的に認証されていないデバイスです。
 
-### シナリオ
+###  <a name="scenarios"></a>シナリオ
 
 Surface Dock 2 を会社のホストデバイスにサインインした許可されたユーザーに制限すると、データ保護の別のレイヤーが提供されます。 Surface Dock 2 のロックダウン機能は、厳密なセキュリティプロトコルのコンプライアンスを維持しながら、Dock の機能と生産性の向上を望む、安全性の高い環境では、特定のユーザーにとって重要です。 Surface Dock 2 での SEMM の使用は、セキュリティ上の理由から USB ポートをロックする必要があるお客様に特に便利です。 ビデオのデモについては、「 [Surface Dock 2 用の Semm](https://youtu.be/VLV19ISvq_s)」をご覧ください。
 
-## Surface Dock 2 の UEFI 設定を構成して展開する
+##  <a name="configuring-and-deploying-uefi-settings-for-surface-dock-2"></a>Surface Dock 2 の UEFI 設定を構成して展開する
 
 このセクションでは、次のタスクを実行するためのステップバイステップのガイダンスを示します。
 
@@ -54,29 +54,29 @@ Surface Dock 2 を会社のホストデバイスにサインインした許可�
 >[!NOTE]
 >**ランダム番号 (RN)** は、工場でプロビジョニングされ、ドックの下側に小さい形式で印刷される一意の16桁の16進数コード識別子です。 RN は、電子的には読み取れないため、ほとんどのシリアル番号とは異なります。 これにより、所有権の証明が主に、デバイスに物理的にアクセスしたときに、RN を読み取ることによってのみ確立されます。 この RN は、購入トランザクション中に取得されることもあり、Microsoft インベントリシステムで記録されます。
 
-### SEMM および Surface の UEFI コンフィギュレーターをインストールする
+###  <a name="install-semm-and-surface-uefi-configurator"></a>SEMM および Surface の UEFI コンフィギュレーターをインストールする
 
 **SurfaceUEFI_Configurator_v2.71.139.0.msi**を実行して semm をインストールします。 これはスタンドアロンのインストーラーであり、Surface Dock 2 の構成パッケージを作成して配布するために必要なすべてが含まれています。
 
 - Surface [Tools](https://www.microsoft.com/en-us/download/details.aspx?id=46703)から**Surface の UEFI コンフィギュレーター**をダウンロードします。
 
-## 公開キー証明書を作成する
+##  <a name="create-public-key-certificates"></a>公開キー証明書を作成する
 
 このセクションでは、Surface Dock 2 のポートを管理するために必要な証明書を作成するための仕様を示します。
 
-### 前提条件
+###  <a name="prerequisites"></a>前提条件
 
 この記事では、サードパーティプロバイダーから証明書を取得するか、PKI 証明書サービスの専門知識を既に持っており、独自の技術情報を作成することを前提としています。  「 [Surface Enterprise 管理モード (SEMM)](https://docs.microsoft.com/surface/surface-enterprise-management-mode) ドキュメント」で説明されているように、証明書を作成する際の一般的な推奨事項について理解している必要があります。 このページに記載されている証明書には、 **Dock 証明機関**の場合は30年、 **ホスト認証証明書**には20年の有効期限が必要です。
 
 詳細については、「 [証明書サービスのアーキテクチャ](https://docs.microsoft.com/windows/win32/seccrypto/certificate-services-architecture) に関するドキュメント」を参照してください。 [windows server 2019](https://www.microsoftpressstore.com/store/windows-server-2019-inside-out-9780135492277)内の適切な章、または Microsoft Press から提供されている [Windows Server 2008 PKI および証明書のセキュリティ](https://www.microsoftpressstore.com/store/windows-server-2008-pki-and-certificate-security-9780735640788) を確認してください。
 
-### ルートとホストの証明書の要件
+###  <a name="root-and-host-certificate-requirements"></a>ルートとホストの証明書の要件
 
 構成パッケージを作成する前に、Surface Dock 2 の所有権を認証する公開キー証明書を用意して、デバイスのライフサイクル中に所有権のその後の変更を容易にする必要があります。 ホストとプロビジョニングの証明書では、 **クライアント認証の拡張キー使用法 (EKU) オブジェクト識別子 (oid)** と呼ばれているものとして、eku id を入力する必要があります。
 
 必要な EKU 値が、表1と表2に一覧表示されています。
 
-#### 表 1. ルートとドックの証明書の要件
+####  <a name="surface-hub-2-fingerprint-reader-tech-specs"></a>表 1. ルートとドックの証明書の要件
 
 |証明書|アルゴリズム|説明|有効期限|EKU OID|
 |---|---|---|---|---|
@@ -86,7 +86,7 @@ Surface Dock 2 を会社のホストデバイスにサインインした許可�
    >[!NOTE]
    >Dock CA は、p7b ファイルとしてエクスポートする必要があります。
 
-### 管理証明書の要件のプロビジョニング
+###  <a name="provisioning-administration-certificate-requirements"></a>管理証明書の要件のプロビジョニング
 
 各ホストデバイスは、表2に示すように、doc CA と2つの証明書を持っている必要があります。
 
@@ -100,7 +100,7 @@ Surface Dock 2 を会社のホストデバイスにサインインした許可�
    >[!NOTE]
    >ホスト認証とプロビジョニング証明書は、.pfx ファイル形式でエクスポートする必要があります。
 
-### 構成パッケージを作成する
+###  <a name="create-configuration-package"></a>構成パッケージを作成する
 
 証明書を取得または作成したら、ターゲット Surface デバイスに適用される MSI 構成パッケージを作成できます。
 
@@ -131,16 +131,16 @@ Surface Dock 2 を会社のホストデバイスにサインインした許可�
 
 1. [ **ビルド** ] を選択して、指定どおりにパッケージを作成します。
 
-### 構成パッケージを Surface Dock 2 に適用する
+###  <a name="apply-the-configuration-package-to-a-surface-dock-2"></a>構成パッケージを Surface Dock 2 に適用する
 
 1. Surface UEFI コンフィギュレーターによって生成された MSI ファイルを取得して Surface host デバイスにインストールします。 互換性のあるホストデバイスとしては、surface Book 3、Surface ノート Pc 3、Surface Pro 7 があります。
 1. ホストデバイスを Surface Dock 2 に接続します。 ドックに接続すると、UEFI ポリシー設定が適用されます。
 
-## Surface アプリを使用して管理状態を確認する
+##  <a name="verify-managed-state-using-the-surface-app"></a>Surface アプリを使用して管理状態を確認する
 
 構成パッケージを適用した後は、Surface の結果ポリシーの状態を、Surface アプリから直接確認することができます。これは、既定ですべての Surface デバイスにインストールされています。 Surface アプリがデバイスに存在しない場合は、Microsoft Store からダウンロードしてインストールできます。
 
-### テストシナリオ
+###  <a name="test-scenario"></a>テストシナリオ
 
 目的: 認証されたユーザーのみがアクセスできるようにポリシー設定を構成します。
 
@@ -165,7 +165,7 @@ Surface Dock 2 を会社のホストデバイスにサインインした許可�
 
 お疲れさまでした。 ターゲットとなるホストデバイスで、Surface Dock の2つのポートが正常に管理されました。
 
-## 詳細情報
+##  <a name="learn-more"></a>詳細情報
 
 - [Surface Enterprise 管理モード (SEMM) のドキュメント](https://docs.microsoft.com/surface/surface-enterprise-management-mode)
 - [証明書サービスのアーキテクチャ](https://docs.microsoft.com/windows/win32/seccrypto/certificate-services-architecture)

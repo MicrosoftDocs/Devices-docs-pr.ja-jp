@@ -26,13 +26,13 @@ Microsoft Surface Hub は、チームのブレーンストーミング、コラ�
 
 この記事の対象ユーザーは、最適なセキュリティ設定を使用して企業環境に Surface Hub を展開する IT とネットワーク管理者を対象としています。
 
-## 概要
+##  <a name="overview"></a>概要
 
 Surface Hub のセキュリティは、Wi-fi Direct/Miracast、および関連する802.11、Wi-fi Protected Access (WPA2)、およびワイヤレス保護されたセットアップ (WPS) 標準に依存しています。 このデバイスでサポートされるのは WPS (WPA2 事前共有キー [PSK] または WPA2 Enterprise) のみであるため、802.11 暗号化に関連する問題は単純化されています。
 
 Surface Hub は、Miracast レシーバーのフィールドと同等に動作します。 したがって、すべての WPS ベースのワイヤレスネットワークデバイスと同様の攻撃を受ける可能性があります。 ただし、WPS の Surface Hub の実装には、追加の予防措置が組み込まれています。 また、Wi-fi Direct/Miracast レイヤーを突破した攻撃者が、ネットワークインターフェイスを経由して他の攻撃面や接続されている企業ネットワークに移動してしまうのを防ぐことができます。
 
-## Wi-Fi Direct の背景情報
+##  <a name="wi-fi-direct-background"></a>Wi-Fi Direct の背景情報
 
 Miracast は、wi-fi Direct protocol でサポートされている Wi-fi ディスプレイ標準の一部です。 最新のモバイル デバイスでは、これらの規格をサポートすることで画面の共有とコラボレーションを実現しています。
 
@@ -46,7 +46,7 @@ Wi-fi Direct では、グループは次のいずれかの種類として作成�
 
 Wi-fi Direct groups は、確立された Wi-fi Direct グループの "駅" または "アクセスポイント" 機能を模倣したネゴシエーションプロトコルを通じて、*グループの所有者*(移動) を決定します。 Wi-fi Direct GO は、(「内部レジストラー」経由で) 認証を提供し、上流のネットワーク接続を容易にします。 Surface Hub の場合、この移動のネゴシエーションは発生しません。 ネットワークは "自律" モードでのみ動作し、Surface Hub は常にグループの所有者になります。 最後に、Surface Hub 自体は、クライアントとして他の Wi-fi Direct ネットワークに接続しません。
 
-## Surface Hub で Wi-fi の直接の脆弱性に対処する方法
+##  <a name="how-surface-hub-addresses-wi-fi-direct-vulnerabilities"></a>Surface Hub で Wi-fi の直接の脆弱性に対処する方法
 
 **Wi-fi Direct の招待、ブロードキャスト、検出プロセスの脆弱性と攻撃:** Wi-fi Direct/Miracast 攻撃は、グループ確立、ピア検出、デバイスブロードキャスト、または招待のプロセスの弱点をターゲットとする可能性があります。
 
@@ -106,7 +106,7 @@ Wi-fi Direct groups は、確立された Wi-fi Direct グループの "駅" ま
 | --- | --- |
 | 攻撃者は、ターゲットネットワークのワイヤレス名または "SSID" をスプーフィングまたは複製することによって、ユーザーが偽装された悪意のあるネットワークに接続するように仕向けることができます。 認証されていない自動結合 Miracast をサポートすることによって、攻撃者は、目的の表示内容をキャプチャしたり、接続デバイスでネットワーク攻撃を開始したりすることができます。 | スプーフィングされた Surface Hub への参加に対する特別な保護はありませんが、この脆弱性の一部は次の2つの方法で軽減されます。 まず、攻撃は物理的な Wi-Fi の通信範囲内から実行する必要があります。 次に、この攻撃は最初の接続中にのみ可能です。 以降の接続では永続的な Wi-fi ダイレクトグループが使用され、今後のハブでの使用時に、Windows はこの前の接続を記憶して優先順位を付けます。 (注: MAC アドレス、Wi-fi チャネル、SSID の同時スプーフィングは、このレポートに対して考慮されませんでした。また、Wi-fi の動作が不安定になることがあります)。全体的に、この弱点は、Wi-fi Direct でサポートされていないすべての802.11 ワイヤレスネットワークで、EAP-TLS や、EAP-PWD などのエンタープライズ WPA2 プロトコルを使用していない場合に発生します。 |
 
-## Surface Hub のセキュリティ強化のガイドライン
+##  <a name="surface-hub-hardening-guidelines"></a>Surface Hub のセキュリティ強化のガイドライン
 
 Surface Hub は、コラボレーションが容易で、迅速かつ効率的に会議を開始し、参加できる環境の構築を目的としたデバイスです。 Surface Hub の既定の Wi-fi ダイレクト設定はこのシナリオに合わせて最適化されています。
 
@@ -118,7 +118,7 @@ Surface Hub の認証と承認についてまだ懸念事項がある場合は�
 - [システムの定期的な更新プログラムをインストールする](manage-windows-updates-for-surface-hub.md) 
 - Miracast 設定を更新して自動プレゼンテーションモードを無効にする
 
-## 詳細情報
+##  <a name="learn-more"></a>詳細情報
 
 - [Wi-Fi Direct の仕様](http://www.wi-fi.org/discover-wi-fi/wi-fi-direct)
 - [Wireless Protected Setup (WPS) の仕様](http://www.wi-fi.org/discover-wi-fi/wi-fi-protected-setup)

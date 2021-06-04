@@ -25,7 +25,7 @@ Surface Hub 2、コンポーネントのいずれか、またはそれに関連�
 >[!IMPORTANT]  
 >出荷用にデバイスをパッキングする場合は、代替デバイスが到着したパッケージが使用されていることを確認してください。  
 
-## Surface Hub 2S 50 をパックする方法
+##  <a name="how-to-pack-your-surface-hub-2s-50"></a>Surface Hub 2S 50 をパックする方法
 
 次の手順を使用して、Surface Hub の 2S 50 "を出荷用にパックします。
 
@@ -45,7 +45,7 @@ Surface Hub 2、コンポーネントのいずれか、またはそれに関連�
 | **11.** | 4つのクリップを閉じます。                                                                                            | ![4つのクリップを閉じます。](images/surface-hub-2s-repack-13.png)|
 
 
-## Surface Hub を交換およびパックする方法の計算カートリッジ
+##  <a name="how-to-replace-and-pack-your-surface-hub-2s-compute-cartridge"></a>Surface Hub を交換およびパックする方法の計算カートリッジ
 
 次の手順を使用して、Surface Hub 2S コンピュートカートリッジを削除し、出荷用にパックして、新しいコンピューティングカートリッジをインストールします。<br>
     ![計算カートリッジの画像。](images/surface-hub-2s-replace-cartridge-1.png)
@@ -62,7 +62,7 @@ Surface Hub 2、コンポーネントのいずれか、またはそれに関連�
 | **8.**| 交換用のコンピューティングカートリッジをユニットにスライドします。                                                                                          | ![交換用のコンピューティングカートリッジをユニットにスライドします。](images/surface-hub-2s-replace-cartridge-9.png) |
 | **9.**| ロックネジを固定し、カバーをスライドに挿入します。                                                                                         | ![ロックネジを固定し、カバーをスライドします。](images/surface-hub-2s-replace-cartridge-10.png) |
 
-## Surface Hub 2S Camera を交換する方法
+##  <a name="how-to-replace-your-surface-hub-2s-camera"></a>Surface Hub 2S Camera を交換する方法
 
 次の手順を使用して、Surface Hub の 2S camera を削除し、新しいカメラをインストールします。
 

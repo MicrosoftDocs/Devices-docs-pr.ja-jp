@@ -35,7 +35,7 @@ Surface Hub で BitLocker キーを管理するには、いくつかの方法が
 3.  ローカルの管理者アカウントを使用してデバイスを管理している場合は、[**設定**] アプリに移動して、[**セキュリティ**の回復] & に移動して、BitLocker キーを保存でき &gt; **Recovery**ます。 USB ドライブを挿入し、BitLocker キーを保存するオプションを選択します。 キーは、USB ドライブ上のテキスト ファイルに保存されます。
 
 
-## 関連トピック
+##  <a name="related-topics"></a>関連トピック
 
 [Microsoft Surface Hub の管理](manage-surface-hub.md)
 

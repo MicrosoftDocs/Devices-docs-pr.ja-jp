@@ -27,7 +27,7 @@ ms.locfileid: "11326211"
 
 BYOD 展開を対象として、仕事用プロファイルは、仕事用アプリとデータ用の別の領域を、仕事用アプリとデータ用に別の領域を提供します。従業員が個人のアプリやデータにデバイスを使用するのを防ぐことなく、組織はデータ、アプリ、およびセキュリティ ポリシーを完全に制御できます。
 
-### Android Enterprise Work Profile のセットアップ
+###  <a name="set-up-android-enterprise-work-profile"></a>Android Enterprise Work Profile のセットアップ
 
 仕事用プロファイルを使用して、ユーザーが所有する Android デバイス上の企業データとアプリを管理します。 既定では、個人所有の仕事用プロファイル デバイスの登録が有効になっているので、それ以上管理者の構成は必要とされません。  
 
@@ -64,7 +64,7 @@ BYOD 展開を対象として、仕事用プロファイルは、仕事用アプ
      ![[続行] を選択してセットアップを完了する](images/duo-wp-8.png)<br><br>
      ![セットアップの完了](images/duo-wp-9.png)<br><br>
 
-## 詳細情報
+##  <a name="learn-more"></a>詳細情報
 
 - [Android Enterprise の仕事用プロファイル デバイスの登録を設定する](https://docs.microsoft.com/mem/intune/enrollment/android-work-profile-enroll)
 

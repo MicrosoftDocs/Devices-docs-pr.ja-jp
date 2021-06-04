@@ -29,7 +29,7 @@ Surface デバイスが Surface Enterprise 管理モード (SEMM) に登録さ�
 
 SEMM の詳細については、「 [Microsoft Surface Enterprise Management モード](https://technet.microsoft.com/itpro/surface/surface-enterprise-management-mode)」を参照してください。
 
-## Surface UEFI リセットパッケージを使用して、SEMM から Surface デバイスの登録を解除します。
+##  <a name="unenroll-a-surface-device-from-semm-with-a-surface-uefi-reset-package"></a>Surface UEFI リセットパッケージを使用して、SEMM から Surface デバイスの登録を解除します。
 
 Surface UEFI リセットパッケージは、SEMM から Surface デバイスの登録を解除するために使用する主要な方法です。 Surface UEFI 構成パッケージと同様に、リセットパッケージは、デバイスで SEMM を構成する Windows インストーラー (.msi) ファイルです。 構成パッケージとは異なり、リセットパッケージは Surface デバイス上の Surface UEFI 構成を既定の設定にリセットし、SEMM 証明書を削除して、SEMM からデバイスの登録を解除します。
 
@@ -74,7 +74,7 @@ Surface デバイス上の Surface UEFI リセットパッケージ Windows イ�
 
 *図 5:  [プログラムと機能] に Microsoft Surface 構成パッケージ項目が存在することは、デバイスが SEMM に登録されていることを示します。*
 
-## 回復要求を使用して SEMM から Surface デバイスの登録を解除します。
+##  <a name="unenroll-a-surface-device-from-semm-with-a-recovery-request"></a>回復要求を使用して SEMM から Surface デバイスの登録を解除します。
 
 一部のシナリオでは、Surface UEFI リセットパッケージは、SEMM から Surface デバイスの登録を解除することができない場合があります (たとえば、Windows が使用できなくなった場合)。 これらのシナリオでは、Surface UEFI 内から生成された回復要求を使用して、デバイスの登録を解除できます。 回復要求プロセスは、Surface UEFI パスワードを持っていないデバイスでも開始できます。
 

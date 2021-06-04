@@ -22,15 +22,15 @@ ms.locfileid: "10835773"
 
 中小規模企業の場合でも、Surface Hub 導入計画は適切なユースケースを生成し、ユーザーがデバイスに慣れるのに役立ちます。 組織全体でトレーニングを実施するのに役立つように、これらのダウンロード可能なガイドを確認してください。
 
-## オンデマンドトレーニング
+##  <a name="on-demand-training"></a>オンデマンドトレーニング
 
 - [Surface Hub 2S の導入とトレーニングのビデオ](surface-hub-2s-adoption-videos.md)
 
-## 導入ツールキット
+##  <a name="adoption-toolkit"></a>導入ツールキット
 
 - [Surface Hub 導入ツールキット](downloads/SurfaceHubAdoptionToolKit.pdf)
 
-## トレーニングガイド
+##  <a name="training-guides"></a>トレーニングガイド
 
 - [トレーニングガイド–エンドユーザー](downloads/TrainingGuide-SurfaceHub2S-EndUser.pdf)
 - [トレーニングガイド– power user](downloads/TrainingGuide-SurfaceHub2S-PowerUser.pdf)
@@ -39,7 +39,7 @@ ms.locfileid: "10835773"
 
 [すべてのトレーニングガイドをダウンロードする](https://download.microsoft.com/download/2/2/3/2234F70E-E65A-4790-93DF-F4C373A75B8E/SurfaceHub2S-TrainerGuides-July2019.zip)
 
-## エンドユーザーガイド
+##  <a name="end-user-guides"></a>エンドユーザーガイド
 
 - [Surface Hub でのナビゲーションのガイド](downloads/Guide-SurfaceHub2S-Navigation.pptx)
 - [Surface Hub での Office 365 の概要](downloads/Guide-SurfaceHub2S-Office365.pptx)
@@ -48,7 +48,7 @@ ms.locfileid: "10835773"
 
 [すべてのエンドユーザーガイドをダウンロードする](https://download.microsoft.com/download/E/7/F/E7FC6611-BB55-43E1-AF36-7BD5CE6E0FE0/SurfaceHub2S-EndUserGuides-July2019.zip)
 
-## クイックリファレンスカード
+##  <a name="quick-reference-cards"></a>クイックリファレンスカード
 
 - [PC に接続する](downloads/QRCConnectYourPC.pdf) 
 - [Teams 会議に参加する](downloads/QRCJoinTeamsMeeting.pdf)

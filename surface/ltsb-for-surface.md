@@ -35,7 +35,7 @@ LTSC は、重要な Windows 10 機能の更新と特定のセキュリティ以
 
 特殊なシナリオ (医療機器、pos システム、Atm を制御する Pc など) の Surface デバイスは、LTSC の使用を検討している可能性があります。 通常、これらの専用システムは1つのタスクを実行し、組織内の他のデバイスとして機能更新プログラムを必要としません。 
 
-## 関連トピック
+##  <a name="related-topics"></a>関連トピック
 
 - [IT 担当者向けの Surface のブログ](https://techcommunity.microsoft.com/t5/Surface-IT-Pro-Blog/bg-p/SurfaceITPro)
 

@@ -38,7 +38,7 @@ Surface 輝度コントロールは、熱荷重を軽減し、展開された Su
 
 - ターゲットデバイスに surfacebrightnesscontrol.msi をインストールすると、[Surface 輝度] コントロールはすぐに機能し始めます。
 
-## Surface 輝度コントロールの構成
+##  <a name="configuring-surface-brightness-control"></a>Surface 輝度コントロールの構成
 
 既定の値は、Windows レジストリを使って調整できます。 Windows レジストリの使用の詳細については、[レジストリのドキュメント](https://docs.microsoft.com/windows/desktop/sysinfo/registry)を参照してください。
 
@@ -60,18 +60,18 @@ Surface 輝度コントロールは、熱荷重を軽減し、展開された Su
 | 無通信タイムアウト| 既定値:30 秒 <br>オプション: 任意の数値  <br>データ型: 整数  <br> 「REG_DWORD」と入力します。 | この設定では、デバイスを淡色表示する前に、非アクティブな状態の期間を管理することができます。 この設定を構成しない場合、非アクティブなタイムアウトは30秒です。|
 | テレメトリが有効 | 既定値:01 <br>オプション:01、00 <br> 「REG_BINARY」と入力します。  | この設定では、アプリの使用状況情報の共有を管理して、ソフトウェアを向上させ、ユーザーエクスペリエンスを向上させることができます。 テレメトリを無効にするには、値を00に設定します。 この設定を構成しない場合、利用統計情報は microsoft のプライバシーに関する[声明](https://privacy.microsoft.com/privacystatement)に従って microsoft と共有されます。 |
 
-## 変更と更新
+##  <a name="changes-and-updates"></a>変更と更新
 
-### バージョン1.16.137<br>
+###  <a name="version-1.16.137"></a>バージョン1.16.137<br>
 *リリース日: 2019 年10月22日*<br>
 このバージョンの Surface 明度コントロールでは、次のサポートが追加されます:-x86 用の再コンパイル。 Surface Pro 7、Surface Pro X、Surface ノート Pc 3 のサポートを追加します。 
 
-### バージョン1.12.239.0
+###  <a name="version-1.12.239.0"></a>バージョン1.12.239.0
 *リリース日: 2019 年4月26日*<br>
 このバージョンの Surface 明度コントロールでは、次のサポートが追加されています。
 - タッチの遅延が修正されました。
 
 
-## 関連トピック
+##  <a name="related-topics"></a>関連トピック
 
 - [バッテリー制限の設定](battery-limit.md)

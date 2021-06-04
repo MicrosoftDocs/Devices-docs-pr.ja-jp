@@ -21,13 +21,13 @@ ms.locfileid: "10834749"
 
 Surface Asset Tag は、Surface デバイスの割り当て済みアセットタグ値の表示、割り当て、変更を可能にするコマンドラインインターフェイス (CLI) ユーティリティです。 Surface Pro 3 と、それ以降のすべての Surface デバイスで動作します。
 
-## システム要件
+##  <a name="system-requirements"></a>システム要件
 
 - Surface Pro 3 以降
 
 - UEFI ファームウェアバージョン3.9.150.0 以降
 
-## Surface Asset タグを使用する 
+##  <a name="using-surface-asset-tag-"></a>Surface Asset タグを使用する 
 
 Surface アセットタグを実行するには:
 
@@ -40,7 +40,7 @@ Surface アセットタグを実行するには:
 
 3.  Surface を再起動します。
 
-### 資産タグツールのコマンド   
+###  <a name="asset-tag-tool-commands"></a>資産タグツールのコマンド   
 次の例では、AssetTag.exe はローカルコンピューター (C:\ アセット) のディレクトリに保存されています。 
 
 提案されたアセットタグを取得するには、AssetTag-g を実行します。
@@ -70,7 +70,7 @@ C:\assets\AssetTag.exe -s testassettag12
 >資産タグの値は、1 ~ 36 文字の範囲内である必要があります。 有効な文字は、A-z、a-z、0-9、ピリオド (.)、ハイフン (-) です。
 
 
-## アセットタグの管理
+##  <a name="managing-asset-tags"></a>アセットタグの管理
 
 [デバイス情報] の下にある UEFI 設定で既存のアセットタグを表示できます (**コントロールパネル > 回復 > [今すぐ再起動] >** ます)。
 
@@ -91,7 +91,7 @@ C:\assets\AssetTag.exe -s testassettag12
 C:\Windows\System32> (Get-WmiObject -query “Select * from Win32_SystemEnclosure”)
   ```
   
-### PowerShell を使用する
+###  <a name="using-powershell"></a>PowerShell を使用する
 
 提案された値を取得してエラーを解釈する方法として、次のスクリプトを使うことができます。
 

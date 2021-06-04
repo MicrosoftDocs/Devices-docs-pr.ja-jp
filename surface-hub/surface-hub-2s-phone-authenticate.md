@@ -29,7 +29,7 @@ ms.locfileid: "10893049"
 - [パスワードを使用したセキュリティキーのサインインを有効にする](https://docs.microsoft.com/azure/active-directory/authentication/howto-authentication-passwordless-security-key)
 
 
-## Microsoft Authenticator アプリを使用してサインインを構成する
+##  <a name="configure-sign-in-using-microsoft-authenticator-app"></a>Microsoft Authenticator アプリを使用してサインインを構成する
 
 **注:** Windows 10 Team 2020 更新プログラム以降では、ユーザーは Azure AD で優先メールエイリアスを使用し、ユーザープリンシパル名 (UPN) を使って Microsoft Authenticator を使ってサインインすることができます。 たとえば、ユーザーは自分の優先エイリアス (John.Doe@contoso.com) またはその UPN (jdoe@contoso.com) を使ってサインインすることができます。
  
@@ -43,7 +43,7 @@ Microsoft Authenticator アプリを使用すると、モバイルデバイス�
 3. モバイルデバイスの Microsoft Authenticator アプリで、職場または学校のアカウントの[電話サインインを有効にして使用](https://docs.microsoft.com/azure/active-directory/user-help/user-help-auth-app-sign-in#turn-on-and-use-phone-sign-in-for-your-work-or-school-account)します。
 
  
-## FIDO2 セキュリティキーを使用してサインインを構成する
+##  <a name="configure-sign-in-using-fido2-security-keys"></a>FIDO2 セキュリティキーを使用してサインインを構成する
 
 > [!NOTE]
 >  FIDO2 のセキュリティキーを使用した、Surface Hub での passwordless サインインには、Windows 10 Team 2020 更新プログラムが必要です。
@@ -53,7 +53,7 @@ Microsoft Authenticator アプリを使用すると、モバイルデバイス�
  
 組織から提供された FIDO2 セキュリティキーを使用して、Surface Hub にサインインすることもできます。 
 
-### セキュリティキーを使用してサインインを構成するには、次の操作を行います。
+###  <a name="to-configure-sign-in-using-a-security-key"></a>セキュリティキーを使用してサインインを構成するには、次の操作を行います。
 
 
 1. PC で、ページにアクセス [https://myprofile.microsoft.com/](https://myprofile.microsoft.com/) し、職場または学校のアカウントにサインインします。
@@ -65,7 +65,7 @@ Microsoft Authenticator アプリを使用すると、モバイルデバイス�
 7. [**セキュリティキー** ] ページで、セキュリティキーの名前を入力し、[**次へ**] を選択します。
 8. [**完了**] を選択して処理を完了します。
 
-## Surface Hub にサインインする
+##  <a name="sign-in-to-surface-hub"></a>Surface Hub にサインインする
 
 パスワードが少なくなったサインインを設定すると、Surface Hub 上のアプリ、会議、ファイルに簡単にアクセスできるようになります。
 
@@ -75,7 +75,7 @@ Microsoft Authenticator アプリを使用すると、モバイルデバイス�
 - Surface Hub にサインインした後は、[**終了セッション**] を選択するまで、もう一度サインインしなくても、他のアプリを使うことができます。 [**終了セッション**] を選ぶと、資格情報、ファイル、個人データがデバイスから削除されます。 詳細については、「[セッションを終了](finishing-your-surface-hub-meeting.md)する」を参照してください。
 
 
-## 詳細情報
+##  <a name="learn-more"></a>詳細情報
 
 - [Azure Active Directory の passwordless 認証オプション](https://docs.microsoft.com/azure/active-directory/authentication/concept-authentication-passwordless)
 - [Microsoft Authenticator アプリを使用した passwordless サインイン](https://docs.microsoft.com/azure/active-directory/authentication/howto-authentication-passwordless-phone)

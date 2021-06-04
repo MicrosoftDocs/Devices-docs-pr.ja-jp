@@ -25,11 +25,11 @@ ms.locfileid: "11105414"
 
 保証とサービスの請求フォームでは、Microsoft Surface、Microsoft Surface Hub、Microsoft HoloLens 2、および Microsoft Azure Kinect 製品の1つのサービスリクエストで、複数の要求を送信できます。
 
-## このフォームを使用する状況
+##  <a name="when-to-use-this-form"></a>このフォームを使用する状況
 
 ハードウェア保証要求を提出するか、または保証の調整を要求する場合は、保証とサービスの請求書フォームを使用してください。  
 
-## フォームの使い方
+##  <a name="how-to-use-the-form"></a>フォームの使い方
 
 1.  フォームをダウンロードして、[有効にする] を選びます。
 2.  製品情報を入力します。
@@ -67,13 +67,13 @@ ms.locfileid: "11105414"
         1. 保証の調整を要求する場合は、リクエストの概要を示す明細書を入力します。 保証の調整を要求しない場合は、このフィールドは空白のままにします。
         2. プロセスを迅速化するには、購入の保証またはハードウェア証明書を、お客様のリクエストと一緒にアップロードします。
 
-## 無料サービス料金
+##  <a name="out-of-warranty-service-fees"></a>無料サービス料金
 
 補助サポートは、Surface Hub、HoloLens、および Azure Kinect 製品の保証外の料金を伝えるものとします。
 
 保証期間外サービス料金の詳細については、「 [Surface デバイスまたはアクセサリの保証外サービス](https://support.microsoft.com/help/4563717)料金」を参照してください。
 
-## 詳細情報
+##  <a name="learn-more"></a>詳細情報
 
 Surface のサービスの詳細については、「 [surface 用のサービスを取得する方法](https://support.microsoft.com/help/4023527/surface-how-to-get-service-for-surface)」を参照してください。
 

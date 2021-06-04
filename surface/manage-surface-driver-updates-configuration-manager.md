@@ -23,11 +23,11 @@ ms.locfileid: "10897075"
 ---
 # 構成マネージャーのドライバーの更新
 
-## まとめ
+##  <a name="conclusion"></a>まとめ
 
 [Microsoft System Center Configuration manager バージョン 1710](https://docs.microsoft.com/sccm/core/plan-design/changes/whats-new-in-version-1710#software-updates)以降では、configuration manager クライアントを通じて、microsoft Surface ファームウェアとドライバー更新プログラムを直接、同期して展開することができます。 このプロセスは、定期的な更新プログラムの展開と似ています。 ただし、Surface driver の更新をカタログに追加するには、いくつかの追加構成が必要です。
 
-## 前提条件
+##  <a name="prerequisites"></a>前提条件
 
 Surface driver の更新を管理するには、次の前提条件が満たされている必要があります。
 
@@ -156,7 +156,7 @@ SUP が正しく構成されていることを確認するには、次の手順�
 
 展開の詳細については、「 [System Center 2012 構成マネージャー– Part7: ソフトウェア更新プログラム (展開)](https://blogs.technet.microsoft.com/elie/2012/05/25/system-center-2012-configuration-managerpart7-software-updates-deploy/)」を参照してください。
 
-## よく寄せられる質問 (FAQ)
+##  <a name="frequently-asked-questions"></a>よく寄せられる質問 (FAQ)
 
 **この記事の手順を実行しても、Surface ドライバーが同期されません。 どうしてでしょうか?**
 

@@ -41,13 +41,13 @@ Microsoft サポートに登録要求を提出する前に収集する必要が�
 
  
 
-## サポート要求を送信する
+##  <a name="submit-support-requests"></a>サポート要求を送信する
 
   [![Get Autopilot Registration Support for Surface](images/autopilot-reg-support-surface.png)](https://prod.support.services.microsoft.com/supportrequestform/0d8bf192-cab7-6d39-143d-5a17840b9f5f)
  
  
  
-## 詳細情報
+##  <a name="learn-more"></a>詳細情報
 
 - [Windows Autopilot と Surface デバイス](windows-autopilot-and-surface-devices.md)
 - [Windows Autopilot を使用して、Intune での Windows デバイスを登録する](https://docs.microsoft.com/mem/autopilot/enrollment-autopilot)

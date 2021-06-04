@@ -23,7 +23,7 @@ ms.locfileid: "10835110"
 
 ARM および Intel ベースの Surface デバイスの展開について説明します。
 
-## ARM ベースのデバイスの展開
+##  <a name="deploying-arm-based-devices"></a>ARM ベースのデバイスの展開
 
 | トピック | 説明 |
 | --- | --- |
@@ -32,7 +32,7 @@ ARM および Intel ベースの Surface デバイスの展開について説明
 | [Windows 10 ARM ベース PC アプリの互換性](surface-pro-arm-app-performance.md) | Surface Pro X のアプリの互換性に関するガイダンスを確認します。 |
 
 
-## Intel ベースのデバイスの展開 
+##  <a name="deploying-intel-based-devices"></a>Intel ベースのデバイスの展開 
 
 | トピック | 説明 |
 | --- | --- |
@@ -45,7 +45,7 @@ ARM および Intel ベースの Surface デバイスの展開について説明
 | [Surface Deployment Accelerator](microsoft-surface-deployment-accelerator.md)| Microsoft Surface Deployment Accelerator が、組織が Surface デバイスを再利用するための簡単で簡単な展開メカニズムを提供する方法について説明します。 |
 [バッテリーの制限の設定](battery-limit.md) | バッテリの制限を使用する方法について説明します。 UEFI の設定では、Surface デバイスのバッテリの充電方法を変更し、その寿命を延長することができます。
 
-## 関連トピック
+##  <a name="related-topics"></a>関連トピック
 
 [IT 担当者向けの Surface のブログ](https://techcommunity.microsoft.com/t5/Surface-IT-Pro-Blog/bg-p/SurfaceITPro)
 

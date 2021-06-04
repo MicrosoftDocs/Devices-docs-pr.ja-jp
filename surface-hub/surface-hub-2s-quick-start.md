@@ -20,7 +20,7 @@ ms.locfileid: "10835334"
 ---
 # Surface Hub 2S クイック スタート
 
-## Surface Hub 2S の展開
+##  <a name="unpack-surface-hub-2s"></a>Surface Hub 2S の展開
 
 1. ボックスの各辺のハンドルを使用して、設定する空間に移動します。
 2. 開く前に、前面と背面のクリップ (4) を削除してから、ハンドルを使用してボックスを上から離します。
@@ -29,7 +29,7 @@ ms.locfileid: "10835334"
 
 [ボックス化解除とセットアップ](https://youtu.be/fCrxdNXvru4)の詳細については、このビデオを参照してください。
 
-## ペンをインストールして調整する
+##  <a name="install-and-adjust-pen"></a>ペンをインストールして調整する
 
 1. Surface Hub 2 ペンの磁気をデバイスの優先側に接続します。
 
@@ -39,11 +39,11 @@ ms.locfileid: "10835334"
 
 ![* スライダーを調整して筆圧を変える *](images/sh2-pen-pressure.png) <br>
 
-## カメラをインストールする
+##  <a name="install-camera"></a>カメラをインストールする
 
 レンズ膠着をカメラから取り外して、Surface Hub 2S の上にある USB C ポートに接続します。
 
-## 開始 Surface Hub 2S
+##  <a name="start-surface-hub-2s"></a>開始 Surface Hub 2S
 
 1. デバイスの背面に電源ケーブルを挿入し、電源コンセントに接続します。 お客様の取り付けソリューションの任意のケーブルガイドでケーブルを走らせて、画面の解像度を削除します。
 2. 開始するには、右下の電源ボタンを押します。

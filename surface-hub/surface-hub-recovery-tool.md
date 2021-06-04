@@ -30,9 +30,9 @@ ms.locfileid: "11339368"
 
 ドライブの再インストールに失敗した場合は、Surface Hub サポートにお問 [い合わせください](https://support.microsoft.com/help/4037644/surface-contact-surface-warranty-and-software-support)。
 
-## 前提条件
+##  <a name="prerequisites"></a>前提条件
 
-### Mandatory
+###  <a name="mandatory"></a>Mandatory
 
 - 64 ビット バージョンの Windows 10 バージョン 1607 以上を実行しているホスト PC。
 - インターネット アクセス
@@ -41,7 +41,7 @@ ms.locfileid: "11339368"
 - ホスト コンピューター上の 10 GB の空きディスク領域
 - 代替としてサポートによって提供される Surface Hub または SSD に付属する SSD。 Microsoft から提供されていない SSD はサポートされていません。
 
-### 推奨
+###  <a name="recommended"></a>推奨
 
 - 高速インターネット接続
 - USB 3.0 ポートを開く
@@ -51,7 +51,7 @@ ms.locfileid: "11339368"
     - サギット RCUC16001
     - Ugreen 20231
 
-## Surface Hub 回復ツールのダウンロード
+##  <a name="download-surface-hub-recovery-tool"></a>Surface Hub 回復ツールのダウンロード
 
 Surface Hub 回復ツールは[、Surface Hub Tools for IT](https://www.microsoft.com/download/details.aspx?id=52210)からファイル名の下でダウンロード**SurfaceHub_Recovery_v2.7.139.0.msi。 **
 
@@ -65,7 +65,7 @@ Surface Hub 回復ツールは[、Surface Hub Tools for IT](https://www.microsof
 
 ホスト PC に Surface Hub 回復ツールをインストールします。
 
-## Surface Hub 回復ツールを実行する
+##  <a name="run-surface-hub-recovery-tool"></a>Surface Hub 回復ツールを実行する
 
 1. ホスト PC で、[スタート****] ボタンを選択し、左側のアルファベット順の一覧をスクロールして、回復ツールのショートカットを選択します。
 
@@ -102,7 +102,7 @@ Surface Hub 回復ツールは[、Surface Hub Tools for IT](https://www.microsof
 
 
 
-## トラブルシューティングと一般的な問題
+##  <a name="troubleshooting-and-common-problems"></a>トラブルシューティングと一般的な問題
 
 問題 | 備考
 --- | ---
@@ -113,10 +113,10 @@ Surface Hub 回復ツールは[、Surface Hub Tools for IT](https://www.microsof
 
 ドライブの再インストールに失敗した場合は、Surface Hub サポートにお問 [い合わせください](https://support.microsoft.com/help/4037644/surface-contact-surface-warranty-and-software-support)。
 
-## バージョン履歴
+##  <a name="version-history"></a>バージョン履歴
 
 
-### バージョン v2.7.139.0
+###  <a name="version-v2.7.139.0"></a>バージョン v2.7.139.0
 
 *リリース日: 2021 年 2 月 11 日*<br>
 このバージョンの Surface Hub 回復ツールでは、次のサポートが追加されています。
@@ -124,7 +124,7 @@ Surface Hub 回復ツールは[、Surface Hub Tools for IT](https://www.microsof
 - セキュリティに関する更新
 
 
-### バージョン v2.0.139.0
+###  <a name="version-v2.0.139.0"></a>バージョン v2.0.139.0
 
 > [!IMPORTANT]
 > このバージョンは機能しなくなりました。 上記の現在のバージョンをダウンロードしてください。 

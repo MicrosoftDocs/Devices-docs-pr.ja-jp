@@ -42,7 +42,7 @@ SDT for Business を実行するには、次の表に示すコンポーネント
 デスクトップ モード |  ユーザーが Surface デバイスで SDT を実行して問題のトラブルシューティングを行うのを支援します。<br>1 つ以上の Surface デバイスに展開するカスタム パッケージを作成すると、ユーザーは特定のログを選択して収集および分析できます。 | SDT 配布可能 MSI パッケージ:<br>Microsoft Surface Diagnostic Toolkit for Business インストーラー<br>[IT 担当者向け Surface ツール](https://www.microsoft.com/download/details.aspx?id=46703) | [デスクトップ モードで Surface Diagnostic Toolkitを使用する](surface-diagnostic-toolkit-desktop-mode.md)
 コマンド ライン |  Configuration Manager などの標準ツールを使用して、ユーザーの操作なしにリモートで Surface デバイスを直接トラブルシューティングします。 これには、次のコマンドが含まれます。<br>`-DataCollector` すべてのログ ファイルを収集します<br>`-bpa` ベスト プラクティス アナライザーを使用して正常性診断を実行します。<br>`-windowsupdate` ファームウェアまたはドライバーの更新プログラムが見つからないか Windows Update をチェックします。<br>`-warranty` 保証情報を確認します。 <br><br>| SDT コンソール アプリ:<br>Microsoft Surface Diagnostics アプリ コンソール<br>[IT 担当者向け Surface ツール](https://www.microsoft.com/download/details.aspx?id=46703) | [コマンドを使用して Surface 診断Toolkitを実行する](surface-diagnostic-toolkit-command-line.md)
 
-## サポートされるデバイス 
+##  <a name="supported-devices"></a>サポートされるデバイス 
 
 SDT for Business は、次の Surface 3 以降のデバイスでサポートされています。
 
@@ -165,7 +165,7 @@ SDT と SDT アプリ コンソールの両方がインストールされます 
 - [ビジネス向け Surface 診断ツールキットをデスクトップ モードで使用する](surface-diagnostic-toolkit-desktop-mode.md)
 - [コマンドを使用して Surface Diagnostic Toolkit for Business を使用する](surface-diagnostic-toolkit-command-line.md)
 
-## 変更と更新
+##  <a name="changes-and-updates"></a>変更と更新
 
 ### バージョン 2.131.139.0
 

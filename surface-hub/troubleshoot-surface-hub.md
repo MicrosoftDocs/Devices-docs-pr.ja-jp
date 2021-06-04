@@ -607,7 +607,7 @@ Surface Hub の最初の実行プログラムで発生する問題に対して�
 </tbody>
 </table>
 
-## サポートに問い合わせ
+##  <a name="contact-support"></a>サポートに問い合わせ
 
 質問がある場合やヘルプが必要な場合は、[サポートリクエストを作成](https://support.microsoft.com/supportforbusiness/productselection)できます。
 

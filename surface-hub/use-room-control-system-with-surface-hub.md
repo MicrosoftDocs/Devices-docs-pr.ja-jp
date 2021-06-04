@@ -102,7 +102,7 @@ Surface Hub の電力は、以下のいずれかの状態になります。
 | Brightness+ | システム管理コントローラー (SMC) が、明るさを上げるコマンドを送信します。</br></br>ルーム コントロール システムの PC サービスによって、新しい明るさレベルが SMC に通知されます。 |  Brightness = 51 |
 | Brightness- |  SMC が、明るさを下げるコマンドを送信します。</br></br>PC サービスによって、新しい明るさレベルが SMC に通知されます。 | Brightness = 50 |
 
-## Volume
+##  <a name="volume"></a>Volume
 
 現在の音量レベルの範囲は、0 ~ 100 です。
 
@@ -167,7 +167,7 @@ Surface Hub の電力は、以下のいずれかの状態になります。
 
  
 
-## 関連トピック
+##  <a name="related-topics"></a>関連トピック
 
 
 [Microsoft Surface Hub の管理](manage-surface-hub.md)

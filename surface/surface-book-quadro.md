@@ -27,7 +27,7 @@ NVIDIA® Quadro RTX™ 3000 GPU を搭載したビジネス向け Surface Book �
 - **人工知能** -冗長で面倒なタスクを削除して、240の場合、または GPU でアクセラレーション用のコアを使用して負荷の高い処理を行います。
 - **高度なグラフィックスと計算技術** -最も複雑なグラフィックスで優れた速度と対話性を実現し、GDDR6 メモリの 1920 Cuda コアと6GB を使って作業負荷を計算します。
 
-## エンタープライズグレードソリューション
+##  <a name="enterprise-grade-solution"></a>エンタープライズグレードソリューション
 
 商用のお客様にとって非常に重要なことは、Quadro RTX 3000 は、迅速なレイトレースと高度な学習機能と、統合されたエンタープライズレベルの管理とサポートソリューションを組み合わせる、完全な本格的なソリューションを提供します。 Quadro ドライバーは、主要な Isv によって100を超えるプロフェッショナルアプリケーションに対してテストおよび認定され、安定性、信頼性、パフォーマンスを検証するための追加の品質保証のレイヤーを提供します。
  
@@ -36,7 +36,7 @@ Quadro には、Quadro RTX 3000 で Surface Book 3 デバイスのリモート�
 NVIDIA は、エンタープライズレベルの安定性、信頼性、可用性、およびサポートされている延長製品を提供するために、調整、テスト、検証が行われる Quadro の最適なドライバーを開発および維持します。 各ドライバリリースには、専門的なアプリケーションのテストスイートとテストケース、および WHQL 認定の2000人日以上のテストが含まれています。 セキュリティの脅威は継続的に監視され、新しく発見された脆弱性から保護するために定期的なセキュリティ更新プログラムがリリースされます。 さらに、Quadro ドライバーは、Windows Update 経由でリリースされる前に、Surface engineering のテストのレイヤーを追加しています。
  
 
-## 計算負荷の高いワークロード向けに構築
+##  <a name="built-for-compute-intensive-workloads"></a>計算負荷の高いワークロード向けに構築
 
 Surface Book 3 と Quadro RTX 3000 を使用すると、あらゆる Surface のノート pc で最高のグラフィックスパフォーマンスが実現され、上級の専門家がどこからでも作業できるようになります。
  
@@ -89,7 +89,7 @@ Surface Book 3 と Quadro RTX 3000 を使用すると、あらゆる Surface の
 | NVIDIA のお客様                                             | あり             |
 
  
-## ISV テスト & アプリのアクセラレータ
+##  <a name="isv-testing-&-app-acceleration"></a>ISV テスト & アプリのアクセラレータ
 
 表3に示されているように、Quadro RTX 3000 と共に Surface Book 3 は、主要な Isv によってテストおよび承認され、プロフェッショナルアプリケーション間で大幅に高速化されます。 SPECview perf 13 ベンチマークテストの結果は、nvidia Quadro RTX 3000 と nvidia GeForce GTX 1060 デバイスを使用して 2 15、Surface Book 3 15 インチを比較します。
 
@@ -125,7 +125,7 @@ Surface Book 3 と Quadro RTX 3000 を使用すると、あらゆる Surface の
 
 
 
-## Sku
+##  <a name="skus"></a>Sku
 
 **表 4. Surface Book 3 と Quadro RTX 3000 Sku**
 
@@ -134,7 +134,7 @@ Surface Book 3 と Quadro RTX 3000 を使用すると、あらゆる Surface の
 | 15インチ | クアッドコア 10 Gen Core i7-1065G7 | Intel 虹彩™プラスグラフィックス<br>NVIDIA Quadro RTX 3000。 6GB GDDR6 graphics memory を使用した Max Q&a の設計 | 32 LPDDR4x | 512 GB      |
 | 15インチ | クアッドコア 10 Gen Core i7-1065G7 | Intel 虹彩™プラスグラフィックス<br>NVIDIA Quadro RTX 3000。 6GB GDDR6 graphics memory を使用した Max Q&a の設計 | 32 LPDDR4x | 1 TB        |
 
-## まとめ
+##  <a name="conclusion"></a>まとめ
 
 Surface Book 3 と Quadro RTX 3000 を使用すると、あらゆる Surface のノート pc で最高のグラフィックスパフォーマンスを実現し、設計者、エンジニア、開発者、データ科学者がどこからでも効率的に作業するために必要なツールを提供します。
  
@@ -142,7 +142,7 @@ Surface Book 3 と Quadro RTX 3000 を使用すると、あらゆる Surface の
 - モバイルフォームファクターのデスクトップグレードのパフォーマンス。
 - エンタープライズクラスの機能、信頼性、ミッションクリティカルなプロジェクトのサポート。
 
-## 詳細情報
+##  <a name="learn-more"></a>詳細情報
 
 - [Surface Book 3 GPU の技術概要](surface-book-GPU-overview.md)
 - [ビジネス向け Surface](https://www.microsoft.com/surface/business)

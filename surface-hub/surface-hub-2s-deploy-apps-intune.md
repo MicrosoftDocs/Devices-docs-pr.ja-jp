@@ -22,7 +22,7 @@ ms.locfileid: "10835686"
 
 チームまたは組織のニーズに合わせて、追加のアプリをインストールできます。
 
-## 開発者向けガイドライン
+##  <a name="developer-guidelines"></a>開発者向けガイドライン
 
 - Surface Hub で実行できるのは、[ユニバーサル Windows プラットフォーム (UWP) アプリ](https://msdn.microsoft.com/windows/uwp/get-started/whats-a-uwp)のみです。 [Desktop App Converter](https://docs.microsoft.com/windows/uwp/porting/desktop-to-uwp-run-desktop-app-converter) を使用して作成されたアプリは、Surface Hub では動作しません。
 - アプリは、[ユニバーサル デバイス ファミリ](https://msdn.microsoft.com/library/windows/apps/dn894631)または Windows チーム デバイス ファミリに対応している必要があります。
@@ -31,7 +31,7 @@ ms.locfileid: "10835686"
 - Microsoft ストアへのアプリの開発と申請を行うときは、デバイスファミリの可用性と組織のライセンスオプションを設定して、Surface Hub でアプリを実行できるようにします。
 - Surface Hub にアプリをインストールするには、管理者の資格情報が必要です。 会議室や他の共有スペースで使用するように設計されています。 Surface Hub は、通常のユーザーが Microsoft Store にアクセスしてアプリをダウンロードしてインストールすることを防止します。
 
-## 展開のガイドライン
+##  <a name="deployment-guidelines"></a>展開のガイドライン
 
 Intune を使用してユニバーサル Windows プラットフォーム (UWP) アプリを Surface Hub 2S に展開し、デバイスへのアプリの展開を容易にすることができます。
 

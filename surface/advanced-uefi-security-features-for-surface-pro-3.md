@@ -27,14 +27,14 @@ ms.locfileid: "11163181"
 
 UEFI の更新プログラム v3.11.760.0 では、Surface デバイスのセキュリティをさらに細かく制御できるように、特定のハードウェア デバイスを無効にしたり、それらのデバイスからの起動を防止したりできる追加のセキュリティ オプションが提供されます。 UEFI の更新プログラムをデバイスにインストールした後、プログラムを手動で構成することも、スクリプトを実行して自動で構成することもできます。
 
-## UEFI の更新プログラムを手動でインストールする
+##  <a name="manually-install-the-uefi-update"></a>UEFI の更新プログラムを手動でインストールする
 
 
 Surface デバイスの高度なセキュリティ機能を構成する前に、まず UEFI の更新プログラム v3.11.760.0 をインストールする必要があります。 この更新プログラムを Windows Update から受け取った場合、プログラムは自動的にインストールされます。 Windows Update を使って自動的に更新されるように Windows を構成する方法について詳しくは、「[Windows での自動更新の構成方法および使用方法](https://support.microsoft.com/kb/306525)」をご覧ください。
 
 Surface Pro 3 の UEFI を更新する場合は、Surface UEFI の更新プログラムを Surface Pro 3 ファームウェアおよびドライバー パックの一部としてダウンロードし、インストールできます。 これらのファームウェアおよびドライバー パックは、Microsoft ダウンロード センターの [Surface Pro 3 のページ](https://www.microsoft.com/download/details.aspx?id=38826)から入手できます。 ファームウェアおよびドライバー パックについて詳しくは、「[Surface デバイス用の最新のファームウェアとドライバーをダウンロードする](https://technet.microsoft.com/itpro/surface/deploy-the-latest-firmware-and-drivers-for-surface-devices)」をご覧ください。 ファームウェアおよびドライバー パックは、両方自己完結型の Windows インストーラー (.msi) 形式とアーカイブ (.zip) 形式の両方で提供されています。 これら 2 種類の形式と、それぞれの形式を使用してドライバーを更新する方法について詳しくは、「[Surface のドライバーおよびファームウェアの更新プログラムを管理する](https://technet.microsoft.com/itpro/surface/manage-surface-pro-3-firmware-updates)」をご覧ください。
 
-## 追加のセキュリティ設定を手動で構成する
+##  <a name="manually-configure-additional-security-settings"></a>追加のセキュリティ設定を手動で構成する
 
 
 >[!NOTE]
@@ -56,7 +56,7 @@ Surface デバイスに UEFI の更新プログラム v3.11.760.0 をインス�
 
  
 
-## 追加のセキュリティ設定を自動化する
+##  <a name="automate-additional-security-settings"></a>追加のセキュリティ設定を自動化する
 
 
 管理者権限を持つ IT 担当者は、Microsoft ダウンロード センターから入手できる [Surface Pro 3 Firmware Tools (476 KB)](https://go.microsoft.com/fwlink/p/?LinkID=618038) を利用して、UEFI 設定の構成を自動化することができます。 これらのツールを利用すると、すべてのカスタム アプリケーションやスクリプトから呼び出すことができる .NET アセンブリがインストールされます。

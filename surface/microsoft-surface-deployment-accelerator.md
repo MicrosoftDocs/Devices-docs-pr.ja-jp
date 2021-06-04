@@ -32,7 +32,7 @@ Microsoft Surface Deployment Accelerator (SDA) は、無料の Microsoft 展開�
 
 結果として得られるイメージは、Microsoft Office や Surface UWP アプリケーションなどのプレインストールされているアプリケーションがない場合に、ベアメタル回復 (BMR) イメージの構成にほぼ一致します。
 
-## 要件
+##  <a name="requirements"></a>要件
 
 1. USB サムドライブのサイズが 16 GB 以上。 USB ドライブは、書式設定されます。
 2. Windows 10 Pro または Windows 10 Enterprise を含む .iso ファイル。 メディア作成ツールを使って、Windows 10 をダウンロードし、.iso ファイルを作成することができます。 詳細については、「 [Windows 10 をダウンロード](https://www.microsoft.com/software-download/windows10)する」を参照してください。
@@ -40,7 +40,7 @@ Microsoft Surface Deployment Accelerator (SDA) は、無料の Microsoft 展開�
 
 要件の詳細については、README ドキュメントの「 [前提条件](https://github.com/microsoft/SurfaceDeploymentAccelerator/blob/master/README.md#prerequisites) 」を参照してください。
 
-## SDA の実行方法
+##  <a name="how-to-run-the-sda"></a>SDA の実行方法
 
 **SDA を実行するには:**
 
@@ -75,7 +75,7 @@ Microsoft Surface Deployment Accelerator (SDA) は、無料の Microsoft 展開�
 > [!IMPORTANT]
 > USB ドライブから起動すると、Windows 10 のインストールが直ちに開始されます。 USB を挿入して再起動する前に、デバイスの準備ができていることを確認します。 
 
-## 関連リンク
+##  <a name="related-links"></a>関連リンク
 
  - [GitHub でリリースされたソースイメージ展開ツールを開く](https://techcommunity.microsoft.com/t5/surface-it-pro-blog/open-source-image-deployment-tool-released-on-github/ba-p/1314115)
  - [Windows ADK をダウンロードしてインストールする](https://docs.microsoft.com/windows-hardware/get-started/adk-install)

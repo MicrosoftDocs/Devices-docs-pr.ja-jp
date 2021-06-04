@@ -84,6 +84,6 @@ Surface Hub とプロジェクション元デバイスがどちらも Wi‑Fi �
 
 環境に複数の Wi-Fi ネットワークまたはアクセス ポイントがある場合、一部のチャネル切り替えは回避できません。 これは、すべての Wi-Fi ドライバーを最新の状態にすることで適切に修正されます。
 
-## サポートに問い合わせ
+##  <a name="contact-support"></a>サポートに問い合わせ
 
 質問がある場合やヘルプが必要な場合は、[サポートリクエストを作成](https://support.microsoft.com/supportforbusiness/productselection)できます。

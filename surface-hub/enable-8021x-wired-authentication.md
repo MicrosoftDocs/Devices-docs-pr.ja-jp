@@ -25,7 +25,7 @@ Surface Hub での 802.1x ワイヤード (有線) 認証の適用と有効化�
 
 設定するプライマリ構成は **LanProfile** ポリシーです。 選択した認証方法によっては、**EapUserData** ポリシーまたはユーザーやコンピューターの証明書を追加するための MDM ポリシー (ユーザー/デバイスの証明書用の [ClientCertificateInstall](https://docs.microsoft.com/windows/client-management/mdm/clientcertificateinstall-csp)、デバイス証明書用の [RootCATrustedCertificates](https://docs.microsoft.com/windows/client-management/mdm/rootcacertificates-csp) など) のいずれかのポリシーが必要になる場合があります。 
 
-## LanProfile ポリシー要素
+##  <a name="lanprofile-policy-element"></a>LanProfile ポリシー要素
 
 サポートされている 802.1x 認証方法のいずれかを使用するように Surface Hub を構成するには、次の OMA-URI を使用します。 
 
@@ -49,7 +49,7 @@ Profile File Name: .\Ethernet.xml
 1 profile(s) were exported successfully.
 ```
 
-## EapUserData ポリシー要素
+##  <a name="eapuserdata-policy-element"></a>EapUserData ポリシー要素
 
 証明書ではなく、ユーザー名とパスワードを必要とする認証方法を選択した場合、**EapUserData** 要素を使用して、ネットワークで認証するために使用するデバイスの資格情報を指定できます。 
 
@@ -61,7 +61,7 @@ Profile File Name: .\Ethernet.xml
 
 
 
-## 証明書の追加
+##  <a name="adding-certificates"></a>証明書の追加
 
 選択した認証方法が証明書ベースの場合は、[プロビジョニングパッケージを作成](provisioning-packages-for-surface-hub.md)するか、 [MDM を利用](https://docs.microsoft.com/windows/client-management/mdm/clientcertificateinstall-csp)するか、または設定 (**設定**の更新とセキュリティ証明書) から証明書をインポートして、それらの証明書を  >  **Update and Security**  >  **Certificates**適切な証明書ストアの Surface Hub デバイスに展開する必要があります。 証明書を追加する場合、各 PFX には証明書を 1 つだけ含める必要があります (PFX に複数の証明書を含めることはできません)。
 

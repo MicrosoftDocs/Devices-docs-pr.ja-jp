@@ -21,7 +21,7 @@ ms.locfileid: "10835766"
 
 このページには、Surface Hub 2S の包括的なトレーニングが含まれており、必要に応じて利用できます。
 
-## 第1章トレーニングの概要
+##  <a name="chapter-1---training-overview"></a>第1章トレーニングの概要
 
 > [!video https://www.microsoft.com/videoplayer/embed/RE46Jud] 
 
@@ -33,7 +33,7 @@ ms.locfileid: "10835766"
 - トレーニングサービスの概要
 - トレーニングのベストプラクティス
 
-## 第2章: Surface Hub の概要
+##  <a name="chapter-2---getting-started-with-surface-hub"></a>第2章: Surface Hub の概要
 
 > [!video https://www.microsoft.com/videoplayer/embed/RE46Ejt] 
 
@@ -44,7 +44,7 @@ ms.locfileid: "10835766"
 - Surface Hub の概要
 - 期待値の収集
 
-## 第3章-Surface Hub の移動
+##  <a name="chapter-3---navigating-surface-hub"></a>第3章-Surface Hub の移動
 
 > [!video https://www.microsoft.com/videoplayer/embed/RE46OFW] 
 
@@ -56,7 +56,7 @@ ms.locfileid: "10835766"
 - Teams/Skype
 - セッションを終了する
 
-## 第4章-Whiteboarding and 共同作業
+##  <a name="chapter-4---whiteboarding-and-collaboration"></a>第4章-Whiteboarding and 共同作業
 
 > [!video https://www.microsoft.com/videoplayer/embed/RE46M4v] 
 
@@ -68,7 +68,7 @@ ms.locfileid: "10835766"
 - ホワイトボードの共有
 - ホワイトボードをエクスポートする 
  
-## 第5章: Surface Hub アプリの調査
+##  <a name="chapter-5---exploring-surface-hub-apps"></a>第5章: Surface Hub アプリの調査
 
 > [!video https://www.microsoft.com/videoplayer/embed/RE46Ejz] 
 
@@ -78,7 +78,7 @@ ms.locfileid: "10835766"
 - Microsoft Excel
 - Microsoft Edge
 
-## 第6章-Advanced apps and Office 365
+##  <a name="chapter-6---advanced-apps-and-office-365"></a>第6章-Advanced apps and Office 365
 
 > [!video https://www.microsoft.com/videoplayer/embed/RE46EjA] 
 
@@ -90,7 +90,7 @@ ms.locfileid: "10835766"
 - OneDrive
 - 共同編集ドキュメント
 
-## 第7章-デバイスを接続する
+##  <a name="chapter-7---connecting-devices"></a>第7章-デバイスを接続する
 
 > [!video https://www.microsoft.com/videoplayer/embed/RE46M4w] 
 
@@ -101,7 +101,7 @@ ms.locfileid: "10835766"
 - 基幹業務アプリワークフロー
 - Miracast と有線接続のトラブルシューティング    
  
-## 第8章-Skype for Business 会議
+##  <a name="chapter-8---skype-for-business-meetings"></a>第8章-Skype for Business 会議
 
 > [!video https://www.microsoft.com/videoplayer/embed/RE46M4x] 
 
@@ -112,7 +112,7 @@ ms.locfileid: "10835766"
 - Skype for Business 会議を管理する
 - コンテンツを表示する
     
-## 第9章-Microsoft Teams の会議
+##  <a name="chapter-9---microsoft-teams-meetings"></a>第9章-Microsoft Teams の会議
 
 > [!video https://www.microsoft.com/videoplayer/embed/RE46OFZ] 
 
@@ -125,7 +125,7 @@ ms.locfileid: "10835766"
 - コンテンツを表示する
 - まとめ
 
-## 第10章-基本的なトラブルシューティング
+##  <a name="chapter-10---basic-troubleshooting"></a>第10章-基本的なトラブルシューティング
 
 > [!video https://www.microsoft.com/videoplayer/embed/RE46z65] 
 

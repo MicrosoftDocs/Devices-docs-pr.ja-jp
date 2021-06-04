@@ -25,7 +25,7 @@ Surface Hub エンジニアの Jordan Marchese による、Windows 10 バージ�
 
 Windows 10 バージョン 1703 (Creators Update) では、Microsoft Surface Hub に次の変更が加えられています。
 
-## 新しい設定
+##  <a name="new-settings"></a>新しい設定
 
 モバイル デバイス管理 (MDM) と構成サービス プロバイダー (CSP) に設定が追加され、Surface Hub の管理機能が拡張されました。 [新しい設定は次のとおりです](manage-settings-with-mdm-for-surface-hub.md)。
 
@@ -44,17 +44,17 @@ Windows 10 バージョン 1703 (Creators Update) では、Microsoft Surface Hub
 さらに、新しい [NetworkQoSPolicy CSP](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/networkqospolicy-csp) と [NetworkProxy CSP](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/networkproxy-csp) に基づく設定があります。
 </br>
 
-## プロビジョニング ウィザード
+##  <a name="provisioning-wizard"></a>プロビジョニング ウィザード
 
 使いやすいウィザードにより、複数の Surface Hub デバイスに適用できるプロビジョニング パッケージをすばやく作成できます。Azure Active Directory に一括で参加させる機能もあります。 [Surface Hub のプロビジョニング パッケージの作成方法については、こちらをご覧ください。](provisioning-packages-for-certificates-surface-hub.md)
 
 ![Surface Hub デバイスのプロビジョニング ウィザードの手順](images/wcd-wizard.png)
     
-## 既存のワイヤレス ネットワークまたは LAN での Miracast 
+##  <a name="miracast-on-your-existing-wireless-network-or-lan"></a>既存のワイヤレス ネットワークまたは LAN での Miracast 
 
 Microsoft はダイレクト ワイヤレス リンク経由ではなく、[ローカル ネットワーク経由で Miracast ストリームを送信](miracast-over-infrastructure.md)できるように機能を拡張しました。 
     
-## クラウド回復
+##  <a name="cloud-recovery"></a>クラウド回復
 
 Surface Hub デバイスをリセットするときに、クラウドから工場出荷時のビルドのオペレーティング システムをダウンロードしてインストールすることができます。 [クラウド回復について詳しくは、こちらをご覧ください。](device-reset-surface-hub.md#cloud-recovery)
 
@@ -63,7 +63,7 @@ Surface Hub デバイスをリセットするときに、クラウドから工�
     
 ![再インストール](images/reinstall.png)
     
-## セッションの終了
+##  <a name="end-session"></a>セッションの終了
 
 **[終了]** は **[セッションの終了]** になりました。 [[セッションの終了] の使い方については、こちらをご覧ください。](finishing-your-surface-hub-meeting.md) 
 

@@ -23,7 +23,7 @@ ms.locfileid: "11174727"
 
 Surface Hub のオペレーティング システムの新しいリリースは、Windows 10 のリリースと同様に、Windows Update を通じて公開されます。 このページでは、Surface Hub デバイスの更新プログラムを管理するためのベストプラクティスについて説明します。 
 
-## Windows Update for Business
+##  <a name="windows-update-for-business"></a>Windows Update for Business
 
 ビジネス向け windows Update は、Windows Update がリリースをインストールする方法とタイミングを管理し、デバイス管理のコストを削減するために設計された一連の機能です。 この方法を使用する場合、Surface Hub は Microsoft の Windows Update サービスに直接接続されます。
 
@@ -54,7 +54,7 @@ Surface Hub オペレーティング システムでは、[半期チャネル](h
 サービスとしての Windows について詳しくは、「[サービスとしての Windows の概要](https://technet.microsoft.com/itpro/windows/manage/waas-overview)」をご覧ください。
 
 
-## Windows Update for Business の使用
+##  <a name="windows-update-for-business"></a>Windows Update for Business の使用
 
 Surface Hub には、すべての Windows 10 デバイスと同様に、**Windows Update for Business (WUfB)** が含まれており、デバイスの更新方法を制御することができます。 Windows Update for Business は、デバイス管理コストの削減、更新プログラムの展開方法の制御、セキュリティ更新プログラムへのすばやいアクセスを実現し、さらに Microsoft から継続的に最新の革新的機能を入手するのに役立ちます。 詳しくは、「[Windows Update for Business を使った更新プログラムの管理](https://technet.microsoft.com/itpro/windows/manage/waas-manage-updates-wufb)」をご覧ください。
 
@@ -123,12 +123,12 @@ Surface Hub では、次のガイドラインに従って更新プログラム�
 MDM を使ってメンテナンスウィンドウを変更するには、 [SurfaceHub 構成サービスプロバイダー](https://msdn.microsoft.com/library/windows/hardware/mt608323.aspx)で**MaintenanceHoursSimple**ノードを設定します。 詳しくは、「[MDM プロバイダーによる設定の管理](manage-settings-with-mdm-for-surface-hub.md)」をご覧ください。
 
 
-## 詳細情報
+##  <a name="learn-more"></a>詳細情報
 
 - [ブログ投稿: Surface Hub のサービス、Flighting、および更新プログラムの管理 (もちろん、Intune を使用)](https://blogs.technet.microsoft.com/y0av/2018/05/31/7-3/)
 
 
-## 関連トピック
+##  <a name="related-topics"></a>関連トピック
 
 [Microsoft Surface Hub の管理](manage-surface-hub.md)
 

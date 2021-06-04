@@ -26,7 +26,7 @@ Surface Hub 2 では、外部デバイスを接続し、Surface Hub 2S の表示
 > [!NOTE]
 > Surface Hub 2S は、新しい接続が行われるか、既存の接続が中断されるか、または Connect アプリが終了するまで選択されているビデオ入力を使います。
 
-## お勧めの有線構成 
+##  <a name="recommended-wired-configurations"></a>お勧めの有線構成 
 
 一般的に、USB-C から USB-c、hdmi への HDMI など、可能な限り、ネイティブケーブル接続を使用することをお勧めします。 その他の MiniDP (HDMI、MiniDP など) の組み合わせも動作します。 このページで説明するように、ビデオ出力エクスペリエンスを最適化するために、追加の構成が必要になることがあります。
 
@@ -47,11 +47,11 @@ USB-C ポート経由でゲストコンピューターを Surface Hub 2S に接�
 | マウスとそのほかのポインティング デバイス | HID 準拠マウス |
 | USB コントローラー | 汎用 USB ハブ<br>USB 複合デバイス |
 
-## Surface Hub 2S へのビデオの接続
+##  <a name="connecting-video-in-to-surface-hub-2s"></a>Surface Hub 2S へのビデオの接続
 
 次の表に示すように、USB-C または HDMI を使用して、Surface Hub 2S にビデオを入力することができます。  
 
-### Surface Hub 2S のビデオ設定
+###  <a name="surface-hub-2s-video-in-settings"></a>Surface Hub 2S のビデオ設定
 
 | **信号の種類** | **解像度** | **フレーム レート** | **HDMI** | **USB-C** |
 | --------------- | -------------- | -------------- | -------- | --------- |
@@ -70,11 +70,11 @@ USB-C ポート経由でゲストコンピューターを Surface Hub 2S に接�
 > [!NOTE]
 > 接続されている外部 PC のビデオは、Surface Hub 2S に表示すると小さく表示されることがあります。
 
-## 別のデバイスでの Surface Hub のミラーの表示
+##  <a name="mirroring-surface-hub-2s-display-on-another-device"></a>別のデバイスでの Surface Hub のミラーの表示
 
 次の表に示すように、MiniDP を使用して、ビデオを別のディスプレイに出力することができます。
 
-### Surface Hub 2S のビデオ-アウト設定
+###  <a name="surface-hub-2s-video-out-settings"></a>Surface Hub 2S のビデオ-アウト設定
 
 | **信号の種類** | **解像度** | **フレーム レート** | **MiniDP** |
 | --------------- | -------------- | -------------- | ---------- |
@@ -100,7 +100,7 @@ Surface Hub 2S には、Surface Hub 2S のビジュアルコンテンツを別�
 > [!NOTE]
 > 2台目のモニターが16:9 縦横比 (ほとんどのテレビモニターの最大比率) を使用している場合、ミラーディスプレイの左側と右側に黒いバーが表示されることがあります。 この問題が発生した場合は、2つ目のディスプレイを調整する必要がないことをユーザーに知らせてください。
 
-## ケーブルの選択
+##  <a name="selecting-cables"></a>ケーブルの選択
 
 次の推奨事項を確認してください。
 
@@ -111,11 +111,11 @@ Surface Hub 2S には、Surface Hub 2S のビジュアルコンテンツを別�
 > [!NOTE]
 > HDMI が検出された場合、ほとんどの DisplayPort ソースは、自動 HDMI 信号に自動的に切り替えます。
 
-## Surface Hub 2S にワイヤレスで接続する
+##  <a name="wirelessly-connect-to-surface-hub-2s"></a>Surface Hub 2S にワイヤレスで接続する
 
 Windows 10 は、本来は Miracast をサポートしているため、ワイヤレスで Surface Hub 2S に接続できます。<br><br>
 
-### Miracast を使って接続するには:
+###  <a name="to-connect-using-miracast"></a>Miracast を使って接続するには:
 
 1. Windows 10 デバイスで、 **windows ロゴキー**  +  **K**を入力します。 
 2. [接続] ウィンドウで、近くのデバイスの一覧から Surface Hub の2S の名前を探します。 Surface Hub の名前は、ディスプレイの左下隅で確認できます。
@@ -124,9 +124,9 @@ Windows 10 は、本来は Miracast をサポートしているため、ワイ�
 > [!NOTE]
 >Surface Hub の 2S device の名前が予期したとおりに表示されない場合は、前のセッションが途中で閉じられた可能性があります。 そうである場合は、Surface Hub 2S に直接サインインして、前のセッションを終了してから、外部デバイスから接続します。
 
-## ペリフェラルを Surface Hub 2S に接続する
+##  <a name="connecting-peripherals-to-surface-hub-2s"></a>ペリフェラルを Surface Hub 2S に接続する
 
-### Bluetooth アクセサリ
+###  <a name="bluetooth-accessories"></a>Bluetooth アクセサリ
 
 Bluetooth を使って、次のアクセサリを Surface Hub-2S に接続できます。
 

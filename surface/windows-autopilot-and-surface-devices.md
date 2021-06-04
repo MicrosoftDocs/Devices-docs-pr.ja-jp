@@ -37,36 +37,36 @@ Windows Autopilot を使用すると、次のタスクを実行できます。
 - Intune でデバイスの完全な構成を有効にします。
 - デバイスをリモートでリセットまたは再起動します。
 
-## 動作のしくみ
+##  <a name="how-it-works"></a>動作のしくみ
 
 Windows Autopilot に登録されたデバイスは、最初の起動時に、ハードウェア ハッシュと呼ばれる一意のデバイス署名によってインターネット経由で *識別されます*。 Azure Active Directory (Azure AD) やモバイル デバイス管理などの最新の管理ソリューションを使用して、自動的に登録および構成されます。
 
 購入時に、Windows Autopilot が有効になっている Surface パートナーから Surface デバイスを登録できます。 これらのパートナーは、ユーザーに新しいデバイスを直接出荷できます。 デバイスは、最初にオンになったときに自動的に登録され、構成されます。 このプロセスでは、展開時の再インストールが不要になります。これにより、デバイス管理と配布の新しいアジャイル メソッドを実装できます。
 
-## 最新の管理機能
+##  <a name="modern-management"></a>最新の管理機能
 
 Autopilot は、Surface Pro 7+、Surface Laptop 3、Surface Pro 7、Surface Pro X など、特に Autopilot による展開用に設計された Surface デバイスに推奨される展開オプションです。
 
  Microsoft クラウド ソリューション プロバイダーの支援を受け、Surface デバイスを登録するのをお手伝いします。 この手順では、Intune から直接 Surface の UEFI ファームウェア設定を管理できます。 証明書を管理するためにデバイスに物理的にタッチする必要が排除されます。 詳 [しくは、Surface UEFI 設定の Intune 管理](surface-manage-dfci-guide.md) に関するページをご覧ください。
 
-## Windows のバージョンに関する考慮事項
+##  <a name="windows-version-considerations"></a>Windows のバージョンに関する考慮事項
 
 購入時の Surface パートナーによる登録を含め、Windows Autopilot による Surface デバイスの広範な展開には、Windows 10 Version 1709 (Fall Creators Update) 以降が必要です。
 
 これらの Windows バージョンでは、大規模な展開に必要な Windows Autopilot のデバイスを一意に識別する 4,000 バイト (4k) ハッシュ値がサポートされています。 Surface Pro 7 以降、Surface Pro X、Surface Laptop 3 を含むすべての新しい Surface デバイスは、Windows 10 Version 1903 以降に搭載されています。
 
-## 修復または交換が必要な Surface デバイスでの Exchange エクスペリエンス
+##  <a name="exchange-experience-on-surface-devices-in-need-of-repair-or-replacement"></a>修復または交換が必要な Surface デバイスでの Exchange エクスペリエンス
 
 Microsoft は、すべての Surface で Autopilot 登録を自動的にチェックし、お客様のテナントからデバイスの登録を解除します。  Microsoft では、代替デバイスが顧客に出荷された後、代替デバイスが Windows Autopilot に登録されます。 このサービスは、Microsoft と直接のすべてのデバイス交換サービス注文で利用できます。
 
 > [!NOTE]
 > お客様がパートナーを使用してデバイスを返却する場合、パートナーは Windows Autopilot へのデバイスの登録解除や登録などの交換プロセスの管理を担当します。
 
-## Microsoft サポートの登録
+##  <a name="microsoft-support-registration"></a>Microsoft サポートの登録
 
 お客様と Microsoft クラウド ソリューション プロバイダー (CSP) には、Microsoft サポートに要求を送信して Surface デバイスを登録するオプションがあります。 詳しくは [、Windows Autopilot の Surface 登録サポートに関するページをご覧ください](surface-autopilot-registration-support.md)。
 
-## Windows Autopilot が有効になっている Surface パートナー
+##  <a name="surface-partners-enabled-for-windows-autopilot"></a>Windows Autopilot が有効になっている Surface パートナー
 
 Surface パートナーは、購入時に Surface デバイスを Windows Autopilot に登録できます。 また、登録済みデバイスをユーザーに直接出荷することもできます。 デバイスは、Windows Autopilot、Azure AD、およびモバイル デバイス管理を使用して、ゼロタッチ プロセスを通じて完全に構成できます。
 
@@ -82,7 +82,7 @@ Windows Autopilot が有効になっている Surface パートナーには、�
 | * [F1](https://www.functiononeit.com/#empower)  |   |  |
 | * [保護された信頼](https://go.microsoft.com/fwlink/p/?LinkID=2129005) | | | 
 
-## 詳細情報
+##  <a name="learn-more"></a>詳細情報
 
 Windows Autopilot の詳細については、以下を参照してください。
 - [Windows Autopilot の概要](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-10-autopilot)

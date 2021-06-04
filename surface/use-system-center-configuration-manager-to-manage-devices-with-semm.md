@@ -30,7 +30,7 @@ Microsoft Endpoint Configuration Manager を使用している組織では、Mic
 > [!Note]
 > この記事で説明されているプロセスは、以前のバージョンのエンドポイント構成マネージャー、または他のサードパーティの管理ソリューションでも動作する可能性がありますが、Microsoft Surface UEFI Manager と PowerShell を使用した SEMM の管理は、エンドポイント構成マネージャーの現在の分岐でのみサポートされます。
 
-#### 前提条件
+####  <a name="prerequisites"></a>前提条件
 
 この記事で説明されている手順を開始する前に、次のテクノロジとツールについて理解しておく必要があります。
 

@@ -27,7 +27,7 @@ ms.locfileid: "11326296"
 
 Android ベースのデバイスの Surface ライフサイクルは、Surface Surface の Android バージョンとセキュリティ更新プログラムを対象とします。 ライフサイクルは、デバイスが最初にリリースされると開始され、Surface が更新プログラムの公開を停止すると終了します。
 
-## Surface Android デバイスのサポート 
+##  <a name="surface-android-device-support"></a>Surface Android デバイスのサポート 
 
 Surface Android デバイスは、リリース日 (2020 年 9 月 10 日) から少なくとも 3 年間、Android バージョンとセキュリティ更新プログラムを受信します。 サポート期間が 3 年を超える場合、更新されたサービス終了日は、計画された最後のサービス日付の有効期限の 18 か月前に公開されます。 
 
