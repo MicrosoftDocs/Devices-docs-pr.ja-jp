@@ -1,8 +1,8 @@
 ---
-title: プロビジョニング パッケージの作成 (Surface Hub)
+title: プロビジョニング パッケージの作成
 description: Windows 10 では、レジストリや構成サービス プロバイダー (CSP) を使用する設定を、プロビジョニング パッケージによって構成することができます。
 ms.assetid: 8AA25BD4-8A8F-4B95-9268-504A49BA5345
-ms.reviewer: ''
+ms.reviewer: dpandre
 manager: laurawi
 keywords: 証明書の追加, プロビジョニング パッケージ
 ms.prod: surface-hub
@@ -10,320 +10,265 @@ ms.sitesec: library
 author: dansimp
 ms.author: dansimp
 ms.topic: article
-ms.date: 03/16/2019
+ms.date: 05/28/2021
 ms.localizationpriority: medium
-ms.openlocfilehash: 5e0714d284cc5c8207633719ec8fb52cec9f95cb
-ms.sourcegitcommit: a4f8d271b1372321c3b45fc5a7a29703976964a4
+appliesto:
+- Surface Hub
+- Surface Hub 2S
+ms.openlocfilehash: 087826a7a0cba7a47accc0d3d66714289f2ae9d2
+ms.sourcegitcommit: 267e12897efd9d11f8c7303eaf780632741cfe77
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/20/2021
-ms.locfileid: "11576987"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "11613984"
 ---
-# <a name="create-provisioning-packages-surface-hub"></a>プロビジョニング パッケージの作成 (Surface Hub)
+# <a name="create-provisioning-packages-for-surface-hub"></a>ユーザーのプロビジョニング パッケージを作成Surface Hub
 
-このトピックでは、Windows 構成デザイナーを使ってプロビジョニング パッケージを作成し、それを Surface Hub デバイスに適用する方法について説明します。 Surface Hub では、プロビジョニング パッケージを使って証明書を追加し、ユニバーサル Windows プラットフォーム (UWP) アプリをインストールして、ポリシーと設定をカスタマイズすることができます。
+プロビジョニング パッケージを使用すると、主要な機能の展開を自動化し、組織内のすべての Surface Hub で一貫性のあるエクスペリエンスを提供できます。  別Windows PC で構成デザイナー (WCD) を使用すると、次のタスクを実行できます。
 
-最初の実行の設定時に USB スティックを使うか、**設定**アプリを通じてプロビジョニング パッケージを適用できます。 
-
-
-## <a name="advantages"></a>長所
--   モバイル デバイス管理 (MDM) プロバイダーを使用せずにデバイスをすばやく構成できます。
-
--   ネットワーク接続は必要ありません。
-
--   簡単に適用できます。
-
-[プロビジョニング パッケージの利点と使用方法について説明します。](https://technet.microsoft.com/itpro/windows/configure/provisioning-packages)
-
-
-## <a name="requirements"></a>要件 
-
-プロビジョニング パッケージを作成して Surface Hub に適用するには、次のものが必要です。
-
--   Windows 構成デザイナー。これは Microsoft Store または Windows 10 アセスメント & デプロイメント キット (ADK) からインストールできます。 [Windows 構成デザイナーをインストールする方法をこちらで確認できます。](https://technet.microsoft.com/itpro/windows/configure/provisioning-install-icd)
--   USB スティック 1 個。
--   **設定**アプリを使ってパッケージを適用する場合は、デバイスの管理者資格情報が必要です。
-
-Windows 10 を実行している PC でプロビジョニング パッケージを作成して、パッケージを USB ドライブに保存し、それを Surface Hub に展開します。
-
-
-## <a name="supported-items-for-surface-hub-provisioning-packages"></a>Surface Hub プロビジョニング パッケージ向けにサポートされる項目
-
-**プロビジョニング Surface Hub デバイス**ウィザードでは、以下を実行できます。
-
-- Active Directory、Azure Active Directory、MDM への登録 
-- デバイス管理者アカウントの作成 
+- Active Directory または Active Directory に登録Azure Active Directory
+- デバイス管理者アカウントの作成
 - アプリケーションと証明書の追加
 - プロキシ設定の構成
 - Surface Hub の構成ファイルの追加
+- 構成 [サービス プロバイダー (CSP) の設定を構成する](/windows/client-management/mdm/surfacehub-csp)
 
->[!WARNING]
->ウィザードを使って Azure Active Directory の登録を構成するには、Windows 10 で Windows 構成デザイナーを実行する必要があります。
+## <a name="overview"></a>概要
 
-詳細プロビジョニング エディターを使って、Surface Hub 向けのプロビジョニング パッケージに次の項目を追加できます。
+1. サーバーを実行している別Windows 10、Windows[構成デザイナー](https://www.microsoft.com/store/apps/9nblggh4tx22)をインストールMicrosoft Store。
+1. [[**デバイスのプロビジョニングSurface Hubウィザード**](#use-surface-hub-provisioning-wizard)を使用して共通の設定を構成する] を選択します。 または、[ [高度なプロビジョニング] を選択](#use-advanced-provisioning) して、可能なすべての設定を表示および構成します。
+1. プロビジョニング パッケージを作成し、USB ドライブに保存します。
+1. 最初に実行するセットアップ中Surface Hub、またはアプリを使用して、パッケージを設定します。 詳細については、「Create [a provisioning package for a provisioning package for Windows 10」 を参照してください](/windows/configuration/provisioning-packages/provisioning-create-package)。
 
-- **ポリシー** - Surface Hub は、[ポリシー構成サービス プロバイダー](https://msdn.microsoft.com/library/windows/hardware/dn904962.aspx#surfacehubpolicies)のポリシーのサブセットをサポートします。 
-- **設定** - [SurfaceHub 構成サービス プロバイダー](https://msdn.microsoft.com/library/windows/hardware/mt608323.aspx)のすべての設定を構成できます。
+## <a name="use-surface-hub-provisioning-wizard"></a>プロビジョニング ウィザードSurface Hub使用する
 
->[!TIP]
-> ウィザードを使用して共通設定のパッケージを作成した後、詳細エディターに切り替えて他の設定を追加します。
->
->![詳細エディターの起動](images/icd-simple-edit.png)
-
-## <a name="use-the-surface-hub-provisioning-wizard"></a>Surface Hub プロビジョニング ウィザードの使用
-
-[Windows 構成デザイナーのインストール](https://technet.microsoft.com/itpro/windows/configure/provisioning-install-icd)が完了した後、プロビジョニング パッケージを作成できます。
-
-### <a name="create-the-provisioning-package"></a>プロビジョニング パッケージを作成する 
-
-1. 次の手順で Windows 構成デザイナーを開きます。
-   - スタート画面または [スタート] メニューの検索ウィンドウで、「Windows 構成デザイナー」と入力して Windows 構成デザイナーのショートカットをクリックします。 
+1. [構成Windowsを開き、[デバイスのプロビジョニング **] をSurface Hubします**。<br>
+    ![Surface Hub プロビジョニング ウィザードの使用](images/sh-prov-start.png)
     
-     または
-    
-   - Windows 構成デザイナーを ADK からインストールした場合は、`C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Imaging and Configuration Designer\x86` (x64 コンピューターを使用している場合) または `C:\Program Files\Windows Kits\10\Assessment and Deployment Kit\Imaging and Configuration Designer\x86\ICD.exe` (x86 コンピューターを使用している場合) に移動し、**ICD.exe** をダブルクリックします。
+2. プロジェクトに名前を付け、[次へ] を **選択します**。
 
-2. **[プロビジョニング Surface Hub デバイス]** をクリックします。
+### <a name="add-certificates"></a>証明書を追加する
 
-3. プロジェクトに名前を付け、**[次へ]** をクリックします。
+> [!div class="mx-imgBorder"]
+> ![証明書の追加](images/sh-prov-cert.png)
 
-### <a name="configure-settings"></a>設定の構成
+デバイスを証明書でプロビジョニングするには、[証明書の追加 **] を選択します**。 証明書の名前を入力し、参照して使用する証明書を選択します。  高度なプロビジョニング オプションについては、「パッケージに証明書を追加 [する」のセクションを参照してください](#add-a-certificate-to-your-package)。
 
-<table>
-<tr><td style="width:45%" valign="top"><img src="images/one.png" alt="step one"/> <img src="images/add-certificates.png" alt="add certificates"/></br></br>証明書を使ってデバイスをプロビジョニングするには、<strong>[証明書の追加]</strong> をクリックします。 証明書の名前を入力し、使用する証明書を表示して選択します。</td><td><img src="images/add-certificates-details.png" alt="add a certificate"/></td></tr> 
-<tr><td style="width:45%" valign="top"><img src="images/two.png" alt="step two"/>  <img src="images/proxy.png" alt="configure proxy settings"/></br></br>プロキシ設定を <strong>[はい]</strong> または <strong>[いいえ]</strong> に切り替えます。 Surface Hub の既定の構成では、プロキシ設定が自動的に検出されます。設定を変更する必要がない場合は、<strong>[いいえ]</strong> を選択します。 ただし、それまでのプロキシ サーバーの使用を必要とするインフラストラクチャから、プロキシ サーバーを必要としないインフラストラクチャに変更した場合は、<strong>[はい]</strong> と <strong>[設定を自動的に検出]</strong> を選択することで、プロビジョニング パッケージを使って Surface Hub デバイスを既定の設定に戻すことができます。 </br></br><strong>[はい]</strong> に切り替えると、プロキシ設定を自動的に検出するか、設定を手動で構成するかを選択でき、手動で構成する場合は、スクリプトを設定するための URL を入力するか、静的なプロキシ サーバー アドレスを入力できます。 さらにローカルのアドレスにプロキシ サーバーを使うかどうか、また例外 (Surface Hub がプロキシ サーバーを使用せずに直接接続する必要があるアドレス) を入力するかどうかを指定することもできます。  </td><td><img src="images/proxy-details.png" alt="proxy configuration details"/></td></tr>
-<tr><td style="width:45%" valign="top"><img src="images/three.png" alt="step three"/>  <img src="images/set-up-device-admins.png" alt="device admins"/></br></br>デバイスを Active Directory に登録し、設定アプリを使用するセキュリティ グループを指定するか、Azure Active Directory に登録してグローバル管理者が設定アプリを使用できる環境にするか、デバイス上にローカル管理者アカウントを作成することができます。</br></br>デバイスを Active Directory に登録するには、最小限の特権を持つユーザー アカウントの資格情報を入力して、デバイスをドメインに参加させ、Surface Hub で管理者資格情報を持つセキュリティ グループを指定します。 デバイスを Active Directory に登録するプロビジョニング パッケージを、リセットされた Surface Hub に適用する場合、同じドメイン アカウントを使用できるのは、表示されているアカウントがドメイン管理者である場合か、Surface Hub を最初に設定したのと同じアカウントである場合のみです。 そうでない場合は、別のドメイン アカウントをプロビジョニング パッケージで使う必要があります。</br></br>Windows 構成デザイナー ウィザードを使って Azure AD の登録を一括で構成する前に、<a href="https://docs.microsoft.com/azure/active-directory/active-directory-azureadjoin-setup" data-raw-source="[set up Azure AD join in your organization](https://docs.microsoft.com/azure/active-directory/active-directory-azureadjoin-setup)">組織での Azure AD 参加の設定</a>を行います。 Azure AD テナントの <strong>[ユーザーあたりのデバイスの最大数]</strong> の設定は、ウィザードで利用できる一括トークンを使用できる回数を決定します。 Azure AD にデバイスを登録するには、そのオプションを選択して、ウィザードを使って取得する一括トークンのフレンドリ名を入力します。 トークンの有効期限を設定します (最大、トークンの取得日から 30 日間)。 <strong>[一括トークンを取得する]</strong> をクリックします。 [サインイン&#39;許可する] ウィンドウで、デバイスを Azure AD に参加するためのアクセス許可を持つアカウントを入力し、 <strong> </strong> 次にパスワードを入力します。 <strong>[承諾]</strong> をクリックして、Windows 構成デザイナーに必要なアクセス許可を付与します。</br></br>ローカル管理者アカウントを作成するには、そのオプションを選択して、ユーザー名とパスワードを入力します。 </br></br><strong>重要:</strong> プロビジョニング パッケージにローカル アカウントを作成する場合、42 日ごとに<strong>設定</strong>アプリを使ってパスワードを変更する必要があります。 その期間内にパスワードを変更しない場合、アカウントがロックされてサインインできなくなる可能性があります。  </td><td><img src="images/set-up-device-admins-details.png" alt="join Active Directory, Azure AD, or create a local admin account"/></td></tr>
-<tr><td style="width:45%" valign="top"><img src="images/four.png" alt="step four"/> <img src="images/enroll-mdm.png" alt="enroll in device management"/></br></br>Intune 以外の MDM プロバイダーに登録するには、このセクションを使用します。 Intune 登録の場合は、Azure AD Intune の自動登録を使用して前のセクション <a href="https://docs.microsoft.com/mem/intune/enrollment/windows-enroll#enable-windows-10-automatic-enrollment" data-raw-source="[automatic Intune enrollment](https://docs.microsoft.com/mem/intune/enrollment/windows-enroll#enable-windows-10-automatic-enrollment)"> に参加します </a> 。</br></br>MDM への登録について、<strong>[はい]</strong> または <strong>[いいえ]</strong> を切り替えます。 </br></br><strong>[はい]</strong> を選択した場合、デバイスの登録を許可されたサービス アカウントとパスワードまたは証明書サムプリントを指定し、併せて認証の種類を指定する必要があります。 MDM プロバイダーで必要な場合は、探索サービス、登録サービス、ポリシー サービスの URL も入力します。 <a href="manage-settings-with-mdm-for-surface-hub.md" data-raw-source="[Learn more about managing Surface Hub with MDM.](manage-settings-with-mdm-for-surface-hub.md)">MDM による Surface Hub の管理について詳しく知る。</a></td><td><img src="images/enroll-mdm-details.png" alt="enroll in mobile device management"/></td></tr>
-<tr><td style="width:45%" valign="top"><img src="images/five.png" alt="step five"/> <img src="images/add-applications.png" alt="add applications"/></br></br>プロビジョニング パッケージには、複数のユニバーサル Windows プラットフォーム (UWP) アプリをインストールできます。 設定について詳しくは「<a href="https://technet.microsoft.com/itpro/windows/configure/provision-pcs-with-apps" data-raw-source="[Provision PCs with apps](https://technet.microsoft.com/itpro/windows/configure/provision-pcs-with-apps)">アプリを使用して PC をプロビジョニングする</a>」をご覧ください。 </br></br><strong>重要: ウィザード インターフェイスではクラシック Win32 アプリを選択することができますが、UWP アプリは、アプリに適用されるプロビジョニング </strong> パッケージにのみ含Surface Hub。 従来の Win32 アプリを含めると、プロビジョニングが失敗します。 </td><td><img src="images/add-applications-details.png" alt="add an application"/></td></tr>
-<tr><td style="width:45%" valign="top"><img src="images/six.png" alt="step six"/>  <img src="images/add-config-file.png" alt="Add configuration file"/></br></br>この手順&#39;設定を構成しない必要があります。 ここではデバイス アカウントの一覧が含まれた構成ファイルを含める手順を説明します。 構成ファイルには、列ヘッダーを含めないでください。 プロビジョニング パッケージを Surface Hub に適用するときに、Surface Hub の構成ファイルが USB ドライブに含まれている場合は、アカウントとデバイスのフレンドリ名をファイルから選択できます。 例については、「<a href="#sample-configuration-file" data-raw-source="[Sample configuration file](#sample-configuration-file)">構成ファイルの例</a>」をご覧ください。</br></br><strong>重要: 構成ファイルは、アウトオブボックス セットアップ エクスペリエンス (OOBE) の間にのみ適用され、Windows 10 バージョン 1703 でリリースされた Windows 構成デザイナーを使用して作成されたプロビジョニング パッケージでのみ使用できます。 </strong>  </td><td><img src="images/add-config-file-details.png" alt="Add a Surface Hub configuration file"/></td></tr>
-<tr><td style="width:45%" valign="top">  <img src="images/finish.png" alt="finish creating your package"/></br></br>プロビジョニング パッケージを保護するためのパスワードを設定することができます。 プロビジョニング パッケージをデバイスに適用する場合は、このパスワードを入力する必要があります。</td><td><img src="images/finish-details.png" alt="Protect your package"/></td></tr>
-</table>
+### <a name="configure-proxy-settings"></a>プロキシ設定の構成
 
-完了したら、[**作成**] をクリックします。 これは数秒で終わります。 パッケージがビルドされると、ページの下部に、パッケージの格納場所がハイパーリンクで表示されます。
+> [!div class="mx-imgBorder"]
+> ![プロキシ設定の構成](images/sh-prov-proxy.png)
 
-## <a name="sample-configuration-file"></a>構成ファイルの例
+1. プロキシ設定を **[はい]** または **[いいえ]** に切り替えます。 既定では、Surface Hubプロキシ設定が自動的に検出されます。 ただし、それまでのプロキシ サーバーの使用を必要とするインフラストラクチャから、プロキシ サーバーを必要としないインフラストラクチャに変更した場合は、**[はい]** と **[設定を自動的に検出]** を選択することで、プロビジョニング パッケージを使って Surface Hub デバイスを既定の設定に戻すことができます。
+2. [はい] **を切り**替える場合は、プロキシ設定を自動的に検出するか、次のいずれかを入力して手動で設定を構成できます。
 
-Surface Hub の構成ファイルには、デバイスが Exchange および Skype for Business との接続に使用できるデバイス アカウントの一覧が含まれています。 プロビジョニング パッケージを Surface Hub に適用するときに、構成ファイルを USB フラッシュ ドライブのルート ディレクトリに含めたうえで、そのデバイスに適用する適切なアカウントを選択できます。 構成ファイルは、アウトオブボックスの設定エクスペリエンス (OOBE) でのみ適用でき、Windows 10 バージョン 1703 でリリースされた Windows 構成デザイナーを使って作成したプロビジョニング パッケージでのみ使用できます。
+    - セットアップ スクリプトの URL。
+    - 静的プロキシ サーバーのアドレスとポート情報。
 
-Microsoft Excel などの CSV エディターを使って、`SurfaceHubConfiguration.csv` という名前の CSV ファイルを作成します。 作成したファイルに、デバイス アカウントとフレンドリ名の一覧を次の形式で入力します。
+3. セットアップ スクリプトまたはプロキシ サーバーを使用する場合は、[設定を自動的に検出 **する] をオフにします**。 セットアップ スクリプトまたはプロキシ サーバー *を* 使用できます。両方を使用することはできません。
+4. 例外 (プロキシ サーバーをSurface Hub直接接続する必要があるアドレス) を入力します。 **例:** *.office365.com
+5. プロキシ サーバーをローカル アドレスに使用するかどうかを指定します。
 
-```console
-<DeviceAccountName>,<DeviceAccountPassword>,<FriendlyName>
-```
->[!IMPORTANT]
->構成ファイルではデバイス アカウントのパスワードがプレーンテキストで保存されるため、デバイスにプロビジョニング パッケージを適用した後、パスワードを更新することをお勧めします。 MDM 経由でのパスワードの更新には、[Surface Hub 構成サービス プロバイダー (CSP)](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/surfacehub-csp) の [DeviceAccount ノード](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/surfacehub-csp#deviceaccount)を使用できます。
+### <a name="set-up-device-admins"></a>デバイス管理者の設定
 
+ > [!div class="mx-imgBorder"]
+ > ![Active Directory、Azure ADに参加する、またはローカル管理者アカウントを作成する](images/sh2-wcd.png)
 
-次に `SurfaceHubConfiguration.csv` の例を示します。 
+デバイスを Active Directory に登録し、設定アプリを使用するセキュリティ グループを指定するか、Azure Active Directory に登録してグローバル管理者が設定アプリを使用できる環境にするか、デバイス上にローカル管理者アカウントを作成することができます。
 
-```console
-Rainier@contoso.com,password,Rainier Surface Hub
-Adams@contoso.com,password,Adams Surface Hub
-Baker@contoso.com,password,Baker Surface Hub
-Glacier@constoso.com,password,Glacier Surface Hub
-Stuart@contoso.com,password,Stuart Surface Hub
-Fernow@contoso.com,password,Fernow Surface Hub
-Goode@contoso.com,password,Goode Surface Hub
-Shuksan@contoso.com,password,Shuksan Surface Hub
-Buckner@contoso.com,password,Buckner Surface Hub
-Logan@contoso.com,password,Logan Surface Hub
-Maude@consoto.com,password,Maude Surface hub
-Spickard@contoso.com,password,Spickard Surface Hub
-Redoubt@contoso.com,password,Redoubt Surface Hub
-Dome@contoso.com,password,Dome Surface Hub
-Eldorado@contoso.com,password,Eldorado Surface Hub
-Dragontail@contoso.com,password,Dragontail Surface Hub
-Forbidden@contoso.com,password,Forbidden Surface Hub
-Oval@contoso.com,password,Oval Surface Hub
-StHelens@contoso.com,password,St Helens Surface Hub
-Rushmore@contoso.com,password,Rushmore Surface Hub
-```
+1. デバイスを Active Directory に登録するには、最小限の特権を持つユーザー アカウントの資格情報を入力して、デバイスをドメインに参加させ、Surface Hub で管理者資格情報を持つセキュリティ グループを指定します。 パッケージをリセットされた Surface Hubに適用する場合は、最初に設定したアカウントと同じアカウントである限り、同じSurface Hubできます。 そうでない場合は、別のドメイン アカウントをプロビジョニング パッケージで使う必要があります。
+2. Azure の一括登録Windows構成する前に[、Azure](/azure/active-directory/devices/azureadjoin-plan)AD参加実装を計画ADしてください。 Azure AD テナントの **[ユーザーあたりのデバイスの最大数]** の設定は、ウィザードで利用できる一括トークンを使用できる回数を決定します。
+3. Azure AD にデバイスを登録するには、そのオプションを選択して、ウィザードを使って取得する一括トークンのフレンドリ名を入力します。 トークンの有効期限を設定します (最大、トークンの取得日から 30 日間)。 [一 **括トークンの取得] を選択します**。 **[サインインしましょう]** ウィンドウで、デバイスを Azure AD に参加させるアクセス許可を持つアカウントを入力し、次にパスワードを入力します。 [**同意する]** を選択Windows構成デザイナーに必要なアクセス許可を付与します。
+4. ローカル管理者アカウントを作成するには、そのオプションを選択して、ユーザー名とパスワードを入力します。
+
+> [!IMPORTANT]
+> プロビジョニング パッケージにローカル アカウントを作成する場合、42 日ごとに**設定**アプリを使ってパスワードを変更する必要があります。 その期間内にパスワードを変更しない場合、アカウントがロックされてサインインできなくなる可能性があります。
+
+### <a name="enroll-in-third-party-mdm-provider"></a>サード パーティの MDM プロバイダーに登録する
+
+> [!div class="mx-imgBorder"]
+> ![サードパーティのモバイル デバイス管理に登録する](images/sh-prov-mdm.png)
+
+サード パーティのモバイル デバイス管理 (MDM) プロバイダーを使用する場合は、このセクションを使用してデバイスを登録Surface Hub。 Intune に登録するには、前のセクションで説明したように、最初に Azure AD 参加をセットアップし、次の Intune ドキュメントの手順に従います。Windows 10 デバイスの自動登録[を設定](/mem/intune/enrollment/quickstart-setup-auto-enrollment)します。
+
+1. サード パーティ **製 MDM** への登録の場合は、[はい] または [ **いいえ** ] を切り替えます。
+2. [はい] **を切**り替える場合は、デバイスの登録を承認されているサービス アカウントとパスワードまたは証明書の拇印を指定し、認証の種類を指定します。
+3. MDM プロバイダーが必要な場合は、探索サービス、登録サービス、およびポリシー サービスの URL を入力します。
+
+ 詳細については、「MDM プロバイダーを[使用Surface Hub管理する」を参照してください。](manage-settings-with-mdm-for-surface-hub.md)
+
+### <a name="add-applications"></a>アプリケーションの追加
+
+> [!div class="mx-imgBorder"]
+> ![アプリケーションの追加](images/sh-prov-apps.png)
+
+プロビジョニング パッケージには、複数のユニバーサル Windows プラットフォーム (UWP) アプリをインストールできます。 詳細については、「アプリを使用して [PC をプロビジョニングする」を参照してください](/windows/configuration/provisioning-packages/provision-pcs-with-apps)。
+
+> [!NOTE]
+> このWindows構成デザイナーでは、クラシック Win32 アプリをプロビジョニング パッケージに追加することができますが、Surface Hub UWP アプリのみを受け入れる必要があります。 従来の Win32 アプリを含めると、プロビジョニングが失敗します。
+
+### <a name="add-a-configuration-file"></a>構成ファイルの追加
+
+このプロビジョニング パッケージに加えて、Surface Hub構成ファイルを使用して、デバイスのセットアップをより簡単に行えます。 Surface Hub構成ファイルには、Exchange、Microsoft Teams、または Skype for Business に接続するためのデバイス アカウントの一覧と、ワイヤレスプロジェクション用の "分名" が含まれる。
+
+**構成ファイルをSurface Hubするには、次のSurface Hub使用します。**
+
+1. [Microsoft Excel (または他の.csv エディター) を開き、.csvという名前SurfaceHubConfiguration.csv
+2. 次の形式で、デバイス アカウントとユーザー名の一覧を入力します。
+
+    ```
+    <DeviceAccountName>,<DeviceAccountPassword>,<FriendlyName>
+    ```
+
+    > [!NOTE]
+    > 構成ファイルには、列ヘッダーを含めないでください。 アプリケーションに適用されるプロビジョニング パッケージに含Surface Hub、ファイルからデバイスのアカウントと親近感の名前を選択できます。 .csvファイルを作成するには、UPN アドレス形式 (rainier@contoso.com) またはダウンレベルログオン名形式 (contoso\rainier) を使用します。
+
+- rainier@contoso.com,password,Rainier Surface Hub
+
+3. ファイルをプロジェクト フォルダーに保存し、プロビジョニング パッケージを使用して USB キーにコピーします。
+
+> [!NOTE]
+> 構成ファイルは、最初の実行セットアップ時にのみ適用できます。
+
+### <a name="password-protect-provisioning-package"></a>パスワード保護プロビジョニング パッケージ
+
+パスワードを使用する場合は、プロビジョニング パッケージをデバイスに適用する度にパスワードを入力する必要があります。
+
+### <a name="complete-provisioning-wizard"></a>完全なプロビジョニング ウィザード
+
+共通の設定のみを構成する必要がある場合は****、[作成の完了] を選択し、[パッケージのビルド  >  ****[] セクションにスキップします](#build-your-package)。 または、[高度なプロビジョニング] に切り替えて設定の構成を続行します。
 
 ## <a name="use-advanced-provisioning"></a>高度なプロビジョニングの使用
 
-[Windows 構成デザイナーのインストール](https://technet.microsoft.com/itpro/windows/configure/provisioning-install-icd)が完了した後、プロビジョニング パッケージを作成できます。
+> [!TIP]
+> ウィザードを使用して共通設定のパッケージを作成した後、詳細エディターに切り替えて他の設定を追加します。<br><br> ![詳細エディターに切り替える](images/icd-simple-edit.png)
 
-### <a name="create-the-provisioning-package-advanced"></a>プロビジョニング パッケージの作成 (上級)
+1. 前のセクションから続行する場合は、[**詳細エディターに**切り替える] を選択します。それ**以外の場合**は、[構成デザイナー] Windows開き、[高度なプロビジョニング]**を選択します**。<br>
+  ![高度なプロビジョニングの使用](images/sh-prov-adv.png)
 
-1. 次の手順で Windows 構成デザイナーを開きます。
-   - スタート画面または [スタート] メニューの検索ウィンドウで、「Windows 構成デザイナー」と入力して Windows 構成デザイナーのショートカットをクリックします。 
-    
-     または
-    
-   - Windows 構成デザイナーを ADK からインストールした場合は、`C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Imaging and Configuration Designer\x86` (x64 コンピューターを使用している場合) または `C:\Program Files\Windows Kits\10\Assessment and Deployment Kit\Imaging and Configuration Designer\x86\ICD.exe` (x86 コンピューターを使用している場合) に移動し、**ICD.exe** をダブルクリックします。
+2. プロジェクトに名前を付け、[次へ] を **選択します**。
+3. [共通 **] を選択Windows 10 Team、[** 次へ] を選択**し**、[完了] を**選択します**。<br>
+     ![WCD の新しいプロジェクト](images/icd-new-project.png)
 
-2. **[プロビジョニングの詳細設定]** をクリックします。
-   
-3. プロジェクトに名前を付け、**[次へ]** をクリックします。
-
-4. [共通 **] を選択Windows 10 Team、[** 次**へ]** をクリックし、[完了] を**クリックします**。
-
-    ![ICD の新しいプロジェクト](images/icd-new-project.png)
-
-5. プロジェクトの [利用可能なカスタマイズ **] で、[** 共通チーム設定 **] を選択します**。
-
-    ![ICD の一般的な設定](images/icd-common-settings.png)
-
+4. プロジェクトの [利用可能なカスタマイズ **] で、[** 共通チーム設定 **] を選択します**。<br>
+     ![WCD 共通設定](images/icd-common-settings.png)
 
 ### <a name="add-a-certificate-to-your-package"></a>証明書をパッケージに追加する
+
 プロビジョニング パッケージを使って、デバイスが Microsoft Exchange への認証に使う証明書をインストールすることができます。
 
 > [!NOTE]
-> 証明書をインストールできるのはデバイス (ローカル コンピューター) ストアのみで、ユーザー ストアにはインストールできません。 組織でユーザー ストアに証明書をインストールする必要がある場合は、ハブの******設定**アプリの [& セキュリティ証明書の更新] セクションの [証明書のインポート]  >  ******ボタンを使用**できます。 または、 [モバイル デバイス管理 (MDM)](manage-settings-with-mdm-for-surface-hub.md) ポリシーを使用して、デバイス ストアまたはユーザー ストアに証明書を展開できます。
+> 証明書をインストールできるのはデバイス (ローカル コンピューター) ストアのみで、ユーザー ストアにはインストールできません。 組織でユーザー ストアに証明書をインストールする必要がある場合は、Hub**** 設定 アプリを使用します&**セキュリティ**証明書  >  ****  >  **のインポート証明書を更新します**。
+または  [**、MDM**](manage-settings-with-mdm-for-surface-hub.md) ポリシーを使用して、デバイス ストアまたはユーザー ストアに証明書を展開することもできます。
 
-1. **[利用可能なカスタマイズ]** ウィンドウで、**[実行時の設定]** > **[Certificates]** > **[ClientCertificates]** の順に移動します。
-   > [!NOTE]
-   > **ClientCertificates**セクションは、プライベート キーを持つ .pfx ファイル用です。ルート CA 用の .cer ファイルは、[ルート証明書] セクションと **[CACertificates]** セクションの [中間 CA] に配置する必要があります。 ****
+> [!TIP]
+> **ClientCertificates**セクションは、プライベート キーを持つ .pfx ファイル用です。ルート CA 用の .cer ファイルは、[ルート証明書] セクションと **[CACertificates]** セクションの [中間 CA] に配置する必要があります。 ****
 
-2. CertificateName のラベルを **入力し、[** 追加] を **クリックします**。 
+1. [**構成Windows利用可能**な  >  **カスタマイズ] で、[****ランタイム**設定  >  **証明書**  >  **クライアントCertificates] に移動します**。
+2. CertificateName のラベルを **入力し、[** 追加] を **選択します**。
+3. **[CertificatePassword]** を入力します。
+4. **[CertificatePath]** で、証明書を探して選びます。
+5. **[ExportCertificate]** を **[False]** に設定します。
+6. **[KeyLocation]** で、**[ソフトウェアのみ]** を選びます。
 
-2. **[CertificatePassword]** を入力します。 
+### <a name="add-a-uwp-app-to-your-package"></a>パッケージに UWP アプリを追加する
 
-3. **[CertificatePath]** で、証明書を探して選びます。 
+UWP アプリをプロビジョニング パッケージに追加するには、アプリ パッケージ (.appx または .appxbundle ファイル) と依存関係ファイルが必要です。 ビジネス向け Microsoft Store からアプリを入手した場合は、*エンコードされていない*アプリのライセンスも必要です。 ビジネス向け Microsoft Store からこれらの項目をダウンロードする方法については、「[オフライン アプリの配布](/microsoft-store/distribute-offline-apps)」をご覧ください。
 
-4. **[ExportCertificate]** を **[False]** に設定します。
-
-5. **[KeyLocation]** で、**[ソフトウェアのみ]** を選びます。
-
-
-### <a name="add-a-universal-windows-platform-uwp-app-to-your-package"></a>ユニバーサル Windows プラットフォーム (UWP) アプリをパッケージに追加する
-UWP アプリをプロビジョニング パッケージに追加する前に、アプリ パッケージ (.appx または .appxbundle) と依存関係ファイルが必要です。 ビジネス向け Microsoft Store からアプリを入手した場合は、*エンコードされていない*アプリのライセンスも必要です。 ビジネス向け Microsoft Store からこれらの項目をダウンロードする方法については、「[オフライン アプリの配布](https://technet.microsoft.com/itpro/windows/manage/distribute-offline-apps#download-an-offline-licensed-app)」をご覧ください。
+**UWP アプリを追加するには、次の方法を実行します。**
 
 1. **[利用可能なカスタマイズ]** ウィンドウで、**[実行時の設定]** > **[UniversalAppInstall]** > **[DeviceContextApp]** の順に移動します。
+2. アプリの **PackageFamilyName** を入力し、[追加] を **選択します**。 一貫性を保つために、アプリのパッケージ ファミリ名を使います。 ビジネス向け Microsoft Store からアプリを入手した場合は、アプリのライセンスからパッケージ ファミリ名がわかります。 テキスト エディターを使用してライセンス ファイルを開き、PFM タグ間の値を使用します。
+3. **[ApplicationFile]** で、[**参照]** を選択してターゲット アプリ (.appx または .appxbundle) を検索して選択します。
+4. **[DependencyAppxFiles] で、[****参照**] を選択して、アプリの依存関係を検索して追加します。 Surface Hub の場合、必要なのはこれらの依存関係の x64 バージョンだけです。
 
-2. アプリの **PackageFamilyName** を入力し、**[追加]** をクリックします。 一貫性を保つために、アプリのパッケージ ファミリ名を使います。 ビジネス向け Microsoft Store からアプリを入手した場合は、アプリのライセンスからパッケージ ファミリ名がわかります。 テキスト エディターを使用してライセンス ファイルを開き、... タグの間の \<PFM\> 値を使用 \</PFM\> します。
+アプリをプロビジョニング パッケージからビジネス向け Microsoft Store場合は、プロビジョニング パッケージにアプリ ライセンスを追加する必要があります。
 
-3. **[ApplicationFile]** で、**[参照]** をクリックし、ターゲット アプリ (\*.appx または \*.appxbundle のどちらか) を探して選びます。
+**アプリ ライセンスを追加するには、次の方法を実行します。**
 
-4. **[DependencyAppxFiles]** で、**[参照]** をクリックし、アプリの依存関係を探して追加します。 Surface Hub の場合、必要なのはこれらの依存関係の x64 バージョンだけです。
-
-ビジネス向け Microsoft Store からアプリを入手した場合は、プロビジョニング パッケージにアプリのライセンスを追加する必要もあります。
-
-1. アプリのライセンスのコピーを作成し、その名前を拡張子 **.ms-windows-store-license** を使うように変更します。 たとえば、"example.xml" は "example.ms-windows-store-license" になります。
-
-2. ICD の **[利用可能なカスタマイズ]** ウィンドウで、**[実行時の設定]** > **[UniversalAppInstall]** > **[DeviceContextAppLicense]** の順に移動します。
-
-3. **[LicenseProductId]** を入力し、**[追加]** をクリックします。 一貫性を保つのために、アプリのライセンスにあるアプリのライセンス ID を使います。 テキスト エディタでライセンス ファイルを開きます。 次に、タグ \<License\> で LicenseID 属性の値 **を使用** します。
-
-4. 新しい **[LicenseProductId]** ノードを選択します。 **[LicenseInstall]** では、**[参照]** をクリックして、手順 1 で名前を変更したライセンス ファイルを見つけて選択します。
-
+1. アプリのライセンスのコピーを作成し、その名前を拡張子 **.ms-windows-store-license** を使うように変更します。 たとえば、"example.xml" の名前を "example.ms-windows-store-license" に変更します。
+2. [Windowsデザイナー] で、[使用可能なカスタマイズ **]**  >  **ランタイム設定**  >  **UniversalAppInstall**  >  **DeviceContextAppLicense に移動します**。
+3. **LicenseProductId を入力し、[** 追加] を**選択します**。 一貫性を保つのために、アプリのライセンスにあるアプリのライセンス ID を使います。 テキスト エディタでライセンス ファイルを開きます。 次に **、License タグ** で LicenseID 属性の **値を使用** します。
+4. 新しい **[LicenseProductId]** ノードを選択します。 LicenseInstall **の**場合は、[ **参照]** を選択して、名前を変更したライセンス ファイル (example.ms windows-store-license) を検索して選択します。
 
 ### <a name="add-a-policy-to-your-package"></a>ポリシーをパッケージに追加する
-Surface Hub は、[ポリシー構成サービス プロバイダー](https://msdn.microsoft.com/library/windows/hardware/dn904962.aspx)のポリシーのサブセットをサポートします。 これらのポリシーの一部は ICD で構成できます。
 
-1. **[利用可能なカスタマイズ]** ウィンドウで、**[実行時の設定]** > **[ポリシー]** の順に移動します。
+Surface Hub は、[ポリシー構成サービス プロバイダー](/windows/client-management/mdm/policy-configuration-service-provider)のポリシーのサブセットをサポートします。 これらのポリシーの一部は、構成デザイナーで構成Windowsできます。
 
-2. 利用可能なポリシー領域のいずれかを選択します。
+ **CSP ポリシー [を追加するには、次の手順を実行します](/windows/client-management/mdm/policies-in-policy-csp-supported-by-surface-hub)。**
 
-3. プロビジョニング パッケージに追加するポリシーを選択して設定します。
+1. [使用可能な**カスタマイズ] ランタイム**  >  **設定の**  >  **[ポリシー] に移動します**。
+2. 管理するコンポーネントを選択し、必要に応じてポリシー設定を構成します。 たとえば、従業員がユーザーに対して InPrivate Web サイトの閲覧を使用**Surface Hub、AllowInPrivate**を選択し、[無効にする] を選択**します**。  
 
+    > [!div class="mx-imgBorder"]
+    > ![ポリシー設定の構成](images/sh-prov-policies.png)
 
-### <a name="add-surface-hub-settings-to-your-package"></a>Surface Hub の設定をパッケージに追加する 
+### <a name="add-surface-hub-settings-to-your-package"></a>Surface Hub の設定をパッケージに追加する
 
-[SurfaceHub 構成サービス プロバイダー](https://msdn.microsoft.com/library/windows/hardware/mt608323.aspx)から、設定をプロビジョニング パッケージに追加できます。 
+[SurfaceHub 構成サービス プロバイダー](/windows/client-management/mdm/surfacehub-csp)から、設定をプロビジョニング パッケージに追加できます。
 
-1. [使用可能な**カスタマイズ] ウィンドウで**、[ランタイム設定] SurfaceHub**に**  >  **移動します**。
+1. [利用可能な**カスタマイズ]**  >  **[共通のチーム エディション] 設定。**
+1. 管理するコンポーネントを選択し、必要に応じてポリシー設定を構成します。
+1. プロビジョニング パッケージの構成が完了したら、[ファイル保存]**を**  >  **選択します**。
+1. プロジェクト ファイルに機密情報が含まれている可能性があるという警告を読み **、[OK] を選択します。**
 
-2. 利用可能な設定領域のいずれかを選択します。
+### <a name="build-your-package"></a>パッケージをビルドする
 
-3. プロビジョニング パッケージに追加する設定を選択して設定します。 
+プロビジョニング パッケージを作成する場合、プロジェクト ファイルとプロビジョニング パッケージ (.ppkg) ファイルに機密情報を含めることができます。 .ppkg ファイルは暗号化するかどうかを選べますが、プロジェクト ファイルは暗号化されません。  プロジェクト ファイルを安全な場所に保存するか、必要なくなった場合は削除します。
 
+1. [**構成Windowsエクスポート**  >  **プロビジョニング パッケージ]**  >  **を開きます**。
+2. 所有者 **を** **IT 管理者に変更します**。  
+3. **[パッケージのバージョン]** の値を設定し、**[次へ]** を選択します。
 
-## <a name="build-your-package"></a>パッケージをビルドする
+> [!TIP]
+> 所有者を IT 管理者に設定すると、パッケージ設定が適切な "優先順位プロパティ" を維持し、その後他のプロビジョニング パッケージが他のソースから適用された場合、Surface Hub に対して有効なままになります。
 
-1. プロビジョニング パッケージの構成が完了したら、**[ファイル]** メニューの **[保存]** をクリックします。
+> [!TIP]
+> 既存のパッケージを変更し、バージョン番号を変更して、以前に適用したパッケージを更新できます。
 
-2. プロジェクト ファイルに機密情報が含まれている可能性があることを示す警告を確認し、**[OK]** をクリックします。
+4. オプション: パッケージの暗号化とパッケージ署名の有効化を選択できます。
+
+    1. [パッケージ **の暗号化] を** 選択し、パスワードを入力します。
+    1. [**パッケージの参照に**  >  **署名] を**選択し、必要に応じて証明書を選択します。
 
     > [!IMPORTANT]
-    > プロビジョニング パッケージを作成する場合、プロジェクト ファイルとプロビジョニング パッケージ (.ppkg) ファイルに機密情報を含めることができます。 .ppkg ファイルは暗号化するかどうかを選べますが、プロジェクト ファイルは暗号化されません。 プロジェクト ファイルは、安全な場所に保存し、不要になったときに削除する必要があります。
+    > プロビジョニング パッケージに信頼できるプロビジョニング証明書を含めてお勧めします。 パッケージがデバイスに適用されると、証明書がシステム ストアに追加され、後続のパッケージをサイレント モードで適用できます。
 
-3. **[エクスポート]** メニューの **[プロビジョニング パッケージ]** をクリックします。
-
-4. **[所有者]** を **[IT 管理者]** に変更して、このプロビジョニング パッケージの優先順位を他のソースからこのデバイスに適用されるプロビジョニング パッケージよりも高くします。
-
-5. **[パッケージのバージョン]** の値を設定し、**[次へ]** を選択します。
-
-    > [!TIP]
-    > 既存のパッケージに変更を加えてバージョン番号を変更することで、以前に適用されたパッケージを更新できます。
-
-6. オプション: パッケージの暗号化を選択し、パッケージの署名を有効にできます。
-
-    -   **[パッケージの暗号化を有効にする]**: このオプションを選択した場合、自動生成されたパスワードが画面に表示されます。
-
-    -   **[パッケージの署名を有効にする]**: このオプションを選択した場合、パッケージの署名に使用する有効な証明書を選ぶ必要があります。 **[参照]** をクリックし、パッケージの署名に使う証明書を選んで、証明書を指定します。
-
-        > [!IMPORTANT]
-        > プロビジョニング パッケージに信頼済みプロビジョニング証明書を含めることをお勧めします。 パッケージがデバイスに適用されると、証明書がシステム ストアに追加されます。その後、システム メッセージを表示せずに、その証明書で署名されたすべてのパッケージを適用することができます。 
-
-7. **[次へ]** をクリックし、ビルドしたプロビジョニング パッケージの出力先を指定します。 既定では、Windows ICD はプロジェクト フォルダーを出力先として使います。<p>
-必要に応じて、 **[参照]** をクリックして既定の出力先を変更できます。
-
-8. **[次へ]** をクリックします。
-
-9. パッケージのビルドを開始するには、 **[ビルド]** をクリックします。 ビルド ページにプロジェクト情報が表示され、進行状況バーでビルドの状態が示されます。<p>
-ビルドを取り消す必要がある場合は、**[キャンセル]** をクリックします。 これにより、現在のビルド プロセスが取り消され、ウィザードが閉じられて、**[カスタマイズ ページ]** に戻ります。
-
-10. ビルドに失敗した場合は、プロジェクト フォルダーへのリンクが含まれたエラー メッセージが表示されます。 エラーの原因を特定するには、ログを調べることができます。 問題が解決したら、パッケージをもう一度ビルドしてみてください。<p>
-ビルドに成功した場合は、プロビジョニング パッケージの名前、出力ディレクトリ、プロジェクト ディレクトリが表示されます。
-
-    -   必要に応じて、パッケージの出力先として別のパスを選択し、もう一度プロビジョニング パッケージをビルドすることもできます。 これを行うには、**[戻る]** をクリックして出力パッケージの名前とパスを変更し、**[次へ]** をクリックしてもう一度ビルドを開始します。
-    
-    -   完了したら、 **[完了]** をクリックしてウィザードを閉じ、 **[カスタマイズ ページ]** に戻ります。
-
-11. **[出力場所]** リンクを選び、パッケージの場所へ移動します。 .ppkg を空の USB フラッシュ ドライブにコピーします。
-
+5. [次 **へ] を** 選択して、出力場所を指定します。 既定では、Windows 構成デザイナーはプロジェクト フォルダーを出力先として使います。 または、[ **参照] を** 選択して既定の出力場所を変更します。 **[次へ]** を選択します。
+6. [ **ビルド] を** 選択して、パッケージのビルドを開始します。 プロジェクト情報がビルド ページに表示されます。
+7. ビルドに失敗した場合は、プロジェクト フォルダーへのリンクを含むエラー メッセージが表示されます。 ログを確認してエラーを診断し、パッケージの構築を再試行します。
+8. ビルドが成功すると、プロビジョニング パッケージ、出力ディレクトリ、およびプロジェクト ディレクトリの名前が表示されます。 [ **完了] を** 選択してウィザードを閉じ、[カスタマイズ] ページに戻ります。
+9. 出力  **場所を選択**  して、パッケージの場所に移動します。 .ppkg を空の USB フラッシュ ドライブにコピーします。
 
 ## <a name="apply-a-provisioning-package-to-surface-hub"></a>プロビジョニング パッケージを Surface Hub に適用する
 
-プロビジョニング パッケージを Surface Hub に展開するためのオプションは 2 つあります。 [](#apply-a-provisioning-package-during-first-run)最初の実行ウィザードでは、証明書をインストールするプロビジョニング パッケージを適用するか、最初の実行プログラムが完了した後に、設定 を使用して設定、アプリ、および証明書を構成するプロビジョニング パッケージ[を適用できます](#apply-a-package-using-settings)。 
-
+プロビジョニング パッケージを Surface Hub に展開するためのオプションは 2 つあります。 [](#apply-a-provisioning-package-during-first-run)最初の実行ウィザードでは、証明書をインストールするプロビジョニング パッケージを適用するか、最初の実行プログラムが完了した後に、設定 を使用して設定、アプリ、および証明書を構成するプロビジョニング パッケージ[を適用できます](#apply-a-provisioning-package-using-settings-app)。
 
 ### <a name="apply-a-provisioning-package-during-first-run"></a>最初の実行時にプロビジョニング パッケージを適用する
 
 > [!IMPORTANT]
 > 最初の実行プログラムでは、プロビジョニング パッケージのみを使用して証明書をインストールできます。 **設定**アプリを使って、アプリをインストールし、その他の設定を適用します。
 
-1. Surface Hub を初めて起動すると、[**[こんにちは]**](first-run-program-surface-hub.md#first-page) というページが表示されます。 操作を続行する前に、設定が適切に構成されていることを確認してください。
-
+1. 最初に画面をSurface Hubすると、最初に実行されたプログラムに[**[こんにちは] ページが表示されます**](first-run-program-surface-hub.md)。 操作を続行する前に、設定が適切に構成されていることを確認してください。
 2. .ppkg ファイルを格納した USB フラッシュ ドライブを Surface Hub に挿入します。 パッケージがドライブのルート ディレクトリにある場合は、初回実行プログラムによってそれが認識され、デバイスをセットアップするかどうかを確認するメッセージが表示されます。 **[セットアップ]** を選択します。
-
-    ![デバイスをセットアップしますか?](images/provisioningpackageoobe-01.png)
-
 3. 次にプロビジョニング元を選択する画面が表示されます。 **[リムーバブル メディア]** を選んで **[次へ]** をタップします。
-
-    ![このデバイスのプロビジョニング](images/provisioningpackageoobe-02.png)
-    
-4. 適用するプロビジョニング パッケージ (\*.ppkg) を選んで、**[次へ]** をタップします。 最初の実行時にインストールできるパッケージは 1 つだけです。
-
-    ![パッケージの選択](images/provisioningpackageoobe-03.png)
-
-5. 初回実行プログラムによって、プロビジョニング パッケージが適用される変更の概要が表示されます。 **[はい、追加する]** を選択します。  
-
-    ![このパッケージを信頼しますか?](images/provisioningpackageoobe-04.png)
-    
+4. 適用するプロビジョニング パッケージ (*.ppkg) を選択し、[次へ] をタップ **します**。 最初の実行時にインストールできるパッケージは 1 つだけです。
+5. 初回実行プログラムによって、プロビジョニング パッケージが適用される変更の概要が表示されます。 **[はい、追加する]** を選択します。
 6. 構成ファイルが USB フラッシュ ドライブのルート ディレクトリに含まれる場合、**[構成を選択します]** が表示されます。 構成ファイルの最初のデバイス アカウントが、Surface Hub に適用されるアカウント情報の概要と共に表示されます。
+7. [ **構成の選択] で**、適用するデバイス名を選択し、[次へ] を **選択します**。
 
-    ![構成を選択します](images/ppkg-config.png)    
-
-7. **[構成を選択します]** で、適用するデバイス名を選択し、**[次へ]** をクリックします。
-
-    ![デバイスのフレンドリ名を選択します](images/ppkg-csv.png)
-    
 プロビジョニング パッケージに含まれている設定がデバイスに適用され、OOBE が完了します。 デバイスの再起動後、USB フラッシュ ドライブを削除することができます。
 
-### <a name="apply-a-package-using-settings"></a>設定を使ってパッケージを適用する
+### <a name="apply-a-provisioning-package-using-settings-app"></a>アプリを使用してプロビジョニング パッケージを設定する
 
 1. .ppkg ファイルを格納した USB フラッシュ ドライブを Surface Hub に挿入します。
+2. この**Surface Hubを開始**設定、プロンプトが表示されたら管理者資格情報を入力します。
+3. **[Surface Hub]** > **[デバイス管理]** に移動します。 [**プロビジョニング パッケージ] で、[** プロビジョニング パッケージの追加と削除]**を選択します**  >  **。[パッケージの追加] を選択します**。
+4. プロビジョニング パッケージを選択し、**[追加]** を選択します。  メッセージが表示されたら、管理者資格情報を再度入力します。
+5. 適用する変更の概要が表示されます。 **[はい、追加する]** を選びます。
 
-2. Surface Hub から**設定**を起動し、メッセージが表示されたら管理者の資格情報を入力します。
+## <a name="learn-more"></a>詳細情報
 
-3. **[Surface Hub]** > **[デバイス管理]** に移動します。 **[プロビジョニング パッケージ]** で、**[プロビジョニング パッケージを追加または削除する]** を選択します。
-
-4. **[パッケージの追加]** を選択します。
-
-5. プロビジョニング パッケージを選択し、**[追加]** を選択します。 求められた場合は、管理者の資格情報を再入力する必要があります。
-
-6. プロビジョニング パッケージによって適用される変更の概要が表示されます。 **[はい、追加する]** を選択します。
-
-
+- [構成Windowsダウンロード](https://www.microsoft.com/store/apps/9nblggh4tx22)
+- [Windows 10 向けのプロビジョニング パッケージの作成](/windows/configuration/provisioning-packages/provisioning-create-package)
+- [MDM プロバイダーを使用して Surface Hub を管理する](manage-settings-with-mdm-for-surface-hub.md)

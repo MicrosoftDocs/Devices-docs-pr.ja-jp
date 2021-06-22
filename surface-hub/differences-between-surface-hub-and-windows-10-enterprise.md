@@ -1,6 +1,6 @@
 ---
 title: オペレーティングシステムの基礎 (Surface Hub)
-description: このトピックでは、Windows 10 Team オペレーティング システムの固有の側面と、Windows 10 Enterprise との違いについて説明します。
+description: このトピックでは、オペレーティング システムの固有の側面Windows 10 Team、オペレーティング システムと異なる点Windows 10 Enterprise。
 keywords: 変更履歴
 ms.prod: surface-hub
 ms.sitesec: library
@@ -11,20 +11,20 @@ ms.date: 03/23/2021
 ms.reviewer: ''
 manager: laurawi
 ms.localizationpriority: medium
-ms.openlocfilehash: 9c76f9405146c5cda4afe6b46ce7e1cce0062682
-ms.sourcegitcommit: 88ce9e77afdc3d09984edc05286cd0f1eb054223
+ms.openlocfilehash: 54fe39fe35a63d27447fb0b4a01642f249475afc
+ms.sourcegitcommit: 267e12897efd9d11f8c7303eaf780632741cfe77
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "11448301"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "11613816"
 ---
 # <a name="operating-system-essentials-surface-hub"></a>オペレーティングシステムの基礎 (Surface Hub)
 
 Surface Hub のオペレーティング システムである Windows 10 Team は Windows 10 Enterprise をベースとしていて、エンタープライズ管理、セキュリティ、およびその他の機能の豊富なサポートを提供します。 しかし、これらの間には重要な違いがあります。 Enterprise エディションは、PC 向けに設計されていますが、Windows 10 Team は大画面および会議室での使用向けに新たに設計されています。 Surface Hub のセキュリティおよび管理の要件を評価する場合、新しいオペレーティング システムと見なすことをお勧めします。 この記事は、Surface Hub の Windows 10 Team と Windows 10 Enterprise の主な相違点と、その相違点が組織にどう影響を与えるかを示すことを目的としています。
 
-2020 年 9 月から、お客様は Surface Hub 2S で Windows 10 Pro または Enterprise に移行できます。 詳しくは、次のトピックをご覧ください。
+2020 年 9 月から、お客様は 2S の Windows 10 Pro または EnterpriseにSurface Hubできます。 詳しくは、次のトピックをご覧ください。
 
-- [Surface Hub 2 での Windows 10 Pro と Enterprise の可用性を発表します](https://techcommunity.microsoft.com/t5/surface-it-pro-blog/announcing-the-availability-of-windows-10-pro-and-enterprise-on/ba-p/1624107)。
+- [2. 2 でWindows 10 ProとEnterpriseのSurface Hubします](https://techcommunity.microsoft.com/t5/surface-it-pro-blog/announcing-the-availability-of-windows-10-pro-and-enterprise-on/ba-p/1624107)。
 
 - [Surface Hub 2 の Windows 10 Pro または Enterprise に移行する](surface-hub-2s-migrate-os.md)
 
@@ -122,7 +122,7 @@ Surface Hub に実装されている Windows 10 のセキュリティ機能:
 
 *これにより影響を受ける可能性のある組織ポリシー:* <br> Surface Hub のセキュリティの評価を行うときは、これらの機能を考慮してください。
 
-詳細については [、「Surface Hub セキュリティの概要」を参照してください。](surface-hub-security.md)
+詳細については、「セキュリティの概要[Surface Hub」を参照してください。](surface-hub-security.md)
 
 ## <a name="management"></a>管理
 
@@ -138,13 +138,13 @@ Microsoft 管理コンソール、ファイル名を指定して実行、コマ�
 
 ### <a name="remote-management-and-monitoring"></a>リモート管理および監視
 
-Surface Hub は [、Microsoft Intune](https://docs.microsoft.com/intune/) などのモバイル デバイス管理 (MDM) ソリューションや Azure Monitor による監視を通じてリモート管理 [をサポートします](https://azure.microsoft.com/services/monitor/)。 
+Surface Hubは、Azure Monitor を介したリモート 管理や監視などのモバイル[デバイス管理](/mem/intune/)(MDM) ソリューションMicrosoft Intuneを[サポートします](/azure/azure-monitor/)。 
 
 *これにより影響を受ける可能性のある組織ポリシー:* <br> Surface Hub では、System Center Operations Manager といった従来の多くの PC 管理および監視ツールで必要とされる Win32 エージェントのインストールがサポートされていません。
 
 ### <a name="group-policy"></a>グループ ポリシー
 
-Surface Hub では、監査を含む Windows グループ ポリシーはサポートされていません。 代わりに、MDM を使用して Surface Hub にポリシーを適用します。 MDM について詳しくは、「[MDM プロバイダーによる設定の管理](manage-settings-with-mdm-for-surface-hub.md)」をご覧ください。
+Surface Hub監査を含むWindowsグループ ポリシーはサポートされていません。 代わりに、MDM を使用して Surface Hub にポリシーを適用します。 MDM について詳しくは、「[MDM プロバイダーによる設定の管理](manage-settings-with-mdm-for-surface-hub.md)」をご覧ください。
 
 *これにより影響を受ける可能性のある組織ポリシー:* <br> グループ ポリシーではなく MDM を使用して Surface Hub を管理します。
 
@@ -158,7 +158,7 @@ Surface Hub では、リモート アシスタンスがサポートされてい�
 
 ### <a name="domain-join-and-azure-active-directory-azure-ad-join"></a>ドメイン参加と Azure Active Directory (Azure AD) 参加 
 
-Surface Hub は主にドメイン参加と Azure AD 参加を使用して、ディレクトリでサポートされる管理者グループを提供します。 ユーザーは、ドメイン アカウントではサインインできません。 詳しくは、「[管理者グループの管理](admin-group-management-for-surface-hub.md)」をご覧ください。
+Surface Hub は主にドメイン参加と Azure AD 参加を使用して、ディレクトリでサポートされる管理者グループを提供します。 ハイブリッド参加はサポートされていません。 ユーザーは、ドメイン アカウントではサインインできません。 詳しくは、「[管理者グループの管理](admin-group-management-for-surface-hub.md)」をご覧ください。
 
 *これにより影響を受ける可能性のある組織ポリシー:* <br> Surface Hub がドメインに参加している場合、グループ ポリシーは適用されません。 ドメイン メンバーシップに関するポリシーは、Surface Hub には適用されません。
 
