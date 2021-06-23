@@ -23,9 +23,8 @@
 ## プラン
 
 ### [Surface デバイスと Windows 10 Long-Term Servicing Branch の互換性](surface-device-compatibility-with-windows-10-ltsc.md)
-### [Surface デバイスでの Long-Term Servicing Branch の使用](ltsb-for-surface.md)
-### [Surface デバイス での Wake On LAN の使用](wake-on-lan-for-surface-devices.md)
-### [Surface および Endpoint 構成マネージャーに関する考慮事項](considerations-for-surface-and-system-center-configuration-manager.md)
+### [Surface デバイスのための Long-Term Servicing Branch](ltsb-for-surface.md)
+### [Surface および Endpoint 構成マネージャーに関する注意点](considerations-for-surface-and-system-center-configuration-manager.md)
 ### [ビジネス向け Microsoft Store を利用した Surface アプリの展開](deploy-surface-app-with-windows-store-for-business.md)
 ### [Surface デバイスで PEAP、EAP-FAST、Cisco LEAP を有効にする](enable-peap-eap-fast-and-cisco-leap-on-surface-devices.md)
 ### [イーサネット アダプターと Surface の展開](ethernet-adapters-and-surface-device-deployment.md)
@@ -56,12 +55,15 @@
 ### [WMI を使用して Surface Dock 2 を管理する](surface-dock2-wmi.md)
 ### [バッテリーの制限の設定](battery-limit.md)
 ### [Surface の明るさの制御](microsoft-surface-brightness-control.md)
-### [Surface Asset Tag](assettag.md)
-### [Surface デバイス での Wake On Power の使用](wake-on-power-for-surface.md)
+### [Surface アセット タグ](assettag.md)
+### [Surface デバイス の Wake On LAN](wake-on-lan-for-surface-devices.md)
+### [Surface Dock 2 とWake On LAN](wake-on-lan-surface-dock2.md)
+### [Surface デバイス の Wake On Power](wake-on-power-for-surface.md)
 
 ## セキュリテイ保護
 
-### [Surface UEFI の設定の Intune 管理](surface-manage-dfci-guide.md)
+### [Surface のセキュリティに関する概要](surface-security.md)
+### [Surface UEFI 設定における Intune 管理](surface-manage-dfci-guide.md)
 ### [Surface UEFI の設定の管理](manage-surface-uefi-settings.md)
 ### [Surface Pro 3 向けの UEFI の高度なセキュリティ機能](advanced-uefi-security-features-for-surface-pro-3.md)
 ### [Surface エンタープライズ管理モード](surface-enterprise-management-mode.md)
@@ -73,7 +75,6 @@
 ### [Surface DMA 保護](dma-protect.md)
 
 ## トラブルシューティング
-### [Surface サポートへのお問い合わせ](contact-surface-support.md)
 ### [Surface デバイス向けの上位のサポート ソリューション](support-solutions-surface.md)
 ### [互換性のある Surface デバイスでの SSD 削除のベスト プラクティス](surface-ssd-removal-guide.md)
 ### [IT 担当者向けの Surface のブログ](https://techcommunity.microsoft.com/t5/surface-it-pro-blog/bg-p/SurfaceITPro)
@@ -83,10 +84,12 @@
 #### [コマンドを使用してビジネス向け Surface 診断ツールキットを実行する](surface-diagnostic-toolkit-command-line.md)
 ### [エンドユーザー向けのヘルプ](https://support.microsoft.com/products/surface-devices)
 ### [Windows ベースのデバイスの Surface ドライバーとファームウェアのライフサイクル](surface-driver-firmware-lifecycle-support.md)
+### [Surface サポートへのお問い合わせ](contact-surface-support.md)
 
-## 保証と保護プラン
+## 保証とサービス 
 ### [Surface for Business の保証および保護プラン](https://www.microsoft.com/surface/business/warranty-service-offerings-and-support)
 ### [利用規約](https://support.microsoft.com/help/4493926/warranties-extended-service-plans-and-terms-conditions-for-your-device)
+### [Surface セルフサービス保証とサービス](self-serve-warranty-service.md)
 ### [翌営業日交換](surface-next-business-day-replacement.md)
 ### [デバイスの保証状況を確認する](https://mybusinessservice.surface.com/)
 ### [サービスのために Surface を送るときのデータの保護](https://support.microsoft.com/help/4023508/surface-faq-protecting-your-data-service)
