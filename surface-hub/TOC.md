@@ -30,7 +30,7 @@
 ### [Surface Hub 2S の初回セットアップ](surface-hub-2s-setup.md)
 ### [デバイスを Surface Hub 2S に接続する](surface-hub-2s-connect.md)
 ### [デバイス アカウントの作成およびテストを行う](create-and-test-a-device-account-surface-hub.md)
-### [Surface Hub 2S 用プロビジョニング パッケージの作成](surface-hub-2s-deploy.md)
+### [Surface Hub 用プロビジョニング パッケージを作成する](provisioning-packages-for-surface-hub.md)
 ### [Intune を使用して Surface Hub 2S にアプリを展開する](surface-hub-2s-deploy-apps-intune.md)
 ### [PowerShell を使用して Surface Hub 2S オンプレミス アカウントを作成する](https://docs.microsoft.com/microsoftteams/rooms/with-skype-for-business-server-2015)
 ### [Surface Hub Teams アプリ](hub-teams-app.md)
