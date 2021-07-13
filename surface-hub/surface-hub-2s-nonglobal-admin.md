@@ -14,12 +14,12 @@ ms.localizationpriority: Medium
 appliesto:
 - Surface Hub
 - Surface Hub 2S
-ms.openlocfilehash: cdb6dbdb49b34857f7b30feebb39f7a5c36e883c
-ms.sourcegitcommit: 77b2c51f8467ac3ac37399551b0cc20d9ce57d24
+ms.openlocfilehash: 11170f6c202faef7aa3dddcb8aa8c6fa84bea80f
+ms.sourcegitcommit: d020d899e9c7e1eb0b85193ecb0a17a85bb39fe6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "11585958"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "11643863"
 ---
 # <a name="configure-non-global-admin-accounts-on-surface-hub"></a>Surface Hub でグローバル管理者以外のアカウントを構成する
 
@@ -95,14 +95,14 @@ Windows 10 Team 2020 Update では、Azure AD ドメインに参加している 
 
     ```xml
       <groupmembership>   
-      <accessgroup desc = "Administrators">        
+      <accessgroup desc = "S-1-5-32-544">        
       <member name = "Administrator" />        
       <member name = "S-1-12-1-XXXXXXXXXX-XXXXXXXXXX-XXXXXXXXXX-XXXXXXXXXX" />  
       </accessgroup>
       </groupmembership>
       ```
       > [!IMPORTANT]
-      > XML ファイルから既定の Administrator メンバーを削除しない。
+      > 管理者アカウントにローカライズされた [名前を使用する必要がある場合があります](https://social.technet.microsoft.com/wiki/contents/articles/13813.localized-names-for-administrator-account-in-windows.aspx)。 XML ファイルから既定の Administrator メンバーを削除しない。
 
 2. プレースホルダー SID (S-1-12-1 以降) を Azure AD **グループ SID** に置き換え、ファイルを XML として保存します。たとえば ** 、aad-local-admin.xml**。 
 

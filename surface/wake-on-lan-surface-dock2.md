@@ -1,5 +1,5 @@
 ---
-title: Surface ドック 2 を使用して LAN をスリープ解除する
+title: Surface Dock 2 とWake On LAN
 description: Surface Dock 2 では、Wake on LAN (WOL) の最適なサポートが提供され、管理者はデバイスをリモートで起動し、管理タスクを自動的に実行できます。
 keywords: 更新、展開、ドライバー、wol、wake-on-lan
 ms.prod: w10
@@ -13,15 +13,15 @@ ms.topic: article
 ms.reviewer: jesko
 manager: laurawi
 ms.audience: itpro
-ms.date: 6/03/2021
-ms.openlocfilehash: 74b36b60cb58ecb9042b73b8cdba7271d0af8c80
-ms.sourcegitcommit: 267e12897efd9d11f8c7303eaf780632741cfe77
+ms.date: 7/02/2021
+ms.openlocfilehash: 4a74efb8af776e9805ad3148ea656f0a65d5d09c
+ms.sourcegitcommit: d020d899e9c7e1eb0b85193ecb0a17a85bb39fe6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/22/2021
-ms.locfileid: "11614108"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "11643853"
 ---
-# <a name="wake-on-lan-with-surface-dock-2"></a>Surface ドック 2 を使用して LAN をスリープ解除する
+# <a name="wake-on-lan-with-surface-dock-2"></a>Surface Dock 2 とWake On LAN
 
 デバイスを完全に最新の状態に保つために、IT 管理者は、通常は夜間のメンテナンス期間中に、使用していないデバイスを管理できる必要があります。 Surface Dock 2 では、Wake on LAN (WOL) に最適なサポートが提供され、管理者はデバイスをリモートで起動し、Microsoft エンドポイント マネージャー または他のサード パーティ製ソリューションを使用して管理タスクを自動的に実行できます。
 
@@ -48,7 +48,7 @@ Surface Dock 2 は、次の電源状態のデバイスに WOL サポートを提
 
 - コネクト スタンバイ
 - 休止状態 (S4 電源状態)
-- 休止状態 (S5 "soft off" 電源状態)
+- シャットダウン (S5 "soft off" 電源状態)
 
 電源状態の詳細については [、「System Power States」を参照してください](/windows/win32/power/system-power-states)。
 
@@ -61,6 +61,6 @@ Surface ドック 2 を使用しないデバイスで WOL を有効にするに�
 ## <a name="learn-more"></a>詳細情報
 
 - [Surface Dock 2](https://www.microsoft.com/p/surface-dock-2-for-business/8q4hgc6kbmdq?)
-- [Surface デバイス での Wake On LAN の使用](wake-on-lan-for-surface-devices.md)
+- [Surface デバイス の Wake On LAN](wake-on-lan-for-surface-devices.md)
 - [システムの電源状態](/windows/win32/power/system-power-states)
 - [Wake on LAN の構成 - Configuration Manager](/mem/configmgr/core/clients/deploy/configure-wake-on-lan)

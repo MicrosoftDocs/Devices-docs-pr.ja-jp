@@ -9,12 +9,12 @@ author: v-miegge
 ms.author: v-miegge
 ms.topic: article
 ms.localizationpriority: medium
-ms.openlocfilehash: f1790da48425b645d7e25342cfd4c1b0cde44661
-ms.sourcegitcommit: a4f8d271b1372321c3b45fc5a7a29703976964a4
+ms.openlocfilehash: b03b1a60ebc75e6af37c979082bf7c4a2eca4937
+ms.sourcegitcommit: d020d899e9c7e1eb0b85193ecb0a17a85bb39fe6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/20/2021
-ms.locfileid: "11576737"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "11643843"
 ---
 # <a name="surface-hub-update-history"></a>Surface Hub の更新履歴
 
@@ -29,6 +29,19 @@ Windows 10は、定期的なソフトウェア更新によって自動的に良�
 現在および過去のリリース[に関する関連トピックについては、「Surface Hub](https://support.microsoft.com/products/surface-devices/surface-hub)重要な情報」ページを参照してください。注意が必要な場合があります。
 
 ## <a name="windows-10-team-2020-update-20h2"></a>Windows 10 Team 2020 Update (20H2)
+
+<details>
+<summary>2021 年 6 月 10 日 — Surface Hub 2S の更新</summary>
+
+この更新プログラムは、2S Surface Hub固有の更新プログラムであり、以下に示すドライバーとファームウェアの更新プログラムを提供します。
+
+* Surface UEFI 更新プログラム - 694.3751.768.0
+  * 重大なセキュリティの脆弱性に取り組み、システムの安定性を向上します。
+* Surface ME ファームウェア更新プログラム - 11.8.86.3877
+  * 重大なセキュリティの脆弱性に取り組み、システムの安定性を向上します。
+* Intel(R) 管理エンジン インターフェイス ドライバー - 2102.100.0.1044
+  * 重大なセキュリティの脆弱性に取り組み、システムの安定性を向上します。
+</details>
 
 <details>
 <summary>2021 年 4 月 13 日 — KB5001330* に基づく Team の更新プログラム (OS ビルド 19042.928)</summary>
@@ -46,11 +59,11 @@ Windows 10は、定期的なソフトウェア更新によって自動的に良�
 この更新プログラムは、2S Surface Hub固有の更新プログラムであり、以下に示すドライバーとファームウェアの更新プログラムを提供します。
 
 * Intel(R) Bluetoothドライバー - 22.30.0.4
-  * セキュリティ更新プログラムに取り組み、システムの安定性を向上します。
+  * システムのセキュリティと安定性を向上します。
 * Intel(R) グラフィックス ドライバー - 27.20.100.8682
-  * セキュリティ更新プログラムに取り組み、システムの安定性を向上します。
+  * システムのセキュリティと安定性を向上します。
 * Intel(R) Wi-Fiドライバー - 22.30.0.11
-  * セキュリティ更新プログラムに取り組み、システムの安定性を向上します。
+  * システムのセキュリティと安定性を向上します。
 </details>
 
 <details>
@@ -64,7 +77,7 @@ Windows 10は、定期的なソフトウェア更新によって自動的に良�
 * 認証を必要とするプロキシWindows場合、更新とストアの更新チェックが完了しない問題を解決します。
 * 有線取り込みシナリオ中に、Connectアプリの信頼性が向上します。
 
-デバイスの機能と[サービスSurface Hub/](https://docs.microsoft.com/surface-hub/)無効にする方法については、「管理者向けガイド」を参照してください。 *[KB4598291](https://support.microsoft.com/help/4598291)
+デバイスの機能と[サービスSurface Hub/](/surface-hub/)無効にする方法については、「管理者向けガイド」を参照してください。 *[KB4598291](https://support.microsoft.com/help/4598291)
 </details>
 
 <details>
@@ -100,7 +113,7 @@ Windows 10は、定期的なソフトウェア更新によって自動的に良�
 * Insider Program に登録する際の信頼性Windows向上します。
 * チーム シェルの信頼性Windows向上します。
 
-デバイスの機能と[サービスSurface Hub/](https://docs.microsoft.com/surface-hub/)無効にする方法については、「管理者向けガイド」を参照してください。 *[KB4586853](https://support.microsoft.com/help/4586853)
+デバイスの機能と[サービスSurface Hub/](/surface-hub/)無効にする方法については、「管理者向けガイド」を参照してください。 *[KB4586853](https://support.microsoft.com/help/4586853)
 </details>
 
 <details>
@@ -128,9 +141,9 @@ Windows 10は、定期的なソフトウェア更新によって自動的に良�
 <details>
 <summary>Windows 10 Team 2020 Update for Surface Hub — 一般的なリリース ノート (OS ビルド 19042.572)</summary>
 
-この更新プログラムには、品質Surface Hub修正プログラムが含まれています。 [Windows 10](https://support.microsoft.com/help/4581839/windows-10-update-history)更新履歴で既に説明されていない Surface Hub の主要な更新プログラムは、"Windows 10 Team[2020 Update](https://docs.microsoft.com/surface-hub/surface-hub-2020-update-whats-new)の新機能" ページに示されています。
+この更新プログラムには、品質Surface Hub修正プログラムが含まれています。 [Windows 10](https://support.microsoft.com/help/4581839/windows-10-update-history)更新履歴で既に説明されていない Surface Hub の主要な更新プログラムは、"Windows 10 Team[2020 Update](/surface-hub/surface-hub-2020-update-whats-new)の新機能" ページに示されています。
 
-地域、配布方法、およびデバイスの種類別の更新プログラムの可用性の詳細については、「Install[Windows 10 Team 2020 Update」](https://docs.microsoft.com/surface-hub/surface-hub-2020-update)ページを参照してください。
+地域、配布方法、およびデバイスの種類別の更新プログラムの可用性の詳細については、「Install[Windows 10 Team 2020 Update」](/surface-hub/surface-hub-2020-update)ページを参照してください。
 </details>
 
 ## <a name="windows-10-team-creators-update-1703"></a>Windows 10 TeamCreators Update (1703)
@@ -188,7 +201,7 @@ Windows 10は、定期的なソフトウェア更新によって自動的に良�
 * 通話中にハブ 2S が他の参加者からうまく聞こえないSkype for Businessします。
 * 一部のアラビア語、ヘブライ語、その他の RTL 言語の使用シナリオの信頼性が向上Surface Hub。
 
-デバイスの機能と[サービスSurface Hub/](https://docs.microsoft.com/surface-hub/)無効にする方法については、「管理者向けガイド」を参照してください。
+デバイスの機能と[サービスSurface Hub/](/surface-hub/)無効にする方法については、「管理者向けガイド」を参照してください。
 *[KB4537765](https://support.microsoft.com/help/4537765)
 </details>
 
@@ -199,7 +212,7 @@ Windows 10は、定期的なソフトウェア更新によって自動的に良�
 
 * 2S のログ コレクションに関する問題Microsoft Surface Hubします。
 
-デバイスの機能と[サービスSurface Hub/](https://docs.microsoft.com/surface-hub/)無効にする方法については、「管理者向けガイド」を参照してください。
+デバイスの機能と[サービスSurface Hub/](/surface-hub/)無効にする方法については、「管理者向けガイド」を参照してください。
 *[KB4534296](https://support.microsoft.com/help/4534296)
 </details>
 
@@ -215,7 +228,7 @@ Windows 10は、定期的なソフトウェア更新によって自動的に良�
  * 一部の内部 web サイトMicrosoft Edgeに発生する問題を修正しました。
  * フルスクリーン モードで表示Skype for Business発生する問題を修正しました。
 
-デバイスの機能と[サービスSurface Hub/](https://docs.microsoft.com/surface-hub/)無効にする方法については、「管理者向けガイド」を参照してください。
+デバイスの機能と[サービスSurface Hub/](/surface-hub/)無効にする方法については、「管理者向けガイド」を参照してください。
 *[KB4503289](https://support.microsoft.com/help/4503289)
 </details>
 
@@ -227,7 +240,7 @@ Windows 10は、定期的なソフトウェア更新によって自動的に良�
  * ハブ 2S のビデオアウトが既定で "Duplicate" モードに設定されます。
  * 一部のアラビア語の使用シナリオの信頼性が向上Surface Hub。
 
-デバイスの機能と[サービスSurface Hub/](https://docs.microsoft.com/surface-hub/)無効にする方法については、「管理者向けガイド」を参照してください。
+デバイスの機能と[サービスSurface Hub/](/surface-hub/)無効にする方法については、「管理者向けガイド」を参照してください。
 *[KB4503289](https://support.microsoft.com/help/4503289)
  </details>
 
@@ -241,7 +254,7 @@ Windows 10は、定期的なソフトウェア更新によって自動的に良�
 * Hub 2S のハードウェア診断アプリの信頼性を向上させる修正プログラム。 
 * ハブ 2S での初回実行セットアップ エクスペリエンスの一貫性を向上させる修正。 
 
-デバイスの機能と[サービスSurface Hub/](https://docs.microsoft.com/surface-hub/)無効にする方法については、「管理者向けガイド」を参照してください。
+デバイスの機能と[サービスSurface Hub/](/surface-hub/)無効にする方法については、「管理者向けガイド」を参照してください。
 *[KB4503289](https://support.microsoft.com/help/4503289)
 </details>
 
@@ -255,7 +268,7 @@ Windows 10は、定期的なソフトウェア更新によって自動的に良�
 * TLS 1.2 のサポートを追加Skype for Business。
 * サーバーが TLS 1.0 または TLS 1.1 をSkype場合に、Skype クライアントの SIP 接続エラーを解決します。
 
-デバイスの機能と[サービスSurface Hub/](https://docs.microsoft.com/surface-hub/)無効にする方法については、「管理者向けガイド」を参照してください。
+デバイスの機能と[サービスSurface Hub/](/surface-hub/)無効にする方法については、「管理者向けガイド」を参照してください。
 *[KB4499162](https://support.microsoft.com/help/4499162)
 </details>
 
@@ -266,7 +279,7 @@ Windows 10は、定期的なソフトウェア更新によって自動的に良�
 
 * デバイスに接続されている一部の USB デバイスでビデオとオーディオの同期の問題を解決Surface Hub。
 
-デバイスの機能と[サービスSurface Hub/](https://docs.microsoft.com/surface-hub/)無効にする方法については、「管理者向けガイド」を参照してください。
+デバイスの機能と[サービスSurface Hub/](/surface-hub/)無効にする方法については、「管理者向けガイド」を参照してください。
 *[KB4493436](https://support.microsoft.com/help/4493436)
 </details>
 
@@ -277,7 +290,7 @@ Windows 10は、定期的なソフトウェア更新によって自動的に良�
 
 * 一部のユーザーが "My Meetings and Files" にSigning-Inする問題に取り組んでいます。
 
-デバイスの機能と[サービスSurface Hub/](https://docs.microsoft.com/surface-hub/)無効にする方法については、「管理者向けガイド」を参照してください。
+デバイスの機能と[サービスSurface Hub/](/surface-hub/)無効にする方法については、「管理者向けガイド」を参照してください。
 *[KB4467699](https://support.microsoft.com/help/KB4467699)
 </details>
 
@@ -293,7 +306,7 @@ Windows 10は、定期的なソフトウェア更新によって自動的に良�
 * Hub がエンタープライズ プロキシ環境で誤って "インターネット接続なし" と報告される問題を解決します。
 * 顧客が新しいホワイトボード エクスペリエンスにアクセスできる機能を実装しました。
 
-デバイスの機能と[サービスSurface Hub/](https://docs.microsoft.com/surface-hub/)無効にする方法については、「管理者向けガイド」を参照してください。
+デバイスの機能と[サービスSurface Hub/](/surface-hub/)無効にする方法については、「管理者向けガイド」を参照してください。
 *[KB4462939](https://support.microsoft.com/help/4462939)
 </details>
 
@@ -307,7 +320,7 @@ Windows 10は、定期的なソフトウェア更新によって自動的に良�
 * 管理者がハブのインスタント メッセージングサービスとメール サービスを無効にできます
 * アプリの追加のバグ修正と信頼性Surface Hub Skype for Business強化
 
-デバイスの機能と[サービスSurface Hub/](https://docs.microsoft.com/surface-hub/)無効にする方法については、「管理者向けガイド」を参照してください。
+デバイスの機能と[サービスSurface Hub/](/surface-hub/)無効にする方法については、「管理者向けガイド」を参照してください。
 *[KB4343889](https://support.microsoft.com/help/4343889)
 </details>
 
@@ -318,7 +331,7 @@ Windows 10は、定期的なソフトウェア更新によって自動的に良�
 
 * EMEA での GDPR 要件のサポートに関するテレメトリの変更
 
-デバイスの機能と[サービスSurface Hub/](https://docs.microsoft.com/surface-hub/)無効にする方法については、「管理者向けガイド」を参照してください。
+デバイスの機能と[サービスSurface Hub/](/surface-hub/)無効にする方法については、「管理者向けガイド」を参照してください。
 *[KB4284830](https://support.microsoft.com/help/KB4284830)
 </details>
 
@@ -336,7 +349,7 @@ Windows 10は、定期的なソフトウェア更新によって自動的に良�
 * チャネル 149 Miracast 165 に指定Surface Hubの問題に対応します。
   * チャネル 149 ~ 165 は、地域政府の規制により、ヨーロッパ、日本、またはイスラエルでは引き続き使用できなくなります。
 
-デバイスの機能と[サービスSurface Hub/](https://docs.microsoft.com/surface-hub/)無効にする方法については、「管理者向けガイド」を参照してください。
+デバイスの機能と[サービスSurface Hub/](/surface-hub/)無効にする方法については、「管理者向けガイド」を参照してください。
 *[KB4093117](https://support.microsoft.com/help/4093117)
 </details>
 
@@ -348,7 +361,7 @@ Windows 10は、定期的なソフトウェア更新によって自動的に良�
 * MDM 設定が正しく適用されない問題を解決しました
 * クリーンアップ プロセスの改善
 
-デバイスの機能と[サービスSurface Hub/](https://docs.microsoft.com/surface-hub/)無効にする方法については、「管理者向けガイド」を参照してください。
+デバイスの機能と[サービスSurface Hub/](/surface-hub/)無効にする方法については、「管理者向けガイド」を参照してください。
 *[KB4077528](https://support.microsoft.com/help/4077528)
 </details>
 
@@ -360,7 +373,7 @@ Windows 10は、定期的なソフトウェア更新によって自動的に良�
 * MDM 経由でスタート メニュー のタイル レイアウトを管理する機能を追加
 * パスワードローテーションの構成に関する MDM のバグ修正
 
-デバイスの機能と[サービスSurface Hub/](https://docs.microsoft.com/surface-hub/)無効にする方法については、「管理者向けガイド」を参照してください。
+デバイスの機能と[サービスSurface Hub/](/surface-hub/)無効にする方法については、「管理者向けガイド」を参照してください。
 *[KB4057144](https://support.microsoft.com/help/4057144)
 </details>
 
@@ -372,7 +385,7 @@ Windows 10は、定期的なソフトウェア更新によって自動的に良�
 * 通話中にカメラのビデオフラッシュ (ちらつきやちらつき) をSkype for Businessする
 * 通知センター SSD ID の問題を解決する
 
-デバイスの機能と[サービスSurface Hub/](https://docs.microsoft.com/surface-hub/)無効にする方法については、「管理者向けガイド」を参照してください。
+デバイスの機能と[サービスSurface Hub/](/surface-hub/)無効にする方法については、「管理者向けガイド」を参照してください。
 *[KB4053580](https://support.microsoft.com/help/4053580)
 </details>
 
@@ -390,7 +403,7 @@ Windows 10は、定期的なソフトウェア更新によって自動的に良�
 * デバイスによって送信されるテレメトリを削減し、より徹底的にセキュリティ保護し、帯域幅の使用率を削減します。
 * 会議の終了後にユーザーが Microsoft にフィードバックを提供できる機能を有効にします。
 
-デバイスの機能と[サービスSurface Hub/](https://docs.microsoft.com/surface-hub/)無効にする方法については、「管理者向けガイド」を参照してください。
+デバイスの機能と[サービスSurface Hub/](/surface-hub/)無効にする方法については、「管理者向けガイド」を参照してください。
 *[KB4048954](https://support.microsoft.com/help/4048954)
 </details>
 
@@ -492,13 +505,13 @@ Windows 10は、定期的なソフトウェア更新によって自動的に良�
 
 * 大画面エクスペリエンスの進化 
   * ウェルカム と スタートの会議カルーセルを改善しました
-  * 会議に参加し、[スタート] メニューから直接セッションを終了する
+  * 会議に参加し、会議から直接セッションを終了スタート メニュー
   * アプリは、セッション中に画面の多くを利用できます
   * 簡略化されたSkypeコントロール
   * フィードバックを提供するための改善されたメカニズム
 * 個人用コンテンツにアクセスする*
   * ウェルカムまたはスタートからの個人用シングル サインオン
-  * 会議に参加し、[スタート] メニューから直接セッションを終了する
+  * 会議に参加し、会議から直接セッションを終了スタート メニュー
   * スタートから直接OneDrive for Business個人用ファイルにアクセスする
   * 事前入力された出席者サインイン
   * "Authenticator" アプリを使用した合理化された認証フロー**
@@ -509,9 +522,9 @@ Windows 10は、定期的なソフトウェア更新によって自動的に良�
   * プロキシ資格情報のサポートの強化
   * サービス品質 (QoS) Skypeのサポートが追加および /向上しました
   * デバイスの既定のデバイス ボリュームを設定する機能が設定
-  * ユーザー設定に対する MDM Surface Hub[強化](https://docs.microsoft.com/surface-hub/remote-surface-hub-management)
+  * ユーザー設定に対する MDM Surface Hub[強化](/surface-hub/remote-surface-hub-management)
 * セキュリティの強化 
-  * USB ドライブをデバイスにのみ制限BitLockerしました
+  * USB ドライブを BitLocker にのみ制限する機能が追加されました
   * MDM 経由で USB ポートを無効にする機能が追加されました
   * タイムアウト時に "セッションの再開" 機能を無効にする機能が追加されました
   * 有線 802.1x サポートの追加
